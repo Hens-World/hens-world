@@ -1,0 +1,21 @@
+{"frames": [
+
+{
+	"filename": "baignade_5_00.png",
+	"frame": {"x":2,"y":2,"w":144,"h":44},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":44},
+	"sourceSize": {"w":144,"h":44},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "baignade_5.png",
+	"format": "RGBA8888",
+	"size": {"w":148,"h":48},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9ad72bb2850711811167bdc5a2d40407:019fbce98c555f6eefff6e016daf7534:4aaa4c68099545017f2f3020dd8d39f8$"
+}
+}

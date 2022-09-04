@@ -1,0 +1,22 @@
+{
+ "label": "clarinet_equinoxe", 
+ "width": 33,
+ "height": 66,
+ "center": {
+   "x": 11,
+   "y": 65
+ },
+ "avail": [
+   {
+     "fromT": 0,
+     "to": 0,
+     "dates": ["21-09", "22-09"] 
+}
+ ],
+ "list": [  
+   {
+     "x": 2314,
+     "y": 2714
+   }
+ ]
+},

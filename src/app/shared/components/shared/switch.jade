@@ -1,0 +1,5 @@
+.field.field--switch
+  .label {{switchCtrl.label}}
+  input(type="checkbox" ng-model="switchCtrl.value")
+  .switch__element(ng-click="switchCtrl.toggleValue()" ng-class="{'switch--on fond-village': switchCtrl.value, 'switch--disabled': switchCtrl.disabled}")
+    .switch__handle

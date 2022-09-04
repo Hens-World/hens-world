@@ -1,0 +1,30 @@
+{
+      name: 'Table',
+      filename: '1.png',
+      width: 93,
+      height: 68
+    },
+{
+      name: 'Lampadaire',
+      filename: '2.png',
+      width: 19,
+      height: 94
+    },
+{
+      name: 'Gros pot de fleur',
+      filename: '3.png',
+      width: 56,
+      height: 68
+    },
+{
+      name: 'Sac de farine',
+      filename: '4.png',
+      width: 37,
+      height: 53
+    },
+{
+      name: 'Dino à tâches discret',
+      filename: '5.png',
+      width: 90,
+      height: 93
+    }

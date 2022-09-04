@@ -1,0 +1,139 @@
+div.no-village-container.generic-popup(ng-show="pContentCtrl.showNoVillage")
+  .wrapper.generic-popup__content.border-village
+    h1 Choisissez un village!
+    p Mince! Pour créer son personnage dans le monde de Hens, il te faut d'abbord être lié à un village! Clique ci dessous pour faire ton choix.
+    a.button.fond-village.hover(href="/choix-village") Choisir un village
+.edit__container.generic-popup(class="{{personnage.village.toLowerCase()}}" ng-class="{'show':showPerso && isEditingChar && isMe}")
+  .edit__close-around(ng-click="hideFiche()")
+  .edit__content.generic-popup__content.border-village
+    .edit__left-column
+      .circle-avatar.fond-village.dark( class="{{$root.mobileCheck() ? 'medium' : 'large'}}" style="background-image:url({{persoPost.avatar}});")
+      .edit__name.font-village(ng-bind-html="persoPost.prenom + ' ' + persoPost.nom")
+    .edit__main-column
+      .edit__header
+        .edit__title {{personnageExists ? "Editer votre personnage" : "Créer votre personnage"}}
+        .edit__cancel
+          .edit-bt.edit-bt--valid.button.fond-village.hover(ng-click="hideFiche()")
+            .text Annuler
+      form.form-flex(ng-submit="validateChar()")
+        .field
+          .label Avatar
+          input.form(placeholder="http://hebergeur/mon-avatar.jpg" ng-model="persoPost.avatar")
+        .field
+          .label Prénom
+          input.form( type="text" placeholder="Prénom" ng-model="persoPost.prenom" required)
+        .field
+          .label Nom
+          input.form( type="text" placeholder="Nom" ng-model="persoPost.nom")
+        .field
+          .label Âge
+          input.form( type="number" placeholder="Âge" ng-model="persoPost.age" )
+        .field
+          .label village
+          input.form( type="text" ng-model="$root.villages[persoPost.village]" disabled)
+          a.button.hover.fond-village.button--meaty(
+            style="margin-left: 6px" 
+            href="/choix-village/personnage/{{persoPost.char_index}}" 
+            ng-show="persoPost.char_index > 1") Choisir le village
+        .field
+          .label Blason
+          input.form( type="text" placeholder="Le nom dont les légendes se souviendront" ng-model="persoPost.suffixe")
+        .field
+          .label Histoire
+          textarea.form-area( placeholder="Histoire" ng-model="persoPost.histoire")
+        .field
+          .label Caractère
+          textarea.form-area( placeholder="Caractère" ng-model="persoPost.caractere")
+        .field
+          .label Particularités
+          textarea.form-area( placeholder="Particularités" ng-model="persoPost.particularite" )
+        .field
+          span Pouvoir personalisé ?
+          input(type="checkbox" ng-model="editCustomPower")
+          a.button.hover.fond-village.button--meaty(style="margin-left:auto" href="/questionnaire/{{persoPost.char_index}}" ng-show="persoPost.char_index > 1") Refaire le questionnaire
+        .field
+          .label Pouvoir
+          textarea.form-area( placeholder="Pouvoir" ng-model="persoPost.pouvoir")
+        input.validate-change.fond-village.button.hover(
+          type="submit"
+          ng-class="{'disabled': isValidatingFiche}"
+          value="{{isValidatingFiche ? 'En cours de sauvegarde' : 'Valider'}}"
+        )
+div(ng-show="state.tag == 'fiche'")
+  div.fiche-perso(ng-show="personnage.fid && !isEditingChar")
+    .suffixe.part
+      .title.font-village
+        .va Nom complet
+      .paragraph(ng-bind-html="personnage.nom + ' ' + personnage.prenom")
+    .suffixe.part
+      .title.font-village
+        .va Blason
+      .paragraph(ng-bind-html="personnage.suffixe")
+    .histoire.part
+      .title.font-village
+        .va Histoire
+      .paragraph(ng-bind-html="personnage.histoire")
+    .caractere.part
+      .title.font-village
+        .va Caractère
+      .paragraph(ng-bind-html="personnage.caractere")
+    .particularite.part
+      .title.font-village
+        .va Particularité
+      .paragraph(ng-bind-html="personnage.particularite")
+    .pouvoir.part
+      .title.font-village Pouvoir
+      .paragraph(ng-bind-html="personnage.pouvoir")
+//.fiche-link.fond-village.button.hover(ng-click="showFiche()") Fiche de personnage
+.profile-bloc.relations-bloc(ng-show="state.tag == 'relations'")
+  .relations-container
+    div(ng-if="relationList.length == 0")
+    .relation.other-user(ng-if="relationList.length > 0" ng-show="newRelation.rid != relation.rid"  ng-repeat="relation in relationList")
+      .relation__left
+        a( href="profil/{{relation.to_id}}")
+          .avatar-circle.fond-village.dark(style="background-image:url({{relation.personnage.avatar}});")
+      .relation__main
+        .relation__title-container
+          .relation__title(ng-bind-html="relation.title")
+          a.hover(class="{{villages[relation.personnage.village]}}" href="profil/{{relation.to_id}}") {{relation.personnage.prenom}}
+          .edit-relation(ng-if="isMe" ng-click="editRelation(relation)")
+          .delete-relation(ng-if="isMe" ng-click="deleteRelation(relation)")
+            .fa.fa-trash
+        .description(ng-bind-html="relation.description")
+    .relation.edit(ng-if="isMe && isCreating")
+      div(style="width:100%;")
+        .field
+          .label Personnage
+          input.form(ng-model="newRelation.name")
+          .suggestion-list
+            .suggestion(class="{{villages[suggestion.village]}}" ng-repeat="suggestion in suggestionList" ng-click="selectPerso(suggestion)")
+              | {{suggestion.prenom}} {{suggestion.nom}}
+        .selected-char(ng-show="newRelation.char" class="{{villages[newRelation.char.village]}}")
+          | sélectionné: {{newRelation.char.prenom}} {{newRelation.char.nom}}
+        .field
+          .label Titre
+          input.form(ng-model="newRelation.title")
+        .field
+          .label Description
+          input.form-area(ng-model="newRelation.description")
+        .button.fond-village.hover(ng-click="sendRelation()") Valider
+
+    form.create-relation(ng-model="newRelation.description" placeholder="Décrivez en quelque lignes votre relation avec ce personnage")
+  .button.fond-village.hover(ng-if="isMe && !isCreating" ng-click="startCreate()") Créer une relation
+.profile-bloc(ng-show="state.tag == 'aventures'")
+  .participations-container
+    .list
+      .elt(ng-repeat="elt in participationList" class="{{villages[elt.village]}} {{locations[elt.village][elt.location]}}")
+        a.rp-title(href="roleplay/archives/{{elt.type}}/{{elt.type == 'instant' ? elt.rid : elt.id}}") {{elt.title.capitalizeFirstLetter()}}
+        .participants
+          span.other-user(class="{{user.meta.village}}" ng-repeat="user in elt.userList")
+            a(href="/profil/{{user.ID}}") {{user.display_name}}
+            span(ng-if='!$last') ,
+.profile-bloc(ng-show="state.tag === 'creations-liees'")
+  .post__list.post__list--profile(lazy-loader on-scroll-end="nextPostPage")
+    a.post__element(ng-repeat="post in postLies" class="{{post.village.slug}} other-user" href="{{post.type}}/{{post.slug}}")
+      .post__info
+        .post__title(ng-bind-html="post.title")
+        .post__location.font-village {{post.location.name}}
+        .post__date {{post.formDate}}
+      img(ng-src="{{post.miniature}}")

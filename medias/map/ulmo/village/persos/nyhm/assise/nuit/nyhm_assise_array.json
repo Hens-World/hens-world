@@ -1,0 +1,210 @@
+{"frames": [
+
+{
+	"filename": "nyhm_assise_00.png",
+	"frame": {"x":2,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_01.png",
+	"frame": {"x":2,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_02.png",
+	"frame": {"x":77,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_03.png",
+	"frame": {"x":77,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_04.png",
+	"frame": {"x":77,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_05.png",
+	"frame": {"x":77,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_06.png",
+	"frame": {"x":77,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_07.png",
+	"frame": {"x":152,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_08.png",
+	"frame": {"x":152,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_09.png",
+	"frame": {"x":227,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_10.png",
+	"frame": {"x":227,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_11.png",
+	"frame": {"x":302,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_12.png",
+	"frame": {"x":302,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_13.png",
+	"frame": {"x":302,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_20.png",
+	"frame": {"x":302,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_21.png",
+	"frame": {"x":302,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_14.png",
+	"frame": {"x":377,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_15.png",
+	"frame": {"x":377,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_16.png",
+	"frame": {"x":377,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_17.png",
+	"frame": {"x":377,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_18.png",
+	"frame": {"x":377,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nyhm_assise_19.png",
+	"frame": {"x":377,"y":2,"w":73,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":56},
+	"sourceSize": {"w":73,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "nyhm_assise.png",
+	"format": "RGBA8888",
+	"size": {"w":452,"h":60},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:489502705008926d8cee1ea946c49bc8:380248254d2bb9830ab00493ddd7881b:f4bbd92facdc9da5c3bd77a86a7530be$"
+}
+}

@@ -1,0 +1,158 @@
+{
+  "label": "foret_sulimo",
+  "sliceSize": 110,
+  "width": 5288,
+  "height": 5849,
+  "speed": 11,
+  "init": {
+    "x": 2138,
+    "y": 3333
+  },
+  "miniMap": {
+    "height": 145,
+    "width": 131
+  },
+  "locations": [
+    {
+      "label": "Coeur de la Forêt",
+      "slug": "coeur_de_la_foret",
+      "pos": {
+        "x": 4040,
+        "y": 4197
+      },
+      "width": 430,
+      "height": 430
+    },
+    
+    {
+      "label": "L'arbre Géant",
+      "slug": "larbre_geant",
+      "pos": {
+        "x": 3080,
+        "y": 3507
+      },
+      "width": 580,
+      "height": 581
+    },
+    {
+      "label": "Quartier du Bosquet",
+      "slug": "quartier_du_bosquet",
+      "pos": {
+        "x": 3664,
+        "y": 5203
+      },
+      "width": 352,
+      "height": 300
+    },
+    {
+      "label": "Puit",
+      "slug": "puit",
+      "pos": {
+        "x": 3144,
+        "y": 4711
+      },
+      "width": 204,
+      "height": 235
+    },
+    {
+      "label": "Lisière des Bois",
+      "slug": "lisiere_des_bois",
+      "pos": {
+        "x": 800,
+        "y": 3047
+      },
+      "width": 404,
+      "height": 423
+    },
+    {
+      "label": "Hautes Herbes",
+      "slug": "hautes_herbes",
+      "pos": {
+        "x": 442,
+        "y": 3667
+      },
+      "width": 210,
+      "height": 150
+    },
+    {
+      "label": "Point d'eau",
+      "slug": "point_deau",
+      "pos": {
+        "x": 4374,
+        "y": 3111
+      },
+      "width": 400,
+      "height": 315
+    },
+    {
+      "label": "Tour Occulte",
+      "slug": "tour_occulte",
+      "pos": {
+        "x": 4570,
+        "y": 711
+      },
+      "width": 380,
+      "height": 390
+    },
+    {
+      "label": "Préau",
+      "slug": "preau",
+      "pos": {
+        "x": 4390,
+        "y": 5090
+      },
+      "width": 370,
+      "height": 270
+    },
+    {
+      "label": "Crevasse",
+      "slug": "crevasse",
+      "pos": {
+        "x": 3320,
+        "y": 2615
+      },
+      "width": 580,
+      "height": 515
+    },
+    {
+      "label": "Marécage",
+      "slug": "marecage",
+      "pos": {
+        "x": 1288,
+        "y": 1481
+      },
+      "width": 615,
+      "height": 500
+    },
+    {
+      "label": "Cimetière Sylvestre",
+      "slug": "cimetiere_sylvestre",
+      "pos": {
+        "x": 808,
+        "y": 4613
+      },
+      "width": 750,
+      "height": 510
+    },
+    {
+      "label": "Cabane",
+      "slug": "cabane",
+      "pos": {
+        "x": 186,
+        "y": 3411
+      },
+      "width": 170,
+      "height": 170
+    },
+    {
+      "label": "Atelier de bûcheron",
+      "slug": "atelier_de_bucheron",
+      "pos": {
+        "x": 3642,
+        "y": 1715
+      },
+      "width": 530,
+      "height": 300
+    }
+  ]
+}

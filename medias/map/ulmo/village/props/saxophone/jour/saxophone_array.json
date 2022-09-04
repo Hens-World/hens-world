@@ -1,0 +1,228 @@
+{"frames": [
+
+{
+	"filename": "saxophone_00.png",
+	"frame": {"x":2,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_01.png",
+	"frame": {"x":2,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_02.png",
+	"frame": {"x":2,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_03.png",
+	"frame": {"x":2,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_04.png",
+	"frame": {"x":82,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_05.png",
+	"frame": {"x":82,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_09.png",
+	"frame": {"x":82,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_10.png",
+	"frame": {"x":82,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_06.png",
+	"frame": {"x":162,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_07.png",
+	"frame": {"x":162,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_08.png",
+	"frame": {"x":162,"y":2,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_11.png",
+	"frame": {"x":2,"y":76,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_23.png",
+	"frame": {"x":2,"y":76,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_12.png",
+	"frame": {"x":82,"y":76,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_13.png",
+	"frame": {"x":82,"y":76,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_14.png",
+	"frame": {"x":82,"y":76,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_15.png",
+	"frame": {"x":82,"y":76,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_16.png",
+	"frame": {"x":162,"y":76,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_17.png",
+	"frame": {"x":162,"y":76,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_22.png",
+	"frame": {"x":162,"y":76,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_18.png",
+	"frame": {"x":2,"y":150,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_19.png",
+	"frame": {"x":2,"y":150,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_20.png",
+	"frame": {"x":2,"y":150,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "saxophone_21.png",
+	"frame": {"x":2,"y":150,"w":78,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":72},
+	"sourceSize": {"w":78,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "saxophone.png",
+	"format": "RGBA8888",
+	"size": {"w":242,"h":224},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:53e8f3106ef735d8d5b76935a4774f70:8f3c1ddff800942da3386ea502fd4917:bc27743d3de6535c203cf8c7e360034c$"
+}
+}

@@ -1,0 +1,153 @@
+.perso-profil {
+  &.show {
+    .profil-container {
+      z-index: @layerFiche;
+      opacity: 1;
+      right: 0;
+      top: 0;
+    }
+  }
+  .profil-container {
+    position: absolute;
+    //width: @contentWidth;
+    .fullHeight(0px);
+    z-index: @layerHidden;
+    opacity: 0;
+    background: #151515;
+    right: -200px;
+    transition: all 0.4s;
+    .close {
+      position: absolute;
+      left: -35px;
+      width: 35px;
+      top: 15px;
+      cursor: pointer;
+      z-index: @layerDefault;
+      height: 40px;
+      border-radius: 5px 0 0 5px;
+      background-image: url("/medias/map/ui/right.png");
+      background-color: #222;
+      transition: all 0.2s;
+      &:hover {
+        left: -45px;
+        width: 45px;
+      }
+    }
+    .avatar-container {
+      background: black;
+      width: 200px;
+      .fullHeight(0px);
+      float: left;
+      overflow: hidden;
+    }
+    .content-container {
+      width: 600px;
+      float: left;
+      .title-bar {
+        width: inherit;
+        min-height: 70px;
+        background: #292929;
+        font-size: 27em;
+        position: relative;
+
+        .village {
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .link-contrib {
+          position: absolute;
+          display: block;
+          right: 7px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 45px;
+          height: 45px;
+          border-radius: 5px;
+          line-height: 45px;
+          font-size: 1.5em;
+          vertical-align: middle;
+          cursor: pointer;
+          transition: background 0.3s;
+
+        }
+        .char-name {
+          display: inline-block;
+          width: 100%;
+          font-family: 'Wire One';
+          font-size: 1.7em;
+        }
+        .suffixe {
+          margin-top: -2px;
+          font-style: italic;
+          width: 100%;
+          font-size: 0.60em;
+        }
+      }
+
+      .onglet {
+        float: left;
+        width: 100%;
+      }
+
+      .fiche {
+        .fiche-container {
+          .display-fiche {
+            width: 100%;
+            background: @inputDark;
+            overflow-y: auto;
+            transition: all 0.1s;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            opacity: 1;
+            z-index: @layerFiche;
+            box-sizing: border-box;
+
+            .mCSB_container {
+              margin-right: 0px;
+            }
+            .mCSB_scrollTools_vertical {
+              right: -4px;
+            }
+            .title {
+              font-size: 35em;
+              font-family: 'Wire One', sans-serif;
+              margin-bottom: 20px;
+            }
+
+            .content-fiche {
+              background: @inputDark;
+              padding: 20px 40px;
+              box-sizing: border-box;
+
+              .fiche-field {
+                width: 100%;
+                display: inline-block;
+                margin-bottom: 7px;
+                font-size: 12em;
+                .label {
+                  margin-right: 5px;
+                }
+                .value {
+                  font-style: italic;
+                }
+              }
+              .line {
+                width: 470px;
+                height: 2px;
+                background: white;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

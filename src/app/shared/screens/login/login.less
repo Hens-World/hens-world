@@ -1,0 +1,53 @@
+@media (max-width: @mobileMaxWidth) {
+  body .page-container .main-column .login-container {
+    background-color: @black;
+    .form-container {
+      padding: 20px 10px;
+
+      .title {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.login-container {
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+
+  .form-container {
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10%;
+    background: @headerDark;
+    padding: 30px;
+    box-sizing: border-box;
+    max-width: 720px;
+
+    .title {
+      font-size: 4em;
+      font-family: 'Wire One', sans-serif;
+      line-height: 1;
+      margin-bottom: 25px;
+
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      button {
+        width: 20%;
+        font-size: 1.4em;
+        min-width: 120px;
+        margin-top: 18px;
+        align-self: center;
+      }
+    }
+  }
+}

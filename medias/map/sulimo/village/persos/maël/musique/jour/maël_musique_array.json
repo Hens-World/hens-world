@@ -1,0 +1,156 @@
+{"frames": [
+
+{
+	"filename": "mael_musique0000.png",
+	"frame": {"x":0,"y":0,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0001.png",
+	"frame": {"x":42,"y":0,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0002.png",
+	"frame": {"x":84,"y":0,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0003.png",
+	"frame": {"x":0,"y":76,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0004.png",
+	"frame": {"x":42,"y":76,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0005.png",
+	"frame": {"x":84,"y":76,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0006.png",
+	"frame": {"x":0,"y":152,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0007.png",
+	"frame": {"x":42,"y":152,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0008.png",
+	"frame": {"x":84,"y":152,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0009.png",
+	"frame": {"x":0,"y":228,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0010.png",
+	"frame": {"x":42,"y":228,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0011.png",
+	"frame": {"x":84,"y":228,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0012.png",
+	"frame": {"x":0,"y":304,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0013.png",
+	"frame": {"x":42,"y":304,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0014.png",
+	"frame": {"x":84,"y":304,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mael_musique0015.png",
+	"frame": {"x":0,"y":380,"w":42,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":76},
+	"sourceSize": {"w":42,"h":76},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "maël_musique.png",
+	"format": "RGBA8888",
+	"size": {"w":126,"h":456},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7586c5037ff8d6a10e186a556afb3e2e:581dc3830dab3e34b327872dca018e75:e05df67220f82b8dc53a5bad1aa55dc7$"
+}
+}

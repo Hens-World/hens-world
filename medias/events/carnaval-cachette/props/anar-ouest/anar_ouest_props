@@ -1,0 +1,30 @@
+{
+      name: 'Bouche d'égout',
+      filename: '1.png',
+      width: 42,
+      height: 24
+    },
+{
+      name: 'Lampadaire',
+      filename: '2.png',
+      width: 19,
+      height: 103
+    },
+{
+      name: 'Arbuste',
+      filename: '3.png',
+      width: 47,
+      height: 85
+    },
+{
+      name: 'Banc',
+      filename: '4.png',
+      width: 50,
+      height: 47
+    },
+{
+      name: 'Dino à écailles discret',
+      filename: '5.png',
+      width: 94,
+      height: 118
+    }

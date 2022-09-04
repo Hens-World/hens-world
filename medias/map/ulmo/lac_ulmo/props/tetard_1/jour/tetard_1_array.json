@@ -1,0 +1,204 @@
+{"frames": [
+
+{
+	"filename": "tetards0000.png",
+	"frame": {"x":0,"y":0,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0001.png",
+	"frame": {"x":0,"y":0,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0002.png",
+	"frame": {"x":0,"y":79,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0003.png",
+	"frame": {"x":0,"y":79,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0004.png",
+	"frame": {"x":0,"y":158,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0005.png",
+	"frame": {"x":0,"y":158,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0006.png",
+	"frame": {"x":0,"y":237,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0007.png",
+	"frame": {"x":0,"y":237,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0008.png",
+	"frame": {"x":0,"y":316,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0009.png",
+	"frame": {"x":0,"y":316,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0010.png",
+	"frame": {"x":0,"y":395,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0011.png",
+	"frame": {"x":0,"y":395,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0012.png",
+	"frame": {"x":0,"y":474,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0013.png",
+	"frame": {"x":0,"y":474,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0014.png",
+	"frame": {"x":0,"y":553,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0015.png",
+	"frame": {"x":0,"y":553,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0016.png",
+	"frame": {"x":0,"y":632,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0017.png",
+	"frame": {"x":0,"y":632,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0018.png",
+	"frame": {"x":0,"y":711,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0019.png",
+	"frame": {"x":0,"y":711,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0020.png",
+	"frame": {"x":0,"y":790,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0021.png",
+	"frame": {"x":0,"y":790,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0022.png",
+	"frame": {"x":0,"y":869,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+},
+{
+	"filename": "tetards0023.png",
+	"frame": {"x":0,"y":869,"w":98,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":79},
+	"sourceSize": {"w":98,"h":79}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tetard_1.png",
+	"format": "RGBA8888",
+	"size": {"w":98,"h":948},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cbc95c58ddc642dfe0d30005729db71f:c412be5bfa18e7614354ac6a086f52f9:500927f9fadf9d5f7eded926d4338a85$"
+}
+}

@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "char_wilwar1.png",
+	"frame": {"x":0,"y":0,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+},
+{
+	"filename": "char_wilwar2.png",
+	"frame": {"x":253,"y":0,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+},
+{
+	"filename": "char_wilwar3.png",
+	"frame": {"x":0,"y":213,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+},
+{
+	"filename": "char_wilwar4.png",
+	"frame": {"x":253,"y":213,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+},
+{
+	"filename": "char_wilwar5.png",
+	"frame": {"x":0,"y":426,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+},
+{
+	"filename": "char_wilwar6.png",
+	"frame": {"x":253,"y":426,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+},
+{
+	"filename": "char_wilwar7.png",
+	"frame": {"x":0,"y":639,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+},
+{
+	"filename": "char_wilwar8.png",
+	"frame": {"x":253,"y":639,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+},
+{
+	"filename": "char_wilwar9.png",
+	"frame": {"x":0,"y":852,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+},
+{
+	"filename": "char_wilwar10.png",
+	"frame": {"x":253,"y":852,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+},
+{
+	"filename": "char_wilwar11.png",
+	"frame": {"x":0,"y":1065,"w":253,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":213},
+	"sourceSize": {"w":253,"h":213}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "char_wilwar.png",
+	"format": "RGBA8888",
+	"size": {"w":506,"h":1278},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4278f8ff00c2d4013c2bb52d230ac13b:3971194dbb3c47c5081830dd8399b495:78eb4f8cc0e2706b7674103248072ff8$"
+}
+}

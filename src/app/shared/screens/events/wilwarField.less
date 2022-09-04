@@ -1,0 +1,108 @@
+.wilwar-field {
+  width: @contentWidth;
+  box-sizing: border-box;
+  position: relative;
+  background-image: url(/medias/events/equinoxe-printemps/map_hexagonal_texture.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  margin-left: -35px;
+  canvas {
+    margin: 0;
+    display: block;
+    padding: 0;
+  }
+  img {
+    display: block;
+
+  }
+  &__close {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('/medias/home/arrow-up.png');
+    transform: rotate(270deg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -60px;
+    top: 8px;
+    opacity: .7;
+    background-size: 28px 28px;
+    background-position: 6px 6px;
+    border-radius: 50%;
+    transition: .15s;
+    &:hover{
+      transition: .25s;
+      opacity: 1;
+      background-color: rgba(255,255,255,.3);
+    }
+  }
+  &__frange {
+    pointer-events: none;
+    @frangeWidth: (@contentWidth * .03125);
+    @frangeHeight: (@contentWidth * 9 / 16 * .055555);
+    position: absolute;
+    width: (@contentWidth + @frangeWidth * 2);
+    left: (-@frangeWidth);
+    top: (-@frangeHeight);
+  }
+  &__container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  &__counter {
+    position: absolute;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.7em;
+    align-items: center;
+    background-color: rgba(10,10,10,.2);
+    border-radius: 5px;
+    padding:5px;
+    left: 15px;
+    top: 15px;
+    display: flex;
+    font-weight: bold;
+    img {
+      height: 30px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.wilwar-field-ui {
+  position: relative;
+  margin-left: 30px;
+  background-color: @black !important;
+  .titre {
+    background-color: @headerDark;
+    font-size: 2.7em;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 18px;
+    margin-bottom: 10px;
+  }
+  .temps-restant {
+    padding: 12px;
+    margin-bottom: 12px;
+    .temps {
+      font-size: 1.5em;
+    }
+    .info {
+      font-size: 1.4em;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-style: italic;
+    }
+  }
+  .info-unit {
+    background-color: @buttonDark;
+    padding: 10px;
+    display: flex;
+    font-size: 1.2em;
+    margin-bottom: 3px;
+    justify-content: center;
+    span {
+      display: inline-block;
+      margin-right: .3em;
+    }
+  }
+}

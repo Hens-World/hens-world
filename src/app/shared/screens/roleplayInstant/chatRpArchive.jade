@@ -1,0 +1,29 @@
+.page-container.archive-element
+  .main-column(ng-show="roleplay")
+    .crp__banner(class="crp__banner--{{roleplay.type}}" style="background-image:url('{{base}}tchat/locations/{{villages[roleplay.village]}}/{{locations[roleplay.village][roleplay.location]}}_on.jpg');")
+      h1 {{roleplay.title}}
+    .crp__message-list
+      .crp__message-element(ng-repeat="msg in roleplay.messages track by $index")
+        .crp__message-profil(ng-if="msg.author" class="other-user {{villages[msg.author.chara.village]}}")
+          .crp__message-avatar(style="background-image:url({{msg.author.chara.avatar}})")
+          span.crp__message-name.font-village {{msg.author.chara.prenom}}
+          .link.link-hover(ng-click="showFiche(msg.author)") Fiche de personnage
+        .triangle(ng-if="msg.author")
+          svg(width="25" height="50")
+            path(fill='#333',
+            stroke='#333',
+            stroke-width='1',
+            d='M25,10 0,30 25,50')
+        .crp__message-container.other-user(class="{{msg.author.meta.village}}" ng-if="msg.author" )
+          span(ng-bind-html="msg.message")
+        div.other-user.crp__event-wrapper(ng-if="!msg.author" class="{{villages[roleplay.village]}}")
+          .crp__event
+            span {{msg.message}}
+
+
+  .side-column
+    span(class="{{villages[roleplay.village]}} other-user")
+      a.go-to-button.fond-village.hover(href="map/{{villages[roleplay.village]}}/village/{{generals[roleplay.village]}}" )
+        span Accéder au lieu :
+        br
+        span.loc(ng-bind-html="names[roleplay.village]")

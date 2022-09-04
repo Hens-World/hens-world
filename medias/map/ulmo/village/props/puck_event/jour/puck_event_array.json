@@ -1,0 +1,124 @@
+{"frames": [
+
+{
+	"filename": "puck1.png",
+	"frame": {"x":0,"y":0,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck2.png",
+	"frame": {"x":0,"y":62,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck3.png",
+	"frame": {"x":0,"y":124,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck4.png",
+	"frame": {"x":0,"y":186,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck5.png",
+	"frame": {"x":0,"y":248,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck6.png",
+	"frame": {"x":0,"y":310,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck7.png",
+	"frame": {"x":0,"y":372,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck8.png",
+	"frame": {"x":0,"y":434,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck9.png",
+	"frame": {"x":0,"y":496,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck10.png",
+	"frame": {"x":0,"y":558,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck11.png",
+	"frame": {"x":0,"y":620,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck12.png",
+	"frame": {"x":0,"y":682,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck13.png",
+	"frame": {"x":0,"y":744,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+},
+{
+	"filename": "puck14.png",
+	"frame": {"x":0,"y":806,"w":22,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":62},
+	"sourceSize": {"w":22,"h":62}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "puck_event.png",
+	"format": "RGBA8888",
+	"size": {"w":22,"h":868},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:61065004e852139daa88bdc48f9177fd:ec1fb16747bf95b169da526642d95873:f6f73a6c67922f7d7ee00e2c76a98b49$"
+}
+}

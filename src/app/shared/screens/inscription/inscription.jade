@@ -1,0 +1,17 @@
+.page-container.no-side
+  .main-column
+    .main-column__content.inscription-container
+      .form-container
+        .title S'inscrire et rejoindre le monde de Hens !
+        form(ng-submit='register()' name="register-form")
+          field(type='text', value='registerForm.accountName', field='accountName', label='Pseudo', required='true', placeholder='Peut contenir lettres, chiffres, ainsi que les symboles - et _')
+          field(type='email', value='registerForm.email', field='register-email', label='E-mail', placeholder='email@example.com', required='true')
+          field(type='password', value='registerForm.password', field='password', label='Mot de passe', placeholder='Le mot de passe doit contenir au moins 7 caractères', required='true')
+          field(type='password', value='registerForm.passwordConfirm', field='passwordConfirm', label='Confirmation', placeholder='Confirmez votre mot de passe', required='true')
+          div(style='display: flex; align-items: stretch; justify-content: center')
+            .checkbox(ng-click='charteRead = !charteRead', ng-class="{'checked': charteRead}")
+              .label
+                span J'ai lu et j'accepte la
+            a(href='/reglement', target='_blank', style='display:flex; align-items: center')  charte du site
+            div(style='display: flex; align-items: center') .
+          button.button.button--meaty.fond-village.hover(type='submit') S'inscrire

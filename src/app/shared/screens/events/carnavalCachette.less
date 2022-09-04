@@ -1,0 +1,78 @@
+.carnaval-cachette {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    text-align: center;
+    font-family: "Wire One", sans-serif;
+    font-size: 4em;
+    padding: 21px;
+  }
+  &__row {
+    display: flex;
+  }
+  &__join-button {
+    padding: 30px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:before {
+      content: '+';
+      color: @guestNeuter;
+      font-size: 2em;
+      font-weight: bold;
+      padding-right: 5px;
+    }
+    background-color: @darkGray;
+  }
+  &__warning {
+    background-color: @buttonHoverDark;
+    margin: 15px;
+    padding: 10px;
+    font-style: italic;
+  }
+  &__player {
+    text-align: left;
+    padding: 5px 8px;
+    border-bottom: 1px solid @black;
+  }
+  &__column {
+    flex: 0 0 27%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  &__center_column {
+    .padding {
+      padding: 10px;
+      padding-top: 20px;
+    }
+    h3 {
+      font-size: 1.4em;
+      padding: 10px;
+    }
+    flex: 0 0 46%;
+    background-color: @buttonDark;
+  }
+  &__lobby-status {
+    padding: 15px;
+    .time-left {
+      font-size: 1.3em;
+    }
+  }
+}
+
+.sulimo .carnaval-cachette__join-button:before {
+  color: @sulimoNeuter;
+}
+
+.anar .carnaval-cachette__join-button:before {
+  color: @anarNeuter;
+}
+
+.ulmo .carnaval-cachette__join-button:before {
+  color: @ulmoNeuter;
+}
+
+.wilwar .carnaval-cachette__join-button:before {
+  color: @wilwarNeuter;
+}

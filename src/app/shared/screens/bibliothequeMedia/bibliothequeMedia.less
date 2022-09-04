@@ -1,0 +1,339 @@
+.loading-biblio {
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  .ajax-loader {
+    z-index: 10000000;
+    opacity: 0.8;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 20px;
+    font-size: 3.5em;
+    width: 6px;
+    height: 6px;
+    box-shadow: 0 -.4em       0 0 rgba(255, 255, 255, 1),
+      -.28em -.28em 0 0 rgba(255, 255, 255, .75),
+    -.4em 0 0 0 rgba(255, 255, 255, .50),
+    -.28em .28em 0 0 rgba(255, 255, 255, .25);
+    -webkit-animation: .50s ajax-loader-rotate steps(8) infinite;
+    -moz-animation: .50s ajax-loader-rotate steps(8) infinite;
+    animation: .50s ajax-loader-rotate steps(8) infinite;
+  }
+}
+
+bibliotheque-media {
+  width: 100%;
+}
+
+.notification-zone-bm {
+  font-size: 12em;
+
+  &.active {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  overflow: hidden;
+  display: none;
+  margin: 0 12px;
+  height: 40px;
+  .notif-msg {
+    float: left;
+    text-align: center;
+    margin-left: 150px;
+    font-size: 1.1em;
+    line-height: 40px;
+  }
+  .notif-dismiss {
+    font-size: 2em;
+    float: right;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+  }
+}
+
+.bibliotheque-media-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .button--meaty {
+    margin-bottom: 15px;
+  }
+  h1 {
+    font-size: 4em;
+    font-family: 'Wire One', sans-serif;
+  }
+  h2 {
+    font-size: 1.3em;
+    width: 80%;
+    color: #ccc;
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .file-upload {
+    padding: 20px;
+  }
+  .media-list {
+    --columns: 3;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    padding: 0 9px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    height: var(--mediaListHeight, 15000px);
+
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      flex-basis: 100%;
+      width: 0;
+      order: 2;
+    }
+
+    &.mobile {
+      &::after {
+        content: unset;
+      }
+
+      .media-unit {
+
+        &:nth-child(2n+1) {
+          order: 1;
+          margin-right: 9px;
+        }
+        &:nth-child(2n) {
+          order: 2;
+          margin-right: 9px;
+        }
+      }
+    }
+
+
+    &:not(.mobile) {
+      .media-unit {
+        &:nth-child(3n+1) {
+          order: 1;
+          margin-right: 9px;
+        }
+        &:nth-child(3n+2) {
+          order: 2;
+          margin-right: 9px;
+        }
+        &:nth-child(3n) {
+          order: 3;
+        }
+      }
+    }
+
+
+    .media-unit {
+      display: block;
+      width: calc((100% - 9px * (var(--columns) - 1)) / var(--columns));
+      padding: 10px;
+      box-sizing: border-box;
+      background: @black;
+      margin-bottom: 9px;
+      position: relative;
+
+      input {
+        font-size: 1.2em;
+        width: 100%;
+      }
+
+      .button {
+        font-size: 1.2em;
+        width: 100%;
+      }
+
+      &:hover {
+        .fa {
+          opacity: .7;
+        }
+      }
+
+      .fa {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        font-size: 2.5em;
+        opacity: .05;
+        cursor: pointer;
+        text-shadow: 0 0 10px rgba(10,10,10,.7);
+        margin-top: 5px;
+        transition: all .2s;
+
+        @media (max-width: @mobileMaxWidth) {
+          opacity: .7;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &.fa-pencil {
+          right: 15px;
+        }
+
+        &.fa-trash {
+          right: 50px;
+
+          &:hover{
+            color: @anarNeuter;
+          }
+        }
+      }
+
+      &.selected {
+        border-width: 2px;
+        padding: 8px;
+        border-style: solid;
+      }
+      .title {
+        font-size: 1.4em;
+        margin-bottom: 5px;
+      }
+      .link {
+        background: @black;
+        color: #ccc;
+        border: 1px solid @middleDark;
+        padding: 2px;
+        margin: 0;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+      }
+    }
+    .image {
+      width: 100%;
+    }
+    .link {
+      width: 100%;
+    }
+  }
+}
+
+.media-unit.selected {border-color: @guestNeuter}
+
+.sulimo .media-unit.selected {border-color: @sulimoNeuter}
+
+.ulmo .media-unit.selected {border-color: @ulmoNeuter}
+
+.wilwar .media-unit.selected {border-color: @wilwarNeuter}
+
+.anar .media-unit.selected {border-color: @anarNeuter}
+
+.upload-container {
+  width: 100%;
+  box-sizing: border-box;
+  background: #0a0a0a;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  form {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: @mobileMaxWidth) {
+      flex-direction: column;
+    }
+
+    file-field {
+      margin-right: 15px;
+    }
+  }
+  .submit {
+    display: inline-block;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 1.2em;
+  }
+  .reminder {
+    margin-top: 3px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: @darkGray;
+  }
+  .upload-status {
+
+    .upload-bar {
+      width: 250px;
+      height: 9px;
+      position: relative;
+      background-color: @contentDark;
+      border-radius: 4px;
+
+      .upload-bar-fill {
+        height: 8px;
+        min-width: 4px;
+        border-radius: 4px 0 0 4px;
+        width: 10px;
+      }
+    }
+    .uploadPercent {
+      margin-top: 3px;
+      font-size: 1.3em;
+    }
+  }
+}
+
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.upload-modal {
+  position: fixed;
+  background-color: rgba(10, 10, 10, .8);
+  width: 100%;
+  z-index: 105;
+  font-size: 12em;
+  .fullHeight(0px);
+  top: @HH;
+  overflow: auto;
+  h1 {
+    font-family: "Wire One", sans-serif;
+    font-size: 4em;
+  }
+  &__content {
+    width: 700px;
+    padding: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    background-color: @buttonDark;
+  }
+}

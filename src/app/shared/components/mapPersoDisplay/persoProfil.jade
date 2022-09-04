@@ -1,0 +1,52 @@
+.profil-container.other-user(class="{{author.village}}")
+  .avatar-container()
+    img.avatar-img(src="{{profilImgLink}}")
+  .close(ng-click="hideProfile()")
+  .content-container
+    .title-bar
+      .village()
+      a.link-contrib.fond-village.hover(href="profil/{{author.ID}}" ) +
+      .char-name(ng-bind-html="personnage.prenom + ' ' + personnage.nom")
+      .suffixe.font-village(ng-bind-html="personnage.suffixe")
+    .onglet.fiche
+      .fiche-container
+        .display-fiche()
+          .content-fiche
+            .fiche-field
+              span.label.font-village() Prénom:
+              span.value(ng-bind-html="personnage.prenom")
+            .fiche-field
+              span.label.font-village() Nom:
+              span.value(ng-bind-html="personnage.nom")
+            .fiche-field
+              span.label.font-village() Blason:
+              span.value(ng-bind-html="personnage.suffixe")
+            .fiche-field
+              span.label.font-village() Âge:
+              span.value(ng-bind-html="personnage.age")
+            .fiche-field
+              span.label.font-village() Village:
+              span.value(ng-bind-html="villages[personnage.village]")
+            .line
+            .fiche-field
+              span.label.font-village() Histoire:
+              span.value(ng-bind-html="personnage.histoire")
+            .line
+            .fiche-field
+              span.label.font-village() Caractère:
+              span.value(ng-bind-html="personnage.caractere")
+            .fiche-field
+              span.label.font-village() Particularités:
+              span.value(ng-bind-html="personnage.particularite")
+            .line
+            .fiche-field
+              span.label.font-village() Pouvoir:
+              span.value(ng-bind-html="personnage.pouvoir")
+    //- .onglet.apparitions
+    //-   .titre
+    //-   .apparition-list()
+    //-     .apparition-unit(ng-repeat="post in apparitionPostList")
+    //-       .title(ng-bind-html="post.title")
+    //-       .author(ng-bind-html="post.author.username")
+    //-       .date(ng-bind-html="post.formDate")
+    //-       .image(ng-bind-html="")

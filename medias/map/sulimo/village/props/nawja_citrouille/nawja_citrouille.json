@@ -1,0 +1,24 @@
+  {
+      "label": "clarinet_equinoxe",
+      "width": 33,
+      "icone": "exclamation",
+      "action": "open_equinoxe_instrument",
+      "height": 66,
+      "center": {
+        "x": 11,
+        "y": 65
+      },
+      "avail": [
+        {
+          "fromT": 0,
+          "to": 23,
+          "event": "equinoxe-automne"
+        }
+      ],
+      "list": [
+        {
+          "x": 2314,
+          "y": 2714
+        }
+      ]
+    }

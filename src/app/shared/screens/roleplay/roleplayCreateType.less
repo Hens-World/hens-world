@@ -1,0 +1,42 @@
+.rp-create-type{
+  display: flex;
+  position: relative;
+  height:100%;
+  font-size: 12em;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/medias/fond_rp.jpg');
+  background-size: cover;
+  @media (max-width: @mobileWidth){
+    flex-direction: column;
+  }
+  &__panel{
+    margin: 5px;
+    flex: 1 1 50%;
+    min-height: 250px;
+    background-color: rgba(60, 60, 60, .8);
+    border: 1px solid @middleDark;
+    transition: all .2s;
+    max-width: 400px;
+    cursor:pointer;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    h2{
+      background-color: rgba(10, 10, 10, .2);
+      padding: 5px;
+      font-family: 'Wire One', sans-serif;
+      font-size: 3.5em;
+      text-align: center;
+    }
+
+  }
+  &__text{
+    padding: 20px;
+    flex: 1 1 auto;
+    display: flex;
+    //align-items: center;
+    //justify-content: center;
+  }
+}

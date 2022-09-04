@@ -1,0 +1,96 @@
+.ruling-scroller{
+  width: 100%;
+  .fullHeight(0px);
+  overflow: auto;
+  font-size: 12em;
+
+}
+.reglemen-container{
+  width: 800px;
+  position: relative;
+  left: 50%;
+  margin-left: -400px;
+  background: @contentDark;
+  padding-bottom: 50px;
+}
+.ruling-container{
+  padding: 17px;
+
+  p{
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1em;
+    letter-spacing: 0.08em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+  }
+  h1{
+    font-family: 'Wire One';
+    font-size: 5em;
+  }
+  h2{
+    font-size: 4.1em;
+    font-family: 'Wire One';
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    margin-top: 40px;
+  }
+  .ok-list{
+    text-align: left;
+    strong:before{
+      display: inline-block;
+      margin: 10px;
+      content: 'OK';
+      color: @wilwarNeuter;
+      font-size: 1.2em;
+    }
+    b:before{
+      content:'PAS OK';
+      display: inline-block;
+      margin: 10px;
+      color: @anarNeuter;
+      font-size: 1.2em;
+    }
+  }
+  &.faq-container{
+    .question-container{
+      background: @buttonDark;
+      text-align: left;
+      margin-bottom: 15px;
+      border: 1px solid black;
+      &:hover{
+        h3{
+          background: @middleDark;
+        }
+      }
+      h3{
+        font-size: 1.6em;
+        cursor: pointer;
+        margin-bottom: 5px;
+        background: @lowerDark;
+        padding: 5px;
+        padding-left: 15px;
+      }
+      .paragraph{
+        display: none;
+        padding: 20px;
+        text-indent: 15px;
+        overflow: hidden;
+        text-align: justify;
+        font-size: 1em;
+        letter-spacing: 0.08em;
+        line-height: 1.5em;
+        ul{
+          margin: 5px;
+          margin-left: 15px;
+        }
+      }
+      &.active{
+        .paragraph{
+          display: block;
+        }
+      }
+    }
+  }
+}

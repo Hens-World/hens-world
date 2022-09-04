@@ -1,0 +1,75 @@
+.musique-article {
+  padding: 40px 20px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  .post-like {
+    top: -15px;
+  }
+  &__miniature {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center top;
+  }
+  &__blurred-bg-container {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__blurred-bg {
+    width: 110%;
+    height: 110%;
+    margin-left: -5%;
+    margin-top: -2.5%;
+    filter: blur(30px) brightness(.55);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: @contentDark;
+    &.no-blur {
+      filter: brightness(.5);
+    }
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+
+    .description-container {
+      padding: 9px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .description {
+        max-width: 900px;
+        text-align: left;
+        min-width: 0;
+        flex: 0 1 auto;
+      }
+    }
+  }
+  &__timer {
+    flex: 1 1 auto;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+}
+
+.article-player {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}

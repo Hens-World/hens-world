@@ -1,0 +1,75 @@
+.charte-container(ng-show="showCharte")
+  .fond(ng-click="closeCharte()")
+  .wrapper
+    .close.font-village.hover(ng-click="closeCharte()") x
+    .paragraph
+      h2   Informations & Règles
+      h3 Qu’est-ce que le jeu de rôle instantané?
+
+      p Le jeu de rôle instantané sur Hens World prend ses sources dans le jeu de rôle textuels. Ce dernier est un jeu par écrit, qu’on réalise en ligne ( ou par écrit sur papier ) avec un correspondant. Chacun incarne un personnage pendant cette partie de jeu derôles, le but et de se répondre, chacun son tour, et de construire une histoire sur ses personnages par écrit, en tenant compte des précédents messages.
+      p Le jeu de rôle instantané est très similaire, au détail près qu’il se déroule de façon plus spontanée. Le temps est limité, et vous avez le nombre d’heures choisies pour finir votre partie et votre petite aventure. Ce qui vous force à écrire de façon synthétique et d’être concentré sur votre partie.
+
+      h3 Comment cela fonctionne?
+
+      p Choisissez le village dans lequel vous souhaitez jouer, il y a quatre environnements par village et donc seize environnements différents en tout. Une fois le village choisit, plusieurs options viennent à vous:
+      ul
+        li
+          b Le titre:
+          span titrer sa partie de jeu de rôle, c’est important! Cela englobe votre aventure.
+        li
+          b Rendre une salle publique ou privée:
+          span la partie publique est ouverte à tout joueurs, néanmoins, une fois la partie démarrée, plus personne ne peut la rejoindre. La salle privée est réservée à vous et les personnes que vous invitez.
+        li
+          b Nombre de participants:
+          span si votre salle est publique, ceci désigne le nombre maximum de personnes que vous souhaitez voir rejoindre votre partie.
+        li
+          b Durée de la partie:
+          span le temps maximum que durera votre partie, vous ne pouvez pas excéder 10 heures.
+        li
+          b Environnement:
+          span au-delà du design, l’environnement influence les évènements aléatoires. Il y a une liste d’évènements aléatoires différents selon les environnements. Ces derniers sont là pour pimenter vos aventures, vous avez la possibilité de lancer un évènement aléatoire par partie pour vous donner des directions d’écriture, ou pour travailler votre improvisation.
+
+      h3 Quelles sont les actions disponibles à l'intérieur d’une partie?
+
+      p Il y a plusieurs actions que vous pouvez réaliser une fois lancé dans votre partie, voici ce qui constitue la partie de jeu de rôle:
+
+      ul
+        li
+          b Votre zone de texte pour le jeu de rôle :
+          span là où vous écrivez votre message dans la peau de votre personnage. Votre message sera posté en tant que votre personnage ( et non pas vous, et votre pseudo ). Vous avez plusieurs possibilités d’action pour éditer votre texte. Le design est le même pour tout le monde ( sauf la couleur de la parole ) pour harmoniser et égaliser tous les joueurs.
+        li
+          b Le tchat public:
+          span ce tchat n’est visible que par vous et les membres de votre partie. Il est là pour discuter de la tournure que prendra votre partie, ou les décisions communes à prendre, telle que “ faire une pause “, “ terminer la partie “ ou lancer un évènement aléatoire.
+        li
+          b Faire une pause:
+          span si un des joueurs doit s’absenter il est possible de voter pour une pause. Celle-ci ne gaspillera donc pas le temps que vous avez décidé pour votre partie. En revanche elle n’est pas infinie, et elle aussi a un “timmer”.
+        li
+          b Terminer la partie:
+          span pour terminer la partie, il faut que tous les joueurs soient d’accords. Si c’est le cas, celui qui a créé la partie pourra décider si, oui ou non, vous souhaitez sauvegarder votre role play. Cette action le rendra visible à tous les autres membres du site via votre profil, si vous ne souhaitez pas la rendre publique, sachez néanmoins que toutes les parties de jeu de rôle sont conservés par les administrateurs.
+        li
+          b Évènements aléatoires:
+          span ces évènements changent selon l’environnement de votre salle. Vous n’êtes pas obligé de les utiliser, en revanche sachez qu’il n’est pas possible d’en lancer plus d’un par partie. Ces évènements peuvent être aussi dramatiques d'absurdes! Écrits par la communauté de Hens World, ils sont là pour chambouler votre partie.
+
+      h3 Règles de conduite
+
+      p Il y a quelques règles de conduite essentielles pour construire un agréable endroit de rôle play. Il est important que tous les participants se respectent les uns et les autres pour une bonne entente et un bon cadre de jeu. Restez diplomates et écoutez-vous les uns et les autres. Soyez compréhensibles, faites un effort d’écriture, vous n’avez pas à faire un sans faute, bien entendu, mais né faites pas mal aux yeux de vos partenaires de jeux en écrivant en abrégé! ( sauf sur le tchat global, lâchez-vous! )
+      br
+      p Il n’y a pas de thèmes que nous souhaitons censurer sur Hens World. Néanmoins, soyez vigilants et préventifs car tous les âges sont représentés ici! Si vous souhaitez vous engager dans une partie de jeu de rôle au contenu mature, comprenant violence ou contenu sexuel, tâchez de le notifier dans votre titre d’un [-16] ou [-18].
+      br
+      p Les parties de jeu de rôle ne sont pas faites pour être des salons de discussions, cet outil doit servir et sert uniquement au jeu de rôle textuels. Si vous vous lancez dans une salle pour discuter en privé avec quelqu’un, sans établir une véritable partie rôle play, sachez que nous le saurons quoi qu’il arrive, et qu’il pourra y avoir des sanctions! Oui, ici c’est pour jouer!
+      p Alors à vous les claviers, et amusez-vous sur ce nouvel outil de partage! :)
+
+
+.crp-home-container
+  h1.fond-village Bienvenu dans le Jeu de rôle instantané !
+  .crp-wrapper
+    .announcement-container(annonces)
+    .presentation
+      .rp-video
+        iframe.iframe( src='https://www.youtube.com/embed/aIPlHq7padM', frameborder='0', allowfullscreen='', rel='0')
+
+      .charte-bt.button.fond-village(ng-click="openCharte()") Consulter la charte
+      .village-list
+        .village.other-user(ng-repeat="village in villages" class="{{village}}" ng-click="joinVillage($index)" style="background:url('{{base}}tchat/locations/{{village}}/village_on.jpg') no-repeat center;background-size:cover;")
+          .background(style="background:url('{{base}}tchat/locations/{{village}}/village_off.jpg') no-repeat center;background-size:cover;" )
+          .label {{village}}

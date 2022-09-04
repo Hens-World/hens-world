@@ -1,0 +1,207 @@
+.red {
+  color: red !important;
+}
+
+.ta-scroll-window {
+  background: @black;
+}
+
+.next-page-bt {
+  &::after {
+    content: 'Changement de page';
+  }
+}
+
+.next-page-symbol {
+  font-size: 20px;
+  background: @anarNeuter;
+  text-align: center;
+  pointer-events: none;
+  &:before {
+    content: 'Changement de page';
+  }
+}
+
+.create-post-container {
+  .main-create-container {
+    display: flex;
+     flex-direction: column;
+
+    .common-info {
+      display: none;
+      @media (max-width: @mobileMaxWidth) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .title {
+      font-size: 4em;
+      color: white;
+      width: 100%;
+      font-family: 'Wire One';
+      font-style: inherit;
+      margin-bottom: 20px;
+    }
+    .subtitle {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .validate {
+      width: fit-content;
+      padding: 5px 15px 5px 15px;
+      display: inline-block;
+      font-size: 1.5em;
+      cursor: pointer;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+    .form-container {
+      width: auto;
+      margin: 0 12px;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      vertical-align: top;
+    }
+  }
+}
+
+.toolbar {
+  text-align: left;
+  width: 90%;
+  margin-left: 5%;
+  .toggle {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background: #444;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.image-unit {
+  position: relative;
+  background: #333;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  .label {
+    width: 180px;
+    text-align: left;
+    justify-content: flex-start;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  padding: 20px 5px 5px 5px;
+  .number {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2em;
+    border-radius: 50%;
+    left: -3px;
+    top: -3px;
+    z-index: 5;
+    vertical-align: middle;
+  }
+}
+
+
+.zone-list{
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  .zone-elt {
+    margin: 5px 10px;
+    background-color: @contentDark;
+    padding: 5px 15px;
+    opacity: .7;
+    cursor: pointer;
+    &.active {
+      opacity: 1;
+      background-color: @middleDark;
+    }
+  }
+}
+
+.selected-village {
+  display: flex;
+  height: 55px;
+  align-items: stretch;
+  margin: 10px auto;
+  justify-content: center;
+  .village-close {
+    background-color: @buttonHoverDark;
+    padding: 15px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 1.7em;
+  }
+  .village-name {
+    text-transform: capitalize;
+    padding: 10px;
+    display: flex;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  &:hover{
+    filter: brightness(1.2);
+  }
+  &.sulimo .village-icon{
+    background-image: url(/medias/common/sulimo_icone.png);
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    border: 5px solid @sulimoNeuter;
+    border-right-width: 0;
+  }
+  &.ulmo .village-icon{
+    background-image: url(/medias/common/ulmo_icone.png);
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    border: 5px solid @ulmoNeuter;
+    border-right-width: 0;
+  }
+  &.anar .village-icon{
+    background-image: url(/medias/common/anar_icone.png);
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    border: 5px solid @anarNeuter;
+    border-right-width: 0;
+  }
+  &.wilwar .village-icon{
+    background-image: url(/medias/common/wilwar_icone.png);
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    border: 5px solid @wilwarNeuter;
+    border-right-width: 0;
+  }
+}
+
+.location-part {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: -25px;
+  margin-bottom: 20px;
+  transition: opacity .33s, margin 2s;
+  &.active {
+    height: auto;
+    pointer-events: auto;
+    margin-bottom: 0px;
+    opacity: 1;
+    transition: all .55s;
+    margin-top: 0;
+  }
+}

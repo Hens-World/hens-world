@@ -1,0 +1,11 @@
+.like-list__container(ng-show="likeListCtrl.visible")
+  .like-list__closer(ng-click="likeListCtrl.hideList()")
+  .like-list
+    .like-list__element(ng-repeat="like in likeListCtrl.likes")
+      a(href="/profil/{{like.author.ID}}")
+        avatar(link="like.author.avatar")
+
+      .like-list__info
+        a.like-list__pseudo.other-user(class="{{like.author.village}}" href="/profil/{{like.author.ID}}")
+          span.font-village() {{like.author.display_name}}
+        .like-list__date() {{like.formattedDate}}

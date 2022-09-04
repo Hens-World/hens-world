@@ -1,0 +1,59 @@
+.crp-village-container.other-user(class="{{data.village}}") 
+  .banner.fond-village 
+    .back-bt.link-hover(ng-click="backToHome()")
+    h1 
+      span Bienvenue à {{data.village.capitalizeFirstLetter()}}
+  .container
+    // list of open rooms
+    .open-rooms
+      h2 Salles ouvertes
+      .room(ng-repeat="room in data.rooms" ng-click="joinRoom(room)") 
+        span.location {{locationList[room.locationId]}} 
+        h3.name {{room.name}}
+        span.space-left  {{room.users.length}}/{{room.maxSize}}
+        span  par 
+        span.owner.font-village(class="{{room.owner.meta.village}}") {{room.owner.username}}
+        br
+        span.creationtime Il y a {{room.creationString}}
+        br
+        span.room-status(ng-class="{'open':room.status == 1}") 
+          span(ng-if="room.status == 0") Privé
+          span(ng-if="room.status == 1") Public
+          span(ng-if="room.status == 2") En cours 
+          span(ng-if="room.status > 3") En cours 
+    // creation room form
+    .room-creation
+      h2 Lancer un role play
+      form(ng-submit="createRoom()")
+        //room name
+        .field
+          .label Titre
+          input.form(type="text" placeholder="Nommez votre aventure" ng-model="roomName")        
+        .line
+          // private or public room
+          .switch(ng-click="switchRoomStatus()")
+            .handle(ng-class="{'open': roomOpen,'fond-village':roomOpen}")
+        .member-listing(select-members members="inviteList")
+        .field.big(ng-class="{'hidden':!roomOpen}")
+          .label Participants
+          .slider
+            rzslider(rz-slider-model="roomSpace.value" rz-slider-options="roomSpace.options")
+        .comment.toggle(ng-class="{'show':!roomOpen && inviteList.length == 0}") 
+          | Invitez d'autres rôlistes pour lancer une salle privée!
+        
+        .field.big
+          .label Temps 
+          .slider
+            rzslider(rz-slider-model="roomTime.value" rz-slider-options="roomTime.options")
+        .comment Durée exprimée en heures
+        //- location list 
+        br
+        h3 Environnement
+        span(ng-repeat="loc in locationList" ng-class="{'selected': roomLoca == $index}" class="rp-location"  ng-click="setRoomLoca($index)" style="background:url('{{base}}tchat/locations/{{data.village}}/{{loc}}_on.jpg') no-repeat center;background-size:cover;" )
+          .cover(style="background:url('{{base}}tchat/locations/{{data.village}}/{{loc}}_off.jpg') no-repeat center;background-size:cover;" )
+          .name {{loc.capitalizeFirstLetter()}}
+        input.button.fond-village.submit-room(type="submit" value="Créer")
+      //- .loca(ng-repeat="loc in locationList") {{loc}}
+
+
+    

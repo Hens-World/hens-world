@@ -1,0 +1,38 @@
+.location
+  .line-separator
+  div(ng-show="!locaSearch.village")
+    .subtitle Choisissez la région de votre création
+    .village-list
+      .village-icon.sulimo(ng-class="{'active': locaSearch.village == 'sulimo' || locaSearch.village.length == 0}" ng-click="setSearchVillage('sulimo')")
+      .village-icon.ulmo(ng-class="{'active': locaSearch.village == 'ulmo' || locaSearch.village.length == 0}" ng-click="setSearchVillage('ulmo')")
+      .village-icon.wilwar(ng-class="{'active': locaSearch.village == 'wilwar' || locaSearch.village.length == 0}" ng-click="setSearchVillage('wilwar')")
+      .village-icon.anar(ng-class="{'active': locaSearch.village == 'anar' || locaSearch.village.length == 0}" ng-click="setSearchVillage('anar')")
+  .selected-village(ng-show="locaSearch.village" ng-click="setSearchVillage(null)" class="{{locaSearch.village}} other-user")
+      .village-close x
+      .village-icon
+      .village-name.fond-village {{locaSearch.village}}
+    .line-separator
+  div.location-part(ng-class="{'active': currentList}")
+    .subtitle Choisissez le lieu de votre création
+    .zone-list
+      .zone-elt(ng-repeat="zone in zoneList" ng-class="{'active': activeZone === zone.id || activeZone == void(0)}" ng-click="filterZone(zone)")
+        span {{zone.name}}
+    .field.search-location
+      .label
+        i.fa.fa-search
+      input.form(type="text" ng-model="locaTypeSearch.name")
+    .location-list
+      .loca-unit-wrapper(ng-repeat="loca in currentList | filter:locaTypeSearch" class="{{loca.village.slug}} other-user loca-{{loca.id}}")
+        .location-unit(ng-click="chooseLoca(loca)"  ng-class="{'fond-village':lieu.id == loca.id}")
+          .name {{loca.name}}
+          .detail
+      .info-text(ng-if="currentList.length == 0") Cette zone ne contient pas encore de lieu.
+    .line-separator
+  p.info-text
+    i
+      span Vous n'avez pas d'idée de l'endroit où poster votre création ?
+      br
+      span Pas de soucis, consultez le
+      a.font-village.link.hover(href="/guide-touristique" target="_blank")
+        i  Guide Touristique
+      span .

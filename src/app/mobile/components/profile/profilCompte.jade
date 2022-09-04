@@ -1,0 +1,36 @@
+.profil-compte
+  profile-tabs(personnage-list="personnageList")
+  .user-info.other-user(class="{{user.village}}")
+    .avatar-container
+      .avatar-circle.fond-village.dark( style="background-image:url({{user.avatar}});")
+        .symbole-village(class="{{user.village}}")
+    .info-right-column
+      .title-container.other-user(class="{{user.village}}")
+        .center
+          .title
+            span.span.font-village {{user.display_name}}
+          .domaine(ng-bind-html="user.fiche.domaine")
+        .not-me.right.like(ng-hide="isMe")
+        .me.right.edit(ng-show="isMe")
+          .edit-bt.button.fond-village.hover(ng-click="toggleEdit()")
+            .text Éditer le profil
+      .links-container.other-user(class="{{user.village}}")
+        a.mp.bt-unit(href="messagerie/new?target={{user.display_name}}")
+        a.website.bt-unit(ng-show="user.fiche.website.length > 0" target="_blank" href="{{user.fiche.website}}")
+        a.facebook.bt-unit(ng-show="user.fiche.facebook.length > 0" target="_blank" href="{{user.fiche.facebook}}")
+        a.twitter.bt-unit(ng-show="user.fiche.twitter.length > 0" target="_blank" href="{{user.fiche.twitter}}")
+  .other-user(style="display: contents;" class="{{user.village}}")
+    .is-online.fond-village(ng-class="{'selectable': isMe}" ng-click="showRankSelection()")
+      span() {{user.selectedRank.names[user.pronom]}}
+      .select-rank-form(ng-show="isMe && selectingRank")
+        .selectable-rank(ng-repeat="rank in user.ranks" ng-click="selectRank(rank)" ng-class="{'selected': rank.id == user.selectedRank.id}") {{rank.names[user.pronom]}}
+  .profil-compte__subtitle(ng-class="{'profil-compte__subtitle--open': compteMenuOpened}")
+    .line
+      span {{state.label}}
+      .burger-icon.burger-icon--big(ng-click="toggleCompteMenu()")
+        .line
+        .line
+        .line
+    .burger-content(ng-show="compteMenuOpened")
+      profile-compte-side-menu(ng-click="closeCompteMenu()")
+  profile-compte-content(user="user")

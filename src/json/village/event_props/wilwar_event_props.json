@@ -1,0 +1,193 @@
+{
+  "props": [
+    {
+      "label": "citrouille_1",
+      "width": 23,
+      "height": 21,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 11,
+        "y": 13
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "season": "automne",
+          "dates": [["30-10", "01-11"]]
+        }
+      ],
+      "list": [
+        {
+          "x": 3168,
+          "y": 1140
+        }
+      ]
+    },
+    {
+      "label": "citrouille_2",
+      "width": 25,
+      "height": 18,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 12,
+        "y": 11
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "season": "automne",
+          "dates": [["30-10", "01-11"]]
+        }
+      ],
+      "list": [
+        {
+          "x": 1715,
+          "y": 5934
+        }
+      ]
+    },
+    {
+      "label": "citrouille_3",
+      "width": 21,
+      "height": 21,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 9,
+        "y": 12
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "season": "automne",
+          "dates": [["30-10", "01-11"]]
+        }
+      ],
+      "list": [
+        {
+          "x": 6836,
+          "y": 3666
+        }
+      ]
+    },
+    {
+      "label": "aulne",
+      "width": 26,
+      "height": 76,
+      "icone": "exclamation",
+      "action": "open_equinoxe_printemps",
+      "center": {
+        "x": 13,
+        "y": 74
+      },
+      "avail": [
+        {
+          "fromT": 0,
+          "to": 23,
+          "dates": [["21-03", "22-03"]]
+        }
+      ],
+      "list": [
+        {
+          "x": 6332,
+          "y": 4241
+        }
+      ]
+    },
+    {
+      "label": "citrouille_4",
+      "width": 26,
+      "height": 22,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 12,
+        "y": 9
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "season": "automne",
+          "dates": [["30-10", "01-11"]]
+        }
+      ],
+      "list": [
+        {
+          "x": 4930,
+          "y": 2809
+        }
+      ]
+    },
+    {
+      "label":"voyante",
+      "action": "open_horoscope",
+      "icone": "exclamation",
+      "width":25,
+      "height":63,
+      "center":{
+        "x":13,
+        "y":62
+      },
+      "avail": [
+        {
+          "fromT": 1,
+          "to": 4,
+          "x": 3559,
+          "y": 2701,
+          "season": "hiver",
+          "dates": ["02-01"]
+        },
+        {
+          "fromT": 5,
+          "to": 8,
+          "x": 3828,
+          "y": 810,
+          "season": "hiver",
+          "dates": ["02-01"]
+        },
+        {
+          "fromT": 9,
+          "to": 11,
+          "x": 1615,
+          "y": 4180,
+          "season": "hiver",
+          "dates": ["02-01"]
+        },
+        {
+          "fromT": 12,
+          "to": 15,
+          "x": 5314,
+          "y": 4374,
+          "season": "hiver",
+          "dates": ["02-01"]
+        },
+        {
+          "fromT": 16,
+          "to": 19,
+          "x": 1615,
+          "y": 4180,
+          "season": "hiver",
+          "dates": ["02-01"]
+        },
+        {
+          "fromT": 20,
+          "to": 22,
+          "x": 6119,
+          "y": 1899,
+          "season": "hiver",
+          "dates": ["02-01"]
+        },
+        {
+          "fromT": 23,
+          "to": 0,
+          "x": 7526,
+          "y": 1104,
+          "season": "hiver",
+          "dates": ["02-01"]
+        }
+      ]
+    }
+  ]
+}

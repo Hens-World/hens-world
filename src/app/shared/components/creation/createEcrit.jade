@@ -1,0 +1,31 @@
+.create-ecrit-container.main-create-container(class="{{village}}")
+  h2.title.fond-village Nouvel écrit
+  .form-container
+    .field
+      .label() Titre
+      input.form(placeholder="Le titre de votre création" ng-model="post.title")
+    .field
+      .label() Miniature
+      input.form.upload(placeholder="(optionnel) coller ici le lien de votre miniature" ng-model="post.miniature")
+      media-select-button(type="image" field="post.miniature")
+    .field
+      .label() Type
+      .form-list.upload(placeholder="http://" ng-model="post.miniature")
+        .form-list__element(ng-repeat="type in typeList" ng-class="{'fond-village': chosenType.slug == type.slug}" ng-click="chooseType(type)")
+          span {{type.name}}
+
+    //- .field
+    //-   .label Contenu
+    //-   textarea.form-area#content-post(placeholder="Votre contenu" ng-model="post.content")
+    //- .final-content(ng-bind-html="post.content")
+    .editor(text-angular ng-model="post.content" ta-toolbar="[['h1', 'h2', 'h3', 'p', 'bold', 'italics', 'underline', 'strikeThrough', 'ul', 'ol', 'redo', 'undo', 'clear'],['justifyLeft', 'justifyCenter', 'justifyRight', 'html', 'insertImage','insertLink', 'nextPage']]")
+    .authors-container(new-post-authors  authors="post.authors")
+    new-post-personnages.authors-container(personnages-lies="post.personnagesLies")
+    .common-info
+      .status( ng-click="switchStatus()")
+        div
+          span( ng-class="{'active fond-village':post.status == 'publish'}") Publié
+          span( ng-class="{'active fond-village':post.status == 'draft'}") Brouillon
+      .location-container(new-post-location)
+    .validate.fond-village(ng-click="sendPost()") Valider
+

@@ -1,0 +1,234 @@
+{
+  "label": "ulmo",
+  "sliceSize": 63,
+  "width": 4500,
+  "height": 3508,
+  "speed": 12,
+  "init": {
+    "x": 1050,
+    "y": 780
+  },
+  "miniMap": {
+    "height": 117,
+    "width": 150
+  },
+  "locations": [
+    {
+      "label": "Autour d'Ulmo",
+      "slug": "ulmo-general",
+      "pos": {
+        "x": 2570,
+        "y": 1610
+      },
+      "width": 200,
+      "height": 140
+    },
+    {
+      "id": 1,
+      "label": "Phare de Mélios",
+      "slug": "phare-ulmo",
+      "pos": {
+        "x": 615,
+        "y": 210
+      },
+      "width": 150,
+      "height": 130
+    },
+    {
+      "id": 2,
+      "label": "Bibliothéque",
+      "slug": "bibliotheque-ulmo",
+      "pos": {
+        "x": 1170,
+        "y": 550
+      },
+      "width": 180,
+      "height": 210
+    },
+    {
+      "label": "Le Barrage - Domaine des cheftains",
+      "slug": "barrage-ulmo",
+      "pos": {
+        "x": 1690,
+        "y": 1050
+      },
+      "width": 250,
+      "height": 200
+    },
+    {
+      "label": "Piscine",
+      "slug": "piscine",
+      "pos": {
+        "x": 2860,
+        "y": 3190
+      },
+      "width": 300,
+      "height": 210
+    },
+    {
+      "label": "Boutique de pêche",
+      "slug": "boutique_peche-ulmo",
+      "pos": {
+        "x": 1160,
+        "y": 1230
+      },
+      "width": 160,
+      "height": 145
+    },
+    {
+      "label": "Épicerie",
+      "slug": "epicerie-ulmo",
+      "pos": {
+        "x": 1015,
+        "y": 1295
+      },
+      "width": 95,
+      "height": 130
+    },
+    {
+      "label": "Aquarium",
+      "slug": "aquarium",
+      "eventDates": [["21-12", "22-12"]],
+      "event": "go_to_aquarium",
+      "pos": {
+        "x": 2575,
+        "y": 810
+      },
+      "width": 130,
+      "height": 250
+    },
+    {
+      "label": "L'atelier - Restaurant",
+      "slug": "latelier-restaurant",
+      "pos": {
+        "x": 4150,
+        "y": 550
+      },
+      "width": 200,
+      "height": 170
+    },
+    {
+      "label": "L'oro - Restaurant",
+      "slug": "oro-resto-ulmo",
+      "pos": {
+        "x": 415,
+        "y": 940
+      },
+      "width": 130,
+      "height": 160
+    },
+    {
+      "label": "Le Mounoi - Restaurant",
+      "slug": "mounoi-ulmo",
+      "pos": {
+        "x": 1460,
+        "y": 1990
+      },
+      "width": 200,
+      "height": 200
+    },
+    {
+      "label": "Temple de l'Hiver",
+      "slug": "temple_hiver",
+      "eventDates": [["21-12", "22-12"]],
+      "interior": true,
+      "interiorDates": [["21-12", "22-12"]],
+      "pos": {
+        "x": 2100,
+        "y": 2830
+      },
+      "width": 190,
+      "height": 150
+    },
+    {
+      "label": "Capitainerie",
+      "slug": "capitainerie",
+      "pos": {
+        "x": 3470,
+        "y": 1680
+      },
+      "width": 210,
+      "height": 200
+    },
+    {
+      "label": "Le Céleste - Restaurant",
+      "slug": "celeste-ulmo",
+      "pos": {
+        "x": 730,
+        "y": 1130
+      },
+      "width": 150,
+      "height": 200
+    },
+    {
+      "label": "L'eau Peine bar",
+      "slug": "eau_peine_bar-ulmo",
+      "pos": {
+        "x": 520,
+        "y": 2630
+      },
+      "width": 220,
+      "height": 140
+    },
+    {
+      "label": "Marché marin",
+      "slug": "marche_marin-ulmo",
+      "pos": {
+        "x": 4000,
+        "y": 1740
+      },
+      "width": 250,
+      "height": 170
+    },
+    {
+      "label": "La taverne Blanche",
+      "slug": "taverne_blanche",
+      "pos": {
+        "x": 1050,
+        "y": 1970
+      },
+      "width": 230,
+      "height": 160
+    },
+    {
+      "label": "Port",
+      "slug": "port-ulmo",
+      "pos": {
+        "x": 3300,
+        "y": 1230
+      },
+      "width": 290,
+      "height": 210
+    },
+    {
+      "label": "Plage",
+      "slug": "plage",
+      "pos": {
+        "x": 3680,
+        "y": 210
+      },
+      "width": 270,
+      "height": 340
+    },
+    {
+      "label": "Cabane de pêche",
+      "slug": "cabane_peche-ulmo",
+      "pos": {
+        "x": 1900,
+        "y": 1700
+      },
+      "width": 320,
+      "height": 210
+    },
+    {
+      "label": "Gare d'Ulmo",
+      "slug": "gare_ulmo",
+      "pos": {
+        "x": 1410,
+        "y": 3160
+      },
+      "width": 260,
+      "height": 210
+    }
+  ]
+}

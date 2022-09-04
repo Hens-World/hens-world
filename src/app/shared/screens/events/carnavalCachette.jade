@@ -1,0 +1,38 @@
+.page-container
+  .main-column.carnaval-cachette
+    h1.fond-village Salle d'attente
+    .carnaval-cachette__row
+      .carnaval-cachette__column
+        .carnaval-cachette__join-button(ng-click="joinHunters()") Rejoindre les "Seekists"
+        .carnaval-cachette__player.other-user(ng-repeat="hunter in lobby.hunters" class="{{hunter.village}}")
+          span.font-village {{hunter.display_name}}
+      .carnaval-cachette__column.carnaval-cachette__center_column
+        .padding
+          h3 Bienvenue dans la salle d'attente !
+          p Une partie se lance bientôt ! Choisissez votre camp !
+          br
+          p
+            span - les
+            b  "Mimics"
+            span  choisissent un déguisement parmi une liste préféfinie, et doivent se cacher en 1 minute !
+            b  Leur but ?
+            span  Ne pas se faire trouver par les chercheurs !
+          br
+          p
+            span - les
+            b  "Seekists"
+            span   doivent trouver en 5 minutes la cachette des Mimics !
+            b  Leur but ?
+            span  Ouvrir l'oeil et démasquer leurs adversaires !
+          .carnaval-cachette__warning.border-village Pour une partie plus agréable, n'hésitez pas à vous balader dans les villages avant la partie : pour préparer le terrain et pré-charger la map !
+        .carnaval-cachette__lobby-status.fond-village
+          .time-left {{lobby.timeLeftFormat}}
+          p avant le début de la partie
+          p
+            i village du jour:
+            b
+              i  {{lobby.village.capitalizeFirstLetter()}}
+      .carnaval-cachette__column
+        .carnaval-cachette__join-button(ng-click="joinProps()") Rejoindre les "Mimics"
+        .carnaval-cachette__player.other-user(ng-repeat="prop in lobby.props" class="{{prop.village}}")
+          span.font-village {{prop.display_name}}

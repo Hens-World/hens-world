@@ -1,0 +1,414 @@
+.annonce-create {
+  h1 {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Wire One';
+    font-size: 4em;
+    position: relative;
+    padding: 10px;
+    a {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 10px;
+      top: 20px;
+      transform: rotate(270deg);
+      background-image: url(/medias/home/arrow-up.png);
+      padding-left: 0;
+      transition: left .3s;
+      &:hover {
+        left: 15px;
+      }
+    }
+  }
+  .info {
+    padding: 20px;
+    background: @headerDark;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  form {
+    text-align: center;
+    margin: auto;
+    padding: 5px 20px;
+    .location--field {
+      display: block;
+    }
+    .button {
+      display: inline-block;
+      width: 50%;
+      margin-top: 20px;
+      padding: 8px 5px;
+      font-size: 1.6em;
+    }
+    .location-list {
+      display: none;
+      transition: display .5s;
+      transition-delay: .35s;
+      .location-unit {
+        background-color: @buttonDark;
+        height: 35px;
+        display: flex;
+        background-repeat: repeat-y, no-repeat;
+        background-size: 100% 100%, 55%;
+        background-origin: 0 0, 100% 100%;
+        background-position: 0 0, right 90%;
+        box-sizing: border-box;
+        // village image on the right
+        &.sulimo {
+          &.village {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/sulimo/village_on.jpg');
+          }
+          &.falaise {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/sulimo/falaise_on.jpg');
+          }
+          &.forêt {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/sulimo/forêt_on.jpg');
+          }
+          &.marais {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/sulimo/marais_on.jpg');
+          }
+        }
+        &.ulmo {
+          &.village {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/ulmo/village_on.jpg');
+          }
+          &.mer {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/ulmo/mer_on.jpg');
+          }
+          &.lac {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/ulmo/lac_on.jpg');
+          }
+          &.prairie {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/ulmo/prairie_on.jpg');
+          }
+        }
+        &.wilwar {
+          &.village {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/wilwar/village_on.jpg');
+          }
+          &.champs {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/wilwar/champs_on.jpg');
+          }
+          &.bois {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/wilwar/bois_on.jpg');
+          }
+          &.rivière {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/wilwar/rivière_on.jpg');
+          }
+        }
+        &.anar {
+          &.village {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/anar/village_on.jpg');
+          }
+          &.montagne {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/anar/montagne_on.jpg');
+          }
+          &.collines {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/anar/collines_on.jpg');
+          }
+          &.souterrains {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/anar/souterrains_on.jpg');
+          }
+        }
+
+        &:hover {
+          background-color: @buttonHoverDark;
+          cursor: pointer;
+        }
+        .village {
+          margin: 0 10px;
+          text-transform: capitalize;
+          font-style: italic;
+          &.anar {
+            color: @anarNeuter;
+          }
+          &.ulmo {
+            color: @ulmoNeuter;
+          }
+          &.sulimo {
+            color: @sulimoNeuter;
+          }
+          &.wilwar {
+            color: @wilwarNeuter;
+          }
+        }
+        .lieu {
+          font-size: 1.2em;
+          text-transform: capitalize;
+        }
+
+      }
+    }
+    .location-list.show {
+      display: block;
+      transition: none;
+      max-height: 200px;
+      overflow-y: scroll;
+    }
+  }
+  .side-column {
+    .info-text {
+      margin: 10px;
+      padding: 10px;
+      text-align: left;
+      background: @headerDark;
+    }
+  }
+}
+
+.annonce-main {
+  .main-column {
+    padding-bottom: 50px;
+  }
+
+  .header {
+    width: 100%;
+    height: 220px;
+    background-image: url('/medias/annonce_illus.jpg');
+    background-size: cover;
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    h1 {
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      font-size: 5em;
+      height: 100%;
+      font-family: 'Wire One';
+      text-align: center;
+      line-height: 220px;
+      vertical-align: middle;
+      text-shadow: 0 0 10px black, 0 0 10px black, 0 0 50px black, 0 0 80px black, 0 0 100px black, 0 0 140px black, 0 0 180px black;
+    }
+  }
+}
+
+.annonces-list-container {
+  &.directive {
+    height: 100%;
+    ul {
+      max-height: 95%;
+      overflow-y: auto;
+    }
+  }
+  .element {
+    padding: 8px 3px;
+    &.fond-village {
+      .info-text {
+        color: #CCC;
+      }
+    }
+    .info-text {
+      margin: 0;
+      padding: 0;
+    }
+    &:hover:not(.fond-village) {
+      background: @buttonHoverDark;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .participating {
+      width: 20%;
+      text-align: center;
+      .full {
+        color: @anarNeuter;
+      }
+    }
+    a {
+      width: 65%;
+      border-left: 2px solid rgba(255, 255, 255, .78);
+      padding: 0;
+      padding-left: 3%;
+    }
+    .starting-date {
+      width: 15%;
+      text-align: center;
+    }
+
+  }
+  .create-button {
+    display: block;
+    font-size: 1.3em;
+    padding: 4px;
+    position: relative;
+    &.main {
+      font-size: 2em;
+      &:before {
+        content: '+';
+        font-size: 1.8em;
+        position: absolute;
+        vertical-align: centered;
+        left: 30%;
+        top: -.22em;
+      }
+    }
+
+  }
+}
+
+.annonce-detail-container {
+  .edit-bt {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    padding: 5px;
+    top: 15px;
+    transition: all .25s;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0);
+    &:hover {
+      background: rgba(255, 255, 255, .1);
+      transform: scale(1.05, 1.05);
+      width: 35px;
+      &:before {
+        margin-left: 0;
+      }
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+    }
+    &::before {
+      display: block;
+      width: 100%;
+      margin-left: 0px;
+      height: 100%;
+      transition: all 0.2s;
+      content: '';
+      background: url('/medias/common/edit.png');
+      background-size: 100% 100%;
+    }
+  }
+  h1 {
+    margin-top: 2px;
+    padding: 10px;
+    font-family: 'Wire One';
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    .link-back {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 10px;
+      top: 20px;
+      transform: rotate(270deg);
+      background-image: url(/medias/home/arrow-up.png);
+      padding-left: 0;
+      transition: left .3s;
+      &:hover {
+        left: 15px;
+      }
+    }
+  }
+  .button {
+    padding: 5px;
+  }
+  .main-column {
+    .panel {
+      border: 1px solid @buttonHoverDark;
+      width: 98%;
+      background: @buttonDark;
+      padding: 15px 25px 15px 25px;
+      margin: auto;
+      box-sizing: border-box;
+      text-align: center;
+      display: flex;
+      .left {
+        padding-right: 25px;
+        max-width: 150px;
+        .circle-avatar {
+          display: inline-block;
+          text-align: center;
+          &:after {
+            content: '';
+            clear: both;
+          }
+        }
+        .owner {
+          font-size: 1.1em;
+          .pseudo {
+            font-size: 1.3em;
+            margin-top: 5px;
+          }
+        }
+      }
+      .right {
+        flex: 1 1 auto;
+        text-align: left;
+        .big {
+          font-size: 2.5em;
+          font-family: 'Wire One';
+        }
+        h2 {
+          font-size: 3em;
+          font-family: 'Wire One';
+        }
+        .description {
+          background: @contentDark;
+          border: 1px solid @headerDark;
+          padding: 15px;
+          margin: 10px 0 10px;
+        }
+      }
+    }
+  }
+  .side-column {
+    h3 {
+      margin: 10px;
+      font-family: 'Wire One';
+      font-size: 2.6em;
+    }
+    .button {
+      font-size: 1.2em;
+      margin-top: 15px;
+    }
+    .list {
+      width: 95%;
+      margin: auto;
+      position: relative;
+      text-align: left;
+      .element {
+        vertical-align: middle;
+        width: 50%;
+        position: relative;
+        display: inline-block;
+        border-right: 1px solid @contentDark;
+        padding: 4px;
+        &.big {
+          width: 100%;
+          order: 0;
+        }
+        * {
+          display: inline-block;
+        }
+        .name {
+          vertical-align: top;
+          margin-top: 10px;
+          margin-left: 7px;
+          font-size: 1.1em;
+        }
+        .remove {
+          position: absolute;
+          right: 10px;
+          line-height: 40px;
+          vertical-align: middle;
+          transform: scaleX(1.3);
+          &:hover {
+            color: @anarLight;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+  }
+}

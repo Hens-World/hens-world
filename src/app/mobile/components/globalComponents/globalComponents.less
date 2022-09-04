@@ -1,0 +1,68 @@
+global-components {
+  .bottom-bar {
+    position: fixed;
+    bottom: 0px;
+    z-index: 50;
+    height: 80px;
+    width: 100%;
+    background-color: @headerDark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14em;
+
+    .bottom-bar-wrapper {
+      max-width: 420px;
+      display: flex;
+      flex: 1 1 auto;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .bottom-button {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex: 1 0 56px;
+      margin-top: 2px;
+      opacity: .7;
+
+      &.disabled {
+        opacity: .3;
+        pointer-events: none;
+      }
+
+      img {
+        display: block;
+        width: 41px;
+        margin-bottom: 4px;
+        height: 41px;
+      }
+
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+.bottom-bar-wrapper .bottom-button.selected {
+  filter: invert(.48) sepia(1) saturate(1.8) hue-rotate(-10deg);
+}
+
+.anar .bottom-bar-wrapper .bottom-button.selected {
+  filter: invert(.55) sepia(1) saturate(3) hue-rotate(-41deg);
+}
+
+.sulimo .bottom-bar-wrapper .bottom-button.selected {
+  filter: invert(.45) sepia(1) saturate(3) hue-rotate(-10deg);
+}
+
+.ulmo .bottom-bar-wrapper .bottom-button.selected {
+  filter: invert(.45) sepia(1) saturate(6) hue-rotate(130deg);
+}
+
+.wilwar .bottom-bar-wrapper .bottom-button.selected {
+  filter: invert(.45) sepia(1) saturate(3) hue-rotate(55deg);
+}

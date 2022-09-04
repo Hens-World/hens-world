@@ -1,0 +1,116 @@
+{"frames": [
+
+{
+	"filename": "canardcolvert0000.png",
+	"frame": {"x":1,"y":26,"w":33,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":25},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0001.png",
+	"frame": {"x":1,"y":26,"w":33,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":25},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0002.png",
+	"frame": {"x":36,"y":27,"w":33,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":25},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0003.png",
+	"frame": {"x":36,"y":27,"w":33,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":25},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0004.png",
+	"frame": {"x":36,"y":1,"w":33,"h":24},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":33,"h":24},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0005.png",
+	"frame": {"x":1,"y":1,"w":33,"h":23},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":33,"h":23},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0006.png",
+	"frame": {"x":1,"y":1,"w":33,"h":23},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":33,"h":23},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0007.png",
+	"frame": {"x":71,"y":1,"w":33,"h":24},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":33,"h":24},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0008.png",
+	"frame": {"x":71,"y":1,"w":33,"h":24},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":33,"h":24},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0009.png",
+	"frame": {"x":71,"y":1,"w":33,"h":24},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":33,"h":24},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0010.png",
+	"frame": {"x":71,"y":27,"w":33,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":25},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0011.png",
+	"frame": {"x":71,"y":27,"w":33,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":25},
+	"sourceSize": {"w":33,"h":25}
+},
+{
+	"filename": "canardcolvert0012.png",
+	"frame": {"x":71,"y":27,"w":33,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":25},
+	"sourceSize": {"w":33,"h":25}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "canard_1.png",
+	"format": "RGBA8888",
+	"size": {"w":105,"h":53},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ecfa68d042319ce9fa4ee7c41c1e1709:91eee0a7d8b9760dabb416b1500c3595:8fb9102f6ff203e756d3eb9f5e85651f$"
+}
+}

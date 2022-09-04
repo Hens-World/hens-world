@@ -1,0 +1,17 @@
+.new-post-authors
+  .added-list
+    p( ng-show="!nPPCtrl.hideDescr" style="margin-right: 15px; font-size: 1.2em; margin-bottom: 10px;") Personnage(s) lié(s)
+    div.other-user(ng-repeat="personnage in nPPCtrl.personnagesLies" class="{{nPPCtrl.villages[personnage.village]}}")
+      .added-author-unit.fond-village()
+        .name(ng-bind-html="personnage.prenom")
+        .delete(ng-click="nPPCtrl.removePersonnage(personnage)")
+          .fa.fa-trash
+    .new-author-block(ng-click="nPPCtrl.startNewPersonnageSearch()")
+      .text(ng-show="!nPPCtrl.isSearchingPersonnage")
+        i + Ajouter un personnage
+      input.search-author(type="text" ng-model="nPPCtrl.personnageNameFilter" ng-change="nPPCtrl.onFilterChange(nPPCtrl.personnageNameFilter)" ng-show="nPPCtrl.isSearchingPersonnage" placeholder="Prénom du personnage")
+  .new-author-current-search(ng-show="nPPCtrl.isSearchingPersonnage && nPPCtrl.searchPersonnageList.length > 0" ng-class="{'absolute': nPPCtrl.absoluteList}")
+    .new-author-elt(ng-repeat="personnage in nPPCtrl.searchPersonnageList" ng-click="nPPCtrl.validatePersonnage(personnage)")
+      img.avatar(src="{{personnage.avatar}}")
+      .name
+        span(ng-repeat="letter in personnage.selecName" ng-class="{'selec':letter.selected}") {{letter.letter}}

@@ -1,0 +1,15 @@
+.questionnaire-test
+  .title Test d'attribution pouvoir
+  .label Village Choisi : {{village}}
+  select(ng-model="village")
+    option(value="sulimo") Sulimo
+    option(value="ulmo") Ulmo
+    option(value="wilwar") Wilwar
+    option(value="anar") Anar
+  .label Entrez ici votre liste de résultat
+  textarea(ng-model="inputResult")
+  .valid
+    button(value="Générer les pouvoirs" ng-click="processResult()") Générer les pouvoirs !
+  .label Pouvoirs obtenus
+  .result-text()
+    .unit(ng-repeat="output in outputResult") {{output.slug}} nb: {{output.count}}

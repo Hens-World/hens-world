@@ -1,0 +1,134 @@
+.hide-overlay {
+  position: fixed;
+  top: @HH;
+  width: 100vw;
+  .fullHeight(0px);
+  z-index: 1000;
+  background-color: @overlayBlack;
+}
+
+@media (max-width: @mobileMaxWidth) {
+  body .parameters {
+    flex-direction: column;
+
+    &__content {
+      padding: 10px;
+    }
+    &__menu {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+.parameters {
+  display: flex;
+  //field override
+  .crush-run-container {
+    background-color: @headerDark;
+    padding: 20px;
+    margin: 10px 0;
+    p {
+      padding: 15px;
+    }
+  }
+
+  .main-column {
+    display: flex;
+  }
+  &__menu {
+    width: 220px;
+    background-color: @buttonDark;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    align-items: center;
+    &.button {
+      flex: 1;
+    }
+  }
+  &__content {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 40px 15px 20px 30px;
+  }
+  &__section {
+    margin-bottom: 30px;
+
+    &.section-disabled {
+      pointer-events: none;
+      switch .field {
+        opacity: .3;
+
+      }
+    }
+
+    .button, input[type="submit"] {
+      max-width: 25%;
+      margin: auto;
+      min-width: max-content;
+    }
+
+    &--warning {
+      padding: 12px;
+      background-color: @inputDark;
+      border: 1px solid @black;
+      border-radius: 5px;
+
+      .button {
+        max-width: unset;
+        margin-top: 12px;
+        width: 100%;
+      }
+    }
+  }
+  &__themes {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__theme-unit {
+    &:not(.enabled) {
+      filter: grayscale(.75);
+      opacity: .8;
+      cursor: not-allowed;
+      .fond-village{
+        pointer-events: none;
+      }
+    }
+    .fond-village {
+      width: 25px;
+      height: 25px;
+      margin: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 0px solid rgba(255, 255, 255, .8);
+      transition: .25s linear;
+    }
+    &.selected {
+      .fond-village {
+        margin: 5px;
+        border: 5px solid rgba(255, 255, 255, .8);
+      }
+    }
+  }
+  h1, h2 {
+    font-family: 'Wire One', sans-serif;
+  }
+  h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 2.7em;
+    margin-bottom: 10px;
+  }
+}
+
+.theme__field {
+  align-items: center;
+  .parameters__themes {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,32 @@
+    {
+      "pseudo": "Fleure",
+      "slug": "fleure",
+      "owner": "Flesia",
+      "status": "contributeur",
+      "house": {
+        "x": 4860,
+        "y": 3201,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 500,
+        "h": 1000,
+        "c": 240
+      },
+      "avail": [
+        {
+          "posSlug": "marre",
+          "fromT": 18,
+          "to": 21,
+          "x": 3868,
+          "y": 1860,
+          "width": 65,
+          "height": 75,
+          "center": {
+            "x": 0,
+            "y": 59
+          }
+        }
+      ]
+    },

@@ -1,0 +1,74 @@
+.navbar__container(ng-switch="navbarState")
+  .navbar__top-bar.fond-village
+  .navbar__loading.fond-village.black(ng-class="{'show': loading || !subReady}")
+    .pulse-loader
+  .navbar__state-menu.fond-village.dark
+    .navbar__state-bt(ng-click="changeState(state)" ng-repeat="state in states" ng-class="{'navbar__state-bt--active fond-village': state !== navbarState}")
+      h3 {{stateTexts[state]}}
+  .navbar__state.navbar__state--creation(ng-switch-when="creation")
+    .navbar__player
+      div(hens-player user="$parent.info.user" params="params" playlist="playlist" ready="$parent.playerReady")
+      .navbar__showcase-container.fond-village.dark
+        a.navbar-showcased.fond-village(href="{{showcasedPost.type}}/{{showcasedPost.slug}}")
+          img.navbar-showcased__miniature(ng-src="{{showcasedPost.miniature}}")
+          .navbar-showcased__content
+            .navbar-showcased__cat.font-village.dark Création du jour
+            .navbar-showcased__title {{showcasedPost.title}}
+            .navbar-showcased__author {{showcasedPost.author.display_name}}
+            .navbar-showcased__date {{showcasedPost.formatDate}}
+          .navbar-showcased__type {{showcasedPost.formatType}}
+    .navbar__news-feed
+      .navbar__toolbar
+        .navbar__filter.filter.fond-village.dark
+          .filter__list.filter__list--hidden
+            .filter__placeholder(
+              ng-class="{'fond-village low': filterHover == true}"
+              ng-mouseenter="filterHover = true"
+              ng-mouseleave="filterHover = false"
+              ng-click="startFilterBox()") {{selectedFilter.name}}
+            ul.select-box.hidden.fond-village.dark
+              li(ng-class="{'fond-village': filterHover == true}"
+              ng-mouseenter="filterHover = true"
+              ng-mouseleave="filterHover = false"
+              ng-repeat="filter in filters"
+              ng-click="selectFilter(filter, $event)") {{filter.name}}
+        //.navbar__cat-button.navbar__cat-button--custom.fond-village(ng-click="switchCat('custom')")
+        .navbar__search-field-container
+          input.navbar__search-field.fond-village.dark(type="text" ng-model="search.title" placeholder="Rechercher une création...")
+      .navbar__list.fond-village.black
+        .navbar__scroller
+          .navbar__element.navbar__element--creation.fond-village( ng-repeat="article in currentList" class="{{article.state}}" ng-class="{'dark': article.state == 'seen'}" on-last-repeat='on-last-repeat')
+            .hot-notification(ng-class="{'active':article.isHot}")
+              | !
+            a(ng-click="setSeen(article)" href="{{::article.type}}/{{::article.slug}}")
+              img.img(ng-src="{{::article.miniature}}")
+            .navbar__content
+              .date(ng-bind-html="::article.formDate")
+              .long-title-wrap(long-title)
+                a.title(ng-bind-html="::article.title" ng-click="setSeen(article)" href="{{article.type}}/{{article.slug}}")
+              a.author(ng-bind-html="trust(article.author.display_name)")
+            .navbar__side-info
+              .type-navbar(ng-bind-html="::article.formatType")
+              .village(class="{{::article.village.slug}}")
+          .navbar__bottom-loading.fond-village.low(ng-class="{'show': bottomLoading}")
+            .pulse-loader
+  .navbar__state.navbar__state--rp(ng-switch-when="roleplay")
+    .navbar__annonces.fond-village.dark(annonces options="annoncesOpt" ready="$parent.$parent.annonceReady" ng-if="$root.currentUser")
+    .navbar__news-feed
+      .navbar__list.fond-village.black
+        .navbar__scroller
+          .navbar__element.navbar__element--roleplay.fond-village.low(ng-repeat="roleplay in roleplayList" class="{{roleplay.state}}")
+            .hot-notification.hot-notification--roleplay(ng-class="{'active':roleplay.isHot}")
+              | !
+            a(ng-click="setRPSeen(roleplay)" href="/roleplay/{{roleplay.type == 'differe' ? '': 'archives/'}}{{roleplay.type}}/{{roleplay.id}}")
+              img.img(ng-src="{{::roleplay.image}}")
+            .navbar__content
+              .date Initié par {{roleplay.owner.display_name}}
+              .long-title-wrap(long-title)
+                a.title(ng-click="setRPSeen(roleplay)" href="/roleplay/{{roleplay.type == 'differe' ? '': 'archives/'}}{{roleplay.type}}/{{roleplay.id}}") {{roleplay.title}}
+              .info-text Dernier message le {{roleplay.formatDate}}
+            .navbar__rp-type {{roleplay.type == 'instant' ? 'Instant.' : 'Différé'}}
+          .navbar__bottom-loading.fond-village.low(ng-class="{'show': bottomLoading}")
+            .pulse-loader
+.navbar__clicker.fond-village(ng-click="toggleNavBar()")
+  .navbar__icon

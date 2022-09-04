@@ -1,0 +1,71 @@
+.search-series {
+  padding: 20px 5px!important;
+
+  &__content {
+    flex: 1 1 auto;
+    padding: 30px;
+    margin: 0 5px!important;
+    position: relative;
+    align-self: flex-start;
+    background-color: @buttonHoverDark;
+  }
+
+  &__close {
+    transform: scaleX(1.3);
+    cursor: pointer;
+    font-size: 1.9em;
+    right: 15px;
+    top: 15px;
+    position: absolute;
+  }
+
+  &__title {
+    font-size: 4em;
+    margin-bottom: 25px;
+    font-family: 'Wire One', sans-serif;
+  }
+
+  &__posts {
+    position: relative;
+    background-color: @black;
+    height: calc(1px + var(--length) * 90px);
+  }
+
+  &__post {
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    width: auto;
+    transition: margin-top .5s;
+    margin-top: calc(1px + var(--order) * 90px);
+  }
+}
+
+.search-element {
+  background-color: @black;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 0 9px;
+
+  &__input {
+    flex: 1 1 auto;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    height: 42px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 auto;
+  }
+
+
+}

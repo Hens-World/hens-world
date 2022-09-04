@@ -1,0 +1,191 @@
+@media (max-width: @mobileMaxWidth) {
+  body .ecrit-container {
+    .page-style {
+      padding: 40px 10px 30px 10px;
+    }
+
+    .title {
+      margin-top: 30px;
+      margin-bottom: 25px;
+      width: 95%;
+      line-height: 1;
+    }
+    .type {
+      transform: rotate(-30deg);
+      margin-top: -28px;
+      margin-left: -65px;
+    }
+
+    .contentEcrit {
+      font-size: 1.4em;
+      p {
+        font-size: 1em;
+      }
+
+    }
+  }
+}
+
+.ecrit-container {
+  .page-style {
+    background: #f3efc6;
+    color: @contrastedTextColor;
+    min-height: 800px;
+    padding: 55px;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    position: relative;
+  }
+
+  .type {
+    position: absolute;
+    font-size: 1.8em;
+    transform: rotate(-40deg);
+    width: 200px;
+    color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin-left: -73px;
+    left: 0;
+    top: 0;
+    margin-top: -22px;
+    padding-top: 43px;
+    height: 37px;
+    background: @guestNeuter;
+  }
+  p {
+    min-height: 1em;
+  }
+  .fav {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    font-size: 1.4em;
+    height: 40px;
+    background: url('/medias/article/fav-off.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    &:hover {
+      background: url('/medias/article/fav-hover.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      &.active {
+        background: url('/medias/article/fav-on-ecrit.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+    &.active {
+      background: url('/medias/article/fav-on-ecrit.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .amount {
+      font-size: 1.9em;
+      color: black;
+      font-family: 'Wire One';
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 15px;
+      vertical-align: middle;
+      margin-left: -28px;
+      margin-top: 7px;
+      line-height: 30px;
+      border-radius: 50%;
+      // background: white;
+      // background: @guestNeuter;
+      // &.anar{background:@anarNeuter;}
+      // &.wilwar{background:@wilwarNeuter;}
+      // &.ulmo{background:@ulmoNeuter;}
+      // &.sulimo{background:@sulimoNeuter;}
+      transition: all 0.3s;
+      // &:hover{
+      //   transform:scale(1.25);
+      // }
+      .label {
+        opacity: 0;
+        width: 90px;
+        transition: all 0.3s;
+        text-align: center;
+        margin-left: -70px;
+        line-height: 1em;
+        text-align: right;
+        pointer-events: none;
+        font-size: 0.35em;
+        color: black;
+        margin-top: -28px;
+      }
+      &:hover {
+        .label {
+          opacity: 1;
+          margin-left: -92px;
+        }
+      }
+    }
+  }
+  .title {
+    font-size: 3.3em;
+    margin-bottom: 50px;
+    display: inline-block;
+    width: 70%;
+    font-weight: 700;
+  }
+  .contentEcrit {
+    text-align: left;
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    img {
+      max-width: 100%;
+    }
+    p {
+      margin-bottom: 10px;
+      text-indent: 25px;
+    }
+    h1 {
+      text-align: left;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-indent: 15px;
+      margin-bottom: 15px;
+    }
+    img.aligncenter {
+      display: inline-block;
+      text-align: center;
+      margin-left: -25px;
+    }
+  }
+  .pageChange {
+    margin: 3px 0;
+    font-size: 1.3em;
+    width: 100%;
+    text-align: center;
+    color: black;
+
+    .goTo {
+      height: 24px;
+      color: white;
+      padding: 10px;
+      width: 24px;
+      margin: 3px;
+      display: inline-block;
+      cursor: pointer;
+
+      &:not(.active) {
+        background-color: @buttonDark;
+      }
+
+      &:hover:not(.active) {
+        background-color: @buttonHoverDark;
+      }
+      &.active {
+      }
+    }
+  }
+}

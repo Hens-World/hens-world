@@ -1,0 +1,7 @@
+.alert-manager(alert-manager='')
+.bottom-bar
+  .bottom-bar-wrapper()
+    a.bottom-button(ng-repeat="bottomButton in globCtrl.bottomButtons" ng-show="bottomButton.visible" ng-class="{'selected': globCtrl.selectedButton === bottomButton.name, 'disabled': bottomButton.disabled}" href="{{bottomButton.link}}")
+      img(ng-src="/medias/mobile/mobile_icon_{{bottomButton.image}}" alt="{{bottomButton.name}}")
+      p {{bottomButton.name}}
+.modal-container(modal-validation='')

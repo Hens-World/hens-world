@@ -1,0 +1,210 @@
+{"frames": [
+
+{
+	"filename": "eolienne_droite00.png",
+	"frame": {"x":2,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite01.png",
+	"frame": {"x":140,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite02.png",
+	"frame": {"x":278,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite03.png",
+	"frame": {"x":416,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite04.png",
+	"frame": {"x":554,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite05.png",
+	"frame": {"x":692,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite06.png",
+	"frame": {"x":830,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite07.png",
+	"frame": {"x":968,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite08.png",
+	"frame": {"x":1106,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite09.png",
+	"frame": {"x":1244,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite10.png",
+	"frame": {"x":1382,"y":2,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite11.png",
+	"frame": {"x":2,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite12.png",
+	"frame": {"x":140,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite13.png",
+	"frame": {"x":278,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite14.png",
+	"frame": {"x":416,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite15.png",
+	"frame": {"x":554,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite16.png",
+	"frame": {"x":692,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite17.png",
+	"frame": {"x":830,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite18.png",
+	"frame": {"x":968,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite19.png",
+	"frame": {"x":1106,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite20.png",
+	"frame": {"x":1244,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "eolienne_droite21.png",
+	"frame": {"x":1382,"y":158,"w":136,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":154},
+	"sourceSize": {"w":136,"h":154},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "eolienne_droite.png",
+	"format": "RGBA8888",
+	"size": {"w":1522,"h":314},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7206ec853a25c29a14a51547506ae303:f96bb4670f795c1bb5aaec3d635fb0a0:7f5c221534f06e982d6e68cf7082939e$"
+}
+}

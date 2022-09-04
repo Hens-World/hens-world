@@ -1,0 +1,39 @@
+.create-image-container.main-create-container
+  h2.title.fond-village {{mainTitle}}
+  .form-container
+    .field
+      .label() Titre
+      input.form(placeholder="Le titre de votre création" ng-model="post.title")
+    .field
+      .label() Miniature
+      input.form.upload(placeholder="(optionnel) coller ici le lien de votre miniature" ng-model="post.miniature")
+      media-select-button(type="image" field="post.miniature")
+
+    .sub-info
+      .field
+        .label Nombre d'images
+        input.form(type="number" ng-model="post.galerieLength" value="1")
+
+      .image-unit(ng-repeat="image in getNumber(post.galerieLength)")
+        .number.fond-village(class="{{village}}") {{$index + 1}}
+        .field
+          .label() Image
+          input.form(placeholder="Coller ici le lien de votre visuel" ng-model="post.images[$index]")
+          media-select-button(type="image" field="post.images[$index]")
+        .field
+          .label() Titre de l'image
+          input.form(placeholder="Titre" ng-model="post.titres[$index]")
+        .field
+          .label() Description
+          input.form(placeholder="Description" ng-model="post.descriptions[$index]")
+
+    .authors-container(new-post-authors  authors="post.authors")
+    new-post-personnages.authors-container(personnages-lies="post.personnagesLies")
+    .common-info
+      .status(ng-click="switchStatus()")
+        div
+          span( class="{{village}}" ng-class="{'active fond-village':post.status == 'publish'}") Publié
+          span( class="{{village}}" ng-class="{'active fond-village':post.status == 'draft'}") Brouillon
+      .location-container(new-post-location lieu="post.lieu" post="post" village="post.village")
+    .validate.fond-village(ng-click="sendPost()") Valider
+

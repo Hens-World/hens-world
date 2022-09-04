@@ -1,0 +1,58 @@
+.page-container.article-global-container
+  like-list()
+  .main-column
+    .main-column__content.main-content-container
+      .new-post-authors.new-post-authors--right(ng-show="post.personnagesLies.length > 0")
+        .added-list
+          p.full-line Personnage(s) connu(s) présent(s) dans cette création
+          div.other-user(ng-repeat="personnage in post.personnagesLies" class="{{villages[personnage.village]}}")
+            a.added-author-unit.fond-village(href="/profil/{{personnage.owner_id}}")
+              .name(ng-bind-html="personnage.prenom + ' ' +  personnage.nom")
+      .mobile-section
+        .series-navigator.other-user(class="{{post.village.slug}}" ng-show="post.selectedSerie")
+          a.serie-navigation.previous-post(ng-class="{'disabled': !previousPost, 'fond-village hover': previousPost}" href="/profil/{{post.selectedSerie.owner_id}}/series/{{post.selectedSerie.id}}/{{previousPost.post.post_type}}/{{previousPost.post.slug}}")
+            img(src="/medias/arrow_left.svg")
+          .current-serie
+            .current-serie-info Série de créations :
+            a.font-village.hover( href="/profil/{{post.selectedSerie.owner_id}}/series/{{post.selectedSerie.id}}") {{post.selectedSerie.title}}
+          a.serie-navigation.next-post(ng-class="{'disabled': !nextPost, 'fond-village hover': nextPost}" href="/profil/{{post.selectedSerie.owner_id}}/series/{{post.selectedSerie.id}}/{{nextPost.post.post_type}}/{{nextPost.post.slug}}")
+            img(src="/medias/arrow_right.svg")
+        span(class="{{post.village.slug}} other-user")
+          a.go-to-button.fond-village.hover(href="map/{{post.village.slug}}/{{post.formattedZone}}/{{post.location.slug}}" )
+            i posté le {{post.formatDate}} à
+            br
+            b.loc(ng-bind-html="post.location.name")
+        .author.author__mobile(author-article authors-info="post.authorList" user="info.user")
+      .comment-section(comment-article comments="post.comments" is-connected="isAuth" post-id="post.ID" author="post.author")
+      .licence-cc(style='font-size:11px;color:#ccc')
+        .info-text Toutes les créations postées sur Hens World appartiennent à leurs auteurs et sont protégées par la licence ci-dessous.
+        a.font-village.hover(rel='license', href='http://creativecommons.org/licenses/by-nc/4.0/')
+          img(alt='Licence Creative Commons', style='border-width:0', src='https://i.creativecommons.org/l/by-nc/4.0/80x15.png')
+        br
+        span(xmlns:dct='http://purl.org/dc/terms/', property='dct:title') Hens World
+        |  de
+        a.font-village.hover(xmlns:cc='http://creativecommons.org/ns#', href='http://hens-world.fr', property='cc:attributionName', rel='cc:attributionURL')  Association Hens World
+        |  est mis à disposition selon les termes de la
+        a.font-village.hover(rel='license', href='http://creativecommons.org/licenses/by-nc/4.0/')
+          |  licence Creative Commons Attribution - Pas d’Utilisation Commerciale 4.0 International
+        | .
+        br
+        | Oeuvre postée sur
+        a.font-village.hover(xmlns:dct='http://purl.org/dc/terms/', href='http://hens-world.fr', rel='dct:source')  http://hens-world.fr
+        | .
+  .side-column
+    .series-navigator.other-user(class="{{post.village.slug}}" ng-show="post.selectedSerie")
+      a.serie-navigation.previous-post(ng-class="{'disabled': !previousPost, 'fond-village hover': previousPost}" href="/profil/{{post.selectedSerie.owner_id}}/series/{{post.selectedSerie.id}}/{{previousPost.post.post_type}}/{{previousPost.post.slug}}")
+        img(src="/medias/arrow_left.svg")
+      .current-serie
+        .current-serie-info Série de créations :
+        a.font-village.hover( href="/profil/{{post.selectedSerie.owner_id}}/series/{{post.selectedSerie.id}}") {{post.selectedSerie.title}}
+      a.serie-navigation.next-post(ng-class="{'disabled': !nextPost, 'fond-village hover': nextPost}" href="/profil/{{post.selectedSerie.owner_id}}/series/{{post.selectedSerie.id}}/{{nextPost.post.post_type}}/{{nextPost.post.slug}}")
+        img(src="/medias/arrow_right.svg")
+    span(class="{{post.village.slug}} other-user")
+      a.go-to-button.fond-village.hover(href="map/{{post.village.slug}}/{{post.formattedZone}}/{{post.location.slug}}" )
+        i posté le {{post.formatDate}} à
+        br
+        b.loc(ng-bind-html="post.location.name")
+    .author(author-article authors-info="post.authorList" user="info.user")
+

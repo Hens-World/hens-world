@@ -1,0 +1,535 @@
+.is-saved {
+    position: relative;
+    font-style: italic;
+    z-index: 30;
+    font-size: .9em;
+    top: -20px;
+    left: 10px;
+    color: #777;
+}
+
+.roleplay-textarea {
+    display: flex;
+    position: relative;
+
+    &__prevent-writing {
+        width: 100%;
+        max-width: 100%;
+        left: 50%;
+        padding: 15px;
+        box-sizing: border-box;
+        transform: translateX(-50%);
+        position: absolute;
+        background: rgba(15, 15, 15, 0.7);
+        display: flex;
+        align-items: center;
+        height: 100%;
+        z-index: 100;
+        justify-content: center;
+    }
+
+    &__select-character {
+    }
+
+    &__editor {
+
+    }
+
+    &__options {
+        min-width: 40px;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .button {
+            font-size: 1.3em;
+            width: 40px;
+
+            &.send {
+                flex: 1 1 auto;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                text-align: center;
+
+                div {
+                    flex: 1 1 auto;
+                }
+            }
+
+            &.skip {
+                padding-bottom: 10px;
+                padding-top: 10px;
+
+                &:not(:hover) {
+                    background: @buttonHoverDark;
+                }
+            }
+
+            &.skip:before {
+                content: '>>';
+            }
+        }
+    }
+}
+
+.other-user.wilwar .avatar-character-selection__arrow {
+    border-left-color: @wilwarNeuter;
+}
+
+.other-user.anar .avatar-character-selection__arrow {
+    border-left-color: @anarNeuter;
+}
+.other-user.sulimo .avatar-character-selection__arrow {
+    border-left-color: @sulimoNeuter;
+}
+.other-user.ulmo .avatar-character-selection__arrow {
+    border-left-color: @ulmoNeuter;
+}
+.avatar-character-selection {
+    width: 90px;
+    background: @headerDark;
+    display: flex;
+    flex-direction: column;
+
+    &__character {
+        margin-bottom: 1px;
+        flex: 1 1 auto;
+        background-color: @buttonDark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+
+        &:hover:not(.fond-village) {
+            background-color: @lowerDark;
+        }
+
+        &--selected {
+
+            .avatar-character-selection__avatar {
+                transition: all .3s;
+                filter: none;
+            }
+            .avatar-character-selection__arrow {
+                opacity: 1;
+                
+            }
+
+        }
+
+    }
+
+    &__arrow {
+        opacity: 0;
+        display: block;
+        pointer-events: none;
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 100%;
+        z-index: 10;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 15px 0 15px 20px;
+        border-color: transparent transparent transparent @guestNeuter;
+    }
+
+    &__avatar {
+        transition: all .15s;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background: #333;
+        border: 2px solid @black;
+        filter: grayscale(1);
+    }
+}
+
+.async-detail {
+    .notice {
+        text-align: center;
+        padding: 10px 5px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+
+    .input-container {
+
+    }
+
+    .list {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 15px;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        text-align: left;
+
+        .element {
+            vertical-align: middle;
+            box-sizing: border-box;
+            background: @buttonHoverDark;
+            flex: 1 1 40%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-right: 1px;
+            margin-bottom: 1px;
+            padding: 4px;
+
+            &.big {
+                width: 100%;
+                order: 0;
+            }
+
+            .name {
+                margin-left: 7px;
+                font-size: 1.1em;
+            }
+
+            .remove {
+                position: absolute;
+                right: 10px;
+                line-height: 40px;
+                vertical-align: middle;
+                transform: scaleX(1.3);
+
+                &:hover {
+                    color: @anarLight;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .side-column {
+        h3 {
+            margin: 10px;
+            font-family: 'Wire One';
+            font-size: 2.6em;
+        }
+
+        .button {
+            font-size: 1.2em;
+            padding: 5px 2px;
+        }
+    }
+}
+
+.mobile-note {
+
+    &__actions {
+        margin-bottom: 6px;
+    }
+
+    &__container {
+        padding-left: 3px;
+        background-color: @contentDark;
+        .fullHeight(0px);
+        display: flex;
+        flex-direction: column;
+        padding-right: 6px;
+
+        .rp-note__scroll {
+            flex: 1 1 auto;
+        }
+    }
+}
+
+.rp-note {
+    background-color: @buttonDark;
+
+    h4 {
+        font-size: 2.5em;
+        font-family: 'Wire One', sans-serif;
+        padding: 5px;
+        margin: 0 !important;
+        margin-bottom: 5px !important;
+    }
+
+    &--mobile {
+        position: fixed;
+        box-sizing: border-box;
+        top: calc(@HH);
+        width: 100%;
+        padding-left: 46px;
+        .fullHeight(0px);
+        left: 0;
+        transition: left .45s cubic-bezier(.14, .84, .46, .94), background .5s;
+        z-index: 3;
+        background-color: @overlayBlack;
+
+        &.mobile-ducked {
+            left: calc(100% - 46px);
+            background-color: transparent;
+            transition: left .3s cubic-bezier(.14, .84, .46, .94), background .1s;
+            pointer-events: none;
+        }
+    }
+
+    &__unit {
+        padding: 5px;
+        background-color: @buttonHoverDark;
+        margin: 1px 0px;
+        text-align: left;
+    }
+
+    &__toggle {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        pointer-events: auto;
+
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+        &:before {
+            content: 'i';
+            width: 26px;
+            font-size: 1.55em;
+            height: 26px;
+            display: flex;
+            justify-content: center;
+            color: white;
+            border-radius: 50%;
+            border: 2px solid white;
+            align-items: center;
+
+        }
+
+        @media (max-width: @mobileMaxWidth) {
+            visibility: visible;
+        }
+    }
+
+    &__scroll {
+        height: 40vh;
+        overflow: auto;
+    }
+
+    &__date {
+        color: #aaa;
+        font-style: italic;
+        margin-bottom: 3px;
+    }
+
+    &__author {
+        display: inline-block;
+        margin-right: 3px;
+    }
+
+    &__input-container {
+        display: flex;
+        padding: 5px;
+        align-items: stretch;
+        height: 30px;
+
+        input {
+            flex: 1 1 auto;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__button {
+        width: 30px;
+        padding: 0;
+        line-height: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            font-size: 1.3em;
+        }
+    }
+}
+
+.edit-info {
+    background-color: @buttonHoverDark;
+    margin: 5px;
+    padding: 8px;
+
+    &__header {
+        display: flex;
+        margin-bottom: 5px;
+
+        h2 {
+            font-size: 17px;
+            flex: 1 1 auto;
+        }
+    }
+
+    &__date {
+        margin-left: 5px;
+        color: #aaa;
+        font-style: italic;
+    }
+
+    &__close {
+        color: @anarLight;
+        cursor: pointer;
+        font-size: 15px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.edit-roleplay-cog {
+    background-image: url('/medias/common/edit.png');
+    background-position: center;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    z-index: 5;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: .85;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.rp-info {
+    background-color: @buttonHoverDark;
+    padding: 8px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.2em;
+
+    &--dark {
+        padding: 0;
+        margin: 0 5px;
+        background-color: @contentDark;
+        flex-direction: column;
+
+        > .other-user {
+            width: 100%;
+            margin-bottom: 9px;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .go-to-button {
+            font-size: 1.1em;
+            text-align: center;
+            padding: 10px;
+
+            i {
+                font-size: .9em;
+                opacity: .9;
+                line-height: 1;
+            }
+        }
+
+        h3 {
+            font-family: "Wire One";
+            font-size: 2.6em;
+        }
+    }
+
+    &__title {
+        font-size: 1.1em;
+        margin-right: 10px;
+    }
+
+    &__creation {
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &:not(:last-child) {
+            &:after {
+                content: ', ';
+                margin-right: 4px;
+            }
+        }
+    }
+
+    &__status {
+        padding: 5px 10px;
+        margin-left: 10px;
+
+        &:not(.active) {
+            background-color: @middleDark;
+        }
+
+        &:after {
+            content: 'Terminé';
+        }
+
+        &.active {
+            &:after {
+                content: 'En cours';
+            }
+        }
+    }
+
+    &__access {
+        padding: 5px 10px;
+        margin-left: 10px;
+        background-color: @wilwarNeuter;
+
+        &:after {
+            content: 'Public';
+        }
+
+        &.private {
+            background-color: @anarNeuter;
+
+            &:after {
+                content: 'Privé';
+            }
+        }
+    }
+
+    &__date {
+        font-style: italic;
+        color: #ccc;
+        margin-left: 15px;
+        flex: 1 1 auto;
+    }
+
+    &__type {
+        margin-left: auto;
+        font-size: .9em;
+        color: #aaa;
+    }
+}
+
+
+@media (max-width: @mobileMaxWidth) {
+    .rp-note {
+        &__input-container {
+            margin-top: 6px;
+            padding: 0;
+        }
+    }
+}

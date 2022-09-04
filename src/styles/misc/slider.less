@@ -1,0 +1,66 @@
+body .rzslider {
+  margin: 0;
+
+  .rz-bar {
+    height: 3px;
+  }
+  .rz-bubble {
+    color: @white;
+    bottom: -5px;
+    z-index: @layerFirst;
+    pointer-events: none;
+    &.rz-limit {
+      color: @upLight;
+      bottom: 5px;
+    }
+  }
+}
+
+.rz-pointer {
+  width: 24px;
+  height: 24px;
+  top: -11px;
+  background-color: @guestNeuter;
+  &:after {
+    display: none;
+  }
+}
+
+//village specific
+.anar .rzslider .rz-pointer {
+  background-color: @anarNeuter;
+}
+
+.ulmo .rzslider  .rz-pointer {
+  background-color: @ulmoNeuter;
+}
+
+.sulimo .rzslider  .rz-pointer {
+  background-color: @sulimoNeuter;
+}
+
+.wilwar .rzslider .rz-pointer {
+  background-color: @wilwarNeuter;
+}
+
+.other-user {
+  .rzslider {
+    .rz-pointer {
+      background-color: @guestNeuter;
+    }
+  }
+  //village specific
+  &.anar .rzslider .rz-pointer {
+    background-color: @anarNeuter;
+  }
+  &.ulmo .rzslider .rz-pointer {
+    background-color: @ulmoNeuter;
+  }
+  &.sulimo .rzslider .rz-pointer {
+    background-color: @sulimoNeuter;
+  }
+  &.wilwar .rzslider .rz-pointer {
+    background-color: @wilwarNeuter;
+  }
+
+}

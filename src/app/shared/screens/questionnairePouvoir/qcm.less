@@ -1,0 +1,403 @@
+.questionnaire-test {
+    width: 400px;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    .fullHeight(0px);
+    color: black;
+    font-size: 1.2em;
+
+    div {
+        margin: 5px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    textarea {
+        margin: 5px;
+        margin-bottom: 30px;
+        float: none;
+        display: block;
+        width: inherit;
+        height: 4em;
+    }
+
+    button {
+    }
+
+    .valid {
+        width: 100%;
+    }
+
+    .result-text {
+        height: 350px;
+        overflow: scroll;
+    }
+}
+
+.qcm {
+    text-align: center;
+
+    .main-column__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: none!important;
+    }
+
+    h1 {
+        font-size: 4em;
+        font-family: "Wire One", sans-serif;
+        margin-bottom: 40px;
+        margin-top: -60px;
+
+        &span {
+            &.anar {
+                background: @anarNeuter;
+            }
+
+            &.wilwar {
+                background: @wilwarNeuter;
+            }
+
+            &.sulimo {
+                background: @sulimoNeuter;
+            }
+
+            &.ulmo {
+                background: @ulmoNeuter;
+            }
+        }
+    }
+
+    .fiche-finale {
+        display: none;
+
+        &.active {
+            display: inline-block;
+        }
+
+        width: 500px;
+        height: 400px;
+        background: #191919;
+        padding: 30px;
+
+        .image {
+            width: 193px;
+            height: 400px;
+            float: left;
+        }
+
+        .text {
+            width: 280px;
+            margin-left: 15px;
+            float: left;
+            text-align: justify;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: 3em;
+                text-align: center;
+                font-family: 'Wire One';
+            }
+
+            .description {
+                margin-bottom: 15px;
+            }
+
+            .quote {
+                font-style: italic;
+                font-size: 0.9em;
+            }
+        }
+
+        a {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+
+    &__questionnaire {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0 35px;
+        align-self: center;
+        width: 93%;
+        max-width: 800px;
+        position: relative;
+    }
+
+    &__question {
+        background: #111;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px;
+        display: inline-block;
+
+        h2 {
+            font-size: 1.5em;
+            text-align: justify;
+            text-indent: 2%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .image {
+        background-color: #090909;
+        height: 115px;
+        margin-bottom: 15px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .choice {
+
+        padding: 3px;
+        cursor: pointer;
+        font-size: 1.2em;
+        text-align: center;
+        background: #555;
+        display: block;
+        margin-top: 5px;
+
+        &.select {
+            &.anar {
+                background: @anarNeuter;
+            }
+
+            &.wilwar {
+                background: @wilwarNeuter;
+            }
+
+            &.sulimo {
+                background: @sulimoNeuter;
+            }
+
+            &.ulmo {
+                background: @ulmoNeuter;
+            }
+        }
+        &:active {
+            filter: brightness(.7) contrast(2.2);
+        }
+
+        &:hover {
+            background: #777;
+
+            &.select {
+                &.anar {
+                    background: @anarLight;
+                }
+
+                &.wilwar {
+                    background: @wilwarLight;
+                }
+
+                &.sulimo {
+                    background: @sulimoLight;
+                }
+
+                &.ulmo {
+                    background: @ulmoLight;
+                }
+            }
+        }
+
+        .label {
+            display: inline-block;
+
+            .big {
+                font-weight: bold;
+                font-size: 1.3em;
+            }
+
+            .italic {
+                font-style: italic;
+            }
+
+            .little {
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    .confirm {
+        align-self: center;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        vertical-align: middle;
+        display: none;
+
+        &.active {
+            display: inline-block;
+        }
+        cursor: pointer;
+        background: @guestDark;
+
+        &.anar {
+            background: @anarNeuter;
+        }
+
+        &.wilwar {
+            background: @wilwarNeuter;
+        }
+
+        &.sulimo {
+            background: @sulimoNeuter;
+        }
+
+        &.ulmo {
+            background: @ulmoNeuter;
+        }
+
+        &:hover {
+            &.anar {
+                background: @anarLight;
+            }
+
+            &.wilwar {
+                background: @wilwarLight;
+            }
+
+            &.sulimo {
+                background: @sulimoLight;
+            }
+
+            &.ulmo {
+                background: @ulmoLight;
+            }
+        }
+    }
+
+    &__progress {
+        position: absolute;
+        top: -30px;
+        right: -25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        font-size: 1.2em;
+        height: 60px;
+        font-weight: bold;
+        vertical-align: middle;
+        border-radius: 50%;
+
+        &.anar {
+            background: @anarNeuter;
+        }
+
+        &.wilwar {
+            background: @wilwarNeuter;
+        }
+
+        &.sulimo {
+            background: @sulimoNeuter;
+        }
+
+        &.ulmo {
+            background: @ulmoNeuter;
+        }
+    }
+
+    .results {
+        position: absolute;
+        padding: 15px;
+        background: @guestDark;
+        border-radius: 10px;
+        width: 240px;
+        top: 20px;
+        left: 100%;
+        border: 3px solid @guestNeuter;
+        margin-left: -290px;
+        display: none;
+
+        .title {
+            width: 90%;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .line {
+            width: 240px;
+            display: inline-block;
+            margin-bottom: 15px;
+
+            .carac-container {
+                height: 25px;
+                padding: 10px;
+                padding-bottom: 0px;
+                display: inline-block;
+                background: #111;
+                border-radius: 5px;
+                height: 30px;
+
+                div {
+                    float: left;
+                }
+
+                .min {
+                    width: 90px;
+                    height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    display: inline-block;
+                }
+
+                .max {
+                    width: 90px;
+                    height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    display: inline-block;
+                }
+
+                .number {
+                    background: #333;
+                    width: 40px;
+                    height: 25px;
+                    vertical-align: middle;
+                    line-height: 25px;
+                    text-align: center;
+                    display: inline-block;
+                    border-radius: 4px;
+                    font-size: 1.5em;
+                    margin-top: -2px;
+                    font-weight: bold;
+
+                    &.anar {
+                        color: @anarLight;
+                    }
+
+                    &.sulimo {
+                        color: @sulimoLight;
+                    }
+
+                    &.ulmo {
+                        color: @ulmoLight;
+                    }
+
+                    &.wilwar {
+                        color: @wilwarLight;
+                    }
+                }
+            }
+        }
+    }
+}

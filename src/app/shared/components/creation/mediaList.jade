@@ -1,0 +1,34 @@
+.bibliotheque-media-container
+  .upload-container
+    form()
+      file-field(value="libraryCtrl.rawFile"
+      field="file"
+      label="Media à envoyer"
+      required="true")
+      div
+        h3 {{!libraryCtrl.loading ? "Télécharger un fichier" : "Mise en ligne ..."}}
+        .reminder Maximum: 100Mo
+        .upload-status(ng-show="libraryCtrl.loading")
+          .upload-bar
+            .upload-bar-fill.fond-village(style="width: {{libraryCtrl.uploadPercent}}%")
+          .uploadPercent.font-village
+            span {{libraryCtrl.uploadPercent}}
+            span  %
+        .submit.fond-village.hover.button.button--meaty(
+          ng-click="libraryCtrl.uploadFile()"
+          ng-disabled="!libraryCtrl.rawFile || libraryCtrl.loading") Mettre en ligne
+  img.preview
+  .button.hover.fond-village.button--meaty(ng-if="!!libraryCtrl.callback" ng-click="libraryCtrl.sendMedia()") Valider
+  //.getting(ng-show="libraryCtrl.loading")
+  //  .text Chargement...
+  //  .loading-biblio
+  //    .ajax-loader
+  .media-list
+    .media-unit(ng-repeat="media in libraryCtrl.mediaList" ng-click="libraryCtrl.selectMedia(media)" ng-class="{'selected': libraryCtrl.selectedMedia.id  === media.id}")
+      h3.title(ng-show="!libraryCtrl.editingMedia || libraryCtrl.editingMedia.id !== media.id") {{media.title}}
+      input(ng-show="libraryCtrl.editingMedia && libraryCtrl.editingMedia.id === media.id" ng-model="media.editingTitle")
+      .button.fond-village.hover(ng-show="libraryCtrl.editingMedia && libraryCtrl.editingMedia.id === media.id" ng-click="libraryCtrl.editMediaName(media)") Valider
+      .fa.fa-trash(ng-click="libraryCtrl.deleteMedia(media)")
+      .fa.fa-pencil(ng-click="libraryCtrl.toggleEditMediaName(media)")
+      img.image(src="{{media.image}}" image-load-watcher on-load="libraryCtrl.onImageLoad")
+      input.link(readonly type="text" ng-model="media.url")

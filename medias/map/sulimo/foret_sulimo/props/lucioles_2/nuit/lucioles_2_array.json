@@ -1,0 +1,111 @@
+{"frames": [
+
+{
+	"filename": "lucioles_200.png",
+	"frame": {"x":0,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lucioles_201.png",
+	"frame": {"x":80,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lucioles_202.png",
+	"frame": {"x":160,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lucioles_203.png",
+	"frame": {"x":240,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lucioles_204.png",
+	"frame": {"x":320,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lucioles_205.png",
+	"frame": {"x":400,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lucioles_206.png",
+	"frame": {"x":480,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lucioles_207.png",
+	"frame": {"x":560,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lucioles_208.png",
+	"frame": {"x":640,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lucioles_209.png",
+	"frame": {"x":720,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lucioles_210.png",
+	"frame": {"x":800,"y":0,"w":80,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":50},
+	"sourceSize": {"w":80,"h":50},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "lucioles_2.png",
+	"format": "RGBA8888",
+	"size": {"w":880,"h":50},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3a23fc4dde1b238f4bbc77ef9f410ffe:38f46ba1f5eb627f33defd8ca0193144:f2b90379c2288f1c85abe3cb1d064441$"
+}
+}

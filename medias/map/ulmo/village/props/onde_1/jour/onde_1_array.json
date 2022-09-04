@@ -1,0 +1,66 @@
+{"frames": [
+
+{
+	"filename": "onde_100.png",
+	"frame": {"x":2,"y":2,"w":53,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":25},
+	"sourceSize": {"w":53,"h":25},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "onde_101.png",
+	"frame": {"x":57,"y":2,"w":53,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":25},
+	"sourceSize": {"w":53,"h":25},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "onde_102.png",
+	"frame": {"x":112,"y":2,"w":53,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":25},
+	"sourceSize": {"w":53,"h":25},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "onde_103.png",
+	"frame": {"x":167,"y":2,"w":53,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":25},
+	"sourceSize": {"w":53,"h":25},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "onde_104.png",
+	"frame": {"x":222,"y":2,"w":53,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":25},
+	"sourceSize": {"w":53,"h":25},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "onde_105.png",
+	"frame": {"x":277,"y":2,"w":53,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":25},
+	"sourceSize": {"w":53,"h":25},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "onde_1.png",
+	"format": "RGBA8888",
+	"size": {"w":332,"h":29},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7fde038b1febd3a63ce5e23f089b3438:60f90e4c62dae15541b58b21b1a9b4e3:d6d56d4898bd3a45937e227ae57b09b4$"
+}
+}

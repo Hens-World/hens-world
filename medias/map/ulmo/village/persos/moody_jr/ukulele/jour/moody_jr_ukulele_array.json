@@ -1,0 +1,255 @@
+{"frames": [
+
+{
+	"filename": "moodyjr0000.png",
+	"frame": {"x":1,"y":1,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0001.png",
+	"frame": {"x":1,"y":1,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0002.png",
+	"frame": {"x":1,"y":1,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0003.png",
+	"frame": {"x":1,"y":1,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0004.png",
+	"frame": {"x":1,"y":1,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0005.png",
+	"frame": {"x":1,"y":1,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0006.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0007.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0008.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0009.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0010.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0011.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0012.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0013.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0014.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0021.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0022.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0023.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0024.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0025.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0026.png",
+	"frame": {"x":1,"y":72,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0015.png",
+	"frame": {"x":1,"y":143,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0016.png",
+	"frame": {"x":1,"y":143,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0017.png",
+	"frame": {"x":1,"y":143,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0018.png",
+	"frame": {"x":1,"y":143,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0019.png",
+	"frame": {"x":1,"y":143,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moodyjr0020.png",
+	"frame": {"x":1,"y":143,"w":31,"h":69},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":69},
+	"sourceSize": {"w":31,"h":69},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "moody_jr_ukulele.png",
+	"format": "RGBA8888",
+	"size": {"w":33,"h":213},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f433aaad12340850f3aa04fbcfa20f0f:734f578595f7d242e805c08cea50ffd0:7d486254f368baf529f1c0108aefb736$"
+}
+}

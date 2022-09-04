@@ -1,0 +1,9 @@
+.label(ng-bind-html="fieldCtrl.label")
+input(type="{{fieldCtrl.type}}" ng-if="fieldCtrl.typeToClass[fieldCtrl.type]"
+            class="{{fieldCtrl.typeToClass[fieldCtrl.type]}}"
+            ng-class="{'form--error': !!fieldCtrl.error.message}"
+            placeholder="{{fieldCtrl.placeholder}}"
+            ng-model="fieldCtrl.value"
+            ng-required="fieldCtrl.required")
+.form__error-message(ng-if="!!fieldCtrl.error.message") {{fieldCtrl.error.message}}
+h3(ng-if="!fieldCtrl.typeToClass[fieldCtrl.type]") Type d'input non supporté par ce composant

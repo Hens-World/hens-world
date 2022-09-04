@@ -1,0 +1,74 @@
+.profile-container {
+  .my-profile-container {
+    background: @buttonDark;
+    display: flex;
+    justify-content: flex-end;
+    padding: 9px 6px;
+    .profile-icon {
+      width: 30px;
+      margin: 0 5px;
+      height: 30px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: .7;
+      &.parameters {
+        background-image: url("/medias/common/mobile_icon_parametres.png");
+      }
+
+      &.disconnect {
+        background-image: url("/medias/common/mobile_icon_deconnexion.png");
+      }
+    }
+  }
+  .fiche-selection {
+    background: @contentDark;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    .onglet {
+      margin-right: 1px;
+      height: inherit;
+      cursor: pointer;
+      margin-left: 1px;
+      padding: 2px 35px 2px 35px;
+      font-size: 2.9em;
+      font-family: 'Wire One', sans-serif;
+      text-align: left;
+
+      &:not(.active) {
+        background: @lowerDark;
+      }
+      &.active {
+        flex: 1 1 auto;
+        padding: 2px 15px 2px 15px;
+
+        &:not(.without-triangle):before {
+          width: 40px;
+          height: 25px;
+          content: '';
+          display: block;
+          fill: @ulmoNeuter;
+          margin-top: 33px;
+          margin-left: -3px;
+          position: absolute;
+          z-index: 5;
+          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="25"> <path fill="#a99c73" d="M0,0 40,0 20,25"></path></svg>');
+
+        }
+        &.ulmo:before {
+          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="25"> <path fill="rgb(17, 171, 166)" d="M0,0 40,0 20,25"></path></svg>');
+        }
+        &.anar:before {
+          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="25"> <path fill="rgb(227, 55, 13)" d="M0,0 40,0 20,25"></path></svg>');
+        }
+        &.sulimo:before {
+          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="25"> <path fill="rgb(232, 132, 0)" d="M0,0 40,0 20,25"></path></svg>');
+        }
+        &.wilwar:before {
+          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="25"> <path fill="rgb(159, 167, 10)" d="M0,0 40,0 20,25"></path></svg>');
+        }
+      }
+    }
+  }
+}

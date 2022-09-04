@@ -1,0 +1,17 @@
+.chat-rp-home-container.page-container
+  .main-column
+    .rp-screen-container
+      
+  .side-chat.side-column
+    .mute-bt(ng-click="toggleMute()")
+      span.muted(ng-show="!mute") Désactiver les sons
+      span.open(ng-show="mute") Activer les sons
+    .list
+      .item.other-user(class="{{msg.village}} {{msg.type}}" ng-repeat="msg in globalList track by $index" on-last-repeat='on-last-repeat')
+        span.time {{msg.time}}
+        span.user.font-village() {{msg.user}}
+        span(ng-show="msg.type != 'system' ") :
+        span.msg {{msg.msg}}
+    form.message-input(ng-submit="sendMessage()")
+      input.input(type="text" placeholder="Votre Message ici..." ng-model="msgToSend")
+      input.send.button.fond-village(type="submit" value="Envoyer") 

@@ -1,0 +1,78 @@
+.anar-choose(ng-if="choosingAnar")
+  .half-page-bt.ouest(ng-click="selectDistrict('ouest')")
+    .blur
+    .color
+    .text
+      .title Anar
+      .subtitle Quartier ouest
+  .half-page-bt.est(ng-click="selectDistrict('est')")
+    .blur
+    .color
+    .text
+      .title Anar
+      .subtitle Quartier est
+.village__wrapper(ng-show="!choosingAnar && confirmed" ng-class="{'dragging': dragging}")
+  .event_wrappers
+    solstice-anar(ng-if="(currentEvent.slug === 'solstice-ete' || currentEvent.slug === 'lanterne_readonly') && !!$root.currentUser && village === 'anar'")
+    equinoxe-sulimo(ng-if="village === 'sulimo' && currentEvent.slug === 'equinoxe-automne'" instrument="currentInstrument" hovered-instrument="hoveredInstrument")
+    .other-village(class="{{village}}")
+    fireworks(ng-if="currentEvent.slug === 'horoscope' && !!$root.currentUser" village="village")
+    halloween(ng-if="currentEvent.slug === 'halloween' && !!$root.currentUser && (hour >= 21 || hour <= 6)")
+    map-cachette(ng-if="currentEvent.slug === 'carnaval-cachette' && !!$root.currentUser" type="UI")
+    div(snow-effect)
+  .article-list(ng-show="mapState.showArticles")
+  div.perso-profil(ng-class="{'show':showProfil}")
+    div(perso-profil profil="currentProfil" show="showProfil")
+  .ui-container(ng-class="{'show':mapState.showMinimap && !mapState.showArticles}")
+    .mini-map(ng-class="{'disabled':mapState.disabled}")
+      .mini-screen
+    .move-map-container
+      .move-button.left()
+      .move-button.top
+      .move-button.right
+      .move-button.down
+  .village__loca
+    .map-attached-events
+      map-cachette(ng-if="currentEvent.slug === 'carnaval-cachette' && !!$root.currentUser" type="PROPS")
+      prop-message(ng-if="hoveredProp != null && hoveredProp.prop_hover == 'prop_message'" hovered-prop="hoveredProp" )
+    span(ng-if="showLocations")
+      village-location(ng-repeat="loca in vData.locations"
+                       village="village"
+                       class="{{loca.slug}}"
+                       slug='{{loca.slug}}'
+                       v-data="loca"
+                       ng-click="villageUtils.displayLocationCreations(loca)")
+    .village__prop-list(ng-repeat="prop in propLoadList" prop-data="prop")
+      .village__prop-unit(ng-repeat="propInstance in prop.list" ng-if="(mapState.showCharacters || !prop.action) && (!prop.random_position || $index == prop.chosenIndex)"
+                          class="{{::prop.label}}-{{::prop.listId}}-{{::$index}}" ng-class="{'clickable': !!prop.action}"
+                          style="left: {{::propInstance.x - prop.center.x}}px; top: {{::propInstance.y - prop.center.y}}px; width: {{::prop.width}}px; height: {{::prop.height}}px"
+                          ng-click="checkActionForProp(prop)"
+                          ng-mouseover="storeHoveredProp(prop, $event)"
+                          ng-mouseleave="deleteHoveredProp($event)")
+        .village__prop-curseur(ng-if="::prop.icone" class="village__prop-curseur--{{::prop.icone}} {{::village}}")
+        .village__prop-sprite(
+          style="background-image: url({{::prop.imgUrl}}); width: {{::prop.width}}px; height: {{::prop.height}}px; background-size: {{::prop.sprite.meta.size.w}}px {{::prop.sprite.meta.size.h}}px"
+        )
+    .village__perso-list(ng-if="mapState.showCharacters")
+      .village__perso-unit(ng-repeat="contrib in contribLoadList"
+                          class="{{::contrib.slug}}-{{::contrib.current.posSlug}}"
+                          style="left: {{::contrib.current.x - contrib.current.center.x}}px; top: {{::contrib.current.y - contrib.current.center.y}}px; width: {{::contrib.current.width}}px; height: {{::contrib.current.height}}px;"
+                          ng-click="villageUtils.openPerso(contrib.slug)")
+        .village__perso-curseur(class="{{village}}")
+        .village__perso-label(ng-bind-html="::contrib.pseudo")
+        .village__perso-sprite(style="background-image: url('{{contrib.current.imgUrl}}'); width: {{::contrib.current.width}}px; height: {{::contrib.current.height}}px; background-size: {{::contrib.sprite.meta.size.w}}px {{::contrib.sprite.meta.size.h}}px")
+
+    .village__home-empty-list(ng-if="mapState.showHouses")
+      .village__home-empty-unit(ng-repeat="home in houseEmptyList"
+                                class="home-empty-{{::home.slug}}"
+                                style="left: {{::home.house.x}}px; top: {{::home.house.y}}px; width: {{::home.house.width}}px; height: {{::home.house.height}}px"
+                                ng-click="goToOwner(home.slug)")
+        .village__home-empty-label(ng-bind-html="::'Maison de ' + home.pseudo")
+    .village__home-main-list(ng-if="mapState.showHouses")
+      .village__home-main-unit(ng-repeat="home in houseMainList"
+                                class="home-main-{{::home.slug}}"
+                                style="left: {{::home.house.x}}px; top: {{::home.house.y}}px; width: {{::home.house.width}}px; height: {{::home.house.height}}px"
+                                ng-click="villageUtils.openPerso(home.slug)")
+        .village__home-main-curseur(class="{{::village}}")
+        .village__home-label(ng-bind-html="::'Maison de ' + home.pseudo")
+  .map-village(class="{{mapTime}} {{district}} {{effectiveZone}}" ng-class="{'obfuscated': mapState.obfuscated}")

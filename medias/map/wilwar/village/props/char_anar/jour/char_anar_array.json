@@ -1,0 +1,116 @@
+{"frames": [
+
+{
+	"filename": "char_anar1.png",
+	"frame": {"x":0,"y":0,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar2.png",
+	"frame": {"x":226,"y":0,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar3.png",
+	"frame": {"x":0,"y":183,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar4.png",
+	"frame": {"x":226,"y":183,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar5.png",
+	"frame": {"x":0,"y":366,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar6.png",
+	"frame": {"x":226,"y":366,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar7.png",
+	"frame": {"x":0,"y":549,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar8.png",
+	"frame": {"x":226,"y":549,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar9.png",
+	"frame": {"x":0,"y":732,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar10.png",
+	"frame": {"x":226,"y":732,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar11.png",
+	"frame": {"x":0,"y":915,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar12.png",
+	"frame": {"x":226,"y":915,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+},
+{
+	"filename": "char_anar13.png",
+	"frame": {"x":0,"y":1098,"w":226,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":183},
+	"sourceSize": {"w":226,"h":183}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "char_anar.png",
+	"format": "RGBA8888",
+	"size": {"w":452,"h":1281},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:38567fa6b045318644200e80dc160d59:47da4e85e4f1edf57083352153146818:ed4e8bfa68cb1d6a847998cdbd24f6c7$"
+}
+}

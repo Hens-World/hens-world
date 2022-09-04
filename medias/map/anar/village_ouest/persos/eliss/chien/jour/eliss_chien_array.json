@@ -1,0 +1,174 @@
+{"frames": [
+
+{
+	"filename": "elyss000.png",
+	"frame": {"x":0,"y":0,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss001.png",
+	"frame": {"x":0,"y":71,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss002.png",
+	"frame": {"x":0,"y":142,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss003.png",
+	"frame": {"x":0,"y":213,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss004.png",
+	"frame": {"x":0,"y":284,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss005.png",
+	"frame": {"x":0,"y":355,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss006.png",
+	"frame": {"x":0,"y":426,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss007.png",
+	"frame": {"x":0,"y":497,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss008.png",
+	"frame": {"x":0,"y":568,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss009.png",
+	"frame": {"x":0,"y":639,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss010.png",
+	"frame": {"x":0,"y":710,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss011.png",
+	"frame": {"x":0,"y":781,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss012.png",
+	"frame": {"x":0,"y":852,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss013.png",
+	"frame": {"x":0,"y":923,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss014.png",
+	"frame": {"x":0,"y":994,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss015.png",
+	"frame": {"x":0,"y":1065,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss016.png",
+	"frame": {"x":0,"y":1136,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "elyss017.png",
+	"frame": {"x":0,"y":1207,"w":58,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":71},
+	"sourceSize": {"w":58,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "eliss_chien.png",
+	"format": "RGBA8888",
+	"size": {"w":58,"h":1278},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:780bf076b130ca415d055e60606e7979:bf3d0ae6bdaa7b5937191a9a36188e65:c155091cc892928213e73c63e9028d59$"
+}
+}

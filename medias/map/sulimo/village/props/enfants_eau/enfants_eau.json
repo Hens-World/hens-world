@@ -1,0 +1,25 @@
+{
+  "label":"enfants_eau",
+  "width":97,
+  "height":86,
+  "center":{
+    "x":52,
+    "y":84
+  },
+  "avail":[
+    {
+      "fromT":10,
+      "to":12
+    },
+    {
+      "fromT":17,
+      "to":19
+    }
+  ],
+  "list":[
+    {
+      "x":1557,
+      "y":3139
+    }
+  ]
+}

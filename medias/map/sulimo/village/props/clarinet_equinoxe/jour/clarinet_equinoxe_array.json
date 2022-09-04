@@ -1,0 +1,92 @@
+{"frames": [
+
+{
+	"filename": "clarinette0000.png",
+	"frame": {"x":0,"y":0,"w":33,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+	"sourceSize": {"w":33,"h":66}
+},
+{
+	"filename": "clarinette0001.png",
+	"frame": {"x":0,"y":66,"w":33,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+	"sourceSize": {"w":33,"h":66}
+},
+{
+	"filename": "clarinette0002.png",
+	"frame": {"x":0,"y":132,"w":33,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+	"sourceSize": {"w":33,"h":66}
+},
+{
+	"filename": "clarinette0003.png",
+	"frame": {"x":0,"y":198,"w":33,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+	"sourceSize": {"w":33,"h":66}
+},
+{
+	"filename": "clarinette0004.png",
+	"frame": {"x":0,"y":264,"w":33,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+	"sourceSize": {"w":33,"h":66}
+},
+{
+	"filename": "clarinette0005.png",
+	"frame": {"x":0,"y":330,"w":33,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+	"sourceSize": {"w":33,"h":66}
+},
+{
+	"filename": "clarinette0006.png",
+	"frame": {"x":0,"y":396,"w":33,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+	"sourceSize": {"w":33,"h":66}
+},
+{
+	"filename": "clarinette0007.png",
+	"frame": {"x":0,"y":462,"w":33,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+	"sourceSize": {"w":33,"h":66}
+},
+{
+	"filename": "clarinette0008.png",
+	"frame": {"x":0,"y":528,"w":33,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+	"sourceSize": {"w":33,"h":66}
+},
+{
+	"filename": "clarinette0009.png",
+	"frame": {"x":0,"y":594,"w":33,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+	"sourceSize": {"w":33,"h":66}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "clarinet_equinoxe.png",
+	"format": "RGBA8888",
+	"size": {"w":33,"h":660},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:06ca8da19a93b9e6c4305b5ebc1edd87:300629b2abbbc3689616742b0ced8fa1:751fd8c217af08be88b5f50f0a20f70b$"
+}
+}

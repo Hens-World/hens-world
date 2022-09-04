@@ -1,0 +1,156 @@
+{"frames": [
+
+{
+	"filename": "groupe60000.png",
+	"frame": {"x":0,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60001.png",
+	"frame": {"x":99,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60002.png",
+	"frame": {"x":198,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60003.png",
+	"frame": {"x":297,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60004.png",
+	"frame": {"x":396,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60005.png",
+	"frame": {"x":495,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60006.png",
+	"frame": {"x":594,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60007.png",
+	"frame": {"x":693,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60008.png",
+	"frame": {"x":792,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60009.png",
+	"frame": {"x":891,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60010.png",
+	"frame": {"x":990,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60011.png",
+	"frame": {"x":1089,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60012.png",
+	"frame": {"x":1188,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60013.png",
+	"frame": {"x":1287,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60014.png",
+	"frame": {"x":1386,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe60015.png",
+	"frame": {"x":1485,"y":0,"w":99,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":86},
+	"sourceSize": {"w":99,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "artisants_g6.png",
+	"format": "RGBA8888",
+	"size": {"w":1584,"h":86},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:17a7f65fc6a6d2519bbb8085fba8ac3a:3ae39e3d5f3dc9dcf7d04200dd3ccade:815a5084f3a7610e35b65936de362c99$"
+}
+}

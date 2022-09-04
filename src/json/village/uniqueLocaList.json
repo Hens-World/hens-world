@@ -1,0 +1,39 @@
+[
+  {
+    "slug": "eau_peine_bar-ulmo",
+    "directive": "tchat-launch"
+  },
+  {
+    "slug": "taverne-sulimo",
+    "directive": "tchat-launch"
+  },
+  {
+    "slug": "coquelicot-wilwar",
+    "directive": "tchat-launch"
+  },
+  {
+    "slug": "pote_au_feu",
+    "directive": "tchat-launch"
+  },
+  {
+    "slug": "domaine_sulimo",
+    "directive": "domaine"
+  },
+  {
+    "slug": "domaine_wilwar",
+    "directive": "domaine"
+  },
+  {
+    "slug": "barrage-ulmo",
+    "directive": "domaine"
+  },
+  {
+    "slug": "constellations",
+    "directive": "link",
+    "link":"constellations"
+  }, {
+    "slug": "grand_dojo",
+    "directive": "link",
+    "link":"https://dojo.hens-world.com"
+  }
+]

@@ -1,0 +1,191 @@
+.serie-detail {
+  display: flex;
+  flex-direction: column;
+
+  &__left-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    flex: 0 0 auto;
+  }
+
+  &__left-wrapper {
+    padding: 20px 10px;
+    text-align: left;
+  }
+
+  &__left-info {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  &__type {
+    padding: 15px 0 9px;
+    font-family: 'Wire One', sans-serif;
+    font-size: 3em;
+    background-color: @black;
+  }
+
+  &__title {
+    font-size: 1.8em;
+    margin-top: -5px;
+  }
+  &__cover {
+    float: left;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, .2);
+    width: 180px;
+    height: 180px;
+  }
+
+
+  &__details {
+    font-style: italic;
+    opacity: .6;
+    margin: 4px 0;
+  }
+
+  &__description {
+    font-style: italic;
+  }
+
+  &__right-column {
+    flex: 0 1 auto;
+    padding-top: 10px;
+    margin-right: 9px;
+    padding-bottom: 6px;
+  }
+}
+
+.serie-post {
+  width: 100%;
+  height: 90px;
+  box-sizing: border-box;
+  background-color: @headerDark;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 1px;
+  z-index: 2;
+  border-bottom: 1px solid @middleDark;
+
+  &--dark {
+    background-color: black;
+  }
+
+  &--selected {
+    z-index: 4;
+    background-color: @buttonHoverDark;
+  }
+
+  &.dragged {
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  }
+
+  &__drag {
+    width: 60px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: move;
+    opacity: .6;
+
+    &:hover {
+      opacity: .9;
+    }
+    .line {
+      margin: 4px;
+      height: 3px;
+      width: 40px;
+      background-color: white;
+    }
+  }
+
+  &__checkbox-container {
+    width: 60px;
+    flex-shrink: 0;
+    background-color: @buttonDark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .25s;
+    &:hover {
+      transition: background-color .15s;
+      .serie-post {
+        &__checker {
+        }
+      }
+    }
+
+    &:active {
+      .serie-post {
+        &__checker {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &__checkbox {
+    pointer-events: none;
+    width: 25px;
+    height: 25px;
+    background-color: @black;
+  }
+
+  &__checker {
+    width: 21px;
+    height: 21px;
+    margin: 2px;
+    background-color: white;
+  }
+
+  &__order {
+    width: 60px;
+    text-align: center;
+    font-size: 4em;
+    align-self: center;
+    font-family: 'Wire One', sans-serif;
+    margin-left: 8px;
+  }
+
+  &__content {
+    text-align: left;
+    padding-left: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 auto;
+    font-size: 1.1em;
+    justify-content: center;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__location {
+
+  }
+  &__delete {
+    align-self: center;
+    font-size: 1.8em;
+    margin-right: 8px;
+  }
+  &__date {
+
+  }
+
+  &__miniature {
+    align-self: center;
+    margin-right: 6px;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: top;
+  }
+}

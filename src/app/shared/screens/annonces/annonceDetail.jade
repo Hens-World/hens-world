@@ -1,0 +1,86 @@
+.page-container.annonce-detail-container
+  .main-column
+    h1.fond-village 
+      span JdR Instantané
+      a.link-back(href="/annonces")
+      .me.edit(ng-show="$root.currentUser.ID == annonce.owner.ID")
+        a.edit-bt(href="annonces/{{annonce.aid}}/edit")
+    .panel.annonce-panel
+      .left
+        a(href="profil/{{annonce.owner.ID}}")
+          .circle-avatar.medium(style="background-image:url('{{annonce.owner.meta.avatar}}')")
+        .owner.big(class="other-user {{annonce.owner.meta.village}}")
+          a.font-village.pseudo(href="profil/{{annonce.owner.ID}}") {{annonce.owner.display_name}}
+          br
+          span Personnage:
+          br
+          span.font-village.pseudo {{annonce.owner.char[1].prenom}}  {{annonce.owner.char[1].nom}}
+        .participants.info-text(ng-if="annonce.limit_size != -1 && !annonce.is_private")
+          span Encore 
+          span.font-village {{annonce.limit_size - annonce.participants.length}} 
+          span places disponible ! 
+        .info-text(ng-if="annonce.is_private")
+          | Cette annonce est privée !
+      .right
+        h2.title {{annonce.title}}
+        p.description(ng-bind-html="annonce.description")
+        .start_time(ng-if="annonce.start") prévu le {{annonce.start.format()}}
+        .info-text.other-user(class="{{villages[annonce.village]}}" ) 
+          span(ng-show="annonce.village > -1")
+            span Se déroulera à 
+            span.font-village {{villages[annonce.village] | capitalize}}, {{locations[annonce.village][annonce.location] | capitalize}}
+          span(ng-show="annonce.village == -1")
+            span Aucun lieu n'a encore été défini pour cette annonce.
+        .info-text 
+          span(ng-show="annonce.formatDate")
+            span L'annonce est prévue de démarrer le 
+            strong {{annonce.formatDate}}
+          span(ng-show="!annonce.formatDate")
+            span Cette annonce n'a pas encore définie de date de démarrage.
+    .comment-section
+      h2.title Discussion
+      .read
+        ul 
+          .info-text(ng-show="annonces.comments.length == 0")
+            | Il n'y a aucun message pour l'instant, venez donner votre avis sur cette annonce!
+          li.comment-unit(class="other-user {{comment.author.meta.village}}" ng-repeat="comment in annonce.comments")
+            a.avatar.fond-village.dark(href="profil/{{comment.author.ID}}" style="background-image:url('{{comment.author.meta.avatar}}')")
+            .content-wrapper
+              .info
+                .name.font-village.light(ng-bind-html="comment.author.display_name")
+                .comment-date(ng-bind-html="comment.formatDate")
+              .content-comment(ng-show="!comment.haEdit"  ng-bind-html="comment.text")
+              .content-edit(ng-show="comment.haEdit")
+                textarea.edit-container()
+                .valid(ng-click="editComment(comment,$index)") Éditer
+      .write(ng-show="annonce.isParticipating")
+        .write-container
+          textarea.write-comment(ng-model="commentContent" placeholder="Discutez de vos préférences et de l'organisation de la partie de jeu de rôle.")
+          .valid-line 
+            .valid.button.fond-village.hover(ng-click="sendComment()") Envoyer
+      .info-text(ng-show="!annonce.isParticipating")
+        | Vous ne pouvez pas participer à la discussion sans participer au RP.
+
+  .side-column
+    h3 Participants
+    ul.participant-list.list
+      li.element(class="other-user {{participant.meta.village}}" ng-repeat="participant in annonce.participants | orderBy: 'display_name.length'"  ng-class="{'big': participant.display_name.length > 12}")
+        a(href="profil/{{participant.ID}}" )
+          .circle-avatar.small(style="background-image:url('{{participant.meta.avatar}}')")
+        .name.font-village {{participant.display_name}}
+        .remove(ng-if="$root.currentUser.ID == annonce.owner.ID && $root.currentUser.ID != participant.ID" ng-click="kickUser(participant)") X
+    h3 Invités
+    .info-text(ng-show="annonce.inviteList.length == 0")
+      | Il n'y a aucune invitation en cours 
+    ul.invite-list.list
+      li.element(class="other-user {{invited.meta.village}}" ng-repeat="invited in annonce.inviteList | orderBy: 'display_name.length'"  ng-class="{'big': invited.display_name.length > 11}")
+        a(href="profil/{{invited.ID}}" )
+          .circle-avatar.small(style="background-image:url('{{invited.meta.avatar}}')")
+        .name.font-village {{invited.display_name}}
+        .remove(ng-if="$root.currentUser.ID == annonce.owner.ID" ng-click="kickUser(invited)") X
+    
+    .button.fond-village.hover(ng-show="canUserParticipate && !userIsInvited" ng-click="joinRP()") Participer au RP
+    .button.fond-village.hover(ng-show="canUserLeave" ng-click="leaveRP()") Quitter l'annonce
+    .button.fond-village.hover(ng-show="userIsInvited" ng-click="acceptInvite()") Accepter l'invitation
+    .button.fond-village.hover(ng-show="userIsInvited" ng-click="leaveRP()") Refuser l'invitation    
+    .button.fond-village.hover(ng-show="$root.currentUser.ID == annonce.owner.ID" ng-click="closeRP()") Déclarer l'annonce terminée  

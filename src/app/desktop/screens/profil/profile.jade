@@ -1,0 +1,13 @@
+.page-container()
+  .main-column
+    .main-column__content.profile-container.profile
+      .middle-container
+        .section.profil(ng-if="showProfil" profil-compte user="user" is-me="isMe")
+        .section.personnage(ng-if="!showProfil" profil-personnage personnage="personnage"
+        user="user" is-me="isMe" personnage-list="persoList")
+  .side-column(class="")
+      span(ng-if="!showProfil")
+        profile-perso-side-menu.other-user(class="{{$root.villages[personnage.village]}}")
+      span(ng-show="user.role !== 'membre' && showProfil")
+        profile-compte-side-menu.other-user(class="{{user.village}}")
+        

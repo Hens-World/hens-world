@@ -1,0 +1,32 @@
+    {
+      "pseudo": "Anastase",
+      "slug": "anastase",
+      "owner": "reno",
+      "status": "contributeur",
+      "house": {
+        "x": 856,
+        "y": 555,
+        "width": 16,
+        "height": 30
+      },
+      "image": {
+        "w": 540,
+        "h": 960,
+        "c": 270
+      },
+      "avail": [
+        {
+          "posSlug": "trompette",
+          "fromT": 18,
+          "to": 21,
+          "x": 2128,
+          "y": 2480,
+          "width": 45,
+          "height": 78,
+          "center": {
+            "x": 19,
+            "y": 76
+          }
+        }
+      ]
+    },

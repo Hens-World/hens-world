@@ -1,0 +1,14 @@
+//.label(ng-bind-html="fileCtrl.label")
+input(type="file"
+  class="{{fileCtrl.typeToClass[fileCtrl.type]}}"
+  ng-class="{'form--error': !!fileCtrl.error.message}"
+  placeholder="{{fileCtrl.placeholder}}"
+  ng-model="fileCtrl.inputPath"
+  ng-change="fileCtrl.onFileChange($event)"
+  select-ng-files
+  ng-required="fileCtrl.required")
+.drag-drop-zone()
+  p(ng-show="!fileCtrl.value") Glisser votre fichier ici
+  p.file-name(ng-show="fileCtrl.value") {{fileCtrl.value.name}}
+.button.button--meaty.fond-village.hover(ng-click="fileCtrl.selectFile()") Choisir un fichier
+.form__error-message(ng-if="!!fileCtrl.error.message") {{fileCtrl.error.message}}

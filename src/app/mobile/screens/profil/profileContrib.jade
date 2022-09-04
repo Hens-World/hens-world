@@ -1,0 +1,75 @@
+.profile-contrib-container.profile
+  .edit-container(ng-class="{'show':editShow}")
+    .close-around(ng-click="showEdit()")
+    .center-edit
+      .edit-title Editer votre profil
+      .avatar-edit.edit-field
+        .label.avatar Avatar
+        input.form(type="text" placeholder="http://" ng-model="editInfo.avatar")
+      .twitter-edit.edit-field
+        .label Twitter
+        input.form(type="text" placeholder="http://twitter.com" ng-model="editInfo.twitterLink")
+      .facebook-edit.edit-field
+        .label Facebook
+        input.form(type="text" placeholder="http://facebook.com" ng-model="editInfo.facebookLink")
+      .website-edit.edit-field
+        .label Site web
+        input.form(type="text" placeholder="http://yoursite.com" ng-model="editInfo.website")
+      .catchphrase-edit.edit-field
+        .label Domaine(s)
+        input.form(type="text" placeholder="catch phrase" ng-model="editInfo.domaine")
+      .description-edit.edit-field.super-height
+        .label.totop Description
+        textarea.form(rows="5" placeholder="Description " ng-model="editInfo.description")
+      .validate-change(ng-click="validateChange()") Valider
+      .loading(ng-show="editProcess")
+        .ajax-loader()
+  .middle-container
+    .left-column {{userlist}}
+      .avatar-container
+        .avatar-circle(style="background:url({{user.avatar}});background-size:100% 100%;")
+      a.character-link(href="map/{{user.village}}/perso-{{user.persoSlug}}") Personnage : {{user.persoPseudo}}
+      .description-container
+        .scroller
+          .description(ng-bind-html="fiche.minibio")
+    .main-column
+      .title-container
+        .symbole-village(ng-class="user.meta.meta.village")
+        .title  
+          span.span {{user.username}}
+          span  - Contributeur
+        .domaine(ng-bind-html="fiche.domaine") 
+        .not-me.like(ng-hide="isMe")
+          .fav(ng-click="setFav()" ng-class="{'favved':isFav}")
+            .amount(ng-bind-html="user.meta.meta.favNumber[0]")
+          .social-media
+            a.twitter(ng-show="infoShow.twitter" target="_blank" href="{{user.meta.meta.twitterLink[0]}}")
+            a.facebook(ng-show="infoShow.fb" target="_blank" href="{{user.meta.meta.facebookLink[0]}}")
+        .me.edit(ng-show="isMe")
+          .edit-bt(ng-click="showEdit()")
+            .text Éditer le profil
+      .links-container
+        .mail.bt-unit
+          input.mail-show(type="text" ng-model="user.email")
+          .hover-text adresse mail
+        a.mp.bt-unit(href="messagerie/new?target={{user.username}}")
+        h1 {{user}} hello
+        a.website.bt-unit(target="_blank" href="{{user.meta.meta.website[0]}}")
+          .hover-text site web
+      .contrib-post-container
+        .title Contenu réalisé par {{user.username}}
+        .main-container
+          .posts-container
+            a.post(ng-repeat="post in contribPosts" class="{{post.village}} other-user" href="{{post.type}}/{{post.slug}}")
+              .post-info
+                .post-title(ng-bind-html="post.title")
+                .location.font-village {{post.location}}
+                .date {{post.formDate}}
+              .type(ng-class="post.type")
+      .fav-content-container
+        .title Contenu que {{user.username}} aime
+        .fav-text-display(ng-show="toShow") 
+          span.title-in-fav(ng-bind-html="hoverArt.title")
+          span.author(ng-bind-html="hoverArt.author.username")
+          span.date(ng-bind-html="hoverArt.formDate")
+        .fav-list-container(fav-list liked-arts="likedPosts" to-show="toShow" hover-art="hoverArt")

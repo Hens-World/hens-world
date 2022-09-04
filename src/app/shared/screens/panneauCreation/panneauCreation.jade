@@ -1,0 +1,209 @@
+.upload-modal#upload-modal(ng-show="!!onMediaCallback" ng-click="hideUploadModal($event)")
+  .upload-modal__content(ng-if="!!onMediaCallback")
+    h1  Choisissez un fichier
+    bibliotheque-media(callback="callbackMedia")
+.page-container.panneau-creation-container(lazy-loader on-scroll-end="onPageScrollEnd")
+  .main-column
+    .main-column__content
+      .notification-zone.fond-village(ng-class="{'active':notificationMsg.length > 0}")
+        .notif-msg(ng-bind-html="notificationMsg" )
+        .notif-dismiss.button(ng-click="closeNotif()") x
+      .center-panel-container()
+        .return-menu(ng-click="state = 'new'" ng-show="(state == 'creating') || state == 'creatingSerie'")
+        .create-post-container(ng-show="state == 'creating'")
+        .mobile-burger-content(ng-show="showMobileMenu")
+          .button(ng-repeat="btn in menuList" class="border-village-left" ng-click="menuClick(btn)" ng-mouseenter="hovering=true" ng-mouseleave="hovering=false" ng-class="{'active': state == btn.tag || hovering}") {{btn.label}}
+        .main-panel(ng-show="['new', 'draft', 'published', 'comments', 'charte', 'bibliotheque-media', 'series', 'creatingSerie'].indexOf(state) > -1")
+          .crea-list-container(ng-show="state == 'new'")
+            .main-panel__title.fond-village
+              h1 Panneau de création
+              .burger-icon.burger-icon--big(ng-click="toggleMobileMenu()")
+                .line
+                .line
+                .line
+            h2.welcome-heading
+              i Bienvenue sur le panneau de création! Choisissez le type de création que vous souhaitez poster sur le site.
+              br
+              i
+                span N'hésitez pas à consulter la
+                span.font-village.link.hover(ng-click="menuClick({tag: 'charte'})")  Charte de Création
+                span  si vous avez des interrogations sur le fonctionnement des créations.
+            .crea-line
+            .creation-init-list
+              .creation-type-bt(ng-repeat="type in typelist" ng-click="startCreation(type.type)")
+                svg(width="166" height="166")
+                  rect.dash(x="0" y="0" width="166" height="166")
+                .block
+                  .type(class="{{type.type}}-icon")
+                  .titre(ng-bind-html="type.name")
+            .crea-line
+          .biblio-media-container(ng-show="state == 'bibliotheque-media'")
+            .main-panel__title.fond-village
+              h1 Bibliothèque de média
+              .burger-icon.burger-icon--big(ng-click="toggleMobileMenu()")
+                .line
+                .line
+                .line
+            bibliotheque-media(is-hidden="state !== 'bibliotheque-media'")
+          .my-post-container(ng-show="state == 'published'")
+            .main-panel__title.fond-village
+              h1 Mes créations
+              .burger-icon.burger-icon--big(ng-click="toggleMobileMenu()")
+                .line
+                .line
+                .line
+            h2 Dans cet espace, vous pouvez éditer ou supprimer vos créations postées.
+            .line-separator
+            br
+            .my-post-list.post-list
+              .my-post-unit.post-unit(ng-repeat="post in myposts" class="{{post.village.slug}} other-user")
+                .post-infos
+                  a(href="/{{post.type}}/{{post.slug}}")
+                    .long-title-wrap(long-title)
+                      .title(ng-bind-html="post.title")
+                  .font-village {{post.location.name}}
+                  .date {{post.formDate}}
+                .type(style="background-image:url({{post.miniature}})")
+                .action-post.delete.link-hover.anar(ng-click="deletePost(post, 'publish')")
+                  .fa.fa-trash
+                .action-post.edit.link-hover.ulmo(ng-click="startCreation(post.type, post)")
+                  .fa.fa-pencil
+          .draft-list-container(ng-show="state =='draft'")
+            .main-panel__title.fond-village
+              h1 Mes brouillons
+              .burger-icon.burger-icon--big(ng-click="toggleMobileMenu()")
+                .line
+                .line
+                .line
+            h2 Retrouvez ici vos brouillons, vous pouvez les publier ou les éditer.
+            .line-separator
+            br
+            h2 Créations
+            .line-separator
+            .draft-list.post-list
+              .draft-post.post-unit(ng-repeat="draft in draftList" class="{{draft.village.slug}} other-user")
+                .post-infos
+                  .long-title-wrap(long-title)
+                    .title {{draft.title}}
+                  .font-village {{draft.location.name}}
+                  .date {{draft.formDate}}
+                .type(style="background-image:url({{draft.miniature}})")
+                .action-post.delete.link-hover.anar(ng-click="deletePost(draft, 'draft')")
+                  .fa.fa-trash
+                .action-post.edit.link-hover.ulmo(ng-click="startCreation(draft.type,draft)")
+                  .fa.fa-pencil
+            h2 Séries de créations
+            .line-separator
+            series-list(status="draft")
+
+          .comment-list-container(ng-show="state == 'comments'")
+            .main-panel__title.fond-village
+              h1 Commentaires
+              .burger-icon.burger-icon--big(ng-click="toggleMobileMenu()")
+                .line
+                .line
+                .line
+            .comment-section
+              .read
+                .info-text(ng-show="comments.length == 0") Vous n'avez pas encore de commentaires sur vos créations
+                .comment-unit.other-user( class="{{comment.author.village}}" ng-repeat="comment in comments")
+                  a.avatar.fond-village.dark(href="profil/{{comment.author.ID}}" style="background-image:url('{{comment.author.avatar}}');")
+                  .content-wrapper
+                    .info
+                      .name.font-village(ng-bind-html="comment.author.name")
+                      .comment-date(ng-bind-html="comment.formatDate")
+                    .content-comment
+                      span.info-text
+                        span Sur votre création
+                        a(href="{{comment.post.type}}/{{comment.post.slug}}") "{{comment.post.title}}" :
+                      br
+                      span  {{comment.content}}
+          .charte-creation-wrapper(ng-show="state == 'charte'")
+            .main-panel__title.fond-village
+              h1 Charte des créations
+              .burger-icon.burger-icon--big(ng-click="toggleMobileMenu()")
+                .line
+                .line
+                .line
+            .charte-creation-container.ruling-container
+              h2.font-village Être créateur sur Hens World
+              p Qu’est-ce qu’une création postée sur Hens World? C’est tout simplement une oeuvre qui est créée par vous, inspirée par l’univers de Hens qui est présenté sur le site.
+              p L’oeuvre peut être de tous médias, médiums, et s’ inspirer de l’univers de Hens dans toute sa globalité: les villages, les lieux, les personnages, les histoires annexes, les légendes, les rumeurs, les créatures, les parties de jeu de rôle, l’archipel, etc…
+              p Le monde de Hens a une base accessible, pour permettre à tout le monde de se l’approprier, et d’en faire une création qui aura une patte artistique propre, pour partager des oeuvres de tous horizons, rassemblées autour d’un seul et même univers. C’est un monde collaboratif où toutes les oeuvres peuvent s’inspirer les unes des autres, être réalisées à plusieurs ou individuellement. Créer et partager sont les maîtres mots de ce projet.
+              p
+              p Mais si la base proposée sur le site reste simple ( des villages, des pouvoirs et des personnages ), comment peut-on savoir quelles directions prendre pour réaliser nos oeuvres? C’est tout simple: en fait, c’est à vous d’inventer vos propres limites (vos axes, vos histoires, vos croyances...) à partir de la base que nous vous proposons. L’univers de Hens est interprétable, et ouvert à tous les possibles. Cela veut aussi dire que des oeuvres peuvent se contredire ou se répondre, ne pas se passer dans le même espace temps… voire même ne pas être ancrées dans la même “ réalité “ de Hens World que les autres.
+              p Nous, c’est ce qui nous intéresse sur Hens World: voir des oeuvres uniques, qui suivent le chemin que seul leur auteur a choisi, encourager les créateurs à se rencontrer et à partager. Chaque création est une appropriation personnelle de l’univers de Hens et chacune détient sa propre vérité.
+
+              h2.font-village Oeuvres au contenu sensible/choquant
+              p Aucune oeuvre à caractère diffamatoire, discriminatoire ne sera tolérée sur le site, cela va à l’encontre de notre règlement.
+              p Pour ce qui concerne les œuvres incluant de la nudité ou de la violence, nous pouvons tolérer la présence de ce type d’œuvres du moment qu’elles sont ancrées dans un contexte adapté, romancées, artistiques, et non pornographiques ou gores dans le simple but de choquer. Néanmoins, il faut veiller à la sensibilisation sur le site: toute oeuvre à caractère potentiellement choquant ou sensible doit être accompagné d’un [+16]/[+18] au début du titre de l’œuvre. C’est une nécessité quant aux jeunes personnes qui pourraient naviguer sur le site, prenez en conscience.
+              p Toute œuvre jugée déplacée pourra être refusée par l’équipe et supprimée du site.
+
+              h2.font-village Les droits d’auteur et l’utilisation de contenu tiers
+              p Concernant les droits d’auteurs, vos oeuvres sont protégées en étant postées sur le site. Nous sommes une association et nous défendons tout ce qui est posté sur le site et qui reste votre propriété. Néanmoins, veillez à poster votre oeuvre d'abord sur le site avant de la partager sur vos blogs, réseaux sociaux. Pour vous protéger nous devons avoir l’exclusivité sur la date et l’heure.
+              p Pour rester crédibles, nous avons besoin que vous soyez compréhensifs à ce sujet. Ainsi, nous vous demandons, vraiment, de n’ accompagner vos créations que par des images, des photos, des musiques, des extraits littéraires, vidéos,... libres de droits. Il existe de nombreux sites qui proposent des images creative commons. Vous pouvez les visiter pour choisir de quoi accompagner vos oeuvres! Evidemment, si un artiste ( ami ou autre ) vous donne l’autorisation d’utiliser son contenu pour vos créations, vous êtes tout à fait en droit de vous en servir.
+
+              h2.font-village Appels à projets
+              p
+                span Les créations postées sur le site doivent être dans l’idéal des créations terminées et intégré à l’univers. Les posts qu’on appelle "hors jeu" c’est à dire une demande de collaboration ou des appels à projet doivent être postés sur le forum dédié, pour éviter toute confusion au sein du site et avoir un réel espace d’échange et de discussion pour vos idées!
+                a.font-village.hover(href="http://forums.hens-world.fr/f3-o-creation-collaboration") Voir la catégorie prévue à cet effet sur le forum
+
+
+              h2.font-village Le “niveau” de création & le rapport aux autres
+              p Il n’y a pas vraiment d’échelle de talent sur Hens World, car cela est très subjectif. Tout le monde peut venir proposer ses créations et participer avec nous à faire vivre cet univers.
+              p L’idée pour nous et pour vous, est d’avoir une galerie de tous horizons avec un panel énorme de créations de tous styles. Néanmoins, il y a une petite liste de chose à prendre en compte pour poster, notamment le fait que nous ne souhaitons pas que des “ WIP “ et des brouillons soient postés et, que, quand une oeuvre est postée, elle doit être terminée. En ce qui concerne l’orthographe et la ponctuation, nous ne sommes pas strictes mais souhaitons un maximum d’efforts avant de poster vos oeuvres. Soyez compréhensible, lisible et faites attention à votre syntaxe. N’hésitez surtout pas à vous relire avant de poster votre création, et à vous aider d’un correcteur d'orthographe externe si nécessaire.
+              p Voici une petite liste très rapide de ce que nous encourageons ou non vis à vis de la création sur Hens World:
+              ul.ok-list
+                li
+                  strong
+                  span S'assurer que sa création est terminée.
+                li
+                  strong
+                  span Se sentir fier(e) de sa création.
+                li
+                  strong
+                  span Se relire, être aidé pour corriger ses fautes.
+                li
+                  strong
+                  span Être prêt(e) pour la critique comme pour les ovations.
+                br
+                li
+                  b
+                  span Poster un WIP, poster un brouillon.
+                li
+                  b
+                  span Poster une création incompréhensible, illisible et sans aucun effort de syntaxe.
+                li
+                  b
+                  span Insulter les créations et/ou ses auteurs, critiquer négativement et sans réels arguments pouvant aider l’auteur à s’améliorer, à progresser.
+          .series-list-wrapper(ng-show="state == 'series'")
+            .main-panel__title.fond-village
+              h1 Mes séries de création
+              .burger-icon.burger-icon--big(ng-click="toggleMobileMenu()")
+                .line
+                .line
+                .line
+            h2 Dans cet espace, vous pouvez éditer ou supprimer vos séries postées.
+            .button.button--meaty.fond-village.hover(ng-click="createSerie()") Créer une nouvelle Série
+            .line-separator
+            br
+            series-list(status="publish")
+          .create-serie-wrapper(ng-show="state == 'creatingSerie'")
+            create-serie()
+  .side-column
+    .menu-panel(ng-show="!['creating', 'creatingSerie'].includes(state)")
+      .button(ng-repeat="btn in menuList" class="border-village-left" ng-click="menuClick(btn)" ng-mouseenter="hovering=true" ng-mouseleave="hovering=false" ng-class="{'active': state == btn.tag || hovering}") {{btn.label}}
+    .common-info(ng-if="state == 'creating'")
+      .status( ng-click="switchStatus()")
+        div
+          span( ng-class="{'active fond-village':status == 'publish'}") Publié
+          span( ng-class="{'active fond-village':status == 'draft'}") Brouillon
+      .location-container(new-post-location)
+    .common-info(ng-if="state == 'creatingSerie'")
+      .status( ng-click="switchStatus()")
+        div
+          span( ng-class="{'active fond-village':status == 'publish'}") Publié
+          span( ng-class="{'active fond-village':status == 'draft'}") Brouillon
+      .button.button--meaty.fond-village.hover(ng-click="sendValidateSerie()")
+        span(ng-show="status == 'draft'") Valider
+        span(ng-show="status == 'publish'") Publier

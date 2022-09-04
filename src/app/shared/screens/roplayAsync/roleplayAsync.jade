@@ -1,0 +1,59 @@
+.page-container.rp-create-diff
+  .main-column
+    .main-column__content
+      h2.fond-village  Bienvenue dans le Jeu de Rôle Différé !
+      .rp-create-diff__container
+        .rp-create-diff__list
+          h3 Mes parties en cours
+          .rp-create-diff__scroll
+            a.rp-create-diff__element(href="/roleplay/differe/{{roleplay.id}}" ng-repeat="roleplay in myRoleplays" ng-class="{'active': !roleplay.is_finished}")
+              .rp-create-diff__name {{roleplay.title | capitalize}}
+              .rp-create-diff__date démarré le {{roleplay.formatDate}}
+              .rp-create-diff__owner.other-user(class="{{roleplay.owner.meta.village}}")
+                span initié par
+                span.font-village {{roleplay.owner.display_name}}
+        .rp-create-diff__main
+          h3 {{ !!existingRoom ? 'Editer la partie "' +  existingRoom.title + '"' :  'Créer une partie'}}
+          form(ng-submit="createRoom()")
+            //room name
+            .field
+              .label Titre
+              input.form(type="text" ng-model="newRoom.title" ng-readonly="!!existingRoom" placeholder="Nommez votre aventure")
+            .rp-create-diff__line
+              // private or public room
+              .switch(ng-click="toggleRoomStatus()")
+                .handle(ng-class="{'open fond-village': newRoom.isOpen}")
+              .member-listing(select-members members="newRoom.inviteList" max-size="newRoom.maxSize" is-open="newRoom.isOpen")
+            .field.big(ng-class="{'hidden':!newRoom.isOpen}")
+              .label Participants
+              .slider
+                rzslider(rz-slider-model="newRoom.maxSize" rz-slider-options="roomSpace.options")
+            .comment.toggle(ng-class="{'show':!newRoom.isOpen && newRoom.inviteList.length == 0}")
+              | Invitez d'autres rôlistes pour lancer une salle privée!
+            .field
+              .label Description
+              textarea.form-area(ng-model="newRoom.description" placeholder="Décrivez le contexte de votre partie (optionnel)")
+            .field
+              .label Lieu
+              input.form(type="text" ng-model="locaSearchQuery" placeholder="Nom du lieu" autocomplete="off" ng-class="{'validated': newRoom.location.nom == locaSearchQuery && locaSearchQuery.length > 0}")
+              .valid-list(ng-show="searchLocations.length > 0 && !(newRoom.location.nom == locaSearchQuery && locaSearchQuery.length > 0)")
+                .valid-element(ng-repeat="location in searchLocations" ng-click="setLieu(location)" class="border-{{location.village}}") {{location.nom}}
+            .field
+              h3(ng-if="newRoom.linkedPosts.length > 0") Liste des créations liées
+              .valid-list
+                .valid-element(ng-repeat="creation in newRoom.linkedPosts" class="border-{{creation.village.slug}}")
+                  span(ng-bind-html="creation.title")
+                  i()   - {{creation.type}} par {{creation.author.display_name}}
+                  .remove(ng-click="removeCreation(creation, $index)")
+                    .fa.fa-trash
+            .field
+              .label Création liée
+              input.form(type="text" ng-model="creaSearchQuery" placeholder="Nom d'une création liée (optionnel)" autocomplete="off")
+            .valid-list(ng-show="searchCreations.length > 0")
+              .valid-element(ng-repeat="creation in searchCreations" ng-click="addCreation(creation)" class="border-{{creation.village.slug}}")
+                span(ng-bind-html="creation.title")
+                i()   - {{creation.type}} par {{creation.author.display_name}}
+            input.button.fond-village.submit-room(type="submit" value="{{!!existingRoom ? 'Éditer la partie' : 'Créer la partie'}}")
+
+  .side-column
+    div(annonces options="annoncesOpt" ready="annoncesReady")

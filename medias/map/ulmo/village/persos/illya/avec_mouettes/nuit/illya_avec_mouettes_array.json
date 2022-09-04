@@ -1,0 +1,1466 @@
+{
+  "frames": [
+    {
+      "filename": "illya00.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya01.png",
+      "frame": {
+        "x": 42,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya02.png",
+      "frame": {
+        "x": 84,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya03.png",
+      "frame": {
+        "x": 0,
+        "y": 45,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya04.png",
+      "frame": {
+        "x": 42,
+        "y": 45,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya05.png",
+      "frame": {
+        "x": 84,
+        "y": 45,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya06.png",
+      "frame": {
+        "x": 0,
+        "y": 90,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya07.png",
+      "frame": {
+        "x": 42,
+        "y": 90,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya08.png",
+      "frame": {
+        "x": 84,
+        "y": 90,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya09.png",
+      "frame": {
+        "x": 0,
+        "y": 135,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya10.png",
+      "frame": {
+        "x": 42,
+        "y": 135,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya11.png",
+      "frame": {
+        "x": 84,
+        "y": 135,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya12.png",
+      "frame": {
+        "x": 0,
+        "y": 180,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya13.png",
+      "frame": {
+        "x": 42,
+        "y": 180,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya14.png",
+      "frame": {
+        "x": 84,
+        "y": 180,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya15.png",
+      "frame": {
+        "x": 0,
+        "y": 225,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya16.png",
+      "frame": {
+        "x": 42,
+        "y": 225,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya17.png",
+      "frame": {
+        "x": 84,
+        "y": 225,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya18.png",
+      "frame": {
+        "x": 0,
+        "y": 270,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya19.png",
+      "frame": {
+        "x": 42,
+        "y": 270,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya20.png",
+      "frame": {
+        "x": 84,
+        "y": 270,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya21.png",
+      "frame": {
+        "x": 0,
+        "y": 315,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya22.png",
+      "frame": {
+        "x": 42,
+        "y": 315,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya23.png",
+      "frame": {
+        "x": 84,
+        "y": 315,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya24.png",
+      "frame": {
+        "x": 0,
+        "y": 360,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya25.png",
+      "frame": {
+        "x": 42,
+        "y": 360,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya26.png",
+      "frame": {
+        "x": 84,
+        "y": 360,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya27.png",
+      "frame": {
+        "x": 0,
+        "y": 405,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya28.png",
+      "frame": {
+        "x": 42,
+        "y": 405,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya29.png",
+      "frame": {
+        "x": 84,
+        "y": 405,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya30.png",
+      "frame": {
+        "x": 0,
+        "y": 450,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya31.png",
+      "frame": {
+        "x": 42,
+        "y": 450,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya32.png",
+      "frame": {
+        "x": 84,
+        "y": 450,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya33.png",
+      "frame": {
+        "x": 0,
+        "y": 495,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya34.png",
+      "frame": {
+        "x": 42,
+        "y": 495,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya35.png",
+      "frame": {
+        "x": 84,
+        "y": 495,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya36.png",
+      "frame": {
+        "x": 0,
+        "y": 540,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya37.png",
+      "frame": {
+        "x": 42,
+        "y": 540,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya38.png",
+      "frame": {
+        "x": 84,
+        "y": 540,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya39.png",
+      "frame": {
+        "x": 0,
+        "y": 585,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya40.png",
+      "frame": {
+        "x": 42,
+        "y": 585,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya41.png",
+      "frame": {
+        "x": 84,
+        "y": 585,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya42.png",
+      "frame": {
+        "x": 0,
+        "y": 630,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya43.png",
+      "frame": {
+        "x": 42,
+        "y": 630,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya44.png",
+      "frame": {
+        "x": 84,
+        "y": 630,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya45.png",
+      "frame": {
+        "x": 0,
+        "y": 675,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya46.png",
+      "frame": {
+        "x": 42,
+        "y": 675,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya47.png",
+      "frame": {
+        "x": 84,
+        "y": 675,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya48.png",
+      "frame": {
+        "x": 0,
+        "y": 720,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya49.png",
+      "frame": {
+        "x": 42,
+        "y": 720,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya50.png",
+      "frame": {
+        "x": 84,
+        "y": 720,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya51.png",
+      "frame": {
+        "x": 0,
+        "y": 765,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya52.png",
+      "frame": {
+        "x": 42,
+        "y": 765,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya53.png",
+      "frame": {
+        "x": 84,
+        "y": 765,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya54.png",
+      "frame": {
+        "x": 0,
+        "y": 810,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya55.png",
+      "frame": {
+        "x": 42,
+        "y": 810,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya56.png",
+      "frame": {
+        "x": 84,
+        "y": 810,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "illya57.png",
+      "frame": {
+        "x": 0,
+        "y": 855,
+        "w": 42,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 45
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://www.codeandweb.com/texturepacker",
+    "version": "1.0",
+    "image": "illya_avec_mouettes.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 126,
+      "h": 900
+    },
+    "scale": "1",
+    "smartupdate": "$TexturePacker:SmartUpdate:f438e5734a9a5ad83f5a705204c6786a:188632f6b9f95e5fe8f8fd584d88a5c4:5814718c300651fc283653a2010fd3bd$"
+  }
+}

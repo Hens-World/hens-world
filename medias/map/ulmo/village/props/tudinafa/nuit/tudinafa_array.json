@@ -1,0 +1,174 @@
+{"frames": [
+
+{
+	"filename": "tudinafa0000.png",
+	"frame": {"x":0,"y":0,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0001.png",
+	"frame": {"x":550,"y":0,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0002.png",
+	"frame": {"x":1100,"y":0,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0003.png",
+	"frame": {"x":0,"y":320,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0004.png",
+	"frame": {"x":550,"y":320,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0005.png",
+	"frame": {"x":1100,"y":320,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0006.png",
+	"frame": {"x":0,"y":640,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0007.png",
+	"frame": {"x":550,"y":640,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0008.png",
+	"frame": {"x":1100,"y":640,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0009.png",
+	"frame": {"x":0,"y":960,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0010.png",
+	"frame": {"x":550,"y":960,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0011.png",
+	"frame": {"x":1100,"y":960,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0012.png",
+	"frame": {"x":0,"y":1280,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0013.png",
+	"frame": {"x":550,"y":1280,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0014.png",
+	"frame": {"x":1100,"y":1280,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0015.png",
+	"frame": {"x":0,"y":1600,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0016.png",
+	"frame": {"x":550,"y":1600,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "tudinafa0017.png",
+	"frame": {"x":1100,"y":1600,"w":550,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":320},
+	"sourceSize": {"w":550,"h":320},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tudinafa.png",
+	"format": "RGBA8888",
+	"size": {"w":1650,"h":1920},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:b0b08b7ab321c5bdc825befae73be340:34a7b8d974bd7dbe5c3f73bebd627b51:15fdeaa28af87c1f4fe7d245b0295f17$"
+}
+}

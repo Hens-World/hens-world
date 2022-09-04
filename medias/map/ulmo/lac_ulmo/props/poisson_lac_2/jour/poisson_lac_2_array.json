@@ -1,0 +1,428 @@
+{"frames": [
+
+{
+	"filename": "poisson20000.png",
+	"frame": {"x":0,"y":0,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20001.png",
+	"frame": {"x":0,"y":0,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20002.png",
+	"frame": {"x":0,"y":78,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20003.png",
+	"frame": {"x":0,"y":78,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20004.png",
+	"frame": {"x":0,"y":156,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20005.png",
+	"frame": {"x":0,"y":156,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20006.png",
+	"frame": {"x":0,"y":234,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20007.png",
+	"frame": {"x":0,"y":234,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20008.png",
+	"frame": {"x":0,"y":312,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20009.png",
+	"frame": {"x":0,"y":312,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20010.png",
+	"frame": {"x":0,"y":390,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20011.png",
+	"frame": {"x":0,"y":390,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20012.png",
+	"frame": {"x":0,"y":468,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20013.png",
+	"frame": {"x":0,"y":468,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20014.png",
+	"frame": {"x":0,"y":546,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20015.png",
+	"frame": {"x":0,"y":546,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20016.png",
+	"frame": {"x":0,"y":624,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20017.png",
+	"frame": {"x":0,"y":624,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20018.png",
+	"frame": {"x":0,"y":702,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20019.png",
+	"frame": {"x":0,"y":702,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20020.png",
+	"frame": {"x":0,"y":780,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20021.png",
+	"frame": {"x":0,"y":780,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20022.png",
+	"frame": {"x":0,"y":858,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20023.png",
+	"frame": {"x":0,"y":858,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20024.png",
+	"frame": {"x":0,"y":936,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20025.png",
+	"frame": {"x":0,"y":936,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20026.png",
+	"frame": {"x":0,"y":1014,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20027.png",
+	"frame": {"x":0,"y":1014,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20028.png",
+	"frame": {"x":0,"y":1092,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20029.png",
+	"frame": {"x":0,"y":1092,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20030.png",
+	"frame": {"x":0,"y":1170,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20031.png",
+	"frame": {"x":0,"y":1170,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20032.png",
+	"frame": {"x":0,"y":1248,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20033.png",
+	"frame": {"x":0,"y":1248,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20034.png",
+	"frame": {"x":0,"y":1326,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20035.png",
+	"frame": {"x":0,"y":1326,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20036.png",
+	"frame": {"x":0,"y":1404,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20037.png",
+	"frame": {"x":0,"y":1404,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20038.png",
+	"frame": {"x":0,"y":1482,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20039.png",
+	"frame": {"x":0,"y":1482,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20040.png",
+	"frame": {"x":0,"y":1560,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20041.png",
+	"frame": {"x":0,"y":1560,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20042.png",
+	"frame": {"x":0,"y":1638,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20043.png",
+	"frame": {"x":0,"y":1638,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20044.png",
+	"frame": {"x":0,"y":1716,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20045.png",
+	"frame": {"x":0,"y":1716,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20046.png",
+	"frame": {"x":0,"y":1794,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20047.png",
+	"frame": {"x":0,"y":1794,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20048.png",
+	"frame": {"x":0,"y":1872,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20049.png",
+	"frame": {"x":0,"y":1872,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20050.png",
+	"frame": {"x":0,"y":1950,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+},
+{
+	"filename": "poisson20051.png",
+	"frame": {"x":0,"y":1950,"w":226,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":78},
+	"sourceSize": {"w":226,"h":78}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "poisson_lac_2.png",
+	"format": "RGBA8888",
+	"size": {"w":226,"h":2028},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0a4979806ba480dec7a51d97d6efccc3:447f88356897148451b04e8b72581c1e:d908aae7904fddb44d70364e47121848$"
+}
+}

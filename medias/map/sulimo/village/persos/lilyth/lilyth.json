@@ -1,0 +1,17 @@
+      },
+      "avail": [
+        {
+          "posSlug": "carize",
+          "fromT": 19,
+          "to": 22,
+          "x": 2044,
+          "y": 1179,
+          "width": 60,
+          "height": 59,
+          "center": {
+            "x": 28,
+            "y": 51
+          }
+        }
+      ]
+    },

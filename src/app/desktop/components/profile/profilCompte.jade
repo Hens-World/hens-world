@@ -1,0 +1,47 @@
+.left-column.other-user(class="{{user.village}}")
+    .avatar-container
+        .avatar-circle.fond-village.dark( style="background-image:url({{user.avatar}});")
+    .is-online.fond-village(ng-class="{'selectable': isMe}" ng-click="showRankSelection()")
+        span() {{user.selectedRank.names[user.pronom]}}
+        .select-rank-form(ng-show="isMe && selectingRank")
+            .selectable-rank(ng-repeat="rank in user.ranks" ng-click="selectRank(rank)" ng-class="{'selected': rank.id == user.selectedRank.id}") {{rank.names[user.pronom]}}
+    .links-container.other-user(class="{{user.village}}")
+        //.mail.bt-unit
+        //input.mail-show(type="text" ng-model="user.email")
+        //- .hover-text adresse mail
+        a.mp.bt-unit(href="messagerie/new?target={{user.display_name}}")
+        a.website.bt-unit(ng-show="user.fiche.website.length > 0" target="_blank" href="{{user.fiche.website}}")
+        //- .hover-text site web
+        a.facebook.bt-unit(ng-show="user.fiche.facebook.length > 0" target="_blank" href="{{user.fiche.facebook}}")
+        a.twitter.bt-unit(ng-show="user.fiche.twitter.length > 0" target="_blank" href="{{user.fiche.twitter}}")
+    .description-container
+        .scroller
+            .description(ng-bind-html="user.fiche.description")
+
+.profile-main-column.profil-compte
+    profile-tabs(personnage-list="personnageList")
+    .profile__title-container.other-user(class="{{user.village}}")
+        .symbole-village(class="{{user.village}}")
+        .center
+            .title
+                span.span.font-village {{user.display_name}}
+                //- span  - Membre
+            .domaine(ng-bind-html="user.fiche.domaine")
+        .not-me.right.like(ng-hide="isMe")
+            //- .fav(ng-click="setFav()" ng-class="{'favved':isFav}")
+            //- .social-media
+            //-   a.twitter(ng-show="user.infoShow.twitter" target="_blank" href="{{user.meta.meta.twitterLink[0]}}")
+            //-   a.facebook(ng-show="user.infoShow.fb" target="_blank" href="{{user.meta.meta.facebookLink[0]}}")
+        .me.right.edit(ng-show="isMe")
+            .edit-bt.button.fond-village.hover(ng-click="toggleEdit()")
+                .text Éditer le profil
+    profile-compte-content(user="user")
+
+
+    //- .fav-contrib-container
+    //-   .title Contributeurs que {{user.username}} suit
+    //-   .contrib-list-container
+    //-     .contrib-extend
+    //-       a.contrib-element(ng-repeat="contrib in user.likedContribsList" style="background:url('{{contrib.meta.meta.avatar[0]}}');background-size:100% 100%;" href="profil/{{contrib.ID}}")
+    //-         .hover
+    //-           .name {{contrib.username}}

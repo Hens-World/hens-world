@@ -1,0 +1,72 @@
+@media (max-width: @mobileMaxWidth) {
+  body .modal-validation-container {
+
+    .modal-validation-bloc {
+      max-width: 600px;
+      width: calc(100% - 12px);
+
+      .button-container .button {
+        min-width: 140px;
+      }
+    }
+  }
+}
+
+.modal-validation-container{
+  width: 100%;
+  height: 100vh;
+  font-size: 12em;
+  background: @overlayBlack;
+  z-index: @layerHidden;
+  opacity: 0;
+  position: fixed;
+  display: flex;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+
+  &.show{
+    z-index: @layerOverlay2;
+    opacity: 1;
+    pointer-events: auto;
+    .modal-validation-bloc{
+      margin-top: -25%;
+
+    }
+  }
+
+  .modal-validation-bloc{
+    //width: @contentWidth / 1.3;
+    width: 600px;
+    padding: 35px;
+    transition: all .5s;
+
+    border: 1px solid @buttonHoverDark;
+    margin-top: -40%;
+    background: @contentDark;
+    box-sizing: border-box;
+    .h1{
+      margin-bottom: 30px;
+    }
+    .button-container{
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-around;
+      .button{
+        padding: 10px;
+        cursor: pointer;
+        flex: 1 1 auto;
+        max-width: 45%;
+        min-width: 200px;
+        font-size: 1.3em;
+        &.cancel{
+          background: @buttonDark;
+          &:hover{
+            background: @buttonHoverDark;
+          }
+        }
+      }
+    }
+  }
+}

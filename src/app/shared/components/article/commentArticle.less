@@ -1,0 +1,171 @@
+
+.comment-section {
+  padding: 15px;
+  box-sizing: border-box;
+  background: @black;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 20px 5px 20px 5px;
+  .title {
+    font-size: 3em;
+    font-family: 'Wire One', sans-serif;
+    margin-bottom: 20px;
+  }
+  .write-container {
+    textarea.write-comment {
+      width: 550px;
+      min-width: 70%;
+      max-width: 90%;
+      background: @inputDark;
+      border: 1px solid #333;
+      border-radius: 4px;
+      resize: vertical;
+      padding: 6px;
+      min-height: 6em;
+      height: 9em;
+      max-height: 20em;
+      color: white;
+      line-height: 1.3;
+      display: inline-block;
+    }
+    .valid-line {
+      display: block;
+      margin-top: 5px;
+      height: 30px;
+      margin-bottom: 10px;
+
+      .valid {
+        width: 20%;
+        min-width: 120px;
+        cursor: pointer;
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 1.2em;
+
+      }
+    }
+  }
+  .read {
+    .comment-unit {
+      padding: 9px;
+      min-height: 70px;
+      position: relative;
+      box-sizing: border-box;
+      background: @contentDark;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: flex-start;
+
+      .content-wrapper {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+
+      &:hover {
+        .edit-comment-bt {
+          opacity: 0.7;
+        }
+      }
+      .delete-comment-bt {
+        width: 25px;
+        height: 25px;
+        font-size: 1.4em;
+        transform: scaleX(-1);
+        cursor: pointer;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .edit-comment-bt {
+        font-size: 1.4em;
+        width: 25px;
+        height: 25px;
+        transform: scaleX(-1);
+        cursor: pointer;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .avatar {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        margin-right: 12px;
+        border-radius: 50%;
+        flex: 0 0 auto;
+        background-size: cover;
+        background-position: center 0;
+        display: block;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        width: 100%;
+
+        .name {
+          line-height: 1em;
+          font-size: 1.1em;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+      }
+      .content-comment {
+        text-align: left;
+        height: auto;
+        overflow-wrap: break-word;
+        .info-text {
+          margin-left: 0;
+          padding-left: 0;
+        }
+      }
+      .comment-date {
+        font-style: italic;
+        color: #999;
+        margin-right: auto;
+      }
+      .content-edit {
+        // float: left;
+        text-align: left;
+        height: auto;
+        position: relative;
+        textarea {
+          max-width: 1000px;
+          width: 100%;
+          height: 8em;
+          min-height: 6em;
+          max-height: 20em;
+          resize: vertical;
+          display: inline-block;
+          background: @inputDark;
+          border-radius: 2px;
+        }
+        .valid {
+          width: 90px;
+          margin-top: 2px;
+          height: 35px;
+          min-width: 120px;
+          font-size: 1.2em;
+          text-align: center;
+          line-height: 35px;
+          vertical-align: middle;
+          display: inline-block;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @mobileWidth) {
+  body .comment-section {
+    margin: 0;
+    .write-container {
+
+    }
+  }
+}

@@ -1,0 +1,214 @@
+.tchat-launch-container {
+  .fullHeight(0px);
+  margin-top: -1px;
+  padding-top: 1px;
+  background: rgba(10, 10, 10, .95);
+  position: relative;
+  .close {
+    position: absolute;
+    left: -35px;
+    width: 35px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 0;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    background: url(/medias/map/ui/right.png), #222;
+    transition: all .2s;
+    &:hover {
+      left: -45px;
+      width: 45px
+    }
+  }
+  .content-tchat-launch {
+    .fullHeight(0px);
+    width: 650px;
+    position: relative;
+    margin-left: 50px;
+    .village-bar {
+      width: 90px;
+      height: inherit;
+      z-index: 10;
+      position: absolute;
+      box-sizing: border-box;
+      padding-top: 190px;
+      a {
+        width: 70px;
+        height: 70px;
+        margin-top: 18px;
+        margin-left: 12px;
+        display: block;
+        transition: margin .25s;
+        &.sulimo-link {
+          background: url(/medias/common/sulimo_icone.png);
+          background-size: 100%
+        }
+        &.wilwar-link {
+          background: url(/medias/common/wilwar_icone.png);
+          background-size: 100%
+        }
+        &.ulmo-link {
+          background: url(/medias/common/ulmo_icone.png);
+          background-size: 100%
+        }
+        &.anar-link {
+          background: url(/medias/common/anar_icone.png);
+          background-size: 100%
+        }
+        &:hover {
+          transition: margin .35s;
+          margin-left: 5px
+        }
+      }
+    }
+  }
+  .banner-container {
+    position: absolute;
+    width: inherit;
+    height: 130px;
+    margin-top: 25px;
+    .barman {
+      width: 190px;
+      height: 190px;
+      position: absolute;
+      z-index: 2;
+      margin-left: -20px;
+      margin-top: -20px;
+      &.anar {
+        background: url(/medias/tchat/domaine/anar_serveur.png);
+        background-size: 100%
+      }
+      &.sulimo {
+        background: url(/medias/tchat/domaine/sulimo_serveur.png);
+        background-size: 100%
+      }&.ulmo {
+        background: url(/medias/tchat/domaine/ulmo_serveur.png);
+        background-size: 100%
+      }&.wilwar {
+        background: url(/medias/tchat/domaine/wilwar_serveur.png);
+        background-size: 100%
+      }
+    }
+    .background {
+      width: inherit;
+      height: inherit;
+      background: #050505;
+      position: absolute
+    }
+    .text {
+      position: absolute;
+      width: 400px;
+      z-index: 3;
+      margin-left: 220px;
+      height: 120px;
+      margin-top: 25px;
+      font-size: 13em;
+      color: #fff;
+    }
+  }
+  .places-container {
+    width: inherit;
+    position: relative;
+    box-sizing: border-box;
+    .fullHeight(0px);
+    padding-top: 180px;
+    text-align: center;
+    .terrasse-bt {
+      cursor: pointer;
+      width: 40%;
+      background: #000;
+      float: right;
+      height: 390px;
+      &.anar {
+        background: url(/medias/tchat/domaine/anar/anar_terrasse.jpg);
+        background-size: 100% 100%
+      }
+      &.wilwar {
+        background: url(/medias/tchat/domaine/wilwar/wilwar_terrasse.jpg);
+        background-size: 100% 100%
+      }
+      &.sulimo {
+        background: url(/medias/tchat/domaine/sulimo/sulimo_terrasse.jpg);
+        background-size: 100% 100%
+      }
+      &.ulmo {
+        background: url(/medias/tchat/domaine/ulmo/ulmo_terrasse.jpg);
+        background-size: 100% 100%
+      }
+    }
+    .salle-bt {
+      background: #000;
+      float: right;
+      width: 40%;
+      height: 390px;
+      &.anar {
+        background: url(/medias/tchat/domaine/interieur_anar.jpg);
+        background-size: 100% 100%
+      }
+      &.wilwar {
+        background: url(/medias/tchat/domaine/interieur_wilwar.jpg);
+        background-size: 100% 100%
+      }
+      &.sulimo {
+        background: url(/medias/tchat/domaine/interieur_sulimo.jpg);
+        background-size: 100% 100%
+      }
+      &.ulmo {
+        background: url(/medias/tchat/domaine/interieur_ulmo.jpg);
+        background-size: 100% 100%
+      }
+    }
+    .domaine-bt {
+      position: relative;
+      .cover {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        background: #000;
+        opacity: .15;
+        transition: opacity .2s
+      }
+      .text{
+        font-size: 13em;
+      }
+    }
+  }
+}
+
+
+.tchat-launch-container .places-container .domaine-bt .title {
+    width: inherit;
+    font-size: 45em;
+    font-family: 'Wire One';
+    position: absolute;
+    z-index: 10;
+    margin-top: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    opacity: .95;
+    transition: opacity .25s
+}
+.tchat-launch-container .places-container .domaine-bt .text {
+    width: 84%;
+    position: absolute;
+    z-index: 10;
+    margin-left: 8%;
+    font-size: 13em;
+    margin-top: 100px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity .4s;
+    transition-delay: 0s
+}
+.tchat-launch-container .places-container .domaine-bt:hover .title {
+    opacity: 1
+}
+.tchat-launch-container .places-container .domaine-bt:hover .text {
+    opacity: .85;
+    transition: opacity .2s;
+    transition-delay: .3s
+}
+.tchat-launch-container .places-container .domaine-bt:hover .cover {
+    transition: opacity .35s;
+    opacity: .65
+}

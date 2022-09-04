@@ -1,0 +1,122 @@
+.author-article-container {
+  width: 100%;
+  padding-bottom: 35px;
+  .author-article, .author-multi {
+    width: 100%;
+    background-color: @contentDark;
+    padding: 9px 5px;
+    max-height: 440px;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 15px;
+    .avatar-wrapper {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      position: relative;
+      background-position: center 0;
+      background-size: cover;
+      display: inline-block;
+      z-index: 2;
+    }
+    .profile {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      width: 30px;
+      height: 35px;
+      padding-left: 45px;
+      right: 0;
+      bottom: 0;
+      background: white;
+      padding-top: 40px;
+      font-size: 2.7em;
+      margin-top: 75px;
+    }
+    .name {
+      font-size: 1.6em;
+      margin-top: 5px;
+      font-weight: bold;
+      width: 100%;
+      display: inline-block;
+    }
+    .domaine {
+      margin-bottom: 5px;
+      font-style: italic;
+      line-height: 1.9;
+      width: 100%;
+      display: inline-block;
+    }
+    .personnage {
+    }
+    .content-container {
+      padding: 5px;
+      background-color: @headerDark;
+      min-width: 90%;
+      box-sizing: border-box;
+      overflow-y: auto;
+      max-height: 140px;
+      display: inline-block;
+    }
+  }
+}
+
+.author-multi {
+  + .author-multi {
+    margin-top: 9px;
+  }
+}
+
+
+.author {
+  &__mobile {
+    display: none;
+  }
+}
+
+
+@media (max-width: @mobileWidth) {
+  body .author {
+    &__mobile {
+      display: flex;
+      .author-article-container {
+        padding-bottom: 0;
+        .author-article, .author-multi {
+          display: flex;
+          align-items: center;
+
+          .avatar-wrapper {
+            margin: 0 12px;
+            margin-right: 15px;
+            width: 120px;
+            height: 120px;
+            flex: 0 0 auto;
+          }
+
+          .author-infos {
+            > * {
+              text-align: left;
+            }
+          }
+
+          .profile {
+            width: 29px;
+            height: 34px;
+            text-align: center;
+            padding-left: 31px;
+            padding-top: 26px;
+          }
+          .content-container {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

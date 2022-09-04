@@ -1,0 +1,126 @@
+.page-container.async-detail
+    .main-column
+        .main-column__content
+            .rp-note.rp-note--mobile.mobile-only(ng-show="isInRoleplay && !roleplay.is_finished" ng-class="{'mobile-ducked': noteListDucked}")
+                .rp-note__toggle.fond-village.border-village(ng-click="toggleNoteListDuck()")
+                .mobile-note__container.border-left-village(ng-if="$root.mobileCheck()")
+                    .mobile-note__actions
+                        .button.button--meaty.fond-village.hover(ng-show="isOwner && !roleplay.is_finished" ng-click="endGame()") Terminer la partie
+                        .button.button--meaty.fond-village.hover(ng-show="canParticipate && !participation" ng-click="joinRP()") Participer au RP
+                        .button.button--meaty.fond-village.hover(ng-show="participation.status == 0" ng-click="acceptInvite()") Accepter l'invitation
+                    h4.fond-village Messagerie de la partie
+                    .rp-note__scroll
+                        .rp-note__unit(ng-repeat="note in roleplay.notes" on-last-repeat)
+                            .rp-note__date {{note.formatDate}}
+                            .rp-note__message.other-user(class="{{note.author.village}}")
+                                span.rp-note__author.font-village {{note.author.display_name}}:
+                                span.rp-note__message {{note.message}}
+                    form.form.rp-note__input-container(ng-submit="postNote()")
+                        input.rp-note__input(type="text" ng-model="$parent.notmob")
+                        .button.rp-note__button.fond-village.hover(ng-click="postNote()")
+                            span >
+
+            .crp__banner(style="background-image:url('{{base}}tchat/locations/{{villages[roleplay.village]}}/village_on.jpg');")
+                h1 {{roleplay.title}}
+                .crp__banner-description( ng-show="roleplay.description" ng-bind-html="roleplay.description")
+                a.edit-roleplay-cog(href="/roleplay/differe?edit={{roleplay.id}}" ng-if="isOwner" ng-click="toggleEditRoleplay()")
+            .rp-info
+                .rp-info__status(ng-class="{'active fond-village': !roleplay.is_finished}")
+                .rp-info__access(ng-class="{'private': roleplay.is_private}")
+                .rp-info__date.desktop-only Démarré le {{roleplay.formatDate}}
+                .rp-info__type Partie {{roleplay.type == 'instant' ? 'Instantanée' : 'Différée'}}
+            .rp-info(ng-if="roleplay.creations.length > 0")
+                .rp-info__title Créations Liées:
+                .rp-info__creation.other-user(class="{{creation.village.slug}}" ng-repeat="creation in roleplay.creations")
+                    a.font-village.hover(href="/{{creation.type}}/{{creation.slug}}") {{creation.title}}
+            .rp-info.rp-info--dark.mobile-only
+                div(class="{{location.village}} other-user")
+                    a.go-to-button.fond-village.hover(href="map/{{location.village}}/{{location.zone}}/{{location.slug}}" )
+                        i Démarré le {{roleplay.formatDate}} à
+                        br
+                        b.loc(ng-bind-html="location.nom")
+                h3 Participants
+                .async-detail__members.list
+                    .async-detail__member.element.other-user(class="{{member.village}}" ng-repeat="member in roleplay.userList")
+                        a(href="profil/{{member.ID}}")
+                            .circle-avatar.small(style="background-image:url('{{member.avatar}}')")
+                        a.name.font-village.hover(href="profil/{{member.ID}}") {{member.display_name}}
+
+            .crp__message-list
+                .crp__message-element(ng-repeat="msg in roleplay.messages" ng-class="{'edited': editedMsg.id == msg.id}" on-last-repeat)
+                    .crp__message-profil.other-user(class="{{villages[msg.author.chara.village]}}")
+                        .crp__message-avatar(style="background-image:url({{msg.author.chara.avatar}})")
+                        .crp-info
+                            span.crp__message-name.font-village {{msg.author.chara.prenom}}
+                            a.link.link-hover(href="/profil/{{msg.author.ID}}?tab=fiche-personnage") Fiche de personnage
+                    .triangle(ng-if="!msg.event")
+                        svg(width="25" height="50")
+                            path(fill='#333',
+                                stroke='#333',
+                                stroke-width='1',
+                                d='M25,10 0,30 25,50')
+                    .crp__message-container.other-user(class="{{villages[msg.author.chara.village]}}")
+                        .crp__message-block(ng-bind-html="msg.message")
+                        .crp__message-footer
+                            .crp__message-date()
+                                span(ng-bind-html="msg.formatDate")
+                                span(ng-show="msg.edited") *
+                            .crp__message-action(ng-show="msg.isMe" ng-click="startEdition(msg)") Editer
+                .edit-info(ng-show="editedMsg")
+                    .edit-info__header
+                        h2 Message en cours d'édition
+                        .edit-info__close(ng-click="stopEdition()") Arrêter l'édition
+                    .edit-info__date Message créé originellement le {{editedMsg.formatOriginalDate}}
+                .roleplay-textarea(ng-show="!roleplay.is_finished && isInRoleplay")
+                    .roleplay-textarea__prevent-writing(ng-show="!isMyTurn && !editedMsg")
+                        span() Vous ne pouvez pas repondre deux fois d'affilées! Attendez qu'un autre joueur ait répondu.
+                    .roleplay-textarea__select-character.avatar-character-selection
+                        div.ghost-block.other-user(
+                                ng-repeat="character in myCharacters"
+                                class="{{villages[character.village]}}"
+                            )
+                            .avatar-character-selection__character(
+                                    ng-class="{'avatar-character-selection__character--selected fond-village': rpCharacterIndex === character.char_index}"
+                                    ng-click="selectCharacterForMessage(character.char_index)"
+                                )
+                                img.avatar-character-selection__avatar(ng-src="{{character.avatar}}"
+                                    alt="avatar de {{characacter.prenom}}")
+                                .avatar-character-selection__arrow
+                    .ghost-block.other-user(class="{{villages[myCharacters[rpCharacterIndex - 1].village]}}")
+                        .editor(text-angular ng-model="rpMessage" ng-change="onRpMessageChange(rpMessage)" ta-toolbar="[['think','speech', 'action', 'shout', 'whisper', 'redo', 'undo', 'html' ]]")
+                    .roleplay-textarea__options
+                        .button.fond-village.send(ng-click="postMessage()")
+                            div >
+                .notice
+                    .info-text(ng-show="roleplay.is_finished") Cette partie est terminée! Les participants ne peuvent plus écrire ou éditer leurs posts.
+
+    .side-column
+        span(class="{{location.village}} other-user")
+            a.go-to-button.fond-village.hover(href="map/{{location.village}}/{{location.zone}}/{{location.slug}}" )
+                span Accéder au lieu :
+                br
+                span.loc(ng-bind-html="location.nom")
+        h3 Participants
+        .async-detail__members.list
+            .async-detail__member.element.other-user(class="{{member.village}}" ng-repeat="member in roleplay.userList")
+                a(href="profil/{{member.ID}}")
+                    .circle-avatar.small(style="background-image:url('{{member.avatar}}')")
+                a.name.font-village.hover(href="profil/{{member.ID}}") {{member.display_name}}
+        .button.fond-village.hover(ng-show="canParticipate && !participation" ng-click="joinRP()") Participer au RP
+        .button.fond-village.hover(ng-show="participation.status == 0" ng-click="acceptInvite()") Accepter l'invitation
+        .rp-note(ng-show="isInRoleplay && !roleplay.is_finished" ng-class="{'mobile-ducked': noteListDucked}")
+            h4.fond-village Messagerie de la partie
+            .rp-note__scroll
+                .rp-note__unit(ng-repeat="note in roleplay.notes" on-last-repeat)
+                    .rp-note__date {{note.formatDate}}
+                    .rp-note__message.other-user(class="{{note.author.village}}")
+                        span.rp-note__author.font-village {{note.author.display_name}}:
+                        span.rp-note__message {{note.message}}
+            form.form.rp-note__input-container(ng-submit="postNote()")
+                input.rp-note__input(type="text" ng-model="rpNote")
+                .button.rp-note__button.fond-village.hover(ng-click="postNote()")
+                    span >
+        br
+        .button.fond-village.hover(ng-show="isOwner && !roleplay.is_finished" ng-click="endGame()") Terminer la partie
+        .info-text(ng-show="roleplay.is_finished") Cette partie est terminée! Les participants ne peuvent plus écrire ou éditer leurs posts.
+        br

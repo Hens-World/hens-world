@@ -1,0 +1,17 @@
+.page-container.map__container
+  .map__buttons-container
+    .map-button(ng-repeat="village in mapList.list" style="--order: {{village.order}}"
+                id="mapButton{{village.label}}"
+                ng-class="{'small': village.type === 'zone', 'map-button--selected': village.selected, 'map-button--hidden': village.hidden}"
+                href="{{village.label}}" class ="noJq {{village.class}}"
+                ng-click="setSelectedVillage(village)"
+                on-last-repeat)
+      img.map-button__geoloc(src="/medias/map/global-bt/{{village.label}}-geo.png")
+      .map-button__circle
+        .map-button__image-wrapper
+          a.map-button__image(href="{{village.url}}")
+            img(src="/medias/map/mini/mobile/{{village.label}}-mini.jpg")
+  .map__infos
+    .map__current-info
+      .map__zone {{selectedZone.type == "zone" ? "Contrées" : "Village"}}
+      .map__name() {{selectedZone.type == "zone" ? selectedZone.title : selectedZone.label}}

@@ -1,0 +1,129 @@
+{"frames": [
+
+{
+	"filename": "bateau_400.png",
+	"frame": {"x":2,"y":2,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_401.png",
+	"frame": {"x":2,"y":2,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_402.png",
+	"frame": {"x":2,"y":2,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_403.png",
+	"frame": {"x":343,"y":2,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_404.png",
+	"frame": {"x":684,"y":2,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_410.png",
+	"frame": {"x":684,"y":2,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_405.png",
+	"frame": {"x":1025,"y":2,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_406.png",
+	"frame": {"x":2,"y":347,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_407.png",
+	"frame": {"x":2,"y":347,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_408.png",
+	"frame": {"x":2,"y":347,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_409.png",
+	"frame": {"x":343,"y":347,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_411.png",
+	"frame": {"x":684,"y":347,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_403.png",
+	"frame": {"x":343,"y":2,"w":339,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":339,"h":343},
+	"sourceSize": {"w":339,"h":343},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "bateau_4.png",
+	"format": "RGBA8888",
+	"size": {"w":1366,"h":692},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1fb58a42cb78e8a0272c007ef0f08c5d:2ed2d06ce5f7bac79156bbf8d1535570:87a6038aae5b75c5573c6ef61d74f850$"
+}
+}

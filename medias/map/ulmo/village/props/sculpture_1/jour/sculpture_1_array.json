@@ -1,0 +1,21 @@
+{"frames": [
+
+{
+	"filename": "Ulmo_sculpture_jour.png",
+	"frame": {"x":0,"y":0,"w":44,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":44,"h":86},
+	"sourceSize": {"w":44,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sculpture_1.png",
+	"format": "RGBA8888",
+	"size": {"w":44,"h":86},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7b738b7d6b3bc2999903c6e7e44c0024:c47abc0052c323848e7c0bfaf69b54b4:37baf7421f74a809d860c9a11b4600cf$"
+}
+}

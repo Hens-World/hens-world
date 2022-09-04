@@ -1,0 +1,132 @@
+{"frames": [
+
+{
+	"filename": "agro1.png",
+	"frame": {"x":0,"y":0,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro2.png",
+	"frame": {"x":0,"y":76,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro3.png",
+	"frame": {"x":0,"y":152,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro4.png",
+	"frame": {"x":0,"y":228,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro5.png",
+	"frame": {"x":0,"y":304,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro6.png",
+	"frame": {"x":0,"y":380,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro7.png",
+	"frame": {"x":0,"y":456,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro8.png",
+	"frame": {"x":0,"y":532,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro9.png",
+	"frame": {"x":0,"y":608,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro10.png",
+	"frame": {"x":0,"y":684,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro11.png",
+	"frame": {"x":0,"y":760,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro12.png",
+	"frame": {"x":0,"y":836,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro13.png",
+	"frame": {"x":0,"y":912,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro14.png",
+	"frame": {"x":0,"y":988,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+},
+{
+	"filename": "agro15.png",
+	"frame": {"x":0,"y":1064,"w":26,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+	"sourceSize": {"w":26,"h":76}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "aulne.png",
+	"format": "RGBA8888",
+	"size": {"w":26,"h":1140},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:57b0cd58d4c609f88d8a1d8da5c926bb:c9289bea62392809ca15c610300f2201:a1f56e8c26a911497cd9bd2f21be8131$"
+}
+}

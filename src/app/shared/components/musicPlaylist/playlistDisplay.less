@@ -1,0 +1,118 @@
+.playlist{
+  background: #090909;
+  height: 0;
+  display: flex;
+  box-sizing: border-box;
+  opacity: 0;
+  position: relative;
+  transition: all 0.65s;
+  overflow: hidden;
+  &.show{
+    opacity: 1;
+    border: 1px solid #191919;
+    margin-bottom: 5px;
+    display: block;
+    height: 60vh;
+  }
+  &__scroller{
+    height: 100%;
+    right: -25px;
+    left: 0;
+    position: absolute;
+    overflow-y: scroll;
+
+  }
+  &__item{
+    box-sizing: border-box;
+    text-align: left;
+    transition: all 0.15s;
+    margin-bottom: 1px;
+    display: flex;
+    transition-delay: 0s;
+    .village{
+      width: 30px;
+      height: 30px;
+      margin-top: 7.5px;
+      background: url('/medias/common/mini-global.png');
+      background-size:100% 100%;
+
+      &.anar{background: url('/medias/common/mini-anar.png');background-size:100% 100%;}
+      &.wilwar{background: url('/medias/common/mini-wilwar.png');background-size:100% 100%;}
+      &.sulimo{background: url('/medias/common/mini-sulimo.png');background-size:100% 100%;}
+      &.ulmo{background: url('/medias/common/mini-ulmo.png');background-size:100% 100%;}
+    }
+    .info{
+      height: 45px;
+      width: 60%;
+      .long-title-wrap{
+        min-width: 140px;
+        margin-top: 4px;
+        font-size: 1.15em;
+        display: block;
+        margin-top: 6px;
+        overflow: hidden;
+        .title{
+          display: inline-block;
+          white-space: nowrap;
+        }
+      }
+      .artiste{
+        display: block;
+        font-size: 0.8em;
+        width: 80px;
+        color: #bbb;
+        margin-top: -1px;
+      }
+    }
+    .length{
+      float: right;
+      height: 45px;
+      width: 45px;
+      line-height: 45px;
+      vertical-align: middle;
+      text-align: center;
+    }
+    &.select{
+      background: @guestNeuter;
+      transition: all 0.15s;
+      transition-delay: 0.15s;
+    }
+    .play{
+      width: 30px;
+      height: 30px;
+      margin-top: 7.5px;
+      opacity: 0.7;
+      float: right;
+      transition: all 0.2s;
+      background: url('/medias/player/play-big.png');
+      background-size: 100% 100%;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    .fav{
+      width: 23px;
+      height: 23px;
+      margin-top: 12px;
+      float: right;
+      margin-left: 3px;
+      margin-right: 3px;
+      background: url('/medias/article/fav-off.png');
+      background-size: 100% 100%;
+      &:hover{
+        background: url('/medias/article/fav-hover.png');
+        background-size: 100% 100%;
+        &.active{
+          background: url('/medias/article/fav-on.png');
+          background-size:100% 100%;
+          background-repeat: no-repeat;
+        }
+      }
+      &.active{
+        background: url('/medias/article/fav-on.png');
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

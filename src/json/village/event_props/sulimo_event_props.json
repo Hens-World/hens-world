@@ -1,0 +1,73 @@
+{
+  "props": [
+    {
+      "label":"voyante",
+      "action": "open_horoscope",
+      "icone": "exclamation",
+      "width":25,
+      "height":63,
+      "center":{
+        "x":13,
+        "y":62
+      },
+      "avail": [
+        {
+          "fromT": 1,
+          "to": 4,
+          "x": 2511,
+          "y": 2834,
+          "season": "hiver",
+          "dates": ["03-01"]
+        },
+        {
+          "fromT": 5,
+          "to": 8,
+          "x": 1537,
+          "y": 1965,
+          "season": "hiver",
+          "dates": ["03-01"]
+        },
+        {
+          "fromT": 9,
+          "to": 11,
+          "x": 692,
+          "y": 2834,
+          "season": "hiver",
+          "dates": ["03-01"]
+        },
+        {
+          "fromT": 12,
+          "to": 15,
+          "x": 789,
+          "y": 750,
+          "season": "hiver",
+          "dates": ["03-01"]
+        },
+        {
+          "fromT": 16,
+          "to": 19,
+          "x": 2090,
+          "y": 1123,
+          "season": "hiver",
+          "dates": ["03-01"]
+        },
+        {
+          "fromT": 20,
+          "to": 22,
+          "x": 1185,
+          "y": 1090,
+          "season": "hiver",
+          "dates": ["03-01"]
+        },
+        {
+          "fromT": 23,
+          "to": 0,
+          "x": 1899,
+          "y": 154,
+          "season": "hiver",
+          "dates": ["03-01"]
+        }
+      ]
+    }
+  ]
+}

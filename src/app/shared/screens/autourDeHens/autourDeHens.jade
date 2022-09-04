@@ -1,0 +1,54 @@
+.univers-hens-container
+
+  .scrolling-menu
+    .bt-roll.1-bt.top-bt.active(ha-value="1")
+      .label 
+    .bt-roll.2-bt.poly-bt(ha-value="2")
+      .label 
+    .bt-roll.3-bt.inside-bt(ha-value="3")
+      .label 
+    .bt-roll.4-bt.and-you-bt(ha-value="4")
+      .label  
+  .audio(ng-click="toggleAudio($root)" ng-class="{'active':audio}")
+  .main-center#1
+    video#fond-vid( autoplay='true' loop) 
+      source(src="/medias/univers/teaser.mp4" type="video/mp4")
+    .text-container#2
+      .title(ng-bind-html="localContent.universTitre")
+      .description(ng-bind-html="content.histoireComplete")
+      .line
+      .title#3 Principe du site
+      .description(ng-bind-html="content.explicationComplete")
+      .line  
+      .title#4 Fonctionnalités des utilisateurs
+      .text Les membres peuvent actuellement utiliser les fonctionnalités suivantes:
+      .ul
+        .li(ng-repeat='obj in [{"text":"Choisir son village","image":"choix-village"}, {"text":"Déterminer son pouvoir","image":"pouvoir"}, {"text":"Créer une fiche de personnage","image":"fiche"}, {"text":"Commenter les créations","image":"commenter"}, {"text":"Aimer une création","image":"favori"}, {"text":"Aimer un contributeur","image":"aimer"}]' )
+          .image(ng-class="obj.image")
+          .label {{obj.text}}
+      .text Les contributeurs ont les mêmes droits avec en outre:
+      ul
+        li La possibilité de poster une création dans les lieux de Hens
+        li Voir son personnage intégré dans un des villages, avec une fiche de personnage attachée
+
+  //- .text Les membres peuvent actuellement utiliser les fonctionnalités suivantes:
+  //- .text Les contributeurs ont les mêmes droits avec en outre:
+  //- ul
+  //-   li La possibilité de poster une création dans les lieux de Hens
+  //-   li Voir son personnage intégré dans un des villages, avec une fiche de personnage attachée
+  //- .text Hens est une galerie polyphonique: c’est à dire qu’elle s’écrit à plusieurs mains, plusieurs voix. Par là, nous voulons faire comprendre aux contributeurs et aux membres que le monde de Hens est interprétable; que chacun peut y apporter son propre point de vue et sa manière de penser. Ainsi les créations de différents contributeurs peuvent se contredire entre elle, mais c’est à chacun de se faire sa propre lecture du monde de Hens. Il n’y aucune certitude, chacun a le droit à sa propre vérité. Le site offre ainsi une base avec le monde de Hens: les villages, les pouvoirs, les saisons. Ce n’est qu’un terreau proposé a une multitude de créations et d’embranchement possible. Ainsi le monde de Hens a plusieureslectures alors vous aussi... faites vous la votre!
+  //- .text A cette galerie nous ajoutons une volonté rôliste et immersive. Chaque hensien peut ainsi se construire sa fiche de personnage, avoir un pouvoir déterminé grâce a un questionnaire, appartenir à un village. Nous voulons rendre le site vivant en y ajoutant de l’activité selon les heures et les mois. Il y a donc plusieurs façons d’aborder le site “ Hens World “ et c’est de la façon dont vous le choisissez.
+
+  //- .title-nav Barre de navigation
+  //-   .miniature 
+  //-   .text 
+  //-     p Une fois connecté, vous pouvez accéder à la barre de Navigation, accessible en cliquant sur l’extrémité gauche du site, depuis n’importe qu’elle page. Les 4 boutons en haut représentent des fonctionnalités futures: Amis, Messages privés, animal liés, et guide de l’archipel.
+  //-     p La liste en dessous montre les derniers articles publiés. La barre de recherche permet de trier selon ce que vous cherchez ( par auteur, par thème, par village etc…). Vous pouvez aussi accéder grâce aux onglets coeur et étoiles respectivement aux derniers articles de vos contributeurs favoris,  et à vos articles favoris. 
+
+  //- .title-nav Lecteur de musique
+  //-   .miniature
+  //-   .text
+  //-     p Le lecteur de musique, en haut à droite joue les dernières musiques créées par les contributeurs. Lorsque vous êtes dans un village, la playlist en cours changera automatiquement pour les musiques créées dans ce dernier.
+
+
+

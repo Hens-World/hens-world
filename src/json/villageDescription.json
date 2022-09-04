@@ -1,0 +1,32 @@
+{
+  "villageList": [
+    {
+      "name": "Sulimo",
+      "slug": "sulimo",
+      "logo": "/medias/selectVillage/sulimo_logo_animation.json",
+      "background": "/medias/selectVillage/sulimo_background.jpg",
+      "description": "<b>Village du Vent et de l’Automne</b>. Sulimo est le plus petit village de l’archipel.\nDécrit comme calme et paisible, il est bordé d’une grande forêt et jonché sur une falaise. Connue pour accueillir de nombreux artisans renommés de l’archipel, Sulimo est un village dont l’avenue principale est remplie de stands et de touristes venant acquérir des trésors."
+    },
+    {
+      "name": "Ulmo",
+      "slug": "ulmo",
+      "logo": "/medias/selectVillage/ulmo_logo_animation.json",
+      "background": "/medias/selectVillage/ulmo_background.jpg",
+      "description": "<b>Village de l’Eau et de l’Hiver</b>. Village de taille plutôt moyenne, Ulmo est connue pour son grand port et sa plage donnant un accès privilégié à la mer.\nC’est une cité touristique, qui compte parmi les plus beaux points de vue de l’île. Elle est également appréciée des fins gourmets : ses restaurants sont célèbres aux quatre coins de l’archipel."
+    },
+    {
+      "name": "Wilwar",
+      "slug": "wilwar",
+      "logo": "/medias/selectVillage/wilwar_logo_animation.json",
+      "background": "/medias/selectVillage/wilwar_background.jpg",
+      "description": "<b>Village de la Terre et du Printemps</b>. Grande ville, appréciée pour la nature qui parcourt ses rues et ses bâtiments colorés. Bordée de forêts et champs, c’est au cœur de ce village que la plupart des artistes de l’archipel viennent trouver l’inspiration. De nombreux agriculteurs, maraîchers, épiciers et éleveurs se donnent rendez-vous au marché de la cité."
+    },
+    {
+      "name": "Anar",
+      "slug": "anar",
+      "logo": "/medias/selectVillage/anar_logo_animation.json",
+      "background": "/medias/selectVillage/anar_background.jpg",
+      "description": "<b>Village du Feu et de l’Eté</b>. Capitale de l’archipel, ville dynamique où toutes les activités sont possibles. Concerts, cinéma, parc d'attractions, bars et autres restaurants, les gens aiment y venir pour sortir. Construite aux pieds des montagnes, et au creux des collines de l'île de Loann, Anar est sans aucun doute au centre de toutes les attentions Hensiennes."
+    }
+  ]
+}

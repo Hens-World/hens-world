@@ -1,0 +1,129 @@
+{"frames": [
+
+{
+	"filename": "rubis debout00.png",
+	"frame": {"x":0,"y":0,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis debout01.png",
+	"frame": {"x":0,"y":68,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis debout02.png",
+	"frame": {"x":0,"y":136,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis debout03.png",
+	"frame": {"x":0,"y":204,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis debout04.png",
+	"frame": {"x":0,"y":272,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis debout05.png",
+	"frame": {"x":0,"y":340,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis debout06.png",
+	"frame": {"x":0,"y":408,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis debout07.png",
+	"frame": {"x":0,"y":476,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis debout08.png",
+	"frame": {"x":0,"y":544,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis_debout00.png",
+	"frame": {"x":0,"y":612,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis_debout01.png",
+	"frame": {"x":0,"y":680,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis_debout02.png",
+	"frame": {"x":0,"y":748,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rubis_debout03.png",
+	"frame": {"x":0,"y":816,"w":34,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+	"sourceSize": {"w":34,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "rubis_debout.png",
+	"format": "RGBA8888",
+	"size": {"w":34,"h":884},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f09879329e17e54f7cfb95250a66c5ad:8672f2e6a403fc40c3991ab57ef71e55:d5e50b6e5ba8b08a6d3427d3f6c0ce12$"
+}
+}

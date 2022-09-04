@@ -1,0 +1,17 @@
+.new-post-authors
+  .added-list
+    p(ng-show="!hideDescr" style="margin-right: 15px; font-size: 1.2em; margin-bottom: 10px;") Auteur(s)
+    div.other-user(ng-repeat="author in authors" class="{{author.village}}")
+      .added-author-unit.fond-village()
+        .name(ng-bind-html="author.display_name")
+        .delete(ng-click="removeAuthor(author)" ng-show="author.ID != $root.currentUser.ID")
+          .fa.fa-trash
+    .new-author-block(ng-click="startNewAuthorSearch()")
+      .text(ng-show="!isSearchingAuthor")
+        i + Ajouter un auteur
+      input.search-author(type="text" ng-model="authorNameFilter" ng-show="isSearchingAuthor" placeholder="Pseudo de l'auteur")
+  .new-author-current-search(ng-show="isSearchingAuthor && searchAuthorList.length > 0" ng-class="{'absolute': absoluteList}")
+    .new-author-elt(ng-repeat="author in searchAuthorList" ng-click="validateAuthor(author)")
+      img.avatar(src="{{author.avatar}}")
+      .name
+        span(ng-repeat="letter in author.selecName" ng-class="{'selec':letter.selected}") {{letter.letter}}

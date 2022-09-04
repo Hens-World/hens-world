@@ -1,0 +1,21 @@
+{"frames": [
+
+{
+	"filename": "Ulmo_sculpture_nuit.png",
+	"frame": {"x":0,"y":0,"w":44,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":44,"h":86},
+	"sourceSize": {"w":44,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sculpture_1.png",
+	"format": "RGBA8888",
+	"size": {"w":44,"h":86},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7fde0ce6019838338a0b9ef0952bc976:b453dd05c97ca9453b555c8a094e0987:37baf7421f74a809d860c9a11b4600cf$"
+}
+}

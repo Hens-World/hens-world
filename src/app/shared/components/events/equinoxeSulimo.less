@@ -1,0 +1,236 @@
+
+
+.equinoxe-automne {
+  width: 100%;
+  position: fixed;
+  top: @HH;
+  left: 0;
+  z-index: 100;
+  font-size: 14em;
+  .fullHeight(0px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: @overlayBlack;
+  padding: 12px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  &__content {
+    background-color: @contentDark;
+    padding: 35px;
+    padding-right: 80px;
+    margin-left: -100px;
+    position: relative;
+    margin: auto;
+    .field {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 1.4em;
+    cursor: pointer;
+    &:after {
+      content: 'X';
+    }
+  }
+
+  &__instrument-container {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    width: 360px;
+    height: 680px;
+    z-index: 20;
+    pointer-events: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    &.violin {
+      background-image: url('/medias/events/equinoxe-automne/keyart_violin.png');
+    }
+    &.guitar-acoustic {
+      background-image: url('/medias/events/equinoxe-automne/keyart_guitar-acoustic.png');
+    }
+    &.clarinet {
+      background-image: url('/medias/events/equinoxe-automne/keyart_clarinet.png');
+    }
+    &.xylophone {
+      background-image: url('/medias/events/equinoxe-automne/keyart_xylophone.png');
+    }
+  }
+
+  &__music-table {
+
+  }
+
+  &__music-line-note {
+    display: flex;
+
+  }
+  &__music-cell {
+    width: 35px;
+    height: 35px;
+    flex: 0 0 auto;
+    border: 1px solid @middleDark;
+    background-color: @darkGray;
+    cursor: pointer;
+
+    &:hover:not(.fond-village) {
+      background-color: @gray;
+    }
+    &.continuing {
+      border-right-width: 0;
+      width: 36px;
+    }
+
+    &.continued {
+      border-left-width: 0;
+      width: 36px;
+    }
+    &.continued.continuing {
+      width: 37px;
+    }
+    &.highlight {
+      animation: highlight 0.60s ease-out;
+      @keyframes highlight {
+        0% {
+          filter: brightness(1.25);
+        }
+        100% {
+          filter: brightness(1.0);
+        }
+      }
+      &.fond-village {
+        animation: highlight-plus 0.90s ease-out;
+        @keyframes highlight-plus {
+          0% {
+            filter: brightness(1.55);
+          }
+          100% {
+            filter: brightness(1);
+          }
+        }
+      }
+    }
+  }
+
+  &__music-note-label {
+    color: @middleDark;
+    width: 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  &__buttons {
+    display: flex;
+    > * {
+      flex: 1;
+    }
+  }
+}
+
+.equinoxe-information {
+  position: absolute;
+  background-color: @overlayBlack;
+  padding: 15px;
+  transform: translateX(-50%) translateY(-100%);
+  margin-top: -130px;
+  font-size: 14px;
+  border-radius: 5px;
+  max-width: 350px;
+  z-index: 50;
+  left: calc(1px * var(--offsetLeft) + var(--instrumentLeft));
+  top: calc(1px * var(--offsetTop) + var(--instrumentTop));
+
+  &__content {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  &__upcoming-song {
+    background-color: @buttonDark;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    min-width: fit-content;
+    justify-content: center;
+    > * {
+      flex: 0 0 auto;
+      margin: 3px;
+      white-space: nowrap;
+    }
+    i {
+      opacity: .7;
+    }
+  }
+}
+
+.equinoxe-popup {
+  position: fixed;
+  top: @HH;
+  left: 0;
+  width: 100%;
+  z-index: 110;
+  font-size: 14px;
+  .fullHeight(0px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: @overlayBlack;
+  h1 {
+    font-size: 3em;
+  }
+  &__content {
+    background-color: @contentDark;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    > * {
+      margin: 10px 0;
+    }
+
+    .button {
+      padding: 10px;
+      min-width: 200px;
+      font-size: 1.4em;
+    }
+  }
+  &__paragraph {
+    font-size: 1.2em;
+    max-width: 60%;
+  }
+  &__sound-icon {
+    width: 200px;
+    height: 60px;
+    background-image: url("/medias/events/equinoxe-automne/icone_sound.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.equinoxe-volume-control {
+  position: fixed;
+  top: 90px;
+  display: flex;
+  align-items: center;
+  z-index: 200;
+  font-size: 14px;
+  right: 230px;
+  background-color: @overlayBlack;
+  width: 220px;
+  padding: 10px;
+  p {
+    margin-right: 15px;
+    margin-top: 3px;
+  }
+}

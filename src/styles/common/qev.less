@@ -1,0 +1,298 @@
+.qev-container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    .fullHeight(0px);
+    opacity: 0;
+    z-index: @layerHidden;
+    transition: opacity 0.4s;
+    transition-delay: 0.2s;
+
+    &.active {
+        opacity: 1;
+        z-index: @layerFirst;
+    }
+
+    .Qev-part {
+        width: 250px;
+        height: 510px;
+        border-radius: 5px;
+        background: #282828;
+
+        &.chooseMember {
+            .image {
+                background: url('/medias/home/membre.png');
+                background-size: 100% 100%;
+            }
+        }
+
+        &.chooseContributor {
+            .image {
+                background: url('/medias/home/contrib.png');
+                background-size: 100% 100%;
+            }
+        }
+
+        &:hover {
+            background: #353535;
+        }
+
+        margin-left: 50px;
+        margin-right: 50px;
+        cursor: pointer;
+        transition: background 0.4s;
+        display: inline-block;
+        margin-top: 40px;
+        overflow: hidden;
+
+        .image {
+            width: 100%;
+            height: 170px;
+            background: #111;
+        }
+
+        .title {
+            font-family: 'Wire One';
+            font-size: 3em;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .description {
+            width: 220px;
+            margin-left: 15px;
+            text-align: justify;
+        }
+    }
+}
+
+.contributor-mail-container {
+    width: 100%;
+    .fullHeight(0px);
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.4s;
+    transition-delay: 0.2s;
+    z-index: @layerHidden;
+
+    &.active {
+        opacity: 1;
+        z-index: @layerOverlay;
+
+        .contributor-mail {
+            opacity: 1;
+        }
+    }
+
+    .wrapper-close {
+        width: 100%;
+        .fullHeight(0px);
+        background: rgba(10, 10, 10, 0.8);
+    }
+
+    .contributor-mail {
+        max-width: 800px;
+        border-radius: 3px;
+        width: 90%;
+        position: absolute;
+        max-height: 500px;
+        box-sizing: border-box;
+        background: rgba(15, 15, 15, 0.95);
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        margin-top: -10px;
+        padding: 20px;
+        opacity: 0;
+
+        .close {
+            position: absolute;
+            font-size: 2em;
+            cursor: pointer;
+            color: #aaa;
+            right: 20px;
+            z-index: 10;
+            top: 10px;
+
+            &:hover {
+                color: white;
+
+            }
+        }
+
+        .send {
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+
+            .title {
+                font-size: 2.5em;
+                height: 50px;
+                font-family: 'Wire One';
+                display: inline-block;
+                width: inherit;
+                margin-bottom: 10px;
+            }
+
+            .button {
+                vertical-align: middle;
+                font-size: 1.0em;
+                cursor: pointer;
+                padding: 5px;
+                padding-left: 25px;
+                padding-right: 25px;
+                box-sizing: border-box;
+                margin-left: 10%;
+                margin-right: 10%;
+
+                margin-top: 5px;
+            }
+        }
+
+        .description-container {
+            flex: 1 1 50%;
+            height: inherit;
+            padding: 20px;
+            box-sizing: border-box;
+
+            .description-contrib {
+                text-align: left;
+                display: inline-block;
+                text-indent: 1em;
+            }
+
+            .charte-button {
+                box-sizing: border-box;
+                padding: 5px;
+                margin-left: 10%;
+                margin-right: 10%;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+        }
+
+        form {
+            flex: 1 1 50%;
+            background-color: @black;
+            padding: 20px 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+
+    .charte-layout {
+        width: 100%;
+        position: absolute;
+        .fullHeight(0px);
+        left: 0;
+        top: 0;
+        z-index: @layerHidden;
+        pointer-events: none;
+        background: rgba(0, 0, 0, 0.65);
+        opacity: 0;
+        transition: opacity 0.4s, z-index 0.5s;
+
+        &.active {
+            opacity: 1;
+            pointer-events: auto;
+            z-index: @layerOverlay + 1;
+        }
+
+        .charte-container {
+            z-index: @layerOverlay;
+            position: relative;
+            background: #f3efc6;
+            transform: scale(0, 0);
+            width: 0px;
+            margin-top: 70px;
+            color: #333;
+            height: 0px;
+            display: inline-block;
+            width: 500px;
+            height: 300px;
+            text-align: justify;
+            padding: 30px;
+            padding-bottom: 50px;
+            border-radius: 5px;
+
+            div {
+                opacity: 0;
+            }
+
+            .title {
+                font-family: 'Crimson Text', serif;
+                font-size: 2.5em;
+                color: #222;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.wrapper-closer {
+    width: 100%;
+    .fullHeight(0px);
+    background-color: rgba(10, 10, 10, 0.75);
+    cursor: pointer;
+    position: fixed;;
+}
+
+.forgot-password-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .fullHeight(0px);
+    vertical-align: middle;
+    text-align: center;
+    overflow-y: auto;
+    font-size: 13em;
+    z-index: -1;
+    transition: opacity 0.4s;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        opacity: 1;
+        z-index: 101;
+    }
+
+
+
+    .form-container {
+        position: absolute;
+        z-index: 2;
+        width: 500px;
+        padding: 25px;
+        padding-bottom: 40px;
+        margin-top: -5vh;
+        background: @playerDark;
+        display: inline-block;
+        border: 2px solid @guestNeuter;
+
+        .title {
+            font-size: 3.5em;
+            font-family: 'Wire One';
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+
+        .button {
+            margin-top: 2em;
+            width: 20%;
+        }
+
+        .checkbox {
+            font-style: italic;
+            color: @upLight
+        }
+    }
+
+}

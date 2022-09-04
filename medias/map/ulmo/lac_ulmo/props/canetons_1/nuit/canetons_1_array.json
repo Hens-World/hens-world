@@ -1,0 +1,172 @@
+{"frames": [
+
+{
+	"filename": "canetons_tourne0000.png",
+	"frame": {"x":0,"y":0,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0001.png",
+	"frame": {"x":0,"y":0,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0002.png",
+	"frame": {"x":0,"y":85,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0003.png",
+	"frame": {"x":0,"y":85,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0004.png",
+	"frame": {"x":0,"y":170,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0005.png",
+	"frame": {"x":0,"y":170,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0006.png",
+	"frame": {"x":0,"y":255,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0007.png",
+	"frame": {"x":0,"y":255,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0008.png",
+	"frame": {"x":0,"y":340,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0009.png",
+	"frame": {"x":0,"y":340,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0010.png",
+	"frame": {"x":0,"y":425,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0011.png",
+	"frame": {"x":0,"y":425,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0012.png",
+	"frame": {"x":0,"y":510,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0013.png",
+	"frame": {"x":0,"y":510,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0014.png",
+	"frame": {"x":0,"y":595,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0015.png",
+	"frame": {"x":0,"y":595,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0016.png",
+	"frame": {"x":0,"y":680,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0017.png",
+	"frame": {"x":0,"y":680,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0018.png",
+	"frame": {"x":0,"y":765,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+},
+{
+	"filename": "canetons_tourne0019.png",
+	"frame": {"x":0,"y":765,"w":104,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":85},
+	"sourceSize": {"w":104,"h":85}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "canetons_1.png",
+	"format": "RGBA8888",
+	"size": {"w":104,"h":850},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5ef335926a944c4b8275961b1f32ce92:3c37ca8aa78ffd6e132ee4de5a0354d9:403c44521198113d6f9be8a7d0afb492$"
+}
+}

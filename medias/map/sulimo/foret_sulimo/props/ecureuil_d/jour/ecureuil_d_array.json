@@ -1,0 +1,174 @@
+{"frames": [
+
+{
+	"filename": "ecureuil00.png",
+	"frame": {"x":0,"y":0,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil01.png",
+	"frame": {"x":0,"y":19,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil02.png",
+	"frame": {"x":0,"y":38,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil03.png",
+	"frame": {"x":0,"y":57,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil04.png",
+	"frame": {"x":0,"y":76,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil05.png",
+	"frame": {"x":0,"y":95,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil06.png",
+	"frame": {"x":0,"y":114,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil07.png",
+	"frame": {"x":0,"y":133,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil08.png",
+	"frame": {"x":0,"y":152,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil09.png",
+	"frame": {"x":0,"y":171,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil10.png",
+	"frame": {"x":0,"y":190,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil11.png",
+	"frame": {"x":0,"y":209,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil12.png",
+	"frame": {"x":0,"y":228,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil13.png",
+	"frame": {"x":0,"y":247,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil14.png",
+	"frame": {"x":0,"y":266,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil15.png",
+	"frame": {"x":0,"y":285,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil16.png",
+	"frame": {"x":0,"y":304,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ecureuil17.png",
+	"frame": {"x":0,"y":323,"w":14,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+	"sourceSize": {"w":14,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ecureuil_d.png",
+	"format": "RGBA8888",
+	"size": {"w":14,"h":342},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6c430c42bc78327fdcfe79366981dea4:ffa3869406f335cb56661adba894a23f:302b46530343df1e306d2e45b660b993$"
+}
+}

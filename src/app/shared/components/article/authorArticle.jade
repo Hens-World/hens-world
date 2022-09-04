@@ -1,0 +1,33 @@
+.author-article-container
+  .alone(ng-show="isAlone")
+    .other-user(class="{{author.village}}")
+      .author-article
+        .avatar-wrapper
+          a.profile.font-village(href="profil/{{author.ID}}") +
+          a.avatar.fond-village.dark( href="profil/{{author.ID}}" style="background-image:url('{{author.avatar}}');")
+        .author-infos
+          a.name.font-village(href="profil/{{author.ID}}") {{author.display_name}}
+          .domaine(ng-bind-html="author.fiche.domaine")
+          //- .personnage Personnage : {{authorFiche.name}}
+          .content-container(ng-show="author.fiche.description.length > 2")
+            .description-author(ng-bind-html="author.fiche.description")
+          .links-container.other-user(class="{{author.village}}")
+            a.mp.bt-unit(href="messagerie/new?target={{author.display_name}}")
+            a.website.bt-unit(ng-show="author.fiche.website.length > 0" target="_blank" href="{{author.fiche.website}}")
+              //- .hover-text site web
+            a.facebook.bt-unit(ng-show="author.fiche.facebook.length > 0" target="_blank" href="{{author.fiche.facebook}}")
+            a.twitter.bt-unit(ng-show="author.fiche.twitter.length > 0" target="_blank" href="{{author.fiche.twitter}}")
+  .author-multi-container(ng-Show="!isAlone")
+    .author-multi.other-user( ng-repeat="author in authorList" class="author-{{author.ID}} {{author.village}}")
+      .avatar-wrapper
+        a.profile.font-village(href="profil/{{author.ID}}") +
+        a.avatar.fond-village.dark( href="profil/{{author.ID}}" style="background-image:url('{{author.avatar}}');")
+      .author-infos
+        a.name.font-village(href="profil/{{author.ID}}") {{author.display_name}}
+        .domaine(ng-bind-html="author.fiche.domaine")
+        .links-container.other-user(class="{{author.village}}")
+          a.mp.bt-unit(href="messagerie/new?target={{author.display_name}}")
+          a.website.bt-unit(ng-show="author.fiche.website.length > 0" target="_blank" href="{{author.fiche.website}}")
+            //- .hover-text site web
+          a.facebook.bt-unit(ng-show="author.fiche.facebook.length > 0" target="_blank" href="{{author.fiche.facebook}}")
+          a.twitter.bt-unit(ng-show="author.fiche.twitter.length > 0" target="_blank" href="{{author.fiche.twitter}}")

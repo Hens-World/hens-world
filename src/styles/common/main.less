@@ -1,0 +1,347 @@
+div, p, h1, h2, h3, h4, h5, ul, li, video, audio {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+footer {
+  display: none;
+}
+
+html {
+  font-size: 1px;
+  letter-spacing: 0.1em;
+  margin: 0 !important;
+  padding: 0;
+  color: white;
+  font-family: 'Open Sans', Arial, sans-serif;
+  body {
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    padding: 0;
+    margin: 0 !important;
+    #main {
+      text-align: center;
+      .content {
+        position: relative;
+        width: 100%;
+        .fullHeight(0px);
+        overflow: hidden;
+        margin-top: 0;
+        z-index: 1;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+/*
+  ------------- COMMON STYLES FOR HEADER ----------
+ */
+main-header {
+  #header {
+    width: 100%;
+    height: 80px;
+    z-index: 150;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: @headerDark;
+    @transp: rgba(255, 255, 255, 0);
+    @light: rgba(255, 255, 255, .65);
+    //header states for route loadings
+    .loading-bar {
+      width: 100%;
+      height: 3px;
+      display: block;
+      position: absolute;
+      left: 0;
+      pointer-events: none;
+      box-sizing: border-box;
+      border-bottom: 3px solid rgba(255, 255, 255, .25);
+      opacity: 0;
+      background-origin: border-box;
+      transition: .3s;
+      bottom: -3px;
+    }
+    &.loading .loading-bar {
+      transition: none;
+      opacity: 1;
+      &:after {
+        content: '';
+        height: 3px;
+        display: block;
+        width: 30%;
+        position: absolute;
+        background-image: linear-gradient(to right, @transp 0%, @light 90%, @transp 110%);
+        animation: move .9s linear infinite;
+      }
+    }
+    &.success .loading-bar {
+      opacity: 0;
+      border-bottom-color: @wilwarNeuter;
+      transition: all 1s;
+
+    }
+
+    &.error .loading-bar {
+      opacity: 0;
+      border-bottom-color: @anarNeuter;
+      transition: all 1s;
+
+    }
+    @keyframes move {
+      0% {
+        left: -28%;
+        opacity: .5;
+      }
+      50% {
+        opacity: .9;
+      }
+      80%, 100% {
+        opacity: .35;
+        left: 100%;
+      }
+    }
+    .message-bt {
+      &.active {
+        .message-notif {
+          display: block;
+        }
+      }
+      .message-notif {
+        display: none;
+      }
+    }
+
+
+    .message-bt {
+      width: 25px;
+      height: 25px;
+      background-image: url(/medias/common/email_off.png);
+      background-size: contain;
+      display: block;
+      background-position: center;
+      backgroud-repeat: no-repeat;
+      &:hover {
+        background-image: url(/medias/common/email_on.png);
+      }
+      &.active {
+        background-image: url(/medias/common/email_on.png);
+      }
+      .message-notif {
+        display: none;
+        transition: margin-top .3s;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        border-radius: 50%;
+        margin-top: -5px;
+        font-size: 0.9em;
+        text-align: center;
+        line-height: 15px;
+        vertical-align: middle;
+        margin-left: 15px;
+        &.active {
+          display: block;
+        }
+      }
+    }
+
+    .notif-container {
+      position: relative;
+      z-index: 101;
+
+    }
+
+    .notif-bt {
+      width: 25px;
+      height: 25px;
+      pointer-events: none;
+      align-self: flex-start;
+      position: relative;
+      margin-bottom: 5px;
+      margin-right: 10px;
+      cursor: pointer;
+      opacity: .7;
+      background: url(/medias/common/notif_off.png);
+      background-size: 100% 100%;
+      transition: opacity .3s;
+
+      &.active {
+        opacity: .9;
+        pointer-events: auto;
+        background: url(/medias/common/notif_on.png);
+        background-size: 100% 100%;
+      }
+      &.focus {
+        opacity: 1;
+      }
+      .number-notif {
+        display: none;
+        transition: margin-top .3s;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        border-radius: 50%;
+        margin-top: -5px;
+        text-align: center;
+        line-height: 15px;
+        vertical-align: middle;
+        margin-left: 15px;
+        &.active {
+          display: block;
+        }
+      }
+    }
+    .notif-list-wrapper {
+      width: 270px;
+      background: @contentDark;
+      right: 30px;
+      top: 0px;
+      z-index: 10;
+      position: absolute;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+    .notif-clear {
+      position: relative;
+      font-size: 1.1em;
+      margin-top: 2px;
+      color: @darkGray;
+      cursor: pointer;
+      background-color: rgba(0,0,0,0);
+
+      &:hover {
+        color: @upLight;
+        background-color: @buttonDark;
+        transition: all .3s;
+      }
+      padding: 12px;
+      .fa {
+        margin-right: 6px;
+      }
+      &:before {
+        content: '';
+        display: block;
+        left: 12px;
+        bottom: 100%;
+        right: 12px;
+        background-color: @black;
+        height: 1px;
+        position: absolute;
+      }
+    }
+    .notif-list {
+      height: auto;
+      max-height: 35vh;
+      overflow: auto;
+      .notif-elt {
+        cursor: pointer;
+        background: @contentDark;
+        margin-bottom: 1px;
+        text-align: left;
+        padding: 6px 6px 2px 12px;
+        transition: border .35s, padding-right .35s step-end;
+        &:hover {
+          background: @buttonDark;
+          transition: border .35s, padding-right .35s step-start;
+          padding-right: 0;
+        }
+        .notif_time {
+          margin-top: 2px;
+          padding: 2px;
+          font-size: .8em;
+        }
+      }
+    }
+
+    .logo-wrapper {
+      align-self: center;
+      display: block;
+      position: relative;
+      z-index: 100;
+      img {
+        background-color: @headerDark;
+      }
+      flex: 1 1 auto;
+    }
+
+  }
+}
+
+main-header {
+  #header.mobile {
+    .notif-list-wrapper {
+      position: fixed;
+      width: 95%;
+      left: 2.5%;
+      top: 40px;
+    }
+  }
+}
+
+.new-version-notification {
+  position: fixed;
+  top: calc(@HH + 10px);
+  z-index: 1000000;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  background-color: @contentDark;
+  border-radius: 6px;
+  border: 1px solid @buttonDark;
+  font-size: 14em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transition: opacity .2s, transform .3s ease-out;
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -100px);
+  }
+
+  &__text {
+    margin-bottom: 6px;
+  }
+
+  &__button {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+/**
+ * Styles for new server version available
+ */
+
+
+
+/**
+
+Constestllation
+ */
+
+.constellations-game {
+  width: 100vw;
+  .fullHeight(0px);
+  overflow-y: auto;
+  font-size: 14em;
+  &__credits {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,202 @@
+.poisson-popup.other-user.ulmo(ng-show="showPopup == true" class="{{popupType}}")
+  .poisson-popup-content.border-village
+    .poisson-notif-image
+    .poisson-notif-message
+      span.name {{selectedPoisson.name}}
+      span.message(ng-show="popupType == 'feed'")  semble être satisfait de ce repas !
+      span.message(ng-show="popupType == 'favor'")  {{selectedPoisson.wish.data}}
+    .button.button--meaty.fond-village(ng-show="popupType == 'feed'" ng-click="closePopup()") Cool !
+    .button.button--meaty.fond-village(ng-show="popupType == 'favor'" ng-click="favorCurrentPoisson()") Exaucer la faveur
+.poisson-popup.other-user.ulmo.creation-detail(ng-show="popupCreation == true")
+  .poisson-popup-content.border-village(ng-show="creationInformation")
+    h1 Validation du poisson observé
+    p(ng-show="creationInformation.poissons <= 7") {{newPoisson.name}} se sentira à l'aise dans l'aquarium, et ne génera pas les poissons déjà présents !
+    p(ng-show="creationInformation.poissons == 8") {{newPoisson.name}} va rendre l'aquarium un peu trop bondé, causant les changements suivants:
+    p(ng-show="creationInformation.poissons > 8 &&  creationInformation.poissons <= 10") {{newPoisson.name}} L'aquarium est déjà bien rempli ! Ce petit désagrèment cause les malus suivants:
+    ul(ng-show="creationInformation.poissons >= 8 && creationInformation.poissons <= 10")
+      li
+        span.detail.fond-village.hover(title="Toutes les 10h au lieu de 12h") ?
+        span  Les poissons auront besoin d'être nourris un peu plus souvent
+      li
+        span.detail.fond-village.hover(title="Toutes les 3h au lieu de 2, et vous n'aurez que 6h pour les remplir au lieu de 8") ?
+        span  Les poissons mettront plus de temps à demander une nouvelle faveur, et vous aurez moins de temps pour la remplir
+    p(ng-show="creationInformation.poissons == 11") {{newPoisson.name}} va rendre l'aquarium surpeuplé, causant les désagréments suivants:
+    p(ng-show="creationInformation.poissons > 11") {{newPoisson.name}} va se rendre dans un environnement déjà surpeuplé, qui engendre les malus suivants:
+    ul(ng-show="creationInformation.poissons >= 11")
+      li
+        span.detail.fond-village.hover(title="Toutes les 8h au lieu de 12h") ?
+        span  Les poissons auront besoin d'être nourris plus souvent
+      li
+        span.detail.fond-village.hover(title="Toutes les 3h au lieu de 2, et vous n'aurez que 6h pour les remplir au lieu de 8") ?
+        span  Les poissons mettront plus de temps à demander une nouvelle faveur, et vous aurez moins de temps pour la remplir
+      li
+        span.detail.fond-village.hover(title="Bon courage !") ?
+        span  Les poissons ne peuvent plus gagner de satisfaction, mais demanderont encore des faveurs !
+    .line
+      .button--meaty.button.fond-village.hover(ng-click="closeCreationPopup()") Annuler
+      .button--meaty.button.fond-village.hover(ng-click="createPoisson()") Valider
+
+.page-container
+  .main-column
+    .main-column__content
+      .solstice-ulmo
+        .poisson-display
+          .poisson-list(ng-class="{'blurred': currentTab != 'aquarium'}")
+            .poisson(ng-repeat="poisson in poissonList" id="poisson-{{poisson.id}}" poisson-solstice poisson="poisson" scale="0.19")
+              .favor-icon(ng-show="poisson.wish")
+              .hungry-icon(ng-show="poisson.hungry")
+              svg-element(class="poissonBody" icon-url="poisson.body.url" color-pair="poisson.colors")
+              svg-element(class="poissonEye" icon-url="poisson.eye.url" color-pair="poisson.colors")
+              svg-element(class="poissonAccessory" icon-url="poisson.accessory.url" color-pair="poisson.colors")
+              svg-element(class="poissonJewel" icon-url="poisson.jewel.url" color-pair="poisson.colors")
+              svg-element(class="poissonNageoire" icon-url="poisson.body.nageoire.url" color-pair="poisson.colors")
+              svg-element(class="poissonHat" icon-url="poisson.hat.url" color-pair="poisson.colors")
+          .poisson-creator__display(ng-show="currentTab === 'creation'")
+            .poisson.newPoisson
+              svg-element(class="poissonBody" icon-url="newPoissonData.body.url" color-pair="newPoisson.colors")
+              svg-element(class="poissonEye" icon-url="newPoissonData.eye.url" color-pair="newPoisson.colors")
+              svg-element(class="poissonAccessory" icon-url="newPoissonData.accessory.url" color-pair="newPoisson.colors")
+              svg-element(class="poissonJewel" icon-url="newPoissonData.jewel.url" color-pair="newPoisson.colors")
+              svg-element(class="poissonNageoire" icon-url="newPoissonData.body.nageoire.url" color-pair="newPoisson.colors")
+              svg-element(class="poissonHat" icon-url="newPoissonData.hat.url" color-pair="newPoisson.colors")
+            .poisson-creator__validation.other-user.ulmo
+              .poisson-creator__dice
+              .randomize(ng-click="randomizePoisson()")
+              .fond-village.button.button--meaty.hover(ng-click="openCreationValidation()") Valider
+        .poisson-creator.other-user.ulmo(ng-show="currentTab ===  'creation'")
+          .poisson-creator__header
+            .poisson-creator__control-select
+              .select-tab.fond-village.hover(ng-repeat="category in categories" ng-click="selectCategory(category)" ng-class="{'selected': creationTab === category.tag}")
+                img(src="/medias/events/solstice-hiver/{{category.icon}}")
+            .poisson-creator__name
+              .field
+                .label Nom du poisson
+                input.form(ng-model="newPoisson.name")
+          .poisson-creator__controls.border-village(ng-switch="creationTab")
+            .poisson-creator__tab(ng-switch-when="body")
+              .poisson-creator__select-item(ng-repeat="body in data.poissons" ng-click="selectPart('body', body)" ng-class="{'selected': newPoisson.body_id === body.id}")
+                img(src="{{body.url}}" height="80")
+            .poisson-creator__tab(ng-switch-when="color")
+              .poisson-creator__select-item.color(ng-repeat="color in data.colors" ng-click="selectPart('color', color)" ng-class="{'selected': newPoisson.colors === color.join('/')}")
+                .main-color(style="border-top-color: {{color[0]}}")
+                .accent-color(style="border-bottom-color: {{color[1]}}")
+            .poisson-creator__tab(ng-switch-when="eye")
+              .poisson-creator__select-item(ng-repeat="eye in data.yeux" ng-click="selectPart('eye', eye)" ng-class="{'selected': newPoisson.eye_id === eye.id}")
+                img(src="{{eye.url}}" height="80")
+            .poisson-creator__tab(ng-switch-when="hat")
+              .poisson-creator__select-item(ng-repeat="chapeau in data.chapeaux" ng-click="selectPart('hat', chapeau)" ng-class="{'selected': newPoisson.cap_id === chapeau.id}")
+                img(src="{{chapeau.url}}" height="80")
+            .poisson-creator__tab(ng-switch-when="accessory")
+              .poisson-creator__select-item(ng-repeat="accessory in data.accessoires" ng-click="selectPart('accessory', accessory)" ng-class="{'selected': newPoisson.accessory_id === accessory.id}")
+                img(src="{{accessory.url}}" height="80")
+            .poisson-creator__tab(ng-switch-when="jewel")
+              .poisson-creator__select-item(ng-repeat="accessory in data.accessoires" ng-click="selectPart('jewel', accessory)" ng-class="{'selected': newPoisson.jewel_id === accessory.id}")
+                img(src="{{accessory.url}}" height="80")
+        .poisson-logs(ng-show="currentTab ===  'registre'")
+          h1 Registre
+          .poisson-log.other-user(ng-repeat="log in logs" class="{{log.user.village}}")
+            span.poisson-name {{log.poisson.name}}
+            span.feed(ng-show="log.action == 'FEED'") a été nourri par
+            span.text(ng-show="log.action == 'WISH' || log.action == 'FAVOR'")  {{log.data}}
+            span.observed(ng-show="log.action == 'CREATION'") a été observé par
+            span.fled(ng-show="log.action == 'FLEE'") est parti de l'aquarium car personne ne le traitait à sa juste valeur.
+            span.user-name.font-village(ng-show="log.user && log.action != 'WISH' && log.action != 'FLEE'")  {{log.user.display_name}}
+            span.date {{log.formattedDate}}
+        .poisson-notice.other-user.ulmo(ng-show="currentTab ===  'notice'")
+          h1 Notice
+          .line
+            .column
+              p Les poissons sacrés sont observables à l'aquarium d'Ulmo durant le Solstice. C'est une tradition très chere pour les Hensiens, mais ces petites créatures aquatiques sont très exigeantes. A vous de collaborer avec les autres membres afin de satisfaire suffisamment de poissons sacrés  et les faire rester jusqu'à la fin du solstice !
+              h2.font-village BUT
+              p
+                span Il faut qu'au minimum
+                b  sept
+                span  poissons restent jusqu'au 22 Décembre 23h59, et qu'au moins
+                b  sept
+                span  poissons soient
+                span.comble comblés
+                span .
+                span.hint(title="Il faut satisfaire un poisson 3 fois pour obtenir ce niveau de satisfaction")
+              h2.font-village Observation
+              p
+                span Chaque membre peut observer un poisson. Le membre pourra choisir son nom et son apparence. Une fois validé, il sera observable par tour le monde. Attention, plus il y a de poissons, plus les poissons deviendront exigeants.
+                br
+                span Si le poisson que vous avez observé fui, vous n'aurez plus l'occasion ni de le récupérer, ni d'en créer un nouveau, prenez donc soin de votre poisson et de celui des autres !
+              h2.font-village Nourrir
+              p
+                span Les poissons ont besoin d'être nourris à intervalles réguliers. Par défaut, un poisson doit être nourri toutes les 12h. Si ce délai est dépassé, le poisson sacré fuira.
+                span.hint(title="Avec 4 poissons ou moins, les poissons supportent la faim pendant 14h. Entre 9 et 11 poissons, la faim n'est supportée que 10h. A partir de 12 poissons, il faut les nourrir toutes les 8h.")
+                br
+                span Vous avez à votre disposition jusqu'à 3 doses de nourriture disponible. Vous regagnez une dose de nourriture toutes les 2 heures.
+            .column
+              h2.font-village Satisfaction
+              p
+                span Les poissons sacrès ont besoin d'être
+                span.comble comblés
+                span pour que le solstice soit correctement célébré. A cette fin, les poissons sacrés vous demanderont toutes les 2 heures une nouvelle faveur. A partir de ce moment, vous aurez 8 heures pour exaucer leur faveur.
+                span.hint(title="Avec moins de 4 poissons présent, les faveurs n'ont pas de limite de temps. Entre 9 et 11 poissons, les faveurs n'apparaissent qu'au bout de 3 heures, et doivent être remplies en 6 heures. A partir de 12 poissons, les faveurs ne donnent pas de satisfaction.")
+                br
+                span Attention, si vous ne remplissez pas la faveur d'un poisson à temps, il perdra un point de satisfaction. S'il est
+                span.mad insatisfait
+                span il fuira l'aquarium.
+                br
+                span Lorsque vous exaucez la faveur d'un poisson sacré, vous serez dans l'incapacité d'effectuer une autre action pendant 30 min, le poisson demandant toute votre attention.
+              h2.font-village Intéragir avec un poisson
+              p
+                span Cliquer sur un poisson vous permet de voir le détail de ses informations. Vous pourrez voir son nom, le membre qui l'a observé, la dernière fois qu'il a pu manger, ainsi que la date de la dernière faveur exaucée.
+                br
+                span C'est aussi ici que vous aurez accès aux actions pour nourrir ou satisfaire le poisson sélectionné.
+              br
+              .warning-notice-block
+                h2.font-village Passage du temps durant la nuit
+                p
+                  span Le temps passe plus lentement pour les poissons durant la nuit (de 23h à 7h59).
+                  b  Ils sont donc moins exigeant durant cette période.
+                  span  Le temps passe à 75% de la vitesse normale (pour chaque heure passée, seul 45 minutes s'écoulent).
+                  br
+                  span Attention, ce n'est pas reflété dans le temps écoulé visible depuis l'interface, vous pourrez donc voir des temps depuis le dernier repas (ou faveur) supérieur au temps normal.
+        .poisson-infos(ng-show="currentTab ===  'aquarium'")
+          .no-selection(ng-show="!selectedPoisson")
+            p Cliquez sur un poisson pour avoir plus d'informations, le nourrir, ou réaliser une faveur !
+          .info-content(ng-show="selectedPoisson")
+            .column
+              .info-container
+                .line
+                  img.poisson-icon(src="/medias/events/solstice-hiver/icons/icon_fish.png")
+                  h1.name {{selectedPoisson.name}}
+                p.other-user(class="{{selectedPoisson.user.village}}")
+                  span Observé  {{selectedPoisson.formattedCreation}} par
+                  span.font-village  {{selectedPoisson.user.display_name}}
+            .column
+              p.info
+                span A mangé il y a {{selectedPoisson.formattedHungerTime}}
+                br
+                span.status(class="{{!selectedPoisson.hungry ?  'satisfied' : 'angry'}}") {{selectedPoisson.hungry ? 'Affamé' : 'Rassasié'}}
+              p.info(ng-show="selectedPoisson.wish")
+                span Souhaite quelque chose depuis {{selectedPoisson.formattedFavorTime}}
+                br
+                span.status(class="{{selectedPoisson.satisfactionData.tag}}") {{selectedPoisson.satisfactionData.label}}
+              p.info(ng-show="!selectedPoisson.wish")
+                span Ne souhaite rien pour le moment
+                br
+                span.status(class="{{selectedPoisson.satisfactionData.tag}}") {{selectedPoisson.satisfactionData.label}}
+            .column.other-user.ulmo()
+              .button.fond-village.hover(ng-click="feedCurrentPoisson()") Nourrir
+              .button.fond-village.hover(ng-click="openPopup('favor')" ng-class="{'disabled': !selectedPoisson.wish}") Exaucer la Faveur
+  .side-column.other-user.ulmo#side-poisson
+    h2 Observatoire des poissons sacrés
+    .fond-village.poisson-number
+        span {{poissonList.length}} poissons
+        br
+        span(style="font-size:0.88em; opacity: .9; margin-top: -8px;") {{satisfied}} comblés
+    .poisson-tab-button.border-village-left.hover(ng-repeat="tab in tabs" ng-click="switchTab(tab.tab)" ng-class="{'active': currentTab == tab.tab}") {{tab.text}}
+    .button.fond-village.hover.add-poisson-button(ng-click="switchTab('creation')")
+      .icon
+      span OBSERVER UN POISSON
+    .poisson-status
+      .nourriture.border-village
+        span.number {{myStatus.feedStock}}/3
+        span  nourritures restante{{myStatus.feedStock <= 1 ? '': 's'}}
+      .nourriture-refill(ng-show="myStatus.feedStock < 3") Prochaine nourriture disponible dans {{myStatus.timeBeforeNextFood}}
+      .favor.border-village(ng-show="myStatus.available") Vous pouvez actuellement exaucer une faveur.
+      .favor.border-village.inactive(ng-show="!myStatus.available") Vous êtes encore occupé avec {{myStatus.wish.poisson.name}} pendant {{myStatus.wish.remainingTime}}

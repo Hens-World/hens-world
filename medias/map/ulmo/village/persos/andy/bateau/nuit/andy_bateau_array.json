@@ -1,0 +1,165 @@
+{"frames": [
+
+{
+	"filename": "andy_bateau00.png",
+	"frame": {"x":2,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau01.png",
+	"frame": {"x":96,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau02.png",
+	"frame": {"x":190,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau03.png",
+	"frame": {"x":284,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau04.png",
+	"frame": {"x":378,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau05.png",
+	"frame": {"x":472,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau06.png",
+	"frame": {"x":566,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau07.png",
+	"frame": {"x":660,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau08.png",
+	"frame": {"x":754,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau09.png",
+	"frame": {"x":848,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau10.png",
+	"frame": {"x":942,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau11.png",
+	"frame": {"x":1036,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau12.png",
+	"frame": {"x":1130,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau13.png",
+	"frame": {"x":1224,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau14.png",
+	"frame": {"x":1318,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau15.png",
+	"frame": {"x":1412,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_bateau16.png",
+	"frame": {"x":1506,"y":2,"w":92,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":36},
+	"sourceSize": {"w":92,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "andy_bateau.png",
+	"format": "RGBA8888",
+	"size": {"w":1600,"h":40},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:69a14fb55247c56f6c7abc0a8adcda72:1a780724b1e158fbb5e3452c22b5eca6:3d43de89a6619f91bf7bf51d8284dd65$"
+}
+}

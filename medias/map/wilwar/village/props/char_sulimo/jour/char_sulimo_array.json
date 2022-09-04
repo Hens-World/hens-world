@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "char_sulimo1.png",
+	"frame": {"x":0,"y":0,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo2.png",
+	"frame": {"x":316,"y":0,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo3.png",
+	"frame": {"x":632,"y":0,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo4.png",
+	"frame": {"x":948,"y":0,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo5.png",
+	"frame": {"x":1264,"y":0,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo6.png",
+	"frame": {"x":1580,"y":0,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo7.png",
+	"frame": {"x":0,"y":216,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo8.png",
+	"frame": {"x":316,"y":216,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo9.png",
+	"frame": {"x":632,"y":216,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo10.png",
+	"frame": {"x":948,"y":216,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo11.png",
+	"frame": {"x":1264,"y":216,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+},
+{
+	"filename": "char_sulimo12.png",
+	"frame": {"x":1580,"y":216,"w":316,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":216},
+	"sourceSize": {"w":316,"h":216}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "char_sulimo.png",
+	"format": "RGBA8888",
+	"size": {"w":1896,"h":432},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9aa464483bd273b4598e359d9ef71cd0:b17384dfb75465c0e1f92796b738b866:9bd295976efc752c48c9382c9f5856d2$"
+}
+}

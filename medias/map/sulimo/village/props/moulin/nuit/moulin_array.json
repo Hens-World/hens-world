@@ -1,0 +1,111 @@
+{"frames": [
+
+{
+	"filename": "Moulin_Nuit_00.png",
+	"frame": {"x":0,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Moulin_Nuit_01.png",
+	"frame": {"x":171,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Moulin_Nuit_02.png",
+	"frame": {"x":342,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Moulin_Nuit_03.png",
+	"frame": {"x":513,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Moulin_Nuit_04.png",
+	"frame": {"x":684,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Moulin_Nuit_05.png",
+	"frame": {"x":855,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Moulin_Nuit_06.png",
+	"frame": {"x":1026,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Moulin_Nuit_07.png",
+	"frame": {"x":1197,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Moulin_Nuit_08.png",
+	"frame": {"x":1368,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Moulin_Nuit_09.png",
+	"frame": {"x":1539,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Moulin_Nuit_10.png",
+	"frame": {"x":1710,"y":0,"w":171,"h":169},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":169},
+	"sourceSize": {"w":171,"h":169},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "moulin.png",
+	"format": "RGBA8888",
+	"size": {"w":1881,"h":169},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0465e35eeec9bcad434666a21c09f36f:f8f80a8d7ae3e9fa13432f31a2dc8a16:9f77ce27b718e9592a07dcee0909ce6f$"
+}
+}

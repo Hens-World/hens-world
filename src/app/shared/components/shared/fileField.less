@@ -1,0 +1,41 @@
+file-field {
+  input[type="file"] {
+    position: fixed;
+    top: -100px;
+  }
+  .drag-drop-zone {
+    width: 150px;
+    height: 120px;
+    border: 3px dashed @darkGray;
+    color: @darkGray;
+    display: flex;
+    word-break: break-word;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+
+    > * {
+      pointer-events: none;
+    }
+
+    &.dragging {
+      cursor: grab;
+      border-color: white;
+    }
+
+    .file-name {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: @mobileMaxWidth) {
+  body file-field {
+    margin-bottom: 9px;
+    .drag-drop-zone {
+      width: 100%;
+    }
+  }
+}

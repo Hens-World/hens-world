@@ -1,0 +1,17 @@
+      },
+      "avail": [
+        {
+          "posSlug": "violon",
+          "fromT": 18,
+          "to": 21,
+          "x": 2070,
+          "y": 2502,
+          "width": 34,
+          "height": 70,
+          "center": {
+            "x": 17,
+            "y": 69
+          }
+        },
+      ]
+    },

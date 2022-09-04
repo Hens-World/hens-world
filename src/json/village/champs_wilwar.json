@@ -1,0 +1,160 @@
+{
+  "label": "champs_wilwar",
+  "sliceSize": 99,
+  "width": 5688,
+  "height": 4442,
+  "speed": 13,
+  "init": {
+    "x": 3000,
+    "y": 600
+  },
+  "miniMap": {
+    "height": 127,
+    "width": 162
+  },
+  "locations": [
+    {
+      "label": "Champs",
+      "id": 590,
+      "slug": "champs",
+      "pos": {
+        "x": 4750,
+        "y": 320
+      },
+      "width": 760,
+      "height": 530
+    },
+    {
+      "label": "Cours d'eau",
+      "id": 591,
+      "slug": "cours_deau",
+      "pos": {
+        "x": 4786,
+        "y": 912
+      },
+      "width": 700,
+      "height": 330
+    },
+    {
+      "label": "Faubourg de Wilwar",
+      "id": 592,
+      "slug": "faubourg_wilwar",
+      "pos": {
+        "x": 2740,
+        "y": 235
+      },
+      "width": 640,
+      "height": 520
+    },
+    {
+      "label": "Gîte",
+      "id": 593,
+      "slug": "gite",
+      "pos": {
+        "x": 3521,
+        "y": 1942
+      },
+      "width": 246,
+      "height": 347
+    },
+    {
+      "label": "Grange",
+      "id": 594,
+      "slug": "grange",
+      "pos": {
+        "x": 69,
+        "y": 74
+      },
+      "width": 439,
+      "height": 343
+    },
+    {
+      "label": "Pâturages",
+      "id": 595,
+      "slug": "paturages",
+      "pos": {
+        "x": 35,
+        "y": 1758
+      },
+      "width": 671,
+      "height": 469
+    },
+    {
+      "label": "Pensionnat",
+      "id": 596,
+      "slug": "pensionnat",
+      "pos": {
+        "x": 4446,
+        "y": 3366
+      },
+      "width": 627,
+      "height": 421
+    },
+    {
+      "label": "Ruines de Penn",
+      "id": 597,
+      "slug": "ruines_penn",
+      "pos": {
+        "x": 1834,
+        "y": 2505
+      },
+      "width": 561,
+      "height": 453
+    },
+    {
+      "label": "Serres",
+      "id": 599,
+      "slug": "serres",
+      "pos": {
+        "x": 4783,
+        "y": 2033
+      },
+      "width": 557,
+      "height": 387
+    },
+    {
+      "label": "Guinguette",
+      "id": 599,
+      "slug": "guinguette",
+      "pos": {
+        "x": 1660,
+        "y": 835
+      },
+      "width": 495,
+      "height": 355
+    },
+    {
+      "label": "Tour radio",
+      "id": 600,
+      "slug": "tour_radio",
+      "pos": {
+        "x": 3443,
+        "y": 3305
+      },
+      "width": 263,
+      "height": 533
+    },
+    {
+      "label": "Prairie fleurie",
+      "id": 601,
+      "slug": "prairie_fleurie",
+      "pos": {
+        "x": 3952,
+        "y": 2570
+      },
+      "width": 567,
+      "height": 379
+    },
+    {
+      "label": "Friche",
+      "id": 602,
+      "slug": "friche",
+      "pos": {
+        "x": 1611,
+        "y": 120
+      },
+      "width": 627,
+      "height": 311
+    }
+  ]
+}

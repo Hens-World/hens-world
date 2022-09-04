@@ -1,0 +1,565 @@
+#home-container{
+  .to-top-button{
+    position: fixed;
+    right: 25px;
+    width: 35px;
+    height: 35px;
+
+    background: url('../../../../../medias/home/arrow-up.png');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 6px 6px;
+    border-radius: 5px;
+    background-color: #222;
+    top: 70vh;
+    z-index: 100;
+    cursor: pointer;
+    &:hover{
+      background-color: #353535;
+    }
+  }
+  width: 100%;
+  .fullHeight(0px);
+  position: relative;
+  overflow-y: scroll;
+  .content-container{
+    width: 100%;
+    left: 0;
+    .arrow-button{
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background: url('../../../../../medias/home/arrow.png');
+      background-size: 100%;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    #first-slide{
+      width: 100%;
+      background: url('../../../../../medias/home/bg/fond_2.jpg')  center 0 no-repeat fixed;
+      background-size: 115%;
+      margin-top: 0;
+      overflow: auto;
+      .forme{
+        background: url('../../../../../medias/home/forme_1.png');
+        width: 100%;
+        height: 450px;
+        position: absolute;
+        top: -130px;
+        background-size: 100% 100%;
+      }
+      .main-circle-container{
+        text-align: center;
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        height: 370px;
+        text-align: center;
+        box-sizing: border-box;
+        .text{
+          position: absolute;
+          margin-top: 155px;
+          width: 174px;
+          font-size:14em;
+          left: 50%;
+          margin-left: -87px;
+        }
+        .arrow-button{
+          margin-top: 5px;
+          margin-top: 240px;
+          position: absolute;
+          left: 50%;
+          margin-left: -15px;
+        }
+        #circle-canvas{
+          width: 370px;
+          height: 370px;
+          display: inline-block;
+        }
+      }
+      .info{
+        width: 100%;
+        margin-top: 420px;
+        float: left;
+        background: rgba(0, 0, 0, 0.6);
+        margin-bottom: 250px;
+        padding-bottom: 10px;
+        .left{
+          margin-top: 20px;
+          width: 330px;
+          text-align: justify;
+          display: inline-block;
+          margin-right:100px;
+          .icon{
+            width: 80px;
+            height: 80px;
+            float: left;
+            background: url(../../../../../medias/home/membre.png);
+            background-size: 100%;
+            margin-right: 10px;
+          }
+        }
+        .right{
+          margin-top: 20px;
+          display: inline-block;
+          margin-left: 100px;
+          width: 330px;
+          text-align: justify;
+          .icon{
+            width: 80px;
+            height: 80px;
+            float: left;
+            background: url(../../../../../medias/home/contrib.png);
+            background-size: 100%;
+            margin-left: 10px;
+          }
+        }
+        .text{
+          width: 240px;
+          font-size: 12em;
+          float: left;
+        }
+      }
+    }
+    #video{
+      width: 100%;
+      background: black;
+      padding-bottom: 200px;
+      .video-container{
+        width: 800px;
+        height: 450px;
+        margin-top: 120px;
+        background: #ca9;
+        display: inline-block;
+      }
+      .arrow-button{
+        margin-top: 30px;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+      }
+
+    }
+    #scd-slide{
+      width: 100%;
+      background: url('../../../../../medias/home/bg/fond_3.jpg')  center 0 no-repeat fixed;
+      background-size: 115%;
+      margin-top: -1px;
+      padding-top: 1px;
+      padding-bottom: 190px;
+
+      position: relative;
+      .forme{
+        background: url('../../../../../medias/home/forme_2.png');
+        width: 100%;
+        margin-top: -100px;
+        box-sizing: border-box;
+        padding-top: 200px;
+        position: absolute;
+        height: 340px;
+        background-size: 100% 100%;
+        .text{
+          width: 400px;
+          font-size: 14em;
+          display: inline-block;
+        }
+        .arrow-button{
+          position: absolute;
+          left: 50%;
+          margin-left: -15px;
+          margin-top: 25px;
+        }
+      }
+      .info{
+        width: 100%;
+        margin-top: 370px;
+        background: rgba(0, 0, 0, 0.6);
+        height: 120px;
+        padding-top: 1px;
+        margin-bottom: 200px;
+        .text{
+          font-size: 14em;
+          width: 400px;
+          margin-top: 35px;
+          display: inline-block;
+        }
+        .plus-link{
+          font-size: 35em;
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          left: 50%;
+          margin-left: -17px;
+          margin-top: 70px;
+        }
+      }
+
+      .forme2{
+        background: url('../../../../../medias/home/forme_3.png');
+        width: 100%;
+        height: 600px;
+        background-size: 100% 100%;
+        position: absolute;
+        pointer-events: none;
+        bottom: -300px;
+        z-index: 1;
+      }
+
+
+    }
+    #third-slide{
+      width: 100%;
+      height: 600px;
+      position: relative;
+      background: url('../../../../../medias/home/bg/fond_1.jpg')  center 0 no-repeat fixed;
+      background-size: 115%;
+    }
+    #footer{
+      width: 100%;
+      height: 250px;
+      background: black;
+    }
+  }
+}
+
+
+.final-menu {
+  width: 850px;
+  display: inline-block;
+  margin-top: 110px;
+  height: 373px;
+  text-align: center;
+  pointer-events: all;
+  box-sizing: border-box;
+  .choices {
+    position: relative;
+    z-index: 1;
+    width: 850px;
+    height: 373px;
+    text-align: center;
+    &:hover .back-map .shader {
+      opacity: .7;
+      transition: opacity .3s;
+      transition-delay: .3s;
+    }
+    .inscription {
+      display: block;
+      width: 400px;
+      top: 0;
+      cursor: pointer;
+      position: absolute;
+      margin-left: 25px;
+      height: 373px;
+      background: url(../../../../../medias/home/forme_menu_gauche.png) no-repeat;
+      transition: width .3s, margin .3s;
+      font-size: 14em;
+      color: #fff;
+      .main-text {
+        position: absolute;
+        pointer-events: none;
+        z-index: 10;
+        font-size: 1.25em;
+        text-align: left;
+        width: 120px;
+        margin-left: 30px;
+        margin-top: 140px;
+      }
+      .text-hover {
+        width: 250px;
+        font-size: 1.1em;
+        pointer-events: none;
+        margin-top: 165px;
+        margin-left: 275px;
+        opacity: 0;
+        position: absolute;
+        z-index: 20;
+        transition: opacity .1s, margin .2s;
+        transition-delay: 0s
+      }
+      &:hover {
+        margin-left: 10px;
+        width: 415px;
+        transition: width .4s, margin .4s;
+        .text-hover {
+          transition: opacity .3s;
+          transition-delay: .4s;
+          opacity: 1;
+          margin-left: 290px;
+        }
+        .main-text {
+          color: #000;
+        }
+      }
+      .hover {
+        width: 400px;
+        height: 373px;
+        position: absolute;
+        background: url(../../../../../medias/home/forme_menu_gauche_hover.png) no-repeat;
+        opacity: 0;
+        transition: opacity .3s, width .3s;
+        &:hover {
+          opacity: 1;
+          transition: opacity .3s, width .4s;
+        }
+      }
+    }
+    .map {
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 400px;
+      margin-left: 425px;
+      height: 373px;
+      background: url(../../../../../medias/home/forme_menu_droite.png) 150px 0 no-repeat;
+      transition: margin .3s;
+      font-size: 14em;
+      color: #fff;
+      .main-text {
+        position: absolute;
+        pointer-events: none;
+        z-index: 10;
+        font-size: 1.25em;
+        width: 120px;
+        margin-top: 140px;
+        text-align: right;
+        margin-left: 250px;
+      }
+      .text-hover {
+        width: 250px;
+        font-size: 1.1em;
+        pointer-events: none;
+        margin-top: 165px;
+        margin-left: -125px;
+        opacity: 0;
+        position: absolute;
+        z-index: 20;
+        transition: opacity .1s, margin .2s;
+        transition-delay: 0s;
+      }
+      &:hover {
+        transition: margin .4s, width .4s;
+        width: 415px;
+        margin-left: 440px;
+        .text-hover {
+          transition: opacity .3s;
+          transition-delay: .4s;
+          opacity: 1;
+          margin-left: -140px;
+        }
+        .main-text {
+          color: #000;
+        }
+      }
+      .hover {
+        width: 400px;
+        height: 373px;
+        position: absolute;
+        background: url(../../../../../medias/home/forme_menu_droite_hover.png) 150px 0 no-repeat;
+        opacity: 0;
+        transition: opacity .3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .back-map {
+      width: 373px;
+      height: 373px;
+      padding-top: 1px;
+      border-radius: 50%;
+      border: 10px solid #fff;
+      background: url(../../../../../medias/home/mini-map.jpg);
+      display: inline-block;
+      background-size: 100%;
+      .shader {
+        width: inherit;
+        border-radius: 50%;
+        height: inherit;
+        opacity: .65;
+        transition: opacity .25s;
+        background: #000;
+      }
+    }
+    #lower-circle-canvas {
+      position: absolute;
+      margin-left: -215px;
+      margin-top: -28px;
+      pointer-events: none;
+      z-index: 30;
+    }
+  }
+}
+
+
+
+#home-container .content-container #footer .content {
+    width: 830px;
+    display: inline-block;
+    height: 215px;
+    font-size: 12em;
+    text-align: left;
+    padding-top: 20px
+}
+#home-container .content-container #footer .content .left {
+    width: 600px;
+    padding-right: 10px;
+    height: 215px;
+    float: left;
+    border-right: 2px solid #555
+}
+#home-container .content-container #footer .content .left .up {
+    width: 600px;
+    height: 150px
+}
+#home-container .content-container #footer .content .left .up .row {
+    width: 160px;
+    float: left;
+    margin-right: 40px;
+    color: #aaa;
+    height: 100px
+}
+#home-container .content-container #footer .content .left .up .row .title {
+    color: #fff
+}
+#home-container .content-container #footer .content .left .up .row .line {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.5em;
+    letter-spacing: 2px
+}
+#home-container .content-container #footer .content .left .up .row .link {
+    display: block;
+    margin-bottom: 3px
+}
+#home-container .content-container #footer .content .left .up .row .link:hover {
+    color: #d9b76f
+}
+#home-container .content-container #footer .content .left .down {
+    width: 600px;
+    height: 65px
+}
+#home-container .content-container #footer .content .left .down .line {
+    margin-bottom: 5px;
+    color: #aaa;
+    font-size: 1.5em;
+    letter-spacing: 2px
+}
+#home-container .content-container #footer .content .left .down .rights {
+    text-align: left;
+    color: #999;
+    font-size: .9em
+}
+#home-container .content-container #footer .content .link {
+    width: 200px;
+    float: left;
+    margin-left: 10px
+}
+#home-container .content-container #footer .content .link .line {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.5em;
+    letter-spacing: 2px
+}
+#home-container .content-container #footer .content .link .mini-link {
+    width: 200px;
+    height: 25px;
+    display: block;
+    margin-bottom: 10px
+}
+#home-container .content-container #footer .content .link .mini-link:hover .label {
+    color: #d9b76f
+}
+#home-container .content-container #footer .content .link .mini-link .img {
+    float: left;
+    width: 25px;
+    height: 25px
+}
+#home-container .content-container #footer .content .link .mini-link .img.facebook {
+    background-image: url(../../../../../medias/common/facebook.png);
+    background-size: 100%
+}
+#home-container .content-container #footer .content .link .mini-link .img.youtube {
+    background-image: url(../../../../../medias/common/youtube.png);
+    background-size: 100%
+}
+#home-container .content-container #footer .content .link .mini-link .img.twitter {
+    background-image: url(../../../../../medias/common/twitter.png);
+    background-size: 100%
+}
+#home-container .content-container #footer .content .link .mini-link .img.google-plus {
+    background-image: url(../../../../../medias/common/googleplus.png);
+    background-size: 100%
+}
+#home-container .content-container #footer .content .link .mini-link .label {
+    float: left;
+    margin-left: 8px
+}
+
+
+
+
+
+
+
+
+#home-container .content-container #video {
+    width: 100%;
+    height: 900px;
+    background: #000
+}
+#home-container .content-container #video .hover {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 120px;
+    height: 450px;
+    cursor: pointer;
+    z-index: 100;
+    background: url(../../../../../medias/univers/screen_teaser.jpg)
+}
+#home-container .content-container #video .hover .shader {
+    width: inherit;
+    height: inherit;
+    background: #000;
+    transition: opacity .3s;
+    opacity: .6;
+    position: absolute;
+    z-index: 1
+}
+#home-container .content-container #video .hover:hover .play-bt {
+    opacity: .99;
+    z-index: 102
+}
+#home-container .content-container #video .hover:hover .shader {
+    opacity: .5;
+    z-index: 1
+}
+#home-container .content-container #video .hover .play-bt {
+    width: 130px;
+    height: 130px;
+    opacity: .7;
+    z-index: 102;
+    margin-left: -65px;
+    transition: opacity .3s;
+    background: url(../../../../../medias/home/play_teaser.png);
+    display: inline-block;
+    position: absolute;
+    margin-top: 165px
+}
+#home-container .content-container #video #video-container {
+    width: 800px;
+    height: 450px;
+    margin-top: 120px;
+    background: #ca9;
+    display: inline-block
+}
+#home-container .content-container #video .arrow-button {
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px
+}

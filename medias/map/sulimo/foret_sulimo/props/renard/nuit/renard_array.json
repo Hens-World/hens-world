@@ -1,0 +1,336 @@
+{"frames": [
+
+{
+	"filename": "renardnuit00.png",
+	"frame": {"x":0,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit01.png",
+	"frame": {"x":36,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit02.png",
+	"frame": {"x":72,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit03.png",
+	"frame": {"x":108,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit04.png",
+	"frame": {"x":144,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit05.png",
+	"frame": {"x":180,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit06.png",
+	"frame": {"x":216,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit07.png",
+	"frame": {"x":252,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit08.png",
+	"frame": {"x":288,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit09.png",
+	"frame": {"x":324,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit10.png",
+	"frame": {"x":360,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit11.png",
+	"frame": {"x":396,"y":0,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit12.png",
+	"frame": {"x":0,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit13.png",
+	"frame": {"x":36,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit14.png",
+	"frame": {"x":72,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit15.png",
+	"frame": {"x":108,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit16.png",
+	"frame": {"x":144,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit17.png",
+	"frame": {"x":180,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit18.png",
+	"frame": {"x":216,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit19.png",
+	"frame": {"x":252,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit20.png",
+	"frame": {"x":288,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit21.png",
+	"frame": {"x":324,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit22.png",
+	"frame": {"x":360,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit23.png",
+	"frame": {"x":396,"y":34,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit24.png",
+	"frame": {"x":0,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit25.png",
+	"frame": {"x":36,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit26.png",
+	"frame": {"x":72,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit27.png",
+	"frame": {"x":108,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit28.png",
+	"frame": {"x":144,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit29.png",
+	"frame": {"x":180,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit30.png",
+	"frame": {"x":216,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit31.png",
+	"frame": {"x":252,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit32.png",
+	"frame": {"x":288,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit33.png",
+	"frame": {"x":324,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit34.png",
+	"frame": {"x":360,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "renardnuit35.png",
+	"frame": {"x":396,"y":68,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":34},
+	"sourceSize": {"w":36,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "renard.png",
+	"format": "RGBA8888",
+	"size": {"w":432,"h":102},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ef90bdce594fee0a6b25ec6f0269ba07:8aa30158ee794b3caa0c1fe51c5f5d96:765c75bb206449995aaa7d612132f212$"
+}
+}

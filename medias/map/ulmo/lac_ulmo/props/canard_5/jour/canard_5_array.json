@@ -1,0 +1,84 @@
+{"frames": [
+
+{
+	"filename": "grebe0000.png",
+	"frame": {"x":0,"y":0,"w":49,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+	"sourceSize": {"w":49,"h":46}
+},
+{
+	"filename": "grebe0001.png",
+	"frame": {"x":0,"y":0,"w":49,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+	"sourceSize": {"w":49,"h":46}
+},
+{
+	"filename": "grebe0002.png",
+	"frame": {"x":49,"y":0,"w":49,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+	"sourceSize": {"w":49,"h":46}
+},
+{
+	"filename": "grebe0003.png",
+	"frame": {"x":49,"y":0,"w":49,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+	"sourceSize": {"w":49,"h":46}
+},
+{
+	"filename": "grebe0004.png",
+	"frame": {"x":98,"y":0,"w":49,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+	"sourceSize": {"w":49,"h":46}
+},
+{
+	"filename": "grebe0005.png",
+	"frame": {"x":98,"y":0,"w":49,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+	"sourceSize": {"w":49,"h":46}
+},
+{
+	"filename": "grebe0006.png",
+	"frame": {"x":98,"y":0,"w":49,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+	"sourceSize": {"w":49,"h":46}
+},
+{
+	"filename": "grebe0007.png",
+	"frame": {"x":49,"y":0,"w":49,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+	"sourceSize": {"w":49,"h":46}
+},
+{
+	"filename": "grebe0008.png",
+	"frame": {"x":49,"y":0,"w":49,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+	"sourceSize": {"w":49,"h":46}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "canard_5.png",
+	"format": "RGBA8888",
+	"size": {"w":147,"h":46},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:409e6444e832620010a5e162c4eb8c7d:c5fc6540c861403bc485a114e256da8b:cf6185efb5af46bfd7c0d8dc7c10d32b$"
+}
+}

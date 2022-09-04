@@ -1,0 +1,40 @@
+.create-game-container.main-create-container  
+  h2.title.fond-village Nouveau jeu
+  .form-container
+    .field
+      .label(ng-bind-html="'Titre du post'")
+      input.form(type="text" placeholder="Le titre de votre création" ng-model="post.title")
+    .field
+      .label(ng-bind-html="'Miniature'")
+      input.form.upload(type="text" placeholder="(optionnel) coller ici le lien de votre miniature" ng-model="post.miniature")
+      media-select-button(type="image" field="post.miniature")
+    .field
+      .label(ng-bind-html="'Genre'")
+      input.form(type="text" placeholder="Arcade, aventure etc..." ng-model="post.genre")
+    .field
+      .label(ng-bind-html="'Joueurs'")
+      input.form(type="text" placeholder="Nombre de joueurs" ng-model="post.joueurs")
+    .field
+      .label(ng-bind-html="'Support'")
+      input.form(type="text" placeholder="Windows/Mac/Linux/etc." ng-model="post.support")
+    .field
+      .label(ng-bind-html="'Image'")
+      input.form.upload(type="text" placeholder="Coller ici le lien d'un visuel" ng-model="post.image")
+      media-select-button(type="image" field="post.image")
+    .field
+        .label(ng-bind-html="'Lien'")
+        input.form.upload(type="text" placeholder="Coller ici le lien d'accès à votre jeu" ng-model="post.lien")
+        media-select-button(type="fichier" field="post.lien")
+    .editor(text-angular ng-model="post.content" ta-toolbar="[['h1', 'h2', 'h3', 'p', 'bold', 'italics', 'underline', 'strikeThrough', 'ul', 'ol', 'redo', 'undo', 'clear'], ['justifyLeft', 'justifyCenter', 'justifyRight', 'html', 'insertImage','insertLink']]")
+    .authors-container(new-post-authors  authors="post.authors")
+    new-post-personnages.authors-container(personnages-lies="post.personnagesLies")
+    .common-info
+      .status( ng-click="switchStatus()")
+        div
+          span( ng-class="{'active fond-village':post.status == 'publish'}") Publié
+          span( ng-class="{'active fond-village':post.status == 'draft'}") Brouillon
+      .location-container(new-post-location lieu="post.lieu" post="post" village="post.village")
+    .validate.fond-village.hover(ng-click="sendPost()") Valider
+
+
+

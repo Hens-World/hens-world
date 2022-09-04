@@ -1,0 +1,56 @@
+//.left-column
+  //.power-container()
+  //  .power-card(ng-click="togglePouvoir()" ng-mouseleave="closePouvoir()")
+  //    .hover(ng-class="{'active':displayPouvoirDescr}"  class="{{user.village}}")
+  //      .name(ng-bind-html="pouvoirLabel.nom")
+  //      .description(ng-bind-html="pouvoirLabel.description")
+  //      .quote(ng-bind-html="pouvoirLabel.citation")
+.profile-main-column.other-user(class="{{villages[personnage.village]}}")
+    profile-tabs(personnage-list="personnageList")
+    .character-list-dropdown.other-user(
+            class="{{villages[personnage.village]}}"
+            ng-class="{'character-list-dropdown--open': openCharDropdown}"
+    )
+        .character-list-dropdown__selected-line.fond-village( ng-click="openCharDropdown = !openCharDropdown") {{personnage.prenom}}
+        .character-list-dropdown__list.border-village
+            .character-list-dropdown__element.character-dropdown-element(
+                    ng-repeat="perso in personnageList" ng-show="perso.prenom !== personnage.prenom"
+                    ng-click="selectPersonnage(perso)"
+            )
+                .character-dropdown-element__name {{perso.prenom}}
+    .user-info.other-user(class="{{personnage.village}}")
+        .avatar-container
+            .avatar-circle.fond-village.dark( style="background-image:url({{personnage.avatar}});")
+                .symbole-village(class="{{user.village}}")
+        .info-right-column
+            .title-container.other-user(class="{{villages[personnage.village]}}")
+                .center
+                    .title
+                        span.span.font-village {{personnage.prenom}}
+                    .domaine(ng-bind-html="personnage.suffixe")
+                    span.origin-container
+                        span.origine {{personnage.age}} ans, originaire de
+                        span.font-village {{villages[personnage.village].capitalizeFirstLetter()}}
+                .me.right.edit(ng-show="isMe")
+                    .edit-bt.button.fond-village.hover(ng-click="toggleEditFiche()")
+                        .text Éditer le personnage
+    .other-user(style="display: contents;" class="{{user.village}}")
+        a.is-online.fond-village( href="map/{{villages[personnage.village]}}/{{personnage.zone ? personnage.zone : 'village'}}/perso-{{personnage.prenom.toLowerCase().replace(' ', '_')}}" ng-class="{'offline': user.role != 'contributeur' && personnage.zone == null, 'button hover': user.role == 'contributeur' || personnage.zone != null}")
+            span(ng-if="user.role == 'contributeur' || personnage.zone != null") Maison de {{personnage.prenom}}
+            span(ng-if="user.role != 'contributeur' && personnage.zone == null") Ne possède pas de maison
+    .perso__subtitle(ng-class="{'perso__subtitle--open': persoMenuOpened}")
+        .line
+            span {{state.label}}
+            .burger-icon.burger-icon--big(ng-click="togglePersoMenu()")
+                .line
+                .line
+                .line
+        .burger-content(ng-show="persoMenuOpened")
+            profile-perso-side-menu(ng-click="closePersoMenu()")
+    profile-perso-content(user="user"
+        personnage="personnage"
+        personnage-index="personnageIndex"
+        is-me="isMe"
+        perso-post="persoPost"
+        edit-custom-power="editCustomPower"
+            personnage-list="personnageList")

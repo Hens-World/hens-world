@@ -1,0 +1,23 @@
+.annonces-list-container.directive
+  a.button.fond-village.hover.create-button(href="/annonces" ng-if="!options.bottomBt") Voir le panneau d'annonces
+  .info-text(ng-if="annonceList.length == 0")
+    | Il n'y a aucune annonce disponible. Venez poster la votre pour trouver des compagnons de jeu!
+  ul
+    li.element(ng-repeat="annonce in annonceList" ng-class="{'fond-village low': options.villageColor}")
+      .participating
+        span(ng-if="!annonce.is_private" ng-class="{'full': annonce.limit_size == annonce.participants.length}")
+          span {{annonce.participants.length}}
+          span(ng-if="annonce.limit_size != -1") /{{annonce.limit_size}} 
+          span(ng-if="annonce.limit_size == -1") /∞   
+        span(ng-if="annonce.is_private")
+          .info-text Privée
+      a.other-user(class="{{annonce.owner.meta.village}}" href="/annonces/{{annonce.aid}}")
+        h3.title(ng-bind-html="annonce.title.capitalizeFirstLetter()")
+        .owner.info-text()
+          | créé par 
+          span.font-village {{annonce.owner.display_name}}
+      .starting-date
+        span(ng-if="annonce.hasDate") {{annonce.formatDate}}
+        span(ng-if="!annonce.hasDate")
+          .info-text /
+  a.button.fond-village.hover.create-button(href="/annonces" ng-if="options.bottomBt") Voir le panneau d'annonces

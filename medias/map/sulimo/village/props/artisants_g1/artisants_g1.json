@@ -1,0 +1,25 @@
+{
+  "label":"artisants_g1",
+  "width":110,
+  "height":115,
+  "center":{
+    "x":14,
+    "y":114
+  },
+  "avail":[
+    {
+      "fromT":8,
+      "to":13
+    },
+    {
+      "fromT":16,
+      "to":19
+    }
+  ],
+  "list":[
+    {
+      "x":1342,
+      "y":2167
+    }
+  ]
+}

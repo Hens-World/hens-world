@@ -1,0 +1,211 @@
+{
+  "label": "sulimo",
+  "sliceSize": 56,
+  "width": 2946,
+  "height": 3508,
+  "speed": 11,
+  "init": {
+    "x": 275,
+    "y": 1299
+  },
+  "miniMap": {
+    "height": 149,
+    "width": 125
+  },
+  "locations": [
+    {
+      "label": "Autour de Sulimo",
+      "slug": "sulimo-general",
+      "pos": {
+        "x": 1190,
+        "y": 1050
+      },
+      "width": 200,
+      "height": 140
+    },
+    
+    {
+      "label": "Moulin à vent",
+      "slug": "moulin-sulimo",
+      "pos": {
+        "x": 885,
+        "y": 130
+      },
+      "width": 200,
+      "height": 170
+    },
+    {
+      "label": "Observatoire",
+      "slug": "observatoire",
+      "pos": {
+        "x": 910,
+        "y": 800
+      },
+      "width": 300,
+      "height": 200
+    },
+    {
+      "label": "Auberge Heuraque",
+      "slug": "auberge_heuraque",
+      "pos": {
+        "x": 540,
+        "y": 2170
+      },
+      "width": 200,
+      "height": 210
+    },
+    {
+      "label": "Domaine des Cheftains",
+      "slug": "domaine_sulimo",
+      "pos": {
+        "x": 410,
+        "y": 1530
+      },
+      "width": 320,
+      "height": 180
+    },
+    {
+      "label": "Petite école",
+      "slug": "petite_ecole-sulimo",
+      "pos": {
+        "x": 2270,
+        "y": 1920
+      },
+      "width": 400,
+      "height": 200
+    },
+    {
+      "label": "Tour de Sulimo",
+      "slug": "tour_sulimo",
+      "pos": {
+        "x": 2170,
+        "y": 750
+      },
+      "width": 240,
+      "height": 300
+    },
+    {
+      "label": "Place Tiquot",
+      "slug": "place_tiquot",
+      "pos": {
+        "x": 370,
+        "y": 2530
+      },
+      "width": 240,
+      "height": 190
+    },
+    {
+      "label": "Manoir abandonné",
+      "slug": "manoir-abandonne",
+      "pos": {
+        "x": 160,
+        "y": 1180
+      },
+      "width": 240,
+      "height": 230
+    },
+    {
+      "label": "Parc Hurlevent",
+      "slug": "parc_hurlevent",
+      "pos": {
+        "x": 1700,
+        "y": 2100
+      },
+      "width": 250,
+      "height": 250
+    },
+    {
+      "label": "Dojo",
+      "slug": "dojo",
+      "pos": {
+        "x": 1675,
+        "y": 1260
+      },
+      "width": 300,
+      "height": 210
+    },
+    {
+      "label": "Temple de l'Automne",
+      "slug": "temple_automne",
+      "pos": {
+        "x": 2570,
+        "y": 2710
+      },
+      "width": 220,
+      "height": 200,
+      "eventDates": [["20-09", "22-09"]],
+      "interior": true,
+      "interiorDates": [["20-09", "22-09"]]
+    },
+    {
+      "label": "Place des Sept",
+      "slug": "place_sept",
+      "pos": {
+        "x": 760,
+        "y": 680
+      },
+      "width": 180,
+      "height": 160
+    },
+    {
+      "label": "Gare de Sulimo",
+      "slug": "gare_sulimo",
+      "pos": {
+        "x": 715,
+        "y": 3080
+      },
+      "width": 180,
+      "height": 290
+    },
+    {
+      "label": "Rue des artisans",
+      "slug": "rue_artisans",
+      "pos": {
+        "x": 1170,
+        "y": 1700
+      },
+      "width": 350,
+      "height": 210
+    },
+    {
+      "label": "Pépinière",
+      "slug": "pepiniere-sulimo",
+      "pos": {
+        "x": 2330,
+        "y": 2390
+      },
+      "width": 320,
+      "height": 220
+    },
+    {
+      "label": "Librairie",
+      "slug": "librairie",
+      "pos": {
+        "x": 1030,
+        "y": 2570
+      },
+      "width": 180,
+      "height": 220
+    },
+    {
+      "label": "Au Sire Occo - Taverne",
+      "slug": "taverne-sulimo",
+      "pos": {
+        "x": 880,
+        "y": 2380
+      },
+      "width": 280,
+      "height": 160
+    },
+    {
+      "label": "Constellations",
+      "slug": "constellations",
+      "pos": {
+        "x": 1125,
+        "y": 750
+      },
+      "width": 50,
+      "height": 50
+    }
+  ]
+}

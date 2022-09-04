@@ -1,0 +1,444 @@
+{"frames": [
+
+{
+	"filename": "bebe_lanterne_siel_anim0000.png",
+	"frame": {"x":0,"y":0,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0001.png",
+	"frame": {"x":208,"y":0,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0002.png",
+	"frame": {"x":416,"y":0,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0003.png",
+	"frame": {"x":624,"y":0,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0004.png",
+	"frame": {"x":832,"y":0,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0005.png",
+	"frame": {"x":1040,"y":0,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0006.png",
+	"frame": {"x":1248,"y":0,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0007.png",
+	"frame": {"x":1456,"y":0,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0008.png",
+	"frame": {"x":1664,"y":0,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0009.png",
+	"frame": {"x":0,"y":240,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0010.png",
+	"frame": {"x":208,"y":240,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0011.png",
+	"frame": {"x":416,"y":240,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0012.png",
+	"frame": {"x":624,"y":240,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0013.png",
+	"frame": {"x":832,"y":240,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0014.png",
+	"frame": {"x":1040,"y":240,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0015.png",
+	"frame": {"x":1248,"y":240,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0016.png",
+	"frame": {"x":1456,"y":240,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0017.png",
+	"frame": {"x":1664,"y":240,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0018.png",
+	"frame": {"x":0,"y":480,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0019.png",
+	"frame": {"x":208,"y":480,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0020.png",
+	"frame": {"x":416,"y":480,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0021.png",
+	"frame": {"x":624,"y":480,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0022.png",
+	"frame": {"x":832,"y":480,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0023.png",
+	"frame": {"x":1040,"y":480,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0024.png",
+	"frame": {"x":1248,"y":480,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0025.png",
+	"frame": {"x":1456,"y":480,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0026.png",
+	"frame": {"x":1664,"y":480,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0027.png",
+	"frame": {"x":0,"y":720,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0028.png",
+	"frame": {"x":208,"y":720,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0029.png",
+	"frame": {"x":416,"y":720,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0030.png",
+	"frame": {"x":624,"y":720,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0031.png",
+	"frame": {"x":832,"y":720,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0032.png",
+	"frame": {"x":1040,"y":720,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0033.png",
+	"frame": {"x":1248,"y":720,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0034.png",
+	"frame": {"x":1456,"y":720,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0035.png",
+	"frame": {"x":1664,"y":720,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0036.png",
+	"frame": {"x":0,"y":960,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0037.png",
+	"frame": {"x":208,"y":960,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0038.png",
+	"frame": {"x":416,"y":960,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0039.png",
+	"frame": {"x":624,"y":960,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0040.png",
+	"frame": {"x":832,"y":960,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0041.png",
+	"frame": {"x":1040,"y":960,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0042.png",
+	"frame": {"x":1248,"y":960,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0043.png",
+	"frame": {"x":1456,"y":960,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0044.png",
+	"frame": {"x":1664,"y":960,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0045.png",
+	"frame": {"x":0,"y":1200,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0046.png",
+	"frame": {"x":208,"y":1200,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0047.png",
+	"frame": {"x":416,"y":1200,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0048.png",
+	"frame": {"x":624,"y":1200,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0049.png",
+	"frame": {"x":832,"y":1200,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0050.png",
+	"frame": {"x":1040,"y":1200,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0051.png",
+	"frame": {"x":1248,"y":1200,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0052.png",
+	"frame": {"x":1456,"y":1200,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+},
+{
+	"filename": "bebe_lanterne_siel_anim0053.png",
+	"frame": {"x":1664,"y":1200,"w":208,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":240},
+	"sourceSize": {"w":208,"h":240}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "lanterne_siel.png",
+	"format": "RGBA8888",
+	"size": {"w":1872,"h":1440},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ecac0c705b1c4cbe88ce0a8c8842d1f3:fd9a07dc807ea1c9bbafd2cd9e82914f:0f80d8e9d9f86e4be102e86d9417f699$"
+}
+}

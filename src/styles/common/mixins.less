@@ -1,0 +1,86 @@
+@layerHidden: -1;
+@layerDefault: 1;
+@layerFirst: 10;
+@layerSecond: 20;
+@layerProps: 25;
+@layerMap: 30;
+@layerHouses: 39;
+@layerPersoMap: 40;
+@layerAboveMap: 41;
+@layerOverlay: 100;
+@layerOverlay2: 150;
+@layerFiche: 200;
+@layerTchat: 300;
+@layerNavbar: 349;
+@layerAlert: 500;
+
+@mobileXSWidth: 500px;
+@mobileWidth: 900px;
+@mobileMaxWidth: @mobileWidth - 1px;
+@tabletWidth: 1200px;
+@tabletMinWidth: @tabletWidth - 1px;
+@desktopWidth: 1600px;
+@desktopMinWidth: @desktopWidth - 1px;
+
+@HH: 80px; //header height
+:root {
+  --headerHeight: @HH;
+  --contentWidth: calc(100px - 2%);
+  --fullHeight: calc( var(--vh) * 100 - var(--headerHeight));
+}
+
+@contentWidth: 800px; // SHOULD BE DELETED ...
+
+@fullHeight: ~"calc( 100vh - var(--headerHeight))";
+
+@contentMediumWidth: 600px;
+.fullHeight(@decal){
+  height: ~"calc( var(--vh) * 100 - var(--headerHeight) -"@decal~")";
+}
+
+.minHeightFull(@decal){
+  min-height: ~"calc( var(--vh) * 100 - var(--headerHeight) -"@decal~")";
+}
+
+.maxFullHeight(@decal){
+  max-height: ~"calc( var(--vh) * 100 - "@HH~" -"@decal~")";
+}
+
+.sideWidth(@decal){
+  width: ~"calc( 50% - 400px -"@decal~")";
+  max-width: ~"calc( 350px - "@decal~")";
+  min-width: 200px;
+}
+
+/* used for navbar tricks.. */
+.sideWidthAbs(@decal){
+  width: ~"calc( 50vw - 400px -"@decal~")";
+  max-width: ~"calc( 350px - "@decal~")";
+  min-width: 200px;
+}
+
+
+.unselectable(){
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+}
+
+.placeholder(@rules) {
+
+  &::-webkit-input-placeholder {
+    @rules();
+  }
+  &:-moz-placeholder {
+    @rules();
+  }
+  &::-moz-placeholder {
+    @rules();
+  }
+  &:-ms-input-placeholder {
+    @rules();
+  }
+}

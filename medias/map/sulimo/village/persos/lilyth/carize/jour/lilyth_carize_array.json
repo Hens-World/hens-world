@@ -1,0 +1,188 @@
+{"frames": [
+
+{
+	"filename": "lylith0000.png",
+	"frame": {"x":0,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0001.png",
+	"frame": {"x":60,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0002.png",
+	"frame": {"x":120,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0003.png",
+	"frame": {"x":180,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0004.png",
+	"frame": {"x":240,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0005.png",
+	"frame": {"x":300,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0006.png",
+	"frame": {"x":360,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0007.png",
+	"frame": {"x":420,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0008.png",
+	"frame": {"x":480,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0009.png",
+	"frame": {"x":540,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0010.png",
+	"frame": {"x":600,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0011.png",
+	"frame": {"x":660,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0012.png",
+	"frame": {"x":720,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0013.png",
+	"frame": {"x":780,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0014.png",
+	"frame": {"x":840,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0015.png",
+	"frame": {"x":900,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0016.png",
+	"frame": {"x":960,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0017.png",
+	"frame": {"x":1020,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0018.png",
+	"frame": {"x":1080,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0019.png",
+	"frame": {"x":1140,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0020.png",
+	"frame": {"x":1200,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+{
+	"filename": "lylith0021.png",
+	"frame": {"x":1260,"y":0,"w":60,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "lilyth_carize.png",
+	"format": "RGBA8888",
+	"size": {"w":1320,"h":59},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cb72678523b3f978f7572a84fa076cc8:ca2cf7ba4ea5f41e618c290073f750c4:9a0136735a7b104bbdfefc3b33e6d53e$"
+}
+}

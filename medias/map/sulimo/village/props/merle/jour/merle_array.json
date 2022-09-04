@@ -1,0 +1,201 @@
+{"frames": [
+
+{
+	"filename": "merle0000.png",
+	"frame": {"x":0,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0001.png",
+	"frame": {"x":22,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0002.png",
+	"frame": {"x":44,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0003.png",
+	"frame": {"x":66,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0004.png",
+	"frame": {"x":88,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0005.png",
+	"frame": {"x":110,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0006.png",
+	"frame": {"x":132,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0007.png",
+	"frame": {"x":154,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0008.png",
+	"frame": {"x":176,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0009.png",
+	"frame": {"x":198,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0010.png",
+	"frame": {"x":220,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0011.png",
+	"frame": {"x":242,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0012.png",
+	"frame": {"x":264,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0013.png",
+	"frame": {"x":286,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0014.png",
+	"frame": {"x":308,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0015.png",
+	"frame": {"x":330,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0016.png",
+	"frame": {"x":352,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0017.png",
+	"frame": {"x":374,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0018.png",
+	"frame": {"x":396,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0019.png",
+	"frame": {"x":418,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "merle0020.png",
+	"frame": {"x":440,"y":0,"w":22,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+	"sourceSize": {"w":22,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "merle.png",
+	"format": "RGBA8888",
+	"size": {"w":462,"h":19},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7ce0fc18c9b2a31819d5953b4a65c32c:7d4b6f96ed1da6ec5cada2ff2da41149:464c20583fcbea23430ec5c6c3fbc77d$"
+}
+}

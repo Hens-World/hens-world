@@ -1,0 +1,129 @@
+#home-container
+  .to-top-button(ng-click="scrollTo(0)")
+  .content-container()
+    #first-slide.slide
+      .forme
+      .main-circle-container
+        .text  Hens World est une platetforme créative et communautaire autour  d’un univers fictif.
+        .arrow-button(ng-click="scrollTo(1475)")
+        canvas#circle-canvas(width="370" height="370")
+      .info
+        .left
+          .icon
+          .text Hens est un monde illustré et vous pouvez vous y balader en tant que membre. Explorer, profiter des créations déjà présentes, participer aux activités en vous immergeant dans ce monde.
+        .right
+          .text L'univers est totalement exploitable par ceux qui veulent y contribuer et faire vivre ce monde. Chaque oeuvre est unique et indépendante. Seule votre interprétation compte!
+          .icon
+    #video
+      .hover(ng-click='playTeaser()')
+        .shader
+        .play-bt
+      video#video-container(src='', width='800', height='450', controls='controls')
+      .arrow-button(ng-click='scrollTo(2330)')
+
+    #scd-slide.slide
+      .forme
+        .text Hens est un petit archipel paisible où vivent des humains proches de la nature qui développent des pouvoirs  en grandissant.
+        .arrow-button(ng-click="scrollTo(3200)")
+      .info
+        .text Quatre villages dirigés par des cheftains, qui vivent aux rythme des saisons et des éléments. 
+        a.plus-link(href="/autour-de-hens") +
+      .forme2
+        .final-menu
+          .choices
+            .back-map
+              canvas#lower-circle-canvas(width='428', height='428')
+              .shader
+            a.inscription(ng-click='triggerSignUp()')
+              .main-text S'inscrire et devenir un Hensien maintenant
+              .hover
+              .text-hover
+                | Une fois inscrit, vous pourrez accéder aux créations, aux activités, et même devenir un contributeur!
+            a.map(href='/map')
+              .main-text Continuer à explorer avant l'inscription
+              .hover
+              .text-hover
+                | Découvrez les villages. Néanmoins les créations et les activités sont réservées aux inscrits.
+
+    #third-slide.slide
+    #footer
+      .content
+        .left
+          .up
+            .row
+              .title LE SITE
+              .line ----------------
+              a.link(href='/population/equipe') L'équipe
+              a.link(href='/page-don') Donations 
+              a.link contact@hens-world.fr
+            .row
+              .title NAVIGATION
+              .line ----------------
+              a.link(href='http://hens-world.fr') Accueil
+              a.link(href='/map') Carte de l'archipel
+              a.link(href='/guide-touristique') Guide touristique
+            .row
+              .title COMMUNAUTÉ
+              .line ----------------
+              a.link(target='_blank', href='http://forum.hens-world.fr/') Forum
+              a.link(href='/inscription') S'inscrire
+              a.link(href='/population') Population
+          .down
+            .line ---------------------------------------------
+            .rights
+              | Hens World tout droits résérvés ©. Toutes les créations postées sur ce site sont la propriétés de ceux qui les réalisent et de Hens World.
+        .link
+          .title ON EST AUSSI ICI!
+          .line --------------- 
+          a.mini-link(target='_blank', href='https://www.facebook.com/hens.galerie')
+            .img.facebook
+            .label FACEBOOK
+          a.mini-link(target='_blank', href='https://www.youtube.com/c/hensworld')
+            .img.youtube
+            .label YOUTUBE
+          a.mini-link(target='_blank', href='https://twitter.com/Hens_world')
+            .img.twitter
+            .label TWITTER
+          a.mini-link(target='_blank', href='https://plus.google.com/+HensWorld')
+            .img.google-plus
+            .label GOOGLE+
+
+  //- .background-container
+  //-   .background(ng-repeat="bg in backgrounds" class="{{bg.index}}" style="background:url('{{bg.src}}');background-size:100% ;background-position:0 -30px")
+  //- .content-container(ng-class="{'active':displayMenu}")
+  //-   .menu-container
+  //-     a.menu-bt( ng-click="cat.action()" ng-repeat="cat in categories" ng-class="cat.css" href="{{cat.link}}")
+  //-       .label {{cat.label}}
+  //-   .links
+  //-     a.link-buttons.forum(target="_blank" href="http://forum.hens-world.fr")
+  //-     a.link-buttons.facebook(target="_blank" href="https://www.facebook.com/hens.galerie") 
+  //-     a.link-buttons.twitter(target="_blank" href="https://twitter.com/Hens_world")
+  //-   .don-container 
+  //-     a.go-to-don(href="page-don")
+  //-       .label Aider le site!
+  //- .qsn-container(ng-class="{'active':displayQsn}" )
+  //-   .contrib-container
+  //-     .contrib-panel(ng-repeat="contrib in contribPresList" ng-class="contrib.village")
+  //-       a.profile(href="profil/contributeur/{{contrib.id}}") +
+  //-       .avatar(style="background:url('{{contrib.avatar}}');background-size:100% 100%;")
+  //-       .name {{contrib.name}}
+  //-       .domaine(ng-bind-html="contrib.domain")
+  //-       .personnage Personnage : {{contrib.charName}}
+  //-       .content-container-contrib
+  //-         .description-author(ng-bind-html="contrib.description")
+  //-     .center-button
+  //-       .new-contribs-button
+  //-         .click(ng-click="toggleContribList()") +
+  //-         .backgrounds
+  //-           .contrib-mini-avatar(ng-repeat="contrib in contribs" style="background:url('{{contrib.meta.meta.avatar[0]}}');background-size:100% 100%;")
+  //- .new-contribs-container( ng-click="toggleContribList()" ng-class="{'active':displayContribList}" contrib-listing contribs="contribs" )
+  //- .qev-container( ng-class="{'active':displayQev}" )
+  //-   .chooseMember.Qev-part(ng-click="triggerSignUp()")
+  //-     .image
+  //-     .title Devenir un Hensien
+  //-     .description(ng-bind-html="contentQev.member" )
+  //-   .chooseContributor.Qev-part(ng-click="triggerContrib()")
+  //-     .image
+  //-     .title Devenir un contributeur 
+  //-     .description(ng-bind-html="contentQev.contrib" )
+  //- .contributor-mail-container(contributor-mail ng-class="{'active':displayContribMail}" content="contentQev")

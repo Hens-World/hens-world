@@ -1,0 +1,48 @@
+{"frames": [
+
+{
+	"filename": "mousse_rempart_1_00.png",
+	"frame": {"x":2,"y":2,"w":356,"h":182},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":356,"h":182},
+	"sourceSize": {"w":356,"h":182},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mousse_rempart_1_01.png",
+	"frame": {"x":360,"y":2,"w":356,"h":182},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":356,"h":182},
+	"sourceSize": {"w":356,"h":182},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mousse_rempart_1_02.png",
+	"frame": {"x":718,"y":2,"w":356,"h":182},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":356,"h":182},
+	"sourceSize": {"w":356,"h":182},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mousse_rempart_1_03.png",
+	"frame": {"x":1076,"y":2,"w":356,"h":182},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":356,"h":182},
+	"sourceSize": {"w":356,"h":182},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "mousse_rempart_1.png",
+	"format": "RGBA8888",
+	"size": {"w":1434,"h":186},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:b3177f9035aed263d76f35791ffe9468:f89a261a99dbb28e647f39b85e1e0a88:f28acbad4f46954ebaa7a3df19f2e289$"
+}
+}

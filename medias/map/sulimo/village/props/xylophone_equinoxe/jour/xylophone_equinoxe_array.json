@@ -1,0 +1,52 @@
+{"frames": [
+
+{
+	"filename": "xylophone0000.png",
+	"frame": {"x":0,"y":0,"w":32,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+	"sourceSize": {"w":32,"h":46}
+},
+{
+	"filename": "xylophone0001.png",
+	"frame": {"x":0,"y":46,"w":32,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+	"sourceSize": {"w":32,"h":46}
+},
+{
+	"filename": "xylophone0002.png",
+	"frame": {"x":0,"y":92,"w":32,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+	"sourceSize": {"w":32,"h":46}
+},
+{
+	"filename": "xylophone0003.png",
+	"frame": {"x":0,"y":138,"w":32,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+	"sourceSize": {"w":32,"h":46}
+},
+{
+	"filename": "xylophone0004.png",
+	"frame": {"x":0,"y":184,"w":32,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+	"sourceSize": {"w":32,"h":46}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "xylophone_equinoxe.png",
+	"format": "RGBA8888",
+	"size": {"w":32,"h":230},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7c283a56cb34c2fc1d817b1253a93c79:1ee826253dc5fed640dd01054204541b:739798888b2f49e3c0d76de24ae7034a$"
+}
+}

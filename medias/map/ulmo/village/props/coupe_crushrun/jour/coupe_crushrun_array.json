@@ -1,0 +1,20 @@
+{"frames": [
+
+{
+	"filename": "trophee_crushrun.png",
+	"frame": {"x":0,"y":0,"w":55,"h":111},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":55,"h":111},
+	"sourceSize": {"w":55,"h":111}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "coupe_crushrun.png",
+	"format": "RGBA8888",
+	"size": {"w":55,"h":111},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:aafeaa4a51801957762a0fd35aa92989:e1204f58e13f12bc661497cf80970217:f4a0ff2406cfc281721ede3837ffa839$"
+}
+}

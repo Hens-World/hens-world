@@ -1,0 +1,148 @@
+{"frames": [
+
+{
+	"filename": "grosbateau00.png",
+	"frame": {"x":2,"y":2,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau01.png",
+	"frame": {"x":2,"y":2,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau02.png",
+	"frame": {"x":2,"y":2,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau03.png",
+	"frame": {"x":303,"y":2,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau04.png",
+	"frame": {"x":604,"y":2,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau05.png",
+	"frame": {"x":604,"y":2,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau12.png",
+	"frame": {"x":604,"y":2,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau06.png",
+	"frame": {"x":905,"y":2,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau07.png",
+	"frame": {"x":2,"y":253,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau08.png",
+	"frame": {"x":2,"y":253,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau09.png",
+	"frame": {"x":2,"y":253,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau10.png",
+	"frame": {"x":303,"y":253,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau11.png",
+	"frame": {"x":303,"y":253,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau13.png",
+	"frame": {"x":604,"y":253,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "grosbateau03.png",
+	"frame": {"x":303,"y":2,"w":299,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":249},
+	"sourceSize": {"w":299,"h":249},
+	"pivot": {"x":0.5,"y":0.5}
+}
+],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "gros_bateau.png",
+	"format": "RGBA8888",
+	"size": {"w":1206,"h":504},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2e7f9d75df2168456b8404a2bae61337:6b0325d01a581cc502cd1e0a5dd0e837:b2543fd58af9ad85a7401883668a6848$"
+}
+}

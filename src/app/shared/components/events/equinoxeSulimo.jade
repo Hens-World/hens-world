@@ -1,0 +1,49 @@
+.equinoxe-volume-control
+    p Volume:
+    rzslider.form.big(rz-slider-model="volumeSlider" rz-slider-options="museCtrl.sliderOpt.globalVolume")
+
+
+.equinoxe-popup(ng-if="!museCtrl.eventInit" class="other-village sulimo")
+  .equinoxe-popup__content.border-village
+    .equinoxe-popup__sound-icon
+    .equinoxe-popup__paragraph
+      b Attention
+      span , il y a de la musique à Sulimo ! C'est l'Equinoxe d'Automne !
+    .button.fond-village.hover.button--meaty(ng-click="museCtrl.launchVillageMusic()") Explorer Sulimo
+.equinoxe-automne(ng-if="museCtrl.instrument != null")
+  .equinoxe-automne__content.border-village
+    .equinoxe-automne__close.font-village.hover(ng-click="museCtrl.closeInstrument()")
+    .equinoxe-automne__music-table
+      .equinoxe-automne__music-line-note(ng-repeat="line in museCtrl.musicSheet.notes")
+        .equinoxe-automne__music-note-label
+          span {{line.label}}
+        .equinoxe-automne__music-cell(ng-repeat="note in line.times"
+            ng-mousedown="museCtrl.startPushNote(line, note)"
+            ng-mousemove="museCtrl.updatePushNote(line, note)"
+            ng-class="{'fond-village': note.pushed, 'continued': note.continued, 'continuing': note.continuing, 'highlight': note.highlight}")
+    .equinoxe-automne__instrument-container(class="{{museCtrl.instrument}}")
+    .field
+      .label Nom
+      input.form(type="text" ng-model="museCtrl.musicSheet.music_name" placeholder="Nom de votre musique")
+    .equinoxe-automne__buttons
+      .button.button--meaty.fond-village.hover(ng-click="museCtrl.playSheet()") {{museCtrl.demoPlaying ? "Stop": "Jouer"}}
+      .button.button--meaty.fond-village.hover(ng-click="museCtrl.resetSheet()") Réinitialiser
+      .button.button--meaty.fond-village.hover(ng-click="museCtrl.postMusic()") Valider
+
+.equinoxe-information(ng-if="museCtrl.hoveredInstrument"
+    style="--instrumentLeft:{{museCtrl.hoveredInstrument.list[0].x}}px;--instrumentTop: {{museCtrl.hoveredInstrument.list[0].y}}px;")
+  .equinoxe-information__content Le musicien joue actuellement:
+  .equinoxe-information__upcoming-song(class="other-user {{museCtrl.hoveredSheet.user.village}}")
+    span {{museCtrl.hoveredSheet.music_name}}
+    span
+      i   composée par
+    span.font-village  {{museCtrl.hoveredSheet.user.display_name}}
+  .equinoxe-information__content(ng-show="museCtrl.hoveredSheet.upcomingSheets.length > 0") Les prochaines musiques jouées seront:
+  .equinoxe-information__upcomings
+    .equinoxe-information__upcoming-song(ng-repeat="upcomingSheet in museCtrl.hoveredSheet.upcomingSheets" class="other-user {{upcomingSheet.user.village}}")
+        span {{upcomingSheet.music_name}}
+        span
+          i   composée par
+        span.font-village {{upcomingSheet.user.display_name}}
+  .equinoxe-information__content Cliquez pour proposer votre propre composition musicale !
+

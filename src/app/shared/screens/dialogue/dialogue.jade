@@ -1,0 +1,12 @@
+.page-container.dialogue__container.no-side
+  .main-column.other-user(class="{{village}}")
+    .dialogue__banner
+      a.dialogue__retour.dialogue__retour--valid.button.fond-village.hover(href="/map/{{village}}/village")
+        .text Retour
+      img.dialogue__character(src="/medias/dialogues/{{currentCharacter.slug}}/{{currentCharacter.slug}}_{{moods[dialogue.mood_required]}}.png" )
+      img.background(src="/medias/dialogues/bg/dialogue_{{village}}_{{season}}_{{mapTime}}.jpg")
+    .dialogue__box(class="{{village}}")
+      p {{dialogue.text}}
+    .dialogue__reponse-list
+      .dialogue__reponse.button.button--meaty.fond-village.hover(ng-repeat="reponse in dialogue.reponses" ng-click="sendReponse(reponse)")
+        p {{reponse.text}}

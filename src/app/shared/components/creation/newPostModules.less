@@ -1,0 +1,212 @@
+
+
+/* STATUT PUBLICATION */
+
+.status{
+  width: 90%;
+  cursor: pointer;
+  margin: 10px auto;
+  div{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+  span{
+    margin: 0px 10px;
+    height: 25px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #555;
+    flex: 1 1 50%;
+  }
+}
+
+
+/* CHOIX LIEU */
+.location{
+  margin-top: 15px;
+  max-width: 400px;
+  padding: 12px;
+  margin: 0 auto;
+  .village-list{
+    display: flex;
+    justify-content: space-around;
+    div{
+      flex: 0 1 60px;
+      height: 60px;
+      opacity: 0.6;
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
+      &.active{
+        opacity: 1;
+      }
+    }
+  }
+  .search-location {
+    margin: 0 auto;
+  }
+  .location-list{
+    margin: 20px auto;
+    background: black;
+    height: 250px;
+    overflow-y: scroll;
+  }
+}
+
+
+/* ajouter un auteur */
+.new-post-authors{
+  width: inherit;
+  position: relative;
+  &--right {
+    text-align: right;
+    .added-list {
+      justify-content: flex-end;
+      >.full-line {
+        flex: 1 1 100%;
+      }
+      p {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        color: #aaa;
+        font-style: italic;
+      }
+    }
+  }
+  .added-list{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    p {
+      margin-bottom: 10px;
+    }
+    > div {
+      margin-bottom: 10px;
+    }
+    .added-author-unit{
+      box-sizing: border-box;
+      padding:5px 10px;
+      margin: 0 10px 0px 10px;
+      min-width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .name{
+        font-size: 1.2em;
+        margin-left: 5px;
+        float: left;
+      }
+      &:hover{
+
+      }
+      .delete{
+        cursor: pointer;
+        display: block;
+        float: right;
+        font-size: 1.4em;
+        margin-left: 10px;
+        margin-right: -5px;
+      }
+    }
+  }
+  .new-author-block{
+    box-sizing: border-box;
+    padding: 7px 10px;
+    background: #333;
+    margin-left: 15px;
+    position: relative;
+    &:hover{
+      background:#393939;
+    }
+    .text{
+      font-size: 1.1em;
+    }
+    .search-author{
+      background: @black;
+      width: 140px;
+      padding: 3px 5px;
+      color:white;
+      border:none;
+      .placeholder({
+        font-style: italic;
+        color: #999;
+      })
+    }
+  }
+  .new-author-current-search{
+    width: 80%;
+    margin-left: 10%;
+    background: @black;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-right: 3px;
+    &.absolute {
+      position: absolute;
+    }
+    .new-author-elt{
+      cursor: pointer;
+      width: 100%;
+      height: 60px;
+      padding: 5px;
+      background-color: @buttonDark;
+      margin: 1px;
+      box-sizing: border-box;
+      box-sizing: border-box;
+      .selec{background: @guestDark;}
+      &.anar{.selec{background:@anarDark;}}
+      &.wilwar{.selec{background:@wilwarDark;}}
+      &.ulmo{.selec{background:@ulmoDark;}}
+      &.sulimo{.selec{background:@sulimoDark;}}
+      .avatar{
+        width: 50px;
+        height: 50px;
+        overflow:hidden;
+        float: left;
+        border-radius: 50%;
+      }
+      .name{
+        font-size: 1.3em;
+        margin-left: 10px;
+        float: left;
+        color:white;
+        span.selec{
+
+        }
+      }
+    }
+  }
+}
+
+.location-unit{
+  cursor: pointer;
+  background: #333;
+  font-size: 1.1em;
+  padding: 2px;
+  border-bottom:1px solid #111;
+}
+
+.loca-unit-wrapper{
+  &.wilwar .location-unit{
+    border-left: 3px solid @wilwarNeuter;
+  }
+  &.anar .location-unit{
+    border-left: 3px solid @anarNeuter;
+  }
+  &.sulimo .location-unit{
+    border-left: 3px solid @sulimoNeuter;
+  }
+  &.ulmo .location-unit{
+    border-left: 3px solid @ulmoNeuter;
+  }
+}
+
+
+/* choix du statut de publication */

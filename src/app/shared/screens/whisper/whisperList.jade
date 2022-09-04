@@ -1,0 +1,24 @@
+.page-container.whisper.no-side
+  .main-column
+    .main-column__content
+
+      .whisper__menu
+        a.whisper__menu-element.fond-village.hover.whisper__menu-element--big(href="/messagerie/new") Nouveau Message
+        a.whisper__menu-element.active(href="/messagerie")
+          span Boîte de réception
+          span(ng-show="$root.newMessages.length > 0")  ({{$root.newMessages.length}})
+        a.whisper__menu-element.whisper__menu-element--disabled Brouillon
+      .whisper__main
+        a.subject(href="/messagerie/{{subject.id}}" ng-repeat="subject in subjects track by $index" ng-class="{'new': subject.new}")
+          .subject__main-info
+            .subject__name(ng-bind-html="subject.title | capitalize")
+            .subject__participants
+              span.participant.other-user(class="{{participant.meta.village}}" ng-repeat="participant in subject.userList")
+                span.font-village {{participant.display_name}}
+          .subject__last-message
+            .subject__date
+              span Dernier message:
+            .subject__last-author.other-user(class="{{subject.messages[0].author.meta.village}}")
+              .circle-avatar.small(style="background-image:url({{subject.messages[0].author.meta.avatar}})")
+              .subject__author-name.font-village {{subject.messages[0].author.display_name}}
+              span.info-text le {{subject.formatLastMessage}}

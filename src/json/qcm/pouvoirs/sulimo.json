@@ -1,0 +1,144 @@
+{
+  "pouvoirs": [
+    {
+      "slug": "Aspirationélancée",
+      "value": [
+        4,
+        "+"
+      ]
+    },
+    {
+      "slug": "Ballerebondissante",
+      "value": [
+        3,
+        "+"
+      ]
+    },
+    {
+      "slug": "Murinvisible",
+      "value": [
+        4,
+        "-"
+      ]
+    },
+    {
+      "slug": "Marionettiste",
+      "value": [
+        3,
+        "-"
+      ]
+    },
+    {
+      "slug": "Flair",
+      "value": [
+        1,
+        "-"
+      ]
+    },
+    {
+      "slug": "Silence",
+      "value": [
+        5,
+        "--"
+      ]
+    },
+    {
+      "slug": "Samajestédesmouches",
+      "value": [
+        3,
+        "+"
+      ]
+    },
+    {
+      "slug": "Espacedeconfort",
+      "value": [
+        5,
+        "-"
+      ]
+    },
+    {
+      "slug": "Bullettime",
+      "value": [
+        1,
+        "+"
+      ]
+    },
+    {
+      "slug": "Hoverboard",
+      "value": [
+        2,
+        "+"
+      ]
+    },
+    {
+      "slug": "Chanceinsolente",
+      "value": [
+        1,
+        "+"
+      ]
+    },
+    {
+      "slug": "Lepousse-note",
+      "value": [
+        3,
+        "-"
+      ]
+    },
+    {
+      "slug": "Retourdimensionnel",
+      "value": [
+        1,
+        "-"
+      ]
+    },
+    {
+      "slug": "Thesingmustgoon",
+      "value": [
+        2,
+        "+"
+      ]
+    },
+    {
+      "slug": "Posivent",
+      "value": [
+        2,
+        "-"
+      ]
+    },
+    {
+      "slug": "Negavent",
+      "value": [
+        2,
+        "-"
+      ]
+    },
+    {
+      "slug": "D'amouretd'airfrais",
+      "value": [
+        4,
+        "+"
+      ]
+    },
+    {
+      "slug": "Rirecommunicatif",
+      "value": [
+        5,
+        "+"
+      ]
+    },
+    {
+      "slug": "Miss/Mistermétéo",
+      "value": [
+        4,
+        "-"
+      ]
+    },
+    {
+      "slug": "Let'sdance!",
+      "value": [
+        5,
+        "+"
+      ]
+    }
+  ]
+}

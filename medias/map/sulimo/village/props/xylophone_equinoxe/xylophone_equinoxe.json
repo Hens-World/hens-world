@@ -1,0 +1,22 @@
+{
+ "label": "xylophone_equinoxe", 
+ "width": 32,
+ "height": 46,
+ "center": {
+   "x": 1,
+   "y": 41
+ },
+ "avail": [
+   {
+     "fromT": 0,
+     "to": 23,
+     "dates": ["21-09", "22-09"] 
+}
+ ],
+ "list": [  
+   {
+     "x": 192,
+     "y": 2381
+   }
+ ]
+},

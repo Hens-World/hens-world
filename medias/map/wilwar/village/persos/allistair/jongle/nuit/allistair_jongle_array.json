@@ -1,0 +1,102 @@
+{"frames": [
+
+{
+	"filename": "aegis_jongle0000.png",
+	"frame": {"x":0,"y":0,"w":41,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":79},
+	"sourceSize": {"w":41,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "aegis_jongle0001.png",
+	"frame": {"x":0,"y":79,"w":41,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":79},
+	"sourceSize": {"w":41,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "aegis_jongle0002.png",
+	"frame": {"x":0,"y":158,"w":41,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":79},
+	"sourceSize": {"w":41,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "aegis_jongle0003.png",
+	"frame": {"x":0,"y":237,"w":41,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":79},
+	"sourceSize": {"w":41,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "aegis_jongle0004.png",
+	"frame": {"x":0,"y":316,"w":41,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":79},
+	"sourceSize": {"w":41,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "aegis_jongle0005.png",
+	"frame": {"x":0,"y":395,"w":41,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":79},
+	"sourceSize": {"w":41,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "aegis_jongle0006.png",
+	"frame": {"x":0,"y":474,"w":41,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":79},
+	"sourceSize": {"w":41,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "aegis_jongle0007.png",
+	"frame": {"x":0,"y":553,"w":41,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":79},
+	"sourceSize": {"w":41,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "aegis_jongle0008.png",
+	"frame": {"x":0,"y":632,"w":41,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":79},
+	"sourceSize": {"w":41,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "aegis_jongle0009.png",
+	"frame": {"x":0,"y":711,"w":41,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":79},
+	"sourceSize": {"w":41,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "allistair_jongle.png",
+	"format": "RGBA8888",
+	"size": {"w":41,"h":790},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d5d09269bd310b52f66a84824800286a:e97bb5efdd47cbcc93fa4ab11d89109e:5858f3541df646ae9e9baca17c8aac24$"
+}
+}

@@ -1,0 +1,168 @@
+{
+  "label":"moineaux",
+  "width":38,
+  "height":17,
+  "center":{
+    "x":12,
+    "y":21
+  },
+  "avail":[
+    {
+      "fromT":13,
+      "to":17
+    }
+  ],
+  "list":[
+    {
+      "x":1361,
+      "y":1128
+    }
+  ]
+},
+{
+  "label":"moineaux",
+  "width":38,
+  "height":17,
+  "center":{
+    "x":12,
+    "y":21
+  },
+  "avail":[
+    {
+      "fromT":8,
+      "to":13
+    }
+  ],
+  "list":[
+    {
+      "x":923,
+      "y":711
+    }
+  ]
+},
+{
+  "label":"moineaux",
+  "width":38,
+  "height":17,
+  "center":{
+    "x":12,
+    "y":21
+  },
+  "avail":[
+    {
+      "fromT":9,
+      "to":11
+    }
+  ],
+  "list":[
+    {
+      "x":1998,
+      "y":2877
+    }
+  ]
+},
+{
+  "label":"moineaux",
+  "width":38,
+  "height":17,
+  "center":{
+    "x":12,
+    "y":21
+  },
+  "avail":[
+    {
+      "fromT":11,
+      "to":17
+    }
+  ],
+  "list":[
+    {
+      "x":986,
+      "y":1783
+    }
+  ]
+},
+{
+  "label":"moineaux",
+  "width":38,
+  "height":17,
+  "center":{
+    "x":12,
+    "y":21
+  },
+  "avail":[
+    {
+      "fromT":10,
+      "to":16
+    }
+  ],
+  "list":[
+    {
+      "x":857,
+      "y":183
+    }
+  ]
+},
+{
+  "label":"moineaux",
+  "width":38,
+  "height":17,
+  "center":{
+    "x":12,
+    "y":21
+  },
+  "avail":[
+    {
+      "fromT":15,
+      "to":18
+    }
+  ],
+  "list":[
+    {
+      "x":2474,
+      "y":1892
+    }
+  ]
+},
+{
+  "label":"moineaux",
+  "width":38,
+  "height":17,
+  "center":{
+    "x":12,
+    "y":21
+  },
+  "avail":[
+    {
+      "fromT":12,
+      "to":17
+    }
+  ],
+  "list":[
+    {
+      "x":725,
+      "y":2808
+    }
+  ]
+},
+{
+  "label":"moineaux",
+  "width":38,
+  "height":17,
+  "center":{
+    "x":12,
+    "y":21
+  },
+  "avail":[
+    {
+      "fromT":8,
+      "to":11
+    }
+  ],
+  "list":[
+    {
+      "x":1424,
+      "y":2569
+    }
+  ]
+}

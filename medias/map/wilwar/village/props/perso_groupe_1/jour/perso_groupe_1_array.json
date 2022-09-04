@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "g1.png",
+	"frame": {"x":0,"y":0,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+},
+{
+	"filename": "g2.png",
+	"frame": {"x":0,"y":114,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+},
+{
+	"filename": "g3.png",
+	"frame": {"x":0,"y":228,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+},
+{
+	"filename": "g4.png",
+	"frame": {"x":0,"y":342,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+},
+{
+	"filename": "g5.png",
+	"frame": {"x":0,"y":456,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+},
+{
+	"filename": "g6.png",
+	"frame": {"x":0,"y":570,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+},
+{
+	"filename": "g7.png",
+	"frame": {"x":0,"y":684,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+},
+{
+	"filename": "g8.png",
+	"frame": {"x":0,"y":798,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+},
+{
+	"filename": "g9.png",
+	"frame": {"x":0,"y":912,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+},
+{
+	"filename": "g10.png",
+	"frame": {"x":0,"y":1026,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+},
+{
+	"filename": "g11.png",
+	"frame": {"x":0,"y":1140,"w":60,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":114},
+	"sourceSize": {"w":60,"h":114}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "perso_groupe_1.png",
+	"format": "RGBA8888",
+	"size": {"w":60,"h":1254},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8c8292f78799d1401ed52ad283946400:0312912dfaa4cd112fe77392fa81183d:50acf36286da8b23a73b912ea8ab53d9$"
+}
+}

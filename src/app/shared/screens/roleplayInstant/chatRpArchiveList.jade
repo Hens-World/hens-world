@@ -1,0 +1,10 @@
+.crp-archives-container.page-container
+  .middle-content.main-column
+    h1 Bienvenue dans les archives !
+    .list
+      .elt(ng-repeat="elt in list" class="{{villages[elt.village]}} {{locations[elt.village][elt.location]}}")
+        a.title(href="roleplay/{{elt.type == 'differe' ? '' : 'archives/'}}{{elt.type}}/{{elt.id}}" ng-click="openRP(elt)") {{elt.title.capitalizeFirstLetter()}}
+        .participants 
+          span.other-user(class="{{user.meta.village}}" ng-repeat="user in elt.userList") 
+            a.font-village.hover(href="/{{user.role}}/{{user.ID}}") {{user.display_name}}
+            span(ng-if='!$last') ,

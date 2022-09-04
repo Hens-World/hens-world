@@ -1,0 +1,264 @@
+{"frames": [
+
+{
+	"filename": "cerf00.png",
+	"frame": {"x":0,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf01.png",
+	"frame": {"x":58,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf02.png",
+	"frame": {"x":116,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf03.png",
+	"frame": {"x":174,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf04.png",
+	"frame": {"x":232,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf05.png",
+	"frame": {"x":290,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf06.png",
+	"frame": {"x":348,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf07.png",
+	"frame": {"x":406,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf08.png",
+	"frame": {"x":464,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf09.png",
+	"frame": {"x":522,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf10.png",
+	"frame": {"x":580,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf11.png",
+	"frame": {"x":638,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf12.png",
+	"frame": {"x":696,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf13.png",
+	"frame": {"x":754,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf14.png",
+	"frame": {"x":812,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf15.png",
+	"frame": {"x":870,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf16.png",
+	"frame": {"x":928,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf17.png",
+	"frame": {"x":986,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf18.png",
+	"frame": {"x":1044,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf19.png",
+	"frame": {"x":1102,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf20.png",
+	"frame": {"x":1160,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf21.png",
+	"frame": {"x":1218,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf22.png",
+	"frame": {"x":1276,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf23.png",
+	"frame": {"x":1334,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf24.png",
+	"frame": {"x":1392,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf25.png",
+	"frame": {"x":1450,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf26.png",
+	"frame": {"x":1508,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "cerf27.png",
+	"frame": {"x":1566,"y":0,"w":58,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":86},
+	"sourceSize": {"w":58,"h":86},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "cerf.png",
+	"format": "RGBA8888",
+	"size": {"w":1624,"h":86},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:98eea0734c333f04d22f6d6ec5e2516f:36c209b7896b4a9ae6f771a41da04538:605e45925b75d0631c1bf7ef2858ad4b$"
+}
+}

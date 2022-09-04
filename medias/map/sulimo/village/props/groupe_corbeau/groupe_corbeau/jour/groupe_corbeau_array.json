@@ -1,0 +1,183 @@
+{"frames": [
+
+{
+	"filename": "corbeau0000.png",
+	"frame": {"x":0,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0001.png",
+	"frame": {"x":100,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0002.png",
+	"frame": {"x":200,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0003.png",
+	"frame": {"x":300,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0004.png",
+	"frame": {"x":400,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0005.png",
+	"frame": {"x":500,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0006.png",
+	"frame": {"x":600,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0007.png",
+	"frame": {"x":700,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0008.png",
+	"frame": {"x":800,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0009.png",
+	"frame": {"x":900,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0010.png",
+	"frame": {"x":1000,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0011.png",
+	"frame": {"x":1100,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0012.png",
+	"frame": {"x":1200,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0013.png",
+	"frame": {"x":1300,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0014.png",
+	"frame": {"x":1400,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0015.png",
+	"frame": {"x":1500,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0016.png",
+	"frame": {"x":1600,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0017.png",
+	"frame": {"x":1700,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau0018.png",
+	"frame": {"x":1800,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "groupe_corbeau.png",
+	"format": "RGBA8888",
+	"size": {"w":1900,"h":65},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d8bdd3072b93c29ed299ab2554246a57:f81095f6a4326eff813bd3760899495b:26520297c9f4f15a0d26502d413963ba$"
+}
+}

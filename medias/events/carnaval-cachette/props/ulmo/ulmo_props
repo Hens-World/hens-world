@@ -1,0 +1,42 @@
+{
+      name: 'Bouée',
+      filename: '1.png',
+      width: 36,
+      height: 32
+    },
+{
+      name: 'Panier',
+      filename: '2.png',
+      width: 22,
+      height: 27
+    },
+{
+      name: 'Plante',
+      filename: '3.png',
+      width: 40,
+      height: 33
+    },
+{
+      name: 'Caillou',
+      filename: '4.png',
+      width: 25,
+      height: 24
+    },
+{
+      name: 'Table',
+      filename: '5.png',
+      width: 83,
+      height: 62
+    },
+{
+      name: 'Barque',
+      filename: '6.png',
+      width: 83,
+      height: 60
+    },
+{
+      name: 'Dino à nageoires discret',
+      filename: '7.png',
+      width: 92,
+      height: 110
+    }

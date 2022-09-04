@@ -1,0 +1,7 @@
+.page-style
+  .type {{post.type}}
+  post-like(post-id="post.ID" likes="post.likes" golden="true")
+  .title(ng-bind-html="post.title")
+  .contentEcrit(ng-bind-html="trust(post.contentPaged[currentPage])")
+.pageChange
+  .goTo(ng-repeat="page in numberPage" ng-class="{'active fond-village': $index == currentPage}" ng-Click="setPage(page)" ) {{page}}

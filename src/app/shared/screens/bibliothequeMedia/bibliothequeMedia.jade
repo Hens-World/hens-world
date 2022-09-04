@@ -1,0 +1,8 @@
+.notification-zone-bm.fond-village(ng-class="{'active':notificationMsg.length > 0}")
+  .notif-msg(ng-bind-html="notificationMsg" )
+  .notif-dismiss.button(ng-click="closeNotif()") x
+.page-container.no-side
+  .main-column
+    .main-column__content.bibliotheque-media-container
+      h1 Bibliothèque de média
+bibliotheque-media()

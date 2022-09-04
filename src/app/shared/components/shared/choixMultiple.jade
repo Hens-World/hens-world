@@ -1,0 +1,7 @@
+.form-choix
+  .form-choix__element.button(ng-repeat="choix in choixCtrl.choices"
+    ng-click="choixCtrl.onChoixClick(choix)"
+    ng-mouseenter="choix.hovered = true"
+    ng-mouseleave="choix.hovered = false"
+    ng-class="{'fond-village': choix.hovered || choix.selected}"
+  ) {{choix.label}}

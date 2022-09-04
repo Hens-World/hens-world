@@ -1,0 +1,228 @@
+{"frames": [
+
+{
+	"filename": "bergeronette0000.png",
+	"frame": {"x":0,"y":0,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0001.png",
+	"frame": {"x":25,"y":0,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0002.png",
+	"frame": {"x":50,"y":0,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0003.png",
+	"frame": {"x":75,"y":0,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0004.png",
+	"frame": {"x":100,"y":0,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0005.png",
+	"frame": {"x":0,"y":22,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0006.png",
+	"frame": {"x":25,"y":22,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0007.png",
+	"frame": {"x":50,"y":22,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0008.png",
+	"frame": {"x":75,"y":22,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0009.png",
+	"frame": {"x":100,"y":22,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0010.png",
+	"frame": {"x":0,"y":44,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0011.png",
+	"frame": {"x":25,"y":44,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0012.png",
+	"frame": {"x":50,"y":44,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0013.png",
+	"frame": {"x":75,"y":44,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0014.png",
+	"frame": {"x":100,"y":44,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0015.png",
+	"frame": {"x":0,"y":66,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0016.png",
+	"frame": {"x":25,"y":66,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0017.png",
+	"frame": {"x":50,"y":66,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0018.png",
+	"frame": {"x":75,"y":66,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0019.png",
+	"frame": {"x":100,"y":66,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0020.png",
+	"frame": {"x":0,"y":88,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0021.png",
+	"frame": {"x":25,"y":88,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0022.png",
+	"frame": {"x":50,"y":88,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bergeronette0023.png",
+	"frame": {"x":75,"y":88,"w":25,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+	"sourceSize": {"w":25,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "bergeronette.png",
+	"format": "RGBA8888",
+	"size": {"w":125,"h":110},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9e000879a3be2fa482074c5e1c5410b0:76ab16d9c726b6ac8bbccee167960402:57ff30322b3cf2b69bd297067da117f9$"
+}
+}

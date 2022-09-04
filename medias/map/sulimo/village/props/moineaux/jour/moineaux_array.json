@@ -1,0 +1,228 @@
+{"frames": [
+
+{
+	"filename": "moineaux0000.png",
+	"frame": {"x":0,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0001.png",
+	"frame": {"x":38,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0002.png",
+	"frame": {"x":76,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0003.png",
+	"frame": {"x":114,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0004.png",
+	"frame": {"x":152,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0005.png",
+	"frame": {"x":190,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0006.png",
+	"frame": {"x":228,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0007.png",
+	"frame": {"x":266,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0008.png",
+	"frame": {"x":304,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0009.png",
+	"frame": {"x":342,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0010.png",
+	"frame": {"x":380,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0011.png",
+	"frame": {"x":418,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0012.png",
+	"frame": {"x":456,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0013.png",
+	"frame": {"x":494,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0014.png",
+	"frame": {"x":532,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0015.png",
+	"frame": {"x":570,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0016.png",
+	"frame": {"x":608,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0017.png",
+	"frame": {"x":646,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0018.png",
+	"frame": {"x":684,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0019.png",
+	"frame": {"x":722,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0020.png",
+	"frame": {"x":760,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0021.png",
+	"frame": {"x":798,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0022.png",
+	"frame": {"x":836,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "moineaux0023.png",
+	"frame": {"x":874,"y":0,"w":38,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":17},
+	"sourceSize": {"w":38,"h":17},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "moineaux.png",
+	"format": "RGBA8888",
+	"size": {"w":912,"h":17},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a139a752f55ea001a9c86f7a4b144770:7445567a7b5cc0beae4ddfd464bb238a:ae8b15ed099cddf613d757c832bc6ce5$"
+}
+}

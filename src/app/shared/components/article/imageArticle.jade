@@ -1,0 +1,18 @@
+.slider
+  .ui(ng-show="images.length > 1")
+    .right(ng-click="changeImage(1)" ng-show="currentIndex < images.length - 1")
+      .arrow
+    .left(ng-click="changeImage(-1)" ng-show="currentIndex > 0")
+      .arrow
+    .counters
+      .counter(ng-repeat="image in images" ng-class="{'selected': image.img == currentImage.img}")
+  .img-list
+    .img-list-wrapper
+      img.img(src="{{image.img}}" ng-click="openZoom()" ng-repeat="image in images" id="{{image.id}}" ng-class="{'selected': image.img == currentImage.img}")
+.title-container
+  post-like(post-id="post.ID" likes="post.likes")
+  .image-sub(ng-bind-html="trust(currentImage.title)")
+  .line-container
+    .line
+  .article-title(ng-bind-html="trust(post.title)")
+.image-descr(ng-bind-html="trust(currentImage.paragraph)")

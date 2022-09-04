@@ -1,0 +1,49 @@
+.page-container.annonce-create
+  .main-column
+    h1.fond-village 
+      span Poster votre annonce
+      a.link-back(href="/annonces")
+    
+    .info 
+      | Poster une annonce pour faire savoir aux membres de Hens World que vous recherchez des partenaires de jeu de rôle. Pour plus de visibilité, détaillez votre annonce!
+    form(ng-submit="createAnnonce()")
+      .field
+        .label Titre de l'annonce 
+        input.form(type="text" ng-model="annonce.title")
+      .checkbox(ng-click="annonce.is_private = !annonce.is_private" ng-class="{'checked': annonce.is_private}")
+        .label Annonce privée
+      .checkbox(ng-click="annonce.hasLocation = !annonce.hasLocation" ng-class="{'checked': annonce.hasLocation}")
+        .label J'ai une idée de lieu
+      .checkbox(ng-click="annonce.hasDate = !annonce.hasDate" ng-class="{'checked': annonce.hasDate}")
+        .label Je veux lancer le RP à une date précise
+      .field.location--field(ng-class="{'hidden': !annonce.hasLocation && !showLocations}")
+        div(style="display: flex")
+          .label Lieu
+          input#location-input.form(type="text" ng-model="formatLieu"  ng-click="handleLocationShow($event)"  ng-focus="showLocations = true" placeholder="Cliquez ici pour choisir le lieu parmi la liste disponible!" readonly)
+        .location-list(ng-class="{'show': showLocations}")
+          span.location-wrapper( ng-repeat="village in locations")
+            .location-unit(class="{{villages[$parent.$index]}} {{location}}" ng-repeat="location in village" ng-click="setLocation($index, $parent.$index)")
+              .village(class="{{villages[$parent.$index]}} {{location}}") {{villages[$parent.$index]}}
+              .lieu {{location}}
+        // TODO: complex lieu selection 
+      .field(ng-class="{'hidden': !annonce.hasDate}")
+        .label Date prévue
+        input.form(type="date" ng-model="annonce.date" name="date de depart")
+      .field.big(ng-class="{'hidden': annonce.is_private}")
+        .label Participants max.
+        .slider
+          rzslider(rz-slider-model="annonce.participants" rz-slider-options="sliderOpt.participants")
+      .field 
+        .label Description
+        textarea.form-area.large(ng-model="annonce.description" placeholder="{{ph.description}}")
+      //- .field
+      //-   .label Mots-clés 
+      //-   input.form(type="text" ng-model="annonce.rawKeywords")
+      input.fond-village.button.hover(type="submit" value="Valider")
+  .side-column
+    h2 Invitations
+    .member-listing(select-members members="annonce.inviteList")
+    .info-text 
+      b  Notice d'information :
+      p Les annonces ne sont pas encore automatisées ! 
+      p Le jour du lancement d'une annonce, tous les participants recevront une notification, mais ce sera toujours aux participants de créer manuellement la partie de jeu de rôle et de la rejoindre. Coming Soon!

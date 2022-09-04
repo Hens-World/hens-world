@@ -1,0 +1,9 @@
+.fiche-selection.other-user(class="{{user.village}}")
+    .onglet-profil.onglet(ng-class="{'fond-village active': showProfil}" class="{{user.village}}"
+        ng-click="switchToAccount()") {{currentRole}}
+    .onglet-profil.onglet( ng-if="isMe || personnage"
+        ng-class="{'fond-village active': !showProfil, 'without-triangle': isMe || pTabCtrl.filteredPersonnageList.length > 1}"
+        class="{{user.village}}" ng-click="switchToCharacter()"
+    )
+        span(ng-if="personnage") Personnages
+        span(ng-if="isMe && !personnage") Créer mon premier personnage

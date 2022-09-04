@@ -1,0 +1,235 @@
+.signe-zodiaque {
+  padding: 1px;
+  margin: 0;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__date-pick {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -100px;
+    .fullHeight(0px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    .button {
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 5px;
+    }
+    justify-content: center;
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 25px;
+    }
+  }
+  &__loader {
+    &-container {
+      padding: 5px;
+      margin: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .fullHeight(0px);
+      position: relative;
+    }
+    margin: 30px auto;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+
+    .text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: rotate(-45deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box {
+      position: absolute;
+    }
+    .box1 {
+      animation: loadingIcon 2s linear 0s infinite, changeColor 2s linear 0s infinite;
+    }
+
+    .box2 {
+      animation: loadingIcon 2s linear -0.5s infinite, changeColor 2s linear -0.5s infinite;
+    }
+
+    .box3 {
+      animation: loadingIcon 2s linear -1s infinite, changeColor 2s linear -1s infinite;
+    }
+
+    .box4 {
+      animation: loadingIcon 2s linear -1.5s infinite, changeColor 2s linear -1.5s infinite;
+    }
+
+    @keyframes loadingIcon {
+      0% {
+        margin: 0 0 0 0;
+        height: 0;
+        width: 100%;
+
+        border-top: 3px solid;
+        border-left: 3px solid;
+      }
+      25% {
+        margin: 0 0 0 0;
+        height: 100%;
+        width: 0%;
+
+        border-top: 3px solid;
+        border-left: 3px solid;
+        border-bottom: none;
+      }
+      25.0001% {
+        border-top: none;
+        border-bottom: 3px solid;
+      }
+      50% {
+        margin: 100% 0 0 0;
+        height: 0;
+        width: 100%;
+
+        border-left: 3px solid;
+        border-bottom: 3px solid;
+        border-right: none;
+      }
+      50.0001% {
+        border-left: none;
+        border-right: 3px solid;
+      }
+      75% {
+        margin: 0 0 0 100%;
+        width: 0;
+        height: 100%;
+
+        border-top: none;
+        border-bottom: 3px solid;
+        border-right: 3px solid;
+      }
+      75.0001% {
+        border-top: 3px solid;
+        border-bottom: none;
+      }
+      100% {
+        margin: 0 0 0 0;
+        width: 100%;
+        height: 0;
+
+        border-top: 3px solid;
+        border-left: none;
+        border-bottom: none;
+        border-right: 3px solid;
+      }
+    }
+  }
+  &__signe {
+    display: flex;
+    padding: 25px;
+    .button {
+      margin: 0 25px;
+    }
+    .signe {
+      &__image {
+        margin: 0 25px 0 10px;
+        width: 250px;
+        flex: 0 0 auto;
+      }
+      &__title {
+        margin-top: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3em;
+      }
+      &__infos {
+        text-align: center;
+        color: #aaa;
+      }
+      &__text {
+        text-align: center;
+        font-size: 1.1em;
+        padding: 30px;
+      }
+    }
+  }
+  &__prediction {
+    padding: 25px;
+    width: 100%;
+    .fullHeight(0px);
+    background-color: @black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .prediction {
+      &__content {
+        width: 85%;
+        height: 300px;
+        background-color: @contentDark;
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        .button {
+          display: block;
+          margin-top: auto;
+        }
+      }
+      &__text {
+        position: relative;
+        padding: 25px 35px;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 1.25em;
+        box-sizing: border-box;
+        &:before {
+          left: 0;
+          top: 10px;
+          content: '«';
+          position: absolute;
+          font-size: 4em;
+          display: inline-block;
+        }
+        &:after {
+          font-size: 4em;
+          content: '»';
+          top: 10px;
+          position: absolute;
+          right: 0;
+          display: inline-block;
+
+        }
+        &.ulmo {
+          &:after, &:before {
+            color: @ulmoNeuter;
+          }
+        }
+
+        &.sulimo {
+          &:after, &:before {
+            color: @sulimoNeuter;
+          }
+        }
+
+        &.wilwar {
+          &:after, &:before {
+            color: @wilwarNeuter;
+          }
+        }
+
+        &.anar {
+          &:after, &:before {
+            color: @anarNeuter;
+          }
+        }
+      }
+    }
+  }
+}

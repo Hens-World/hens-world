@@ -1,0 +1,129 @@
+{"frames": [
+
+{
+	"filename": "regarde0000.png",
+	"frame": {"x":1,"y":1,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0001.png",
+	"frame": {"x":1,"y":1,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0002.png",
+	"frame": {"x":1,"y":65,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0003.png",
+	"frame": {"x":1,"y":65,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0004.png",
+	"frame": {"x":1,"y":129,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0005.png",
+	"frame": {"x":1,"y":129,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0006.png",
+	"frame": {"x":1,"y":193,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0007.png",
+	"frame": {"x":1,"y":193,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0008.png",
+	"frame": {"x":1,"y":193,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0009.png",
+	"frame": {"x":1,"y":129,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0010.png",
+	"frame": {"x":1,"y":129,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0011.png",
+	"frame": {"x":1,"y":65,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "regarde0012.png",
+	"frame": {"x":1,"y":65,"w":24,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+	"sourceSize": {"w":24,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "evelyne_regarde.png",
+	"format": "RGBA8888",
+	"size": {"w":26,"h":256},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f72b03ba96bc3f75158accb53cf50d04:a0ad90719c90d69adb53a0a85890b862:2018570dc9463d38c107c13da7feb0bc$"
+}
+}

@@ -1,0 +1,99 @@
+.solstice-anar
+    .solstice-anar__placing(ng-if="ltnCtrl.placing" ng-click="ltnCtrl.placeLantern($event)" ng-mousemove="ltnCtrl.moveInvisibleLantern($event)")
+        .solstice-anar__lantern.invisible-lantern()
+            img(src="medias/events/solstice-ete/lantern.png")
+    .solstice-anar__lantern.solstice-anar__lantern--pending()
+        img(src="medias/events/solstice-ete/lantern.png")
+    .solstice-anar__display(ng-if="ltnCtrl.currentLantern" ng-click="ltnCtrl.closeCurrentLantern($event)")
+        .display__background(style="background-image:url(/medias/events/solstice-ete/{{ltnCtrl.currentLantern.themeData.image}}.png);")
+            .display__close(ng-click="ltnCtrl.closeCurrentLantern()") x
+            .display__content(style="background-color:{{ltnCtrl.currentLantern.themeData.color}}")
+                .first-line
+                    .intro
+                        p {{ltnCtrl.currentLantern.intro}}
+                    .receiver.other-user(class="{{ltnCtrl.currentLantern.receiverVillage}}")
+                        span.font-village {{ltnCtrl.currentLantern.receiverName}}
+                        span ,
+                .message
+                    p {{ltnCtrl.currentLantern.main_text}}
+                .preSignature
+                    p {{ltnCtrl.currentLantern.pre_signature}}
+                    span ,
+                .signature.other-user(class="{{ltnCtrl.currentLantern.senderVillage}}")
+                    span(style="margin-right: .3em") Signé
+                    span.font-village {{ltnCtrl.currentLantern.senderName}}
+    .solstice-anar__creation-container(ng-if="ltnCtrl.creating")
+        .solstice-anar__creation.border-village()
+            .creation__titling
+                .solstice-anar__back
+                    .edit-bt.edit-bt--valid.button.fond-village.hover(ng-click="ltnCtrl.cancelLantern()")
+                        .text Annuler
+                h2 Écrivez un mot dans votre lanterne !
+                h3 Attention même si il y a un destinataire précis, tout le monde pourra la lire !
+            .creation__content
+                .creation__line
+                    .creation__theme-selection
+                        .creation__theme(ng-repeat="theme in ltnCtrl.lanternThemes" ng-click="ltnCtrl.selectTheme(theme)" ng-class="{'selected': ltnCtrl.selectedTheme.name === theme.name}")
+                            img(src="medias/events/solstice-ete/icons/{{theme.icon}}.png")
+                    .creation__background(style="background-image:url(/medias/events/solstice-ete/{{ltnCtrl.selectedTheme.image}}.png);")
+                        form(ng-submit="ltnCtrl.createLantern()" style="background-color:{{ltnCtrl.selectedTheme.color}}")
+                            .first-line
+                                .intro
+                                    input.form(type="text" ng-change="ltnCtrl.adjustInput()" ng-focus="ltnCtrl.setFocusedInput($event)" ng-model="ltnCtrl.lanternCreation.intro")
+                                .receiver.other-user(class="{{ltnCtrl.chosenReceiverVillage}}")
+                                    span.no-receiver(ng-show="!ltnCtrl.chosenReceiver && ltnCtrl.chosenReceiverName") Choissez un destinataire !
+                                    span.font-village(ng-show="ltnCtrl.chosenReceiver && ltnCtrl.chosenReceiverName") {{ltnCtrl.chosenReceiverName}}
+                                    span ,
+                            .message
+                                textarea.form(resize="none" ng-change="ltnCtrl.controlMessage()" ng-keypress="ltnCtrl.controlMessage()" ng-model="ltnCtrl.lanternCreation.message" cols="80" rows="7" wrap="hard")
+                            .preSignature
+                                input.form(type="text" ng-change="ltnCtrl.adjustInput()" ng-focus="ltnCtrl.setFocusedInput($event)"  ng-model="ltnCtrl.lanternCreation.preSignature")
+                                span ,
+                            .signature.other-user(class="{{ltnCtrl.chosenSenderVillage}}")
+                                span(style="margin-right: .3em") Signé
+                                span.font-village {{ltnCtrl.chosenSenderName}}
+                    .creation__informations
+                        h2 Expéditeur {{ltnCtrl.personnage.char_index}}
+                        .ghost-block(ng-repeat="char in ltnCtrl.personnages")
+                          .sender-option(ng-click="ltnCtrl.toggleChooseSender('personnage', char.char_index)" ng-class="{'selected': ltnCtrl.chosenSender === 'personnage' && char.char_index === ltnCtrl.personnage.char_index}")
+                              .puce(ng-class="{'fond-village': ltnCtrl.chosenSender === 'personnage'  && char.char_index === ltnCtrl.personnage.char_index}")
+                              .name {{char.prenom}} {{char.char_index}}
+                        .sender-option(ng-click="ltnCtrl.toggleChooseSender('user')" ng-class="{'selected': ltnCtrl.chosenSender === 'user'}")
+                            .puce(ng-class="{'fond-village': ltnCtrl.chosenSender === 'user'}")
+                            .name {{$root.currentUser.display_name}}
+                        .sender-option(ng-click="ltnCtrl.toggleChooseSender('anonymous')" ng-class="{'selected': ltnCtrl.chosenSender === 'anonymous'}")
+                            .puce(ng-class="{'fond-village': ltnCtrl.chosenSender === 'anonymous'}")
+                            .name Anonyme
+                        h2 Destinataire
+                        .receiver-option(ng-class="{'selected': ltnCtrl.chosenReceiver === 'personnage'}" ng-click="ltnCtrl.selectReceiver('personnage')")
+                            .puce(ng-class="{'fond-village': ltnCtrl.chosenReceiver === 'personnage'}")
+                            .name Personnage
+                        .option-detail(ng-show="ltnCtrl.showingPersoDetail")
+                            new-post-personnages.authors-container(fast-search="true"  personnages-lies="searchList.charactersReceiving")
+                        .receiver-option(ng-class="{'selected': ltnCtrl.chosenReceiver === 'user'}" ng-click="ltnCtrl.selectReceiver('user')")
+                            .puce(ng-class="{'fond-village': ltnCtrl.chosenReceiver === 'user'}")
+                            .name Membre
+                        .option-detail(ng-show="ltnCtrl.showingMemberDetail")
+                            .authors-container(new-post-authors fast-search="true" all-roles="allRoles"  authors="searchList.usersReceiving")
+                        .receiver-option(ng-class="{'selected': ltnCtrl.chosenReceiver === 'anonymous'}" ng-click="ltnCtrl.selectReceiver('anonymous')")
+                            .puce(ng-class="{'fond-village': ltnCtrl.chosenReceiver === 'anonymous'}")
+                            .name Anonyme
+                        br
+                        .button.fond-village.button--meaty.hover(ng-click="ltnCtrl.createLantern()") Déposer la lanterne
+    .solstice-anar__lanterns()
+        .solstice-anar__lantern(ng-repeat="lantern in ltnCtrl.lanterns" style="transform:translate({{lantern.prop.x}}px, {{lantern.prop.y}}px);" )
+            img(src="medias/events/solstice-ete/lantern.png" style="animation-delay: {{lantern.delay}}s;" ng-click="ltnCtrl.openLantern(lantern)")
+            .solstice-anar__lantern-info.other-user(class="{{lantern.senderVillage}}")
+                span de
+                span.font-village  {{lantern.senderName}}
+        .solstice-anar__open-lantern
+            .open-lantern__close
+            .first-line
+                .intro
+                .receiver {{ltnCtrl.openLantern.receiver}}
+            .preSignature {{ltnCtrl.openLantern.pre_signature}}
+            .sender {{ltnCtrl.openLantern.sender}}
+    .solstice-anar__button.fond-village.hover.button(ng-click="ltnCtrl.startPlacing()" ng-if="ltnCtrl.map.currentEvent.slug !== 'lanterne_readonly'")
+        .action Déposer une lanterne
+        .remaining x{{ltnCtrl.remainingLanterns}} lanterne{{ltnCtrl.remainingLanterns > 1 ? 's' : ''}}
+            // restante{{ltnCtrl.remainingLanterns > 1 ? 's' : ''}}

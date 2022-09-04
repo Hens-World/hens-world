@@ -1,0 +1,857 @@
+{
+  "label": "anar",
+  "ouest":{
+    "sliceSize": 156,
+    "width": 6236,
+    "height": 5742,
+    "speed": 13,
+    "init": {
+      "x": 1700,
+      "y": 1450
+    },
+    "miniMap": {
+      "height":194,
+      "width": 211
+    }
+  },
+  "est":{
+    "sliceSize": 81,
+    "width": 5517,
+    "height": 5742,
+    "speed": 13,
+    "init": {
+      "x": 3069,
+      "y": 3056
+    },
+    "miniMap": {
+      "height":182,
+      "width": 189
+    }
+  },
+
+  "locations": [
+    {
+      "label": "Boutique d'Art",
+      "slug": "boutique_art",
+      "quartier": "ouest",
+      "pos": {
+        "x": 1215,
+        "y": 3680
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "id": 171,
+      "label": "Boutique d'instruments",
+      "slug": "boutique_instruments",
+      "quartier": "ouest",
+      "pos": {
+        "x": 5415,
+        "y": 1130
+      },
+      "width": 210,
+      "height": 230
+    },
+    {
+      "id": 159,
+      "label": "Brocante",
+      "slug": "brocante",
+      "quartier": "ouest",
+      "pos": {
+        "x": 1573,
+        "y": 3241
+      },
+      "width": 410,
+      "height": 325
+    },
+    {
+      "label": "Central Park",
+      "slug": "central_park",
+      "quartier": "ouest",
+      "pos": {
+        "x": 1430,
+        "y": 3974
+      },
+      "width": 400,
+      "height": 320
+    },
+    {
+      "label": "Centre de Police",
+      "slug": "centre_police",
+      "quartier": "ouest",
+      "pos": {
+        "x": 1230,
+        "y": 2390
+      },
+      "width": 250,
+      "height": 220
+    },
+    {
+      "label": "Chantier Ferrovier",
+      "slug": "chantier_ferrovier",
+      "quartier": "ouest",
+      "pos": {
+        "x": 4446,
+        "y": 4261
+      },
+      "width": 320,
+      "height": 280
+    },
+    {
+      "label": "Cité des Arts",
+      "slug": "cite_arts",
+      "quartier": "ouest",
+      "pos": {
+        "x": 760,
+        "y": 4319
+      },
+      "width": 410,
+      "height": 320
+    },
+    {
+      "label": "Discothèque",
+      "slug": "discotheque",
+      "quartier": "ouest",
+      "pos": {
+        "x": 5589,
+        "y": 2280
+      },
+      "width": 230,
+      "height": 210
+    },
+    {
+      "label": "Fast Food",
+      "slug": "fast_food",
+      "quartier": "ouest",
+      "pos": {
+        "x": 4860,
+        "y": 2871
+      },
+      "width": 210,
+      "height": 180
+    },
+    {
+      "label": "Fête Foraine",
+      "slug": "fete_foraine",
+      "quartier": "ouest",
+      "pos": {
+        "x": 3930,
+        "y": 5180
+      },
+      "width": 580,
+      "height": 450
+    },
+    {
+      "label": "Forge",
+      "slug": "forge",
+      "quartier": "ouest",
+      "pos": {
+        "x": 4886,
+        "y": 665
+      },
+      "width": 480,
+      "height": 350
+    },
+    {
+      "label": "Gare d'Anar",
+      "slug": "gare_anar",
+      "quartier": "ouest",
+      "pos": {
+        "x": 5095,
+        "y": 3186
+      },
+      "width": 430,
+      "height": 330
+    },
+    {
+      "label": "Grand Cinéma",
+      "slug": "grand_cinema",
+      "quartier": "ouest",
+      "pos": {
+        "x": 2465,
+        "y": 3037
+      },
+      "width": 210,
+      "height": 260
+    },
+    {
+      "label": "Hôpital",
+      "slug": "hopital",
+      "quartier": "ouest",
+      "pos": {
+        "x": 595,
+        "y": 1191
+      },
+      "width": 220,
+      "height": 280
+    },
+    {
+      "label": "L'Hotel des Ventes",
+      "slug": "hotel_des_ventes",
+      "quartier": "ouest",
+      "pos": {
+        "x": 3077,
+        "y": 990
+      },
+      "width": 220,
+      "height": 220
+    },
+    {
+      "label": "Kiosque de Presse",
+      "slug": "kiosque_de_presse",
+      "quartier": "ouest",
+      "pos": {
+        "x": 3374,
+        "y": 2229
+      },
+      "width": 220,
+      "height": 210
+    },
+    {
+      "label": "L'Effet Mer - Restaurant",
+      "slug": "effet_mer",
+      "quartier": "ouest",
+      "pos": {
+        "x": 1114,
+        "y": 3189
+      },
+      "width": 214,
+      "height": 209
+    },
+    {
+      "label": "Le Palais - Domaine des cheftains",
+      "slug": "le_palais",
+      "quartier": "ouest",
+      "pos": {
+        "x": 2049,
+        "y": 1564
+      },
+      "width": 480,
+      "height": 370
+    },
+    {
+      "label": "Le Pote au Feu - Troquet",
+      "slug": "pote_au_feu",
+      "quartier": "ouest",
+      "pos": {
+        "x": 4526,
+        "y": 3151
+      },
+      "width": 205,
+      "height": 145
+    },
+    {
+      "label": "Le Show Bouillant - Cabaret",
+      "slug": "show_bouillant",
+      "quartier": "ouest",
+      "pos": {
+        "x": 3911,
+        "y": 3429
+      },
+      "width": 290,
+      "height": 245
+    },
+    {
+      "label": "Le Verre y Table - Restaurant",
+      "slug": "verre_y_table",
+      "quartier": "ouest",
+      "pos": {
+        "x": 2775,
+        "y": 4008
+      },
+      "width": 310,
+      "height": 230
+    },
+    {
+      "id": 144,
+      "label": "Les Notes de la Nuit - Bar dansant",
+      "slug": "notes_de_la_nuit",
+      "quartier": "ouest",
+      "pos": {
+        "x": 708,
+        "y": 2494
+      },
+      "width": 350,
+      "height": 260
+    },
+    {
+      "label": "Lieu abandonné",
+      "slug": "lieu_abandonne",
+      "quartier": "ouest",
+      "pos": {
+        "x": 999,
+        "y": 4972
+      },
+      "width": 405,
+      "height": 270
+    },
+    {
+      "label": "Mines de la Montagne",
+      "slug": "mines",
+      "quartier": "ouest",
+      "pos": {
+        "x": 4087,
+        "y": 375
+      },
+      "width": 430,
+      "height": 310
+    },
+    {
+      "label": "Montagnes d'Anar",
+      "slug": "montagnes",
+      "quartier": "ouest",
+      "pos": {
+        "x": 5503,
+        "y": 166
+      },
+      "width": 510,
+      "height": 450
+    },
+    {
+      "label": "Petit marché",
+      "slug": "petit_marche_anar",
+      "quartier": "ouest",
+      "pos": {
+        "x": 160,
+        "y": 2671
+      },
+      "width": 265,
+      "height": 265
+    },
+    {
+      "label": "Place de L'Infini",
+      "slug": "Place de l'Infini",
+      "quartier": "ouest",
+      "pos": {
+        "x": 628,
+        "y": 2140
+      },
+      "width": 310,
+      "height": 270
+    },
+    {
+      "label": "Place du Cadran",
+      "slug": "place_cadran",
+      "quartier": "ouest",
+      "pos": {
+        "x": 4487,
+        "y": 1198
+      },
+      "width": 250,
+      "height": 180
+    },
+    {
+      "label": "Place du Soleil",
+      "slug": "place_soleil",
+      "quartier": "ouest",
+      "pos": {
+        "x": 3805,
+        "y": 2471
+      },
+      "width": 470,
+      "height": 370
+    },
+    {
+      "label": "Place Sêche",
+      "slug": "place_sechee",
+      "quartier": "ouest",
+      "pos": {
+        "x": 1771,
+        "y": 658
+      },
+      "width": 470,
+      "height": 415
+    },
+    {
+      "label": "Place Serpentine",
+      "slug": "place_serpentine",
+      "quartier": "ouest",
+      "pos": {
+        "x": 75,
+        "y": 4186
+      },
+      "width": 360,
+      "height": 420
+    },
+    {
+      "label": "Salle d'arcade",
+      "slug": "salle_arcade",
+      "quartier": "ouest",
+      "pos": {
+        "x": 1697,
+        "y": 4905
+      },
+      "width": 280,
+      "height": 245
+    },
+    {
+      "label": "Salle de spectacle",
+      "slug": "salle_de_spectacle",
+      "quartier": "ouest",
+      "pos": {
+        "x": 3679,
+        "y": 1268
+      },
+      "width": 350,
+      "height": 290
+    },
+    {
+      "label": "Station Météo",
+      "slug": "station_meteo",
+      "quartier": "ouest",
+      "pos": {
+        "x": 2011,
+        "y": 40
+      },
+      "width": 415,
+      "height": 355
+    },
+    {
+      "label": "Thermes Romaines",
+      "slug": "thermes",
+      "quartier": "ouest",
+      "pos": {
+        "x": 2825,
+        "y": 1423
+      },
+      "width": 415,
+      "height": 265
+    },
+    {
+      "label": "Tapas Nocturne - Restaurant",
+      "slug": "tapas_nocturne",
+      "quartier": "ouest",
+      "pos": {
+        "x": 3528,
+        "y": 2943
+      },
+      "width": 365,
+      "height": 260
+    },
+    {
+      "label": "Tribunal",
+      "slug": "tribunal",
+      "quartier": "ouest",
+      "pos": {
+        "x": 5223,
+        "y": 1567
+      },
+      "width": 310,
+      "height": 290
+    },
+    {
+      "label": "Usines",
+      "slug": "usines",
+      "quartier": "ouest",
+      "pos": {
+        "x": 5408,
+        "y": 4284
+      },
+      "width": 570,
+      "height": 435
+    },
+    {
+      "label": "Temple de l'Eté",
+      "slug": "temple_ete",
+      "quartier": "ouest",
+      "eventDates": [["21-06", "22-06"]],
+      "interior": true,
+      "interiorDates": [["21-06", "22-06"]],
+      "pos": {
+        "x": 4135,
+        "y": 770
+      },
+      "width": 250,
+      "height": 220
+    },
+    {
+      "label": "Salon de Thé",
+      "slug": "salon_de_the_anar",
+      "quartier": "ouest",
+      "pos": {
+        "x": 2829,
+        "y": 2826
+      },
+      "width": 230,
+      "height": 220
+    },
+    {
+      "label": "Sandwicherie",
+      "slug": "sandwicherie",
+      "quartier": "ouest",
+      "pos": {
+        "x": 3251,
+        "y": 3060
+      },
+      "width": 170,
+      "height": 200
+    },
+    {
+      "label": "Souk",
+      "slug": "souk",
+      "quartier": "ouest",
+      "pos": {
+        "x": 2905,
+        "y": 3330
+      },
+      "width": 510,
+      "height": 400
+    },
+    {
+      "label": "Sources chaudes",
+      "slug": "sources_chaudes",
+      "quartier": "ouest",
+      "pos": {
+        "x": 1073,
+        "y": 30
+      },
+      "width": 350,
+      "height": 290
+    },
+
+    {
+      "label": "Station des Montagnes",
+      "slug": "station_montagnes",
+      "quartier": "est",
+      "pos": {
+        "x": 700,
+        "y": 320
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Hôtel",
+      "slug": "hotel",
+      "quartier": "est",
+      "pos": {
+        "x": 2760,
+        "y": 1500
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Grand Dojo",
+      "slug": "grand_dojo",
+      "quartier": "est",
+      "pos": {
+        "x": 940,
+        "y": 3670
+      },
+      "width": 230,
+      "height": 160
+    },
+    {
+      "label": "Les Volcans Verts",
+      "slug": "volcans_verts",
+      "quartier": "est",
+      "pos": {
+        "x": 2440,
+        "y": 300
+      },
+      "width": 650,
+      "height": 160
+    },
+    {
+      "label": "Tournesol - Restaurant",
+      "slug": "restaurant_tournesol",
+      "quartier": "est",
+      "pos": {
+        "x": 1905,
+        "y": 3390
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Potager Citadin",
+      "slug": "potager_citadin",
+      "quartier": "est",
+      "pos": {
+        "x": 1860,
+        "y": 2390
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Médiathèque",
+      "slug": "mediatheque",
+      "quartier": "est",
+      "pos": {
+        "x": 5000,
+        "y": 2800
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Maison étrange",
+      "slug": "maison_etrange",
+      "quartier": "est",
+      "pos": {
+        "x": 3399,
+        "y": 540
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Place de la Musique",
+      "slug": "place_musique",
+      "quartier": "est",
+      "pos": {
+        "x": 4207,
+        "y": 3324
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Place du Trompe l'oeil",
+      "slug": "place_trompe_oeil",
+      "quartier": "est",
+      "pos": {
+        "x": 1350,
+        "y": 2820
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Promenade des Anciens",
+      "slug": "promenade_anciens",
+      "quartier": "est",
+      "pos": {
+        "x": 2707,
+        "y": 3784
+      },
+      "width": 250,
+      "height": 360
+    },
+    {
+      "label": "Quartier Général des Joueurs",
+      "slug": "qg_joueurs",
+      "quartier": "est",
+      "pos": {
+        "x": 321,
+        "y": 1279
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Quartier Troglodyte",
+      "slug": "quartier_troglodyte",
+      "quartier": "est",
+      "pos": {
+        "x": 4935,
+        "y": 780
+      },
+      "width": 250,
+      "height": 460
+    },
+    {
+      "label": "Refuge Animalier",
+      "slug": "refuge_animalier",
+      "quartier": "est",
+      "pos": {
+        "x": 4200,
+        "y": 5320
+      },
+      "width": 350,
+      "height": 260
+    },
+    {
+      "label": "Repère des Malfrats",
+      "slug": "repere_malfrats",
+      "quartier": "est",
+      "pos": {
+        "x": 4030,
+        "y": 4510
+      },
+      "width": 250,
+      "height": 160
+    },
+    {
+      "label": "Skatepark",
+      "slug": "skatepark",
+      "quartier": "est",
+      "pos": {
+        "x": 2233,
+        "y": 5210
+      },
+      "width": 250,
+      "height": 460
+    },
+    {
+      "label": "Stade de Foot",
+      "slug": "stade_foot",
+      "quartier": "est",
+      "pos": {
+        "x": 735,
+        "y": 4374
+      },
+      "width": 250,
+      "height": 460
+    },
+    {
+      "label": "Bacon Palace - Restaurant",
+      "slug": "bacon_palace",
+      "quartier": "est",
+      "pos": {
+        "x": 3920,
+        "y": 3070
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Café des Lectures",
+      "slug": "cafe_lecture",
+      "quartier": "est",
+      "pos": {
+        "x": 4450,
+        "y": 4666
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Les buveurs d'Encre - Restaurant",
+      "slug": "buveurs_encre_restaurant",
+      "quartier": "est",
+      "pos": {
+        "x": 3490,
+        "y": 3352
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Anar Général",
+      "slug": "anar_general",
+      "quartier": "est",
+      "pos": {
+        "x": 4010,
+        "y": 3530
+      },
+      "width": 100,
+      "height": 110
+    },
+    {
+      "label": "Chocolaterie",
+      "slug": "chocolaterie",
+      "quartier": "est",
+      "pos": {
+        "x": 4615,
+        "y": 1555
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Centre Commercial",
+      "slug": "centre_commercial",
+      "quartier": "est",
+      "pos": {
+        "x": 4777,
+        "y": 3940
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Boutique de Macarons",
+      "slug": "boutique_macarons",
+      "quartier": "est",
+      "pos": {
+        "x": 4167,
+        "y": 2589
+      },
+      "width": 150,
+      "height": 160
+    },
+    {
+      "label": "Cinéma en Plein Air",
+      "slug": "cinema_plein_air",
+      "quartier": "est",
+      "pos": {
+        "x": 988,
+        "y": 1077
+      },
+      "width": 350,
+      "height": 360
+    },
+    {
+      "label": "Colisée d'Anar",
+      "slug": "colisee_anar",
+      "eventDates": [["30-08", "06-09"]],
+      "event": "open_crushrun",
+      "quartier": "est",
+      "pos": {
+        "x": 2530,
+        "y": 2635
+      },
+      "width": 750,
+      "height": 660
+    },
+    {
+      "label": "Crèche",
+      "slug": "creche",
+      "quartier": "est",
+      "pos": {
+        "x": 1015,
+        "y": 1950
+      },
+      "width": 250,
+      "height": 160
+    },
+    {
+      "label": "Galerie d'Art",
+      "slug": "galerie_art",
+      "quartier": "est",
+      "pos": {
+        "x": 1355,
+        "y": 3118
+      },
+      "width": 250,
+      "height": 360
+    },
+    {
+      "label": "Université des Quatre",
+      "slug": "universite_des_quatre",
+      "quartier": "est",
+      "pos": {
+        "x": 3865,
+        "y": 1000
+      },
+      "width": 450,
+      "height": 460
+    },
+    {
+      "label": "Centre de Poste",
+      "slug": "centre_poste",
+      "quartier": "est",
+      "pos": {
+        "x": 3318,
+        "y": 4230
+      },
+      "width": 250,
+      "height": 160
+    },
+    {
+      "label": "Bowling",
+      "slug": "bowling",
+      "quartier": "est",
+      "pos": {
+        "x": 2404,
+        "y": 4213
+      },
+      "width": 250,
+      "height": 160
+    }
+  ]
+}

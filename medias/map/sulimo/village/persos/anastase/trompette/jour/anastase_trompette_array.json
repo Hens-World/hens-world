@@ -1,0 +1,92 @@
+{"frames": [
+
+{
+	"filename": "anastase1.png",
+	"frame": {"x":0,"y":0,"w":45,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":78},
+	"sourceSize": {"w":45,"h":78}
+},
+{
+	"filename": "anastase2.png",
+	"frame": {"x":0,"y":78,"w":45,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":78},
+	"sourceSize": {"w":45,"h":78}
+},
+{
+	"filename": "anastase3.png",
+	"frame": {"x":0,"y":156,"w":45,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":78},
+	"sourceSize": {"w":45,"h":78}
+},
+{
+	"filename": "anastase4.png",
+	"frame": {"x":0,"y":234,"w":45,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":78},
+	"sourceSize": {"w":45,"h":78}
+},
+{
+	"filename": "anastase5.png",
+	"frame": {"x":0,"y":312,"w":45,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":78},
+	"sourceSize": {"w":45,"h":78}
+},
+{
+	"filename": "anastase6.png",
+	"frame": {"x":0,"y":390,"w":45,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":78},
+	"sourceSize": {"w":45,"h":78}
+},
+{
+	"filename": "anastase7.png",
+	"frame": {"x":0,"y":468,"w":45,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":78},
+	"sourceSize": {"w":45,"h":78}
+},
+{
+	"filename": "anastase8.png",
+	"frame": {"x":0,"y":546,"w":45,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":78},
+	"sourceSize": {"w":45,"h":78}
+},
+{
+	"filename": "anastase9.png",
+	"frame": {"x":0,"y":624,"w":45,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":78},
+	"sourceSize": {"w":45,"h":78}
+},
+{
+	"filename": "anastase10.png",
+	"frame": {"x":0,"y":702,"w":45,"h":78},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":78},
+	"sourceSize": {"w":45,"h":78}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "anastase_trompette.png",
+	"format": "RGBA8888",
+	"size": {"w":45,"h":780},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f8d88945a95ada642c003865130daaed:0e369d307c97c293d59bf033db8a54fc:b6ac1020ec224e0ce85802cc47d064c1$"
+}
+}

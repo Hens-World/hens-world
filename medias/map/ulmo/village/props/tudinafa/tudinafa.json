@@ -1,0 +1,21 @@
+{
+  "label":"tudinafa",
+  "width":550,
+  "height":320,
+  "center":{
+    "x":241,
+    "y":260
+  },
+  "avail":[
+    {
+      "fromT":00,
+      "to":1
+    }
+  ],
+  "list":[
+    {
+      "x":2022,
+      "y":508
+    }
+  ]
+}

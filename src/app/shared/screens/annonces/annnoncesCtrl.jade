@@ -1,0 +1,27 @@
+.page-container.annonce-main
+  .main-column
+    .header
+      h1 Panneau d'annonces
+    .annonces-list-container
+      a.button.fond-village.hover.create-button.main(href="/annonces/new") Créer une annonce
+      .info-text(style="text-align:center; margin-top: 10px;" ng-if="annonceList.length == 0")
+        | Il n'y a aucune annonce disponible. Venez poster la votre pour trouver des compagnons de jeu!
+      ul.list
+        li.element(ng-repeat="annonce in annonceList")
+          .participating
+            span(ng-if="!annonce.is_private" ng-class="{'full': annonce.limit_size == annonce.participants.length}")
+              span {{annonce.participants.length}}
+              span(ng-if="annonce.limit_size != -1") /{{annonce.limit_size}} 
+              span(ng-if="annonce.limit_size == -1") /∞   
+            span(ng-if="annonce.is_private")
+              .info-text Privée
+          a.other-user(class="{{annonce.owner.meta.village}}" href="/annonces/{{annonce.aid}}")
+            h3.title(ng-bind-html="annonce.title.capitalizeFirstLetter()")
+            .owner.info-text()
+              | créé par 
+              span.font-village {{annonce.owner.display_name}}
+          .starting-date
+            span(ng-if="annonce.hasDate") {{annonce.formatDate}}
+            span(ng-if="!annonce.hasDate")
+              .info-text /
+      

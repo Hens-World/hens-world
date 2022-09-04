@@ -1,0 +1,9 @@
+.page-container.no-side
+  .main-column
+    .main-column__content.login-container
+      .form-container
+        .title Connexion
+        form(ng-submit='login()')
+          field(type='text', value='loginForm.accountName', field='accountName', label='Pseudo', required='true', placeholder='Pseudo')
+          field(type='password', value='loginForm.password', field='password', label='Mot de passe', placeholder='Mot de passe', required='true')
+          button.button.button--meaty.fond-village.hover(type='submit') Se connecter

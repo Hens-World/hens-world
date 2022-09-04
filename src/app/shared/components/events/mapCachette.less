@@ -1,0 +1,331 @@
+.map-cachette {
+  font-size: 14em;
+  //hunter display
+  &__hunters {
+    position: absolute;
+    left: 0;
+    z-index: 30;
+    width: 100%;
+    .fullHeight(0px);
+    top: 0;
+  }
+  &__hunter {
+    width: 150px;
+    position: absolute;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .5s;
+    align-items: center;
+  }
+  &__oeil {
+    width: 32px;
+    height: 32px;
+    background-image: url(/medias/events/carnaval-cachette/oeil.png);
+    background-size: cover;
+  }
+
+  //prop display
+  &__map-prop {
+    position: absolute;
+    z-index: 10;
+    &.highlight {
+      filter: drop-shadow(0 0 15px rgba(230, 240, 102, 0.8)) brightness(0) invert(1);
+    }
+    .prop-dust {
+      opacity: 0;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      &.jour {
+        background-image: url(/medias/events/carnaval-cachette/props/dust/jour/transfo.png);
+      }
+      &.nuit {
+        background-image: url(/medias/events/carnaval-cachette/props/dust/nuit/transfo.png);
+      }
+      background-position: 0 0;
+      background-size: 360px 120px;
+      &.transforming {
+        animation: transforming-dust .3s step-end 16, fading-dust 4.8s 1 forwards;
+      }
+      @keyframes transforming-dust {
+        0% {background-position: 0 0;}
+        33% {background-position: 120px 0;}
+        66% {background-position: 240px 0;}
+        100% {background-position: 0 0;}
+      }
+      @keyframes fading-dust {
+        0% {
+          opacity: 1;
+        }
+        60% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .invisible-prop {
+    position: fixed;
+    opacity: .5;
+    pointer-events: none;
+    z-index: 10;
+  }
+  &__prop-selection {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 110px;
+    background-color: @black;
+    z-index: 120;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    align-items: stretch;
+    display: flex;
+  }
+  &__prop-next, &__prop-previous {
+    font-size: 2em;
+    position: absolute;
+    cursor: pointer;
+    transform: scaleY(1.2);
+    top: 0;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    transition: all .15s;
+    &:hover {
+    }
+  }
+  &__prop-next {
+    left: -15px;
+  }
+  &__prop-previous {
+    right: -15px;
+  }
+
+
+  &__lobby-click {
+    position: absolute;
+    width: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    height: 90px;
+    border-radius: 20px;
+  }
+
+  //button at bottom screen
+  &__display {
+    position: fixed;
+    left: 50%;
+    padding: 5px 20px;
+    border-radius: 25px;
+    transform: translateX(-50%);
+    bottom: 15px;
+    z-index: 120;
+    box-sizing: border-box;
+    &.lobby {
+      padding: 5px 40px 15px 40px;
+    }
+  }
+  &__timer {
+    font-size: 1.5em;
+  }
+  &__phase {
+    font-style: italic;
+    text-align: center;
+    max-width: 150px;
+    opacity: .85;
+  }
+
+
+  &__prop-item {
+    flex: 0 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    min-width: 25px;
+    width: 121px;
+    height: 121px;
+    transition: all .15s;
+    &.selected {
+      background-color: @buttonHoverDark;
+    }
+    &.next, &.previous {
+      background-color: rgba(0, 0, 0, 0);
+      opacity: .7;
+      transform: scale(.8);
+    }
+  }
+  &__prop-aiming, &__hunter-aiming, &__prop-hue {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 40;
+    position: fixed;
+    transition: opacity .1s;
+  }
+  &__prop-hue {
+    pointer-events: none;
+    opacity: 0.01;
+    background-color: @anarNeuter;
+  }
+  &__hunter-aiming {
+    opacity: 0.01;
+    background-color: @ulmoLight;
+  }
+  &__tutorial {
+    width: 100%;
+    .fullHeight(0px);
+    position: fixed;
+    z-index: 120;
+    left: 0;
+    top: @HH;
+    background-color: rgba(10, 10, 10, .97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+  &__tuto-props {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 40px;
+  }
+  &__tuto-prop {
+    min-width: 30px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: @headerDark;
+  }
+  &__tuto-element {
+    display: flex;
+    max-width: 600px;
+    margin-bottom: 10px;
+    align-items: center;
+    img {
+      width: 180px;
+      margin-right: 15px;
+    }
+    &.odd {
+      flex-direction: row-reverse;
+      img {
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+  &__tutorial-content {
+    padding: 40px;
+    min-width: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @contentDark;
+
+    &.dezoom {
+      min-width: 600px;
+      text-align: center;
+      padding-bottom: 30px;
+      img {
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 1.3em;
+      }
+    }
+    h1 {
+      text-transform: uppercase;
+    }
+  }
+  &__prop-select {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0px;
+    border-width: 0 !important;
+    transition: all .15s;
+  }
+  &__game-over {
+    width: 100%;
+    .fullHeight(0px);
+    position: fixed;
+    z-index: 120;
+    left: 0;
+    top: @HH;
+    background-color: rgba(10, 10, 10, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__kill-feed {
+    position: fixed;
+    z-index: 200;
+    top: @HH;
+    right: 240px;
+  }
+  &__feed-line {
+    padding: 3px;
+    min-width: 150px;
+    box-sizing: border-box;
+    background-color: @wilwarNeuter;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    margin: 5px;
+    display: flex;
+    height: 0;
+    border-radius: 5px;
+    transition: height .25s .15s, margin .25s, opacity .25s 0s, transform .25s 0s;
+    transform: translateY(-30px);
+    opacity: 0;
+    &.visible {
+      transition: height .1s, margin .25s, opacity .25s, transform .25s;
+      transform: translateY(0);
+      opacity: 1;
+      height: 35px;
+      margin: 5px;
+    }
+    &.opposing {
+      background-color: @anarNeuter;
+    }
+    .killer, .killed {
+      margin: 0 35px;
+    }
+    img {
+      height: 32px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      &.action {
+        height: 26px;
+        z-index: 2;
+      }
+    }
+  }
+}

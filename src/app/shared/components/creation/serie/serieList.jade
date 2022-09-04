@@ -1,0 +1,14 @@
+.series-list
+    .my-post-list.post-list
+      .my-post-unit.post-unit(ng-repeat="serie in ctrl.series" class="{{serie.village.slug}} other-user")
+        .post-infos
+          a(href="/profil/{{serie.owner_id}}/series/{{serie.id}}")
+            .long-title-wrap(long-title)
+              .title(ng-bind-html="serie.title")
+          .created {{serie.formattedContent}}
+          .date {{serie.formDate}}
+        .type(style="background-image:url({{serie.miniature}})")
+        .action-post.delete.link-hover.anar(ng-click="ctrl.deleteSerie(serie)")
+          .fa.fa-trash
+        .action-post.edit.link-hover.ulmo(ng-click="ctrl.editSerie(serie)")
+          .fa.fa-pencil

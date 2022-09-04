@@ -1,0 +1,444 @@
+//                ,,    ,,    ,,
+//  `7MMF'   `7MF'db  `7MM  `7MM
+//    `MA     ,V        MM    MM
+//     VM:   ,V `7MM    MM    MM   ,6"Yb.  .P"Ybmmm .gP"Ya
+//      MM.  M'   MM    MM    MM  8)   MM :MI  I8  ,M'   Yb
+//      `MM A'    MM    MM    MM   ,pm9MM  WmmmP"  8M""""""
+//       :MM;     MM    MM    MM  8M   MM 8M       YM.    ,
+//        VF    .JMML..JMML..JMML.`Moo9^Yo.YMMMMMb  `Mbmmd'
+//                                        6'     dP
+//                                        Ybmmmd'
+
+// simple layer
+.sulimo {
+  .border-village-left {
+    &.active, &.hover:hover {border-left: @buttonBorder solid @sulimoNeuter;}
+  }
+  .border-left-village {
+    border-left: 2px solid @sulimoNeuter;
+  }
+  .border-village {
+    border: 2px solid @sulimoNeuter;
+    &.low {border-color: @sulimoLow;}
+  }
+  .link-hover:hover {color: @sulimoLight;}
+  .fond-village {
+    background-color: @sulimoNeuter;
+    &.light{background-color: @sulimoLight;}
+    &.low {background-color: @sulimoLow;}
+    &.dark {background-color: @sulimoDark;}
+    &.black {background-color: @sulimoBlack;}
+    &.hover:hover {
+      background-color: @sulimoLight;
+      color: @sulimoDark;
+    }
+    &.button {
+      background-color: @sulimoNeuter;
+      &:hover {
+        background-color: @sulimoLight;
+      }
+    }
+  }
+  .font-village {
+    color: @sulimoNeuter;
+    &.light {
+      color: @sulimoLight;
+    }
+    &.hover:hover {
+      color: @sulimoLight;
+    }
+    &.dark{color: @sulimoDark;}
+  }
+}
+
+.ulmo {
+  .border-village-left {
+    &.active, &.hover:hover {border-left: @buttonBorder solid @ulmoNeuter;}
+  }
+  .border-left-village {
+    border-left: 2px solid @ulmoNeuter;
+  }
+  .border-village {
+    border: 2px solid @ulmoNeuter;
+    &.low {border-color: @ulmoLow;}
+  }
+  .link-hover:hover {color: @ulmoLight;}
+  .fond-village {
+    background-color: @ulmoNeuter;
+    &.light{background-color: @ulmoLight;}
+    &.low {background-color: @ulmoLow;}
+    &.dark {background-color: @ulmoDark;}
+    &.black {background-color: @ulmoBlack;}
+    &.hover:hover {
+      background-color: @ulmoLight;
+      color: @ulmoDark;
+    }
+    &.button {
+      background-color: @ulmoNeuter;
+      &:hover {
+        background-color: @ulmoLight;
+        // color: @ulmoDark;
+      }
+    }
+  }
+  .font-village {
+    color: @ulmoNeuter;
+    &.light {color: @ulmoLight;}
+    &.hover:hover {color: @ulmoLight;}
+    &.dark{color: @ulmoDark;}
+  }
+}
+
+.wilwar {
+  .border-village-left {
+    &.active, &.hover:hover {border-left: @buttonBorder solid @wilwarNeuter;}
+  }
+  .border-left-village {
+    border-left: 2px solid @wilwarNeuter;
+  }
+  .border-village {
+    border: 2px solid @wilwarNeuter;
+    &.low {border-color: @wilwarLow;}
+  }
+  .link-hover:hover {color: @wilwarLight;}
+  .fond-village {
+    background-color: @wilwarNeuter;
+    &.light{background-color: @wilwarLight;}
+    &.dark {background-color: @wilwarDark;}
+    &.low {background-color: @wilwarLow;}
+    &.black {background-color: @wilwarBlack;}
+    &.hover:hover {
+      background-color: @wilwarLight;
+      color: @wilwarDark;
+    }
+    &.button {
+      background-color: @wilwarNeuter;
+      &:hover {
+        background-color: @wilwarLight;
+      }
+    }
+  }
+  .font-village {
+    color: @wilwarNeuter;
+    &.light {
+      color: @wilwarLight;
+    }
+    &.hover:hover {
+      color: @wilwarLight;
+    }
+    &.dark { color: @wilwarDark; }
+  }
+}
+
+.anar {
+  .border-village-left {
+    &.active, &.hover:hover {border-left: @buttonBorder solid @anarNeuter;}
+  }
+  .border-left-village {
+    border-left: 2px solid @anarNeuter;
+  }
+  .border-village {
+    border: 2px solid @anarNeuter;
+    &.low {border-color: @anarLow;}
+  }
+  .link-hover:hover {color: @anarLight;}
+  .fond-village {
+    background-color: @anarNeuter;
+    &.light{background-color: @anarLight;}
+    &.low {background-color: @anarLow;}
+    &.dark {background-color: @anarDark;}
+    &.black {background-color: @anarBlack;}
+    &.hover:hover {
+      background-color: @anarLight;
+      color: @anarDark;
+    }
+    &.button {
+      background-color: @anarNeuter;
+      &:hover {
+        background-color: @anarLight;
+      }
+    }
+  }
+  .font-village {
+    color: @anarNeuter;
+    &.light {
+      color: @anarLight;
+    }
+    &.hover:hover {
+      color: @anarLight;
+    }
+
+    &.dark {
+      color: @anarDark;
+    }
+  }
+}
+
+.white {
+  .border-village-left {
+    &.active, &.hover:hover {border-left: @buttonBorder solid @whiteNeuter;}
+  }
+  .border-village {
+    border: 2px solid @whiteNeuter;
+  }
+  .link-hover:hover {color: @whiteLight;}
+  .fond-village {
+    background-color: @whiteNeuter;
+    color: @contrastedTextColor;
+    &.light{background-color: @whiteLight;}
+    &.low {background-color: @whiteLow;}
+    &.dark {background-color: @whiteDark;}
+    &.black {background-color: @whiteBlack;}
+    &.hover:hover {
+      background-color: @whiteLight;
+      color: @whiteDark;
+    }
+    &.button {
+      background-color: @whiteNeuter;
+      &:hover {
+        background-color: @whiteLight;
+      }
+    }
+  }
+  .other-user .fond-village {
+    color: white;
+  }
+  .font-village {
+    color: @whiteNeuter;
+    &.light {
+      color: @whiteLight;
+    }
+    &.dark {
+      color: @whiteDark;
+    }
+    &.hover:hover {
+      color: @whiteLight;
+    }
+  }
+}
+
+
+//guest
+.link-hover:hover {color: @guestLight; transition: color 0.35s; cursor: pointer;}
+
+.font-village {
+  color: @guestNeuter;
+  &.light {color: @guestLight;}
+  &.hover:hover {color: @guestLight;}
+  &.dark{color: @guestDark;}
+}
+
+.border-village {
+  border: 2px solid @guestNeuter;
+  &.border-1px {border-width: 1px;}
+}
+
+.fond-village {
+  background-color: @guestNeuter;
+  &.black {background-color: @guestBlack;}
+  &.light {background-color: @guestLight;}
+  &.low {background-color: @guestLow;}
+  &.dark {background-color: @guestDark;}
+  &.hover:hover {
+    background-color: @guestLight;
+    color: @guestDark;
+  }
+  &.button {
+    background-color: @guestLow;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    &:hover {
+      background-color: @guestLight;
+      border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+//button borders
+.border-village-left {
+  box-sizing: border-box;
+  border-left: 0px solid rgba(0, 0, 0, 0);
+  transition: border-left 0.35s;
+  &.hover:hover, &.active {border-left: @buttonBorder solid @guestNeuter;}
+}
+
+
+//other user overrides
+.sulimo.other-user, .sulimo {
+  .border-village-left {
+    &.active, &.hover:hover {border-left: @buttonBorder solid @sulimoNeuter;}
+  }
+  .border-village {
+    border: 2px solid @sulimoNeuter;
+  }
+  .link-hover:hover {color: @sulimoLight;}
+  .fond-village {
+    background-color: @sulimoNeuter;
+    &.low {background-color: @sulimoLow;}
+    &.dark {background-color: @sulimoDark;}
+    &.black {background-color: @sulimoBlack;}
+    &.hover:hover {
+      background-color: @sulimoLight;
+      color: @sulimoDark;
+    }
+    &.button {
+      background-color: @sulimoNeuter;
+      &:hover {
+        background-color: @sulimoLight;
+      }
+    }
+  }
+  .font-village {
+    color: @sulimoNeuter;
+    &.light {
+      color: @sulimoLight;
+    }
+    &.hover:hover {
+      color: @sulimoLight;
+    }
+  }
+}
+
+.other-user.ulmo {
+  .border-village-left {
+    &.active, &.hover:hover {border-left: @buttonBorder solid @ulmoNeuter;}
+  }
+  .border-village {
+    border: 2px solid @ulmoNeuter;
+  }
+  .link-hover:hover {color: @ulmoLight;}
+  .fond-village {
+    background-color: @ulmoNeuter;
+    &.low {background-color: @ulmoLow;}
+    &.dark {background-color: @ulmoDark;}
+    &.black {background-color: @ulmoBlack;}
+    &.hover:hover {
+      background-color: @ulmoLight;
+      color: @ulmoDark;
+    }
+    &.button {
+      background-color: @ulmoNeuter;
+      &:hover {
+        background-color: @ulmoLight;
+        // color: @ulmoDark;
+      }
+    }
+  }
+  .font-village {
+    color: @ulmoNeuter;
+    &.light {color: @ulmoLight;}
+    &.hover:hover {color: @ulmoLight;}
+  }
+}
+
+.other-user.wilwar, .wilwar {
+  .border-village-left {
+    &.active, &.hover:hover {border-left: @buttonBorder solid @wilwarNeuter;}
+  }
+  .border-village {
+    border: 2px solid @wilwarNeuter;
+  }
+  .link-hover:hover {color: @wilwarLight;}
+  .fond-village {
+    background-color: @wilwarNeuter;
+    &.dark {background-color: @wilwarDark;}
+    &.low {background-color: @wilwarLow;}
+    &.black {background-color: @wilwarBlack;}
+    &.hover:hover {
+      background-color: @wilwarLight;
+      color: @wilwarDark;
+    }
+    &.button {
+      background-color: @wilwarNeuter;
+      &:hover {
+        background-color: @wilwarLight;
+      }
+    }
+  }
+  .font-village {
+    color: @wilwarNeuter;
+    &.light {
+      color: @wilwarLight;
+    }
+    &.hover:hover {
+      color: @wilwarLight;
+    }
+  }
+}
+
+.anar.other-user, .anar {
+  .border-village-left {
+    &.active, &.hover:hover {border-left: @buttonBorder solid @anarNeuter;}
+  }
+  .border-village {
+    border: 2px solid @anarNeuter;
+  }
+  .link-hover:hover {color: @anarLight;}
+  .fond-village {
+    background-color: @anarNeuter;
+    &.low {background-color: @anarLow;}
+    &.dark {background-color: @anarDark;}
+    &.black {background-color: @anarBlack;}
+    &.hover:hover {
+      background-color: @anarLight;
+      color: @anarDark;
+    }
+    &.button {
+      background-color: @anarNeuter;
+      &:hover {
+        background-color: @anarLight;
+      }
+    }
+  }
+  .font-village {
+    color: @anarNeuter;
+    &.light {
+      color: @anarLight;
+    }
+    &.hover:hover {
+      color: @anarLight;
+    }
+  }
+}
+
+//other user guest
+.other-user .font-village {
+  color: @guestNeuter;
+  &.light {color: @guestLight;}
+  &.hover:hover {color: @guestLight;}
+}
+
+.other-user .fond-village {
+  background-color: @guestNeuter;
+  &.black {background-color: @guestBlack;}
+  &.low {background-color: @guestLow;}
+  &.dark {background-color: @guestDark;}
+  &.hover:hover {
+    background-color: @guestLight;
+    color: @guestDark;
+  }
+  &.button {
+    background-color: @guestLow;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    &:hover {
+      background-color: @guestLight;
+      border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+
+//village image
+
+.village-icon {
+  background-size: cover;
+  &.anar {background-image: url(/medias/common/anar_icone.png);}
+  &.sulimo {background-image: url(/medias/common/sulimo_icone.png);}
+  &.wilwar {background-image: url(/medias/common/wilwar_icone.png);}
+  &.ulmo {background-image: url(/medias/common/ulmo_icone.png);}
+}

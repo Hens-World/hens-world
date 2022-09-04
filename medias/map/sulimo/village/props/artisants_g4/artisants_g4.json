@@ -1,0 +1,21 @@
+{
+  "label":"artisants_g4",
+  "width":76,
+  "height":87,
+  "center":{
+    "x":59,
+    "y":75
+  },
+  "avail":[
+    {
+      "fromT":9,
+      "to":12
+    }
+  ],
+  "list":[
+    {
+      "x":1321,
+      "y":2024
+    }
+  ]
+}

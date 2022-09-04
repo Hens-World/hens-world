@@ -1,0 +1,289 @@
+{
+  "frames": [
+    {
+      "filename": "nomi1.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi2.png",
+      "frame": {
+        "x": 109,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi3.png",
+      "frame": {
+        "x": 218,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi4.png",
+      "frame": {
+        "x": 327,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi5.png",
+      "frame": {
+        "x": 436,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi6.png",
+      "frame": {
+        "x": 545,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi7.png",
+      "frame": {
+        "x": 654,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi8.png",
+      "frame": {
+        "x": 763,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi9.png",
+      "frame": {
+        "x": 872,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi10.png",
+      "frame": {
+        "x": 981,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi11.png",
+      "frame": {
+        "x": 1090,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi12.png",
+      "frame": {
+        "x": 1199,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    },
+    {
+      "filename": "nomi13.png",
+      "frame": {
+        "x": 1308,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 98
+      }
+    }
+  ],
+  "meta": {
+    "app": "https://www.codeandweb.com/texturepacker",
+    "version": "1.0",
+    "image": "nomi_peche_renard.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1417,
+      "h": 98
+    },
+    "scale": "1",
+    "smartupdate": "$TexturePacker:SmartUpdate:e3cf3aa58b011fa78234966ca1ff3e11:202e1d9abc909d3356c8ac2a3a35a08f:a440d68e294652441b9cb904c068e9e9$"
+  }
+}

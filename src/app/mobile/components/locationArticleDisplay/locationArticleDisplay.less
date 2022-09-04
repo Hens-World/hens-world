@@ -1,0 +1,248 @@
+.village-loca {
+  width: 100%;
+  position: fixed;
+  bottom: @bottomHeight;
+  left: 0;
+  right: 0;
+  height: 270px;
+  z-index: @layerOverlay;
+  opacity: 1;
+  transition: all 0.4s ease-out;
+  font-size: 12em;
+  display: flex;
+  flex-direction: column;
+  /* actions */
+  &__actions {
+    height: 30px;
+    width: 100%;
+    flex: 0 1 auto;
+    display: flex;
+  }
+  &__close {
+    cursor: pointer;
+    z-index: @layerDefault;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px 0 0 5px;
+    background-size: 30px 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+    background: #222 url(/medias/map/ui/right.png) 0px 50%;
+    transform: rotate(90deg);
+    transition: all 0.2s;
+  }
+  &__state {
+    position: relative;
+    max-width: 100%;
+    flex: 1 1 auto;
+  }
+  &__switch {
+    flex: 1 1 auto;
+    cursor: pointer;
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    &:not(.active) {
+      background-color: @contentDark;
+    }
+    & > span {
+      font-size: 1.4em;
+    }
+  }
+  /* main */
+  &__main {
+    background: rgba(10, 10, 10, 0.85);
+    flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+  }
+  &__info {
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    transition: all .35s;
+
+    .mini-type {
+      width: 50px;
+      height: 50px;
+      margin-left: 5px;
+    }
+    .center-info {
+      text-align: center;
+      box-sizing: border-box;
+      padding: 3px;
+      flex: 1 1 auto;
+      max-width: 300px;
+      h3 {
+        min-width: 0;
+        max-width: 166px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  &__empty-notice {
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 30%;
+    transform: translateY(-50%);
+    background: rgba(10, 10, 10, .5);
+  }
+  &__list {
+    overflow-y: hidden;
+    overflow-x: auto;
+    max-width: 100%;
+    display: flex;
+  }
+  &__notif {
+    position: absolute;
+    margin: 10px;
+  }
+  &__element {
+    position: relative;
+    text-align: left;
+    width: 175px;
+    height: 181px;
+    min-height: 0;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    &-author {
+      .participant:not(:last-child) {
+        :after {
+          content: ', ';
+        }
+      }
+    }
+    &-hot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px 0 10px;
+    }
+
+    .preview {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .info-text {
+      padding: 1px;
+    }
+    .text {
+      color: #222;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1.3em;
+      padding: 9px;
+      font-family: 'Crimson Text', serif;
+      background: #f3efc6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      min-height: 0;
+      text-overflow: ellipsis;
+      p {
+        height: 100%;
+        min-height: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      img {
+        width: 100%;
+        background-color: @overlayBlack;
+      }
+    }
+
+    /* roleplay specific */
+    &--roleplay {
+      background-color: @playerDark;
+      width: 210px;
+      height: 216px;
+      border-radius: 2px;
+      border: 1.5px solid @middleDark;
+      padding: 9px 10px;
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .village-loca {
+        &__element-infos {
+          text-align: center;
+        }
+      }
+
+      .info-text {
+        opacity: .4;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        p {
+          font-style: italic;
+          text-align: center;
+        }
+      }
+    }
+    &-title {
+      font-size: 1.25em;
+    }
+    &-author {
+
+    }
+  }
+}
+
+.masonry { /* Masonry container */
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  transform: translateZ(0);
+  column-gap: 1em;
+  &.solo {
+    column-count: auto;
+    .masonry__item {
+      width: 50%;
+      margin: auto;
+    }
+  }
+  &__item { /* Masonry bricks or child elements */
+    display: block;
+    margin-bottom: 10px;
+    transform: translateZ(0);
+    box-sizing: border-box;
+    width: 100%;
+    .preview {
+      width: 100%;
+      &.miniature {
+        background-color: rgba(20, 20, 20, .6);
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{"frames": [
+
+{
+	"filename": "lunae0000.png",
+	"frame": {"x":0,"y":0,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0001.png",
+	"frame": {"x":0,"y":71,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0002.png",
+	"frame": {"x":0,"y":142,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0003.png",
+	"frame": {"x":0,"y":213,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0004.png",
+	"frame": {"x":0,"y":284,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0005.png",
+	"frame": {"x":0,"y":355,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0006.png",
+	"frame": {"x":0,"y":426,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0007.png",
+	"frame": {"x":0,"y":497,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0008.png",
+	"frame": {"x":0,"y":568,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0009.png",
+	"frame": {"x":0,"y":639,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0010.png",
+	"frame": {"x":0,"y":710,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0011.png",
+	"frame": {"x":0,"y":781,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0012.png",
+	"frame": {"x":0,"y":852,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0013.png",
+	"frame": {"x":0,"y":923,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0014.png",
+	"frame": {"x":0,"y":994,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0015.png",
+	"frame": {"x":0,"y":1065,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0016.png",
+	"frame": {"x":0,"y":1136,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0017.png",
+	"frame": {"x":0,"y":1207,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0018.png",
+	"frame": {"x":0,"y":1278,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+{
+	"filename": "lunae0019.png",
+	"frame": {"x":0,"y":1349,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "lunae_marche.png",
+	"format": "RGBA8888",
+	"size": {"w":43,"h":1420},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:88d30e5b482afdc0ee80960cc49e7bcb:83d5abbc5cbc56e484901b2995204ab1:aa6f1b8ee873c3f74fff10eaa5c53326$"
+}
+}

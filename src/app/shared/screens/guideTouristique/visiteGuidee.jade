@@ -1,0 +1,62 @@
+.visite-guidee.page-container.no-side
+  .main-column
+    .main-column__content
+      h1.visite-guidee__title Visite Guidée
+      .visite-guidee__row
+        .visite-guidee__content
+          .visite-guidee__lieu(class="{{lieu.village}} other-user"
+                        ng-class="{'active':lieu.slug == selecLieu.slug}"
+                        ng-click='openLieu(lieu)'
+                        ng-repeat='lieu in locaList | filterGuideTour:filterLieu')
+            img.visite-guidee__lieu-image(src="{{lieu.image}}")
+            .visite-guidee__lieu-nom.font-village() {{lieu.nom}}
+
+          //MOBILE VERSION
+          .visite-guidee__lieu-preview.visite-guidee__lieu-preview--mobile(ng-if="$root.mobileCheck()" ng-class="{'show':selecLieu != null}" class="{{selecLieu.village}} other-user")
+            .l-row
+              img.visite-guidee__preview-image(src="{{selecLieu.image}}")
+              .visite-guidee__preview-content
+                .l-row--center
+                  div
+                    .visite-guidee__preview-title.font-village(class="{{selecLieu.village}}")  {{selecLieu.nom}}
+                    .visite-guidee__preview-types
+                      .visite-guidee__preview-type(ng-repeat='cat in selecLieu.categories', ng-bind-html='cat.capitalizeFirstLetter()')
+                  .visite-guidee__preview-close.font-village(ng-click="openLieu(selecLieu)") x
+            .visite-guidee__preview-description {{selecLieu.description}}
+            a.button.hover.fond-village.button--meaty( href='map/{{selecLieu.village}}/{{selecLieu.zone}}/{{selecLieu.slug}}') Visiter
+            .visite-guidee__preview-fondu(ng-class="{'active':selecLieu}")
+
+
+          //DESKTOP VERSION
+          .visite-guidee__lieu-preview(ng-if="!$root.mobileCheck()" ng-class="{'show':selecLieu != null}" class="{{selecLieu.village}} other-user")
+            img.visite-guidee__preview-image(src="{{selecLieu.image}}")
+            .visite-guidee__preview-content
+              .visite-guidee__preview-types
+                .visite-guidee__preview-type(ng-repeat='cat in selecLieu.categories', ng-bind-html='cat.capitalizeFirstLetter()')
+              .visite-guidee__preview-title.font-village(class="{{selecLieu.village}}")  {{selecLieu.nom}}
+              .visite-guidee__preview-description {{selecLieu.description}}
+            a.visite-guidee__preview-button.button.hover.fond-village( href='map/{{selecLieu.village}}/{{selecLieu.zone}}/{{selecLieu.slug}}') >
+            .visite-guidee__preview-fondu(ng-class="{'active':selecLieu}")
+
+        .custom-search
+          .custom-search__separation-line
+          .custom-search__input.custom-search__section
+            input.text-search.ng-pristine.ng-untouched.ng-valid(type='text', ng-model='filterLieu.nom')
+          .custom-search__separation-line
+          .custom-search__village-filter.custom-search__section
+            .l-row--between
+              .custom-search__village-button.sulimo.active(ng-class="{'active':filterIndiv.village == 'sulimo' || filterIndiv.village == ''}", ng-click="setSearchVillage('sulimo')")
+              .custom-search__village-button.ulmo.active(ng-class="{'active':filterIndiv.village == 'ulmo' || filterIndiv.village == ''}", ng-click="setSearchVillage('ulmo')")
+              .custom-search__village-button.wilwar.active(ng-class="{'active':filterIndiv.village == 'wilwar' || filterIndiv.village == ''}", ng-click="setSearchVillage('wilwar')")
+              .custom-search__village-button.anar.active(ng-class="{'active':filterIndiv.village == 'anar' || filterIndiv.village == ''}", ng-click="setSearchVillage('anar')")
+          .custom-search__separation-line
+          .custom-search__section
+            .custom-search__type-filter
+              .custom-search__type-button.restaurant.active(ng-click="setSearchType('restaurant')", ng-class="{'active':filterLieu.type == 'restaurant' || filterLieu.type == '' }") Restaurant
+              .custom-search__type-button.monument.active(ng-click="setSearchType('monument')", ng-class="{'active':filterLieu.type == 'monument' || filterLieu.type == '' }") Monument
+              .custom-search__type-button.service_public.active(ng-click="setSearchType('service_public')", ng-class="{'active':filterLieu.type == 'service_public' || filterLieu.type == '' }") Service public
+              .custom-search__type-button.place.active(ng-click="setSearchType('place')", ng-class="{'active':filterLieu.type == 'place' || filterLieu.type == '' }") Place
+              .custom-search__type-button.commerce.active(ng-click="setSearchType('commerce')", ng-class="{'active':filterLieu.type == 'commerce' || filterLieu.type == '' }") Commerce
+              .custom-search__type-button.autre.active(ng-click="setSearchType('autre')", ng-class="{'active':filterLieu.type == 'autre' || filterLieu.type == '' }") Autre
+          .custom-search__separation-line
+          .custom-search__unique-button(ng-click='toggleUniqueLoca()', ng-class="{'active':filterLieu.unique}") Lieux uniques

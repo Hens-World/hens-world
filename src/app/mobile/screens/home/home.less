@@ -1,0 +1,59 @@
+@keyframes mobileCircleLoop {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#home-container {
+  font-size: 12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 12px;
+  overflow-y: auto;
+
+  .main-circle-container {
+    width: 100%;
+    height: 320px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .circles {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 320px;
+      height: 320px;
+
+      circle {
+        transform-origin: 50% 50%;
+        animation: mobileCircleLoop 12s linear infinite;
+      }
+    }
+    .text {
+      width: 180px;
+      font-size: 1.1em;
+    }
+  }
+
+  .button {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,265 @@
+#snow-effect {
+  position: fixed;
+  z-index: 15;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.anar-choose {
+  width: 100%;
+  .fullHeight(0px);
+  font-size: 14em;
+  display: flex;
+  .half-page-bt {
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    background-size: cover;
+    .text {
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      > div {
+        text-align: center;
+      }
+      .title {
+        font-size: 6em;
+        letter-spacing: .7em;
+        margin-right: -.7em;
+        text-transform: uppercase;
+      }
+      .subtitle {
+        text-transform: capitalize;
+        font-size: 4em;
+      }
+    }
+    .color {
+      background: rgba(203, 21, 5, .35);
+      position: absolute;
+      transition: all .35s;
+      width: 100%;
+      height: 100%;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background-image: radial-gradient(45% 150px at 50% 50%, rgba(40, 6, 0, .6) 0%, rgba(40, 6, 0, .40) 60%, rgba(0, 0, 0, 0.0) 100%);
+      }
+    }
+    .blur {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: all .35s;
+      background-size: 100% 100%;
+      box-sizing: border-box;
+    }
+    &.ouest {
+      border-right: 6px solid @black;
+      .blur {
+        background-size: cover;
+        background-image: url('/medias/map/anar/selection/anar_ouest_blur.jpg');
+      }
+      background-image: url('/medias/map/anar/selection/anar_ouest.jpg');
+    }
+    &.est {
+      .blur {
+        background-size: cover;
+        background-image: url('/medias/map/anar/selection/anar_est_blur.jpg');
+      }
+      background-image: url('/medias/map/anar/selection/anar_est.jpg');
+    }
+
+    &:hover {
+      .color {
+        background-color: rgba(255, 61, 14, .2);
+      }
+      .blur {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.village {
+  &__loca {
+    /** JS Set Variables */
+    --offsetLeft: 0;
+    --offsetTop: 0;
+    /**/
+    z-index: @layerMap;
+    position: absolute;
+    transform: translate(calc(1px * var(--offsetLeft)), calc(1px * var(--offsetTop)));
+  }
+  &__wrapper {
+    -webkit-user-select: none;
+    height: inherit;
+    position: relative;
+
+    //FIREWORKS SPECIFIC
+    .fireworks + canvas {
+      position: absolute;
+      z-index: 9;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    .ui-container {
+      opacity: 0;
+      user-select: none;
+      text-align: center;
+      z-index: 60;
+      top: 15px;
+      right: 30px;
+      position: absolute;
+      transition: opacity 0.3s;
+      &.show {
+        opacity: 1;
+      }
+      .barre {
+        width: 35px;
+        height: inherit;
+        position: absolute;
+        z-index: 31;
+        margin-bottom: 10px;
+        margin-left: -25px;
+        .retour {
+          width: 35px;
+          margin-top: 10px;
+          height: 35px;
+          box-sizing: border-box;
+          text-align: left;
+          float: left;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          font-size: 12em;
+          background-image: url('/medias/home/carte-archipel.png');
+          background-color: rgba(0, 0, 0, 0.55);
+          background-size: 100% 100%;
+          &.anar {
+            position: absolute;
+            left: 50%;
+            margin-left: -400px;
+            margin-top: 25px;
+          }
+          .text {
+            width: 120px;
+            height: 20px;
+            pointer-events: none;
+            margin-top: 7.5px;
+            background: rgba(10, 10, 10, 0.5);
+            border-radius: 5px 0 0 5px;
+            line-height: 20px;
+            padding-left: 5px;
+            vertical-align: middle;
+            margin-left: -80px;
+            opacity: 0;
+            transition: all 0.4s;
+          }
+          &:hover {
+            .text {
+              opacity: 1;
+              margin-left: -125px;
+            }
+          }
+        }
+        .guide-barre {
+          width: 35px;
+          height: 35px;
+          display: none;
+          box-sizing: border-box;
+          text-align: center;
+          margin-bottom: 10px;
+          vertical-align: middle;
+          float: left;
+          font-size: 25em;
+          font-family: 'Wire One';
+          border-radius: 5px;
+          opacity: 0.8;
+        }
+      }
+      .mini-map {
+        margin-top: 0;
+        position: relative;
+        background-size: contain;
+        &.disabled {
+          filter: grayscale(.9);
+          opacity: .92;
+          pointer-events: none;
+        }
+        .mini-screen {
+          position: absolute;
+          border: 2px solid @anarLight;
+          background: rgba(255, 255, 255, 0.1);
+          width: 0;
+          height: 0;
+        }
+      }
+      .move-map-container {
+        width: 150px;
+        height: 80px;
+        display: inline-block;
+        position: relative;
+        .move-button {
+          position: absolute;
+          font-size: 12em;
+          color: black;
+          cursor: pointer;
+          width: 36px;
+          height: 36px;
+          margin-left: -18px;
+          margin-top: -18px;
+          border-radius: 4px;
+          background: #333;
+          transition: background 0.1s ease-out;
+          &:hover {
+            background: #ccc;
+            // &.left{
+            //   background-image: url('/medias/map/uiElement/left-hover.png');
+            // }
+            // &.down{
+            //   background-image: url('/medias/map/uiElement/down-hover.png');
+            // }
+            // &.top{
+            //   background-image: url('/medias/map/uiElement/up-hover.png');
+            // }
+            // &.right{
+            //   background-image: url('/medias/map/uiElement/right-hover.png');
+            // }
+          }
+          &.left {
+            top: 50px;
+            left: 35px;
+            background-image: url('/medias/map/ui/left.png');
+          }
+          &.top {
+            top: 30px;
+            left: 75px;
+            background-image: url('/medias/map/ui/up.png');
+          }
+          &.right {
+            top: 50px;
+            left: 115px;
+            background-image: url('/medias/map/ui/right.png');
+          }
+          &.down {
+            top: 70px;
+            left: 75px;
+            background-image: url('/medias/map/ui/down.png');
+          }
+        }
+      }
+    }
+  }
+}

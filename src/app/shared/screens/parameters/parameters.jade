@@ -1,0 +1,71 @@
+.hide-overlay(ng-show="waitingNotification")
+.page-container.no-side
+  .main-column
+    .main-column__content.parameters
+      .parameters__menu
+        a.button.button--meaty.hover.fond-village(ng-if="isAdmin" href="/admin") Accès Admin
+      .parameters__content
+        .crush-run-container.border-village(ng-if="currentEvent.slug == 'coupe-crushrun'")
+          h1.font-village Identifiant Crushrun
+          p
+            i Récupérez ici l'identifiant qui vous permettra d'accéder au jeu Crushrun, disponible au colisée d'Anar, situé dans le quartier Est !
+          field#external-id-field(label="Identifiant extérieur" value="externalId" placeholder="Cliquez en dessous pour générer votre identifiant!" type="text" readonly="true")
+          .button.button--meaty.fond-village.hover(ng-show="externalId == null" ng-click="generateId()") Générer un identifiant
+          .button.button--meaty.fond-village.hover(ng-show="externalId != null" ng-click="copyExternalId()") Copier dans le presse-papier
+
+        h1  Paramètres de votre compte
+        .parameters__section
+          h2.font-village Changer le mot de passe
+          form(ng-submit="changePassword()")
+            field(label="Mot de passe actuel" value="passwordChange.password" type="password")
+            field(label="Nouveau mot de passe" value="passwordChange.newPassword" type="password")
+            field(label="Confirmation" value="passwordChange.newPasswordRepeat" type="password")
+            input.button.fond-village.button--meaty.hover(type="submit" value="Valider")
+
+        .parameters__section.parameters__section--warning
+          h2.font-village Activation des notifications
+          p
+            span Les notifications web s'afficheront sur votre mobile ou votre ordinateur. Par défaut, elles sont désactivées, mais vous pouvez autoriser l'affichage.
+            br
+            span Vous pourrez ensuite sélectionner au cas par cas les notifications qui vous intéressent.
+          .button.button--meaty.fond-village.hover(ng-show="externalId == null" ng-click="onNotificationEnableChange()") Débloquer les notifications
+
+        .parameters__section(ng-class="{'section-disabled': !notificationEnabled}")
+          h2.font-village Notifications Web
+          switch(label="Recevoir une notification lors de la réception d'un MP"
+            value="parameters.PUSH_WHISPERS")
+          switch(label="Recevoir une notification lors d'une réponse à un JDR"
+            value="parameters.PUSH_ROLEPLAY_RESPONSE")
+          switch(label="Recevoir une notification lors d'une réponse à une annonce" disabled="true"
+            value="parameters.PUSH_ANNONCE")
+          switch(label="Recevoir une notification lors de la réception d'un commentaire"
+            value="parameters.PUSH_COMMENTS")
+          switch(label="Recevoir une notification lorsqu'un événement débute"
+            value="parameters.PUSH_EVENT_START")
+        .parameters__section
+          h2.font-village Notifications Mail
+          switch(label="Recevoir un e-mail lors de la réception d'un MP"
+            value="parameters.NOTIFY_WHISPERS")
+          switch(label="Recevoir un e-mail lors d'une réponse à un JDR"
+            value="parameters.NOTIFY_ROLEPLAY_RESPONSE")
+          switch(label="Recevoir un e-mail lors d'une réponse à une annonce"
+            value="parameters.NOTIFY_ANNONCE")
+          switch(label="Recevoir un e-mail lors de la réception d'un commentaire"
+            value="parameters.NOTIFY_COMMNENTS")
+        .parameters__section
+          h2.font-village Autre
+          switch(label="Recevoir la Newsletter de Hens World par mail"
+            value="parameters.WEB_NOTIFY" disabled="true")
+          switch(label="Choisir le thème"
+          value="parameters.LIGHT_THEME" disabled="true")
+        .parameters__section
+          h2.font-village Theme
+          .field.theme__field
+            .label Interface
+            .parameters__themes
+              .parameters__theme-unit.other-user(ng-repeat="theme in themes"
+                  class="{{theme}}"
+                  ng-class="{'selected': selectedTheme === theme, 'enabled': activeThemes[theme]}")
+                .fond-village(ng-click="setSelectedTheme(theme)")
+        .parameters__section
+          .button.button--meaty.fond-village.hover(ng-click="saveParameters()") Sauvegarder

@@ -1,0 +1,50 @@
+.left-column.other-user(class="{{villages[personnage.village]}}")
+    .avatar-container
+        .avatar-circle.fond-village.dark( style="background-image:url({{personnage.avatar}});")
+    a.is-online.fond-village(
+        href="map/{{villages[personnage.village]}}/{{personnage.zone ? personnage.zone : 'village'}}/perso-{{personnage.prenomFormat.toLowerCase().replace(' ', '_')}}"
+        ng-class="{'offline': user.role != 'contributeur' && personnage.zone == null, 'button hover': user.role == 'contributeur' || personnage.zone != null}")
+        span(ng-if="user.role == 'contributeur' || personnage.zone != null") Maison de {{personnage.prenom}}
+        span(ng-if="user.role != 'contributeur' && personnage.zone == null") Ne possède pas de maison
+
+    .power-container()
+        .power-card(ng-click="togglePouvoir()" ng-mouseleave="closePouvoir()")
+            .hover(ng-class="{'active':displayPouvoirDescr}"  class="{{villages[personnage.village]}}")
+                .name(ng-bind-html="pouvoirLabel.nom")
+                .description(ng-bind-html="pouvoirLabel.description")
+                .quote(ng-bind-html="pouvoirLabel.citation")
+
+.profile-main-column.other-user(class="{{villages[personnage.village]}}")
+    profile-tabs(personnage-list="personnageList")
+    .p-perso__char-list(ng-show="isMe || filteredPersonnageList.length > 1")
+        .p-perso__char-select-button.hover.button(
+            ng-repeat="perso in personnageList"
+            ng-class="{'fond-village': personnage.fid === perso.fid, 'p-perso__char-select-button--add': !perso.prenom}"
+            ng-show="perso.prenom || isMe"
+            ng-click="selectPersonnage(perso)"
+        )
+            span(ng-show="perso.prenom") {{perso.prenom}}
+            span(ng-show="!perso.prenom") Continuer
+        a.p-perso__char-select-button.p-perso__char-select-button--add.hover.button(
+            ng-show="isMe && personnageList.length < 3"
+            href="/choix-village/personnage/{{personnageList.length + 1}}") + Ajouter un personnage
+    .profile__title-container()
+        .symbole-village(class="{{villages[personnage.village]}}")
+        .center
+            .title
+                span.span.font-village {{personnage.prenom}}
+            .p-perso__domaine(ng-bind-html="personnage.suffixe")
+            span.p-perso__origine {{personnage.age}} ans, originaire de
+            span.font-village {{villages[personnage.village].capitalizeFirstLetter()}}
+
+        .me.right.edit(ng-show="isMe")
+            .edit-bt.button.fond-village.hover(ng-click="toggleEditFiche()")
+                .text Éditer le personnage
+    .perso__subtitle {{state.label}}
+    profile-perso-content(user="user"
+        personnage="personnage"
+        personnage-index="personnageIndex"
+        is-me="isMe"
+        perso-post="persoPost"
+        edit-custom-power="editCustomPower"
+        personnage-list="personnageList")

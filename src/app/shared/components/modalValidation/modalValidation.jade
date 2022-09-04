@@ -1,0 +1,7 @@
+.modal-validation-container(ng-class="{'show': m.visible}")
+  .modal-validation-bloc
+    h1 {{m.title}}
+    p {{m.text}}
+    .button-container 
+      .button.valid.fond-village.hover(ng-click="validate()") Valider
+      .button.cancel(ng-click="hide()") Annuler

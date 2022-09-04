@@ -1,0 +1,124 @@
+.edit__container.generic-popup(ng-class="{'show':pContentCtrl.showEdit}" class="{{pContentCtrl.user.village}}")
+  .edit__close-around(ng-click="pContentCtrl.toggleEdit()")
+  .edit__content.generic-popup__content.border-village
+    .edit__left-column
+      .circle-avatar.fond-village.dark(class="{{$root.mobileCheck() ? 'medium' : 'large'}}" style="background-image:url({{pContentCtrl.editInfo.avatar}});")
+      .edit__name.font-village(ng-bind-html="pContentCtrl.user.display_name")
+    .edit__main-column
+      .edit__header
+        .edit__title Editer votre profil
+        .edit__cancel
+          .edit-bt.edit-bt--valid.button.fond-village.hover(ng-click="pContentCtrl.toggleEdit()")
+            .text Annuler
+      .avatar-edit.field
+        //- .label.avatar Avatar
+        .label Avatar
+        input.form(type="text" placeholder="http://" ng-model="pContentCtrl.editInfo.avatar")
+      .name-edit.field
+        .label Prénom
+        input.form(type="text" placeholder="Prénom"  ng-model="pContentCtrl.editInfo.prenom")
+      .field
+        .label Pronom
+        choix-multiple(choices="pContentCtrl.choices" on-update="pContentCtrl.onPronomUpdate")
+      .name-edit.field(ng-show="isContrib()")
+        .label Domaine(s)
+        input.form(type="text" placeholder="Vos domaines de prédilections pour la création" ng-model="pContentCtrl.editInfo.domaine")
+      .age-edit.field
+        .label Âge
+        input.form(type="text" placeholder="Âge" ng-model="pContentCtrl.editInfo.age")
+      .website-edit.field
+        .label Site web
+        input.form(type="text" placeholder="http://yoursite.com" ng-model="pContentCtrl.editInfo.website")
+      .website-edit.field
+        .label Facebook
+        input.form(type="text" placeholder="http://facebook.com/example-profile" ng-model="pContentCtrl.editInfo.facebook")
+      .website-edit.field
+        .label Twitter
+        input.form(type="text" placeholder="http://twitter.com/example-profile" ng-model="pContentCtrl.editInfo.twitter")
+      .catchphrase-edit.field
+        .label Passion(s)
+        input.form(type="text" placeholder="Passion(s)" ng-model="pContentCtrl.editInfo.passions")
+      .description-edit.field.super-height
+        .label.totop Description
+        textarea.form-area(rows="5" placeholder="Description " ng-model="pContentCtrl.editInfo.description")
+      span(ng-show="pContentCtrl.user.role == 'contributeur'")
+        .edit__title Créations / Séries à la une
+        .field(ng-repeat="favorite in pContentCtrl.editInfo.favorites")
+          .label {{$index == 0 ? "1er choix": ($index == 1 ? "2ème choix" : "3ème choix")}}
+          .favorite-search
+            span(ng-show="favorite.object.id")
+              .search-object__result
+                img.search-object__miniature(ng-src="{{favorite.object.miniature}}")
+                .search-object__content
+                  .search-object__title {{favorite.object.title}}
+                  .search-object__detail {{favorite.object.detail}}
+                .fa.fa-trash.link-hover(ng-click="pContentCtrl.deleteFavorite(favorite)")
+            span(ng-show="!favorite.object.id")
+              choix-multiple(choices="pContentCtrl.favoriteSearchChoices[$index]" on-update="pContentCtrl.onSearchUpdate" additional-info="favorite")
+              search-object(type="favorite.object_type" ng-show="favorite.object_type != null" found-value="favorite.object")
+      .validate-change.fond-village.button.hover(ng-click="pContentCtrl.validateProfileEdit()") Valider
+        .loading(ng-show="pContentCtrl.editProcess")
+          .ajax-loader()
+
+.profile-bloc.description-container.profile-bloc.other-user(class="{{pContentCtrl.user.village}}")
+  span(ng-show="state.tag == 'resume'")
+    .title(ng-show="!$root.mobileCheck()") Qui suis-je ?
+    .custom-text
+      .field(ng-show="pContentCtrl.user.fiche.prenom.length > 0")
+        span.key.font-village Prénom:
+        span.value.name(ng-bind-html="pContentCtrl.user.fiche.prenom")
+      .field()
+        span.key.font-village Pronom:
+        span.value.name(ng-bind-html="pContentCtrl.choices[pContentCtrl.user.fiche.pronom].label")
+      .field(ng-show="pContentCtrl.user.fiche.age > 0")
+        span.key.font-village Âge:
+        span.value.age-edit(ng-bind-html="pContentCtrl.user.fiche.age")
+      .field(ng-show="pContentCtrl.user.fiche.passions.length > 0")
+        span.key.font-village Passion(s):
+        span.value.passions(ng-bind-html="pContentCtrl.user.fiche.passions")
+      .field(ng-show="pContentCtrl.user.fiche.description.length > 0 && $root.mobileCheck()")
+        span.key.font-village Présentation:
+        span.value.passions(ng-bind-html="pContentCtrl.user.fiche.description")
+    span(ng-show="pContentCtrl.user.role == 'contributeur' && !!pContentCtrl.hasFavorites")
+      .title() Créations / Séries à la une
+      .custom-text.user-favorites
+        a.favorite-creation(ng-repeat="favorite in pContentCtrl.user.fiche.favorites" ng-show="favorite.object.id" href="{{favorite.object_type == 'post' ? '/' + favorite.object.post_type + '/' + favorite.object.post_name : '/profil/' + pContentCtrl.user.ID + '/series/' + favorite.object.id }}")
+          img.favorite-creation__miniature(ng-src="{{favorite.object.miniature}}")
+          .favorite-creation__content
+            .favorite-creation__title() {{favorite.object.title}}
+            .favorite-creation__type {{pContentCtrl.formatType[favorite.object_type]}}
+
+    .title() Contenu que j'aime
+    .post__list.post__list--likes(lazy-loader on-scroll-end="pContentCtrl.nextLikePage")
+      .post__element(ng-repeat="post in pContentCtrl.likedPosts" class="{{post.village.slug}} other-user" )
+        a.post__info(href="{{post.type}}/{{post.slug}}")
+          .post__title(ng-bind-html="post.title")
+          .post__location.font-village {{post.location.name}}
+          .post__date {{post.formDate}}
+        a.post__serie-link(href="/profil/{{pContentCtrl.user.ID}}/series/{{post.serie.id}}" ng-show="post.serie")
+          img(src="/medias/serie_icon.svg")
+        img(ng-src="{{post.miniature}}")
+    .button.button--meaty.fond-village.hover(ng-click="pContentCtrl.toggleLikeList($event)") Charger davantage
+
+  span(ng-show="state.tag == 'creations'")
+    .title(ng-if="pContentCtrl.isContrib()" ng-show="!$root.mobileCheck()") Créations postées
+    .post__list.post__list--profile(ng-if="pContentCtrl.isContrib()" lazy-loader on-scroll-end="pContentCtrl.nextPostPage")
+      .post__element(ng-repeat="post in pContentCtrl.contribPosts" class="{{post.village.slug}} other-user")
+        a.post__info(href="{{post.type}}/{{post.slug}}")
+          .post__title(ng-bind-html="post.title")
+          .post__location.font-village {{post.location.name}}
+          .post__date {{post.formDate}}
+        a.post__serie-link(href="/profil/{{pContentCtrl.user.ID}}/series/{{post.serie.id}}" ng-show="post.serie")
+          img(src="/medias/serie_icon.svg")
+        img(ng-src="{{post.miniature}}")
+  span(ng-show="state.tag == 'series'" ng-if="pContentCtrl.isContrib()")
+    .title(ng-show="!$root.mobileCheck()") Séries de créations
+    .serie-list
+      a.serie-unit(ng-repeat="serie in pContentCtrl.contribSeries" href="/profil/{{pContentCtrl.user.ID}}/series/{{serie.id}}")
+        img.serie-unit__miniature(ng-src="{{serie.miniature}}" alt="miniature")
+        .serie-unit__content
+          .serie-unit__title {{serie.title}}
+          .serie-unit__details
+            span {{serie.posts.length}} créations - {{serie.creationTypes}}
+          .serie-unit__description(ng-bind-html="serie.description")
+

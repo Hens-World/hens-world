@@ -1,0 +1,20 @@
+{"frames": [
+
+{
+	"filename": "Sans titre - 13.png",
+	"frame": {"x":0,"y":0,"w":267,"h":174},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":267,"h":174},
+	"sourceSize": {"w":267,"h":174}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "jardin_equinoxe.png",
+	"format": "RGBA8888",
+	"size": {"w":267,"h":174},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1fba495b57269662819cedc28afb49ef:eddb132da6b105cdbb20571e3a72b943:9871d352b4fc962b8c8f4bdfe250d4d3$"
+}
+}

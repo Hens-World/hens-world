@@ -1,0 +1,28 @@
+.page-container.page-container--always-scrollbar.no-side(lazy-loader on-scroll-end="nextPage" disabled="{{filterIndiv.display_name.length >= 3 || searchingTeam}}")
+  .main-column.population
+    .main-column__content
+      h1.population__title Population
+      .population__row
+        .population__list
+          a.population__element.other-user(class="{{indiv.village}}" href='profil/{{indiv.ID}}', ng-repeat='indiv in currentList' on-last-repeat=)
+            .population__avatar.fond-village.dark(style='background-image:url({{indiv.avatar}});')
+            .population__pseudo(ng-bind-html='indiv.display_name')
+            .population__type {{indiv.role}}
+        .population__search.custom-search
+          .custom-search__separation-line
+          .custom-search__input.custom-search__section
+            input.text-search.ng-pristine.ng-untouched.ng-valid(type='text', ng-model='filterIndiv.display_name' placeholder="Rechercher un pseudo")
+          .custom-search__separation-line
+          .custom-search__village-filter.custom-search__section
+            .l-row--between
+              .custom-search__village-button.sulimo.active(ng-class="{'active':filterIndiv.village == 'sulimo' || filterIndiv.village == ''}", ng-click="setSearchVillage('sulimo')")
+              .custom-search__village-button.ulmo.active(ng-class="{'active':filterIndiv.village == 'ulmo' || filterIndiv.village == ''}", ng-click="setSearchVillage('ulmo')")
+              .custom-search__village-button.wilwar.active(ng-class="{'active':filterIndiv.village == 'wilwar' || filterIndiv.village == ''}", ng-click="setSearchVillage('wilwar')")
+              .custom-search__village-button.anar.active(ng-class="{'active':filterIndiv.village == 'anar' || filterIndiv.village == ''}", ng-click="setSearchVillage('anar')")
+          .custom-search__separation-line
+          .custom-search__section
+            .custom-search__type-filter
+              .custom-search__type-button.membre.active(ng-click="setSearchType('membre')", ng-class="{'active':filterIndiv.role == 'membre' || filterIndiv.role == '' }") Membre
+              .custom-search__type-button.contributeur.active(ng-click="setSearchType('contributeur')", ng-class="{'active':filterIndiv.role == 'contributeur' || filterIndiv.role == '' }") Contributeur
+          .custom-search__separation-line
+          .custom-search__unique-button(ng-click='toggleSearchTeam()', ng-class="{'active': searchingTeam}") L'équipe du site

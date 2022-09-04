@@ -1,0 +1,157 @@
+//
+//      ,...,,          ,,
+//    .d' ""db        `7MM
+//    dM`               MM
+//   mMMmm`7MM  ,p6"bo  MMpMMMb.  .gP"Ya
+//    MM    MM 6M'  OO  MM    MM ,M'   Yb
+//    MM    MM 8M       MM    MM 8M""""""
+//    MM    MM YM.    , MM    MM YM.    ,
+//  .JMML..JMML.YMbmd'.JMML  JMML.`Mbmmd'
+//
+//
+
+
+.perso-fiche-container {
+  position: fixed;
+  z-index: @layerFiche;
+  left: 0;
+  top: @HH;
+  box-sizing: border-box;
+  .fullHeight(0px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(10, 10, 10, 0.8);
+  align-items: stretch;
+  flex-direction: column;
+  overflow-y: auto;
+  .background-close {
+    cursor: pointer;
+    height: 100%;
+  }
+  .perso-wrapper {
+    background: rgba(25, 25, 25, 0.95);
+    border: 2px solid @buttonHoverDark;
+    position: absolute;
+    top: 0;
+    width: 700px;
+    left: 50%;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: -350px;
+    .close {
+      font-size: 2em;
+      position: absolute;
+      left: 50%;
+      top: 15px;
+      margin-left: 310px;
+      cursor: pointer;
+      &:hover {
+        color: @anarNeuter;
+      }
+    }
+    .name {
+      font-size: 4em;
+      padding: 20px;
+      font-family: 'Wire One', Arial;
+    }
+    .part {
+      width: 100%;
+      display: flex;
+      background: @headerDark;
+      align-items: stretch;
+      justify-content: center;
+      text-align: justify;
+      padding: 15px;
+      padding-left: 0;
+      box-sizing: border-box;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .title {
+        width: 15%;
+        font-size: 1.2em;
+        flex: 1 1 auto;
+        display: flex;
+        padding-left: 15px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-right: 1px solid @lowerDark;
+        .va {
+        }
+      }
+      .paragraph {
+        padding-left: 15px;
+        text-indent: 20px;
+        box-sizing: border-box;
+        width: 85%;
+      }
+    }
+
+  }
+}
+
+@media (max-width: @mobileMaxWidth) {
+  body .fiche-perso {
+    .part {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .title {
+        border-right: unset;
+      }
+
+      .paragraph {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.fiche-perso {
+  .part {
+    width: 100%;
+    display: flex;
+    background: @inputDark;
+    align-items: stretch;
+    justify-content: center;
+    text-align: justify;
+    padding: 15px;
+    padding-left: 0;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+    .title {
+      width: 20%;
+      font-size: 1.2em;
+      flex: 0 0 auto;
+      min-width: fit-content;
+      display: flex;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-right: 1px solid @lowerDark;
+      .va {
+      }
+    }
+    .paragraph {
+      padding-left: 15px;
+      text-indent: 20px;
+      box-sizing: border-box;
+      width: 85%;
+    }
+  }
+  .origine {
+    display: inline-block;
+    margin-right: .5em;
+  }
+  .name {
+    font-size: 4em;
+    padding: 20px;
+    font-family: 'Wire One', Arial;
+  }
+}

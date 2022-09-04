@@ -1,0 +1,66 @@
+.map-halloween(ng-class="{'map-halloween--no-information': !hallCtrl.displayInfos}")
+  .map-halloween__popup(ng-show="hallCtrl.startingHunt")
+    .map-halloween__popup-content.border-village
+      p
+        span Ce soir c'est
+        b  Halloween
+        span  dans les villages ! La chasse aux citrouilles n'attend que vous !
+      p
+        span Lorsque vous cliquerez sur «
+        b  Commencer
+        span  », la course démarre! Celui ou celle qui aura trouvé toutes les citrouilles en un minimum de temps aura le droit à une surprise !
+
+      p Les citrouilles sont dispersées aléatoirement chez chacun. Il y en a dans chaque village et contrée.
+      p
+        switch.reversed.no-borders(label="Cochez cette case pour jouer avec le mode \"Informations\". Ce mode vous donnera les informations des autres joueurs en temps réel ainsi que votre chronomètre. Néanmoins, cela peut être stressant."
+          value="hallCtrl.displayInfos")
+      p
+        b Bonne chance et bonne chasse !
+      .button.button--meaty.hover.link.fond-village(ng-click="hallCtrl.startHunt()") Commencer
+  .map-halloween__timer-container.border-village(ng-show="hallCtrl.firstPumpkin && !hallCtrl.scoring")
+    .map-halloween__timer {{hallCtrl.formattedTimer}}
+    .map-halloween__left-counter
+      .map-halloween__village {{hallCtrl.mappedZone}} {{hallCtrl.map.district}}
+      .map-halloween__left
+        img(src="/medias/map/sulimo/village/props/citrouille_1/nuit/citrouille_1.png")
+        .left-count x0{{hallCtrl.leftInVillage}}
+  .map-halloween__notifications-container
+    .map-halloween__notification(ng-repeat="notif in hallCtrl.notifications")
+      p {{notif.text}}
+  .map-halloween__feed
+    .map-halloween__feed-line(ng-repeat="notification in hallCtrl.notificationList" ng-class="{'visible': notification.visible}")
+      span {{notification.msg}}
+  .map-halloween__final-score(ng-show="hallCtrl.scoring" ng-click="hallCtrl.closeScore()")
+    .map-halloween__final-score-content.border-village
+      div(ng-if="hallCtrl.scoring.bestScore.score < hallCtrl.scoring.yourScore.score")
+        h3 Bravo !
+        p
+          span Tu as trouvé toutes les citrouilles cachées dans les villages ! Tu as terminé la chasse en
+          span.font-village  {{hallCtrl.scoring.yourScore.formattedValue}}.
+        p
+          span Le record est actuellement de
+          span.font-village  {{hallCtrl.scoring.bestScore.formattedValue}}
+          span  par
+          span.other-user(class="{{hallCtrl.scoring.bestScore.user.village}}")
+            span.font-village  {{hallCtrl.scoring.bestScore.user.display_name}}
+          span  !
+        p
+          i Si tu ne l'as pas déjà, le rang « Terreur Nocturne » a été ajouté à ton profil !
+      div(ng-if="hallCtrl.scoring.bestScore.score >= hallCtrl.scoring.yourScore.score")
+        h3 Bravo !
+        p
+          b Quelle rapidité !
+          span  Tu as terminé la chasse en
+          span.font-village  {{hallCtrl.scoring.yourScore.formattedValue}} !
+          span  Tu détiens désormais le record: tu as trouvé toutes les citrouilles en un minimum de temps !
+        p
+          span Si personne ne bat ce record d'ici le
+          b  1er Novembre 23h59
+          span , tu seras contacté.e pour obtenir ton prix !
+        p
+          i Si tu ne l'as pas déjà, le rang « Terreur Nocturne » a été ajouté à ton profil !
+.glitch
+  p
+    span ... Midi ...
+    br
+    span ... Manoir ...

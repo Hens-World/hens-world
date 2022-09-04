@@ -1,0 +1,111 @@
+{"frames": [
+
+{
+	"filename": "marche_g100.png",
+	"frame": {"x":2,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marche_g101.png",
+	"frame": {"x":2,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marche_g102.png",
+	"frame": {"x":2,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marche_g103.png",
+	"frame": {"x":2,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marche_g104.png",
+	"frame": {"x":2,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marche_g105.png",
+	"frame": {"x":305,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marche_g106.png",
+	"frame": {"x":305,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marche_g110.png",
+	"frame": {"x":305,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marche_g107.png",
+	"frame": {"x":608,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marche_g108.png",
+	"frame": {"x":608,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marche_g109.png",
+	"frame": {"x":608,"y":2,"w":301,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":184},
+	"sourceSize": {"w":301,"h":184},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "marche_1.png",
+	"format": "RGBA8888",
+	"size": {"w":911,"h":188},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5ca43e4d9937a1472db20207ea5e6b36:15279957b2d9fe3ec662241945874c2b:d46771123962185c4b4d6053f397a369$"
+}
+}

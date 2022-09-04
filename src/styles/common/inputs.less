@@ -1,0 +1,419 @@
+//  `7MMF'                                  mm
+//    MM                                    MM
+//    MM  `7MMpMMMb. `7MMpdMAo.`7MM  `7MM mmMMmm
+//    MM    MM    MM   MM   `Wb  MM    MM   MM
+//    MM    MM    MM   MM    M8  MM    MM   MM
+//    MM    MM    MM   MM   ,AP  MM    MM   MM
+//  .JMML..JMML  JMML. MMbmmd'   `Mbod"YML. `Mbmo
+//                     MM
+//                   .JMML.
+
+input, textarea {
+  box-sizing: border-box;
+  color: #ccc;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #111;
+  border: 1px solid #050505;
+}
+
+switch {
+  &.reversed {
+    .field {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &.no-borders {
+    .field {
+      border: none;
+      flex-wrap: nowrap;
+      .switch__element {
+        margin-left: 0;
+        flex: 0 0 auto;
+        margin-right: 12px;
+      }
+      .label {
+        min-width: 0;
+        max-width: none;
+        height: auto;
+        flex: 1 1 auto;
+      }
+    }
+  }
+}
+
+.field {
+  input[readonly] {
+    opacity: .8;
+    // border: 1px solid #444;
+    cursor: not-allowed;
+  }
+  width: 100%;
+  padding: 6px 0px 2px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-top: 1.5px solid @black;
+  display: flex;
+  position: relative;
+  //overflow: hidden;
+  max-height: 220px;
+  flex-wrap: wrap;
+  transition: max-height 0.35s, margin-top 0.35s, opacity .15s;
+  opacity: 1;
+  &--error {
+    flex-wrap: wrap;
+    .label {
+      flex: 0 1 80px;
+    }
+    .form {
+      border: 1px solid @anarNeuter !important;
+      flex: 1 1 80%;
+    }
+    .form__error-message {
+      flex: 0 1 100%;
+      color: @anarLight;
+    }
+    &:after {
+      content: 'x';
+      color: @anarNeuter;
+      position: absolute;
+      display: block;
+      right: 5px;
+    }
+  }
+  &--switch {
+    display: flex;
+    align-items: center;
+    input[type="checkbox"] {
+      display: none;
+    }
+    .switch {
+      justify-self: flex-end;
+      &--on {
+        .switch__handle {
+          margin-left: 28px;
+        }
+      }
+      &--disabled {
+        pointer-events: none;
+        &.switch__element {
+          background-color: @middleDark !important;
+        }
+        .switch__handle {
+          background-color: @darkGray;
+        }
+      }
+      &__element {
+        margin-left: auto;
+        position: relative;
+        width: 50px;
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 20px;
+        border-radius: 11px;
+        padding: 2.5px;
+        transition: background-color .25s;
+        &:not(.switch--on) {
+          background-color: @black;
+        }
+      }
+      &__handle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: @upLight;
+        transition: margin-left .25s;
+      }
+    }
+  }
+  &.required {
+    .label:before {
+      content: '*';
+      margin-right: 3px;
+      display: inline-block;
+      color: @anarLight;
+    }
+  }
+  &.big {
+    height: 48px;
+    .label {
+      height: 32px;
+      line-height: 32px;
+    }
+  }
+  &.hidden {
+    max-height: 0;
+    margin-top: 6px;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+  }
+  margin-bottom: 6px;
+  .label {
+    font-size: 1.1em;
+    display: flex;
+    flex: 0 1 15%;
+    max-width: 200px;
+    min-width: max-content;
+    height: 20px;
+    padding: 0 5px 0 5px;
+    margin-top: 3px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: left;
+    z-index: @layerFirst;
+  }
+  .fa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form, form-area {
+    &.validated {
+      border: 1px solid @wilwarNeuter;
+    }
+  }
+  .form {
+    flex: 1 1 auto;
+    text-align: left;
+    height: 23px;
+    position: relative;
+    margin: 1px 0;
+    padding: 2px 2px 2px 5px;
+    border: none;
+    .placeholder({ font-style: italic; });
+  }
+  .form-area {
+    flex: 1 1 auto;
+    padding: 2px;
+    height: 5em;
+    color: #ccc;
+    resize: vertical;
+    padding-right: 2px;
+    background: #111;
+    max-width: 100%;
+    margin-top: 1px;
+    box-sizing: border-box;
+    .placeholder({ font-style: italic; });
+    margin-bottom: 1px;
+    &.large {
+      height: 9em;
+    }
+    &:focus {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-right: 3px;
+    }
+  }
+  .field-button {
+    display: block;
+    flex: 0 0 auto;
+    width: 130px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+  .slider {
+    flex: 1 1 auto;
+    position: relative;
+    text-align: left;
+    padding: 3px 5px 10px 2px;
+    height: 32px;
+    color: #ccc;
+    background: #111;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .form-list {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: fit-content;
+    justify-content: space-around;
+    &__element {
+      display: flex;
+      cursor: pointer;
+      font-size: 1.15em;
+      align-items: center;
+      justify-content: center;
+      flex: 1 1 33%;
+      &:not(:first-of-type) {
+        margin-left: 6px;
+      }
+      min-width: fit-content;
+      padding: 5px 9px;
+      &:not(.fond-village) {
+        background-color: @headerDark;
+      }
+    }
+  }
+}
+
+.checkbox {
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  &:hover {
+    background: @buttonDark;
+  }
+
+  &:before {
+    content: '';
+    background-color: @black;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid @black;
+    box-shadow: 0 0 2px @buttonHoverDark;
+    box-sizing: border-box;
+    border-width: 6px;
+    transition: border-width .25s, background-color .3s, box-shadow .2s;
+  }
+  .label {
+    display: inline-block;
+    pointer-events: none;
+    line-height: 18px;
+    vertical-align: top;
+  }
+  &:after {
+    content: '';
+    clear: both;
+  }
+  &.checked:before {
+    border-width: 2px;
+    box-shadow: 0 0 0 @black;
+    background-color: @guestNeuter;
+  }
+}
+
+.anar .checkbox.checked:before {
+  background-color: @anarNeuter;
+}
+
+.wilwar .checkbox.checked:before {
+  background-color: @wilwarNeuter;
+}
+
+.ulmo .checkbox.checked:before {
+  background-color: @ulmoNeuter;
+}
+
+.sulimo .checkbox.checked:before {
+  background-color: @sulimoNeuter;
+}
+
+// ____
+// TEXT ANGULAR
+// ____
+
+body .ta-root .ta-toolbar .btn-group {
+  flex-wrap: wrap;
+
+  button {
+    height: 28px;
+    min-width: 30px;
+    padding: 0 4px;
+    font-size: 1.3em;
+  }
+}
+
+.ta-root {
+  margin-top: 0;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+  * {
+    box-sizing: border-box;
+  }
+  textarea.ta-editor {
+    border: none;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+  ta-scroll {
+    overflow-y: visible;
+  }
+  .ta-bind {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .ta-toolbar {
+    opacity: 0.6;
+    pointer-events: none;
+    &.focussed {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      button {
+        flex: 1 1 auto;
+        width: auto;
+        background-color: @lowerDark;
+        border: 0;
+        margin-right: 1px;
+        height: 20px;
+        padding: 0;
+        margin-bottom: 1px;
+        color: #bbb;
+        font-style: normal;
+        font-family: 'open sans';
+
+        cursor: pointer;
+        &:hover {
+          background-color: @middleDark;
+        }
+        .fa-bold:before {
+          content: 'Important';
+        }
+        .fa-think:before {
+          content: 'Penser';
+        }
+        .fa-whisper:before {
+          content: 'Italique';
+        }
+        .fa-action:before {
+          content: 'Action';
+        }
+        .fa-speech:before {
+          content: 'Parler';
+        }
+        .fa-shout:before {
+          content: 'Gras';
+          font-weight: bold;
+          font-style: normal;
+        }
+        &.active {
+          background: #777;
+          color: #010101;
+        }
+      }
+    }
+  }
+}
+
+.form-choix {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  &__element {
+    display: block;
+    margin: 3px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    flex: 1 1 33%;
+    background-color: #111;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

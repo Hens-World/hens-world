@@ -1,0 +1,44 @@
+.page-container.no-side
+  .main-column
+    .main-column__content.calendrier.other-user(class="{{seasonVillage[selectedDate.season]}}")
+      h1 Calendrier
+      .calendrier__container
+        .calendrier__event(ng-class="{'fond-village' : !!selectedDate.event}")
+          img.event__image(ng-show="!!selectedDate.event" src="medias/events/calendrier/{{selectedDate.event.slug}}.jpg")
+          .event__title(ng-show="!!selectedDate.event") {{selectedDate.event.name}}
+          .event__dates(ng-show="!!selectedDate.event") du {{selectedDate.event.formatStartDate}} au {{selectedDate.event.formatEndDate}}
+          .event__button(ng-show="!!selectedDate.event" ng-click="showMoreEvent = !showMoreEvent")
+            span(ng-show="!showMoreEvent") EN SAVOIR +
+            img(ng-show="showMoreEvent" src="medias/home/arrow.png")
+          .event__nothing-here(ng-show="!selectedDate.event") Il n'y a pas d'évènement ce jour là !
+        .calendrier__event-infos(ng-show="showMoreEvent")
+          .infos__container
+            p(ng-bind-html="selectedDate.event.presentation")
+            br
+            p
+              b Que faire pendant l'évènement ?
+            p(ng-bind-html="selectedDate.event.description")
+            br
+            .infos__where
+              .label Où?
+              span(ng-bind-html="selectedDate.event.lieu_text")
+        .calendrier__content(ng-show="!showMoreEvent")
+          .calendrier__controller
+            .calendrier__saison.font-village {{selectedDate.season | uppercase}}
+            .calendrier__change-month.font-village.hover(ng-click="selectPreviousMonth()") <
+            .calendrier__month {{selectedDate.mois}} {{selectedDate.dateMoment.year()}}
+            .calendrier__change-month.font-village.hover(ng-click="selectNextMonth()") >
+            .calendrier__year
+          .calendrier__header
+            .day__header Lun
+            .day__header Mar
+            .day__header Mer
+            .day__header Jeu
+            .day__header Ven
+            .day__header Sam
+            .day__header Dim
+          .calendrier__days
+            .day(ng-click="selectDate(monthDay)" ng-repeat="monthDay in monthDays"
+              ng-class="{'out-of-month': monthDay.month !== selectedDate.month, 'font-village with-event': !!monthDay.event, 'selected': selectedDate.monthDay === monthDay.monthDay && selectedDate.month=== monthDay.month}")
+              p {{monthDay.monthDay}}
+              .fond-village.day__event-bar(ng-show="monthDay.event" class="{{monthDay.eventPosition}}")

@@ -1,0 +1,68 @@
+{"frames": [
+
+{
+	"filename": "guitar-acoustic0000.png",
+	"frame": {"x":0,"y":0,"w":38,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":65},
+	"sourceSize": {"w":38,"h":65}
+},
+{
+	"filename": "guitar-acoustic0001.png",
+	"frame": {"x":0,"y":65,"w":38,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":65},
+	"sourceSize": {"w":38,"h":65}
+},
+{
+	"filename": "guitar-acoustic0002.png",
+	"frame": {"x":0,"y":130,"w":38,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":65},
+	"sourceSize": {"w":38,"h":65}
+},
+{
+	"filename": "guitar-acoustic0003.png",
+	"frame": {"x":0,"y":195,"w":38,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":65},
+	"sourceSize": {"w":38,"h":65}
+},
+{
+	"filename": "guitar-acoustic0004.png",
+	"frame": {"x":0,"y":260,"w":38,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":65},
+	"sourceSize": {"w":38,"h":65}
+},
+{
+	"filename": "guitar-acoustic0005.png",
+	"frame": {"x":0,"y":325,"w":38,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":65},
+	"sourceSize": {"w":38,"h":65}
+},
+{
+	"filename": "guitar-acoustic0006.png",
+	"frame": {"x":0,"y":390,"w":38,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":65},
+	"sourceSize": {"w":38,"h":65}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "guitar-acoustic_equinoxe.png",
+	"format": "RGBA8888",
+	"size": {"w":38,"h":455},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:885de2ca00645ab96a893e20cf4608aa:004d09fe7599963b6ed351fb26d31036:f095ab979b9cf3a9093b13db0fdd8583$"
+}
+}

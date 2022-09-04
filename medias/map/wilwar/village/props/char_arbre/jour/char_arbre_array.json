@@ -1,0 +1,20 @@
+{"frames": [
+
+{
+	"filename": "arbre.png",
+	"frame": {"x":0,"y":0,"w":328,"h":354},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":328,"h":354},
+	"sourceSize": {"w":328,"h":354}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "char_arbre.png",
+	"format": "RGBA8888",
+	"size": {"w":328,"h":354},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a085ae855bd6f175c78cfb30b50d77f1:08679f1d298c90d34c2e147ed3639100:506458c4b7e79af6f25f55c4863de6c7$"
+}
+}

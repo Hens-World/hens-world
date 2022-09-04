@@ -1,0 +1,111 @@
+{"frames": [
+
+{
+	"filename": "svenn_debout_00.png",
+	"frame": {"x":2,"y":2,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_debout_01.png",
+	"frame": {"x":2,"y":2,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_debout_02.png",
+	"frame": {"x":2,"y":2,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_debout_03.png",
+	"frame": {"x":2,"y":2,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_debout_04.png",
+	"frame": {"x":2,"y":83,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_debout_05.png",
+	"frame": {"x":2,"y":83,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_debout_06.png",
+	"frame": {"x":2,"y":164,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_debout_07.png",
+	"frame": {"x":2,"y":164,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_debout_08.png",
+	"frame": {"x":2,"y":164,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_debout_09.png",
+	"frame": {"x":2,"y":164,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_debout_10.png",
+	"frame": {"x":2,"y":164,"w":30,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":79},
+	"sourceSize": {"w":30,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "svenn_debout.png",
+	"format": "RGBA8888",
+	"size": {"w":34,"h":245},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4f313427a8a7351f9b36098cd9c61802:0007344959cbda40e0e94f5a11bf34ba:b299367f687aa0c5f82ce1ece828187a$"
+}
+}

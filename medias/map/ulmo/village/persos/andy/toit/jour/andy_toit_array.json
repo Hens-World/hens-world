@@ -1,0 +1,165 @@
+{"frames": [
+
+{
+	"filename": "andy_toit00.png",
+	"frame": {"x":2,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit01.png",
+	"frame": {"x":2,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit02.png",
+	"frame": {"x":2,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit03.png",
+	"frame": {"x":2,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit04.png",
+	"frame": {"x":2,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit05.png",
+	"frame": {"x":2,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit06.png",
+	"frame": {"x":2,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit07.png",
+	"frame": {"x":52,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit08.png",
+	"frame": {"x":52,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit09.png",
+	"frame": {"x":52,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit15.png",
+	"frame": {"x":52,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit16.png",
+	"frame": {"x":52,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit10.png",
+	"frame": {"x":102,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit11.png",
+	"frame": {"x":102,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit12.png",
+	"frame": {"x":152,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit13.png",
+	"frame": {"x":152,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "andy_toit14.png",
+	"frame": {"x":202,"y":2,"w":48,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+	"sourceSize": {"w":48,"h":56},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "andy_toit.png",
+	"format": "RGBA8888",
+	"size": {"w":252,"h":60},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6264a5bcb114664a4b8f2532a31d334b:d4f0f737fd1f7077a556ddbc9a976a4b:4d24239e7fb839c9ecd366d04a748455$"
+}
+}

@@ -1,0 +1,16 @@
+  "avail":[
+    {
+      "posSlug":"alicea_allonge",
+      "fromT": 11,
+      "to":15,
+      "x": 1286,
+      "y": 2470,
+      "width":67,
+      "height":44,
+      "center":{
+        "x":55,
+        "y":43
+      }
+    }
+  ]
+}

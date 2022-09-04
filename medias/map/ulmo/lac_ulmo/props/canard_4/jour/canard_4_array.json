@@ -1,0 +1,84 @@
+{"frames": [
+
+{
+	"filename": "canne0000.png",
+	"frame": {"x":1,"y":1,"w":35,"h":27},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":27},
+	"sourceSize": {"w":35,"h":28}
+},
+{
+	"filename": "canne0001.png",
+	"frame": {"x":1,"y":1,"w":35,"h":27},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":27},
+	"sourceSize": {"w":35,"h":28}
+},
+{
+	"filename": "canne0002.png",
+	"frame": {"x":1,"y":1,"w":35,"h":27},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":27},
+	"sourceSize": {"w":35,"h":28}
+},
+{
+	"filename": "canne0003.png",
+	"frame": {"x":38,"y":1,"w":35,"h":27},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":27},
+	"sourceSize": {"w":35,"h":28}
+},
+{
+	"filename": "canne0004.png",
+	"frame": {"x":38,"y":1,"w":35,"h":27},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":27},
+	"sourceSize": {"w":35,"h":28}
+},
+{
+	"filename": "canne0005.png",
+	"frame": {"x":75,"y":1,"w":35,"h":27},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":35,"h":27},
+	"sourceSize": {"w":35,"h":28}
+},
+{
+	"filename": "canne0006.png",
+	"frame": {"x":75,"y":1,"w":35,"h":27},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":35,"h":27},
+	"sourceSize": {"w":35,"h":28}
+},
+{
+	"filename": "canne0007.png",
+	"frame": {"x":38,"y":1,"w":35,"h":27},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":27},
+	"sourceSize": {"w":35,"h":28}
+},
+{
+	"filename": "canne0008.png",
+	"frame": {"x":38,"y":1,"w":35,"h":27},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":27},
+	"sourceSize": {"w":35,"h":28}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "canard_4.png",
+	"format": "RGBA8888",
+	"size": {"w":111,"h":29},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8c2278408406c3e86708997d8c0a3809:9801e08dc70be04040bdf130d3c86562:96470992461732b3a5feaf8d0bdf0fdb$"
+}
+}

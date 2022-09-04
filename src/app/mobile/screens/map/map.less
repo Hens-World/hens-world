@@ -1,0 +1,127 @@
+.map {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    .fullHeight(0px);
+    justify-content: center;
+    overflow-x: hidden;
+
+    //&:before {
+    //  content: '';
+    //  pointer-events: none;
+    //  position: absolute;
+    //  display: block;
+    //  height: 100%;
+    //  width: 25%;
+    //  z-index: 10;
+    //  background-image: linear-gradient(to right, rgba(10, 10, 10, .9), rgba(0, 0, 0, 0));
+    //}
+    //
+    //&:after {
+    //  content: '';
+    //  pointer-events: none;
+    //  position: absolute;
+    //  display: block;
+    //  height: 100%;
+    //  width: 25%;
+    //  right: 0;
+    //  z-index: 10;
+    //  background-image: linear-gradient(to left, rgba(10, 10, 10, .9), rgba(0, 0, 0, 0));
+    //}
+
+  }
+  &__buttons-container {
+    --interactiveOffset: 0px;
+    display: flex;
+    flex: 0 0 300px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+    position: relative;
+    transform: translateX(var(--interactiveOffset));
+  }
+
+  &__infos {
+    flex: 0 0 auto;
+  }
+
+  &__zone {
+    font-family: "Wire One";
+    font-style: italic;
+    font-size: 2.5em;
+    line-height: 1;
+    font-weight: 100;
+  }
+
+  &__name {
+    font-family: "Wire One";
+    font-size: 5em;
+    font-weight: 700;
+    text-transform: capitalize;
+    white-space: nowrap;
+  }
+
+}
+
+.map-button {
+  position: absolute;
+  --factor: .75;
+  left: calc(50% + var(--order) * 204px);
+  transform: translateX(-50%);
+  opacity: var(--factor);
+  pointer-events: none;
+  transition: left .3s ease-out, opacity .3s;
+
+  &.no-transition {
+    transition: none!important;
+    .map-button__circle {
+      transition: none!important;;
+    }
+  }
+
+  &__geoloc {
+    width: 88px;
+    height: 106px;
+    margin-bottom: -20px;
+    z-index: 5;
+    position: relative;
+  }
+
+  &--selected {
+    --factor: 1;
+    pointer-events: auto;
+  }
+
+  &--hidden {
+    opacity: 0;
+  }
+
+
+  &__circle {
+    border: 7px solid white;
+    border-radius: 50%;
+    width: calc(210px * var(--factor));
+    height: calc(210px * var(--factor));
+    transition: width .3s, height .3s;
+
+
+  }
+  &__image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+  }
+}

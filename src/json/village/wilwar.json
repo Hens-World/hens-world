@@ -1,0 +1,370 @@
+{
+  "label": "wilwar",
+  "sliceSize": 132,
+  "width": 7841,
+  "height": 6076,
+  "speed": 15,
+  "init": {
+    "x": 342,
+    "y": 1892
+  },
+  "miniMap": {
+    "height": 194,
+    "width": 250
+  },
+  "locations": [
+    {
+      "label": "Autour de Wilwar",
+      "slug": "wilwar-general",
+      "pos": {
+        "x": 7230,
+        "y": 1940
+      },
+      "width": 200,
+      "height": 140
+    },
+    {
+      "label": "Le Coquelicot - Café",
+      "slug": "coquelicot-wilwar",
+      "pos": {
+        "x": 1850,
+        "y": 5170
+      },
+      "width": 240,
+      "height": 240
+    },
+    {
+      "label": "L'arche renversée - Restaurant",
+      "slug": "arche_renversee",
+      "pos": {
+        "x": 1310,
+        "y": 3240
+      },
+      "width": 190,
+      "height": 210
+    },
+    {
+      "label": "Le plateau - Domaine des cheftains",
+      "slug": "domaine_wilwar",
+      "pos": {
+        "x": 690,
+        "y": 2020
+      },
+      "width": 280,
+      "height": 240
+    },
+    {
+      "label": "Grand fleuriste",
+      "slug": "g_fleuriste-wilwar",
+      "pos": {
+        "x": 4650,
+        "y": 3020
+      },
+      "width": 190,
+      "height": 210
+    },
+    {
+      "label": "Thêatre de Rue",
+      "slug": "theatre-wilwar",
+      "pos": {
+        "x": 3300,
+        "y": 5050
+      },
+      "width": 320,
+      "height": 290
+    },
+    {
+      "label": "Place de Silla Verse",
+      "slug": "place_silla",
+      "pos": {
+        "x": 640,
+        "y": 3540
+      },
+      "width": 280,
+      "height": 210
+    },
+    {
+      "label": "Fab lab",
+      "slug": "fablab",
+      "pos": {
+        "x": 4505,
+        "y": 4620
+      },
+      "width": 160,
+      "height": 200
+    },
+    {
+      "label": "Superette",
+      "slug": "superette",
+      "pos": {
+        "x": 2230,
+        "y": 3795
+      },
+      "width": 370,
+      "height": 260
+    },
+    {
+      "label": "Glacier",
+      "slug": "glacier",
+      "pos": {
+        "x": 3840,
+        "y": 3119
+      },
+      "width": 170,
+      "height": 200
+    },
+    {
+      "label": "Friperies",
+      "slug": "friperies",
+      "pos": {
+        "x": 3760,
+        "y": 2850
+      },
+      "width": 270,
+      "height": 170
+    },
+    {
+      "label": "Lycée Osan Tiano",
+      "slug": "lycee_osantiano-wilwar",
+      "pos": {
+        "x": 990,
+        "y": 4930
+      },
+      "width": 170,
+      "height": 190
+    },
+    {
+      "label": "Musée",
+      "slug": "musee-wilwar",
+      "pos": {
+        "x": 4960,
+        "y": 3600
+      },
+      "width": 210,
+      "height": 200
+    },
+    {
+      "label": "Lavoir",
+      "slug": "lavoir",
+      "pos": {
+        "x": 3195,
+        "y": 3609
+      },
+      "width": 260,
+      "height": 230
+    },
+    {
+      "label": "Agence Immobilière",
+      "slug": "agence_immobiliere-wilwar",
+      "pos": {
+        "x": 3115,
+        "y": 4300
+      },
+      "width": 230,
+      "height": 170
+    },
+    {
+      "label": "Ferme",
+      "slug": "ferme",
+      "pos": {
+        "x": 6040,
+        "y": 3880
+      },
+      "width": 350,
+      "height": 210
+    },
+    {
+      "label": "Couturier",
+      "slug": "couturier",
+      "pos": {
+        "x": 4360,
+        "y": 2540
+      },
+      "width": 250,
+      "height": 160
+    },
+    {
+      "label": "Marché",
+      "slug": "marche_wilwar",
+      "pos": {
+        "x": 2210,
+        "y": 4500
+      },
+      "width": 400,
+      "height": 300
+    },
+    {
+      "label": "Boutique d'épices",
+      "slug": "epices-wilwar",
+      "pos": {
+        "x": 5455,
+        "y": 5490
+      },
+      "width": 170,
+      "height": 170
+    },
+    {
+      "label": "Petit fleuriste",
+      "slug": "petit_fleuriste",
+      "pos": {
+        "x": 5120,
+        "y": 3240
+      },
+      "width": 170,
+      "height": 185
+    },
+    {
+      "label": "Graines d'or - Restaurant",
+      "slug": "graine_dor-wilwar",
+      "pos": {
+        "x": 5520,
+        "y": 1800
+      },
+      "width": 250,
+      "height": 220
+    },
+    {
+      "label": "Boulangerie",
+      "slug": "boulangerie",
+      "pos": {
+        "x": 3055,
+        "y": 3045
+      },
+      "width": 210,
+      "height": 180
+    },
+    {
+      "label": "Antiquaire",
+      "slug": "antiquaire",
+      "pos": {
+        "x": 6710,
+        "y": 2020
+      },
+      "width": 240,
+      "height": 210
+    },
+    {
+      "label": "Mare éducative",
+      "slug": "mare_educative-wilwar",
+      "pos": {
+        "x": 4100,
+        "y": 1710
+      },
+      "width": 210,
+      "height": 200
+    },
+    {
+      "label": "Maison du garde Forestier",
+      "slug": "garde_forestier",
+      "pos": {
+        "x": 1725,
+        "y": 550
+      },
+      "width": 200,
+      "height": 300
+    },
+    {
+      "label": "Place deux trèfles",
+      "slug": "deux_trefles-wilwar",
+      "pos": {
+        "x": 6865,
+        "y": 1680
+      },
+      "width": 200,
+      "height": 200
+    },
+    {
+      "label": "Place Perger",
+      "slug": "placer_perger-wilwar",
+      "pos": {
+        "x": 1890,
+        "y": 2100
+      },
+      "width": 350,
+      "height": 350
+    },
+    {
+      "label": "Jardins suspendus",
+      "slug": "jardin_suspendu",
+      "pos": {
+        "x": 1900,
+        "y": 2950
+      },
+      "width": 350,
+      "height": 300
+    },
+    {
+      "label": "Moulin à vent",
+      "slug": "moulin-wilwar",
+      "pos": {
+        "x": 7480,
+        "y": 2790
+      },
+      "width": 210,
+      "height": 270
+    },
+    {
+      "label": "Forêt",
+      "slug": "foret-wilwar",
+      "pos": {
+        "x": 1000,
+        "y": 500
+      },
+      "width": 400,
+      "height": 300
+    },
+    {
+      "label": "Gare de Wilwar",
+      "slug": "gare_wilwar",
+      "pos": {
+        "x": 7360,
+        "y": 590
+      },
+      "width": 350,
+      "height": 280
+    },
+    {
+      "label": "Parc pour enfants",
+      "slug": "parc_enfant",
+      "pos": {
+        "x": 2500,
+        "y": 1690
+      },
+      "width": 300,
+      "height": 300
+    },
+    {
+      "label": "Serre",
+      "slug": "serre",
+      "pos": {
+        "x": 3500,
+        "y": 1260
+      },
+      "width": 160,
+      "height": 200
+    },
+    {
+      "label": "Temple du printemps",
+      "slug": "temple_printemps",
+      "pos": {
+        "x": 3990,
+        "y": 600
+      },
+      "width": 250,
+      "height": 220,
+      "eventDates": [["21-03", "22-03"]],
+      "interior": true,
+      "interiorDates": [["21-03", "22-03"]]
+    },
+    {
+      "label": "Laboratoire",
+      "slug": "laboratoire",
+      "pos": {
+        "x": 3290,
+        "y": 2270
+      },
+      "width": 200,
+      "height": 350
+    }
+  ]
+}

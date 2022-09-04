@@ -1,0 +1,18 @@
+.overlay-messages__container(overlay-messages='')
+nav#navBar.hidden.fond-village(ng-show='globCtrl.currentUser.ID > 0', nav-bar='', user='globCtrl.currentUser')
+.alert-manager(alert-manager='')
+.player-mini(player-mini='', ng-show='globCtrl.currentUser.ID > 0')
+  .minip-content-container(class="{{globCtrl.isPlaying ? 'play' : 'pause'}}")
+    play-control(mode='big')
+    .infos
+      .artist(ng-bind-html='globCtrl.songInfo.artist')
+      .title(ng-bind-html='globCtrl.songInfo.formatTitle')
+.forgot-password-container(ng-class="{'active': globCtrl.showForgotPassword}")
+  .wrapper-closer(ng-click='globCtrl.toggleForgotPassword(false)')
+  .form-container
+    .title Récupérez votre mot de passe !
+    form(ng-submit='globCtrl.sendForgotPassword()')
+      field(type='email', value='globCtrl.forgotPassword.email', field='email', label='Adresse e-mail', placeholder='email@example.com', required='true')
+      button.button.button--meaty.fond-village.hover(type='submit') Envoyer
+.hens-tchat-container(hens-tchat='', ng-show='globCtrl.currentUser.ID > 0', info='info')
+.modal-container(modal-validation='')

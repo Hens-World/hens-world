@@ -1,0 +1,45 @@
+    {
+      "pseudo": "Oka",
+      "slug": "oka",
+      "owner": "oka",
+      "status": "contributeur",
+      "house": {
+        "x": 1313,
+        "y": 548,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 994,
+        "h": 994,
+        "c": 550
+      },
+      "avail": [
+        {
+          "posSlug": "vole",
+          "fromT": 18,
+          "to": 22,
+          "x": 134,
+          "y": 196,
+          "width": 71,
+          "height": 98,
+          "center": {
+            "x": 7,
+            "y": 95
+          }
+        },
+        {
+          "posSlug": "dort",
+          "fromT": 14,
+          "to": 16,
+          "x": 1770,
+          "y": 1198,
+          "width": 50,
+          "height": 51,
+          "center": {
+            "x": 26,
+            "y": 49
+          }
+        }
+      ]
+    },

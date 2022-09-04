@@ -1,0 +1,47 @@
+search-series-post(ng-show="ctrl.showSearchPosts")
+.create-serie
+  .create-serie__title.fond-village Nouvelle Série de créations
+  .create-serie__form
+    field(label="Titre" type="text" value="ctrl.serie.title")
+    .field
+      .label() Miniature
+      input.form.upload(placeholder="(optionnel) coller ici le lien de votre miniature" ng-model="ctrl.serie.miniature")
+      media-select-button(type="image" field="ctrl.serie.miniature")
+    .editor(text-angular ng-model="ctrl.serie.description" ta-toolbar="[['h1', 'h2', 'h3', 'p', 'bold', 'italics', 'underline', 'strikeThrough', 'ul', 'ol', 'redo', 'undo', 'clear'],['justifyLeft', 'justifyCenter', 'justifyRight', 'html', 'insertImage','insertLink', 'nextPage']]")
+
+    .create-serie__separation
+    .create-serie__field Organiser les créations
+    .create-serie__posts-options
+      .create-serie__post-option.create-serie__toggle-chapters.toggle-button(ng-class="{'toggle-button--active': ctrl.serie.ordered}" ng-click="ctrl.toggleSerieOrdered()")
+        .toggle-button__checkbox
+        .toggle-button__content
+          .toggle-button__title Chapitrer les créations
+          .toggle-button__note(ng-show="!ctrl.serie.ordered") (par défaut, l'organisaation sera chronologique)
+      .create-serie__post-option.button.button--meaty.hover.fond-village(ng-click="ctrl.toggleSearchPosts()") + Ajouter des créations
+    .create-serie__posts(style="--children: {{ctrl.serie.posts.length}}")
+      .create-serie__no-posts(ng-show="!ctrl.serie.posts || ctrl.serie.posts.length == 0")
+        span Il n'y a aucune création sélectionnée pour le moment !
+        br
+        span Cliquez sur " AJouter une création "
+      .create-serie__post.serie-post(ng-repeat="post in ctrl.serie.posts" ng-class="{'dragged': post.dragged}" style="--order:{{post.computedOrder}}")
+        .serie-post__drag(ng-show="ctrl.serie.ordered" ng-mousedown="ctrl.startDragging($event, post)")
+          .line
+          .line
+          .line
+        .serie-post__order(ng-show="ctrl.serie.ordered") {{post.computedOrder + 1}}
+        .serie-post__content()
+          .serie-post__title {{post.title}}
+          .serie-post__location.other-user(class="{{post.village.slug}}")
+            span.font-village {{post.location.name}}
+          .serie-post__date {{post.formatDate}}
+        img.serie-post__miniature(ng-src="{{post.miniature}}")
+        .serie-post__delete.other-user.anar(ng-click="ctrl.deletePost(post)")
+          .fa.fa-trash.link-hover
+    .common-info()
+      .status( ng-click="ctrl.switchStatus()")
+        div
+          span( ng-class="{'active fond-village':ctrl.serie.status == 'publish'}") Publié
+          span( ng-class="{'active fond-village':ctrl.serie.status == 'draft'}") Brouillon
+      .button.button--meaty.fond-village.hover(ng-click="ctrl.sendSerie()")
+        span(ng-show="ctrl.serie.status == 'draft'") Valider
+        span(ng-show="ctrl.serie.status == 'publish'") Publier

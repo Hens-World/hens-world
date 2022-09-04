@@ -1,0 +1,21 @@
+.tchat-launch-container
+  .close(ng-click='hideArtiList()')  
+  .content-tchat-launch
+    .village-bar
+      a.sulimo-link(title='Accéder à la taverne de Sulimo', href='map/sulimo/taverne-sulimo')
+      a.ulmo-link(title="Accéder au bar d'Ulmo", href='map/ulmo/eau_peine_bar-ulmo')  
+      a.wilwar-link(title='Accéder au café de Wilwar', href='map/wilwar/coquelicot-wilwar')
+      a.anar-link(title='Accéder au troquet D\'Anar', href='map/anar/pote_au_feu') 
+    .banner-container
+      .barman(class='{{village}}')
+      .text {{content.welcome[village]}}
+      .background
+    .places-container
+      .salle-bt.domaine-bt(class='{{village}}')
+        .cover
+        .title En salle
+        .text {{content.rooms.salle}}
+      .terrasse-bt.domaine-bt(ng-click='openTchat()', class='{{village}}')
+        .cover
+        .title En terrasse
+        .text {{content.rooms.terrasse}}

@@ -1,0 +1,138 @@
+{"frames": [
+
+{
+	"filename": "baignade_10_00.png",
+	"frame": {"x":2,"y":2,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_01.png",
+	"frame": {"x":2,"y":2,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_02.png",
+	"frame": {"x":2,"y":2,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_03.png",
+	"frame": {"x":2,"y":2,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_04.png",
+	"frame": {"x":2,"y":2,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_05.png",
+	"frame": {"x":2,"y":76,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_06.png",
+	"frame": {"x":2,"y":76,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_12.png",
+	"frame": {"x":2,"y":76,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_13.png",
+	"frame": {"x":2,"y":76,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_07.png",
+	"frame": {"x":2,"y":150,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_08.png",
+	"frame": {"x":2,"y":150,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_09.png",
+	"frame": {"x":2,"y":150,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_10.png",
+	"frame": {"x":2,"y":150,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "baignade_10_11.png",
+	"frame": {"x":2,"y":150,"w":89,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+	"sourceSize": {"w":89,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "baignade_10.png",
+	"format": "RGBA8888",
+	"size": {"w":93,"h":224},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a06cea88da005745c69424c9ae30c787:f709d4e714a4fe3468ff302d02b2a5a2:7738c4f4c2483851311c18d68924247c$"
+}
+}

@@ -1,0 +1,55 @@
+.select-members-container{
+  position: relative;
+  .search-list{
+    width: 90%;
+    position: absolute;
+    top:35px;
+    margin-left: 5%;
+    z-index: 1000;
+    background:@headerDark;
+    .user{
+      background:@playerDark;
+      margin-bottom: 2px;
+      padding:1px;
+      font-size: 1.1em;
+      transition:background 0.25s;
+      color:@guestNeuter;
+      &.anar{color:@anarNeuter;}
+      &.wilwar{color:@wilwarNeuter;}
+      &.sulimo{color:@sulimoNeuter;}
+      &.ulmo{color:@ulmoNeuter;}
+      &:hover{
+        cursor: pointer;
+        background:@buttonHoverDark;
+      }
+    }
+  }
+  .invite-list{
+    text-align: left;
+    margin-top:5px;
+    .invitee{
+      padding: 1px;
+      font-size: 1.1em;
+      padding-left: 20px;
+      padding-right: 12px;
+      width: auto;
+      position: relative;
+      display: inline-block;
+      margin-left: 10px;margin-right: 10px;
+      margin-bottom: 10px;
+      .remove{
+        font-size: 1.5em;
+        left: 5px;
+        line-height: 1em;
+        cursor: pointer;
+        position: absolute;
+        transform:rotate(45deg);
+        margin-right:5px;
+      }
+      div{
+        display: inline-block;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,45 @@
+    {
+      "pseudo": "Evelyne",
+      "slug": "evelyne",
+      "owner": "kammy",
+      "status": "contributeur",
+      "house": {
+        "x": 641,
+        "y": 1243,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 500,
+        "h": 1000,
+        "c": 240
+      },
+      "avail": [
+        {
+          "posSlug": "regarde",
+          "fromT": 10,
+          "to": 16,
+          "x": 853,
+          "y": 1710,
+          "width": 24,
+          "height": 62,
+          "center": {
+            "x": 1,
+            "y": 3
+          }
+        },
+        {
+          "posSlug": "espionne",
+          "fromT": 23,
+          "to": 0,
+          "x": 1893,
+          "y": 2304,
+          "width": 24,
+          "height": 21,
+          "center": {
+            "x": 3,
+            "y": 18
+          }
+        }
+      ]
+    },

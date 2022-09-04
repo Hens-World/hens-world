@@ -1,0 +1,24 @@
+.title
+.title-container
+  post-like(post-id="post.ID" likes="post.likes")
+  .title(ng-bind-html="post.title")
+.info-container.other-user(class="{{post.village.slug}}")
+  .image-container
+    img.image#imgGame(src="{{post.images[0]}}")
+  .informations
+    .info-unit.genre
+      .label Genre : 
+      .value.font-village(ng-bind-html="post.genre")
+    .info-unit.players
+      .label Nb joueurs:
+      .value.font-village(ng-bind-html="post.joueurs")
+    .info-unit.support
+      .label Support :
+      .value.font-village(ng-bind-html="post.support")
+    .info-unit.authors
+      .label Créateurs :
+      .value.font-village
+        a.author-link(ng-repeat="author in subAuthors" href="profil/{{author.role}}/{{author.ID}}")
+    a.download.fond-village.button.hover(target="_blank" href="{{post.lien}}") Téléchargement
+.free-space
+  .free-description-container(ng-bind-html="post.content")

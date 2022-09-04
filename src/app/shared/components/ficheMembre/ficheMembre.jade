@@ -1,0 +1,73 @@
+.fiche-container(ng-class="{'show':showFiche}")
+  .preview-fiche(ng-show="showEditFiche" ng-click="togglePreview()") Prévisualiser la fiche
+  .return-to-edit(ng-show="showDisplayFiche && isMe" ng-click="togglePreview()") Retourner à l'édition
+  .post-it(ng-click="closePostit()" ng-class="{'show':showEditFiche}")
+    | Qu'est-ce qu'une fiche de personnage? Hens est un monde à part, imaginaire. Ainsi vous avez la possibilité de rédiger une fiche de personnage comme dans un jeu de rôle. Créer votre personnage comme ci celui ci était un habitant à part entière de l'archipel.
+  .scroll-column
+    .edit-fiche(ng-class="{'show':showEditFiche}")
+      .title Edition du personnage
+      .edit-perso-container
+        .edit-field
+          .label.prenom Prénom
+          input.form(type="text" placeholder="Peut être tout à fait différent de votre nom de compte." ng-model="personnage.prenom")
+        .edit-field
+          .label.nom Nom
+          input.form(type="text" placeholder="Peut être non renseigné" ng-model="personnage.nom")
+        .edit-field
+          .label.nom Blason
+          input.form(type="text" placeholder="La manière dont les légendes vous présenteraient" ng-model="personnage.suffixe")
+        .edit-field
+          .label.age Âge
+          input.form(type="text" placeholder="Chiffres uniquement" ng-model="personnage.age")
+        .edit-field
+          .label.village Village 
+          input.form(type="text" placeholder="Le village que vous avez sélectionné pour votre compte." ng-model="personnage.village")
+        .edit-field
+          .label.prenom Histoire
+          textarea.form-area.large(type="text" placeholder="L'histoire de votre personnage. Dramatique, comique ou simple, votre personnage possède forcément un passé qui le définit." ng-model="personnage.histoire")
+        .edit-field
+          .label.prenom Caractère
+          textarea.form-area(type="text" placeholder="Comment votre personnage interagit avec son entourage, sa manière d'être..." ng-model="personnage.caractere")
+        .edit-field
+          .label.prenom Particularité
+          textarea.form-area(type="text" placeholder="Vos particularités physiques, et comportementales remarquables ( cicatrices, attirail particulier, etc...)" ng-model="personnage.particularite")
+        .edit-field
+          .label.prenom Pouvoir
+          textarea.form-area(type="text" placeholder="Description de votre pouvoir. Vous pouvez reprendre celui qui vous a été distribué lors du questionnaire ou en écrire un nouveau imaginé par vos soins." ng-model="personnage.pouvoir")
+        .valider(ng-click="validateChar()") Valider
+        .loading(ng-show="editProcess")
+          .ajax-loader()
+    .display-fiche(ng-class="{'show':showDisplayFiche}")
+      .title Fiche de personnage de {{user.username}}
+      .content-fiche
+        .fiche-field
+          span.label() Prénom:
+          span.value(ng-bind-html="personnage.prenom")
+        .fiche-field
+          span.label() Nom:
+          span.value(ng-bind-html="personnage.nom")
+        .fiche-field
+          span.label() Blason:
+          span.value(ng-bind-html="personnage.suffixe")
+        .fiche-field
+          span.label() Âge:
+          span.value(ng-bind-html="personnage.age")
+        .fiche-field
+          span.label() Village:
+          span.value(ng-bind-html="personnage.village")
+        .line
+        .fiche-field
+          span.label() Histoire:
+          span.value(ng-bind-html="personnage.histoire")
+        .line
+        .fiche-field
+          span.label() Caractère:
+          span.value(ng-bind-html="personnage.caractere")
+        .fiche-field
+          span.label() Particularités:
+          span.value(ng-bind-html="personnage.particularite")
+        .line
+        .fiche-field
+          span.label() Pouvoir:
+          span.value(ng-bind-html="personnage.pouvoir")
+  .close-around(ng-click="close()")

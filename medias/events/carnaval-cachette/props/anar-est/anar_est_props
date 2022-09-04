@@ -1,0 +1,30 @@
+{
+      name: 'Pot de fleur',
+      filename: '1.png',
+      width: 37,
+      height: 47
+    },
+{
+      name: 'Lampadaire',
+      filename: '2.png',
+      width: 19,
+      height: 103
+    },
+{
+      name: 'Table',
+      filename: '3.png',
+      width: 80,
+      height: 66
+    },
+{
+      name: 'Banc',
+      filename: '4.png',
+      width: 50,
+      height: 47
+    },
+{
+      name: 'Dino à écailles discret',
+      filename: '5.png',
+      width: 94,
+      height: 118
+    }

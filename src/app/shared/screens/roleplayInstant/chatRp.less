@@ -1,0 +1,1398 @@
+//
+//                ,,           ,,                   ,,
+//    .g8"""bgd `7MM          *MM                 `7MM
+//  .dP'     `M   MM           MM                   MM
+//  dM'       `   MM  ,pW"Wq.  MM,dMMb.   ,6"Yb.    MM
+//  MM            MM 6W'   `Wb MM    `Mb 8)   MM    MM
+//  MM.    `7MMF' MM 8M     M8 MM     M8  ,pm9MM    MM
+//  `Mb.     MM   MM YA.   ,A9 MM.   ,M9 8M   MM    MM
+//    `"bmmmdPY .JMML.`Ybmd9'  P^YbmdP'  `Moo9^Yo..JMML.
+//
+//
+.chat-rp-home-container {
+  input {
+    background: #222;
+  }
+  .middle-content {
+    width: @contentWidth;
+    @media screen and (max-width: 1280px) {
+      width: @contentMediumWidth;
+    }
+    background: @contentDark;
+    position: relative;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    .fullHeight(0px);
+  }
+  .side-chat {
+    padding: 5px;
+    box-sizing: border-box;
+    top: 85px;
+    z-index: @layerOverlay;
+    background: @contentDark;
+    .mute-bt {
+      font-size: 0.95em;
+      width: 100%;
+      color: #aaa;
+      &:hover {
+        color: white;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      text-align: right;
+    }
+    .list {
+      width: auto;
+      overflow-y: auto;
+
+      background: @headerDark;
+      text-align: justify;
+      height: ~"calc( 100vh - 80px - 200px)";
+      border: 1px solid @black;
+      max-height: 800px;
+      .item {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        padding: 2px 10px 2px 10px;
+        background-color: @contentDark;
+        margin-bottom: 1px;
+        &.system {
+          font-style: italic;
+        }
+        span {
+          display: inline;
+          margin-left: 3px;
+          text-align: left;
+          &.time {
+            color: #666;
+            font-style: italic;
+          }
+          &.user {
+            margin-right: 3px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .message-input {
+      display: flex;
+      text-align: center;
+      align-items: stretch;
+      .input {
+        border: 0;
+        margin: 0;
+        background-color: @black;
+        border-radius: 0 0 0 5px;
+        padding: 5px;
+        width: 70%;
+        border: 1px solid @black;
+        display: inline-flex;
+        box-sizing: border-box;
+      }
+      .send {
+        display: inline-flex;
+        padding: 4px;
+        box-sizing: border-box;
+        width: 30%;
+        box-shadow: none;
+        border-radius: 0 0 5px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+//
+//
+//  `7MMF'  `7MMF'
+//    MM      MM
+//    MM      MM  ,pW"Wq.`7MMpMMMb.pMMMb.  .gP"Ya
+//    MMmmmmmmMM 6W'   `Wb MM    MM    MM ,M'   Yb
+//    MM      MM 8M     M8 MM    MM    MM 8M""""""
+//    MM      MM YA.   ,A9 MM    MM    MM YM.    ,
+//  .JMML.  .JMML.`Ybmd9'.JMML  JMML  JMML.`Mbmmd'
+//
+//
+.crp-home-container {
+  .fullHeight(0px);
+  h1 {
+    font-family: 'Wire One';
+    font-size: 3.5em;
+    height: 8vh;
+    text-align: center;
+    line-height: 8vh;
+
+  }
+  .charte-bt {
+    height: 4vh;
+    line-height: 4vh;
+    font-size: 1.25em;
+    box-sizing: border-box;
+  }
+  .charte-container {
+    position: fixed;
+    width: 100%;
+    .fullHeight(0px);
+    top: 80px;
+    z-index: 1000;
+    left: 0;
+    .fond {
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      background: rgba(10, 10, 10, 0.85);
+    }
+    .wrapper {
+      width: 700px;
+      position: relative;
+      position: absolute;
+      left: 50%;
+      margin-left: -350px;
+      background: @contentDark;
+      .fullHeight(50px);
+      margin-top: 25px;
+      overflow-y: auto;
+      padding: 20px;
+      box-sizing: border-box;
+      .close {
+        position: fixed;
+        left: 50%;
+        margin-left: 300px;
+        text-shadow: 0 0 5px black;
+        cursor: pointer;
+        top: 100px;
+        font-weight: bold;
+        font-size: 2em;
+      }
+      .paragraph {
+        text-align: justify;
+        h2 {
+          font-family: 'Wire One';
+          font-size: 3em;
+          margin-bottom: 15px;
+          margin-top: 20px;
+          text-align: center;
+        }
+        h3 {
+          margin-top: 10px;
+          // margin-left: 25px;
+          margin-bottom: 10px;
+
+        }
+        p {
+          text-indent: 15px;
+
+          color: #ccc;
+          margin-bottom: 5px;
+        }
+        ul {
+          background: @headerDark;
+          padding: 10px;
+          margin-top: 10px;
+          box-sizing: border-box;
+          padding-left: 25px;
+          li {
+            text-indent: 10px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  .announcement-container {
+    width: 340px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    .fullHeight(70px);
+    background: @headerDark;
+    color: #ccc;
+    h2 {
+      margin-top: 5vh;
+      margin-bottom: 10px;
+    }
+    .bloc {
+      color: #aaa;
+      font-style: italic;
+    }
+  }
+  .crp-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;;
+
+  }
+  .presentation {
+    width: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .rp-video {
+    background: black;
+    height: 36vh;
+    .iframe {
+      width: 100%;
+      height: inherit;
+    }
+  }
+  .village-list {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: auto;
+    box-sizing: border-box;
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+    .village {
+      margin: 2px;
+      height: 50px;
+      min-height: 9vh;
+      cursor: pointer;
+      &:before {
+        content: 'aller à';
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        display: inline-block;
+        width: 100px;
+        left: 50%;
+        margin-left: -50px;
+        top: 15%;
+        font-size: 0.9em;
+        font-style: italic;
+      }
+      &:hover {
+        background: #222;
+      }
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      color: white;
+      background: #444;
+      .background {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .1);
+        position: absolute;
+        background: url('/medias/tchat/locations/wilwar/champs_off.jpg') no-repeat center;
+        background-size: cover;
+        transition: opacity 1.2s;
+      }
+      &:hover {
+        .background {
+          transition: 0.5s;
+          opacity: 0;
+        }
+        .label {
+          background: rgba(10, 10, 10, 0.05);
+        }
+      }
+      .label {
+        position: absolute;
+        width: 100%;
+        height: 9vh;
+        padding-top: 3px;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 9vh;
+        font-size: 1.8em;
+        text-transform: capitalize;
+        text-shadow: 0 0 10px rgba(10, 10, 10, 0.6);
+        background: rgba(10, 10, 10, 0.15);
+        transition: background 0.5s;
+      }
+      &.anar .label {background: rgba(224, 63, 19, 0.4)}
+      &.wilwar .label {background: rgba(150, 166, 15, 0.4)}
+      &.sulimo .label {background: rgba(208, 124, 12, 0.4)}
+      &.ulmo .label {background: rgba(17, 170, 168, 0.4)}
+
+      &.anar:hover .label {background: rgba(224, 63, 19, 0.1)}
+      &.wilwar:hover .label {background: rgba(150, 166, 15, 0.1)}
+      &.sulimo:hover .label {background: rgba(208, 124, 12, 0.1)}
+      &.ulmo:hover .label {background: rgba(17, 170, 168, 0.1)}
+    }
+  }
+}
+
+//
+//                ,,    ,,    ,,
+//  `7MMF'   `7MF'db  `7MM  `7MM
+//    `MA     ,V        MM    MM
+//     VM:   ,V `7MM    MM    MM   ,6"Yb.  .P"Ybmmm .gP"Ya
+//      MM.  M'   MM    MM    MM  8)   MM :MI  I8  ,M'   Yb
+//      `MM A'    MM    MM    MM   ,pm9MM  WmmmP"  8M""""""
+//       :MM;     MM    MM    MM  8M   MM 8M       YM.    ,
+//        VF    .JMML..JMML..JMML.`Moo9^Yo.YMMMMMb  `Mbmmd'
+//                                        6'     dP
+//                                        Ybmmmd'
+.crp-village-container {
+  width: 100%;
+  h1 {
+    padding: 15px 0 15px 0;
+    font-family: 'Wire One', Arial;
+    font-size: 4.5em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .banner {
+    line-height: 4em;
+    .back-bt {
+      cursor: pointer;
+      background: url('/medias/home/arrow-up.png');
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 40px;
+      margin-top: 20px;
+      margin-left: 15px;
+      height: 40px;
+
+      transition: margin 0.15s;
+      transform: rotate(270deg);
+      background-size: 40px;
+      &:hover {
+        margin-left: 12px;
+        transition: margin 0.35s;
+      }
+
+    }
+  }
+  h2 {
+    font-family: 'Wire One', Arial;
+    font-size: 3em;
+    margin-left: 10px;
+    text-align: center;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid @black;
+  }
+  .container {
+    display: flex;
+    position: relative;
+    align-items: stretch;
+    margin-bottom: 35px;
+
+  }
+  .open-rooms {
+    width: 310px;
+    margin-left: 10px;
+    background: @headerDark;
+    .room {
+      padding: 10px;
+      text-align: left;
+      margin: 1px;
+      line-height: 1.5em;
+      padding-top: 10px;
+      position: relative;
+      background-color: @contentDark;
+      box-sizing: border-box;
+      .space-left {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        font-size: 1.2em;
+      }
+      .room-status {
+        margin-top: 5px;
+        color: @anarNeuter;
+        &.open {
+          color: @wilwarNeuter;
+        }
+        margin-right: 15px;
+      }
+      .creationtime {
+        font-style: italic;
+        color: #ccc;
+      }
+      .owner {
+        color: @guestNeuter;
+        &.anar {color: @anarNeuter;}
+        &.wilwar {color: @wilwarNeuter;}
+        &.ulmo {color: @ulmoNeuter;}
+        &.sulimo {color: @sulimoNeuter;}
+      }
+      .name {
+        margin-bottom: 3px;
+      }
+      .location {
+        position: absolute;
+        right: 10px;
+        margin: 0;
+        padding: 0;
+        color: #ddd;
+        top: 10px;
+      }
+      &:hover {
+        cursor: pointer;
+        background: @playerDark;
+      }
+    }
+  }
+  .room-creation {
+    width: 460px;
+    background-color: @headerDark;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-bottom: 15px;
+    margin-left: 8px;
+    position: relative;
+    h3 {
+      text-align: center;
+    }
+    .member-listing {
+      width: 65%;
+      display: inline-block;
+
+    }
+    .line {
+      width: 30%;
+      display: inline-block;
+      margin-left: 5%;
+      padding-top: 30px;
+      vertical-align: top;
+      .switch {
+        display: inline-block;
+        width: 80%;
+        margin: 0 2.5% 0 0;
+        height: 10px;
+        position: relative;
+        top: -14px;
+        cursor: pointer;
+        background: @black;
+        .handle {
+          width: 85%;
+          height: 22px;
+          text-align: center;
+          position: relative;
+          transition: background 0.4s, margin 0.35s;
+          margin-top: -5px;
+          &:not(.open) {
+            background: @middleDark;
+          }
+          &:before {
+            content: 'Privée';
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 22px;
+            width: 100%;
+            vertical-align: middle;
+          }
+          &.open {
+            margin-left: 15%;
+            &:before {
+              width: 100%;
+              line-height: 22px;
+              vertical-align: middle;
+              position: absolute;
+              content: 'Publique';
+            }
+          }
+        }
+      }
+      .search {
+        position: relative;
+        width: 70%;
+        display: inline-block;
+      }
+      input {
+        color: white;
+      }
+      .search-list {
+        width: 90%;
+        position: absolute;
+        top: 35px;
+        margin-left: 5%;
+        z-index: 1000;
+        background: @headerDark;
+        .user {
+          background: @playerDark;
+          margin-bottom: 2px;
+          padding: 1px;
+          font-size: 1.1em;
+          transition: background 0.25s;
+          color: @guestNeuter;
+          &.anar {color: @anarNeuter;}
+          &.wilwar {color: @wilwarNeuter;}
+          &.sulimo {color: @sulimoNeuter;}
+          &.ulmo {color: @ulmoNeuter;}
+          &:hover {
+            cursor: pointer;
+            background: @buttonHoverDark;
+          }
+        }
+      }
+      .invite-list {
+        text-align: left;
+        margin-top: 5px;
+        .invitee {
+          &.anar {background: @anarNeuter;}
+          &.wilwar {background: @wilwarNeuter;}
+          &.sulimo {background: @sulimoNeuter;}
+          &.ulmo {background: @ulmoNeuter;}
+          padding: 1px;
+          font-size: 1.1em;
+          padding-left: 20px;
+          padding-right: 12px;
+          width: auto;
+          position: relative;
+          display: inline-block;
+          margin-left: 10px;margin-right: 10px;
+          margin-bottom: 10px;
+          .remove {
+            font-size: 1.5em;
+            left: 5px;
+            line-height: 1em;
+            cursor: pointer;
+            position: absolute;
+            transform: rotate(45deg);
+            margin-right: 5px;
+          }
+          div {
+            display: inline-block;
+          }
+
+        }
+      }
+    }
+  }
+  input[type="range"] {
+    position: relative;
+    margin-left: 1em;
+  }
+  input[type="range"]:after,
+  input[type="range"]:before {
+    position: absolute;
+    top: 1em;
+    color: #aaa;
+  }
+  input[type="range"]:before {
+    left: 0em;
+    content: attr(min);
+  }
+  input[type="range"]:after {
+    right: 0em;
+    content: attr(max);
+  }
+
+  //location list display
+  .rp-location {
+    width: 48%;
+    margin: 1% 1% 1% 1%;
+    height: 80px;
+    display: inline-block;
+    background-color: #111;
+    cursor: pointer;
+    position: relative;
+    box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, .3);
+    text-shadow: 0 0 3px #111;
+    background: url('/medias/tchat/locations/wilwar/champs_on.jpg') no-repeat center;
+    background-size: cover;
+    .cover {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .1);
+
+      position: absolute;
+      background: url('/medias/tchat/locations/wilwar/champs_off.jpg') no-repeat center;
+      background-size: cover;
+      transition: opacity 0.7s;
+    }
+    &:not(.selected) {
+      .name {
+        opacity: 0.7;
+      }
+      .cover {
+        opacity: 1;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
+      }
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
+
+    }
+    .name {
+      position: absolute;
+      line-height: 80px;
+      width: 100%;
+      text-align: center;
+      font-size: 1.2em;
+    }
+    &:hover {
+      .cover {
+        opacity: 0;
+      }
+    }
+  }
+  .submit-room {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.3em;
+    margin-top: 10px;
+  }
+}
+
+//
+//
+//  `7MM"""Mq.
+//    MM   `MM.
+//    MM   ,M9  ,pW"Wq.   ,pW"Wq.`7MMpMMMb.pMMMb.
+//    MMmmdM9  6W'   `Wb 6W'   `Wb MM    MM    MM
+//    MM  YM.  8M     M8 8M     M8 MM    MM    MM
+//    MM   `Mb.YA.   ,A9 YA.   ,A9 MM    MM    MM
+//  .JMML. .JMM.`Ybmd9'   `Ybmd9'.JMML  JMML  JMML.
+
+
+.crp-modal {
+  position: fixed;
+  z-index: 300;
+  left: 0;
+  top: 80px;
+  box-sizing: border-box;
+  padding-left: ~"calc( 50% - 400px)";
+  padding-right: ~"calc( 50% - 400px)";
+  .fullHeight(0px);
+  background: rgba(10, 10, 10, 0.7);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modal {
+    width: 500px;
+    background: @contentDark;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .title {
+    font-size: 1.3em;
+    margin-bottom: 35px;
+  }
+  .subtitle {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #ccc;
+  }
+  .button {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+
+    &.desactivate {
+      background: @lowerDark;
+      pointer-events: none;
+      color: #ccc;
+    }
+  }
+}
+
+.side-actions {
+  .sideWidth(15px);
+  height: 110px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 50%;
+  background: none !important;
+  top: auto !important;
+  margin-left: 410px;
+  bottom: 5px;
+  text-align: center;
+  .button {
+    padding: 7px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 1.1em;
+    cursor: pointer;
+    .time-left {
+      position: absolute;
+      font-size: 0.85em;
+      display: block;
+      opacity: 0.8;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      font-style: italic;
+      top: 19px;
+    }
+    &.desactivate {
+      pointer-events: none;
+      background: #555;
+      opacity: .9;
+    }
+    &.full {
+      margin-bottom: 3px;
+      height: 40px;
+      line-height: 30px;
+      width: 100%;
+      &.start {
+
+      }
+    }
+    &.semi {
+      &:first-child {
+        margin-right: 1px;
+        margin-left: 0px;
+      }
+      margin-right: 0px;
+      margin-left: 1px;
+      flex: 1 1 auto;
+    }
+  }
+  .semi-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: stretch;
+    flex-direction: row;
+  }
+  .time-container {
+    width: inherit;
+    box-sizing: border-box;
+    padding: 3px;
+    font-size: 1.2em;
+    margin-top: 5px;
+    background: @contentDark;
+    .label {
+      opacity: .7;
+    }
+  }
+}
+
+.crp-chat-room-container {
+  background-color: @contentDark;
+  position: relative;
+  transition: padding-top 0.15s;
+  -webkit-user-select: auto; /* Chrome/Safari */
+  -moz-user-select: auto; /* Firefox */
+  -ms-user-select: auto; /* IE10+ */
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: auto;
+  user-select: auto;
+  .ta-bind {
+    background: @lowerDark;
+
+  }
+  .banner {
+    z-index: 1;
+    left: 0;
+    overflow: hidden;
+    height: 300px;
+    line-height: 300px;
+    font-size: 3em;
+    transition: all 0.15s;
+    opacity: 1;
+    h1 {
+      background-color: rgba(0, 0, 0, 0.3);
+      text-shadow: 0 0 20px black;
+      font-family: 'Wire One';
+    }
+  }
+  .msg-list {
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: border-box;
+    background: @headerDark;
+    .msg-container {
+      display: flex;
+      margin-bottom: 15px;
+      .profil {
+        width: 120px;
+        display: flex-box;
+        padding-top: 10px;
+        background: @playerDark;
+        .avatar {
+          width: 90px;
+          display: inline-block;
+          height: 90px;
+          background-color: black;
+          border-radius: 50%;
+        }
+        .link {
+          cursor: pointer;
+          width: 70%;
+          text-align: center;
+          display: inline-block;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          line-height: 1.1em;
+        }
+        .name {
+          font-size: 2.5em;
+          width: 100px;
+          display: inline-block;
+          font-family: 'Wire One', Arial;
+        }
+      }
+      .triangle {
+        position: absolute;
+        margin-left: 110px;
+        margin-top: 20px;
+        display: block;
+      }
+      .msg {
+        margin-left: 15px;
+        background: @lowerDark;
+        display: flex-box;
+        box-sizing: border-box;
+        padding: 10px;
+        padding-left: 10px;
+        padding-top: 20px;
+        text-align: justify;
+        width: 645px;
+        p {
+          margin-left: 20px;
+        }
+        .speech-wrapper {
+        }
+      }
+      .event-container {
+        width: 100%;
+        background: @lowerDark;
+        box-sizing: border-box;
+        padding: 15px;
+        font-size: 1.2em;
+        font-style: italic;
+        border: 1px solid @buttonDark;
+        // margin: 5px;
+      }
+      .event-wrapper {
+        width: 100%;
+      }
+      .other-user.sulimo .event-container {
+        border: 1px solid @sulimoDark;
+        color: @sulimoLight;
+      }
+      .other-user.anar .event-container {
+        border: 1px solid @anarDark;
+        color: @anarLight;
+      }
+      .other-user.wilwar .event-container {
+        border: 1px solid @wilwarDark;
+        color: @wilwarLight;
+      }
+      .other-user.ulmo .event-container {
+        border: 1px solid @ulmoDark;
+        color: @ulmoLight;
+      }
+    }
+  }
+  .input-container {
+    .prevent-writing {
+      width: 620px;
+      max-width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      background: rgba(15, 15, 15, 0.7);
+      display: flex;
+      align-items: center;
+      height: 100%;
+      z-index: 100;
+      justify-content: center;
+    }
+    position: relative;
+    textarea {
+      color: #aaa;
+      background: @black;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    display: flex;
+    flex-direction: row;
+    // align-items: stretch;
+    margin-bottom: 35px;
+    .user-list {
+      min-width: 140px;
+      background: @headerDark;
+      box-sizing: border-box;
+      border: 1px solid @playerDark;
+      h5 {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        border-bottom: 1px solid @black;
+        width: 80%;
+        vertical-align: middle;
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+      }
+      .user-bloc {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        background: @contentDark;
+        margin-bottom: 1px;
+        &.his-turn {
+          background: @playerDark;
+          display: flex;
+          align-items: center;
+        }
+        &.his-turn:before {
+          content: '';
+          width: 0;
+          display: block;
+          height: 0;
+          margin-right: 3px;
+          border-style: solid;
+          margin-top: 2px;
+          border-width: 7px 0 7px 14px;
+          border-color: transparent transparent transparent #ffffff;
+        }
+      }
+    }
+
+    .options-container {
+      min-width: 40px;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      .button {
+        font-size: 1.3em;
+        width: 40px;
+        &.send {
+          flex: 1 1 auto;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          text-align: center;
+          div {
+            flex: 1 1 auto;
+
+          }
+        }
+        &.skip {
+          padding-bottom: 10px;
+          padding-top: 10px;
+          &:not(:hover) {
+            background: @buttonHoverDark;
+          }
+        }
+        &.skip:before {
+          content: '>>';
+        }
+      }
+    }
+  }
+}
+
+.think-wrapper {
+  padding: 20px;
+  background-color: #444;
+  display: block;
+  margin: 5px;
+  margin-left: -15px;
+
+  font-style: italic;
+}
+
+.speech-wrapper {
+  padding: 20px;
+  margin: 5px;
+  background-color: #222;
+  display: block;
+}
+
+.rp-screen-container {
+  b {
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+  i {
+    opacity: .8;
+    font-size: 0.8em;
+  }
+}
+
+html {
+  overflow: hidden;
+}
+
+//                                 ,,          ,,
+//        db                     `7MM          db
+//       ;MM:                      MM
+//      ,V^MM.    `7Mb,od8 ,p6"bo  MMpMMMb.  `7MM `7M'   `MF'.gP"Ya  ,pP"Ybd
+//     ,M  `MM      MM' "'6M'  OO  MM    MM    MM   VA   ,V ,M'   Yb 8I   `"
+//     AbmmmqMA     MM    8M       MM    MM    MM    VA ,V  8M"""""" `YMMMa.
+//    A'     VML    MM    YM.    , MM    MM    MM     VVV   YM.    , L.   I8
+//  .AMA.   .AMMA..JMML.   YMbmd'.JMML  JMML..JMML.    W     `Mbmmd' M9mmmP'
+
+.archive-element {
+  text-align: center;
+  .go-to-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    .loc {
+      font-size: 1.2em;
+    }
+  }
+  .close-background {
+    cursor: pointer;
+    width: 100%;
+    .fullHeight(0px);
+    background: rgba(10, 10, 10, 0.85);
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 0;
+  }
+
+
+}
+
+
+.crp-archives-container {
+  font-size: 12em;
+  width: 100%;
+  h1 {
+    font-family: 'Wire One';
+    font-size: 4em;
+    padding: 15px;
+  }
+  .fullHeight(0px);
+  justify-content: center;
+  overflow-y: auto;
+  .middle-content {
+    // height: auto;
+    .list {
+      display: block;
+      width: 750px;
+      height: auto;
+      margin-left: 25px;
+      background: @black;
+      .elt {
+        background-color: @black;
+        margin-bottom: 1px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-repeat: repeat-y, no-repeat;
+        background-size: 100% 100%, 55%;
+        background-origin: 0 0, 100% 100%;
+        background-position: 0 0, right 90%;
+        box-sizing: border-box;
+        padding-left: 15px;
+        text-align: left;
+        .title {
+          transition: color 0.15s;
+
+          font-size: 1.2em;
+          cursor: pointer;
+        }
+
+        // village image on the right
+        &.sulimo {
+          .title:hover {color: @sulimoLight;}
+          &.village {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/sulimo/village_on.jpg');
+          }
+          &.falaise {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/sulimo/falaise_on.jpg');
+          }
+          &.forêt {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/sulimo/forêt_on.jpg');
+          }
+          &.marais {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/sulimo/marais_on.jpg');
+          }
+        }
+        &.ulmo {
+          .title:hover {color: @ulmoLight;}
+          &.village {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/ulmo/village_on.jpg');
+          }
+          &.mer {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/ulmo/mer_on.jpg');
+          }
+          &.lac {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/ulmo/lac_on.jpg');
+          }
+          &.prairie {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/ulmo/prairie_on.jpg');
+          }
+        }
+        &.wilwar {
+          .title:hover {color: @wilwarLight;}
+          &.village {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/wilwar/village_on.jpg');
+          }
+          &.champs {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/wilwar/champs_on.jpg');
+          }
+          &.bois {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/wilwar/bois_on.jpg');
+          }
+          &.rivière {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/wilwar/rivière_on.jpg');
+          }
+        }
+        &.anar {
+          .title:hover {color: @anarLight;}
+
+          &.village {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/anar/village_on.jpg');
+          }
+          &.montagne {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/anar/montagne_on.jpg');
+          }
+          &.collines {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/anar/collines_on.jpg');
+          }
+          &.souterrains {
+            background-image: url('/medias/tchat/ui/archive_fade_background.png'), url('/medias/tchat/locations/anar/souterrains_on.jpg');
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+@media (max-width: @mobileMaxWidth) {
+  body .crp {
+    &__message-element {
+      flex-direction: column;
+      align-items: stretch;
+      position: relative;
+      .triangle {
+        transform: scale(0.6) rotate(90deg);
+        margin-left: 30px;
+        top: 22px;
+      }
+
+      .link {
+        margin: 0;
+        line-height: 1.4em;
+      }
+    }
+
+    &__message-profil {
+      width: auto;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      text-align: left;
+
+      .crp-info {
+        margin-left: 12px;
+        padding-bottom: 6px;
+      }
+    }
+    &__message-avatar {
+      width: 65px;
+      height: 65px;
+    }
+
+    &__message-container {
+      width: 100%;
+      margin-left: 0;
+      padding: 10px;
+
+      p {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.crp {
+  &__banner {
+    z-index: 1;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.15s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    min-height: 200px;
+    position: relative;
+    &-description {
+      flex: 0 0 auto;
+      padding: 10px;
+      font-size: 12px;
+      width: 50%;
+      margin-left: 50%;
+      margin-bottom: 3%;
+      transform: translateX(-50%);
+      font-weight: 400;
+      margin-top: -50px;
+      position: relative;
+      z-index: 10;
+      background-color: rgba(10, 10, 10, .7);
+      font-style: italic;
+    }
+    h1 {
+      font-size: 7em;
+      flex: 1 1 auto;
+      display: flex;
+      width: 100%;
+      margin-bottom: 70px;
+      align-items: center;
+      position: relative;
+      z-index: 5;
+      margin-top: 30px;
+      justify-content: center;
+      text-shadow: 0 0 20px black;
+      font-family: 'Wire One';
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+    &--instant {
+      h1 {
+        padding: 40px;
+        position: relative;
+      }
+    }
+  }
+  &__main-info {
+
+  }
+  &__message-list {
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: border-box;
+    background: @headerDark;
+  }
+  &__message-element {
+    display: flex;
+    margin-bottom: 15px;
+
+    .triangle {
+      position: absolute;
+      margin-left: 110px;
+      margin-top: 20px;
+      display: block;
+    }
+    .link {
+      cursor: pointer;
+      width: 70%;
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      line-height: 1.1em;
+    }
+    .other-user.sulimo .crp__event {
+      border: 1px solid @sulimoDark;
+      color: @sulimoLight;
+    }
+    .other-user.anar .crp__event {
+      border: 1px solid @anarDark;
+      color: @anarLight;
+    }
+    .other-user.wilwar .crp__event {
+      border: 1px solid @wilwarDark;
+      color: @wilwarLight;
+    }
+    .other-user.ulmo .crp__event {
+      border: 1px solid @ulmoDark;
+      color: @ulmoLight;
+    }
+  }
+  &__message-profil {
+    width: 120px;
+    text-align: center;
+    padding-top: 10px;
+    flex: 0 0 auto;
+    background: @playerDark;
+  }
+  &__message-avatar {
+    width: 90px;
+    display: inline-block;
+    height: 90px;
+    background-size: cover;
+    background-color: black;
+    border-radius: 50%;
+    background-position: center 0;
+  }
+
+  &__message-name {
+    font-size: 2.5em;
+    width: 100px;
+    display: inline-block;
+    font-family: 'Wire One', Arial;
+  }
+  &__message {
+    &-container {
+      margin-left: 15px;
+      background: @lowerDark;
+      flex: 1 1 auto;
+      box-sizing: border-box;
+      padding: 20px 10px 10px 20px;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      p {
+        margin-left: 20px;
+      }
+    }
+    &-block {
+      flex: 1 1 auto;
+    }
+    &-footer {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    &-date {
+      font-style: italic;
+      color: #aaa;
+      margin-right: 10px;
+    }
+    &-action {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__event {
+    width: 100%;
+    background: @lowerDark;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1.2em;
+    font-style: italic;
+    border: 1px solid @buttonDark;
+    &-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+.anar .crp__message-element.edited {border: 1px solid @anarNeuter;}
+
+.sulimo .crp__message-element.edited {border: 1px solid @sulimoNeuter;}
+
+.ulmo .crp__message-element.edited {border: 1px solid @ulmoNeuter;}
+
+.wilwar .crp__message-element.edited {border: 1px solid @wilwarNeuter;}

@@ -1,0 +1,141 @@
+.profile-container {
+  .reset-compte {
+    .sideWidth(32px);
+    padding: 5px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 50%;
+    margin-left: 410px;
+    top: 84px;
+    font-size: 1.2em;
+  }
+  .side-post-container {
+    border: 1px solid @buttonDark;
+    position: fixed;
+    .sideWidth(35px);
+    left: 50%;
+    top: @HH + 40px;
+    .fullHeight(80px);
+    background: @headerDark;
+    margin-left: 410px;
+    .title {
+      width: 100%;
+      font-size: 3em;
+      height: 40px;
+      line-height: 40px;
+      background: @contentDark;
+      font-family: 'Wire One', sans-serif;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+  .middle-container {
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      .description-container {
+        flex: 1 1 auto;
+        background: @headerDark;
+        margin: 10px;
+        overflow: hidden;
+        position: relative;
+        .scroller {
+          overflow-y: scroll;
+          position: absolute;
+          padding: 10px;
+          width: 100%;
+          right: -20px;
+          height: 90%;
+          box-sizing: border-box;
+          padding-bottom: 35px;
+        }
+      }
+    }
+    .profile-main-column {
+      .title-container {
+        text-align: center;
+
+        .domaine {
+          font-size: 1.2em;
+          font-style: italic;
+          color: #ccc;
+          margin-bottom: 5px;
+          margin-left: 10px;
+        }
+        .origine {
+          margin-right: .4em;
+        }
+      }
+
+    }
+  }
+}
+
+.post {
+  &__list {
+    background-color: @black;
+    padding-top: 1px;
+    text-align: left;
+    width: 99%;
+    margin: auto;
+
+    &--profile {
+      flex: 1 1 auto;
+      .fullHeight(280px);
+      overflow-y: auto;
+    }
+
+    &--likes {
+      max-height: 300px;
+      overflow-y: auto;
+      margin: 0;
+    }
+
+  }
+  &__element {
+    padding: 5px 9px;
+    margin: 2px 20px;
+    border-bottom: 1px solid @buttonDark;
+    display: flex;
+    align-items: center;
+    > img {
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+      object-position: 50% 20%;
+      //background-color: #000;
+    }
+  }
+  &__info {
+    flex: 1 1 auto;
+  }
+  &__title {
+    font-weight: bold;
+  }
+  &__location {
+    font-style: italic;
+  }
+  &__date {
+    color: @upLight;
+  }
+
+  &__serie-link {
+    width: 36px;
+    height: 36px;
+    align-self: center;
+    border-radius: 50%;
+    background-color: @buttonHoverDark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    &:hover {
+      background-color: @middleDark;
+    }
+  }
+}

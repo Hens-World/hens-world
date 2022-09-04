@@ -1,0 +1,21 @@
+.page-container.whisper.no-side
+  .main-column
+    .main-column__content
+      .whisper__menu
+        a.whisper__menu-element.fond-village.hover.whisper__menu-element--big(href="/messagerie/new") Nouveau Message
+        a.whisper__menu-element(href="/messagerie")
+          span Boîte de réception
+          span(ng-show="$root.newMessages.length > 0")  ({{$root.newMessages.length}})
+        a.whisper__menu-element.whisper__menu-element--disabled Brouillon
+      .whisper__main
+        .subject__header.fond-village
+          .whisper-message__title {{subject.title}}
+        .whisper-message.other-user(ng-repeat="message in subject.messages" class="{{message.author.meta.village}}")
+          .whisper-message__author
+            a.circle-avatar.small(href="profil/{{message.author.ID}}" style="background-image:url({{message.author.meta.avatar}})")
+            a.whisper-message__name.font-village(href="profil/{{message.author.ID}}") {{message.author.display_name}}
+            .whisper-message__date {{message.formatDate}}
+          .whisper-message__content(ng-bind-html="message.message")
+
+        .editor(text-angular ng-model="newMessage" ta-toolbar="[['h1', 'h2', 'h3', 'p', 'bold', 'italics', 'underline', 'strikeThrough', 'ul', 'ol', 'redo', 'undo', 'clear'],['justifyLeft', 'justifyCenter', 'justifyRight', 'html', 'insertImage','insertLink']]")
+        .validate.fond-village.hover(ng-click="sendMessage()") Envoyer

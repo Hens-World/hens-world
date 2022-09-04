@@ -1,0 +1,29 @@
+.wrapper-closer(ng-click="closeContrib()")
+
+.contributor-mail.border-village
+  .close(ng-click="closeContrib()") x
+  .send
+    .title Devenir contributeur·ice
+    .layout-line
+      .description-container
+        .description-contrib(ng-bind-html="content.contribDescr")
+        .charte-button.button.fond-village.hover.button--meaty(ng-click="toggleCharte()") En savoir plus
+      form(ng-submit="sendMail(mail)")
+        //.field
+        //  .label Pseudo
+        //  input.form(type="text" ng-model="mail.name" placeholder="{{content.namePh}}" required)
+        //.field
+        //  .label E-mail
+        //  input.form(type="text" ng-model="mail.fromEmail" placeholder="{{content.emailPh}}" required)
+        .field
+          .label Domaines
+          input.form(type="text" ng-model="mail.domains" placeholder="{{content.domainsPh}}" required)
+        .field
+          .label Message
+          textarea.form-area.large( ng-model="mail.mailBody"  placeholder="{{content.bodyPh}}" required)
+        input.button.fond-village.hover.button--meaty(type="submit" value="Envoyer")
+
+.charte-layout(ng-click="toggleCharte()" ng-class="{'active':showCharte}")
+  .charte-container
+    .title Charte d'utilisation
+    .charte-content(ng-bind-html="content.charte")

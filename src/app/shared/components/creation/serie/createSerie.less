@@ -1,0 +1,119 @@
+.create-serie {
+
+  .common-info {
+    display: none;
+    @media (max-width: @mobileMaxWidth) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-size: 4em;
+    color: white;
+    width: 100%;
+    font-family: 'Wire One';
+    font-style: inherit;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    padding: 15px;
+  }
+
+  &__separation {
+    height: 1px;
+    background-color: @black;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 6px;
+  }
+
+  &__field {
+    text-align: left;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+
+  &__posts {
+    background-color: @black;
+    min-height: 300px;
+    position: relative;
+    height: calc(var(--children) * 90px);
+  }
+
+  &__post {
+    position: absolute;
+    top: calc(var(--order) * 90px);
+    transition: top .4s;
+
+    &.dragged {
+      z-index: 3;
+      opacity: .8;
+      transition: none;
+    }
+  }
+
+  &__posts-options {
+    height: 50px;
+    display: flex;
+  }
+
+  &__no-posts {
+    position: absolute;
+    left: 50%;
+    opacity: .4;
+    font-style: italic;
+    transform: translateX(-50%);
+    top: 80px;
+  }
+
+  &__post-option {
+    flex: 1 1 50%;
+
+    &.button {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__toggle-chapters {
+
+  }
+}
+
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  padding: 5px 25px;
+  background-color: @buttonDark;
+
+  &--active {
+    .toggle-button {
+      &__checkbox {
+        background-color: white;
+      }
+    }
+  }
+
+  &__checkbox {
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    background-color: @black;
+  }
+
+  &__content {
+    text-align: left;
+  }
+
+  &__note {
+    opacity: .55;
+    font-style: italic;
+  }
+
+}

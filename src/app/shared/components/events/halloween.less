@@ -1,0 +1,396 @@
+.map-halloween {
+  font-size: 13px;
+
+  &--no-information {
+    .map-halloween {
+      &__timer {
+        display: none;
+      }
+
+      &__feed {
+      }
+    }
+  }
+  &__timer-container {
+    position: fixed;
+    top: 100px;
+    z-index: 80;
+    background-color: @contentDark;
+    padding: 12px 30px;
+    min-width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__timer {
+    font-size: 2em;
+  }
+
+  &__popup {
+    position: fixed;
+    top: @HH;
+    z-index: 110;
+    .fullHeight(0px);
+    width: 100vw;
+    background-color: @overlayBlack;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__popup-content {
+    padding: 45px;
+    font-size: 1.3em;
+    background-color: @headerDark;
+    width: 500px;
+    p {
+      margin-bottom: 1.2em;
+    }
+
+    switch {
+      font-size: .8em;
+      font-style: italic;
+    }
+
+    .button {
+      margin-top: 45px;
+    }
+  }
+  &__lef-counter {
+  }
+  &__village {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  &__left {
+    display : flex;
+    font-size: 1.1em;
+    justify-content: center;
+    img {
+      margin-right: 6px;
+    }
+  }
+  &__feed {
+    position: fixed;
+    z-index: 200;
+    top: @HH;
+    //display: none;
+    right: 240px;
+  }
+  &__feed-line {
+    padding: 0;
+    min-width: 140px;
+    box-sizing: border-box;
+    max-width: 240px;
+    background-color: @wilwarNeuter;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    margin: 0px;
+    display: flex;
+    max-height : 0;
+    border-radius: 5px;
+    transition: max-height .25s .15s, margin .25s, opacity .25s 0s, transform .25s 0s, padding .25s;
+    transform: translateY(-30px);
+    opacity: 0;
+    &.visible {
+      padding: 3px 10px;
+      max-height: 150px;
+      transition: max-height .1s, margin .25s, opacity .25s, transform .25s, padding .15s;
+      transform: translateY(0);
+      opacity: 1;
+      margin: 5px;
+    }
+  }
+  &__final-score {
+    position: fixed;
+    z-index: 120;
+    width: 100vw;
+    font-size: 1.2em;
+    .fullHeight(0px);
+    background-color: @overlayBlack;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-content {
+      max-width: 450px;
+      padding: 30px;
+      background-color: @contentDark;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      margin-bottom: 12px;
+    }
+    p {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.halloween {
+  &__glitch {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    filter: hue-rotate(45deg);
+    opacity: 0.55;
+    .started {
+      animation: glitchAnimation 3s;
+    }
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: skew(12deg);
+  }
+  5% {
+    transform: skew(-23deg);
+  }
+  10% {
+    transform: skew(-10deg);
+  }
+  15% {
+    transform: skew(74deg);
+  }
+  20% {
+    transform: skew(-50deg);
+  }
+  25% {
+    transform: skew(-14deg);
+  }
+  30% {
+    transform: skew(-21deg);
+  }
+  35% {
+    transform: skew(49deg);
+  }
+  40% {
+    transform: skew(-2deg);
+  }
+  45% {
+    transform: skew(-25deg);
+  }
+  50% {
+    transform: skew(-86deg);
+  }
+  55% {
+    transform: skew(-70deg);
+  }
+  60% {
+    transform: skew(20deg);
+  }
+  65% {
+    transform: skew(-46deg);
+  }
+  70% {
+    transform: skew(-61deg);
+  }
+  75% {
+    transform: skew(-43deg);
+  }
+  80% {
+    transform: skew(65deg);
+  }
+  85% {
+    transform: skew(1deg);
+  }
+  90% {
+    transform: skew(-39deg);
+  }
+  95% {
+    transform: skew(-67deg);
+  }
+}
+@keyframes noise {
+  0% {
+    background-position: -43px 5px;
+  }
+  10% {
+    background-position: -19px 0px;
+  }
+  20% {
+    background-position: 43px -5px;
+  }
+  30% {
+    background-position: -96px -41px;
+  }
+  40% {
+    background-position: -92px 3px;
+  }
+  50% {
+    background-position: -70px -28px;
+  }
+  60% {
+    background-position: -65px 70px;
+  }
+  70% {
+    background-position: -90px -97px;
+  }
+  80% {
+    background-position: 65px -84px;
+  }
+  90% {
+    background-position: 60px -47px;
+  }
+}
+@keyframes bar {
+  0% {
+    height: 174px;
+    top: 38%;
+    opacity: 0.74;
+  }
+  10% {
+    height: 427px;
+    top: 100%;
+    opacity: 0.74;
+  }
+  20% {
+    height: 285px;
+    top: 63%;
+    opacity: 0.15;
+  }
+  30% {
+    height: 207px;
+    top: 20%;
+    opacity: 0.35;
+  }
+  40% {
+    height: 385px;
+    top: 90%;
+    opacity: 0.27;
+  }
+  50% {
+    height: 443px;
+    top: 5%;
+    opacity: 0.45;
+  }
+  60% {
+    height: 354px;
+    top: 7%;
+    opacity: 0.47;
+  }
+  70% {
+    height: 32px;
+    top: 5%;
+    opacity: 0.72;
+  }
+  80% {
+    height: 560px;
+    top: 2%;
+    opacity: 0.26;
+  }
+  90% {
+    height: 621px;
+    top: 33%;
+    opacity: 0.65;
+  }
+}
+.glitch {
+  opacity: .5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font: 15px "Michroma", helvetica, sans-serif;
+  letter-spacing: 0.6em;
+  background-image: url(/medias/noisy-texture-300x300-o43-d10-c-ffffff-t1.png);
+  text-shadow: 2px 0 1px #f6050a, -2px 0 1px #1cf2f2;
+  z-index: 1000;
+  display: none;
+}
+@keyframes appear-glitch {
+  0% {opacity: 0}
+  5% {opacity: .1}
+  20% {opacity: .4}
+  25% {opacity: .1}
+  30% {opacity: .55}
+  40% {opacity: .55}
+  45% {opacity: .1}
+  60% {opacity: .1}
+  63% {opacity: .70}
+  65% {opacity: .1}
+  70% {opacity: .35}
+  71% {opacity: .25}
+  74% {opacity: .8}
+  80% {opacity: .55}
+  85% {opacity: .1}
+  91% {opacity: .55}
+  99% {opacity: .25}
+  100% {opacity: 1}
+}
+
+.glitch.first-animation {
+  display: block;
+  animation: noise 0.3s infinite, appear-glitch 2s alternate 2 forwards;
+  &:after {
+    animation: bar 0.5s infinite;
+  }
+  span {
+    display: none;
+  }
+}
+
+@keyframes disappear-glitch {
+  0%{opacity: 1}
+  10% {opacity: .2}
+  15% {opacity: .9}
+  20% {opacity: .15}
+  23% {opacity: .8}
+  100% {opacity: 0}
+}
+
+@keyframes appear-text-glitch {
+  0%{opacity: 0}
+  85%{opacity: 0}
+  92%{opacity: .8}
+  98%{opacity: .1}
+  100%{opacity: 1}
+}
+.glitch.second-animation {
+  display: block;
+  animation: noise 0.3s infinite, appear-glitch 2s 1 forwards, disappear-glitch 1s 4s 1 forwards;
+  &:after {
+    animation: bar 0.5s infinite;
+  }
+  span {
+    animation: glitch 2.5s infinite alternate, appear-text-glitch 1.5s 1 forwards;
+  }
+}
+.glitch:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.glitch:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: url(/medias/noisy-texture-300x300-o43-d10-c-ffffff-t1.png);
+}
+.glitch span {
+  display: inline-block;
+  position: relative;
+}
+
+.glitch p {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+
+}

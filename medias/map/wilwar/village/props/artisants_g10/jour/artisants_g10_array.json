@@ -1,0 +1,165 @@
+{"frames": [
+
+{
+	"filename": "groupe110000.png",
+	"frame": {"x":0,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110001.png",
+	"frame": {"x":42,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110002.png",
+	"frame": {"x":84,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110003.png",
+	"frame": {"x":126,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110004.png",
+	"frame": {"x":168,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110005.png",
+	"frame": {"x":210,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110006.png",
+	"frame": {"x":252,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110007.png",
+	"frame": {"x":294,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110008.png",
+	"frame": {"x":336,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110009.png",
+	"frame": {"x":378,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110010.png",
+	"frame": {"x":420,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110011.png",
+	"frame": {"x":462,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110012.png",
+	"frame": {"x":504,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110013.png",
+	"frame": {"x":546,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110014.png",
+	"frame": {"x":588,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110015.png",
+	"frame": {"x":630,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "groupe110016.png",
+	"frame": {"x":672,"y":0,"w":42,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+	"sourceSize": {"w":42,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "artisants_g10.png",
+	"format": "RGBA8888",
+	"size": {"w":714,"h":62},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6b543e2b34fe23bd5b170be84b4d3948:e4a3267b6354b8b67a70e921aee0e394:12e5a2ee711872b4006e841c5a825c09$"
+}
+}

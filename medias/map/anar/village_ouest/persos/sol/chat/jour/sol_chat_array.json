@@ -1,0 +1,92 @@
+{"frames": [
+
+{
+	"filename": "sol_chat0000.png",
+	"frame": {"x":0,"y":0,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+	"sourceSize": {"w":41,"h":48}
+},
+{
+	"filename": "sol_chat0001.png",
+	"frame": {"x":41,"y":0,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+	"sourceSize": {"w":41,"h":48}
+},
+{
+	"filename": "sol_chat0002.png",
+	"frame": {"x":82,"y":0,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+	"sourceSize": {"w":41,"h":48}
+},
+{
+	"filename": "sol_chat0003.png",
+	"frame": {"x":123,"y":0,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+	"sourceSize": {"w":41,"h":48}
+},
+{
+	"filename": "sol_chat0004.png",
+	"frame": {"x":164,"y":0,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+	"sourceSize": {"w":41,"h":48}
+},
+{
+	"filename": "sol_chat0005.png",
+	"frame": {"x":205,"y":0,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+	"sourceSize": {"w":41,"h":48}
+},
+{
+	"filename": "sol_chat0006.png",
+	"frame": {"x":246,"y":0,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+	"sourceSize": {"w":41,"h":48}
+},
+{
+	"filename": "sol_chat0007.png",
+	"frame": {"x":287,"y":0,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+	"sourceSize": {"w":41,"h":48}
+},
+{
+	"filename": "sol_chat0008.png",
+	"frame": {"x":328,"y":0,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+	"sourceSize": {"w":41,"h":48}
+},
+{
+	"filename": "sol_chat0009.png",
+	"frame": {"x":369,"y":0,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+	"sourceSize": {"w":41,"h":48}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sol_chat.png",
+	"format": "RGBA8888",
+	"size": {"w":410,"h":48},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d9ef11dca71db3295cc1ad99ff2b3687:868b2f3f4a0c7f0fd507cb294e03b8fd:33544e78009d4478775a2a09ca1257b5$"
+}
+}

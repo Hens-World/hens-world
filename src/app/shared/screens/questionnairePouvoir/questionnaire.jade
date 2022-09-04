@@ -1,0 +1,22 @@
+.page-container.no-side
+    .main-column.qcm.other-user(class="{{village}}")
+        .main-column__content
+            h1(ng-bind-html="content.title")
+            .qcm__questionnaire(ng-show="!displayResult")
+                .qcm__progress(class="{{village}}") {{currentIndex}} / 19
+                .qcm__question-container(question-unit current-question="currentQuestion" content="content" result="result" village="village")
+                .confirm(ng-click="validateQuestion()" ng-class="{'active':!displayResult}" class="{{village}}") Valider
+            .results(ng-show="displayResult")
+                .title Résultats aux questions:
+                .line(ng-repeat="carac in qcmData.caracteres")
+                    .carac-container()
+                        .min {{carac.min}} : -{{ratio.neg[$index]}}
+                        .number(ng-class="village") {{resultData[$index].neg}}/{{resultData[$index].pos}}
+                        .max  {{ratio.pos[$index]}} : {{carac.max}}
+            .fiche-finale(ng-class="{'active':displayResult}")
+                img.image(src="{{imageLink}}")
+                .text
+                    .title(ng-bind-html="power.nom")
+                    .description(ng-bind-html="power.description")
+                    .quote(ng-bind-html="power.citation")
+                    a.button.fond-village.hover.button--meaty(href="/profil/{{$root.currentUser.ID}}?character={{characterIndex}}") Continuer l'édition

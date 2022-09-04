@@ -1,0 +1,239 @@
+.village-loca{
+  width: 835px;
+  position: absolute;
+  .fullHeight(0px);
+  right: 0;
+  z-index: 1000;
+  opacity: 1;
+  transition: all 0.4s ease-out;
+  font-size: 12em;
+  display: flex;
+  /* actions */
+  &__actions{
+    width: 35px;
+    flex: 0 1 auto;
+  }
+  &__switch{
+    width: 35px;
+    padding: 10px;
+    box-sizing: border-box;
+    &:not(.active){
+      background-color: rgba(25, 25 , 25, .85);
+    }
+  }
+  &__close{
+    margin-top: 15px;
+    cursor: pointer;
+    z-index: @layerDefault;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    background: url(/medias/map/ui/right.png),#222;
+    background-size:35px 35px;
+    background-position: 0px 50%;
+    transition: all 0.2s;
+    margin-bottom:20px;
+    &:hover{
+      margin-left: -10px;
+    }
+  }
+  &__state{
+    position: relative;
+    flex: 1 1 auto;
+  }
+  &__create{
+    cursor: pointer;
+    z-index:50;
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    opacity: .92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+    box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, .4);
+    background-repeat: no-repeat;
+    &--roleplay{
+      background-size: 88% 88%;
+      background-color: @ulmoNeuter;
+      background-position: 50% 20%;
+      &:hover{background-color: @ulmoLight;}
+      background-image: url('../../../../../medias/map/ui/post_jdr.png');
+    }
+    &--creation{
+      background-size: 80% 80%;
+      background-position: 45% 50%;
+      background-color: @anarNeuter;
+      &:hover{background-color: @anarLight;}
+      background-image: url('../../../../../medias/map/ui/post_creation.png');
+    }
+    &:before{
+      display: inline-block;
+    }
+    &:hover{
+      opacity: 1;
+      box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, .6);
+    }
+  }
+  &__switch{
+    height: 200px;
+    cursor: pointer;
+    &> span{
+      width: 200px;
+      transform-origin: 0% 0%;
+      display: block;
+      margin-left:-10px;
+      margin-top: 200px;
+      font-size: 2em;
+      transform: rotate(270deg);
+    }
+  }
+  /* main */
+  &__main{
+    background: rgba(10, 10, 10, 0.85);
+    flex: 1 1 auto;
+    width: 800px;
+    display: flex;
+    overflow: auto;
+  }
+  &__info{
+    pointer-events: none;
+    opacity:0;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+    padding: 5px;
+    background-color: rgba(10, 10, 10, 0.7);
+    display: flex;
+    transition: all .35s;
+    .mini-type{
+      width: 50px;
+      height: 50px;
+      margin-left: 5px;
+    }
+    .center-info{
+      text-align: left;
+      box-sizing: border-box;
+      padding: 3px;
+      flex: 1 1 auto;
+      max-width: 300px;
+    }
+  }
+  &__empty-notice {
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 30%;
+    transform: translateY(-50%);
+    background: rgba(10, 10, 10, .5);
+  }
+  &__list{
+    &--roleplay{
+      background: @headerDark;
+      margin: 10px;
+    }
+  }
+  &__notif{
+    position: absolute;
+    margin: 10px;
+  }
+  &__element{
+    position: relative;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    &-author{
+      .participant:not(:last-child){
+        :after{
+          content: ', ';
+        }
+      }
+    }
+    &-hot{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px 0 10px;
+    }
+    .info-text{
+      padding: 1px;
+    }
+    .text{
+      color: #222;
+      position: relative;
+      overflow: hidden;
+      font-size: 1.3em;
+      padding: 15px;
+      font-family: 'Crimson Text', serif;
+      background: #f3efc6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      p {
+        word-break: break-word;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    &:hover{
+      .village-loca__info{
+        opacity: 1;
+      }
+    }
+    /* roleplay specific */
+    &--roleplay{
+      background-color: @playerDark;
+      border: 1px solid @buttonHoverDark;
+      padding: 6px 10px;
+      margin-bottom: 3px;
+      display: flex;
+      align-items: stretch;
+    }
+    &-title{
+      font-size: 1.25em;
+    }
+    &-author {
+
+    }
+  }
+}
+.masonry { /* Masonry container */
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  transform: translateZ(0);
+  column-gap: 1em;
+  &.solo{
+    column-count: auto;
+    .masonry__item{
+      width: 50%;
+      margin: auto;
+    }
+  }
+  &__item { /* Masonry bricks or child elements */
+    display:block;
+    margin-bottom: 10px;
+    transform: translateZ(0);
+    box-sizing: border-box;
+    width: 100%;
+    .preview{
+      width: 100%;
+      &.miniature{
+        background-color: rgba(20,20,20, .6);
+      }
+    }
+  }
+}

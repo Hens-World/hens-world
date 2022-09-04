@@ -1,0 +1,1182 @@
+{
+  "props": [
+    {
+      "label": "coupe_crushrun",
+      "width": 55,
+      "height": 111,
+      "quartier": "ouest",
+      "prop_hover": "prop_message",
+      "center": {
+        "x": 27,
+        "y": 105
+      },
+      "avail": [
+        {
+          "fromT": 0,
+          "to": 23
+        }
+      ],
+      "list": [
+        {
+          "x": 1455,
+          "y": 4820
+        }
+      ]
+    },
+    {
+      "label":"voyante",
+      "action": "open_horoscope",
+      "icone": "exclamation",
+      "width":25,
+      "height":63,
+      "quartier": "ouest",
+      "center":{
+        "x":13,
+        "y":62
+      },
+      "avail": [
+        {
+          "fromT": 1,
+          "to": 4,
+          "x": 2518,
+          "y": 2849,
+          "season": "hiver",
+          "dates": ["04-01"]
+        },
+        {
+          "fromT": 5,
+          "to": 8,
+          "x": 1156,
+          "y": 3004,
+          "season": "hiver",
+          "dates": ["04-01"]
+        },
+        {
+          "fromT": 9,
+          "to": 11,
+          "x": 205,
+          "y": 4199,
+          "season": "hiver",
+          "dates": ["04-01"]
+        },
+        {
+          "fromT": 12,
+          "to": 15,
+          "x": 4424,
+          "y": 1244,
+          "season": "hiver",
+          "dates": ["04-01"]
+        },
+        {
+          "fromT": 16,
+          "to": 19,
+          "x": 5685,
+          "y": 1753,
+          "season": "hiver",
+          "dates": ["04-01"]
+        },
+        {
+          "fromT": 20,
+          "to": 22,
+          "x": 4495,
+          "y": 2230,
+          "season": "hiver",
+          "dates": ["04-01"]
+        },
+        {
+          "fromT": 23,
+          "to": 0,
+          "x": 5972,
+          "y": 3157,
+          "season": "hiver",
+          "dates": ["04-01"]
+        }
+      ]
+    },
+    {
+      "label":"voyante",
+      "action": "open_horoscope",
+      "icone": "exclamation",
+      "width":25,
+      "height":63,
+      "quartier": "est",
+      "center":{
+        "x":13,
+        "y":62
+      },
+      "avail": [
+        {
+          "fromT": 1,
+          "to": 4,
+          "x": 4384,
+          "y": 1949,
+          "season": "hiver",
+          "dates": ["05-01"]
+        },
+        {
+          "fromT": 5,
+          "to": 8,
+          "x": 3243,
+          "y": 669,
+          "season": "hiver",
+          "dates": ["05-01"]
+        },
+        {
+          "fromT": 9,
+          "to": 11,
+          "x": 1479,
+          "y": 1742,
+          "season": "hiver",
+          "dates": ["05-01"]
+        },
+        {
+          "fromT": 12,
+          "to": 15,
+          "x": 1170,
+          "y": 2870,
+          "season": "hiver",
+          "dates": ["05-01"]
+        },
+        {
+          "fromT": 16,
+          "to": 19,
+          "x": 1819,
+          "y": 4016,
+          "season": "hiver",
+          "dates": ["05-01"]
+        },
+        {
+          "fromT": 20,
+          "to": 22,
+          "x": 3705,
+          "y": 4335,
+          "season": "hiver",
+          "dates": ["05-01"]
+        },
+        {
+          "fromT": 23,
+          "to": 0,
+          "x": 3859,
+          "y": 3362,
+          "season": "hiver",
+          "dates": ["05-01"]
+        }
+      ]
+    },
+    {
+      "label": "lucioles",
+      "width": 53,
+      "height": 39,
+      "quartier": "est",
+      "center": {
+        "x": 4,
+        "y": 31
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6
+        }
+      ],
+      "list": [
+        {
+          "x": 1524,
+          "y": 1386
+        },
+        {
+          "x": 878,
+          "y": 2209
+        },
+        {
+          "x": 1591,
+          "y": 3324
+        },
+        {
+          "x": 3461,
+          "y": 4409
+        },
+        {
+          "x": 4023,
+          "y": 3895
+        },
+        {
+          "x": 4582,
+          "y": 2868
+        },
+        {
+          "x": 4239,
+          "y": 1942
+        },
+        {
+          "x": 3622,
+          "y": 1456
+        },
+        {
+          "x": 2756,
+          "y": 3263
+        },
+        {
+          "x": 2898,
+          "y": 3260
+        }
+      ]
+    },
+    {
+      "label": "lucioles",
+      "width": 53,
+      "height": 39,
+      "quartier": "ouest",
+      "center": {
+        "x": 4,
+        "y": 31
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6
+        }
+      ],
+      "list": [
+        {
+          "x": 3753,
+          "y": 2167
+        },
+        {
+          "x": 4014,
+          "y": 2905
+        },
+        {
+          "x": 958,
+          "y": 2375
+        },
+        {
+          "x": 1480,
+          "y": 1025
+        },
+        {
+          "x": 1717,
+          "y": 398
+        },
+        {
+          "x": 3760,
+          "y": 877
+        },
+        {
+          "x": 4620,
+          "y": 2157
+        },
+        {
+          "x": 5278,
+          "y": 1191
+        },
+        {
+          "x": 5644,
+          "y": 3236
+        },
+        {
+          "x": 5162,
+          "y": 3535
+        }
+      ]
+    },
+    {
+      "label": "citrouille_2",
+      "width": 25,
+      "height": 18,
+      "quartier": "ouest",
+      "random_position": true,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 12,
+        "y": 11
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "event": "halloween"
+        }
+      ],
+      "list": [
+        {
+          "x": 3087,
+          "y": 480
+        },
+        {
+          "x": 1607,
+          "y": 826
+        },
+        {
+          "x": 1017,
+          "y": 784
+        }
+      ]
+    },
+    {
+      "label": "citrouille_3",
+      "width": 21,
+      "height": 21,
+      "quartier": "ouest",
+      "random_position": true,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 9,
+        "y": 12
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "event": "halloween"
+        }
+      ],
+      "list": [
+        {
+          "x": 4522,
+          "y": 2862
+        },
+        {
+          "x": 6040,
+          "y": 2988
+        },
+        {
+          "x": 5875,
+          "y": 1595
+        }
+      ]
+    },
+    {
+      "label": "citrouille_4",
+      "width": 26,
+      "height": 22,
+      "quartier": "ouest",
+      "random_position": true,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 13,
+        "y": 9
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "event": "halloween"
+        }
+      ],
+      "list": [
+        {
+          "x": 1767,
+          "y": 4801
+        },
+        {
+          "x": 167,
+          "y": 4637
+        },
+        {
+          "x": 2120,
+          "y": 2660
+        }
+      ]
+    },
+    {
+      "label": "citrouille_2",
+      "width": 25,
+      "height": 18,
+      "quartier": "est",
+      "random_position": true,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 12,
+        "y": 11
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "event": "halloween"
+        }
+      ],
+      "list": [
+        {
+          "x": 2076,
+          "y": 3657
+        },
+        {
+          "x": 1425,
+          "y": 2590
+        },
+        {
+          "x": 412,
+          "y": 2483
+        }
+      ]
+    },
+    {
+      "label": "citrouille_3",
+      "width": 21,
+      "height": 21,
+      "quartier": "est",
+      "random_position": true,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 9,
+        "y": 12
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "event": "halloween"
+        }
+      ],
+      "list": [
+        {
+          "x": 3963,
+          "y": 2626
+        },
+        {
+          "x": 4561,
+          "y": 1820
+        },
+        {
+          "x": 4741,
+          "y": 726
+        }
+      ]
+    },
+    {
+      "label": "citrouille_4",
+      "width": 26,
+      "height": 22,
+      "quartier": "est",
+      "random_position": true,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 13,
+        "y": 9
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "event": "halloween"
+        }
+      ],
+      "list": [
+        {
+          "x": 3234,
+          "y": 659
+        },
+        {
+          "x": 1396,
+          "y": 510
+        },
+        {
+          "x": 3134,
+          "y": 1837
+        }
+      ]
+    },
+    {
+      "label": "puck_event",
+      "action": "open_secret_carnaval",
+      "icone": "exclamation",
+      "quartier": "ouest",
+      "width": 22,
+      "height": 62,
+      "center": {
+        "x": 12,
+        "y": 61
+      },
+      "avail": [
+        {
+          "fromT": 0,
+          "to": 23,
+          "dates":  ["04-05"]
+        }
+      ],
+      "list": [
+        {
+          "x": 3160,
+          "y": 2256
+        }
+      ]
+    },
+    {
+      "label": "puck_event",
+      "icone": "exclamation",
+      "action": "open_secret_carnaval",
+      "quartier": "est",
+      "width": 22,
+      "height": 62,
+      "center": {
+        "x": 12,
+        "y": 61
+      },
+      "avail": [
+        {
+          "fromT": 0,
+          "to": 23,
+          "dates":  ["05-05"]
+        }
+      ],
+      "list": [
+        {
+          "x": 4447,
+          "y": 3511
+        }
+      ]
+    },
+    {
+      "label": "anatole_event",
+      "width": 163,
+      "height": 183,
+      "icone": "exclamation",
+      "action": "open_anatole_dialogue",
+      "quartier": "est",
+      "center": {
+        "x": 23,
+        "y": 182
+      },
+      "avail": [
+        {
+          "event": "solstice-ete",
+          "fromT": 0,
+          "to": 23
+        }
+      ],
+      "list":[
+        {
+          "x":4011,
+          "y":3844
+
+        }
+      ]
+    },
+    {
+      "label": "anatole_event",
+      "width": 163,
+      "height": 183,
+      "icone": "exclamation",
+      "action": "open_anatole_dialogue",
+      "quartier": "ouest",
+      "center": {
+        "x": 23,
+        "y": 182
+      },
+      "avail": [
+        {
+          "event": "solstice-ete",
+          "fromT": 0,
+          "to": 23
+        }
+      ],
+      "list":[
+        {
+          "x":2558,
+          "y":2055
+        }
+      ]
+    },
+    {
+      "label":"mamy_trouille",
+      "width":29,
+      "prop_hover": "prop_message",
+      "height":61,
+      "quartier": "ouest",
+      "center":{
+        "x":10,
+        "y":60
+      },
+      "avail":[
+        {
+          "fromT":16,
+          "to":0
+        }
+      ],
+      "list":[
+        {
+          "x":3205,
+          "y":2280
+        }
+      ]
+    },
+    {
+      "label":"vieu_1_squelette",
+      "width":114,
+      "height":78,
+      "quartier": "est",
+      "center":{
+        "x":80,
+        "y":13
+      },
+      "avail":[
+        {
+          "fromT":22,
+          "to":3,
+          "dates":  [["01-01", "30-10"], ["02-11", "31-12"]]
+        }
+      ],
+      "list":[
+        {
+          "x":5201,
+          "y":5070
+        }
+      ]
+    },
+    {
+      "label":"lanterne_siel",
+      "width":208,
+      "height":240,
+      "quartier": "ouest",
+      "center":{
+        "x":175,
+        "y":28
+      },
+      "avail":[
+        {
+          "fromT":17,
+          "to":21        }
+      ],
+      "list":[
+        {
+          "x":3399,
+          "y":5289
+        }
+      ]
+    },
+     {
+      "label":"lanterne_anastase",
+      "width":43,
+      "height":53,
+      "quartier": "ouest",
+      "center":{
+        "x":30,
+        "y":52
+      },
+      "avail":[
+        {
+          "fromT":14,
+          "to":19        }
+      ],
+      "list":[
+        {
+          "x":4477,
+          "y":4784
+        }
+      ]
+    },
+    {
+      "label":"vieu_2_balais",
+      "width":64,
+      "height":74,
+      "quartier": "est",
+      "center":{
+        "x":28,
+        "y":13
+      },
+      "avail":[
+        {
+          "fromT":12,
+          "to":18,
+          "dates":  [["21-09", "21-12"]]
+        }
+      ],
+      "list":[
+        {
+          "x":5251,
+          "y":744
+        }
+      ]
+    }
+  ],
+  "contribs": [
+    {
+      "pseudo": "Einen",
+      "slug": "einen",
+      "id": 12,
+      "owner": "einen",
+      "status": "contributeur",
+      "quartier": "ouest",
+      "house": {
+        "x": 732,
+        "y": 4961,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 582,
+        "h": 960,
+        "c": 250
+      },
+      "avail": [
+        {
+          "posSlug": "fake",
+          "fromT": 5,
+          "to": 5,
+          "x": 50,
+          "y": 50,
+          "width": 0,
+          "height": 0,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Axel",
+      "slug": "axel",
+      "id": 4450,
+      "owner": "lemondedaxel",
+      "status": "contributeur",
+      "quartier": "ouest",
+      "house": {
+        "x": 3842,
+        "y": 2040,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 315,
+        "h": 1300,
+        "c": 168
+      },
+      "avail": [
+        {
+          "posSlug": "fake",
+          "fromT": 5,
+          "to": 5,
+          "x": 50,
+          "y": 50,
+          "width": 0,
+          "height": 0,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Louis",
+      "slug": "louis",
+      "id": 4351,
+      "owner": "katsu",
+      "status": "contributeur",
+      "quartier": "est",
+      "house": {
+        "x": 2114,
+        "y": 3625,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 582,
+        "h": 960,
+        "c": 250
+      },
+      "avail": [
+        {
+          "posSlug": "fake",
+          "fromT": 5,
+          "to": 5,
+          "x": 50,
+          "y": 50,
+          "width": 0,
+          "height": 0,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Red",
+      "slug": "red",
+      "id": 4358,
+      "owner": "hichtri",
+      "status": "contributeur",
+      "quartier": "ouest",
+      "house": {
+        "x": 3533,
+        "y": 519,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 582,
+        "h": 960,
+        "c": 250
+      },
+      "avail": [
+        {
+          "posSlug": "fake",
+          "fromT": 5,
+          "to": 5,
+          "x": 50,
+          "y": 50,
+          "width": 0,
+          "height": 0,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Emmy",
+      "slug": "emmy",
+      "id": 646,
+      "owner": "ineisha",
+      "status": "contributeur",
+      "quartier": "ouest",
+      "house": {
+        "x": 2927,
+        "y": 1727,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 582,
+        "h": 960,
+        "c": 250
+      },
+      "avail": [
+        {
+          "posSlug": "fake",
+          "fromT": 5,
+          "to": 5,
+          "x": 50,
+          "y": 50,
+          "width": 0,
+          "height": 0,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Timmy",
+      "slug": "timmy",
+      "id": 4307,
+      "owner": "petiturco",
+      "status": "contributeur",
+      "quartier": "est",
+      "house": {
+        "x": 2289,
+        "y": 2006,
+        "width": 80,
+        "height": 40
+      },
+      "image": {
+        "w": 582,
+        "h": 960,
+        "c": 250
+      },
+      "avail": [
+        {
+          "posSlug": "fake",
+          "fromT": 5,
+          "to": 5,
+          "x": 50,
+          "y": 50,
+          "width": 0,
+          "height": 0,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Sol",
+      "slug": "sol",
+      "id": 3014,
+      "owner": "sun",
+      "status": "contributeur",
+      "quartier": "ouest",
+      "house": {
+        "x": 3542,
+        "y": 1792,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 500,
+        "h": 1000,
+        "c": 250
+      },
+      "avail": [
+        {
+          "posSlug": "tag",
+          "fromT": 22,
+          "to": 2,
+          "x": 5149,
+          "y": 1588,
+          "width": 84,
+          "height": 56,
+          "center": {
+            "x": 11,
+            "y": 54
+          }
+        },
+        {
+          "posSlug": "chat",
+          "fromT": 13,
+          "to": 18,
+          "x": 3669,
+          "y": 1775,
+          "width": 41,
+          "height": 48,
+          "center": {
+            "x": 25,
+            "y": 34
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Maxime",
+      "slug": "maxime",
+      "owner": "louise foxx",
+      "quartier": "ouest",
+      "status": "membre",
+      "house": {
+        "x": 1339,
+        "y": 3095,
+        "width": 0,
+        "height": 0
+      },
+      "image": {
+        "w": 425,
+        "h": 768,
+        "c": 212
+      },
+      "avail": [
+        {
+          "posSlug": "the",
+          "fromT": 16,
+          "to": 19,
+          "x": 1802,
+          "y": 2632,
+          "width": 26,
+          "height": 53,
+          "center": {
+            "x": 8,
+            "y": 52
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Rey",
+      "slug": "rey",
+      "id": 12,
+      "owner": "yu_ae11",
+      "status": "contributeur",
+      "quartier": "ouest",
+      "house": {
+        "x": 755,
+        "y": 3146,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 425,
+        "h": 768,
+        "c": 212
+      },
+      "avail": [
+        {
+          "posSlug": "fake",
+          "fromT": 5,
+          "to": 5,
+          "x": 50,
+          "y": 50,
+          "width": 0,
+          "height": 0,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Tsai",
+      "slug": "tsai",
+      "id": 12,
+      "owner": "mostergann",
+      "status": "contributeur",
+      "quartier": "est",
+      "house": {
+        "x": 3904,
+        "y": 4165,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 425,
+        "h": 768,
+        "c": 212
+      },
+      "avail": [
+        {
+          "posSlug": "fake",
+          "fromT": 5,
+          "to": 5,
+          "x": 50,
+          "y": 50,
+          "width": 0,
+          "height": 0,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Sayanoren",
+      "slug": "sayanoren",
+      "owner": "valtharen",
+      "id": 12,
+      "status": "contributeur",
+      "quartier": "ouest",
+      "house": {
+        "x": 1711,
+        "y": 3622,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 582,
+        "h": 960,
+        "c": 250
+      },
+      "avail": [
+        {
+          "posSlug": "fake",
+          "fromT": 5,
+          "to": 5,
+          "x": 50,
+          "y": 50,
+          "width": 0,
+          "height": 0,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Sielahti",
+      "slug": "sielahti",
+      "owner": "noctimak",
+      "status": "contributeur",
+      "quartier": "est",
+      "house": {
+        "x": 3020,
+        "y": 3660,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 582,
+        "h": 960,
+        "c": 250
+      },
+      "avail": [
+        {
+          "posSlug": "toit",
+          "fromT": 21,
+          "to": 23,
+          "x": 2448,
+          "y": 2532,
+          "width": 47,
+          "height": 56,
+          "center": {
+            "x": 41,
+            "y": 55
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Molokan",
+      "slug": "molokan",
+      "id": 143,
+      "owner": "mlneya",
+      "status": "contributeur",
+      "quartier": "ouest",
+      "house": {
+        "x": 4260,
+        "y": 2289,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 582,
+        "h": 960,
+        "c": 250
+      },
+      "avail": [
+        {
+          "posSlug": "fake",
+          "fromT": 5,
+          "to": 5,
+          "x": 50,
+          "y": 50,
+          "width": 0,
+          "height": 0,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "pseudo": "Eliss",
+      "slug": "eliss",
+      "owner": "lobalyss",
+      "id": 80,
+      "quartier": "ouest",
+      "status": "contributeur",
+      "house": {
+        "x": 1088,
+        "y": 3650,
+        "width": 25,
+        "height": 35
+      },
+      "image": {
+        "w": 500,
+        "h": 1000,
+        "c": 300
+      },
+      "avail": [
+        {
+          "posSlug": "chien",
+          "fromT": 17,
+          "to": 19,
+          "x": 1317,
+          "y": 4220,
+          "width": 58,
+          "height": 71,
+          "center": {
+            "x": 21,
+            "y": 70
+          }
+        }
+      ]
+    }
+  ]
+}

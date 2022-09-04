@@ -1,0 +1,138 @@
+{"frames": [
+
+{
+	"filename": "kelgar_antiquaire00 - Copie (2) - Copie.png",
+	"frame": {"x":2,"y":2,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire00 - Copie (2).png",
+	"frame": {"x":2,"y":2,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire00 - Copie (3).png",
+	"frame": {"x":2,"y":2,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire00 - Copie.png",
+	"frame": {"x":2,"y":2,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire00.png",
+	"frame": {"x":2,"y":2,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire05 - Copie (2).png",
+	"frame": {"x":2,"y":83,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire05 - Copie.png",
+	"frame": {"x":2,"y":83,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire05.png",
+	"frame": {"x":2,"y":83,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire08 - Copie (2).png",
+	"frame": {"x":2,"y":164,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire08 - Copie (3).png",
+	"frame": {"x":2,"y":164,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire08 - Copie.png",
+	"frame": {"x":2,"y":164,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire08.png",
+	"frame": {"x":2,"y":164,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire12 - Copie.png",
+	"frame": {"x":2,"y":245,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kelgar_antiquaire12.png",
+	"frame": {"x":2,"y":245,"w":34,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":79},
+	"sourceSize": {"w":34,"h":79},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "kelgar_antiquaire.png",
+	"format": "RGBA8888",
+	"size": {"w":38,"h":326},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:764198625b3eb397095914307d547292:65d525fa0a85133e2f6ec5b7da1ba4e9:78cfd7c1ccd841634b21355cc237f284$"
+}
+}

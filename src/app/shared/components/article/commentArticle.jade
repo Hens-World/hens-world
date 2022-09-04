@@ -1,0 +1,21 @@
+.write-container(ng-show="isConnected")
+  .title Un commentaire ?
+  textarea.write-comment(ng-model="commentContent" placeholder="Restez polis et courtois! :)")
+  .valid-line 
+    .valid.fond-village.button.hover.button--meaty(ng-click="sendComment()" class="{{user.village}}") Envoyer
+.read
+  .title() {{comments.length}} Commentaire{{comments.length > 1 ? 's' : ''}}
+  .comment-unit.other-user( class="{{comment.author.village}}" ng-repeat="comment in comments" ng-class-odd="'odd'" )
+    a.avatar.fond-village.dark(href="profil/{{comment.author.ID}}" style="background-image:url('{{comment.author.avatar}}');")
+    .content-wrapper
+      .info
+        .name.font-village(ng-bind-html="comment.author.name")
+        .comment-date(ng-bind-html="comment.formatDate")
+        .edit-comment-bt.fa.fa-pencil(ng-click="toggleEdit($index)" ng-show="comment.author.ID == $root.currentUser.ID")
+        .delete-comment-bt.fa.fa-trash(ng-click="deleteComment(comment, $index)" ng-show="comment.author.ID == $root.currentUser.ID")
+      .content-comment(ng-show="!comment.haEdit" ng-bind-html="comment.content")
+      .content-edit(ng-show="comment.haEdit")
+        textarea.write-comment(ng-model="commentContent" placeholder="Restez poli et courtois! :)")
+        .valid.fond-village.hover.button(ng-click="editComment(comment,$index)" class="{{user.village}}") Éditer
+
+      

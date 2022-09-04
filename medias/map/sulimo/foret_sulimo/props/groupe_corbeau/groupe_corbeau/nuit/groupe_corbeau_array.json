@@ -1,0 +1,183 @@
+{"frames": [
+
+{
+	"filename": "corbeau_nuit0000.png",
+	"frame": {"x":0,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0001.png",
+	"frame": {"x":100,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0002.png",
+	"frame": {"x":200,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0003.png",
+	"frame": {"x":300,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0004.png",
+	"frame": {"x":400,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0005.png",
+	"frame": {"x":500,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0006.png",
+	"frame": {"x":600,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0007.png",
+	"frame": {"x":700,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0008.png",
+	"frame": {"x":800,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0009.png",
+	"frame": {"x":900,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0010.png",
+	"frame": {"x":1000,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0011.png",
+	"frame": {"x":1100,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0012.png",
+	"frame": {"x":1200,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0013.png",
+	"frame": {"x":1300,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0014.png",
+	"frame": {"x":1400,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0015.png",
+	"frame": {"x":1500,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0016.png",
+	"frame": {"x":1600,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0017.png",
+	"frame": {"x":1700,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "corbeau_nuit0018.png",
+	"frame": {"x":1800,"y":0,"w":100,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":65},
+	"sourceSize": {"w":100,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "groupe_corbeau.png",
+	"format": "RGBA8888",
+	"size": {"w":1900,"h":65},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cc39dda1b6f9a2f2b052c7276e12e3ac:26f8664a91d1625e9574dd3ace17c9bb:26520297c9f4f15a0d26502d413963ba$"
+}
+}

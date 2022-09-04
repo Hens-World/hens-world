@@ -1,0 +1,144 @@
+{
+  "pouvoirs": [
+    {
+      "slug": "Abreuvagesanguin",
+      "value": [
+        4,
+        "+"
+      ]
+    },
+    {
+      "slug": "MéditationBrumeuse",
+      "value": [
+        3,
+        "-"
+      ]
+    },
+    {
+      "slug": "Absolumentzérofrottement",
+      "value": [
+        3,
+        "-"
+      ]
+    },
+    {
+      "slug": "Jézoui",
+      "value": [
+        4,
+        "-"
+      ]
+    },
+    {
+      "slug": "Bubulle",
+      "value": [
+        1,
+        "-"
+      ]
+    },
+    {
+      "slug": "Clonage",
+      "value": [
+        1,
+        "+"
+      ]
+    },
+    {
+      "slug": "Douchefroide",
+      "value": [
+        5,
+        "-"
+      ]
+    },
+    {
+      "slug": "Devindeseaux",
+      "value": [
+        2,
+        "+"
+      ]
+    },
+    {
+      "slug": "Torpille",
+      "value": [
+        4,
+        "+"
+      ]
+    },
+    {
+      "slug": "Sousl'océan",
+      "value": [
+        5,
+        "-"
+      ]
+    },
+    {
+      "slug": "Flotdefluide",
+      "value": [
+        1,
+        "-"
+      ]
+    },
+    {
+      "slug": "Absorbation",
+      "value": [
+        3,
+        "+"
+      ]
+    },
+    {
+      "slug": "Lentillesinnondées",
+      "value": [
+        5,
+        "+"
+      ]
+    },
+    {
+      "slug": "Gouttedecompagnie",
+      "value": [
+        1,
+        "+"
+      ]
+    },
+    {
+      "slug": "Etatsmultiples",
+      "value": [
+        2,
+        "-"
+      ]
+    },
+    {
+      "slug": "Surl'ocean",
+      "value": [
+        4,
+        "-"
+      ]
+    },
+    {
+      "slug": "LeDeshydrateur",
+      "value": [
+        3,
+        "+"
+      ]
+    },
+    {
+      "slug": "Bibendum",
+      "value": [
+        5,
+        "+"
+      ]
+    },
+    {
+      "slug": "Temperatureambiante",
+      "value": [
+        2,
+        "-"
+      ]
+    },
+    {
+      "slug": "AquarelleMaster",
+      "value": [
+        2,
+        "+"
+      ]
+    }
+  ]
+}

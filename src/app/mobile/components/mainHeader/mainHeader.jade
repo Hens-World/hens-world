@@ -1,0 +1,21 @@
+#header.mobile()
+  .logo-wrapper
+    a(href='/')
+      img.logo(src='/medias/logo.png')
+  .right-container
+    .notif-container(ng-show="headCtrl.currentUser")
+      .notif-bt(ng-click='headCtrl.toggleNotif()', ng-class="{'active':headCtrl.notifList.length > 0, 'focus': headCtrl.showNotifList}")
+        .number-notif.fond-village(ng-class="{'active': headCtrl.notifList.length > 0}") {{headCtrl.notifList.length}}
+        .notif-list-wrapper.border-village.low(ng-class="{'active': headCtrl.showNotifList && headCtrl.notifList.length > 0}")
+          .notif-list()
+            .notif-elt.border-village-left.hover(ng-click='headCtrl.notifClick($index)', class='{{headCtrl.currentUser.village}}', ng-repeat='elt in headCtrl.notifList')
+              span.message(ng-bind-html='elt.message')
+              .notif_time.info-text(ng-bind-html='elt.formatDate')
+          .notif-clear(ng-click="headCtrl.clearAllNotifications()")
+            .fa.fa-trash
+            span Supprimer les notifications
+      a.message-bt(href='/messagerie', ng-class="{'active': $root.newMessages.length > 0}")
+        span.message-notif.fond-village  {{$root.newMessages.length}}
+    a(href='profil/{{headCtrl.currentUser.ID}}' ng-show="headCtrl.currentUser")
+      img.avatar(ng-src='{{headCtrl.currentUser.avatar}}')
+  .loading-bar

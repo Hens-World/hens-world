@@ -1,0 +1,106 @@
+.map-cachette
+  .map-cachette__game-over(ng-if="cacheCtrl.gameOver" ng-show="cacheCtrl.type == 'UI'")
+    .map-cachette__game-over-content
+      img(src="medias/events/carnaval-cachette/game-overs/{{cacheCtrl.gameOver}}.png")
+  .map-cachette__tutorials(ng-show="cacheCtrl.type == 'UI'")
+    .map-cachette__tutorial(ng-if="cacheCtrl.invalidRatio")
+      .map-cachette__tutorial-content.border-village.dezoom
+        img(src="medias/events/carnaval-cachette/alert_dezoom.png")
+        p
+          b Oh mince
+          span , ton écran est dézoomé, ce n'est pas autorisé dans le
+          span.font-village  Carnaval Cachette
+          span  !
+          br
+          br
+          span Remets ton écran à
+          b  100%
+          span  pour continuer la partie ! :)
+
+    .map-cachette__tutorial(ng-if="cacheCtrl.game.phase === 'introduction' && cacheCtrl.player.type === 'hunter'")
+      .map-cachette__tutorial-content.border-village
+        h1
+          span Vous faites partie de l'équipe des
+          span.font-village  «Seekists»
+        .map-cachette__tuto-element.even
+          img(src="medias/events/carnaval-cachette/tutorial/tuto_seekist_1.png")
+          p Votre but est de trouver les
+            span.font-village  Mimics
+            span  ! Ils se déguisent en différents éléments du décor. Lancez-leur une boulette - en cliquant sur eux - pour les éliminer !  Lorsque la couleur de votre écran change, c’est qu’un Mimic se trouve à proximité !
+        .map-cachette__tuto-element.odd
+          img(src="medias/events/carnaval-cachette/tutorial/tuto_seekist_2.png")
+          p
+            b Attention !
+            span  Vous avez un nombre limité de boulettes ! Lorsque vous avez épuisé toutes vos boulettes, la partie se termine pour vous.
+        .map-cachette__tuto-element.even
+          img(src="medias/events/carnaval-cachette/tutorial/tuto_seekist_3.png")
+          p Vous ne pourrez vous déplacer qu'avec les touches du clavier ou avec les flèches en dessous de la minimap.
+            i  Cette dernière est grisée, elle ne vous permettra pas de vous déplacer mais seulement de visualiser votre position !
+    .map-cachette__tutorial(ng-if="cacheCtrl.game.phase === 'introduction' && cacheCtrl.player.type === 'prop'")
+      .map-cachette__tutorial-content.border-village
+        h1
+          span Vous faites partie de l'équipe des
+          span.font-village  «Mimics»
+        .map-cachette__tuto-element.even
+          img(src="medias/events/carnaval-cachette/tutorial/tuto_mimic_1.png")
+          p
+            span Votre but est de rester
+            span.font-village  caché
+            span  durant la partie !
+            b  Vous aurez une minute
+            span  pour vous cacher. Pour cela, choisissez votre apparence et un endroit dans le village
+        .map-cachette__tuto-element.odd
+          img(src="medias/events/carnaval-cachette/tutorial/tuto_mimic_2.png")
+          p
+            span Choisissez votre déguisement avec le carrousel, puis placez-le dans le village ! Vous pouvez changer de déguisement et de lieu librement jusqu'au début de la partie.
+        .map-cachette__tuto-element.even
+          img(src="medias/events/carnaval-cachette/tutorial/tuto_mimic_3.png")
+          p
+            span Une fois la partie démarrée, vous ne pourrez plus bouger ! Vous pourrez changer de costume, mais
+            b  attention
+            b  : vous risqueriez de révéler votre position !
+    .map-cachette__tutorial(ng-if="cacheCtrl.game.phase === 'propHiding' && cacheCtrl.player.type === 'hunter'")
+      .map-cachette__tutorial-content.border-village
+        h3 Voici la liste des mimics que peuvent incarner vos adversaires :
+        .map-cachette__tuto-props
+          .map-cachette__tuto-prop(ng-repeat="prop in cacheCtrl.oppPropTransformations")
+            img.prop-item-image(src="medias/events/carnaval-cachette/props/{{cacheCtrl.village}}/{{cacheCtrl.map.mapTime}}/props_{{cacheCtrl.village}}_{{prop.filename}}")
+  .map-cachette__kill-feed(ng-show="cacheCtrl.type == 'UI'")
+    .map-cachette__feed-line(ng-repeat="kill in cacheCtrl.killFeed" ng-class="{'visible': kill.visible, 'suicide': !kill.killer, 'opposing': cacheCtrl.player.type === 'prop' || !kill.killer}")
+      .killer(ng-if="kill.killer") {{kill.killer}}
+      img.action(src="medias/events/carnaval-cachette/kill.png")
+      img.prop(ng-if="kill.prop" src="medias/events/carnaval-cachette/props/{{cacheCtrl.village}}/{{cacheCtrl.map.mapTime}}/props_{{cacheCtrl.village}}_{{kill.prop.filename}}")
+      .killed() {{kill.killed}}
+  .map-cachette__prop-hue(ng-if="cacheCtrl.player.type === 'prop' && !cacheCtrl.game.winner && cacheCtrl.game.phase === 'game'" ng-show="cacheCtrl.type == 'UI'")
+  .map-cachette__hunter-aiming(ng-if="cacheCtrl.player.type === 'hunter' && !cacheCtrl.game.winner && cacheCtrl.game.phase === 'game'" ng-click="cacheCtrl.clickZoneHunter($event)" ng-show="cacheCtrl.type == 'UI'")
+  .map-cachette__prop-aiming(ng-if="cacheCtrl.placingProp" ng-click="cacheCtrl.transform($event)" ng-mousemove="cacheCtrl.moveInvisibleProp($event)" ng-show="cacheCtrl.type == 'UI'")
+    .invisible-prop
+      img.prop-image(src="medias/events/carnaval-cachette/props/{{cacheCtrl.village}}/{{cacheCtrl.map.mapTime}}/props_{{cacheCtrl.village}}_{{cacheCtrl.selectedProp.filename}}")
+  .map-cachette__hunters(ng-if="!cacheCtrl.game.winner" ng-show="cacheCtrl.type == 'PROPS'")
+    .map-cachette__hunter.other-user(ng-if="$root.currentUser.ID !== hunter.user.ID" ng-repeat="hunter in cacheCtrl.game.hunters" id="hunter-{{hunter.user.ID}}" class="{{hunter.user.village}}")
+      .map-cachette__oeil
+      .name.font-village {{hunter.user.display_name}}
+  .map-cachette__map-props(ng-show="cacheCtrl.type == 'PROPS'")
+    .map-cachette__map-prop(ng-repeat="prop in cacheCtrl.game.props" ng-if="prop.transformation && prop.alive" id="prop-{{prop.user.ID}}" ng-class="{'highlight': cacheCtrl.game.winner === 'prop'}")
+      img.prop-image(src="medias/events/carnaval-cachette/props/{{cacheCtrl.village}}/{{cacheCtrl.map.mapTime}}/props_{{cacheCtrl.village}}_{{prop.transformationData.filename}}")
+      .prop-dust(class="{{cacheCtrl.map.mapTime}}" ng-class="{'transforming': prop.transforming}")
+  .map-cachette__display.fond-village(ng-class="{'hover lobby': cacheCtrl.lobby}" ng-if="!cacheCtrl.game.winner || cacheCtrl.lobby" ng-show="cacheCtrl.type == 'UI'")
+    a.map-cachette__lobby-click(ng-if="cacheCtrl.lobby" href="/events/carnaval-cachette")
+    .map-cachette__timer(ng-if="cacheCtrl.game.timeLeftFormat") {{cacheCtrl.game.timeLeftFormat}}
+    .map-cachette__timer(ng-if="cacheCtrl.lobby.timeLeftFormat") {{cacheCtrl.lobby.timeLeftFormat}}
+    .map-cachette__phase
+      span(ng-if="cacheCtrl.game.phase === 'introduction'") Introduction
+      span(ng-if="cacheCtrl.game.phase === 'propHiding'") Préparation des mimics
+      span(ng-if="cacheCtrl.game.phase === 'game'") Avant la fin de la partie
+      span(ng-if="cacheCtrl.lobby") Avant la prochaine partie de cache-cache
+    p(ng-if="cacheCtrl.player.type === 'hunter'") {{cacheCtrl.player.bullets}} Boulettes
+  .map-cachette__prop-selection.border-village(ng-if="cacheCtrl.player.type === 'prop' && !cacheCtrl.gameOver && !cacheCtrl.game.winner && cacheCtrl.game.phase !== 'introduction'" ng-show="cacheCtrl.type == 'UI'")
+    .map-cachette__prop-item.previous()
+      .map-cachette__prop-previous.font-village.hover(ng-click="cacheCtrl.changeProp(-1)") <
+      img.prop-item-image(src="medias/events/carnaval-cachette/props/{{cacheCtrl.village}}/{{cacheCtrl.map.mapTime}}/props_{{cacheCtrl.village}}_{{cacheCtrl.previousProp.filename}}")
+    .map-cachette__prop-item.main(ng-class="{'selected': cacheCtrl.placingProp}")
+      img.prop-item-image(src="medias/events/carnaval-cachette/props/{{cacheCtrl.village}}/{{cacheCtrl.map.mapTime}}/props_{{cacheCtrl.village}}_{{cacheCtrl.chosenProp.filename}}")
+    .map-cachette__prop-item.next()
+      .map-cachette__prop-next.font-village.hover(ng-click="cacheCtrl.changeProp(1)") >
+      img.prop-item-image(src="medias/events/carnaval-cachette/props/{{cacheCtrl.village}}/{{cacheCtrl.map.mapTime}}/props_{{cacheCtrl.village}}_{{cacheCtrl.nextProp.filename}}")
+    .map-cachette__prop-select.fond-village.button.hover.button--meaty(ng-click="cacheCtrl.selectProp(cacheCtrl.chosenProp)") {{cacheCtrl.game.phase === 'game' ? 'Transformer le mimic': 'Placer le mimic'}}

@@ -1,0 +1,31 @@
+.aulne-papier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh !important;
+  padding: 35px;
+  box-sizing: border-box;
+  margin-top: 10vh !important;
+
+  img {
+    width: 600px;
+    border-width: 3px !important;
+  }
+  p {
+    font-size: 1.2em;
+    width: 400px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    &:before {
+      content: '«';
+    }
+    &:after {
+      content: '»';
+    }
+  }
+  .button {
+    font-size: 1.3em;
+    min-width: 300px;
+  }
+}

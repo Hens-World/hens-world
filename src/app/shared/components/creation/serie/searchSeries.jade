@@ -1,0 +1,29 @@
+.search-series.generic-popup
+  .search-series__content.border-village.generic-popup__content(ng-show="!ctrl.loading")
+    .search-series__close.font-village.hover(ng-click="ctrl.close()") X
+    .search-series__title Créations à intégrer
+    .search-element
+      input.search-element__input(type="text" ng-model="ctrl.searchString"  ng-change="ctrl.updateSearch()" placeholder="Rechercher le nom d'une création")
+      img.search-element__icon(src="/medias/search.svg")
+    .button.button--meaty.fond-village.hover(ng-click="ctrl.addPosts()") Valider
+    .search-series__posts(style="--length: {{ctrl.posts.length}}")
+      .search-series__post.serie-post(
+                          ng-repeat="post in ctrl.displayedPosts"
+                          style="--order: {{post.order}}"
+                          ng-class="{'serie-post--selected': post.selected || post.clicked}")
+        .serie-post__checkbox-container(
+          ng-class="{'fond-village': post.selected || post.hovered}"
+          ng-click="ctrl.selectPost(post)"
+          ng-mousedown="post.clicked = true"
+          ng-mouseup="post.clicked = false"
+          ng-mouseleave="post.hovered = false; post.clicked = false"
+          ng-mouseenter="post.hovered = true;"
+          )
+          .serie-post__checkbox.fond-village.dark
+            .serie-post__checker(ng-class="{'fond-village light': post.selected}")
+        .serie-post__content
+          .serie-post__title {{post.title}}
+          .serie-post__location.other-user(class="{{post.village.slug}}")
+            span.font-village {{post.location.name}}
+          .serie-post__date {{post.formatDate}}
+        img.serie-post__miniature(ng-src="{{post.miniature}}")

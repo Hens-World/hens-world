@@ -1,0 +1,5 @@
+.side-menu-button(ng-repeat="btn in menuList" class="border-village-left"
+  ng-click="menuClick(btn)"
+  ng-mouseenter="hovering=true"
+  ng-mouseleave="hovering=false"
+  ng-class="{'active': state.tag == btn.tag || hovering, 'disabled': btn.disabled}") {{btn.label}}

@@ -1,0 +1,16 @@
+  "avail":[
+    {
+      "posSlug":"caillou",
+      "fromT": 17,
+      "to":21,
+      "x": 2471,
+      "y": 2913,
+      "width":38,
+      "height":62,
+      "center":{
+        "x":15,
+        "y":61
+      }
+    }
+  ]
+}

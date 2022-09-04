@@ -1,0 +1,10 @@
+.search-object
+  .search-object__input-line
+    input.search-object__input(ng-model="ctrl.searchInput" type="text" ng-change="ctrl.onInput(ctrl.searchInput)")
+    img.search-object__search-icon(src="/medias/search.svg")
+  .search-object__results(ng-show="ctrl.results.length > 0")
+    .search-object__result(ng-repeat="result in ctrl.results" ng-click="ctrl.selectObject(result)")
+      img.search-object__miniature(ng-src="{{result.miniature}}")
+      .search-object__result-content
+        .search-object__title {{result.title}}
+        .search-object__detail {{result.detail}}

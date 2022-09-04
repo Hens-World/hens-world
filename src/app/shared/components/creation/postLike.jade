@@ -1,0 +1,6 @@
+.post-like(ng-class="{'golden': likeCtrl.golden}")
+  .post-like__amount(ng-click="likeCtrl.showList()")
+    span {{likeCtrl.likes.length}}
+    .post-like__label()
+      span Hensiens qui aiment ceci
+  .post-like__image(ng-class="{'active':likeCtrl.isLiked}" ng-click="likeCtrl.likePost()")

@@ -1,0 +1,17 @@
+.musique-article__container
+  .musique-article
+    .musique-article__blurred-bg-container
+      .musique-article__blurred-bg(ng-class="{'no-blur': noBlur}" style="background-image:url({{backgroundImage}})")
+    .musique-article__container
+      post-like(post-id="post.ID" likes="post.likes")
+      .musique-article__miniature(style="background-image:url({{post.miniature}})")
+      h2.musique-article__title {{post.title}}
+      .musique-article__tag-container
+        span.musique-article__tag(ng-repeat="tag in post.tags") {{tag}}
+      .article-player
+        play-control(music-bound="post.slug")
+        song-timer.musique-article__timer(music-bound="post.slug")
+        .article-player__song-duration {{timeLeft}}
+        volume-control(orientation="horizontal")
+  .description-container
+    .description(ng-bind-html="post.content")

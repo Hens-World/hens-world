@@ -1,0 +1,28 @@
+.page-container
+  .main-column.signe-zodiaque__container
+    .signe-zodiaque__loader-container(ng-show="state === 'loading'")
+      .signe-zodiaque__loader()
+        .text Chargement..
+        .box.box1
+        .box.box2
+        .box.box3
+        .box.box4
+    .signe-zodiaque__date-pick(ng-show="state === 'pickingDate'")
+      .date-content
+        h1 Peux tu me dire ta date de naissance ?
+        .field()
+          .label Date de naissance
+          input.form(type="date" ng-model="birthday" name="Date d'anniversaire")
+        .button.button--meaty.fond-village.hover(ng-click="sendBirthday()") Valider
+    .signe-zodiaque__signe(ng-show="state === 'signe'")
+      div
+        img.signe__image(src="medias/events/horoscope/{{signe.animal_slug}}.jpg" )
+      div
+        .signe__title.font-village {{signe.title}}
+        .signe__infos Mois: {{months[signe.month - 1]}}
+        .signe__text {{signe.text}}
+        .button.button--meaty.fond-village.hover(ng-click="goToPrediction()") Consulter ma prédiction
+    .signe-zodiaque__prediction(ng-show="state === 'prediction'")
+      .prediction__content
+        .prediction__text(class="{{$root.currentUser.village}}") {{signe.prediction.text}}
+        a.button.button--meaty.fond-village.hover(href="/map") Hmm... ok (partir)

@@ -1,0 +1,406 @@
+
+village-location {
+  position: absolute;
+  z-index: 20;
+  transition: all 0.5s;
+  font-size: 12em;
+  border-radius: 20px;
+
+  &.no-creations {
+    .loca-geo__label-element--creation, .loca-geo__label-element--roleplay {
+      display: none;
+    }
+  }
+
+  > * {
+    pointer-events: none;
+  }
+}
+
+.loca-geo {
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: background-color .2s;
+
+
+  &__open {
+    background-color: rgba(255, 255, 255, .07);
+    .loca-geo__cursor {
+      margin-top: -78px
+    }
+    .hot {
+      top: 0
+    }
+    .label-container {
+      margin-top: -115px;
+      opacity: 1;
+      transition: all .4s ease-out;
+      transition-delay: .15s
+    }
+  }
+  .label-container {
+    position: relative;
+    right: 50%;
+    margin-top: -80px;
+    opacity: 0;
+    transition: all .3s ease-in;
+    pointer-events: none;
+    transition-delay: .1s;
+    text-align: center;
+  }
+
+  .label {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    font-size: 22em;
+    color: #fff;
+    padding: 1px 20px;
+    margin-right: -100%;
+    border-radius: 17px;
+    background: rgba(0, 0, 0, .3);
+    font-family: 'Open Sans Condensed', sans-serif
+  }
+
+  &__cursor {
+    position: absolute;
+    left: 50%;
+    width: 48px;
+    z-index: 21;
+    margin-left: -24px;
+    height: 72px;
+    margin-top: -60px;
+    transition: margin-top .2s ease-out;
+    &.sulimo {
+      background-image: url(/medias/map/ui/curseur_sulimo.png)
+    }
+    &.ulmo {
+      background-image: url(/medias/map/ui/curseur_ulmo.png)
+    }
+    &.wilwar {
+      background-image: url(/medias/map/ui/curseur_wilwar.png)
+    }
+    &.anar {
+      background-image: url(/medias/map/ui/curseur_anar.png)
+    }
+  }
+
+  &__event-cursor {
+    position: absolute;
+    left: 50%;
+    width: 38px;
+    z-index: 21;
+    margin-left: -19px;
+    height: 46px;
+    background-repeat: no-repeat;
+    margin-top: -51px;
+    transition: margin-top .2s ease-out;
+    &.sulimo {background-image: url(/medias/map/ui/exclamation_icon_sulimo.png);}
+    &.ulmo {background-image: url(/medias/map/ui/exclamation_icon_ulmo.png);}
+    &.wilwar {background-image: url(/medias/map/ui/exclamation_icon_wilwar.png);}
+    &.anar {background-image: url(/medias/map/ui/exclamation_icon_anar.png);}
+  }
+  // background: rgba(255,255,255,0.2);
+  .hot-notification {
+    margin-left: -29px;
+    transition: top 0.2s ease-out;
+    top: -40px;
+    position: absolute;
+    z-index: 21;
+    display: none;
+    &.active {
+      display: inline-block;
+    }
+    &--roleplay {
+      top: -60px;
+    }
+  }
+  &__cursor {
+    position: absolute;
+    left: 50%;
+    width: 48px;
+    z-index: 21;
+    margin-left: -24px;
+    height: 72px;
+    pointer-events: auto;
+    margin-top: -60px;
+    transition: margin-top 0.2s ease-out;
+    &.ulmo {
+      background: url('/medias/map/ui/curseur_ulmo.png');
+    }
+    &.wilwar {
+      background: url('/medias/map/ui/curseur_wilwar.png');
+    }
+    &.sulimo {
+      background: url('/medias/map/ui/curseur_sulimo.png');
+    }
+    &.anar {
+      background: url('/medias/map/ui/curseur_anar.png');
+    }
+  }
+  &__label-list {
+    position: relative;
+    bottom: 150px;
+    opacity: 0;
+    height: 120px;
+    width: 150px;
+    transform: translateX(-50%);
+    left: 50%;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+  }
+  &__label-element {
+    pointer-events: none;
+    margin-top: 10px;
+    line-height: 1.2em;
+    transition-delay: 0.1s;
+    text-align: center;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 17px;
+    background: rgba(0, 0, 0, 0.5);
+    .info-text {
+      padding: 0;
+      margin: 0;
+    }
+    h3 {
+      font-weight: 400;
+      text-align: center;
+      font-size: 1.8em;
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+    h4 {
+      font-size: 1.4em;
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+  }
+  &__open {
+    background: rgba(255, 255, 255, 0.07);
+    .loca-geo__cursor {
+      margin-top: -78px;
+    }
+    .loca-geo__label-list {
+      bottom: 200px;
+      opacity: 1;
+      transition: all 0.4s ease-out;
+      transition-delay: 0.15s;
+    }
+  }
+}
+
+
+.loca-geo .loca-geo__cursor {
+  position: absolute;
+  left: 50%;
+  width: 48px;
+  z-index: 21;
+  margin-left: -24px;
+  height: 72px;
+  margin-top: -60px;
+  transition: margin-top .2s ease-out;
+}
+
+.loca-geo .loca-geo__cursor.ulmo {
+  background: url(/medias/map/ui/curseur_ulmo.png)
+}
+
+.loca-geo .loca-geo__cursor.wilwar {
+  background: url(/medias/map/ui/curseur_wilwar.png)
+}
+
+.loca-geo .loca-geo__cursor.sulimo {
+  background: url(/medias/map/ui/curseur_sulimo.png)
+}
+
+.loca-geo .loca-geo__cursor.anar {
+  background: url(/medias/map/ui/curseur_anar.png)
+}
+
+.loca-geo {
+  &__event-cursor {
+    position: absolute;
+    left: 50%;
+    width: 38px;
+    z-index: 21;
+    margin-left: -19px;
+    height: 46px;
+    background-repeat: no-repeat;
+    margin-top: -51px;
+    transition: margin-top .2s ease-out;
+    &.sulimo {background-image: url(/medias/map/ui/exclamation_icon_sulimo.png);}
+    &.ulmo {background-image: url(/medias/map/ui/exclamation_icon_ulmo.png);}
+    &.wilwar {background-image: url(/medias/map/ui/exclamation_icon_wilwar.png);}
+    &.anar {background-image: url(/medias/map/ui/exclamation_icon_anar.png);}
+  }
+}
+
+
+.loca-geo .label-container {
+  position: relative;
+  right: 50%;
+  margin-top: -80px;
+  opacity: 0;
+  transition: all .3s ease-in;
+  pointer-events: none;
+  transition-delay: .1s;
+  text-align: center
+}
+
+.loca-geo.barrage-ulmo .label-container,
+.loca-geo.coquelicot-wilwar .label-container,
+.loca-geo.domaine_sulimo .label-container,
+.loca-geo.pote_au_feu .label-container,
+.loca-geo.domaine_wilwar .label-container,
+.loca-geo.eau_peine_bar-ulmo .label-container,
+.loca-geo.taverne-sulimo .label-container {
+  margin-top: -80px
+}
+
+.loca-geo.barrage-ulmo .loca-geo__cursor,
+.loca-geo.coquelicot-wilwar .loca-geo__cursor,
+.loca-geo.pote_au_feu .loca-geo__cursor,
+.loca-geo.domaine_sulimo .loca-geo__cursor,
+.loca-geo.domaine_wilwar .loca-geo__cursor,
+.loca-geo.eau_peine_bar-ulmo .loca-geo__cursor,
+.loca-geo.taverne-sulimo .loca-geo__cursor {
+  width: 64px;
+  height: 96px;
+  margin-left: -32px;
+  margin-top: -92px;
+  z-index: 1
+}
+
+.loca-geo.barrage-ulmo.eau_peine_bar-ulmo .loca-geo__cursor,
+.loca-geo.coquelicot-wilwar.eau_peine_bar-ulmo .loca-geo__cursor,
+.loca-geo.domaine_sulimo.eau_peine_bar-ulmo .loca-geo__cursor,
+.loca-geo.domaine_wilwar.eau_peine_bar-ulmo .loca-geo__cursor,
+.loca-geo.eau_peine_bar-ulmo.eau_peine_bar-ulmo .loca-geo__cursor,
+.loca-geo.taverne-sulimo.eau_peine_bar-ulmo .loca-geo__cursor {
+  background: url(/medias/map/custom_geoloc/tchat_ulmo.png);
+  background-size: 100% 100%
+}
+
+.loca-geo.barrage-ulmo.coquelicot-wilwar .loca-geo__cursor,
+.loca-geo.coquelicot-wilwar.coquelicot-wilwar .loca-geo__cursor,
+.loca-geo.domaine_sulimo.coquelicot-wilwar .loca-geo__cursor,
+.loca-geo.domaine_wilwar.coquelicot-wilwar .loca-geo__cursor,
+.loca-geo.eau_peine_bar-ulmo.coquelicot-wilwar .loca-geo__cursor,
+.loca-geo.taverne-sulimo.coquelicot-wilwar .loca-geo__cursor {
+  background: url(/medias/map/custom_geoloc/tchat_wilwar.png);
+  background-size: 100% 100%
+}
+
+.uniqueLocaIcon(@iconName) {
+  .loca-geo .loca-geo__cursor {
+    background-image: url(@iconName);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    width: 48px;
+    z-index: 21;
+    margin-left: -24px;
+    height: 72px;
+    margin-top: -60px;
+
+  }
+}
+
+.constellations {
+  .uniqueLocaIcon('/medias/map/custom_geoloc/special_constellations.png');
+}
+
+.grand_dojo {
+  .uniqueLocaIcon('/medias/map/custom_geoloc/special_dojo.png');
+}
+
+.loca-geo.barrage-ulmo.taverne-sulimo .loca-geo__cursor,
+.loca-geo.coquelicot-wilwar.taverne-sulimo .loca-geo__cursor,
+.loca-geo.domaine_sulimo.taverne-sulimo .loca-geo__cursor,
+.loca-geo.domaine_wilwar.taverne-sulimo .loca-geo__cursor,
+.loca-geo.eau_peine_bar-ulmo.taverne-sulimo .loca-geo__cursor,
+.loca-geo.taverne-sulimo.taverne-sulimo .loca-geo__cursor {
+  background-image: url(/medias/map/custom_geoloc/tchat_sulimo.png);
+}
+
+.loca-geo.barrage-ulmo.domaine_sulimo .loca-geo__cursor,
+.loca-geo.coquelicot-wilwar.domaine_sulimo .loca-geo__cursor,
+.loca-geo.domaine_sulimo.domaine_sulimo .loca-geo__cursor,
+.loca-geo.domaine_wilwar.domaine_sulimo .loca-geo__cursor,
+.loca-geo.eau_peine_bar-ulmo.domaine_sulimo .loca-geo__cursor,
+.loca-geo.taverne-sulimo.domaine_sulimo .loca-geo__cursor {
+  background-image: url(/medias/map/custom_geoloc/geoloc_domaine_sulimo.png);
+}
+
+.loca-geo.barrage-ulmo.domaine_wilwar,
+.loca-geo.coquelicot-wilwar.domaine_wilwar,
+.loca-geo.domaine_sulimo.domaine_wilwar,
+.loca-geo.domaine_wilwar.domaine_wilwar,
+.loca-geo.eau_peine_bar-ulmo.domaine_wilwar,
+.loca-geo.taverne-sulimo.domaine_wilwar {
+  .loca-geo__cursor {
+    background-image: url(/medias/map/custom_geoloc/geoloc_domaine_wilwar.png);
+  }
+}
+
+.loca-geo.barrage-ulmo.barrage-ulmo,
+.loca-geo.coquelicot-wilwar.barrage-ulmo,
+.loca-geo.domaine_sulimo.barrage-ulmo,
+.loca-geo.domaine_wilwar.barrage-ulmo,
+.loca-geo.eau_peine_bar-ulmo.barrage-ulmo,
+.loca-geo.taverne-sulimo.barrage-ulmo {
+  .loca-geo__cursor {
+    background-image: url(/medias/map/custom_geoloc/geoloc_domaine_ulmo.png);
+  }
+}
+
+.loca-geo.pote_au_feu .loca-geo__cursor {
+  background-image: url(/medias/map/custom_geoloc/tchat_anar.png);
+
+}
+
+.loca-geo.barrage-ulmo.loca-geo__open .loca-geo__cursor,
+.loca-geo.coquelicot-wilwar.loca-geo__open .loca-geo__cursor,
+.loca-geo.pote_au_feu.loca-geo__open .loca-geo__cursor,
+.loca-geo.domaine_sulimo.loca-geo__open .loca-geo__cursor,
+.loca-geo.pote_au_feu.loca-geo__open .loca-geo__cursor,
+.loca-geo.domaine_wilwar.loca-geo__open .loca-geo__cursor,
+.loca-geo.eau_peine_bar-ulmo.loca-geo__open .loca-geo__cursor,
+.loca-geo.taverne-sulimo.loca-geo__open .loca-geo__cursor {
+  margin-top: -107px
+}
+
+.loca-geo.loca-geo__open {
+  background: rgba(255, 255, 255, .07)
+}
+
+.loca-geo.loca-geo__open .loca-geo__cursor {
+  margin-top: -78px
+}
+
+.loca-geo.loca-geo__open .hot {
+  top: 0
+}
+
+.loca-geo.loca-geo__open .label-container {
+  margin-top: -115px;
+  opacity: 1;
+  transition: all .4s ease-out;
+  transition-delay: .15s
+}
+
+.loca-geo.loca-geo__open.barrage-ulmo .label-container,
+.loca-geo.loca-geo__open.coquelicot-wilwar .label-container,
+.loca-geo.loca-geo__open.domaine_sulimo .label-container,
+.loca-geo.loca-geo__open.domaine_wilwar .label-container,
+.loca-geo.loca-geo__open.eau_peine_bar-ulmo .label-container,
+.loca-geo.loca-geo__open.taverne-sulimo .label-container {
+  margin-top: -135px
+}
+

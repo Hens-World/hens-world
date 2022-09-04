@@ -1,0 +1,6 @@
+/index.php
+.idea/
+dist/
+/node_modules/
+.vscode
+uploads/

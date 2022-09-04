@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "vieu_20000.png",
+	"frame": {"x":0,"y":0,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+},
+{
+	"filename": "vieu_20001.png",
+	"frame": {"x":0,"y":74,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+},
+{
+	"filename": "vieu_20002.png",
+	"frame": {"x":0,"y":148,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+},
+{
+	"filename": "vieu_20003.png",
+	"frame": {"x":0,"y":222,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+},
+{
+	"filename": "vieu_20004.png",
+	"frame": {"x":0,"y":296,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+},
+{
+	"filename": "vieu_20005.png",
+	"frame": {"x":0,"y":370,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+},
+{
+	"filename": "vieu_20006.png",
+	"frame": {"x":0,"y":444,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+},
+{
+	"filename": "vieu_20007.png",
+	"frame": {"x":0,"y":518,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+},
+{
+	"filename": "vieu_20008.png",
+	"frame": {"x":0,"y":592,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+},
+{
+	"filename": "vieu_20009.png",
+	"frame": {"x":0,"y":666,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+},
+{
+	"filename": "vieu_20010.png",
+	"frame": {"x":0,"y":740,"w":64,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":74},
+	"sourceSize": {"w":64,"h":74}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "vieu_2_balais.png",
+	"format": "RGBA8888",
+	"size": {"w":64,"h":814},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c5b8133132612d76a6367310d2eb89f0:39483f45a2906d899915b0e9323c1e1e:e6cbd39371c60a574a8e4f039db4d46b$"
+}
+}

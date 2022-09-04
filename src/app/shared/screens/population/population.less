@@ -1,0 +1,315 @@
+body.mobile {
+  .population {
+    &__row {
+      flex-direction: column;
+    }
+    &__title {
+      display: none;
+    }
+
+    &__list {
+      margin-top: 6px;
+      width: 100%;
+      order: 2;
+      flex-direction: column;
+    }
+    &__element {
+      flex: 0 0 auto;
+      width: 100%;
+      margin-right: 0;
+    }
+    &__avatar {
+      flex: 0 0 auto;
+    }
+
+  }
+
+  .custom-search {
+    order: 1;
+    width: 100%;
+    top: 0;
+    min-height: 0;
+    flex: 0 0 auto;
+
+    &__section {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__separation-line {
+      display: none;
+    }
+    &__unique-button {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      margin-top: 12px;
+    }
+  }
+}
+
+
+.population {
+
+  &__row {
+    display: flex;
+  }
+  &__title {
+    font-size: 3em;
+    width: 100%;
+    background-color: @buttonDark;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 12px;
+    font-family: "Wire One", sans-serif;
+  }
+
+  &__list {
+    align-self: flex-start;
+    flex: 1 0 60%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__element {
+    --columns: 2;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    flex: 0 0 calc((100% / var(--columns)) - 4.5px);
+    text-align: center;
+    background: @guestNeuter;
+    opacity: .84;
+    transition: opacity .35s;
+    margin-bottom: 9px;
+    box-sizing: border-box;
+    padding: 6px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 9px;
+    }
+
+    &.anar {background: @anarNeuter;}
+    &.ulmo {background: @ulmoNeuter;}
+    &.sulimo {background: @sulimoNeuter;}
+    &.wilwar {background: @wilwarNeuter;}
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__avatar {
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    background-position: center 0;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  &__pseudo {
+    width: inherit;
+    font-size: 1.5em;
+    line-height: 1.15em;
+    color: #fff;
+    word-break: break-word;
+    display: block;
+    margin-right: 3px;
+    text-align: left;
+  }
+
+  &__type {
+    margin-left: auto;
+    font-size: 1.5em;
+    opacity: .7;
+  }
+}
+
+.custom-search {
+  padding: 12px;
+  box-sizing: border-box;
+  position: -webkit-sticky;
+  top: 12px;
+  position: sticky;
+  flex: 0 0 300px;
+  align-self: flex-start;
+  padding-bottom: 25px;
+  margin-right: 10px;
+  background: #222;
+
+  &__section {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  &__input {
+    position: relative;
+    &:after {
+      content: '';
+      width: 1.2em;
+      height: 1.2em;
+      right: .4em;
+      top: .45em;
+      position: absolute;
+      display: block;
+      background-image: url('./medias/search.svg');
+      background-size: cover;
+    }
+    input {
+      width: 100%;
+      color: #fff;
+      box-sizing: border-box;
+      padding-left: 5px;
+      border: none;
+      height: 2em;
+      background: @black;
+    }
+  }
+
+  &__village-filter {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  &__village-button {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 2px;
+    opacity: .65;
+    transition: opacity .2s;
+    background-size: cover;
+    filter: grayscale(.5);
+    border: 10px solid white;
+    &.sulimo {
+      background-image: url(/medias/common/sulimo_icone.png);
+      border-color: @sulimoNeuter;
+    }
+    &.anar {
+      background-image: url(/medias/common/anar_icone.png);
+      border-color: @anarNeuter;
+    }
+    &.wilwar {
+      background-image: url(/medias/common/wilwar_icone.png);
+      border-color: @wilwarNeuter;
+    }
+    &.ulmo {
+      background-image: url(/medias/common/ulmo_icone.png);
+      border-color: @ulmoNeuter;
+    }
+    background-repeat: no-repeat;
+    &.active {
+      filter: none;
+      opacity: 1;
+    }
+    &:hover {
+      transition: opacity .4s;
+      opacity: .8
+    }
+    &:hover.active {
+      opacity: .95
+    }
+  }
+
+  &__separation-line {
+    background-color: @headerDark;
+    height: 2px;
+    margin: 10px 0;
+  }
+
+  &__type-filter {
+    width: 100%;
+    background-color: @contentDark;
+    margin-bottom: 3px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__type-button {
+    flex: 1 1 40%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    margin: 2px;
+    transition: opacity .3s, background-color .3s;
+    background-size: 45px 45px;
+    background-position: center;
+    &.active {
+      background-color: #555;
+      opacity: 1;
+    }
+    &:hover {
+      opacity: .95;
+      background-color: #4c4c4c;
+    }
+  }
+
+  &__unique-button {
+    text-align: center;
+    margin-top: 30px;
+    height: 30px;
+    background: @lowerDark;
+    cursor: pointer;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #fff;
+    position: relative;
+    font-size: 1.15em;
+    opacity: .9;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      margin-top: 4px;
+      margin-left: 5px;
+      background: #050505;
+      &:hover {
+        opacity: 1
+      }
+      &:hover::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        margin-top: 4px;
+        margin-left: -30px;
+        background-color: @lowerDark;
+      }
+    }
+
+    &.active::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      margin-top: 4px;
+      background-color: #d9b76f;
+    }
+  }
+}
+
+.sulimo .custom-search__equipe-button.active::before {background-color: @sulimoNeuter !important}
+
+.ulmo .custom-search__equipe-button.active::before {background-color: @ulmoNeuter !important}
+
+.wilwar .custom-search__equipe-button.active::before {background-color: @wilwarNeuter !important}
+
+.anar .custom-search__equipe-button.active::before {background-color: @anarNeuter !important}

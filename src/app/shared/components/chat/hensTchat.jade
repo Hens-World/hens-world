@@ -1,0 +1,62 @@
+.inner-tchat-container.open(ng-class="{'redux':redux && mode != 'full-screen'}"
+    class="{{mode}} {{position ? 'no-transition' : ''}}"
+    style="{{mode !== 'full-screen' && position ? dragStyle.left + dragStyle.top : ''}}"
+    ng-show="!invisible")
+  .info(ng-click='openTchat()' ng-show="mode != 'full-screen'")
+    .status-info(class="{{$root.info.user.village}}" ng-class="{'active':status}")
+    span.closed(ng-show="!status") Rejoignez la discussion de comptoir!
+    .connections(ng-show="!status") {{$root.info.globalList}}
+
+    span.open(ng-show="status") Discussion de comptoir
+    span.notif.fond-village(ng-show='notifNb > 0 && status') {{notifNb}}
+  .open-tchat
+    .menu-line(ng-show="mode != 'full-screen'")
+      .drag-n-drop(ng-show="status" ng-mousedown="startDrag($event)")
+      .message(ng-click='reduceTchat()') Discussion de comptoir
+      .reduce(ng-click='reduceTchat()') -
+      a.full-screen-bt(href="/tchat")
+      .close(ng-click='closeTchat()') x
+    .left-container
+      .tchat-content#tchat-content(
+        style="{{mode !== 'full-screen' && position ? 'height:calc(100vh - 80px - ' + position.top + 'px)': ''}}"
+      )
+        .message-container.other-user(class="{{::msg.user.village}} {{::msg.type}}" ng-class-odd="'odd'", ng-repeat='msg in historique[currentChannel]', on-last-repeat='on-last-repeat')
+          .message-line
+            a.sender(href='profil/{{msg.user.ID}}')
+              span.font-village( ng-bind-html='::msg.user.display_name')
+            span.timer.ng-binding(ng-bind-html='::msg.timer')
+          span.message(ng-bind-html='::msg.message')
+      .write-container
+        .emotes-container.border-village(ng-class="{'show': showEmotes}")
+          .emote(ng-repeat="emote in emotes" ng-click="insertEmote(emote)")
+            img(ng-src="/medias/chat/emotes/{{::emote}}.png")
+        .emotes-suggestion(ng-show="suggestedEmotes && suggestedEmotes.length > 0")
+          .suggested-emote(ng-repeat="suggestedEmote in suggestedEmotes" ng-click="insertEmote(suggestedEmote)")
+            .emote
+              img(ng-src="/medias/chat/emotes/{{suggestedEmote}}.png")
+            span {{suggestedEmote}}
+        .more-container(ng-show="showNotice" ng-click="goBottom()") Afficher les nouveaux messages
+        textarea#m.write.ng-pristine.ng-untouched.ng-valid(ng-model='currentMsg', type='text')
+        .validate.button.fond-village(ng-click='sendMsg()')
+          svg(width="13" height="25")
+            path(fill='#fff',
+            d='M0,5 0,20 12,13')
+        .show-emotes(ng-click="toggleShowEmotes()")
+          img(src="/medias/chat/icon_emote.png")
+        .connections {{$root.info.globalList}}
+        .show-user-list(ng-click="toggleUserList()")
+          .line
+          .line
+          .line
+    .user-list(ng-class="{'active': showUserList}")
+      h2 Utilisateurs connectés
+      a.user(class="{{user.village}}" ng-repeat='user in userList[currentChannel]' href='profil/{{user.ID}}')
+        span.user-status(class="{{user.away ? 'away': 'online'}}" title="{{user.away ? 'Inactif' : 'En ligne'}}")
+        span {{user.display_name}}
+    .close(ng-click="toggleUserList()")
+  .side-column(ng-if="mode === 'full-screen'")
+    .user-list.active()
+      h2 Utilisateurs connectés
+      a.user(class="{{user.village}}" ng-repeat='user in userList[currentChannel]' href='profil/{{user.ID}}')
+        span.user-status(class="{{user.away ? 'away': 'online'}}" title="{{user.away ? 'Inactif' : 'En ligne'}}")
+        span {{user.display_name}}

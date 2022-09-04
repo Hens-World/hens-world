@@ -1,0 +1,129 @@
+{"frames": [
+
+{
+	"filename": "Rubis_livre_00.png",
+	"frame": {"x":2,"y":2,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_01.png",
+	"frame": {"x":34,"y":2,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_02.png",
+	"frame": {"x":66,"y":2,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_03.png",
+	"frame": {"x":2,"y":75,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_04.png",
+	"frame": {"x":66,"y":2,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_05.png",
+	"frame": {"x":34,"y":2,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_06.png",
+	"frame": {"x":2,"y":2,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_07.png",
+	"frame": {"x":34,"y":2,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_08.png",
+	"frame": {"x":34,"y":75,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_09.png",
+	"frame": {"x":66,"y":75,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_10.png",
+	"frame": {"x":2,"y":148,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_11.png",
+	"frame": {"x":34,"y":148,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Rubis_livre_12.png",
+	"frame": {"x":2,"y":2,"w":30,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+	"sourceSize": {"w":30,"h":71},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "rubis_livre.png",
+	"format": "RGBA8888",
+	"size": {"w":98,"h":221},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:449ac559329cc9515003c0af4b560ae9:9193de140e0fe479ef9cb116640fc036:7e08dd813da0f775e57dfc83e7eb4d43$"
+}
+}

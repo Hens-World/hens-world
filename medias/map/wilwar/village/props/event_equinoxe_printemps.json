@@ -1,0 +1,294 @@
+{
+  "label":"char_sulimo",
+  "width":316,
+  "height":216,
+  "center":{
+    "x":86,
+    "y":214
+  },
+  "avail":[
+    {
+      "fromT":0,
+      "to":24,
+      "dates": [["21-03", "22-03"]]
+    }
+  ],
+  "list":[
+    {
+      "x":2924,
+      "y":3054
+    }
+  ]
+},
+{
+  "label":"char_ulmo",
+  "width":270,
+  "height":207,
+  "center":{
+    "x":0,
+    "y":185
+  },
+  "avail":[
+    {
+      "fromT":0,
+      "to":24,
+      "dates": [["21-03", "22-03"]]
+    }
+  ],
+  "list":[
+    {
+      "x":3187,
+      "y":2882
+    }
+  ]
+},
+{
+  "label":"char_wilwar",
+  "width":253,
+  "height":213,
+  "center":{
+    "x":1,
+    "y":190
+  },
+  "avail":[
+    {
+      "fromT":0,
+      "to":24,
+      "dates": [["21-03", "22-03"]]
+    }
+  ],
+  "list":[
+    {
+      "x":3794,
+      "y":2586
+    }
+  ]
+},
+{
+  "label":"char_anar",
+  "width":226,
+  "height":183,
+  "center":{
+    "x":54,
+    "y":182
+  },
+  "avail":[
+    {
+      "fromT":0,
+      "to":24,
+      "dates": [["21-03", "22-03"]]
+    }
+  ],
+  "list":[
+    {
+      "x":4135,
+      "y":2468
+    }
+  ]
+},
+    {
+      "label": "artisants_g1",
+      "width": 110,
+      "height": 115,
+      "center": {
+        "x": 14,
+        "y": 114
+      },
+     "avail":[
+        {
+         "fromT":0,
+        "to":24,
+        "dates": [["21-03", "22-03"]]
+      }
+  ],
+      "list": [
+        {
+          "x": 2985,
+          "y": 3391
+        }
+      ]
+    },
+    {
+      "label": "artisants_g2",
+      "width": 58,
+      "height": 86,
+      "center": {
+        "x": 24,
+        "y": 85
+      },
+     "avail":[
+        {
+         "fromT":0,
+        "to":24,
+        "dates": [["21-03", "22-03"]]
+      }
+      ],
+      "list": [
+        {
+          "x": 4078,
+          "y": 2560
+        }
+        {
+          "x": 2618,
+          "y": 3570
+        },
+      ]
+    },
+    {
+      "label": "artisants_g3",
+      "width": 114,
+      "height": 127,
+      "center": {
+        "x": 78,
+        "y": 126
+      },
+     "avail":[
+        {
+         "fromT":0,
+        "to":24,
+        "dates": [["21-03", "22-03"]]
+      }
+      ],
+      "list": [
+        {
+          "x": 3475,
+          "y": 2851
+        }
+      ]
+    },
+    {
+      "label": "artisants_g9",
+      "width": 67,
+      "height": 91,
+      "center": {
+        "x": 45,
+        "y": 89
+      },
+     "avail":[
+        {
+         "fromT":0,
+        "to":24,
+        "dates": [["21-03", "22-03"]]
+      }
+      ],
+      "list": [
+        {
+          "x": 4381,
+          "y": 2394
+        },
+        {
+          "x": 2706,
+          "y": 3576
+        }
+      ]
+    },
+    {
+      "label": "artisants_g10",
+      "width": 42,
+      "height": 62,
+      "center": {
+        "x": 31,
+        "y": 60
+      },
+     "avail":[
+        {
+         "fromT":0,
+        "to":24,
+        "dates": [["21-03", "22-03"]]
+      }
+      ],
+      "list": [
+        {
+          "x": 2884,
+          "y": 3395
+        }
+      ]
+    },
+    {
+      "label": "couple_panneau",
+      "width": 41,
+      "height": 80,
+      "center": {
+        "x": 4,
+        "y": 78
+      },
+     "avail":[
+        {
+         "fromT":0,
+        "to":24,
+        "dates": [["21-03", "22-03"]]
+      }
+      ],
+      "list": [
+        {
+          "x": 4374,
+          "y": 2469
+        }
+      ]
+    },
+    {
+      "label": "perso_groupe_1",
+      "width": 60,
+      "height": 114,
+      "center": {
+        "x": 47,
+        "y": 113
+      },
+     "avail":[
+        {
+         "fromT":0,
+        "to":24,
+        "dates": [["21-03", "22-03"]]
+      }
+      ],
+      "list": [
+        {
+          "x": 2850,
+          "y": 3060
+        }
+      ]
+    },
+    {
+      "label": "char_arbre",
+      "width": 328,
+      "height": 354,
+      "center": {
+        "x": 40,
+        "y": 352
+      },
+     "avail":[
+        {
+         "fromT":0,
+        "to":24,
+        "dates": [["21-03", "22-03"]]
+      }
+      ],
+      "list": [
+        {
+          "x": 3482,
+          "y": 2782
+        }
+      ]
+    },
+        {
+      "label": "jardin_equinoxe",
+      "width": 267,
+      "height": 174,
+      "center": {
+        "x": 107,
+        "y": 173
+      },
+     "avail":[
+        {
+         "fromT":0,
+        "to":24,
+        "dates": [["21-03", "22-03"]]
+      }
+      ],
+      "list": [
+        {
+          "x": 2602,
+          "y": 3441
+        }
+      ]
+    }

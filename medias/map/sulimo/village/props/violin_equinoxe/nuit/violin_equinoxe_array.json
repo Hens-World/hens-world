@@ -1,0 +1,84 @@
+{"frames": [
+
+{
+	"filename": "violin0000.png",
+	"frame": {"x":0,"y":0,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":35,"h":50}
+},
+{
+	"filename": "violin0001.png",
+	"frame": {"x":35,"y":0,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":35,"h":50}
+},
+{
+	"filename": "violin0002.png",
+	"frame": {"x":70,"y":0,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":35,"h":50}
+},
+{
+	"filename": "violin0003.png",
+	"frame": {"x":105,"y":0,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":35,"h":50}
+},
+{
+	"filename": "violin0004.png",
+	"frame": {"x":140,"y":0,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":35,"h":50}
+},
+{
+	"filename": "violin0005.png",
+	"frame": {"x":175,"y":0,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":35,"h":50}
+},
+{
+	"filename": "violin0006.png",
+	"frame": {"x":210,"y":0,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":35,"h":50}
+},
+{
+	"filename": "violin0007.png",
+	"frame": {"x":245,"y":0,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":35,"h":50}
+},
+{
+	"filename": "violin0008.png",
+	"frame": {"x":280,"y":0,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":35,"h":50}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "violin_equinoxe.png",
+	"format": "RGBA8888",
+	"size": {"w":315,"h":50},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:85406afe9b3d01eb48659e36ac2113fd:edadf34404b1de2b0040dade5967c1bf:7d4378a9937306b988e4a334f809f7b6$"
+}
+}

@@ -1,0 +1,66 @@
+.popup-contrib-container(ng-show="displaySignup")
+#header
+  .left-container
+    .menu-list
+      span(ng-repeat='category in headCtrl.categories')
+        a.item.border-village-left(ng-if="category.css != 'don' ", ng-class="{'active':hovering || headCtrl.currentPage == category.link}", ng-mouseenter="hovering=true", ng-mouseleave="hovering=false", class='{{headCtrl.currentUser.village}} {{category.css}}', href='{{category.link}}', ng-click='headCtrl.setCurrentPage(category.link)') {{category.label}}
+        a.item.border-village-left(ng-if="category.css == 'don' ", target='_blank', ng-class="{'active':hovering || headCtrl.currentPage == category.link}", ng-mouseenter='hovering=true', ng-mouseleave='hovering=false', class='{{headCtrl.currentUser.village}} {{category.css}}', href='{{category.link}}', ng-click='headCtrl.setCurrentPage(category.link)') {{category.label}}
+    .side-bt-container
+      a.faq.side-bt(href='faq')
+        span.side-bt__etiquette(class='{{headCtrl.currentUser.village}}') Foire aux questions
+      a.reglement.side-bt(href='reglement')
+        span.side-bt__etiquette(class='{{headCtrl.currentUser.village}}') Règlement
+  .logo-wrapper
+    a(href='/')
+      img.logo(src='/medias/logo.png')
+  .notif-container
+    .notif-bt(ng-click='headCtrl.toggleNotif()', ng-class="{'active':headCtrl.notifList.length > 0, 'focus': headCtrl.showNotifList}")
+      .number-notif.fond-village(ng-class="{'active': headCtrl.notifList.length > 0}") {{headCtrl.notifList.length}}
+      .notif-list-wrapper.border-village.low(ng-class="{'active': headCtrl.showNotifList && headCtrl.notifList.length > 0}")
+        .notif-list()
+          .notif-elt.border-village-left.hover(ng-click='headCtrl.notifClick($index)', class='{{headCtrl.currentUser.village}}', ng-repeat='elt in headCtrl.notifList')
+            span.message(ng-bind-html='elt.message')
+            .notif_time.info-text(ng-bind-html='elt.formatDate')
+        .notif-clear(ng-click="headCtrl.clearAllNotifications()")
+          .fa.fa-trash
+          span Supprimer les notifications
+    a.message-bt(href='/messagerie', ng-class="{'active': $root.newMessages.length > 0}")
+      span.message-notif.fond-village  {{$root.newMessages.length}}
+  .right-container(ng-class="{'large': headCtrl.isTryingLogin }")
+    .disconnected(ng-show="!headCtrl.currentUser")
+      .choose-container(ng-show='!headCtrl.isTryingLogin')
+        .login-bt.border-village-left.hover(ng-click='headCtrl.isTryingLogin = true')  SE CONNECTER
+        .login-bt.border-village-left.hover.font-village(ng-click='headCtrl.triggerSignUp()')  INSCRIPTION
+      .login(ng-show='headCtrl.isTryingLogin')
+        .custom-connexion
+          form(ng-submit='headCtrl.login()')
+            input.form(type='text', placeholder='Identifiant', ng-model='headCtrl.logInfo.login')
+            input.form(type='password', placeholder='Mot de passe', ng-model='headCtrl.logInfo.password')
+            input.connexion.button.fond-village.hover(type='submit', value='Connexion')
+          a.forgot-password.font-village.hover(href='#', ng-click='headCtrl.toggleForgotPassword(true)')
+            | Mot de passe
+            | oublié?
+    form(ng-show='headCtrl.currentUser.ID > 0', ng-cloak='')
+      .icon-container
+        a#disconnect_button.icon.deco(ng-click='headCtrl.disconnect($event)')
+          .hover-msg.border-village-left.active
+            span Se déconnecter
+        a.icon.forum(target='_blank', href='https://discord.gg/s28HfU9')
+          .hover-msg.border-village-left.active
+            span Accés Discord
+        a.icon.params(href='/parameters')
+          .hover-msg.border-village-left.active
+            span Paramètres
+      a(href='profil/{{headCtrl.currentUser.ID}}')
+        img.avatar(ng-src='{{headCtrl.currentUser.avatar}}')
+      .info-container.other-user(class='{{headCtrl.currentUser.village}}')
+        a(href='profil/{{headCtrl.currentUser.ID}}')
+          .pseudo.font-village(ng-bind-html='headCtrl.currentUser.display_name')
+        .align-bt
+          div(ng-show="headCtrl.currentUser.role == 'contributeur'")
+            a.link-to-admin.border-village-left(title='Espace Contributeur' href='panneau-creation' ng-class="{'active': hover, 'visible': isContrib}" ng-mouseenter='hover=true' ng-mouseleave='hover=false', style='color: white;')
+              | Poster une création
+          div(ng-show="headCtrl.currentUser.role == 'membre'")
+            a.link-to-admin.border-village-left(title='Espace Contributeur', ng-click='headCtrl.launchContribMail()', ng-class="{'active': hover}", ng-mouseenter='hover=true', ng-mouseleave='hover=false', style='color: white;')
+              | Poster une création
+  .loading-bar

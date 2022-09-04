@@ -1,0 +1,138 @@
+{"frames": [
+
+{
+	"filename": "dort0000.png",
+	"frame": {"x":1,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0001.png",
+	"frame": {"x":1,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0002.png",
+	"frame": {"x":1,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0003.png",
+	"frame": {"x":1,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0004.png",
+	"frame": {"x":53,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0005.png",
+	"frame": {"x":53,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0006.png",
+	"frame": {"x":105,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0007.png",
+	"frame": {"x":105,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0008.png",
+	"frame": {"x":157,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0009.png",
+	"frame": {"x":157,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0010.png",
+	"frame": {"x":105,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0011.png",
+	"frame": {"x":105,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0012.png",
+	"frame": {"x":53,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dort0013.png",
+	"frame": {"x":53,"y":1,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+	"sourceSize": {"w":50,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "oka_dort.png",
+	"format": "RGBA8888",
+	"size": {"w":208,"h":53},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f7f7419413b421ca219e4301ff2df8c6:e65329e65d7b08943360f6b4ee3ef04d:7a13423495ecfa793d611af00353e6e4$"
+}
+}

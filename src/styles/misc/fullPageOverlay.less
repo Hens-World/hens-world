@@ -1,0 +1,42 @@
+.full-page-overlay {
+  width: 100%;
+  .fullHeight(0px);
+  background-color: @overlayBlack;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: @HH;
+  z-index: @layerOverlay2;
+  cursor: pointer;
+  justify-content: center;
+  transition: .35s;
+  &:not(.displayed) {
+    opacity: 0;
+    pointer-events: none;
+  }
+  &__content {
+   cursor: auto;
+    transform: translateY(-10%);
+    max-width: 600px;
+    position: relative;
+    padding: 25px;
+    font-size: 1.1em;
+    background-color: @contentDark;
+    h2 {
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 12px;
+    }
+  }
+  &__close {
+    position: absolute;
+    right: 11px;
+    top: 7px;
+    font-size: 1.2em;
+    &:before {
+      content: '⨉';
+    }
+  }
+}

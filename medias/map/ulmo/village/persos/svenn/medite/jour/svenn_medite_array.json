@@ -1,0 +1,129 @@
+{"frames": [
+
+{
+	"filename": "svenn_medite_00.png",
+	"frame": {"x":2,"y":2,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_01.png",
+	"frame": {"x":2,"y":2,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_02.png",
+	"frame": {"x":2,"y":2,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_03.png",
+	"frame": {"x":2,"y":2,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_04.png",
+	"frame": {"x":2,"y":2,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_05.png",
+	"frame": {"x":2,"y":78,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_06.png",
+	"frame": {"x":2,"y":78,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_07.png",
+	"frame": {"x":2,"y":154,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_08.png",
+	"frame": {"x":2,"y":154,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_09.png",
+	"frame": {"x":2,"y":154,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_10.png",
+	"frame": {"x":2,"y":154,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_11.png",
+	"frame": {"x":2,"y":154,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "svenn_medite_12.png",
+	"frame": {"x":2,"y":154,"w":51,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+	"sourceSize": {"w":51,"h":74},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "svenn_medite.png",
+	"format": "RGBA8888",
+	"size": {"w":55,"h":230},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e6a93fd932041c0100268de0e3647440:dc88959a38673afe57eac30347a0f009:36cd94db87141c0d55c1e8127412ddd3$"
+}
+}

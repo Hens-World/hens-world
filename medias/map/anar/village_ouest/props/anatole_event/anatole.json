@@ -1,0 +1,31 @@
+{
+  "label":"anatole_event",
+  "width":163,
+  "height":183,
+  "center":{
+    "x":23,
+    "y":182
+  },
+  "avail":[
+    {
+      "fromT":0,
+      "to":0
+    }
+  ],
+//anar ouest//
+  "list":[
+    {
+      "x":2558,
+      "y":2055
+    }
+  ]
+}
+//anar est//
+  "list":[
+    {
+      "x":4011,
+      "y":3844
+      
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{"frames": [
+
+{
+	"filename": "poreo_1.png",
+	"frame": {"x":0,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_2.png",
+	"frame": {"x":36,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_3.png",
+	"frame": {"x":72,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_4.png",
+	"frame": {"x":108,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_5.png",
+	"frame": {"x":144,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_6.png",
+	"frame": {"x":180,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_7.png",
+	"frame": {"x":216,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_8.png",
+	"frame": {"x":252,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_9.png",
+	"frame": {"x":288,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_10.png",
+	"frame": {"x":324,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_11.png",
+	"frame": {"x":360,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_12.png",
+	"frame": {"x":396,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poreo_13.png",
+	"frame": {"x":432,"y":0,"w":36,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":61},
+	"sourceSize": {"w":36,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "poreo_ballon.png",
+	"format": "RGBA8888",
+	"size": {"w":468,"h":61},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:027b05b9478cc13752b4156354b104a1:cc9de2c960e35b184ff35b4303048cb6:63553093c0c5d0b3139defbe97370764$"
+}
+}

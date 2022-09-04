@@ -1,0 +1,9 @@
+.text Les membres peuvent actuellement utiliser les fonctionnalités suivantes:
+.ul
+  .li(ng-repeat='obj in [{"text":"Choisir son village","image":"choix-village"}, {"text":"Déterminer son pouvoir","image":"pouvoir"}, {"text":"Créer une fiche de personnage","image":"fiche"}, {"text":"Commenter les créations","image":"commenter"}, {"text":"Aimer une création","image":"favori"}, {"text":"Aimer un contributeur","image":"aimer"}]' )
+    .image(ng-class="obj.image")
+    .label {{obj.text}}
+.text Les contributeurs ont les mêmes droits avec en outre:
+ul
+  li La possibilité de poster une création dans les lieux de Hens
+  li Voir son personnage intégré dans un des villages, avec une fiche de personnage attachée

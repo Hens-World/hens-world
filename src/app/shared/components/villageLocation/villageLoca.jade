@@ -1,0 +1,16 @@
+.loca-geo(ng-class="{'loca-geo__open': vData.isOpen}")
+  .loca-geo__cursor(ng-if="!hasEvent" class="{{village}}")
+  .loca-geo__event-cursor(ng-if="hasEvent" class="{{village}}")
+  .loca-geo__label-list
+    .loca-geo__label-element.loca-geo__label-element--creation(ng-if="latestCreation && !hasEvent")
+      .info-text dernière création
+      h4(ng-bind-html="latestCreation.title")
+    .loca-geo__label-element.loca-geo__label-element--roleplay(ng-if="latestRP && !hasEvent")
+      .info-text dernière partie
+      h4(ng-bind-html="latestRP.title")
+    .loca-geo__label-element
+      h3 {{title}}
+  .hot-notification(ng-class="{'active':latestCreation.isHot}") !
+  .hot-notification.hot-notification--roleplay(ng-class="{'active':latestRP.isHot}") !
+
+

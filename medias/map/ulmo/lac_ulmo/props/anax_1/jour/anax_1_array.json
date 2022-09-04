@@ -1,0 +1,116 @@
+{"frames": [
+
+{
+	"filename": "anax0000.png",
+	"frame": {"x":0,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0001.png",
+	"frame": {"x":0,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0002.png",
+	"frame": {"x":65,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0003.png",
+	"frame": {"x":65,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0004.png",
+	"frame": {"x":130,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0005.png",
+	"frame": {"x":130,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0006.png",
+	"frame": {"x":130,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0007.png",
+	"frame": {"x":195,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0008.png",
+	"frame": {"x":195,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0009.png",
+	"frame": {"x":260,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0010.png",
+	"frame": {"x":260,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0011.png",
+	"frame": {"x":325,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+},
+{
+	"filename": "anax0012.png",
+	"frame": {"x":325,"y":0,"w":65,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":52},
+	"sourceSize": {"w":65,"h":52}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "anax_1.png",
+	"format": "RGBA8888",
+	"size": {"w":390,"h":52},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:614e72c219c024772d2b305592707ca3:5d17f1e9e71324a02d0f45fafb5f8d39:7b7dda7f387ea09e98317198c4172e67$"
+}
+}

@@ -1,0 +1,45 @@
+.alert-manager {
+  position: fixed;
+  font-size: 12em;
+  width: 100vw;
+  top: 0;
+  z-index: @layerAlert;
+  .alert-unit {
+    right: 15px;
+    cursor: pointer;
+    top: @HH - 7px;
+    z-index: 10002;
+    position: absolute;
+    .sideWidth(35px);
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .35s, top .35s;
+    &.active {
+      top: @HH + 10px;
+      pointer-events: auto;
+      opacity: 1;
+    }
+    &.error {
+      background-color: @anarNeuter;
+      border: 2px solid @anarLight;
+      box-shadow: 0 0 10px @anarBlack;
+    }
+    &.success {
+      background-color: @wilwarNeuter;
+      border: 1px solid @wilwarLow;
+      box-shadow: 0 0 15px @wilwarBlack;
+    }
+    &.info {
+      background-color: @ulmoNeuter;
+      border: 1px solid @ulmoLow;
+      box-shadow: 0 0 15px @ulmoBlack;
+    }
+    &.warning {
+      background-color: @sulimoNeuter;
+      border: 1px solid @sulimoLow;
+      box-shadow: 0 0 15px @sulimoBlack;
+    }
+  }
+}

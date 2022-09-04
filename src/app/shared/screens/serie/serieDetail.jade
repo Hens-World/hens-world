@@ -1,0 +1,24 @@
+.page-container
+  .main-column
+    .main-column__content.serie-detail
+      .serie-detail__left-column
+        .serie-detail__type Série de créations
+        .serie-detail__left-wrapper
+          img.serie-detail__cover(src="{{serie.miniature}}")
+          .serie-detail__title {{serie.title}}
+          .serie-detail__details
+            span {{serie.posts.length}} créations - {{serie.creationTypes}}
+          .serie-detail__description(ng-bind-html="serie.description")
+      .serie-detail__right-column
+        a.serie-post.serie-post--dark(ng-repeat="post in serie.posts" href="/profil/{{serie.owner.ID}}/series/{{serie.id}}/{{post.type}}/{{post.slug}}")
+          .serie-post__order(ng-show="serie.ordered") {{post.post_order + 1}}
+          .serie-post__content
+            .serie-post__title {{post.title}}
+            .serie-post__location(class="other-user {{post.village.slug}}")
+              span.font-village {{post.location.name}}
+            .serie-post__date {{post.formatDate}}
+          img.serie-post__miniature(ng-src="{{post.miniature}}")
+      .mobile-section
+        .author.author__mobile(author-article authors-info="serie.authors" user="info.user")
+  .side-column
+    .author(author-article authors-info="serie.authors" user="info.user")

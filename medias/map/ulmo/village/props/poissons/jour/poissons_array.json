@@ -1,0 +1,129 @@
+{"frames": [
+
+{
+	"filename": "poissons_rouge02.png",
+	"frame": {"x":2,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge03.png",
+	"frame": {"x":74,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge04.png",
+	"frame": {"x":146,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge05.png",
+	"frame": {"x":218,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge06.png",
+	"frame": {"x":290,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge07.png",
+	"frame": {"x":362,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge08.png",
+	"frame": {"x":434,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge09.png",
+	"frame": {"x":506,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge10.png",
+	"frame": {"x":578,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge11.png",
+	"frame": {"x":650,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge12.png",
+	"frame": {"x":722,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge13.png",
+	"frame": {"x":794,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "poissons_rouge14.png",
+	"frame": {"x":866,"y":2,"w":70,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+	"sourceSize": {"w":70,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "poissons.png",
+	"format": "RGBA8888",
+	"size": {"w":938,"h":41},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0eee7945e931b966e4526605ad4ed1b0:6218d56372fca34eed835e3ac741cf2e:932bf56b995633e7f1dac13caf7ea790$"
+}
+}

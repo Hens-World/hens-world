@@ -1,0 +1,770 @@
+.hens-tchat-container {
+  &[mode="full-screen"] {
+    background-color: @black !important;
+
+  }
+
+
+  .inner-tchat-container {
+    position: fixed;
+    z-index: @layerTchat;
+    left: 50%;
+    margin-left: 320px;
+    font-size: 12.5px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    border-right: 1px solid @middleDark;
+    border-left: 1px solid @middleDark;
+    border-top: 1px solid @middleDark;
+
+    @media (min-width: @mobileWidth) and (max-width: @tabletMinWidth) {
+      margin-left: 100px;
+    }
+    @media screen and (max-width: @mobileWidth) {
+      left: 10%;
+      margin-left: 0;
+      width: 90%;
+      max-width: 90%;
+
+    }
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.8);
+    .sideWidth(0px);
+    min-width: 280px;
+    &:not(.no-transition) {
+      transition: opacity .2s, height .35s;
+    }
+    &.anar {
+      background: #260900
+    }
+    &.wilwar {
+      background: #1e2a01
+    }
+    &.sulimo {
+      background: #3f2202
+    }
+    &.ulmo {
+      background: #007782
+    }
+    &.open {
+      .fullHeight(5vh);
+      opacity: 1;
+      @media screen and (max-width: 480px) {
+        .fullHeight(0px);
+      }
+    }
+    &.redux {
+      border: 1px solid @lowerDark;
+      border-bottom: none;
+      transition: none;
+      &.open {
+        opacity: 1;
+        height: 30px;
+        .info {
+          display: flex;
+
+        }
+        .open-tchat {
+          display: none
+        }
+      }
+    }
+    .info {
+      display: none;
+      cursor: pointer;
+      color: #fff;
+      position: relative;
+      padding-right: 5px;
+      padding-left: 3px;
+      line-height: 30px;
+      vertical-align: middle;
+      text-align: left;
+      height: 30px;
+      font-size: 0.95em;
+      align-items: center;
+      background: rgba(35, 35, 35, 1);
+      &:hover {
+        background: rgba(45, 45, 45, 1);
+      }
+
+      .connections {
+        display: flex;
+        font-size: 1em;
+        align-items: center;
+        margin-left: auto;
+        flex: 0 0 auto;
+        margin-right: 4px;
+
+        &:before {
+          content: '';
+          margin-right: 4px;
+          display: block;
+          width: 20px;
+          height: 20px;
+          background: url("/medias/map/global-bt/white-pop.png");
+          background-size: 100%;
+        }
+      }
+      .status-info {
+        width: 22px;
+        height: 22px;
+        margin-right: 5px;
+
+        background: url(/medias/tchat/ui/chat_off.png);
+        background-size: 100%;
+        &.active {
+          background: url(/medias/tchat/ui/chat_on.png);
+          background-size: 100%;
+          filter: url(shadow.svg#drop-shadow);
+
+          filter: drop-shadow(0px 0px 5px @guestNeuter);
+          -webkit-filter: drop-shadow(0px 0px 5px @guestNeuter);
+          &.ulmo {
+            filter: drop-shadow(0px 0px 5px @ulmoNeuter);
+            -webkit-filter: drop-shadow(0px 0px 5px @ulmoNeuter);
+          }
+          &.sulimo {
+            filter: drop-shadow(0px 0px 5px @sulimoNeuter);
+            -webkit-filter: drop-shadow(0px 0px 5px @sulimoNeuter);
+          }
+          &.wilwar {
+            filter: drop-shadow(0px 0px 5px @wilwarNeuter);
+            -webkit-filter: drop-shadow(0px 0px 5px @wilwarNeuter);
+          }
+          &.anar {
+            filter: drop-shadow(0px 0px 5px @anarNeuter);
+            -webkit-filter: drop-shadow(0px 0px 5px @anarNeuter);
+          }
+        }
+      }
+      .notif {
+        position: absolute;
+        right: 10px;
+        display: block;
+        padding: 0 2px 0 2px;
+        min-width: 20px;
+        box-sizing: border-box;
+        height: 20px;
+        top: 5px;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        vertical-align: middle;
+      }
+    }
+    .open-tchat {
+      width: auto;
+      flex: 1 1 auto;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+
+      .menu-line {
+        width: auto;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        flex: 0 0 auto;
+
+        &:hover {
+          background: rgba(45, 45, 45, 1);
+        }
+        border-bottom: 1px solid @headerDark;
+        background: rgba(35, 35, 35, 1);
+        .drag-n-drop {
+          width: 16px;
+          height: 16px;
+          cursor: pointer;
+          margin-left: 6px;
+          background-image: url("/medias/common/icon_dragndrop.png");
+          background-size: contain;
+        }
+        .reduce {
+          width: 12.5px;
+          vertical-align: middle;
+          font-size: 3em;
+          margin-right: 5px;
+          color: #ccc;
+          margin-top: -.25em;
+          cursor: pointer;
+          &:hover {
+            color: #fff;
+          }
+        }
+        .full-screen-bt {
+          width: 15px;
+          height: 15px;
+          margin-top: .1em;
+          background-image: url("/medias/common/icon_opentab.png");
+          background-size: contain;
+
+        }
+        .close {
+          width: 25px;
+          margin-right: 5px;
+          cursor: pointer;
+          font-size: 25px;
+          margin-top: -.2em;
+          vertical-align: middle;
+          color: #ccc;
+          &:hover {
+            color: #fff
+          }
+        }
+        .message {
+          color: #fff;
+          flex: 1;
+          cursor: pointer;
+          text-align: left;
+          padding-left: 10px;
+          vertical-align: middle;
+        }
+      }
+
+      .left-container {
+        color: #fff;
+        text-align: left;
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+
+        .tchat-content {
+          width: 100%;
+          overflow-y: auto;
+          flex: 1 1 auto;
+          min-height: 0;
+
+          background: rgba(15, 15, 15, .91);
+          position: relative;
+
+          .message-container {
+            padding: 4px 6px;
+            box-sizing: border-box;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            min-height: 0;
+            width: 100%;
+            margin-bottom: 1px;
+            a {
+              text-decoration: underline;
+            }
+            .sender {
+              margin-right: 5px;
+              font-size: 1.1em;
+              font-weight: bold;
+              color: @guestNeuter;
+              display: inline-block;
+            }
+            span {
+              display: inline-block;
+              &.timer {
+                border-radius: 10px;
+                color: #888;
+                font-style: italic;
+              }
+              &.message {
+                margin-top: 1px;
+                overflow-wrap: break-word;
+                min-width: 0;
+              }
+            }
+            &.me {
+              font-style: italic;
+              .sender {
+                margin-right: 3px;
+                margin-left: 5px;
+                .dots {
+                  display: none;
+                }
+              }
+            }
+            &.shout .message {
+              font-size: 1.1em;
+              text-transform: uppercase;
+              font-weight: 700;
+              animation: shoutanim 1s;
+              -webkit-animation: shoutanim .4s linear
+            }
+            &.exists {
+
+              @keyframes intro {
+                0% {
+                  opacity: 0;
+                  top: -25px;
+                }
+                100% {
+                  opacity: 1;
+                  top: 0;
+                }
+              }
+              .sender {
+                color: white;
+              }
+              .message {
+                cursor: pointer;
+                z-index: 10;
+                display: block;
+                .sideWidth(35px);
+                padding: 5px;
+                box-sizing: border-box;
+                opacity: 0;
+                position: relative;
+                pointer-events: none;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: opacity .35s, top .35s;
+                background-color: @anarNeuter;
+                border: 2px solid @anarLight;
+                box-shadow: 0 0 10px @anarBlack;
+                animation: intro 1s forwards;
+                text-align: center;
+              }
+            }
+            &.private {
+              background: @ulmoBlack;
+              // border: 1px solid @ulmoLow;
+            }
+            &.info-chat {
+              background: @buttonHoverDark;
+            }
+            &.error {
+              background: @anarDark;
+              // border: 1px solid @anarLow;
+            }
+          }
+        }
+        .more-container {
+          text-align: center;
+          background: rgba(0, 0, 0, 0.6);
+          padding-top: 7px;
+          font-size: 1.05em;
+          position: absolute;
+          z-index: 20;
+          left: 0;
+          right: 0;
+          cursor: pointer;
+          bottom: 100%;
+          box-sizing: border-box;
+          padding-bottom: 7px;
+          &:hover {
+            background: rgba(0, 0, 0, 0.8);
+          }
+        }
+
+
+        .write-container {
+          --writeHeight: 25px;
+          height: var(--writeHeight);
+          width: 100%;
+          box-sizing: border-box;
+          padding-right: 6px;
+          background: @buttonDark;
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          .emotes-container {
+            visibility: hidden;
+            position: absolute;
+            z-index: 11;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: @headerDark;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 200px;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: calc(100% + 36px);
+
+            &.show {
+              visibility: visible;
+            }
+
+            .emote {
+              max-width: 60px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex: 1 1 23%;
+            }
+          }
+
+          .connections {
+            flex: 0 0 auto;
+            align-items: center;
+            display: flex;
+            padding: 2px;
+            &:before {
+              margin-right: 4px;
+              content: '';
+              display: block;
+              width: 20px;
+              height: 20px;
+              background: url("/medias/map/global-bt/white-pop.png");
+              background-size: 100%;
+            }
+          }
+
+          .show-emotes {
+            display: flex;
+            align-items: center;
+            flex: 0 0 auto;
+            margin: 0 3px;
+            img {
+              height: 23px;
+            }
+          }
+          textarea {
+            flex: 1 1 auto;
+            background: none;
+            border: none;
+            height: var(--writeHeight);
+            line-height: 21px;
+            padding: 0;
+            display: inline-block;
+            resize: none;
+            box-sizing: border-box;
+            vertical-align: middle;
+            color: #fff;
+          }
+          .button {
+            cursor: pointer;
+            box-sizing: border-box;
+            vertical-align: top;
+            color: #fff;
+          }
+          .validate {
+            width: 30px;
+            display: inline-block;
+            height: 25px;
+          }
+          .show-user-list {
+            width: 20px;
+            height: 25px;
+            cursor: pointer;
+            margin: 0 4px;
+            flex: 0 0 auto;
+            margin-top: 2px;
+            z-index: 3;
+            display: block;
+            .line {
+              width: 100%;
+              background: #ccc;
+              height: 2px;
+              border-radius: 2px;
+              margin-top: 4px;
+              margin-bottom: 3px;
+            }
+            &:hover {
+              .line {
+                background: white;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+
+    &.full-screen {
+      position: relative;
+      left: auto;
+      top: auto;
+      bottom: auto;
+      width: 100%;
+      max-width: none;
+      //max-width: @contentWidth;
+      min-width: 0;
+      height: 100%;
+      .fullHeight(0px);
+      z-index: 1;
+      margin-left: 0;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      border: none;
+
+      .user-list {
+        @media (min-width: @mobileWidth) {
+          top: 0;
+          position: relative;
+        }
+      }
+      .open-tchat {
+        display: flex;
+        min-width: 0;
+        flex: 1 1 auto;
+
+        .user-list.active {
+          top: 0;
+        }
+        .left-container {
+          flex: 1 1 auto;
+          min-width: 0;
+          display: flex;
+          flex-direction: column;
+
+          .tchat-content {
+            flex: 1 1 auto;
+            min-width: 0;
+            height: auto;
+            background: none;
+          }
+          .write-container {
+            flex: 0 0 auto;
+            //width: @contentWidth;
+          }
+        }
+      }
+    }
+  }
+  .user-list {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    padding: 5px 15px 5px 15px;
+    top: 25px;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgba(15, 15, 15, 0.96);
+
+    &.active {
+      display: inline-block;
+    }
+
+    .user-status {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 4px;
+      background-color: @guestNeuter;
+      &.away {
+        background-color: @sulimoLow;
+      }
+      &.online {
+        background-color: @wilwarNeuter;
+      }
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-family: 'Wire One';
+      font-size: 2.2em;
+    }
+
+    .user {
+      box-sizing: border-box;
+      padding-left: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-top: 2px;
+      background: @contentDark;;
+      font-size: 1.1em;
+      color: @guestNeuter;
+      border-left: 1px solid transparent;
+      transition: color .2s, border .35s, background .2s;
+      display: flex;
+      align-items: center;
+      &.anar {
+        color: @anarNeuter;
+      }
+      &.wilwar {
+        color: @wilwarNeuter;
+      }
+      &.ulmo {
+        color: @ulmoNeuter;
+      }
+      &.sulimo {
+        color: @sulimoNeuter;
+      }
+      &:hover {
+        color: @guestLight;
+        transition: color .35s, border .35s, background .35s;
+        border-left: 6px solid @guestNeuter;
+        &.anar {
+          color: @anarLight;
+          border-left: 6px solid @anarLight;
+        }
+        &.wilwar {
+          color: @wilwarLight;
+          border-left: 6px solid @wilwarLight;
+        }
+        &.ulmo {
+          color: @ulmoLight;
+          border-left: 6px solid @ulmoLight;
+        }
+        &.sulimo {
+          color: @sulimoLight;
+          border-left: 6px solid @sulimoLight;
+        }
+      }
+    }
+  }
+}
+
+@keyframes shoutanim {
+  0% {
+    margin-left: -3px
+  }
+  10% {
+    margin-left: 3px;
+    padding-top: 3px
+  }
+  20% {
+    margin-left: 3px
+  }
+  30% {
+    margin-left: -3px;
+    padding-top: 3px
+  }
+  40% {
+    margin-left: -2px
+  }
+  50% {
+    margin-left: 2px;
+    padding-top: 2px
+  }
+  60% {
+    margin-left: 2px
+  }
+  70% {
+    margin-left: -2px;
+    padding-top: 2px
+  }
+  100%,
+  80%,
+  90% {
+    margin-left: -1px;
+    padding-top: 1px
+  }
+}
+
+@-webkit-keyframes shoutanim {
+  0% {
+    margin-left: -3px;
+    margin-top: -3px
+  }
+  10% {
+    margin-left: 3px;
+    margin-top: 3px
+  }
+  20% {
+    margin-left: 3px;
+    margin-top: -3px
+  }
+  30% {
+    margin-left: -3px;
+    margin-top: 3px
+  }
+  40% {
+    margin-left: -2px;
+    margin-top: -2px
+  }
+  50% {
+    margin-left: 2px;
+    margin-top: 2px
+  }
+  60% {
+    margin-left: 2px;
+    margin-top: -2px
+  }
+  70% {
+    margin-left: -2px;
+    margin-top: 2px
+  }
+  100%,
+  80%,
+  90% {
+    margin-left: -1px;
+    margin-top: 1px
+  }
+}
+
+@-moz-keyframes shoutanim {
+  0% {
+    margin-left: -3px;
+    margin-top: -3px
+  }
+  10% {
+    margin-left: 3px;
+    margin-top: 3px
+  }
+  20% {
+    margin-left: 3px;
+    margin-top: -3px
+  }
+  30% {
+    margin-left: -3px;
+    margin-top: 3px
+  }
+  40% {
+    margin-left: -2px;
+    margin-top: -2px
+  }
+  50% {
+    margin-left: 2px;
+    margin-top: 2px
+  }
+  60% {
+    margin-left: 2px;
+    margin-top: -2px
+  }
+  70% {
+    margin-left: -2px;
+    margin-top: 2px
+  }
+  100%,
+  80%,
+  90% {
+    margin-left: -1px;
+    margin-top: 1px
+  }
+}
+
+.hens-tchat-container .inner-tchat-container .open-tchat .upper .village-switch .village.anar .background {
+  background: url(/medias/common/anar_icone.png);
+  background-size: 100%
+}
+
+.hens-tchat-container .inner-tchat-container .open-tchat .upper .village-switch .village.wilwar .background {
+  background: url(/medias/common/wilwar_icone.png);
+  background-size: 100%
+}
+
+.hens-tchat-container .inner-tchat-container .open-tchat .upper .village-switch .village.sulimo .background {
+  background: url(/medias/common/sulimo_icone.png);
+  background-size: 100%
+}
+
+.hens-tchat-container .inner-tchat-container .open-tchat .upper .village-switch .village.ulmo .background {
+  background: url(/medias/common/ulmo_icone.png);
+  background-size: 100%
+}
+
+.hens-tchat-container .inner-tchat-container .open-tchat .upper .village-switch .village.active {
+  pointer-events: none
+}
+
+.hens-tchat-container .inner-tchat-container .open-tchat .upper .village-switch .village.active .background {
+  opacity: .5
+}

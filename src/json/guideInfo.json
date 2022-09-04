@@ -1,0 +1,2153 @@
+{
+  "list": [
+    {
+      "nom": "Auberge Heuraque",
+      "id": 80,
+      "slug": "auberge",
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "restaurant",
+        "service_public"
+      ],
+      "description": "Petite bâtisse qui accueille les visiteurs de passage à Sulimo. Agréable, accueillante et chaleureuse, elle propose des chambres et des plats aux couleurs du village du vent."
+    },
+    {
+      "nom": "Dojo",
+      "slug": "dojo",
+      "id": 69,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Long bâtiment bordant la Tour de Sulimo. Là, les habitants du village de l'automne s'entraînent à développer leurs pouvoirs sous la tutelle de maîtres dont le savoir se transmet de génération en génération."
+    },
+    {
+      "nom": "Le Pillier",
+      "slug": "domaine_sulimo",
+      "id": 63,
+      "unique": true,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "service_public",
+        "monument"
+      ],
+      "description": "Bâtisse ancestrale, repaire de toutes les générations de cheftains de Sulimo, elle abrite la jeune Rubis Gil-Estrel. C'est un lieu normalement fermé au public, c'est qu'il se passe des choses importantes à l'intérieur !"
+    },
+    {
+      "nom": "Gare de Sulimo",
+      "slug": "gare_sulimo",
+      "id": 85,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "service_public"
+      ],
+      "description": "En bordure du village se trouve la gare. Un bâtiment plutôt rustique comparé à ceux des autres villes, mais qui remplit parfaitement sa fonction d'accueil des nouveaux arrivants. Il y a même une horloge pour vous avertir de l'heure de votre arrivée !"
+    },
+    {
+      "nom": "Librairie",
+      "slug": "librairie",
+      "id": 77,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Petit bâtiment au sud de Sulimo, il y a là plusieurs livres en vitrine. Un joyeux regroupement d’écrits, illustrés ou non, d’histoires sous forme de bande dessinée ou de livre d’enfant…  C’est une des seule boutique qui vous enverra par colis vos petits manuscrits!"
+    },
+    {
+      "nom": "Manoir abandonné",
+      "slug": "manoir-abandonne",
+      "id": 84,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "La légende raconte que personne ne connaîtrait réellement les secrets de ce manoir. Nul ne sait quand il est apparut, et nul ne sait s'il ne disparaîtra pas un jour... Le manoir abandonné fait pourtant parti à part entière du folklore du village du vent, et il déchaîne les imaginations les plus folles."
+    },
+    {
+      "nom": "Moulin à vent",
+      "slug": "moulin-sulimo",
+      "id": 87,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Symbole même de Sulimo, on peut retrouver plusieurs moulins à vent qui longent les différentes rues du village. Ces bâtiments sont le moteur de Sulimo, ils permettent non seulement d'indiquer l'orientation de la course du vent, mais également de couvrir la majorité de la demande d'électricité de la ville."
+    },
+    {
+      "nom": "Observatoire",
+      "slug": "observatoire",
+      "id": 60,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "service_public"
+      ],
+      "description": "Au nord de la ville se dresse l'Observatoire, l'une des fiertés de Sulimo. Les rêveurs y viennent pour chercher leur destin dans les étoiles, les scientifiques aussi d'ailleurs. L'Observatoire de Sulimo est très apprécié de la population locale."
+    },
+    {
+      "nom": "Parc Hurlevent",
+      "slug": "parc_hurlevent",
+      "id": 68,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "A l'est de la ville se dresse le parc Hurlevent. Enchevêtrement d'arbres et de branches, il fait la joie des plus jeunes comme des plus âgés. On peut tout aussi bien s'y promener, que voleter entre la végétation ambiante."
+    },
+    {
+      "nom": "Pépinière",
+      "slug": "pepiniere-sulimo",
+      "id": 86,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Qui a dit que seuls les Wilwariens aimaient faire pousser les choses ? Les Sulimois peuvent tout à fait avoir la main verte et les pieds sur terre ! Tout à l'est de la ville, près des falaises, la Pépinière de Sulimo voit de nombreux arbres pousser, et n'en est pas peu fière !"
+    },
+    {
+      "nom": "Petite Ecole",
+      "slug": "petite_ecole-sulimo",
+      "id": 83,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Il faut des gens instruits pour faire un monde, et l'instruction commence dès le plus jeune âge. La Petite Ecole de Sulimo, à l'est de la ville, prend en charge les jeunes enfants et leur enseigne les bases de la vie en société, ainsi que quelques concepts d'art plastique."
+    },
+    {
+      "nom": "Place des Sept",
+      "slug": "place_sept",
+      "id": 72,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "Au nord-ouest de Sulimo se trouve la Place des Sept, abritant une seule fontaine. Son nom viendrait d'une légende contant les exploits de sept héros, mais c'est un secret bien gardé par les aînés de la ville. En attendant, c'est une place agréable où le clapotis de l'eau offre un fond sonore des plus exquis."
+    },
+    {
+      "nom": "Place Tiquot",
+      "slug": "place_tiquot",
+      "id": 66,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "Au sud-ouest de Sulimo se dresse la place Tiquot, perdue entre quelques maisons. En son sein repose un arbre tordu par les vents hurlants. C'est un endroit tranquille et silencieux où il fait bon de venir se reposer."
+    },
+    {
+      "nom": "Rues des artisans",
+      "slug": "rue_artisans",
+      "id": 73,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "commerce",
+        "monument"
+      ],
+      "description": "Au cœur de la ville, près du Pilier, se trouve la Rue des Artisans, endroit immanquable pour tous les touristes en visite à Sulimo. Plusieurs étalages s'étendent sur toute la rue et étalent les mérites de leurs produits : tout y est fait à la main, avec beaucoup de soin. Après tout, « Fait avec les mains, fait avec le cœur. »"
+    },
+    {
+      "nom": "Taverne Au Sire Occo",
+      "unique": true,
+      "slug": "taverne-sulimo",
+      "id": 76,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Au cœur de la ville, pas loin de la grande Rue des Artisans, se dresse la Taverne du Sire Occo. C'est un endroit chaleureux, mais il faut pouvoir supporter l'odeur d'alcool qui en émane. Le Sieur Occo propose une grande diversité de bières et de vins, mais aussi des plats exotiques venant de contrées lointaines."
+    },
+    {
+      "nom": "Temple de l'Automne",
+      "slug": "temple_automne",
+      "id": 71,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Perché sur les falaises à l'est de la ville se dresse le Temple de l'Automne. C'est un lieu sacré pour les sulimois car il représente leur saison maîtresse, et quand celle-ci arrive, la ville se pare de ses plus beaux atours. Le Temple de l'Automne est cependant difficile d'accès pour ceux ne disposant pas de la maîtrise du vent, il est recommandé de demander les services d'un guide pour s'y aventurer."
+    },
+    {
+      "nom": "Tour de Sulimo",
+      "slug": "tour_sulimo",
+      "id": 65,
+      "village": "sulimo",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "La grande Tour de Sulimo se trouve au nord de la Ville. Elle est si haute qu'elle sert de phare dans les champs qui bordent la ville. On dit qu'il est impossible d'en voir le sommet vue du sol, et que celui qui parviendra à en gravir tous les étages recevra un cadeau des plus somptueux."
+    },
+    {
+      "nom": "Aquarium",
+      "slug": "aquarium",
+      "id": 12,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Placé non loin du rivage d'Ulmo, l'Aquarium n'est accessible que par voie marine. Bien qu'il semble n'être qu'un petit bâtiment, il abrite quelques espèces rares qui valent certainement le coup d'oeil, que ce soit pour les touristes ou les Ulmois eux mêmes."
+    },
+    {
+      "nom": "Bibliothèque",
+      "slug": "bibliotheque-ulmo",
+      "id": 89,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "service_public",
+        "monument"
+      ],
+      "description": "Située au nord de la partie ouest de la ville, la Bibliothèque d'Ulmo fait partie des fiertés de la ville. Repaire des rats de bibliothèque et des amoureux des livres, ce bâtiment fera le plaisir de toutes personnes cherchant à se renseigner sur les légendes et les récits d'Hens, ou simplement à la recherche d'un lieu calme."
+    },
+    {
+      "nom": "Boutique de pêche",
+      "slug": "boutique_peche-ulmo",
+      "id": 91,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Située près de la Bibliothèque, la Boutique de Pêche vous procurera tout ce dont vous avez besoin pour pratiquer ce noble sport. Il ne vous restera qu'à vous armer de patience pour démasquer la perle rare... Ou simplement la botte qu'un poisson vous a chippé."
+    },
+    {
+      "nom": "Cabanes de pêche",
+      "slug": "cabane_peche-ulmo",
+      "id": 100,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Petits bâtiments sur la rive de la partie ouest de la ville, ces Cabanes sont le repaire des pêcheurs légendaires en pleine action ! Il y en a aussi quelques uns qui laissent juste leurs cannes à pêches posées là et qui s'en vont dans l'un des nombreux restaurants de la ville."
+    },
+    {
+      "nom": "Capitainerie",
+      "slug": "capitainerie",
+      "id": 19,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "service_public",
+        "monument"
+      ],
+      "description": "La Capitainerie est le bâtiment qui surplombe la partie est de la ville d'Ulmo. C'est le repaire des officiers de ports. Ils s'occupent de la sécurité maritime ainsi que de l'autorité portuaire. Accessoirement, ils louent aussi des bateaux aux touristes."
+    },
+    {
+      "nom": "Épicerie",
+      "slug": "epicerie-ulmo",
+      "id": 92,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "À côté de la Boutique de Pêche, il y a l'Epicerie. Vous pouvez y trouver à peu près tout ce que vous cherchez. Il y a du pain, des fruits, et même un rayon papeterie mais... Pas de poisson !"
+    },
+    {
+      "nom": "Gare d'Ulmo",
+      "slug": "gare_ulmo",
+      "id": 20,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "service_public",
+        "monument"
+      ],
+      "description": "À l'extrême sud de la ville se trouve la Gare d'Ulmo. C'est un petit bâtiment qui ne paie pas de mine, mais son office est bien rempli et représente bien l'esprit sérieux de la ville. Il y a même un guichet qui offre de petits prospectus pour faire visiter la ville."
+    },
+    {
+      "nom": "L'atelier",
+      "slug": "latelier-restaurant",
+      "id": 93,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Entre les nombreux restaurants d'Ulmo, il y a l'Atelier. Restaurant bordant la plage à l'extrême nord-est de la ville, on y trouve une cuisine rustique qui sent bon l'iode, de quoi vous rappeler que vous êtes à Ulmo, la ville maritime d'Hens !"
+    },
+    {
+      "nom": "L'eau Peine Bar",
+      "unique": true,
+      "slug": "eau_peine_bar-ulmo",
+      "id": 97,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Situé au Sud-Ouest de la ville, L'Eau Peine Bar est un endroit qui pourrait passer inaperçu aux yeux des novices. Grâve erreur, L'Eau Peine Bar dispose non seulement d'un service irréprochable et de nombreuses boissons, en passant des plus communes au plus exotiques, mais également d'un propriétaire à l'humour acéré et précis."
+    },
+    {
+      "nom": "L'Oro",
+      "slug": "oro-resto-ulmo",
+      "id": 94,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Situé au Nord de la ville, L'Oro dispose d'une petite place et d'une vue imprenable sur la ville. Ses plats sont réputés exotiques, mais ce qui fait toute la différence, c'est cette touche dorée qui accompagne chaque assiette et chaque dessert. Secret de fabrique du chef !"
+    },
+    {
+      "nom": "La taverne Blanche",
+      "slug": "taverne_blanche",
+      "id": 16,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "La Taverne Blanche accueille la plupart des pêcheurs d'Ulmo en quête de bonnes boissons, mais également de bonnes histoires à écouter et raconter ! Il y règne un esprit de camaraderie entre collègues marins, et cette atmosphère typique qu'ont les hommes qui ont beaucoup voyagé et beaucoup vu. On raconte même que le patron aurait vu un Kraken !"
+    },
+    {
+      "nom": "Le Barrage - Domaine des Cheftains ",
+      "unique": true,
+      "slug": "barrage-ulmo",
+      "id": 90,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "service_public",
+        "monument"
+      ],
+      "description": "Le Barrage, repaire de tous les cheftains d'Ulmo depuis leur première génération. Il est désormais la demeure de Svenn Mad Water, héritier de l'ancien cheftain. C'est un lieu fermé au public, qui l'évite d'ailleurs soigneusement à cause des quelques problèmes d'humeur de l'actuel cheftain. Ce dernier se tient pourtant tous les jours à la disposition de ses compatriotes."
+    },
+    {
+      "nom": "Le Céleste",
+      "slug": "celeste-ulmo",
+      "id": 96,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Bien que situé dans une ruelle plus étroite que celles des autres restaurants, le Céleste n'usurpe pas sa place parmi les meilleurs restaurants d'Ulmo. Ses plats sont aussi légers et agréables que son nom le laisse supposer."
+    },
+    {
+      "nom": "Marché marin",
+      "slug": "marche_marin-ulmo",
+      "id": 98,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Oh, la bonne odeur de poisson ! Et du frais s'il vous plaît ! Au marché marin, situé à l'extrême est de la partie est d'Ulmo, vous trouverez à peut près tout ce qui peut se trouver en mer, et qui a une quelconque valeur, que ce soit un simple poisson, une étoile de mer, une perle d'huître, le collier que vous avez perdu à la plage l'autre fois et même cette botte que cette satané bestiole vous avez arrachée !"
+    },
+    {
+      "nom": "Le Mounoi",
+      "slug": "mounoi-ulmo",
+      "id": 95,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Etant donné sa position en face de la Taverne Blanche, d'aucun pourrait croire que Le Mounoi serait en compétition avec elle, mais il n'en est rien. Ce restaurant est la propriété de la famille Mounoi depuis des générations, et non seulement ils disposent de recettes secrètes avec des ingrédients secrets – jalousement gardés – mais en plus, ils sont les seuls à savoir réaliser le meilleur dessert de la ville : Le Cum Ulus. Trouvez-en tous les ingrédients, et vous aurez un abonnement à vie chez Le Mounoi."
+    },
+    {
+      "nom": "Phare de Mèlios",
+      "slug": "phare-ulmo",
+      "id": 88,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Situé à l'extrême Nord-Ouest de la ville, le Phare de Mélios serait l'équivalent de la Tour de Sulimo, mais à Ulmo. C'est un imposant bâtiment qui éclaire la mer la nuit et lors des violentes tempêtes qui peuvent secouer les flots marins. Il tient son nom de Mélios, une jeune tête d'ampoule aux idées lumineuses !"
+    },
+    {
+      "nom": "Piscine",
+      "slug": "piscine",
+      "id": 9,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Généralement, lorsque l'on ne peut pas aller à la mer, on va à la piscine, mais à Ulmo, vous avez le choix car la ville propose les deux : la mer ET la piscine. Quoi de plus normal pour la ville représentante de l'élément aquatique ? En attendant, située à l'extrême Sud d'Ulmo, cette piscine est chauffée, et elle a même un grand toboggan !"
+    },
+    {
+      "nom": "Plage",
+      "slug": "plage",
+      "id": 24,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Ville maritime, Ulmo a été construite près de la mer, il est donc logique qu'elle profite de la plage toute l'année, même en hiver ! C'est un lieu agréable, une grande étendue de sable, il n'est peut être pas fin ni exotique, mais au moins, il est jaune. Si vous allez y faire un tour, gardez vos croissants loin des mouettes, et ne jetez pas vos déchets au sol..."
+    },
+    {
+      "nom": "Port",
+      "slug": "port-ulmo",
+      "id": 99,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "service_public"
+      ],
+      "description": "Que serait une ville portuaire sans son port ? Plus une ville portuaire en tout cas. Situé dans la partie Est d'Ulmo, le Port n'est pas un endroit si fréquenté que ça par les touristes qui préfèrent la plage. On peut néanmoins y trouver de nombreux spécimens de navires plus intéressants les uns que les autres, ainsi que quelques marins et pêcheurs avides de conter leurs exploits. Oui, même hors de la taverne."
+    },
+    {
+      "nom": "Temple de l'Hiver",
+      "slug": "temple_hiver",
+      "id": 18,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Situé près de l'entrée de la ville se trouve le Temple de l'Hiver et son petit bassin aquatique. On y trouve quelques espèces de poissons rares qu'il est interdit de pêcher ou même de tenter de toucher. C'est un lieu sacré pour les ulmois car il représente leur saison maîtresse, et quand celle-ci arrive, la ville se pare de ses plus beaux atours. C'est également près d'ici que vous pourrez trouver une carte de la ville ainsi que quelques affiches."
+    },
+    {
+      "nom": "Agence immobilière",
+      "slug": "agence_immobiliere-wilwar",
+      "id": 107,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Situé près du Marché Ouvert, l'Agence Immobilière est le paradis pour toutes personnes cherchant à se loger. Les Agents Immobiliers ont toujours réponse à tout, quelque soit votre budget. C'est un large bâtiment qui propose sur sa devanture les maisons et appartements à vendre ou à louer."
+    },
+    {
+      "nom": "Antiquaire",
+      "slug": "antiquaire",
+      "id": 48,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Propriété d'un certain Kelgar Viator, ce magasin d'antiquités regorge de trésors anciens et oubliés et de choses... Vieilles et anciennes. C'est l'endroit favori des wilwariens passionnés d'histoires et d'objets mystérieux. L'Antiquaire se situe au Nord-Est de la ville, près de la Place Deux Trèfles."
+    },
+    {
+      "nom": "Boulangerie",
+      "slug": "boulangerie",
+      "id": 111,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Hmm, la bonne odeur ! Situé au centre de la ville, la Boulangerie de Wilwar a beau être petite, elle est très prisée par tous les habitants. Elle est facile à reconnaître grâce à son enseigne en forme de croissant, et dispose même d'une petite terrasse pour ceux qui voudraient y prendre leur petit déjeuner en toute tranquillité, accompagné de la bonne odeur du bon pain qui vient de sortir du four !"
+    },
+    {
+      "nom": "Boutique d'épices",
+      "slug": "epices-wilwar",
+      "id": 109,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Situé bien au Sud-Est de la ville, la Boutique d'Epices ne paie pas de mine entre les autres maisons qui l'entourent, pourtant, vous ne trouverez pas meilleurs épices en tout Hens. C'est une boutique aux senteurs colorés qui ravira les plus grands connaisseurs, on dit même que les restaurants d'Ulmo s'approvisionnent chez elle. "
+    },
+    {
+      "nom": "Couturier",
+      "slug": "couturier",
+      "id": 43,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "La Boutique du Couturier se trouve non loin des Friperies avec qui il cohabite très bien. Généralement, il est là pour créer des robes ou des costumes pour de grandes cérémonies. Il raccommode également les vêtements des plus jeunes, mais pour les grosses commandes, et les demandes spéciales, il faut souvent réserver ses services à l'avance. Les couturiers sont des gens occupés !"
+    },
+    {
+      "nom": "Le Plateau - Domaine des Cheftains",
+      "unique": true,
+      "slug": "domaine_wilwar",
+      "id": 30,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "service_public"
+      ],
+      "description": "Situé dans la partie supérieure Ouest de la ville, Le Plateau est la demeure ancestrale des cheftains de Wilwar. Il abrite présentement la jeune Faine Aviva qui, part chance, n'a pas encore oublié son emplacement. Il est un peu en retrait de la ville car situé en hauteur. Pour l'atteindre, il faut gravir les marches d'un imposant escalier, mais on ne vous laissera pas y rentrer à moins de présenter un rendez-vous ou une affaire importante. "
+    },
+    {
+      "nom": "Fab lab",
+      "slug": "fablab",
+      "id": 34,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Situé à l'est de la ville, le Fablab est un lieu ouvert qui met à disposition du public de nombreux outils et machines pour qu'il mène à bien ses projets personnels. Il permet ainsi aux amateurs et à ceux qui n'ont pas l'espace pour travailler de réaliser leurs objectifs et de stocker leurs travaux et leurs œuvres, et ceci bénévolement. Le Fablab est néanmoins à la charge de la communauté, une aide est régulièrement apportée par la communauté Wilwarienne."
+    },
+    {
+      "nom": "Ferme",
+      "slug": "ferme",
+      "id": 42,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Situé à l'extrême Est de la ville, la Ferme de Wilwar borde la ville de ses enclos et pâturages. C'est un grand bâtiment qui accueille de temps à autres les classe vertes pour voir comment on élève les animaux de la ferme. On dit que le Vendredi soir, certains privilégiés peuvent pratiquer le rodéo, mais ce ne sont que des rumeurs."
+    },
+    {
+      "nom": "Forêt",
+      "slug": "foret-wilwar",
+      "id": 116,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "La Forêt de Wilwar est comme la Plage à Ulmo... Elle borde la ville avec laquelle elle entretient un lien privilégié. Malgré le lien qui unit les Wilwariens à la nature, il est dangereux de s'aventurer profondément dans les bois, car agréable ou pas, la forêt reste un endroit sauvage, et le territoire des créatures qui peuplent Hens. En gros, chacun chez soi, et les chèvres seront bien gardées !"
+    },
+    {
+      "nom": "Friperies",
+      "slug": "friperies",
+      "id": 39,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Non loin du Couturier s'étendent les Friperies. Il y a là divers étalages de vêtements d'occasion, vendus de ce fait moins chers que s'ils étaient neuf, ce qui est paradoxal car généralement, on y trouve des habits jamais mis... Avec la Boutique des Couturiers, ils se partagent le quartier en cordiale entente."
+    },
+    {
+      "nom": "Gare de Wilwar",
+      "slug": "gare_wilwar",
+      "id": 54,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "service_public"
+      ],
+      "description": "A l'extrême Nord-Est de la ville se trouve la gare de Wilwar. C'est un grand bâtiment qui accueille les nouveaux visiteurs et ceux qui sont de retour. Il y a là plusieurs guichets ainsi qu'une horloge pour prévenir les heures d'arrivées et de départs, mais également un petit kiosque discret qui distribue du café aux gens qui attendent ou sortent de leur train."
+    },
+    {
+      "nom": "Glacier",
+      "slug": "glacier",
+      "id": 35,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Au centre de la ville de Wilwar, bâtit exprès à cet endroit pour que tout le monde en soit à égale distance se dresse... Le Glacier ! C'est un bâtiment discret qui dégage cependant une fraîcheur revigorante lors des grandes châleurs. Et en hiver me direz-vous ? Non seulement ses glaces sont suffisamment populaires pour être manger même dans le froid, mais en plus, il vend des churros !"
+    },
+    {
+      "nom": "Graines d'or",
+      "slug": "graine_dor-wilwar",
+      "id": 110,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Restaurant situé au nord de la ville, le Graines d'Or n'est pas – comme l'on pourrait si attendre – peint en jaune, mais en bleu ! Il offre de nombreux plats végétariens et élaborés. On dit également qu'il est le meilleur client de la Boutique d'Epices au Sud de la ville. "
+    },
+    {
+      "nom": "Grand fleuriste",
+      "slug": "g_fleuriste-wilwar",
+      "id": 103,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Séparé par à peine quelques maisons de son concurrent direct le Petit Fleuriste, le Grand Fleuriste est une assez imposante boutique de fleurs teinté d'un rose pâle élégant. D'aucun pourrait croire qu'il aurait put évincer son frêle rival, mais le Grand Fleuriste est bon seigneur, et puis, Wilwar est assez grande pour deux fleuristes, non ? En attendant, il se gausse d'avoir les meilleurs plantes carnivores de toute l'archipel d'Hens !"
+    },
+    {
+      "nom": "Jardins suspendus",
+      "slug": "jardin_suspendu",
+      "id": 56,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "place"
+      ],
+      "description": "Les Jardins Suspendus sont, non seulement un lieu spectaculaire, mais également le seuil du domaine des cheftain. Les arbres, les plantes et mêmes les racines offrent aux passants des arcades naturelles sous lesquelles il fait bon passer. On dit que les couples qui passent leurs sixième rendez-vous à cet endroit sont promis à un avenir radieux !"
+    },
+    {
+      "nom": "L'arche Renversée",
+      "slug": "arche_renversee-wilwar",
+      "id": 102,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Situé à l'Est de la ville, au Nord de la Place Silla Verse, l'Arche Renversée est le deuxième restaurant connu de Wilwar. Il tient son nom autant des arcades avoisinantes, que d'une légende que le propriétaire se fera un plaisir de raconter à qui voudra bien l'entendre. Ses plats sont des plats typiques de Wilwar, mais attention ! Pas de la Wilwar actuelle, sinon de la Wilwar Antique... Hé oui, à L'Arche Renversée, préparez vous à exécuter un retour dans le temps !"
+    },
+    {
+      "nom": "Laboratoire",
+      "slug": "laboratoire",
+      "id": 118,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Situé un quartier au Sud du Temple du Printemps, le Laboratoire est non seulement le repaire de nombreux scientifiques, mais également celui de nombreux étudiants. On n'y pratique pas seulement des expériences un peu folles, mais aussi des essais sur les plantes pour unir deux espèces différentes par exemple. Une fois, ils ont réussi à mélanger une rose et une marguerite !"
+    },
+    {
+      "nom": "Lavoir",
+      "slug": "lavoir",
+      "id": 40,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "A l'origine, le Lavoir était un endroit où les femmes se réunissaient pour laver le linge de leur famille, mais depuis, tout le monde sait qu'il n'est pas recommandé de laver son linge sale en public, alors les mères de familles – et même les pères désormais – restent chez eux et ne vont au lavoir que pour apprécier le cadre agréable qu'il offre."
+    },
+    {
+      "nom": "Le Coquelicot",
+      "unique": true,
+      "slug": "coquelicot-wilwar",
+      "id": 101,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Le Coquelicot tient son nom des nombreuses petites fleurs qui le bordent et que les propriétaires ont disposés sur les tables de la terrasse. C'est un bâtiment rond qui se situe au Sud de la ville, dans une partie tranquille de Wilwar. Il est agréable d'y prendre son café ou d'y discuter, entouré des senteurs des plantes exotiques. On y prend également un thé remarquable ! Allergiques au pollen, s'abstenir."
+    },
+    {
+      "nom": "Lycée Osan Tiano",
+      "slug": "lycee_osantiano-wilwar",
+      "id": 105,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "On dit qu'Osan Tiano était un érudit passionné, et qu'il aurait voulu transmettre son savoir à la nouvelle génération... C'est pour cela que le lycée de Wilwar porte désormais son nom ! Situé au Sud-Ouest de la ville, il est la terreur des jeunes gens qui préfèrent flâner plutôt qu'étudier.. C'est pourtant un grand bâtiment agréable, disposant de nombreuses classes et même de laboratoires pour les cours de biologie !"
+    },
+    {
+      "nom": "Maison du Garde forestier",
+      "slug": "garde_forestier",
+      "id": 50,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Située en bordure de la forêt, au Nord-Ouest de la ville, la Maison du Garde Forestier est faite en bois, comme un chalet, et construite dans un arbre. Le Garde Forestier s'occupe principalement de prévenir les touristes sur les règles de bienséance en forêt, et des règles de survie face à un animal sauvage s'ils n'ont pas respecté les premières. Il prévient également qu'il ne tolérera aucun papier jeté par terre..."
+    },
+    {
+      "nom": "Marché",
+      "slug": "marche_wilwar-wilwar",
+      "id": 108,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce",
+        "monument",
+        "place"
+      ],
+      "description": "Situé au Sud de la ville, le Marché de Wilwar offre de nombreux produits estivaux pour la plupart. Vous y trouverez là des fruits et des légumes issus d'une agriculture plus traditionnelle, mais également des étalages des autres cités. On dit que de temps à autres, il y a un vendeur de tapis qui s'y installe."
+    },
+    {
+      "nom": "Mare éducative",
+      "slug": "mare_educative-wilwar",
+      "id": 112,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Petit bâtiment au Nord de la ville, quoiqu'un peu plus bas que le Temple du Printemps, la Mare éducative semble perdue au milieu de Wilwar. C'est un petit bâtiment qui donne sur un petit étang où les touts petits ont la joie d'observer les petites créatures dans leur petit habitat naturel. Les grandes personnes ne sont admises que pour surveiller les plus jeunes..."
+    },
+    {
+      "nom": "Moulin",
+      "slug": "moulin-wilwar-wilwar",
+      "id": 115,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Situé à l'extrême Est de la ville, à l'extérieure en réalité, et dans le coin supérieur, le Moulin de Wilwar n'est plus en fonctionnement depuis plusieurs années déjà. Tombé en désuétude, il ne sers plus à moudre mais est devenu un simple entrepôt pour la ferme de Wilwar."
+    },
+    {
+      "nom": "Musée",
+      "slug": "musee-wilwar",
+      "id": 106,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Situé au centre de la ville, le Musée de Wilwar accueille souvent de nombreuses expositions différentes selon les événements. Généralement, il témoigne des différentes cultures des quatre villes d'Hens, mais selon la période de l'année, il est possible d'y trouver des témoignages de l'histoire, des légendes Sulimoises ou même des expositions sur des civilisations antiques et inconnues."
+    },
+    {
+      "nom": "Parc pour enfants",
+      "slug": "parc_enfant",
+      "id": 55,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "service_public",
+        "place"
+      ],
+      "description": "Situé au Nord de la ville, près du Temple du Printemps, le Parc pour Enfants est une cours de récréation pour les plus jeunes. Il y a là des tourniquets, des balançoires, des toboggans, et même des petits carrés de sables pour les plus architectes d'entre eux. Le Mardi, c'est le lieu de réunion des caïds en petite culotte : le Gang des Bacs à Sables... Oui, ils ont oublié un mot."
+    },
+    {
+      "nom": "Petit fleuriste",
+      "slug": "petit_fleuriste",
+      "id": 46,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "A peine situé un peu plus haut que le Musée, le Petit Fleuriste est une boutique teintée d'une jolie couleur bleue sans prétention. D'aucun pourrait croire que son concurrent le Grand Fleuriste l'aurait évincé il y a longtemps, mais ce n'est pas le cas, le Petit Fleuriste ayant sut fidéliser une certaine clientèle. Après tout, ce qui est petit est mignon, ce qui est grand est ...."
+    },
+    {
+      "nom": "Place de Silla Verse",
+      "slug": "place_silla",
+      "id": 33,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "Silla Verse était une très belle jeune femme, que l'on comparait souvent aux envoûtantes sirènes présentes dans les contes des marins d'Ulmo. On dit qu'elle aurait offert à un ami des roses, et que celui-ci les lui aurait refusé par gène, elle aurait donc choisit un autre prétendant. Fou de tristesse, l'abandonné se serait baigné dans la fontaine en criant le nom de son aimée disparue. Malgré sa tragique histoire, c'est un endroit agréable en compagnie de l'être aimé !"
+    },
+    {
+      "nom": "Place Deux Trèfles",
+      "slug": "deux_trefles-wilwar",
+      "id": 113,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "place"
+      ],
+      "description": "La Place Deux Trèfles se situe au Nord-Est de la ville. Elle abrite, dit-on, un chêne millénaire dont l'écorce représenterait l'ardeur des Wilwariens et de leur ville. C'est un endroit agréable où se situe un panneau d'affichages pour prévenir les passants des futurs événements à venir. Il y a même une petite terrasse pour s'abriter les jours de grandes chaleurs ou de grande pluie, parfait pour les couples en manque de romantisme !"
+    },
+    {
+      "nom": "Place Perger",
+      "slug": "place_perger-wilwar",
+      "id": 114,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "On dit qu'à l'origine, la Place Perger aurait dû s'appeler la Place Percher, mais que suite à un défaut de prononciation, son nom a été modifié. Elle est entouré par une suite d'arches qui offre de l'ombre à qui veut bien y faire un détour, et en son centre se trouve un bassin dans lequel on raconte que certaines nuits, on peut y voir un homme d'une très grande beauté y admirer le reflet des étoiles. N'en croyez rien, en réalité, c'est lui qu'il observe !"
+    },
+    {
+      "nom": "Serre",
+      "slug": "serre",
+      "id": 58,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "À Wilwar, la Serre est comme une muraille pour le Temple du Printemps. Elle entoure l'arbre sur lequel celui se dresse, et abrite nombre de plantes exotiques qui ne pourraient pas pousser sur Hens malgré le climat clément. Généralement, seul les passionnés y font escales car il y fait souvent très – trop chaud –. Les nons-initiés préfèrent passer leur chemin et continuer leur route vers le Temple."
+    },
+    {
+      "nom": "Superette",
+      "slug": "superette",
+      "id": 36,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Portes automatisées, air qui décoiffe lorsqu'elles s'ouvrent... Pas de doute, vous êtes à la Supérette. Située dans la partie Sud du Centre, la Supérette offre tous les produits généraux dont les Wilwariens ont besoin pour vivre confortablement, en passant des fruits et légumes jusqu'au dentifrice. "
+    },
+    {
+      "nom": "Temple du Printemps",
+      "slug": "temple_printemps",
+      "id": 117,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Au Nord de la ville, bâtit sur l'arbre le plus imposant de Wilwar, se dresse fièrement le Temple du Printemps. C'est un lieu sacré pour les Wilwariens car il représente leur saison maîtresse, et quand celle-ci arrive, la ville se pare de ses plus beaux atours. Si le Temple est recouvert de lichens et de plantes grimpantes, ce n'est pas par manque de soin, mais bien car la nature fait partie intégrante de la ville. "
+    },
+    {
+      "nom": "Théatre de rue",
+      "slug": "theatre-wilwar",
+      "id": 104,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "service_public"
+      ],
+      "description": "Le Théâtre de Rue est l'une des places favorites des Wilwariens littéraires. On y rejoue des scènes de l'Antiquité, des histoires cultes et des légendes épiques ! Certains prétendent même y avoir vu une représentation d'un combat de gladiateurs. Les spectacles ont cependant lieux surtout la nuit, pendant la journée, les passants s'assoient dans les gradins pour discuter, et les troupes amateurs profitent de la place pour danser, chanter ou jouer."
+    },
+    {
+      "nom": "Gare d'Anar",
+      "slug": "gare_anar",
+      "id": 154,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "service_public"
+      ],
+      "description": "La Gare d'Anar se différencie de celles des autres villes car celle-ci ne se trouve pas au bord de la sienne, mais bel et bien en plein milieu. Son chemin de fer traverse la ville de part en part. C'est un grand bâtiment espacé des autres, se trouvant en face des usines. Il y a également une petite fontaine avec un bouche de crocodile où vous aurez tout le loisir de vous remettre du voyage."
+    },
+    {
+      "nom": "Sources chaudes",
+      "slug": "sources_chaudes",
+      "id": 133,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "autre"
+      ],
+      "description": "Les sources chaudes se situent à l'extrême Nord d'Anar, sur l'un des flancs de la montagne qui borde la ville. C'est un lieu un peu difficile d'accès mais qui en vaut les efforts. L'eau est chaude naturellement et a des vertus curatives."
+    },
+    {
+      "nom": "Thermes romaines",
+      "slug": "thermes",
+      "id": 140,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "service_public"
+      ],
+      "description": "Les Thermes Romaines ont été construites juste à côté du Palais d'Anar, il est donc difficile de ne pas les trouver. C'est un endroit agréable pour faire baisser toutes les tensions du quotidien et pour se retrouver entre collègues, amis ou famille !"
+    },
+    {
+      "nom": "Centre de police",
+      "slug": "centre_police",
+      "id": 143,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Le Centre de Police, situé près du Palais d'Anar, déploie ses gendarmes et autres représentants des forces de l'ordre à travers toute la ville pour y maintenir la paix et la tranquillité. Ils sont aussi disposés à récupérer les chats coincés en haut des arbres."
+    },
+    {
+      "nom": "Souk",
+      "slug": "souk",
+      "id": 158,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Situé au sud de la Place du Soleil, et sous le Cinéma d'Anar, le Souk est un marché quotidien d'Anar, organisé en un joyeux désordre. On y trouve de nombreuses trouvailles étranges et rares venant d'Hens ou de contrées lointaines. La légende raconte que si vous y retournez plusieurs fois dans la même journée, les stands ne seront plus les mêmes. Mais c'est certainement un attrape-touristes pour les inciter à acheter tout de suite."
+    },
+    {
+      "nom": "Brocante",
+      "slug": "brocante",
+      "id": 159,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "La Brocante ouvre toutes les fins de semaines et réunit tous les vendeurs amateurs qui veulent se débarrasser de leurs vieilleries tout en récupérant un peu de profit. A la manière du Souk, les stands ne sont pas toujours les mêmes selon les semaines, mais il est plus probable d'y faire de bonnes affaires et de pouvoir négocier."
+    },
+    {
+      "nom": "Kiosque de Prese",
+      "slug": "kiosque_de_presse",
+      "id": 165,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce",
+        "service_public"
+      ],
+      "description": "Le Kiosque de Presse est le spot favoris des Hensiens pour retirer le journal et se tenir au courant des avancés du monde. Il y a des informations sur tout, tout le monde, tout le temps : idéal pour tout connaître et tenir une conversation civilisée."
+    },
+    {
+      "nom": "Le Palais",
+      "slug": "le_palais",
+      "id": 141,
+      "unique": true,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Le Palais d'Anar est certainement le plus grand monument de la capitale d'Hens, et également, la demeure ancestrale de tous les cheftains d'Anar. Imposant bâtiment, le palais d'Anar est non seulement le lieu de réunion des dirigeants de la capitale, mais aussi de tous les autres cheftains lorsque la situation le demande. C'est un lieu officiel, les visites ne seront admises que sous rendez-vous."
+    },
+    {
+      "nom": "Les Friands Disent - Café",
+      "slug": "friand_disent",
+      "id": 175,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant",
+        "commerce"
+      ],
+      "description": "Ce Café, situé près du Palais, est le repaire de tous les gourmands qui se lèvent tôt le matin. Il propose des viennoiseries, bien évidemment du café, et même du chocolat chaud pour les plus jeunes. Le gérant vous dira sans se gausser que son établissement est le meilleur, et tous les friands vous dirant la même choses."
+    },
+    {
+      "nom": "Le Verre y Table - Restaurant",
+      "slug": "verre_y_table",
+      "id": 151,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Le Verre y Table est un restaurant s'étant installé sur une ancienne air de détente. Ils proposent des plats typiques d'Anar, mais aussi des plus communs pour les touristes qui n'aiment pas la cuisine épicée. C'est un restaurant agréable, qui tient son nom du nombres incalculables de verres en cristal que le gérant a accumulé. La légende raconte que le soir, il ferait son propre concert avec."
+    },
+    {
+      "nom": "L'Effet Mer - Restaurant",
+      "slug": "effet_mer",
+      "id": 163,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "L'Effet Mer a non seulement la particularité d'avoir sa terrasse sur la rivière qui divise Anar, mais également de proposer des plats typiques... D'Ulmo ! Parfait pour se dépayser de la ville de l'été !"
+    },
+    {
+      "nom": "Tapas Nocturne - Restaurant",
+      "slug": "tapas_nocturne",
+      "id": 164,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Le Tapas Nocturne est facile à trouver, il suffit de longer la Place du Soleil vers le Sud, et suivre la musique que dégage le restaurant. L'enseigne, un grande fourchette vous indiquera tout de suite que vous êtes arrivés à destination. La spécialité de ce restaurant sont les tapas justement, et la bonne ambiance qui y règne de son ouverture à sa fermeture !"
+    },
+    {
+      "nom": "Le Show Bouillant - Cabaret",
+      "slug": "show_bouillant",
+      "id": 156,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant",
+        "autre"
+      ],
+      "description": "Le « Show Bouillant » porte bien son nom. Il offre non seulement des plats épicés typiques d'Anar, mais également de nombreux spectacles et danses de qualités pour ses clients : si vous voulez passez une soirée dynamique entre amis, n'hésitez pas, Le Show Bouillant est là pour vous !"
+    },
+    {
+      "nom": "Temple de l’Été",
+      "slug": "temple_ete",
+      "id": 136,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Situé au Nord Est du quartier Ouest d'Anar, bâti sur l'un des flancs de la montagne bordant la ville se trouve le Temple de l'Eté. C'est un monument difficile d'accès pour les Anariens, mais qui n'en reste pas moins un patrimoine sacré pour les habitants de la capitale. Il est dédié à la saison maîtresse d'Anar et reste chaud en toutes circonstances. Il est dit que la montagne juxtaposée à Anar serait un volcan endormi, et que ce Temple a été bâtie pour le calmer et empêcher les éruptions."
+    },
+    {
+      "nom": "Le Feu Au Poudre - Salle de spectacle",
+      "slug": "salle_de_spectacle",
+      "id": 169,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre",
+        "service_public"
+      ],
+      "description": "Située sous le Temple de l'Eté, la Salle de Spectacle accueille tous les soirs une réunion différente. Il y a de tous là bas, des concerts, des pièces de théâtre et même des démonstrations acrobatiques. L'intérêt de cette salle de spectacle, c'est que pour autant qu'ils aient l'air sérieux, même les amateurs peuvent faire leurs débuts là bas !"
+    },
+    {
+      "nom": "Cité des Arts",
+      "slug": "cite_arts",
+      "id": 148,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "autre"
+      ],
+      "description": "La cité des Arts est LE lieux où les hensiens se retrouvent pour comparer leurs talents créatifs. Oui, c'est ici que sont recensés les concours et les informations qui y sont rattachées."
+    },
+    {
+      "nom": "Sandwicherie",
+      "slug": "sandwicherie",
+      "id": 162,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "La Sandwicherie, située entre le Souk et la Place du Soleil propose un service unique : non seulement vous avez le choix d'une gamme inouïe de sandwichs, mais également de créer le votre. Vous aimez le jambon crûe, mais pas les petits oignons qui vont avec dans le magnifique « Sandwich à l'oignon » ? Pas de problème, vous pouvez les faire retirer !"
+    },
+    {
+      "nom": "Fast and Furieux - Fast Food",
+      "slug": "fast_food",
+      "id": 157,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Situé juste au dessus de la gare, le Fast and Furieux propose une grande variété de nourriture rapide à cuisiner, à emporter et à dévorer. Tout se fait en vitesse là-bas, tellement que certaines personnes plus calmes pensent à tort qu'on veut les éjecter. Pour ces personnes là, il est recommandé d'ailleurs de passer par le Troquet..."
+    },
+    {
+      "nom": "Le Pote au Feu - Troquet",
+      "slug": "pote_au_feu",
+      "id": 155,
+      "unique": true,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Le Pote au Feu se situe également juste au dessus de la gare. C'est un petit bistro tranquille et très agréable où il fait bon passer un peu de temps entre amis. Il offre également quelques viennoiseries à emporter pour ceux ayant eu peur du Fast and Furieux."
+    },
+    {
+      "nom": "La Fumée Bleue - Salon de Thé",
+      "slug": "salon_de_the_anar",
+      "id": 161,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant",
+        "commerce"
+      ],
+      "description": "Le Salon de Thé se trouve entre le Cinéma d'Anar et la Sandwicherie. Comme son nom le laisse deviner, il sert une grande variété de thés, allant du plus classique au plus exotique, en passant par son fameux thé qui laisse s'échapper la fameuse « Fumée Bleue ». Mais ce n'est pas tout ! Ils vendent également de petites tartelettes et douceurs pour accompagner leurs breuvages, et ça, c'est bien."
+    },
+    {
+      "nom": "Les Notes de la Nuit - Bar dansant",
+      "slug": "notes_de_la_nuit",
+      "id": 144,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant",
+        "autre"
+      ],
+      "description": "Le Bar dansant se trouve à l'extrême Est de la ville d'Anar et ouvre aussi bien le jour que la nuit. Comme l'on pourrait s'y attendre, on trouve une piste de danse et des boissons à l'intérieur du bâtiment."
+    },
+    {
+      "nom": "Fever Nights - Discothèque",
+      "slug": "discotheque",
+      "id": 167,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "La Discothèque est le lieu favori de rencontres des jeunes Anariens en manque de divertissement. Ils se réunissent là-bas principalement les fins de semaines et pendant les vacances pour danser jusqu'au petit jour. On dit alors qu'ils ont attrapés la Fièvre du Samedi soir ! (sans réellement tenir compte du soir où ils sont allés danser par ailleurs)"
+    },
+    {
+      "nom": "Grand cinéma",
+      "slug": "grand_cinema",
+      "id": 160,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre",
+        "monument"
+      ],
+      "description": "Le Grand Cinéma ne se trouve pas très loin de la Place du Soleil. Il accueille trois salles de cinéma, dont une capable de rendre le fameux effet 3D. Chaque mois, il change ses affiches pour proposer de nouveaux films. Il accueille également une petit kiosque pour vendre de quoi se restaurer et boire pendant les séances."
+    },
+    {
+      "nom": "Palais de Justice",
+      "slug": "le_palais",
+      "id": 141,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "autre"
+      ],
+      "description": "Le Palais de Justice n'est rien d'autre de plus qu'un tribunal où sont jugés les criminels comme les petits conflits. C'est un imposant bâtiment très solennel qui se trouve presque à la limite avec le quartier Est d'Anar."
+    },
+    {
+      "nom": "Usines",
+      "slug": "usines",
+      "id": 153,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Les Usines d'Anar sont réputés pour être très propres, mais également les seules manufactures qui puissent alimenter toutes l'archipel. C'est un lieu normalement fermé au public, mais il ouvre lors de sorties scolaires pour enseigner aux jeunes Hensiens comment ça fonctionne dans les usines."
+    },
+    {
+      "nom": "Centre météo - Les Médiums du Ciel ",
+      "slug": "station_meteo",
+      "id": 132,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "autre"
+      ],
+      "description": "Ici, on ne parle pas de petites prédictions faites grâce à ses rhumatismes ou ses pouces. Non, là, c'est du sérieux, avec des appareils compliqués qui sondent le ciel à la recherche d'indice sur le temps qu'il fera demain ou dans une semaine... Bizarrement, avec toute cette technologie, ils arrivent quand même à se tromper."
+    },
+    {
+      "nom": "Mines de la Montagne",
+      "slug": "mines",
+      "id": 137,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre",
+        "monument"
+      ],
+      "description": "Situées à l'extrême Nord-Est du quartier Ouest d'Anar, les Mines de la Montagne sont le principal revenu économique de la ville. On y extrait toutes sortes de minerais et métaux rares introuvables dans les autres contrées d'Hens que l'on envoit par la suite à la Forge ou aux Usines. C'est un lieu généralement interdit au public, mais il y a de temps à autres des visites guidées pour les touristes ou les élèves d'une école."
+    },
+    {
+      "nom": "Hôtel des vente - la Halle aux Or ",
+      "slug": "hotel_des_ventes",
+      "id": 135,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "L'Hôtel de Ventes est là pour mettre en relation directe les artistes Hensiens et de potentiels acheteurs. Des œuvres y seront mis à la vente pour les intéressés."
+    },
+    {
+      "nom": "Central Park",
+      "slug": "central_park",
+      "id": 173,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Contrairement à ce que son nom indique, Central Park n'est pas le parc central d'Anar. En réalité, il est situé à son extrême Ouest. C'est néanmoins un endroit très agréable où les familles se retrouvent généralement le week end pour organiser des pic-niques."
+    },
+    {
+      "nom": "Salle d'arcade - Fire in the Hole ",
+      "slug": "salle_arcade",
+      "id": 150,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Pour les jeunes branchés qui aiment s'amuser, il y a la discothèque, et puis, il y a également : La Salle d'Arcades ! Temple des anciennes et nouvelles consoles, cette salle abrite toutes les semaines un tournoi sur un jeu différent. Elle fait alors le plaisir des petits curieux et des grands nostalgiques !"
+    },
+    {
+      "nom": "Hôpital",
+      "slug": "hopital",
+      "id": 134,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "L'Hôpital d'Anar se trouve au Nord de la ville. Comme l'on pourrait s'y attendre, c'est là qu'on s'occupe des malades, des urgences, et des accidents de la vie. Pas de panique, les médecins là bas sont doués et avenants !"
+    },
+    {
+      "nom": "Petit marché",
+      "slug": "petit_marche_anar",
+      "id": 145,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Le Petit Marché regroupe les petits producteurs d'Hens. Là-bas, on est sûr de trouver des produits frais du jour même. Les prix sont en revanche un peu plus élevé, mais il est possible de négocier, et même de troquer !"
+    },
+    {
+      "nom": "Fête Foraine - Tout feu, tout flamme!",
+      "slug": "fete_foraine",
+      "id": 152,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "autre"
+      ],
+      "description": "Pour s'amuser à Anar, il y a la Discothèqe, la Salle d'Arcade et ensuite il y a... La Fête Foraine ! Elle comporte les attractions de base, un bateau pirate, une grande roue ou encore une montagne russe, ouvertes toute l'année, avec entrée gratuite pour les enfants de moins de 6 ans le Mercredi et les fins de semaine. De temps à autres des saltimbanques y élisent domicile pour une courte période de temps afin d'y présenter leurs numéros."
+    },
+    {
+      "nom": "Lieu abandonné",
+      "slug": "lieu_abandonne",
+      "id": 149,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Les Lieux Abandonnés sont des bâtiments qui auraient dû être construits, mais qu'on ne termina jamais. Certains parlent de fantômes et de hantise, d'autres pensent que c'était un manque de financement. Dans tous les cas, les Lieux Abandonnés sont désormais le lieu de repaire de personnes peu fréquentables dit-on..."
+    },
+    {
+      "nom": "Forge - l'Art de la Flamme",
+      "slug": "forge",
+      "id": 170,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "service_public",
+        "autre"
+      ],
+      "description": "Pour plus de facilité, la Forge a été construite juste à côté des Mines pour rendre le transport de minerais et métaux plus facile. Cela peut sembler désuet, mais outre les produits communs d'une forge de nos jours, on y trouve également des reproductions d'armes et de boucliers anciens."
+    },
+    {
+      "nom": "Boutique d'Instruments",
+      "slug": "boutique_instruments",
+      "id": 171,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Anar n'est pas uniquement une ville dédiée à l'été, à la chaleur et au feu, et pour preuve : au Nord Est du quartier Ouest, près des Mines et de la Forge se trouve la Boutique d'Instrument de musique ! On y trouve à peu près tout ce qu'un féru de musique peut rêver trouver, mais c'est également un lieu où les simples débutants pourront trouver des guides pour apprendre à jouer et à maîtriser les instruments."
+    },
+    {
+      "nom": "Boutique d'Art",
+      "slug": "boutique_art",
+      "id": 146,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "La Boutique d'Art ne propose pas réellement de tableaux de peintres célèbres, non, la Boutique d'Art vous offre les moyens de devenir vous même un artiste célèbre ! Elle propose toutes les fournitures dont on pourrait avoir besoin pour se lancer dans la création."
+    },
+    {
+      "nom": "Chantier ferroviaire",
+      "slug": "chantier_ferrovier",
+      "id": 166,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Le Chantier Ferroviaire, c'est l'endroit où les vieilles rames de trains sont déposées. Elles sont parfois réutilisées et recyclées par la Forge. On y trouve également de nombreux outils servant à l'entretient des trains et des voies ferrées."
+    },
+    {
+      "nom": "Place Sêche",
+      "slug": "place_sechee",
+      "id": 138,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "Tout au Nord d'Anar, il y a la Place Sèche. Avant, elle était utilisée pour étendre son linge et le laisser sécher car c'était là où le soleil tapait le plus fort. Désormais, ses voisins y font toujours sécher le linge, mais c'est également un lieu de passage où l'on peut s'asseoir et profiter de la chaleur toujours présente, même en hiver."
+    },
+    {
+      "nom": "Place de l'Infini",
+      "slug": "place_infini",
+      "id": 142,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "La Place de l'Infini, située au Sud de l'Hôpital, a une drôle d'histoire. On raconte que dans les temps anciens, son bassin en forme de 8 était une source magique, dans laquelle il suffisait de plonger son regard pour connaître son avenir. Aujourd'hui, ce n'est plus qu'un bassin comme les autres, dans lequel les gens ont pris l'habitude de jeter une pièce en faisant un vœu. Oui, comme pour une fontaine."
+    },
+    {
+      "nom": "Place Serpentine",
+      "slug": "place_serpentine",
+      "id": 147,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "La Place Serpentine, à l'Ouest d'Anar, n'a pas d'histoire particulière. Son nom lui a été donné pour le petit bassin zigzagant qui s'y trouve. Les enfants jouent à le traverser en sautant. C'est un endroit tranquille, un peu en retrait de l'agitation du reste de la ville."
+    },
+    {
+      "nom": "Place du Cadran",
+      "slug": "place_cadran",
+      "id": 139,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "La Place du Cadran se situe juste sous le Temple d'Anar. Aux premiers temps d'Anar, le cadran était la seule manière qu'avaient les habitants de la ville pour repérer les heures. Ce n'est désormais plus qu'un simple patrimoine de la ville, toujours très agréable à regarder."
+    },
+    {
+      "nom": "Place du Soleil",
+      "slug": "place_soleil",
+      "id": 172,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "Grande Place située devant le Palais d'Anar, la Place du Soleil est un lieu où il fait bon se balader. C'est également un lieu très touristique dû à sa proximité avec le domaine des cheftains. Elle a été appelée comme ça non seulement grâce aux mosaïques sur son sol, mais également car le soleil semble diriger spécialement ses rayons sur elle. Attention aux coups de chaleurs en été !"
+    },
+    {
+      "nom": "Montagnes d'Anar",
+      "slug": "montagnes",
+      "id": 174,
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Montagne surplombant la capitale de l'été, on dit qu'il s'agit en réalité d'un volcan endormi... Mais ce n'est qu'une légende. Malgré la difficulté d'atteindre son sommet, l'effort en vaut la peine : l'air y est le plus pur d'Hens, et en plus, on y trouve de magnifique fleurs, introuvables ailleurs"
+    },
+    {
+      "nom": "Ulmo - Général",
+      "slug": "ulmo-general",
+      "id": 119,
+      "village": "ulmo",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Ulmo est le village portuaire de l'archipel, célébrant l'Hiver et L'Eau. Pas bien grand, c'est néanmoins un village très dynamique connu pour sa gastronomie, son phare et son grand port. Les restaurants d'Ulmo sont très cotés et appréciés des Hensiens, c'est évidemment une destination touristique très populaire."
+    },
+    {
+      "nom": "Sulimo - Général",
+      "slug": "sulimo-general",
+      "id": 121,
+      "zone": "village",
+      "village": "sulimo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Sulimo est le plus petit village de l'archipel de Hens. Il célèbre l'Automne et le Vent, beaucoup de familles viennent s'y installer pour le cadre de vie, son calme et son côté naturel. Ce qui attire le plus les touristes, et les autres habitants de Hens, c'est la rue des artisans: on y trouve les plus belles créations de l'archipel et les artisans les plus talentueux y ont élu domicile."
+    },
+    {
+      "nom": "Wilwar - Général",
+      "slug": "wilwar-general",
+      "id": 120,
+      "village": "wilwar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Wilwar est un grand village, célébrant le Printemps et la Terre. Capitale de la mode, et de la culture à Hens, ce village est aussi très connu pour son immense marché, un rendez-vous incontournable de l'archipel. Entourée par des champs et par une forêt, cette nature est sacrée à Wilwar et les Hensiens y tiennent beaucoup."
+    },
+    {
+      "nom": "Anar Général",
+      "id": 177,
+      "slug": "anar_general",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Anar est la plus grand ville de l'archipel, elle est considérée comme la capitale des deux îles. Représentée par le feu etpar la saison de l'été, c'est une ville dynamique où les Hensiens citadin trouvent leur compte. Il y a beaucoup de concerts, spectacles et activités pour occuper vos journées!"
+    },
+    {
+      "nom": "Université des Quatre",
+      "id": 176,
+      "slug": "universite_des_quatre",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre",
+        "service_public"
+      ],
+      "description": "L'université des Quatre, ou Académie de magie. C'est le seul endroit de l'Archipel où l'on apprend l'histoire du monde, la théorie sur les pouvoirs et sur un tas d'autres choses. La pratique n'y est pas négligée pour autant. Quatre pour quatres saisons, et quatre éléments. Si si, c'est finement recherché !"
+    },
+    {
+      "nom": "Quartier Troglodyte",
+      "id": 178,
+      "slug": "quartier_troglodyte",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "autre"
+      ],
+      "description": "Le Quartier Troglodyte, ou l'ancienne partie de la ville. La légende raconte que les premiers Anariens auraient vécu sous terre et dans des parois rocheuses pour survivre à un cataclysme. Aujourd'hui, c'est un sympathique petit quartier, très mignon et très confortable. On ne vit pas à la capitale pour vivre dans des trous sales, n'est ce pas ?"
+    },
+    {
+      "nom": "Les Volcans Verts",
+      "id": 179,
+      "slug": "volcans_verts",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "autre"
+      ],
+      "description": "Volcans endormis depuis bien trop longtemps pour s'en souvenir. Avec les années, ils ont été recouverts et mangés par la végétation qui les a transformés en de simples collines et plaines. Comme ils sont désormais innofensifs, il n'est pas rare de voire quelques familles venir y picniquer."
+    },
+    {
+      "nom": "Chocolaterie",
+      "id": 180,
+      "slug": "chocolaterie",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Ahhh... La bonne odeur du chocolat ! Quelle chocolaterie n'a jamais fasciné de par ses mystères et ses atouts ? Pas celle d'Anar en tout cas. Tous les jours, à toute heure, elle dégage une délicieuse odeur de sucrerie qui attire tous les enfants. Malgré son nom, il faut savoir qu'elle ne fabrique pas uniquement des chocolats ! Et chaque premier mercredi du mois, elle est ouverte aux visites scolaires, c'est-y pas beau tout ça ?"
+    },
+    {
+      "nom": "Promenade des Anciens",
+      "id": 181,
+      "slug": "promenade_anciens",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "place"
+      ],
+      "description": "Une petite place qui se situe sous le Colisé. Elle ne tient pas forcément son noms des personnes agées somnolant sur ses bancs, mais ça marche tout de même. Il n'est pas rare de voir quelques canards dans le petit bassin en son centre car on y jette souvent des miettes de pain."
+    },
+    {
+      "nom": "Colisée d'Anar",
+      "id": 182,
+      "slug": "colisee_anar",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument"
+      ],
+      "description": "Plus un bâtiment historique qu'un véritable Colisé, il est surtout utilisé pour des rencontres sportives exceptionnelles ou des événements importants. Le reste de l'année, c'est un lieu ouvert au public comme un autre, un peu comme un musée quoi."
+    },
+    {
+      "nom": "Boutique de Macarons",
+      "id": 183,
+      "slug": "boutique_macarons",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Facilement reconnaissable à son enseigne tricolores, la boutique de Macarons est l'une des plus célèbre d'Hens. Pourquoi ? Parce qu'elle produit les meilleurs macarons de l'Archipel pardi ! Même ceux de l'enseigne semblent délicieux..."
+    },
+    {
+      "nom": "Bacon Palace - Restaurant",
+      "id": 186,
+      "slug": "bacon_palace",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Bacon Palace, le palais du bacon ! Tous les adeptes du lard salé se retrouvent ici pour partager leur amour du bacon ! Ici, on parle de bacon, ou on ne parle pas ! Sauf le Vendredi où les néophytes peuvent réclamer des oeufs ou un bon steak... Cependant, on dit qu'une réunion secrète des Adeptes du Bacon se tiendrait là, un soir par mois, pour décider de l'avenir d'Anar... Info ou intox ? On penche pour la deuxième solution !"
+    },
+    {
+      "nom": "Place de la Musique",
+      "id": 187,
+      "slug": "place_musique",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "Une place sans cesse illuminée par le soleil où se tiennent quelques concerts de rues. Selon les dates, il n'est pas rare qu'il s'y tienne de petites réunions pour des réjouissances ou de petites fêtes d'été."
+    },
+    {
+      "nom": "Tournesol - Restaurant",
+      "id": 184,
+      "slug": "restaurant_tournesol",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Sympathique restaurant plutôt discret. On y sert des plats frais pour pallier au climat chaud d'Anar. La politique de la maison est très stricte : si on ne sourit pas, la journée est gâchée !"
+    },
+    {
+      "nom": "Les buveurs d'Encre - Restaurant",
+      "id": 185,
+      "slug": "buveurs_encre_restaurant",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Un petit restau aux allures chic, ici, ce sont les amants de la lecture qui se réunissent chaque jour pour prendre un café et discuter de leur dernier roman. On peut également y trouver une petite bibliothèque mise à disposition des clients en mal de lecture, mais on ne peut emmener les livres chez soi."
+    },
+    {
+      "nom": "Boutique de Feux d'Artifices",
+      "id": 188,
+      "slug": "boutique_feux_artifices",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Si vous voulez fêter un anniversaire ou une fête bien précise avec une explosion de lumière, vous êtes au bon endroit ! Vous trouverez ici tout ce dont vous aurez besoin pour égayer le ciel nocturne, en passant de la plus grande fusée aux petits pétards serpentins. Si vous avez les moyens, vous pourrez même vous offrir une fusée vivante qui dessinera dans le ciel l'animal de votre choix en des milliers de petites étincelles : parfait pour ravir les grands comme les petits. "
+    },
+    {
+      "nom": "Grand Dojo",
+      "id": 189,
+      "slug": "grand_dojo",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "monument",
+        "autre"
+      ],
+      "description": "Vous avez un pouvoir ? Bien sûr que vous avez un pouvoir ! Et vous savez certainement le maîtriser, du moins, c'est ce que vous pensez. Cependant, ce n'est pas l'avis du Maître du Dojo : il y a toujours moyen de se perfectionner ! Et si ce n'est pas votre magie que vous voulez améliorer, vous pouvez également y prendre des leçons de self défense ou d'art martials !"
+    },
+    {
+      "nom": "Centre Commercial",
+      "id": 190,
+      "slug": "centre_commercial",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "commerce"
+      ],
+      "description": "Le Centre Commercial est LE lieu incoutournable d'Anar pour tous les amoureux du shopping. Il est tellement grand qu'il est inconcevable que vous en sortiez les mains vides. On y trouve de tout : des vêtements, des bibelots, des livres, des friandises, des outils, des accessoire, enfin, tout ce dont vous pouvez rêver !"
+    },
+    {
+      "nom": "Maison étrange",
+      "id": 191,
+      "slug": "maison_etrange",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Petite maison en retrait d'Anar, rien que son aspect fait comprendre qu'elle n'est pas comme les autres. Vide depuis des années, toutes sortes de rumeurs circulent à son sujet, mais personne ne sait quoi réellement en penser. La plus répandu serait que cette bâtisse eut été la proie des flammes, et que depuis, elle serait hantée par ses anciens résidents."
+    },
+    {
+      "nom": "Café Street",
+      "id": 192,
+      "slug": "cafe_street",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "Le Café Street, c'est un peu le rendez-vous inévitable des amis dans leur temps libre. On y boit une petite tasse accompagnée d'une pâtisserie, on se raconte des anecdotes et des histoires, puis on s'en va, mais on revient toujours, parce que le Café Street fait un peu partie de l'histoire d'Anar après tout."
+    },
+    {
+      "nom": "Centre de Poste",
+      "id": 193,
+      "slug": "centre_poste",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Une lettre à poster, un colis à récupérer... C'est au Centre de Poste que vous devez vous rendre ! Il est assez facile à repérer grâce à son enseigne et au différentes boîtes aux lettres posées devant l'édifice. N'hésitez pas à passer, après tout, ça fait toujours plaisir de recevoir une lettre, non ?"
+    },
+    {
+      "nom": "Cinéma en Plein Air",
+      "id": 194,
+      "slug": "cinema_plein_air",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "place",
+        "autre"
+      ],
+      "description": "Une place équipée d'une pierre plate et polie sur laquelle sont projetés les nouveaux films d'Hens. Sauf le Samedi soir : le Samedi soir, c'est soirée retro ! Il y a un entracte à chaque séance durant lequel vous pourrez acheter de quoi vous sustenter durant le reste du film."
+    },
+    {
+      "nom": "Crèche",
+      "id": 195,
+      "slug": "creche",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Equipée d'une enseigne en forme de biberon, c'est difficile de louper la crèche, surtout avec tous les cris et rires d'enfants qui s'en échappent. Si vous travaillez, c'est ici que vous pouvez laisser vos bouts de choux le temps de votre labeur. La seule inquiétude que vous devriez avoir, c'est de voir vos bambins refuser de rentrer chez vous tellement ils s'amusent ici."
+    },
+    {
+      "nom": "Quartier Général des Joueurs",
+      "id": 196,
+      "slug": "qg_joueurs",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Ici, vous vous trouvez au repaire des joueurs de carte. Tout type de jeux leur sont mis à disposition, tant que ça concerne les cartes. Ces derniers temps, le jeu de cartes qui fait fureur est Dojo, n'hésitez pas à y faire un tour pour tenter votre chance et rentrer dans le club !"
+    },
+    {
+      "nom": "Galerie d'Art",
+      "id": 197,
+      "slug": "galerie_art",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Une musice douce, une ambiance tranquille... Vous êtes à la Galerie d'Art où l'on expose toutes les semaines de jeunes et d'anciens talents ! Si vous voulez découvrir de nouveaux artistes, ou si vous voulez exposer vos propres oeuvres, vous êtes au bon endroit !"
+    },
+    {
+      "nom": "Hôtel",
+      "id": 198,
+      "slug": "hotel",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Si vous êtes un touriste et que vous décidez de passer quelques jours à Anar, vous êtes au bon endroit ! C'est un petit hôtel agréable construit au dessus de la rivière qui divise Anar. Attention néanmoins aux périodes de fêtes : il faut réserver à l'avance sous peine de ne pas y trouver de place."
+    },
+    {
+      "nom": "Repère des Malfrats",
+      "id": 199,
+      "slug": "repere_malfrats",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Aïe... S'il y a bien un quartier à ne pas fréquenter à Anar, c'est celui là... Repère des malfrats de la Capital, à moins d'y être invité, n'y trainez ni de jour ni de nuit. D'ailleurs, il n'est pas rare d'y entendre des bruits suspects durant les heures nocturnes, comme des coups de feu, ou pire..."
+    },
+    {
+      "nom": "Médiathèque",
+      "id": 200,
+      "slug": "mediatheque",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "La Médiathèque... Véritable caverne aux merveilles de la Capitale. Ici, vous trouverez tous types de documents, en passant des films à même quelques instruments à emprunter. C'est également ici que vous pourrez trouver des archives de plusieurs centaines d'années de films et d'écrits afin de rédiger vos travaux pour vous études ou pour simplement enrichir votre propres cultures."
+    },
+    {
+      "nom": "Place du Trompe l'oeil",
+      "id": 201,
+      "slug": "place_trompe_oeil",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "place"
+      ],
+      "description": "Attention un trou ! Ha, mais non, c'est n'est qu'une peinture très convaincainte au sol. Attention tout de même à ne pas marcher dedans si elle n'est pas sèche. Le trompe l'oeil est refait et peaufiné à peu près chaque mois par des jeunes artistes d'Anar qui veulent faire voyager leurs concitoyens à leur façon."
+    },
+    {
+      "nom": "Refuge Animalier",
+      "id": 203,
+      "slug": "refuge_animalier",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Ici, on recueille les animaux blessés ou abandonnés, on les soigne et on les chouchoute. Certains sont remis en liberté pendant que d'autres attendent impatiemment l'adoption. Cependant, vous pouvez également y passer pour aider et visiter les animaux,ça leur fera plaisir !"
+    },
+    {
+      "nom": "Skatepark",
+      "id": 204,
+      "slug": "skatepark",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Repaire de tous les jeunes branchés de la ville, ici, vous pouvez tout aussi bien montrer vos talents de skaters que voir les autres frimer sur leur planche. C'est aussi un excellent endroit pour voir les meilleures chutes de l'année."
+    },
+    {
+      "nom": "Potager Citadin",
+      "id": 202,
+      "slug": "potager_citadin",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Qui a dit que Wilwar avait le monopole des cultures ? Pas les anariens en tout cas ! Le Potager citadin leur permet de cultiver en communauté leurs légumes et fruits favoris. Ils peuvent ensuite récupérer le fruit de leur labeur pour en profiter ou le vendre !"
+    },
+    {
+      "nom": "Stade de Foot",
+      "id": 205,
+      "slug": "stade_foot",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "autre"
+      ],
+      "description": "Un terrain de foot mis à dispositions de tous les types de joueurs. Selon les jours de la semaine, vous pourrez y trouver différentes équipes, mais le plus cocasse, c'est certainement d'y voir d'autres disciplines. Des fois, des joueurs de volleys y tendent un filet et s'y entrainent..."
+    },
+    {
+      "nom": "Station des Montagnes",
+      "id": 206,
+      "slug": "station_montagnes",
+      "village": "anar",
+      "zone": "village",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Les montagnes d'Anar ne sont pas uniquement magnifiques, elles sont aussi un haut lieu touristique, et pour les plus aventureux, elles peuvent également représenter le plus grand des défis ! Les télésièges vous ammènent jusqu'au sommet de la première montagne d'Anar, mais les vrais alpinistes voudront certainement l'escalader par eux même, et ça tombe bien ! La station d'alpinisme propose le meilleur équipement d'escalade, mais également des petites collations pour la route, un guide et une photo souvenir."
+    },
+    {
+      "nom": "Coeur de la Forêt",
+      "id": 559,
+      "slug": "coeur_de_la_foret",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Plus un bois qu’une dense forêt, elle borde le village du vent. Elle n’est pas réputée dangereuse, mais il faut tout de même faire attention si l’envie de s’y aventurer se présente. Malgré sa petite taille, elle contient quelques endroits surprenants et mystérieux."
+    },
+    {
+      "nom": "L'arbre Géant",
+      "id": 561,
+      "slug": "larbre_geant",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "monument"
+      ],
+      "description": "Un arbre imposant qui trône au centre des bois. Certains disent qu’il est sacré, d’autres qu’il est juste vieux. Cela n’empêche pas certains hensiens de venir y déposer quelques offrandes pour un potentiel esprit de la forêt afin qu’ils exaucent leurs prières."
+    },
+    {
+      "nom": "Quartier du Bosquet",
+      "id": 560,
+      "slug": "quartier_du_bosquet",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Petit quartier en banlieu de Sulimo, il s’agit d’un endroit tranquille et paisible où il fait bon vivre. La ville du vent n’est pas réputée pour son agitation, au contraire, mais même parmi les sulimois, certains recherchent un peu plus de sérénité. Et c’est ici qu’ils la trouvent."
+    },
+    {
+      "nom": "Lisière des Bois",
+      "id": 571,
+      "slug": "lisiere_des_bois",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Bienvenue ! Vous voilà à l’entrée de la Forêt de Sulimo. La prudence est de rigueur, si la forêt n’est pas grande, elle garde son lot de surprises. "
+    },
+    {
+      "nom": "Hautes Herbes",
+      "id": 570,
+      "slug": "hautes_herbes",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Quel dommage de ne pouvoir y trouver de petites créatures fantastiques capable de provoquer des combats dantesques… De toutes les manières, si ça avait été le cas, un vieil homme vous aurez certainement recommandé de ne pas vous y aventurer."
+    },
+    {
+      "nom": "Point d'eau",
+      "id": 569,
+      "slug": "point_deau",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Deux petites mares un peu à l’écart du quartier du Bosquet. On peut y trouver de petits canards. C’est un endroit paisible où il fait bon traîner lorsque le temps le permet. Certaines familles Sulimoises aiment y partager quelques moments."
+    },
+    {
+      "nom": "Tour Occulte",
+      "id": 568,
+      "slug": "tour_occulte",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "monument"
+      ],
+      "description": "La Tour Occulte porte bien son nom. Il s’agit là d’un lieu mystérieux dont on ne retrouve plus l’histoire. La flore alentour semble incapable de se développer et l’atmosphère y est pesante. Autant dire qu’elle alimente grandement les légendes locales."
+    },
+    {
+      "nom": "Préau",
+      "id": 567,
+      "slug": "preau",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Situé au centre du quartier du Bosquet, le préau, habilement décoré de fanions et de petites lanternes sulimoises, peut abriter quelques passants qui cherchent à fuir la morsure du soleil ou même quelques petites réunions de quartier."
+    },
+    {
+      "nom": "Crevasse",
+      "id": 566,
+      "slug": "crevasse",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Comme si la terre avait été déchirée. Le plus probable, c’est qu’il s’agisse simplement là du résultat d’une secousse sismique, mais ça n’a pas empêché certain d’y voir une manifestation plus surnaturelle. Un tronc abattu peut servir de pont, mais le plus sage serait simplement de la contourner. Une chute serait regrettable."
+    },
+    {
+      "nom": "Marécage",
+      "id": 565,
+      "slug": "marecage",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Situé au fond de la forêt, le marécage est un lieu peu accueillant, pourtant, cela n’a pas dissuadé les sulimois d’y organiser par moment une kermès. Il s’agit cependant d’un endroit à ne pas fréquenter seul car il peut facilement se révéler dangereux. Entre les tourbières et la boue, les chutes ne sont pas à exclure, et qui sait ce que vous pourrez trouver sous la zone marécageuse… Si vous arrivez à vous en extirper."
+    },
+    {
+      "nom": "Cimetière Sylvestre",
+      "id": 564,
+      "slug": "cimetiere_sylvestre",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "monument"
+      ],
+      "description": "Un endroit à l’écart du quartier du Bosquet et de la forêt elle même. C’est un lieu solennel où les défunts peuvent reposer en paix, et où les vivants peuvent leur rendre hommage. Certaines traditions sulimoises consistent à laisser quelques cadeaux pour les morts, comme des attrapes-rêves par exemple."
+    },
+    {
+      "nom": "Cabane",
+      "id": 563,
+      "slug": "cabane",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Petite cabane perdue dans les hautes herbes un peu en contrebas de la forêt, il s’agit certainement d’une ancienne demeure de garde forestier. Toujours en bon état, elle est aujourd’hui surtout visitée par des enfants soucieux de se trouver un bon repère et des promeneurs curieux. "
+    },
+    {
+      "nom": "Atelier de bûcheron",
+      "id": 562,
+      "slug": "atelier_de_bucheron",
+      "village": "sulimo",
+      "zone": "foret_sulimo",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Deux bâtisses plantées un peu plus profond dans la forêt à la lisière du marécage, comme un avant-poste. Il s’agit surtout là, comme le nom l’indique, d’un repère pour les bûcherons. On y coupe donc du bois qui sera plus tard acheminé vers la ville."
+    },
+    {
+      "nom": "Autel du Lac",
+      "id": 573,
+      "slug": "autel_du_lac",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "monument"
+      ],
+      "description": "Un petit autel au centre du lac d'Ulmo, dressé là pour rendre hommage à un esprit protecteur de l'endroit. Parfois, lors d'événements, il est possible de s'y rendre par barques afin d'y déposer une petite offrande."
+    },
+    {
+      "nom": "Cascade",
+      "id": 574,
+      "slug": "cascade_lac",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "En périphérie d'Ulmo, se trouve une cascade, fendue par un grand arbre. On pratiquait à l'intérieur des épreuves de courage pour les jeunes. Les Ulmois apprenaient à rester forts dans la peur."
+    },
+    {
+      "nom": "Roselière",
+      "id": 575,
+      "slug": "roseliere",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Au sud du lac, l'eau claire se mêle aux marais de la roselière. Une grande étendue de roseaux et de nénuphars, une zone plus sauvage qui ravit les oiseaux et insectes. C'est la plus grande roselière de l'archipel, les ornithologues s'y rendent régulièrement au printemps pour observer les animaux."
+    },
+    {
+      "nom": "Village Flottant",
+      "id": 576,
+      "slug": "village_flottant",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "C'est un petit quartier d'Ulmo, exilé au nord du lac. S'ils appartiennent à la cité de l'eau, les habitants du village flottant aiment bien se dire indépendants, comme une mini-société à part. Flottant sur des rondins de bois, les maisons sont certes modestes, mais autonomes ! Chacun et chacune y met du sien pour qu'il continue de faire bon vivre dans ce quartier."
+    },
+    {
+      "nom": "Paillote",
+      "id": 577,
+      "slug": "paillote",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "commerce"
+      ],
+      "description": "La paillote est le seul commerce de la contrée. Elle sert évidemment tout ce qu'il faut pour se sustenter, mais au cas où, les gérants prévoient aussi une petite partie pharmacie... pour aider les aventuriers qui se seraient trop amusés dans les roches !"
+    },
+    {
+      "nom": "Petite Rivière",
+      "id": 578,
+      "slug": "petite_riviere_lac",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Une petite rivière paisible qui traverse les hauteurs du lac. Recluse et sauvage, elle est surtout fréquentée et appréciée par les animaux des alentours."
+    },
+    {
+      "nom": "Cavernes de Cristal",
+      "id": 579,
+      "slug": "caverne_cristal",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "monument"
+      ],
+      "description": "Des cavernes mystérieurses, infestées de crystaux aux reflets étincelants. Il est dit que ces pierres ont des propriétés thérapeutiques et certains les extraient et les tailles pour en faire de magnifiques bijoux."
+    },
+    {
+      "nom": "Jardin aquatique",
+      "id": 580,
+      "slug": "jardin_aquatique",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Le Lac d'Ulmo est une contrée éloignée de sa ville principale. Au sud de Loann se trouve ce lac, immense, qui s'est rapidement retrouvé lié à la province Ulmoise. C'est le coin rêvé pour les dimanches après-midi en famille, ou les balades solitaires en quête de calme et sérénité."
+    },
+    {
+      "nom": "Lac d'Ulmo",
+      "id": 581,
+      "slug": "lac_ulmo_lieu",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Le Lac d'Ulmo est une contrée éloignée de sa ville principale. Au sud de Loann se trouve ce lac, immense, qui s'est rapidement retrouvé lié à la province Ulmoise. C'est le coin rêvé pour les dimanches après-midi en famille, ou les balades solitaires en quête de calme et sérénité."
+    },
+    {
+      "nom": "Balançoire",
+      "id": 582,
+      "slug": "balancoire_lac",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Balançoire suspendue. Posée là au dessus de l'eau pour les enfants qui n'ont peur de rien, et pour les grands Ulmois qui aiment faire des plongeons."
+    },
+    {
+      "nom": "Structure de jeu",
+      "id": 583,
+      "slug": "structure_jeu",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Une structure de jeu installée sur la plage depuis fort longtemps. Elle est un peu abîmée et rafistolée. Les parents n'aiment pas vraiment que leurs enfants jouent dessus mais... cela n'empêche pas à ces derniers de tenter le diable."
+    },
+    {
+      "nom": "Petit Ponton",
+      "id": 584,
+      "slug": "petit_ponton",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Un peu à l'écart des endroits les plus fréquentés, le petit ponton reste un endroit de choix pour pêcher ou se rendre en barque à la grotte de Cristal."
+    },
+    {
+      "nom": "Sentier de Randonnée",
+      "id": 585,
+      "slug": "sentier_randonnee",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Le Sentier de Randonnée est un chemin paisible parcourrant du lac. Il permet aux Ulmois de se dégourdir les jambes en admirant la nature alentour. Le sentier invite à la sérénité, à prendre son temps."
+    },
+    {
+      "nom": "Plage du lac",
+      "id": 586,
+      "slug": "plage_lac",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "La plage du Lac est plus petite, plus privée que la grande plage de la ville de l'Eau. Si les touristes préfèrent la plage d'Ulmo, les Ulmois préfèrent la plage du Lac. Le sable fin, la chaleur du soleil sur leurs visages, le bruit des vagues qui s'échouent, loin, très loin du brouhaha de la ville."
+    },
+    {
+      "nom": "Baie",
+      "id": 587,
+      "slug": "baie_lac",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "Dans la baie du lac, l'eau est d'une clarté extrême. Tout semble si pur, c'est le coin favori des baigneurs qui aiment s'aventurer un peu dans les rochers."
+    },
+    {
+      "nom": "Arche",
+      "id": 588,
+      "slug": "arche_lac",
+      "village": "ulmo",
+      "zone": "lac_ulmo",
+      "categories": [
+        "autre"
+      ],
+      "description": "L'arche du lac est impressionnante, de par sa hauteur et sa construction naturelle. Certains récits racontent que les Ulmois voyaient en elle un portail mystique, créer par les dieux. Aujourd'hui, les baigneurs adorent passer dessous, ou même plonger depuis le haut des roches."
+    },
+    {
+      "nom": "Champs",
+      "id": 590,
+      "slug": "champs",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "autre"
+      ],
+      "description": "Les champs de Wilwar recouvrent les paysages de l'ouest de l'île de Penn, indispensables à la vie de l'archipel. Des centaines d'hensiens y travaillent pour faire vivre les ressources agricoles au fil des saisons."
+    },
+    {
+      "nom": "Cours d'eau",
+      "id": 591,
+      "slug": "cours_deau",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "autre"
+      ],
+      "description": "Bordant les champs, on retrouve un petit cours d'eau dans lequel vit tout un écosystème. Une roulotte est installée non loin de la petit berge. Est-elle abandonnée ? En tout cas elle semble en bon état."
+    },
+    {
+      "nom": "Faubourg de Wilwar",
+      "id": 592,
+      "slug": "faubourg_wilwar",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "autre"
+      ],
+      "description": "Quartier excentré la grande ville de Wilwar, le Faubourg est pourtant un regroupement d'habitations plus vieu que le village en lui même ! Beaucoup d'agriculteurs y vivent, mais pas que ! La vie y est tranquille et champêtre."
+    },
+    {
+      "nom": "Gîte",
+      "id": 593,
+      "slug": "gite",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "Restaurant"
+      ],
+      "description": "Le gîte installé au milieu des champs de Wilwar est très réputé dans la région ! Il a une vue imprenable sur la vallée, et les voyageurs aiment le calme qui y résident. Assurément un bon choix pour vos vacances."
+    },
+    {
+      "nom": "Grange",
+      "id": 594,
+      "slug": "grange",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "autre"
+      ],
+      "description": "Comme de nombreuses grange dans la région, c'est un bâtiment agricole utilisé pour le stockage et permettant le travail dans un lieu couvert."
+    },
+    {
+      "nom": "Pâturages",
+      "id": 595,
+      "slug": "paturages",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "autre"
+      ],
+      "description": "Au milieu des cultures de céréales, légumes, fleurs ou fruits on retrouve également des pâturages ! Des enclos pour permettre l'élevage des animaux."
+    },
+    {
+      "nom": "Pensionnat",
+      "id": 596,
+      "slug": "pensionnat",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "autre"
+      ],
+      "description": "Un pensionnat perdu au milieu des champs ? Une étrange idée d'un défunt directeur sévère. Autrefois on y envoyait les élèves en correction suite à de mauvais comportement, comme une punition déplacée. Mais aujourd'hui le pensionnat acceuille tout les élèves qui le souhaitent pour les faire évoluer dans un cadre calme et proche de la nature."
+    },
+    {
+      "nom": "Ruines de Penn",
+      "id": 597,
+      "slug": "ruines_penn",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "monument"
+      ],
+      "description": "Les Ruines de Penn sont assurément l'un des plus grand mystère de l'archipel de Hens. Quels secrets cachent-elle ? Une ancienne civilisation ? Un vestige des dieux ? "
+    },
+    {
+      "nom": "Serres",
+      "id": 598,
+      "slug": "serres",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "autre"
+      ],
+      "description": "Les serres agricoles servent à abriter certains végétaux pour permettre leur plantation et leur récolte dans un cadre protégé, adapté et contrôlé."
+    },
+    {
+      "nom": "Guinguette",
+      "id": 599,
+      "slug": "guingette",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "restaurant"
+      ],
+      "description": "La guinguette, placée àa côté d'un étang, est un point de rendez-vous incontournable de la campagne Wilwarienne ! Tous les soirs, les habitants s'y retrouvent pour décompresser, boire un coup, manger un peu, parler et écouter un peu de musique !"
+    },
+    {
+      "nom": "Tour radio",
+      "id": 600,
+      "slug": "tour_radio",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "service_public"
+      ],
+      "description": "Une veille tour radio qui se dresse au milieu d'un champ. Mangée par le lière, on se demande si elle marche toujours cocrectement."
+    },
+    {
+      "nom": "Prairie fleurie",
+      "id": 601,
+      "slug": "prairie_fleurie",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "autre"
+      ],
+      "description": "Champs, paturages et friches jonchent la campagne Wilwarienne, mais quelques petites prairies fleuries sauvages sont également présentes pour démontrer toute la richesse de la nature."
+    },
+    {
+      "nom": "Friche",
+      "id": 602,
+      "slug": "friche",
+      "village": "wilwar",
+      "zone": "champs_wilwar",
+      "categories": [
+        "autre"
+      ],
+      "description": "Un champ en friche, abandonné derrière le complexe agricole. On y croise toute sorte d'animaux, insectes et reptiles ayant trouvé refuge dans les hautes herbes."
+    }
+  ]
+}

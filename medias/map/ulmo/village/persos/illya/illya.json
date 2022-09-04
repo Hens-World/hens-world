@@ -1,0 +1,32 @@
+    {
+      "pseudo": "Illya",
+      "slug": "illya",
+      "owner": "hermine",
+      "status": "contributeur",
+      "house": {
+        "x": 0,
+        "y": 0,
+        "width": 20,
+        "height": 40
+      },
+      "image": {
+        "w": 500,
+        "h": 1000,
+        "c": 240
+      },
+      "avail": [
+        {
+          "posSlug": "avec_mouettes",
+          "fromT": 22,
+          "to": 1,
+          "x": 559,
+          "y": 1789,
+          "width": 42,
+          "height": 45,
+          "center": {
+            "x": 4,
+            "y": 44
+          }
+        }
+      ]
+    },

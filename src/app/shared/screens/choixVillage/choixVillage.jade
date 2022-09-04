@@ -1,0 +1,50 @@
+.page-container.no-side
+  .choix-village__background(style="background-image:url({{tempVillageDescription.background}});" ng-class="{'fade-in': tempVillageDescription != null}")
+  .main-column
+    .main-column__content.choix-village(class="other-user {{tempVillage}}")
+      .choix-village__list.choix-village__section(ng-class="{'choix-village__section--show': state === 'list'}")
+        .choix-village__encart(class="{{listState}}")
+          h1
+            span(ng-show="villageTarget == 'account'") Liez-vous à votre village
+            span(ng-show="villageTarget == 'character'") Liez votre personnage à un village
+          p
+            span Dans le monde de Hens il existe quatre villages:
+            b  chacun d'entre eux représente une saison et un élément.
+          p(ng-show="villageTarget == 'account'") L'un d'entre eux est sûrement le vôtre ! Vous pouvez consulter  les particularités de chacun en cliquant sur leurs symboles ci-dessous.
+          p(ng-show="villageTarget == 'character'") Choisissez le village de votre nouveau personnage pour démarrer cette aventure !
+        .container()
+          .village-logo( ng-repeat="village in villageDescriptions" class="other-user {{village.slug}} {{village.state}}" village="{{village.slug}}" ng-click="setUserVillage(village)" ng-mouseenter="HoverVillage(village.slug)" ng-mouseleave="OutVillage(village.slug)")
+            .village-name.font-village {{village.name}}
+      .choix-village__detail.choix-village__section.border-village(
+          ng-class="{'choix-village__section--show': state === 'detail'}")
+        .logo
+        .title.font-village {{tempVillageDescription.name}}
+        .description(ng-bind-html="tempVillageDescription.description")
+        .layout-line
+          a.button.button--meaty.hover(href="/map/{{tempVillage}}/village" target="_blank") Visiter {{tempVillageDescription.name}}
+          .button.hover.button--meaty(ng-click="returnToList()") Retour à la sélection
+        .layout-line
+          a.confirm-village.fond-village.button.hover.button--meaty(ng-click="validateNewVillage()") Choisir ce village
+        .warning(ng-show="villageTarget == 'account'") [!] Votre premier personnage - si vous souhaitez en créer un - sera automatiquement lié au village choisi. Néanmoins, vous aurez la possibilité de créer des personnages supplémentaires provenant d’autres coins de l’archipel.
+      .choix-village__confirmation.choix-village__section.border-village(ng-class="{'choix-village__section--show': state === 'confirm'}" class="other-village {{chosenVillage.name}}")
+        .logo
+        .valid-text
+          span Vous avez choisi
+          span.font-village  {{chosenVillage.name}}
+          span  !
+        .info-confirm
+          div(ng-show="villageTarget === 'account'")
+            span Sur l'archipel:
+            b  la magie existe !
+            span  Si vous souhaitez créer un personnage, celui-ci pourra avoir un pouvoir lié à l'
+            b  élément
+            span  de son village. Pour cela, nous vous avons concocté un petite questionnaire, pour imaginer ensemble ce pouvoir !
+          div(ng-show="villageTarget === 'character'")
+            a.button.button--meaty.hover.choix-village__return-button(href="/choix-village/personnage/{{characterIndex}}") Finalement, j'ai un doute...
+            p
+              span Comme vous le savez, votre personnage pourra avoir un pouvoir lié à l'
+              b  élément
+              span  de son village.
+              span Pour cela nous vous avons concocté un petit quistionnaire, pour imaginer ensemble ce pouvoir !
+          .questionnaire-hint Évidemment rien n'est définitif, si le pouvoir obtenu ne vous convient pas, vous pourrez en créer un de toute pièce à votre personnage !
+          a.go-to-questionnaire.fond-village.button.button--meaty.hover(href="/questionnaire/{{characterIndex}}") Faire le questionnaire

@@ -1,0 +1,124 @@
+{"frames": [
+
+{
+	"filename": "char_ulmo1.png",
+	"frame": {"x":0,"y":0,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo2.png",
+	"frame": {"x":270,"y":0,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo3.png",
+	"frame": {"x":540,"y":0,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo4.png",
+	"frame": {"x":810,"y":0,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo5.png",
+	"frame": {"x":1080,"y":0,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo6.png",
+	"frame": {"x":1350,"y":0,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo7.png",
+	"frame": {"x":1620,"y":0,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo8.png",
+	"frame": {"x":0,"y":207,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo9.png",
+	"frame": {"x":270,"y":207,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo10.png",
+	"frame": {"x":540,"y":207,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo11.png",
+	"frame": {"x":810,"y":207,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo12.png",
+	"frame": {"x":1080,"y":207,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo13.png",
+	"frame": {"x":1350,"y":207,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+},
+{
+	"filename": "char_ulmo14.png",
+	"frame": {"x":1620,"y":207,"w":270,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":207},
+	"sourceSize": {"w":270,"h":207}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "char_ulmo.png",
+	"format": "RGBA8888",
+	"size": {"w":1890,"h":414},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:24b2f61dd215fdfd02085ddec25c89f2:d3afd00f4414bba0da60ac5b0ecb4d37:c6aaaeb5dc848ac3b250c86a1a2c8e27$"
+}
+}

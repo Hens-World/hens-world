@@ -1,0 +1,46 @@
+.page-container.wilwar-field__container
+  .full-page-overlay(ng-class="{'displayed': tutorialNeeded}" ng-click="closeTutorial($event)")
+    .full-page-overlay__content.border-village
+      .full-page-overlay__close.font-village.link-hover(ng-click="closeTutorial($event)")
+      h2.font-village Bienvenue sur le lieu de la cérémonie de l’Equinoixe du Printemps: le Jardin de l’Equinoxe !
+      p
+        span Participez à la tradition Wilwarienne en plantant vos graines aux côtés de celles des autres voyageurs et voyageuses de l’archipel.
+        b  Ensemble
+        span  , il faudra que vous parveniez à redessiner la culture mise à l’honneur cette année !
+      p
+        span Vous trouverez
+        b  en haut à gauche
+        span  le nombre de graines en votre possession. Cliquez sur une case pour en planter une. Une fois toutes vos graines plantées, n’hésitez pas à aidez vos coéquipiers et coéquipières via la
+        b  Discussion de Comptoir
+        span  !
+        br
+        span Mais attention, l’Equinoxe ne dure que deux jours, et le temps est compté... !
+      p Vous ne savez pas ce qu’il faut dessiner, et vous n’avez pas de graines ? Partez à la recherche de l’Agronome Aulne dans le village de Wilwar, il vous aidera !
+      p
+        b Bonne chance !
+
+  .wilwar-field
+    a.wilwar-field__close(href="/map/wilwar/village/")
+    .wilwar-field__counter
+      img(src="medias/events/equinoxe-printemps/graine_icon.png")
+      span X {{leftSeeds}}
+    img.wilwar-field__frange(src="medias/events/equinoxe-printemps/map_hexagonal_frange.png")
+    canvas#wilwar-field
+  .side-column.other-village.wilwar.wilwar-field-ui
+    .titre Jardin de l'Equinoxe
+    .temps-restant.fond-village
+      .info(ng-if="missingSeeds == 0") Cérémonie réussie !
+      .temps(ng-if="missingSeeds > 0") {{timeLeft}}
+      .info(ng-if="missingSeeds > 0") avant la fin de l'équinoxe
+    .info-unit
+      span.font-village {{plantedSeeds}}
+      p Graines plantées
+    .info-unit
+      span.font-village {{validSeeds}}
+      p Graines fleuries
+    .info-unit
+      span.font-village {{missingSeeds}}
+      p Graines manquantes
+    .info-unit
+      span.font-village {{participants.length}}
+      p Participant.e.s

@@ -1,0 +1,93 @@
+{"frames": [
+
+{
+	"filename": "barque_300.png",
+	"frame": {"x":2,"y":2,"w":135,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":135,"h":88},
+	"sourceSize": {"w":135,"h":88},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "barque_301.png",
+	"frame": {"x":139,"y":2,"w":135,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":135,"h":88},
+	"sourceSize": {"w":135,"h":88},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "barque_302.png",
+	"frame": {"x":276,"y":2,"w":135,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":135,"h":88},
+	"sourceSize": {"w":135,"h":88},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "barque_303.png",
+	"frame": {"x":413,"y":2,"w":135,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":135,"h":88},
+	"sourceSize": {"w":135,"h":88},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "barque_306.png",
+	"frame": {"x":413,"y":2,"w":135,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":135,"h":88},
+	"sourceSize": {"w":135,"h":88},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "barque_304.png",
+	"frame": {"x":550,"y":2,"w":135,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":135,"h":88},
+	"sourceSize": {"w":135,"h":88},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "barque_305.png",
+	"frame": {"x":687,"y":2,"w":135,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":135,"h":88},
+	"sourceSize": {"w":135,"h":88},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "barque_307.png",
+	"frame": {"x":824,"y":2,"w":135,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":135,"h":88},
+	"sourceSize": {"w":135,"h":88},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "barque_303.png",
+	"frame": {"x":413,"y":2,"w":135,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":135,"h":88},
+	"sourceSize": {"w":135,"h":88},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "barque_3.png",
+	"format": "RGBA8888",
+	"size": {"w":961,"h":92},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:47d403e23bea06937c03b8e5f234d69a:efff5d4e41552940f7c8c5a14817923f:af825152f47f66bdbc8acc5cbde1daff$"
+}
+}

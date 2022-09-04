@@ -1,0 +1,84 @@
+{"frames": [
+
+{
+	"filename": "bateau_aquarium00.png",
+	"frame": {"x":2,"y":2,"w":335,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":335,"h":123},
+	"sourceSize": {"w":335,"h":123},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_aquarium01.png",
+	"frame": {"x":339,"y":2,"w":335,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":335,"h":123},
+	"sourceSize": {"w":335,"h":123},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_aquarium02.png",
+	"frame": {"x":676,"y":2,"w":335,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":335,"h":123},
+	"sourceSize": {"w":335,"h":123},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_aquarium03.png",
+	"frame": {"x":1013,"y":2,"w":335,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":335,"h":123},
+	"sourceSize": {"w":335,"h":123},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_aquarium04.png",
+	"frame": {"x":2,"y":127,"w":335,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":335,"h":123},
+	"sourceSize": {"w":335,"h":123},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_aquarium05.png",
+	"frame": {"x":339,"y":127,"w":335,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":335,"h":123},
+	"sourceSize": {"w":335,"h":123},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_aquarium06.png",
+	"frame": {"x":676,"y":127,"w":335,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":335,"h":123},
+	"sourceSize": {"w":335,"h":123},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bateau_aquarium07.png",
+	"frame": {"x":1013,"y":127,"w":335,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":335,"h":123},
+	"sourceSize": {"w":335,"h":123},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "aquarium_bateau.png",
+	"format": "RGBA8888",
+	"size": {"w":1350,"h":252},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0e527d75ac478248d3eb7564233c20f2:881925f3034ec1c614819c87a0dc7f6b:a2358449b0cf79bd82343f21de2f54b9$"
+}
+}

@@ -1,0 +1,22 @@
+.page-container.whisper
+  .main-column
+    .whisper__menu
+      a.whisper__menu-element.fond-village.hover.whisper__menu-element--big(href="/messagerie/new") Nouveau Message
+      a.whisper__menu-element.active(href="/messagerie")
+        span Boîte de réception
+        span(ng-show="$root.newMessages.length > 0")  ({{$root.newMessages.length}})
+      a.whisper__menu-element.whisper__menu-element--disabled Brouillon
+    .whisper__main
+      h1 Nouvelle conversation
+      .field
+        .label Destinataire
+        input.form(type="text" ng-model="userSearchQuery" ng-class="{'validated': newSubject.target.display_name == userSearchQuery && userSearchQuery.length > 0}")
+      .whisper__valid-list(ng-show="searchUsers.length > 0 && !(newSubject.target.display_name == userSearchQuery && userSearchQuery.length > 0)")
+        .whisper__valid-element.other-user(ng-repeat="user in searchUsers" ng-click="setTarget(user)" class="{{user.meta.village}}")
+          span.font-village {{user.display_name}}
+      .field
+        .label Sujet
+        input.form(type="text" ng-model="newSubject.title")
+
+      .editor(text-angular ng-model="newSubject.message" ta-toolbar="[['h1', 'h2', 'h3', 'p', 'bold', 'italics', 'underline', 'strikeThrough', 'ul', 'ol', 'redo', 'undo', 'clear'],['justifyLeft', 'justifyCenter', 'justifyRight', 'html', 'insertImage','insertLink', 'nextPage']]")
+      .validate.fond-village.hover(ng-click="createSubject()") Envoyer

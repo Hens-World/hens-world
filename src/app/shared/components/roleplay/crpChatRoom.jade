@@ -1,0 +1,115 @@
+.perso-fiche-container(ng-show="showPerso")
+  .background-close(ng-click="hideFiche()")
+  .perso-wrapper.other-user(class="{{char.village.toLowerCase()}}")
+    .close(ng-click="hideFiche()") x
+    .name {{char.prenom}} {{char.nom}}
+    span {{char.age}} ans, originaire de 
+      span.font-village {{char.village}}
+    .suffixe.part
+      .title.font-village 
+        .va Blason
+      .paragraph(ng-bind-html="char.suffixe")
+    .histoire.part
+      .title.font-village 
+        .va Histoire
+      .paragraph(ng-bind-html="char.histoire")
+    .caractere.part
+      .title.font-village 
+        .va Caractère
+      .paragraph(ng-bind-html="char.caractere")
+    .particularite.part
+      .title.font-village 
+        .va Particularité
+      .paragraph(ng-bind-html="char.particularite")
+    .pouvoir.part
+      .title.font-village Pouvoir
+      .paragraph(ng-bind-html="char.pouvoir")
+.crp-modal(ng-show="showModal")
+  .start.modal(ng-show="data.status == 3")
+    .title(ng-show="canStart") Voulez vous démarrer la partie ?
+    .title(ng-show="!canStart") En attente des autres joueurs
+    .button.full.fond-village.start(ng-click="startRP()" ng-class="{'desactivate': !canStart}")  Démarrer
+    .button.full.fond-village.start(ng-click="refuseStart()" ng-class="{'desactivate': !canStart}")  Refuser
+  .want-pause.modal(ng-show="data.status == 4")
+    .title(ng-show="canPause") Voulez vous mettre la partie en pause ?
+    .title(ng-show="!canPause") En attente des autres joueurs
+    .count {{pauseCount}} / {{data.users.length}}
+    .button.semi.fond-village(ng-click="setPause()" ng-class="{'desactivate': !canPause}") Mettre en pause
+    .button.semi.fond-village(ng-click="refusePause()" ng-class="{'desactivate': !canPause}") Refuser
+  
+  .pause-resume.modal(ng-show="data.status == 5")
+    .title Partie en pause
+    .subtitle(ng-show="canResume") Voulez vous reprendre la partie ?
+    .subtitle(ng-show="!canResume") En attente des autres joueurs
+    span.time-left {{data.pauseDurationLeftFormat}} {{data.pauseDurationExt}}  de temps de pause restant
+    .button.semi.fond-village(ng-click="setResume()" ng-class="{'desactivate': !canResume}") 
+      span Reprendre 
+      
+  .ask-save.modal(ng-show="data.status == 6")  
+    .title(ng-if='data.durationLeft <= 0') Temps écoulé!
+    .title(ng-show="isOwner") Voulez vous rendre cette partie visible par tous?
+    .title(ng-show="!isOwner") Le créateur est en train de décider si la partie sera visible par tous ou non.
+    .subtitle(ng-show="isOwner") La partie est sauvegardée dans tous les cas, vous pouvez cependant choisir de ne la rendre accessible qu'aux participants
+    .button.semi.fond-village(ng-click="saveRoom(1)" ng-class="{'desactivate': !isOwner}") Oui
+    .button.semi.fond-village(ng-click="saveRoom(0)" ng-class="{'desactivate': !isOwner}") Non
+
+  .end.modal(ng-show="data.status == 7")  
+    .title(ng-show="canEnd") Voulez vous terminer la partie ?
+    .title(ng-show="!canEnd") En attente des autres joueurs
+    .button.semi.fond-village(ng-click="endRoom()" ng-class="{'desactivate': !canEnd}") Terminer
+    .button.semi.fond-village(ng-click="refuseEnd()" ng-class="{'desactivate': !canEnd}") Refuser
+
+.crp-chat-room-container
+  .crp__banner.crp__banner--instant(ng-class="{'visible':!started}" style="background-image:url('{{base}}tchat/locations/{{villages[data.villageId]}}/{{data.location}}_on.jpg');")
+    h1 {{data.name}}
+  .crp__message-list
+    .crp__message-element( ng-repeat="msg in data.msg track by $index" on-last-repeat)
+        .crp__message-profil(ng-if="!msg.event" class="other-user {{msg.author.meta.village}}")
+          .crp__message-avatar(style="background-image:url({{msg.author.chara.avatar}}) no-repeat center;")
+          span.crp__message-name.font-village {{msg.author.chara.prenom}}
+          .link.link-hover(ng-click="showFiche(msg.author)") Fiche de personnage
+        .triangle(ng-if="!msg.event")
+          svg(width="25" height="50")
+            path(fill='#333',
+              stroke='#333',
+              stroke-width='1',
+              d='M25,10 0,30 25,50')
+        .crp__message-container.other-user(class="{{msg.author.meta.village}}" ng-if="!msg.event" ng-bind-html="msg.message")
+        div.other-user.crp__event-wrapper(ng-if="msg.event" class="{{villages[data.villageId]}}")
+          .crp__event
+            span {{msg.message}}
+  .input-container
+    .prevent-writing(ng-show="!isMyTurn || [0,1,3].indexOf(data.status) > -1")
+      span(ng-if="!isMyTurn && data.status == 2") Ce n'est pas votre tour!
+      span(ng-if="[0,1,3].indexOf(data.status) > -1") Vous ne pouvez pas encore écrire!
+    .user-list
+      h5 Personnages
+      .user-bloc.other-user(ng-repeat="user in data.users" title="{{user.username}}" class="{{user.meta.village}}" ng-class="{'his-turn':data.turn == $index}")
+        span.name.font-village {{user.chara.prenom}}
+    .editor(text-angular ng-model="rpMessage" ta-toolbar="[['think','speech', 'action', 'shout', 'whisper', 'redo', 'undo', 'html' ]]")
+    .options-container
+      //- .button.fond-village(ng-click="launchEvent()") Lancer un événement
+      .button.fond-village.send(ng-click="sendMessage()")
+        div >
+      .button.fond-village.skip(title="passez votre tour" ng-click="skipTurn()")
+
+
+.side-actions.side-column
+  .waiting(ng-show="[0,1,3].indexOf(data.status) > -1" )
+    .button.full.fond-village.start(ng-click="startRP()" ng-class="{'desactivate': !canStart}")
+      span Démarrer
+      span.count(ng-show="data.status != 2")
+        |  {{data._readyCount}}/{{data.users.length}}
+  .going(ng-show="[2,4,5].indexOf(data.status) > -1")
+    .button.full.fond-village(ng-click="generateEvent()" ng-class="{'desactivate':data.turnsElapsed == 0 || !isMyTurn || !data._event}") Événement aléatoire
+    .semi-container
+      .button.semi.fond-village(ng-show="data.status == 2" ng-click="setPause()" ng-class="{'desactivate': !canPause}")
+        span Pause
+        span.time-left {{data.pauseDurationLeftFormat}} restante(s)
+      .button.semi.fond-village(ng-show="data.status == 5" ng-click="setResume()" ng-class="{'desactivate': !canResume}")
+        span Reprendre
+        span.time-left {{data.pauseDurationLeftFormat}} restante(s)
+      .button.semi.fond-village(ng-click="endRoom()" ng-class="{'desactivate': !canEnd}") Terminer
+    .time-container
+      span.label Il reste
+      span.time {{data.durationLeftString}}

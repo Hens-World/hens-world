@@ -1,0 +1,92 @@
+{"frames": [
+
+{
+	"filename": "mhuire2.png",
+	"frame": {"x":0,"y":0,"w":36,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":50},
+	"sourceSize": {"w":36,"h":50}
+},
+{
+	"filename": "mhuire3.png",
+	"frame": {"x":36,"y":0,"w":36,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":50},
+	"sourceSize": {"w":36,"h":50}
+},
+{
+	"filename": "mhuire4.png",
+	"frame": {"x":72,"y":0,"w":36,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":50},
+	"sourceSize": {"w":36,"h":50}
+},
+{
+	"filename": "mhuire5.png",
+	"frame": {"x":108,"y":0,"w":36,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":50},
+	"sourceSize": {"w":36,"h":50}
+},
+{
+	"filename": "mhuire6.png",
+	"frame": {"x":144,"y":0,"w":36,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":50},
+	"sourceSize": {"w":36,"h":50}
+},
+{
+	"filename": "mhuire7.png",
+	"frame": {"x":180,"y":0,"w":36,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":50},
+	"sourceSize": {"w":36,"h":50}
+},
+{
+	"filename": "mhuire8.png",
+	"frame": {"x":216,"y":0,"w":36,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":50},
+	"sourceSize": {"w":36,"h":50}
+},
+{
+	"filename": "mhuire10.png",
+	"frame": {"x":252,"y":0,"w":36,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":50},
+	"sourceSize": {"w":36,"h":50}
+},
+{
+	"filename": "mhuire11.png",
+	"frame": {"x":288,"y":0,"w":36,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":50},
+	"sourceSize": {"w":36,"h":50}
+},
+{
+	"filename": "mhuire12.png",
+	"frame": {"x":324,"y":0,"w":36,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":50},
+	"sourceSize": {"w":36,"h":50}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "mhuire_lumiere.png",
+	"format": "RGBA8888",
+	"size": {"w":360,"h":50},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e21e8b5e0a4bae763caf6ab28623cdd8:ca8dc35e0d8d1ee450c57f3eda803ce6:84244add0af96e07449ee5876485d87f$"
+}
+}

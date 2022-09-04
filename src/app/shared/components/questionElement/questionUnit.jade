@@ -1,0 +1,7 @@
+.qcm__question
+  .image(style="background-image:{{currentQuestion.image}};")
+  h2(ng-bind-html="content[currentQuestion.id]")
+  form
+    .choice(ng-class="{'select':choice.select}" class=" {{village}}" ng-repeat="choice in currentQuestion.choices" ng-click="setResult(currentQuestion.id,choice.id)")
+      .label(ng-bind-html="content[choice.id]")  
+ 

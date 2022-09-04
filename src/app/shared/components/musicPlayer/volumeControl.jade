@@ -1,0 +1,5 @@
+.volume-control(class="volume-control--{{volCtrl.orientation}}" ng-class="{'volume-control--active': volCtrl.orientation === 'vertical' && volCtrl.isBarVisible }")
+  .volume-control__icon
+  .volume-control__bar-container
+    .volume-control__bar()
+      .volume-control__fill(style="{{volCtrl.orientation === 'vertical' ? 'height' : 'width'}}:{{volCtrl.percent}}%;")

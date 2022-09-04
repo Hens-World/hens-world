@@ -1,0 +1,107 @@
+.overlay-messages(ng-class="{'hidden': hidden}")
+  .overlay-messages__content.border-village
+    .overlay-messages__header(ng-if="currentMessage.type === 'event'")
+      .video__container
+        video(width="600" autoplay muted loop)
+          source(ng-src="medias/events/calendrier/animation_banniere_{{::currentMessage.tag}}.mp4")
+    .content-type
+      .overlay-messages__close.font-village.hover.link(ng-click="closeOverlay()") x
+      //span(ng-if="currentMessage.tag == 'halloween'")
+      //  .overlay-messages__banner.halloween
+      //  h1.font-village Joyeux Halloween!
+      //  h2
+      //    span Chasse à la citrouille sur Hens World!
+      //    br
+      //    span 30/10 21h-6h jusqu'au 01/11 21h-6h
+      //  p A l’occasion d’Halloween, 15 citrouilles se cachent dans les villages de Hens World! Le but? Les retrouver! Attention, la chasse ne sera pas facile!
+      //  p Si vous réussissez à toutes les trouvez, vous obtiendrez un titre honorifique unique visible sur votre profil dans les prochains jours! Le ou la tout.e premier.e à trouver l’intégralité des citrouilles recevra un dessin de son personnage en version Halloween!
+      //  p Attention à ne pas spoiler les positions des citrouilles aux membres qui cherchent encore! Néanmoins, l’entraide et les conseils sont bienvenus pour que vous puissiez trouver tous ensemble l’intégralité des citrouilles!
+      //  ul
+      //    li Pour chasser et avoir vos points comptabilisés, il vous faudra être connecté sur votre compte
+      //    li ll vaut mieux privilégier la chasse sur ordinateur que sur mobile
+      //  p Bon courage à vous tous, trick or treat!
+      span(ng-if="currentMessage.tag == 'inclusive'")
+        h1 Participez au sondage
+        h2 L'écriture inclusive sur le site
+        p Jusqu'au Printemps 2018 nous retravaillons le code du site dans sa globalité. On vous pose alors une question à vous, membre de Hens World, pour savoir si vous souhaiteriez que l'ont intègre l'écriture inclusive au site ( par exemple "Contributeur·trice" ) ?
+        p Voici le lien du sondage pour répondre à cette question!
+        div(style="text-align: center;")
+          a.font-village.link.hover(href="https://goo.gl/forms/YEkm822GyttxrFil2" target="_blank") https://goo.gl/forms/YEkm822GyttxrFil2
+        br
+        p Ce sondage n'a en aucun cas la volonté ni le but de provoquer un débat sur l'écriture inclusive en elle-même, juste de savoir votre avis d'utilisateur et d'utilisatrice sur la plateforme :)
+        p Bon voyage sur l'archipel!
+        p - L'équipe de Hens World
+      span(ng-if="currentMessage.tag == 'mobileOrEvent'")
+        h1 Participez au sondage
+        p Hello!
+
+        p Voici un petit sondage pour vous demander votre avis sur notre future priorité lors du développement d'Hens World!
+
+
+        div(style="text-align: center;")
+          a.font-village.link.hover(target="_blank" href="https://www.sondageonline.fr/s/15b8785") https://www.sondageonline.fr/s/15b8785
+        br
+        p Nous avons deux projets de fonctionnalités pour Hens, qui arriveront toutes deux à terme, mais on a besoin de vous pour savoir laquelle des deux nous devrions développer en première à partir de septembre 2018
+
+        p Désolé d'avance pour le pavé en introduction du sondage, mais il est nécessaire pour comprendre les enjeux! 🙂
+        p Merci d'avance!
+
+        p - L'équipe d'Hens World
+
+      span(ng-if="currentMessage.tag == 'anarElection'")
+        h1 PREMIER TOUR / Elections Anariennes
+        p Il est temps de voter pour le premier tour! Donnez votre voix à votre condidat ou votre candidate, et donnez un nouveau souffle à Anar!
+        br
+        div(style="text-align: center;")
+          a.font-village.link.hover(target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdkvaHOeO0nikuwDNOqK4VeqG0PaddXTcmbCp8rZZzhbZdbVw/viewform") https://docs.google.com/forms/election-anar-premier-tour
+      span(ng-if="currentMessage.tag == 'horoscope'")
+        h3.font-village ÉVÈNEMENT
+        h1.font-village.light Célébration de la nouvelle année
+
+        p
+          b Bonne année !
+          span  L'achipel de Hens est en fête ! Les habitants se munissent de feux d'artifices pour illuminer pendant cinq jours le ciel de Hens. Rendez-vous sur les maps des villages pour lancer et confectionner vos propres feux d'artifices et les montrer aux autres voyageurs !
+        p
+          span Pendant la période de célébration, on raconte qu'
+          b une diseuse de bonne aventure se balade dans les villages
+          span ... Les rumeurs prétendent qu'elle pourrait communiquer avec les astres et
+          b  vous donner votre signe astrologique hensien
+          span . Elle serait même en mesure de vous prédire votre horoscope pour l'année à suivre... mais il semblerait que ça ne soit pas soit point fort ...
+
+      span(ng-if="currentMessage.tag == 'equinoxe-printemps'")
+        h3.font-village ÉVÈNEMENT
+        h1.font-village.light Equinoxe du printemps
+        p L'archipel de Hens célèbre en ce jour l'arrivée du Printemps ! C'est une fête très importante pour Wilwar, qui se met en joie et en couleurs ! En ce jour, tous les Hensiens viennent visiter la ville fleurie pour prier au temple.
+        p Chaque année, la tradition souhaite que les Hensiens plantent des graines dans les Jardins Suspendus pour honorer la terre et l'agriculture. Trouvez l'agronome de Wilwar pour obtenir des graines et ainsi participer à la cérémonie, il vous donnera un indice sur la meilleure façon de célèbrer la culture anuelle.
+      span(ng-if="currentMessage.tag == 'carnaval-cachette'")
+        h3.font-village ÉVÈNEMENT
+        h1.font-village.light Carnaval Cachette
+        p Les plus beaux jours de l'année sont là ! A cette periode, les villages organisent le traditionel Carnaval Cachette inspiré par l'Anarien.ne Sol Guyle !
+        p C'est désormais l'évènement le plus attendu des amateurs de farces: toutes les trentes minutes une partie est organisée dans le village du jour. Le but ? Se cacher ou trouver ! Grâce à la co-organisatrice de l'évènement, Puck, les Mimics seront transformés en objets communs du village ! Et les Seekists, eux, devront les retrouver ! L'idée est simple: trouvez vos meilleurs déguisements et vos meilleurs cachettes, ou ouvrez l'oeil pour démasquer vos ami.e.s !
+      span(ng-if="currentMessage.tag == 'solstice-ete'")
+        h3.font-village ÉVÈNEMENT
+        h1.font-village.light Solstice d'été
+        p Anar est en fête, l'archipel célèbre en ce jour l'arrivée de l'été ! Durant ces festivités, tous les Hensiens viennent visiter la capitale pour prier au temple.
+        p Chaque année, la tradition veut que les Hensiens illuminent le ciel d'Anar de lanternes lâchées dans les airs ! Pour célébrer la lumière de l'été et toute la joie qu'elle apporte dans le coeur des Hensiens, ces derniers ont désormais prit l'habitude d'écrire un petit mot dans les lanternes, un mot destiné à quelqu'un de cher.  Rendez vous dans les quartiers d'Anar pour trouver vos propres lanternes !
+      span(ng-if="currentMessage.tag == 'coupe-crushrun'")
+        h3.font-village ÉVÈNEMENT
+        h1.font-village.light Coupe de Crushrun
+        p La Coupe Hensienne de Crushrun est lancée ! Pendant une semaine, chaque année, les villages s'engagent dans une course d'obstacle contre la montre ! Un sport traditionnel et légendaire.
+        p Quel village sera sacré champion de Crushrun et remportera le trophée ? Portez les couleurs du vôtre pour tenter de battre tout les reccords ! Rendez-vous au Colisée d'Anar Est pour participer au jeu ! Attention, un code vous sera demandé, ce dernier se trouve dans vos paramètres, en haut à droite de l'écran.
+      span(ng-if="currentMessage.tag == 'equinoxe-automne'")
+        h3.font-village ÉVÈNEMENT
+        h1.font-village.light Equinoxe de l'Automne
+        p Sulimo honore la saison de l'Automne ! Durant ces festivités, tous les Hensiens viennent visiter le village du vent pour prier au temple.
+        p " Les Musiques Éphémères " est l'activité principale de ces deux jours de fête ! Durant l'évènement vous pouvez ainsi proposer une partition à l'un des quatre ( ou aux quatre ) musiciens Sulimois. Ces musiques sont éphèmeres car lorsqu'une nouvelle personne vient proposer sa nouvelle partition, la vôtre dispairait alors avec le vent !
+      span(ng-if="currentMessage.tag == 'halloween'")
+        h3.font-village ÉVÈNEMENT
+        h1.font-village.light Chasse aux Citrouilles
+        p BOUH !
+        p Attention, ces jours-ci sont les plus effrayants de l'année, pensez à ouvrir grand les yeux ! Surtout la nuit, à partir de 21 heure, des citrouilles se cachent partout dans les villages et contrées ! Le but ? Les retrouver en un temps record pour impressionner les autres habitants !
+        p N'hésitez donc pas à venir la nuit et à participer à la chasse aux citrouilles, dans la joie, la bonne humeur, et peut être un peu de frayeur !
+      span(ng-if="currentMessage.tag == 'solstice-hiver'")
+        h3.font-village ÉVÈNEMENT
+        h1.font-village.light Solstice d'hiver
+        p Ulmo s'habille de blanc et se met en fête pour la saison de l'Hiver ! Durant ces festivités, les Hensiens viennent visiter le village de l'eau pour prier au temple et observer les poissons sacrés !
+        p Rendez-vous à l'aquarium d'Ulmo pour découvrir un espace ouvert sur la mer : des poissons très particuliers y sont observables ! Proposez le vôtre, et collaborez tous ensemble pour en faire rester et combler sept jusqu'à la fin du Solstice et ainsi porter chance à Ulmo !
+

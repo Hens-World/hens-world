@@ -1,0 +1,147 @@
+{"frames": [
+
+{
+	"filename": "frey00.png",
+	"frame": {"x":0,"y":0,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey01.png",
+	"frame": {"x":25,"y":0,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey02.png",
+	"frame": {"x":50,"y":0,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey03.png",
+	"frame": {"x":75,"y":0,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey04.png",
+	"frame": {"x":100,"y":0,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey05.png",
+	"frame": {"x":0,"y":42,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey06.png",
+	"frame": {"x":25,"y":42,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey07.png",
+	"frame": {"x":50,"y":42,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey08.png",
+	"frame": {"x":75,"y":42,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey09.png",
+	"frame": {"x":100,"y":42,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey10.png",
+	"frame": {"x":0,"y":84,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey11.png",
+	"frame": {"x":25,"y":84,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey12.png",
+	"frame": {"x":50,"y":84,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey13.png",
+	"frame": {"x":75,"y":84,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frey14.png",
+	"frame": {"x":100,"y":84,"w":25,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+	"sourceSize": {"w":25,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "frey_lit_chat.png",
+	"format": "RGBA8888",
+	"size": {"w":125,"h":126},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d9bb2aee844cf471cc99b33b8403cc76:24a7357e8331d3e1eb2566731fca4921:b4358ceedae176e3555cef8f3ecf4c35$"
+}
+}

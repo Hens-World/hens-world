@@ -1,0 +1,19 @@
+.video-container
+  .block  
+  .controls-video
+      .play(ng-click="togglePlay()" ng-class="{'pause':!videoPlaying}")
+      .bar-container()
+        .bar-hand
+        .bar-fill
+      .timer {{vidArt.minutes}}:{{vidArt.seconds}}
+      .volume-bt(ng-click="muteToggle()" ng-class="{'active':storeVolume < 0.05}")
+      .volume-bar
+        .volume-hand
+        .volume-fill
+      .fullscreen-toggle(ng-click="toggleFS()")
+  video#above-video(src="{{post.video}}" )
+    
+.title-container
+  post-like(post-id="post.ID" likes="post.likes")
+  .title(ng-bind-html="post.title")
+.description-container(ng-bind-html="post.descriptions")

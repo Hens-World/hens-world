@@ -1,0 +1,128 @@
+body.mobile {
+  .guide-touristique {
+    &__container {
+      h1 {
+        display: none;
+      }
+
+    }
+    &__section {
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+
+    &__element {
+      flex-basis: 150px;
+      height: 150px;
+      padding-top: 30px;
+      margin: 10px 5px;
+      .icon {
+        height: 50px;
+      }
+    }
+  }
+}
+
+.guide-touristique {
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+    .fullHeight(0px);
+    h1 {
+      font-size: 3em;
+      margin-bottom: 25px;
+      font-family: "Wire One", sans-serif;
+    }
+  }
+  &__section {
+    margin-bottom: 150px;
+    max-width: 720px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid @buttonHoverDark;
+    border-bottom: 1px solid @buttonHoverDark;
+  }
+  &__element {
+    box-sizing: border-box;
+    position: relative;
+    flex: 0 0 166px;
+    height: 166px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 35px;
+    margin: 20px 15px;
+    background-color: @buttonDark;
+    opacity: .8;
+    cursor: pointer;
+    transition: all .15s;
+    .icon {
+      align-self: stretch;
+      height: 72px;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-bottom: auto;
+      transition: all .25s;
+      opacity: .6;
+    }
+    .element-text {
+      opacity: .6;
+      transition: all .25s;
+      font-size: 1.6em;
+    }
+
+    svg {
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+    .dash {
+      border-width: 3px;
+      fill: none;
+      stroke-width: 6;
+      stroke-dasharray: 700;
+      stroke-dashoffset: 700;
+      transition: all .35s;
+      border-style: dashed;
+    }
+    &:hover {
+      background: @lowerDark;
+      transition: all .6s;
+      .icon, .element-text {
+        opacity: 1;
+      }
+      .dash {
+        transition: all .8s;
+        stroke-dashoffset: 0;
+      }
+    }
+    .block {
+    }
+  }
+}
+
+.guide-touristique__element .dash {
+  stroke: @guestNeuter;
+}
+
+.sulimo .guide-touristique__element .dash {
+  stroke: @sulimoNeuter;
+}
+
+.ulmo .guide-touristique__element .dash {
+  stroke: @ulmoNeuter;
+}
+
+.wilwar .guide-touristique__element .dash {
+  stroke: @wilwarNeuter;
+}
+
+.anar .guide-touristique__element .dash {
+  stroke: @anarNeuter;
+}

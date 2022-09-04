@@ -1,0 +1,78 @@
+{
+  "list": [
+    {
+      "label": "sulimo",
+      "type": "village",
+      "region": "Contrées de Sulimo",
+      "title": "Le souffle <br>de <span>Sulimo</span>",
+      "map": {
+        "x": 66,
+        "y": 43
+      }
+    },
+    {
+      "label": "foret_sulimo",
+      "village": "sulimo",
+      "region": "Contrées de Sulimo",
+      "type": "zone",
+      "title": "Forêt de Sulimo",
+      "map": {
+        "x": 60,
+        "y": 24
+      }
+    },
+
+    {
+      "label": "ulmo",
+      "type": "village",
+      "region": "Contrées d'Ulmo",
+      "title": "Les flots <br>d'<span>Ulmo</span>",
+      "map": {
+        "x": 46,
+        "y": 67
+      }
+    },
+    {
+      "label": "lac_ulmo",
+      "village": "ulmo",
+      "region": "Contrées d'Ulmo",
+      "type": "zone",
+      "title": "Lac d'Ulmo",
+      "map": {
+        "x": 37,
+        "y": 77
+      }
+    },
+    {
+      "label": "wilwar",
+      "type": "village",
+      "region": "Contrées de Wilwar",
+      "title": "Les bourgeons <br> de <span>Wilwar</span>",
+      "map": {
+        "x": 40,
+        "y": 29
+      }
+    },
+    {
+      "label": "champs_wilwar",
+      "village": "wilwar",
+      "region": "Contrées de Wilwar",
+      "type": "zone",
+      "title": "Champs de Wilwar",
+      "map": {
+        "x": 37,
+        "y": 40
+      }
+    },
+    {
+      "label": "anar",
+      "type": "village",
+      "region": "Contrées d'Anar",
+      "title": "L'éclat <br>d'<span>Anar</span>",
+      "map": {
+        "x": 59,
+        "y": 70
+      }
+    }
+  ]
+}

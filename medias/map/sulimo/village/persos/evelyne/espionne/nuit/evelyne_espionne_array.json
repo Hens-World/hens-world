@@ -1,0 +1,129 @@
+{"frames": [
+
+{
+	"filename": "espionne0000.png",
+	"frame": {"x":1,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0001.png",
+	"frame": {"x":1,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0002.png",
+	"frame": {"x":27,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0003.png",
+	"frame": {"x":27,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0004.png",
+	"frame": {"x":53,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0005.png",
+	"frame": {"x":53,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0006.png",
+	"frame": {"x":79,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0007.png",
+	"frame": {"x":79,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0008.png",
+	"frame": {"x":79,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0009.png",
+	"frame": {"x":53,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0010.png",
+	"frame": {"x":53,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0011.png",
+	"frame": {"x":27,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "espionne0012.png",
+	"frame": {"x":27,"y":1,"w":24,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+	"sourceSize": {"w":24,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "evelyne_espionne.png",
+	"format": "RGBA8888",
+	"size": {"w":104,"h":23},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4594a23b034e003fabc89975d25c0952:57a62470b293bbc9975db7ed1cf24f97:01387067cf7b5a2951339b12642912bf$"
+}
+}

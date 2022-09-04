@@ -1,0 +1,218 @@
+@media (max-width: @mobileMaxWidth) {
+  body .rp-create-diff {
+    h2 {
+      padding: 4px;
+      font-size: 3.5em;
+      line-height: 1;
+    }
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__list {
+      max-height: 260px;
+    }
+  }
+}
+
+@media(max-width: @mobileXSWidth) {
+  body .rp-create-diff {
+    &__line {
+      flex-direction: column;
+
+      .switch {
+        width: 100%;
+        flex: 1 1 auto;
+      }
+
+      .member-listing {
+        margin-top: 9px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.rp-create-diff {
+  .main-column {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    text-align: center;
+    padding: 15px;
+    font-family: 'Wire One', sans-serif;
+    font-size: 4em;
+  }
+  &__container {
+    flex: 1 1 auto;
+    display: flex;
+  }
+
+  h3 {
+    font-family: 'Wire One';
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  &__list, &__main {
+    margin-top: 10px;
+    background-color: @headerDark;
+    text-align: center;
+  }
+
+  &__list {
+    flex: 1 1 270px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__scroll {
+    overflow: auto;
+    .maxFullHeight(136px);
+  }
+
+  &__main {
+    flex: 3 1 auto;
+    padding: 0 12px;
+  }
+
+  &__element {
+    display: block;
+    background-color: @buttonDark;
+    padding: 5px 8px;
+    margin: 2px;
+    text-align: left;
+    position: relative;
+
+    &.active:after {
+      content: 'En cours';
+      position: absolute;
+      top: 4px;
+      right: 7px;
+      color: @wilwarNeuter;
+      font-size: .9em;
+    }
+
+    &:not(.active):after {
+      content: 'Terminé';
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      color: @anarLight;
+      font-size: .9em;
+    }
+
+    &:hover {
+      background-color: @buttonHoverDark;
+    }
+  }
+  &__name {
+    font-size: 1.1em;
+  }
+  &__date {
+    font-style: italic;
+    color: #aaa;
+
+  }
+  &__owner {
+    span {
+      display: inline-block;
+      margin-right: 3px;
+    }
+  }
+
+  &__line {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+
+    .switch {
+      flex: 0 0 120px;
+      height: 10px;
+      margin: 6px 0;
+      margin-right: 12px;
+      position: relative;
+      cursor: pointer;
+      background: @black;
+      .handle {
+        width: 85%;
+        height: 22px;
+        text-align: center;
+        position: relative;
+        transition: background 0.4s, margin 0.35s;
+        margin-top: -5px;
+        &:not(.open) {
+          background: @middleDark;
+        }
+        &:before {
+          content: 'Privée';
+          position: absolute;
+          left: 0;
+          top: 0;
+          line-height: 22px;
+          width: 100%;
+          vertical-align: middle;
+        }
+        &.open {
+          margin-left: 15%;
+          &:before {
+            width: 100%;
+            line-height: 22px;
+            vertical-align: middle;
+            position: absolute;
+            content: 'Publique';
+          }
+        }
+      }
+    }
+
+    .member-listing {
+      flex: 1 1 auto;
+    }
+  }
+
+  .button {
+    padding: 5px 8px;
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+}
+
+.valid-list {
+  width: 100%;
+  background-color: @black;
+  max-height: 180px;
+  overflow: auto;
+  .valid-element {
+    text-align: left;
+    padding: 3px;
+    margin-bottom: 1px;
+    border-left: 3px solid;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+
+    background-color: @buttonDark;
+    i {
+      flex: 1 1 auto;
+      color: #aaa;
+      margin-left: 5px;
+      display: inline-block;
+    }
+    &:hover {
+      background-color: @buttonHoverDark;
+    }
+    .remove {
+      font-size: 1.3em;
+      padding: 2px 5px;
+      &:hover {
+        color: @anarNeuter;
+      }
+    }
+    &.border-ulmo {border-color: @ulmoNeuter}
+    &.border-wilwar {border-color: @wilwarNeuter}
+    &.border-sulimo {border-color: @sulimoNeuter}
+    &.border-anar {border-color: @anarNeuter}
+  }
+}

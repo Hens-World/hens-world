@@ -1,0 +1,28 @@
+.player.fond-village.dark(ng-class="{'loading': !internalReady}")
+  .player__top
+    .player__controls
+      .control-inner
+        .upperline
+          volume-control.mini-ctrl-bt(orientation="vertical")
+          .mini-ctrl-bt.player__shuffle(ng-click="toggleShuffleDisplay()" class="{{playerControls.shuffle}}")
+          .mini-ctrl-bt.player__repeat(ng-click="toggleRepeatDisplay()" class="{{playerControls.repeat}}")
+        .lowerline
+          .previous(ng-click="previousSong()" class="{{playerControls.isLoopOk}}")
+          play-control(mode="big")
+          .next(ng-click="nextSong()" class="{{playerControls.isNextOk}}")
+    .player__text
+      a.artist.font-village.hover(href="profil/{{currentSongArt.author.ID}}")
+        .plus-icon.fond-village +
+        .name(ng-bind-html="songInfo.artist")
+      a(href="musiques/{{currentSongArt.slug}}")
+        .long-title-wrap(long-title)
+          .title.player__title(title="{{songInfo.title}}" ng-bind-html="songInfo.formatTitle")
+    .player__time.font-village {{songInfo.minutes}}:{{songInfo.seconds}}
+  .player__infos
+    song-timer.player__timer
+  .show-playlist.fond-village.hover.button(ng-click="showPlaylist()" ng-class="{'open':displayPlaylist}")
+    span(ng-show="!displayPlaylist") Accéder à la playlist
+    span(ng-show="displayPlaylist") Fermer la playlist
+  //- audio(ng-repeat="fake in fakeCheck" autoplay )
+  //-   source(src="{{params.playlist[0].source}}" type="audio/mpeg")
+.playlist(playlist-display user="user" ng-class="{'show':displayPlaylist}")

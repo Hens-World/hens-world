@@ -1,0 +1,11 @@
+.page-container.profile-container.profile.no-side
+  .main-column
+    .main-column__content
+      .my-profile-container(ng-if="isMe")
+        a.parameters.profile-icon(href="/parameters")
+        .disconnect.profile-icon(ng-click="disconnect()")
+      .section.profil(ng-if="showProfil" profil-compte user="user" is-me="isMe")
+      .section.personnage.other-user(class="{{user.village}}" ng-if="!showProfil" profil-personnage personnage="personnage" personnage-list="persoList"
+      user="user" is-me="isMe")
+
+        

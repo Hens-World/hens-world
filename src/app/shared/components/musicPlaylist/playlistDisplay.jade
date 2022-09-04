@@ -1,0 +1,15 @@
+.playlist__scroller
+  .playlist__item.fond-village(
+    ng-repeat="music in playlist"
+    ng-class="{'dark': !music.isSelected}"
+    ng-dblclick="changeSong(music)"
+    ng-class-even="'odd'"
+    on-last-repeat="on-last-repeat"
+  )
+    .village(class="{{music.village_slug}}")
+    .info
+      .long-title-wrap(long-title)
+        .title(title="{{music.title}}" ng-bind-html="music.formatTitle")
+      a.artiste.font-village(ng-bind-html="music.author.username" href="musiques/{{music.slug}}" )
+    .length(ng-bind-html="music.formatDuration")
+    .play(ng-click="changeSong(music)") 

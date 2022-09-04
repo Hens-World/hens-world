@@ -1,0 +1,84 @@
+{"frames": [
+
+{
+	"filename": "anim_fleur_bleue_1.png",
+	"frame": {"x":0,"y":0,"w":49,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":42},
+	"sourceSize": {"w":49,"h":42}
+},
+{
+	"filename": "anim_fleur_bleue_2.png",
+	"frame": {"x":49,"y":0,"w":49,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":42},
+	"sourceSize": {"w":49,"h":42}
+},
+{
+	"filename": "anim_fleur_bleue_3.png",
+	"frame": {"x":98,"y":0,"w":49,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":42},
+	"sourceSize": {"w":49,"h":42}
+},
+{
+	"filename": "anim_fleur_bleue_4.png",
+	"frame": {"x":147,"y":0,"w":49,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":42},
+	"sourceSize": {"w":49,"h":42}
+},
+{
+	"filename": "anim_fleur_bleue_5.png",
+	"frame": {"x":196,"y":0,"w":49,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":42},
+	"sourceSize": {"w":49,"h":42}
+},
+{
+	"filename": "anim_fleur_bleue_6.png",
+	"frame": {"x":245,"y":0,"w":49,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":42},
+	"sourceSize": {"w":49,"h":42}
+},
+{
+	"filename": "anim_fleur_bleue_7.png",
+	"frame": {"x":294,"y":0,"w":49,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":42},
+	"sourceSize": {"w":49,"h":42}
+},
+{
+	"filename": "anim_fleur_bleue_8.png",
+	"frame": {"x":343,"y":0,"w":49,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":42},
+	"sourceSize": {"w":49,"h":42}
+},
+{
+	"filename": "anim_fleur_bleue_9.png",
+	"frame": {"x":392,"y":0,"w":49,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":42},
+	"sourceSize": {"w":49,"h":42}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "fleur_equinoxe.png",
+	"format": "RGBA8888",
+	"size": {"w":441,"h":42},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9a8e46561d7c8670dfbd7833abf4e929:fe035811a460265a88b4a8db693f3df0:54bb0152cad345fe37cd7c520c45cb84$"
+}
+}
