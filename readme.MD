@@ -1,5 +1,7 @@
 # Hens World
 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ 
 ## Dev Setup
 ### 1 - Install dependencies
 ```bash
