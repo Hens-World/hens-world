@@ -25,7 +25,7 @@ hensApp.directive('profilPersonnage', [
                     tag: "creations-liees"
                 }
             ];
-            $scope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+            $scope.villages = hensApp.villages;
 
             $scope.displayPerso = function () {
                 if ($scope.user.pouvoir) {

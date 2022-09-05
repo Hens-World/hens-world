@@ -134,7 +134,7 @@ hensApp.zoneNames = {
   'anar': 'Anar'
 }
 hensApp.host = '@@socketUrl';
-hensApp.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+hensApp.villages = ['Sulimo', 'Ulmo', 'Wilwar', 'Anar'];
 
 hensApp.c.months = [
   'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre',

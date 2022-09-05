@@ -15,7 +15,7 @@ hensApp.directive('persoProfil', ['$http', 'userFactory', 'postFactory', 'socket
 
         controller($scope, $element) {
             $scope.showEditFiche = false;
-            $scope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+            $scope.villages = hensApp.villages;
             $scope.currentPerso = {
                 fiche: {},
                 profil: {}

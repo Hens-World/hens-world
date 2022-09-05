@@ -24,7 +24,7 @@ hensApp.controller('commonController', [
         // common scroll bar test3
         $rootScope.isInitialized = false;
         $rootScope.info = {};
-        $rootScope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+        $rootScope.villages = hensApp.villages;
         $('.ngview').niceScroll(hensApp.niceScrollOptions);
 
         //   .M"""bgd                  `7MM               mm
