@@ -3,7 +3,7 @@ hensApp.controller('annonceDetail', ['$scope', 'annoncesFactory', '$rootScope', 
     $scope.$parent.info.isAppInit = false;
     $scope.annoncesManager = annoncesFactory;
     $scope.commentContent = "";
-    $scope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+    $scope.villages = hensApp.villages;
     $scope.locations = [
         ['village', 'falaise', 'forêt', 'marais'],
         ['village', 'mer', 'lac', 'prairie'],

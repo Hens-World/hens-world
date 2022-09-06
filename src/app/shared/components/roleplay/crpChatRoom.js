@@ -25,7 +25,7 @@ hensApp.directive('crpChatRoom', ['$rootScope', $rootScope => ({
       }
     };
     $scope.base = myLocalized.medias;
-    $scope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+    $scope.villages = hensApp.villages;
     $scope.actionList = ['rpMessage', 'turnChange'];
     $scope.responseList = [];
     $element.keydown(function (e) {

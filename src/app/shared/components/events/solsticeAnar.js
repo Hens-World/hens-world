@@ -14,7 +14,7 @@ angular.module('app').component('solsticeAnar', {
     controller: [
         '$scope', '$element', '$rootScope', 'eventsFactory', 'userFactory', 'socket',
         function ($scope, $element, $rootScope, eventsFactory, userFactory, socket) {
-            this.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+            this.villages = hensApp.villages;
             $scope.allRoles = true;
             $scope.searchList = {
                 charactersReceiving: [],

@@ -16,7 +16,7 @@ hensApp.controller('chatRpHome', [
       notif: new Audio(myLocalized.medias + "/tchat/sound/pop.mp3"),
       notifAlt: new Audio(myLocalized.medias + "/tchat/sound/pop2.mp3")
     };
-    $scope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+    $scope.villages = hensApp.villages;
     // FUNCTIONS
     $scope.playSound = function (label) {
       if (!$scope.mute) {

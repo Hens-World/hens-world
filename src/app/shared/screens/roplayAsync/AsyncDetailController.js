@@ -7,7 +7,7 @@ hensApp.controller('AsyncDetail', [
   '$scope', '$rootScope', 'roleplayFactory', 'socket', '$routeParams', 'localeFactory', 'storageFactory', 'userFactory',
   function ($scope, $rootScope, roleplayFactory, socket, $routeParams, localeFactory, storageFactory, userFactory) {
     $scope.$parent.info.isAppInit = false;
-    $scope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+    $scope.villages = hensApp.villages;
     $scope.base = myLocalized.medias;
     $scope.rpNote = "";
     $scope.notmob = "";

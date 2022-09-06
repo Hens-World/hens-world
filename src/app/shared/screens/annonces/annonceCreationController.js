@@ -14,7 +14,7 @@ hensApp.controller('annonceCreation', ['$scope', '$rootScope', 'annoncesFactory'
         ['village', 'mer', 'lac', 'prairie'],
     ];
     $scope.showLocations = false;
-    $scope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+    $scope.villages = hensApp.villages;
     $scope.resetAnnonce = () =>
         $scope.annonce = {
             title: '',
