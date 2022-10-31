@@ -453,8 +453,8 @@ class VillageUtils {
    */
   setTime() {
     this.scope.d = new Date();
-    // this.scope.hour = this.scope.d.getHours();
-    this.scope.hour = 22;
+    this.scope.hour = this.scope.d.getHours();
+    // this.scope.hour = 22;
     this.scope.day = this.scope.d.getDate();
     this.scope.month = this.scope.d.getMonth() + 1;
     const d = this.scope.day;
