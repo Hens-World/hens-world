@@ -458,7 +458,7 @@ class VillageUtils {
     this.scope.day = this.scope.d.getDate();
     this.scope.month = this.scope.d.getMonth() + 1;
     const d = this.scope.day;
-    const m = this.scope.month;
+    const m = this.scope.month
     if (hensApp.isDateBetween([d, m], [1, 1], [20, 3]) || ((m === 12) && (d >= 21))) {
       this.scope.season = "hiver";
     } else if (hensApp.isDateBetween([d, m], [21, 3], [20, 6])) {
