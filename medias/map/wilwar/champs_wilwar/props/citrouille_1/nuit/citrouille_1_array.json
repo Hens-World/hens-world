@@ -1,0 +1,21 @@
+{"frames": [
+
+{
+	"filename": "citrouille_1.png",
+	"frame": {"x":0,"y":0,"w":23,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":21},
+	"sourceSize": {"w":23,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "citrouille_1.png",
+	"format": "RGBA8888",
+	"size": {"w":23,"h":21},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c30a2508a4bbd3f27f729c2f3b407195:de1a807ffed5692a4e5a117f18ac287d:87a0fc7545bdc12df59865bdcd389118$"
+}
+}

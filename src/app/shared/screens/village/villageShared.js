@@ -418,6 +418,7 @@ class VillageUtils {
         });
       }
     }
+    let failed = 0;
     for (let propLoad of Array.from(this.scope.propLoadList)) {
       const url = `map/${this.scope.village}/${this.scope.effectiveFolder +
       (this.scope.district ? '_' + this.scope.district :
@@ -431,7 +432,13 @@ class VillageUtils {
         });
         this.scope.propJson.push(res.data);
         propLoad.sprite = res.data;
-        if (this.scope.propJson.length === this.scope.propLoadList.length) {
+        if (this.scope.propJson.length + failed === this.scope.propLoadList.length) {
+          if (cb) cb();
+        }
+      }).catch(err=>{
+        console.warn(err, "this file failed to load", url);
+        failed++;
+        if (this.scope.propJson.length + failed === this.scope.propLoadList.length) {
           if (cb) cb();
         }
       });
@@ -446,8 +453,8 @@ class VillageUtils {
    */
   setTime() {
     this.scope.d = new Date();
-    this.scope.hour = this.scope.d.getHours();
-    //this.scope.hour = 22;
+    // this.scope.hour = this.scope.d.getHours();
+    this.scope.hour = 22;
     this.scope.day = this.scope.d.getDate();
     this.scope.month = this.scope.d.getMonth() + 1;
     const d = this.scope.day;

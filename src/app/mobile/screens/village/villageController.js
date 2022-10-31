@@ -40,7 +40,7 @@ hensApp.controller('Village', [
     $scope.mapVillageElement = document.querySelector('.map-village');
 
 
-    $scope.$watch("mapState.showCharacters", ()=>{
+    $scope.$watch("mapState.showCharacters", () => {
       if ($scope.mapState.showCharacters) {
       }
     });
@@ -74,9 +74,9 @@ hensApp.controller('Village', [
     };
 
     //external changes
-    $scope.$on('setMapState:showArticles', (event, state,locaSlug)=>{
+    $scope.$on('setMapState:showArticles', (event, state, locaSlug) => {
       $scope.mapState.showArticles = state;
-      let location = $scope.vData.locations.find(loca=> loca.slug === locaSlug);
+      let location = $scope.vData.locations.find(loca => loca.slug === locaSlug);
       if (location) {
         location.isOpen = state;
       }
@@ -137,14 +137,14 @@ hensApp.controller('Village', [
     $scope.launchClosestLocationDetection = () => {
       if ($scope.mapState.showArticles) return;
       clearTimeout($scope.closestDetectionTimeout);
-      $scope.closestDetectionTimeout = setTimeout(()=>{
+      $scope.closestDetectionTimeout = setTimeout(() => {
         //prevent autofocus if option is disabled
         if (!$scope.mapState.autoFocus) return;
 
         let closestLocation;
         let closestDistance;
-        $scope.vData.locations.forEach((location)=>{
-          let x =  location.pos.x + (location.width / 2);
+        $scope.vData.locations.forEach((location) => {
+          let x = location.pos.x + (location.width / 2);
           let y = location.pos.y + (location.height / 2);
           let screenX = -$scope.mapOffset.x + window.innerWidth / 2;
           let screenY = -$scope.mapOffset.y + window.innerHeight / 2;
@@ -157,14 +157,14 @@ hensApp.controller('Village', [
           }
         });
         if (Math.sqrt(closestDistance) < Math.sqrt(Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)) / 3) {
-          let x =  closestLocation.pos.x + (closestLocation.width / 2);
+          let x = closestLocation.pos.x + (closestLocation.width / 2);
           let y = closestLocation.pos.y;
 
           let previousX = $scope.mapOffset.x;
           let previousY = $scope.mapOffset.y;
           $scope.moveMapToAsSelected(x, y);
           if (previousX === $scope.mapOffset.x && previousY === $scope.mapOffset.y) return;
-          setTimeout(()=>{
+          setTimeout(() => {
             $scope.villageUtils.displayLocationCreations(closestLocation, true);
           }, 300);
         }
@@ -194,7 +194,7 @@ hensApp.controller('Village', [
           if (!$scope.isLoading && (Math.abs((deltaX)) < 12 || Math.abs((deltaY)) < 12)) {
             $scope.isLoading = true;
           }
-          deltaX = hensApp.lerp(0, deltaX , amount) / $scope.smoothingRatio;
+          deltaX = hensApp.lerp(0, deltaX, amount) / $scope.smoothingRatio;
           deltaY = hensApp.lerp(0, deltaY, amount) / $scope.smoothingRatio;
           const newX = x - Math.ceil(Math.abs(deltaX)) * Math.sign(deltaX);
           const newY = y - Math.ceil(Math.abs(deltaY)) * Math.sign(deltaY);

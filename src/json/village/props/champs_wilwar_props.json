@@ -1,4 +1,306 @@
 {
-  "props": [],
+  "props": [
+    {
+      "label": "lucioles",
+      "width": 53,
+      "height": 39,
+      "center": {
+        "x": 7,
+        "y": 16
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6
+        }
+      ],
+      "list": [
+        {
+          "x": 2389,
+          "y": 818
+        },
+        {
+          "x": 3071,
+          "y": 255
+        },
+        {
+          "x": 3568,
+          "y": 2385
+        },
+        {
+          "x": 5070,
+          "y": 3340
+        },
+        {
+          "x": 1307,
+          "y": 1461
+        },
+        {
+          "x": 1306,
+          "y": 1461
+        },
+        {
+          "x": 776,
+          "y": 727
+        },
+        {
+          "x": 579,
+          "y": 149
+        }
+      ]
+    },
+    {
+      "label": "citrouille_1",
+      "width": 23,
+      "height": 21,
+      "action": "pumpkin_find",
+      "random_position": true,
+      "center": {
+        "x": 11,
+        "y": 13
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "season": "automne",
+          "event": "halloween"
+        }
+      ],
+      "list": [
+        {
+          "x": 3810,
+          "y": 246
+        },
+        {
+          "x": 4328,
+          "y": 1100
+        },
+        {
+          "x": 4777,
+          "y": 2625
+        }
+      ]
+    },
+    {
+      "label": "citrouille_2",
+      "width": 25,
+      "height": 18,
+      "random_position": true,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 12,
+        "y": 11
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "event": "halloween"
+        }
+      ],
+      "list": [
+        {
+          "x": 280,
+          "y": 2092
+        },
+        {
+          "x": 819,
+          "y": 4000
+        },
+        {
+          "x": 2940,
+          "y": 4100
+        }
+      ]
+    },
+    {
+      "label": "citrouille_3",
+      "width": 21,
+      "height": 21,
+      "random_position": true,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 9,
+        "y": 12
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "event": "halloween"
+        }
+      ],
+      "list": [
+        {
+          "x": 5151,
+          "y": 3949
+        },
+        {
+          "x": 5519,
+          "y": 2720
+        },
+        {
+          "x": 2864,
+          "y": 2260
+        }
+      ]
+    },
+    {
+      "label": "citrouille_4",
+      "width": 26,
+      "height": 22,
+      "random_position": true,
+      "action": "pumpkin_find",
+      "center": {
+        "x": 13,
+        "y": 9
+      },
+      "avail": [
+        {
+          "fromT": 21,
+          "to": 6,
+          "event": "halloween"
+        }
+      ],
+      "list": [
+        {
+          "x": 960,
+          "y": 1224
+        },
+        {
+          "x": 1006,
+          "y": 421
+        },
+        {
+          "x": 1228,
+          "y": 2714
+        }
+      ]
+    },
+    {
+      "label": "daim_1",
+      "width": 60,
+      "height": 70,
+      "center": {
+        "x": 29,
+        "y": 67
+      },
+      "avail": [
+        {
+          "fromT": 9,
+          "to": 13
+        }
+      ],
+      "list": [
+        {
+          "x": 5500,
+          "y": 2388
+        }
+      ]
+    },
+    {
+      "label": "daim_1",
+      "width": 60,
+      "height": 70,
+      "center": {
+        "x": 29,
+        "y": 67
+      },
+      "avail": [
+        {
+          "fromT": 22,
+          "to": 2,
+          "dates": [
+            [
+              "21-03",
+              "21-12"
+            ]
+          ]
+        }
+      ],
+      "list": [
+        {
+          "x": 821,
+          "y": 3071
+        }
+      ]
+    },
+    {
+      "label": "daim_1",
+      "width": 60,
+      "height": 70,
+      "center": {
+        "x": 29,
+        "y": 67
+      },
+      "avail": [
+        {
+          "fromT": 15,
+          "to": 18,
+          "dates": [
+            [
+              "21-03",
+              "21-12"
+            ]
+          ]
+        }
+      ],
+      "list": [
+        {
+          "x": 4377,
+          "y": 4182
+        }
+      ]
+    },
+    {
+      "label": "daim_2",
+      "width": 60,
+      "height": 70,
+      "center": {
+        "x": 31,
+        "y": 67
+      },
+      "avail": [
+        {
+          "fromT": 8,
+          "to": 11
+        }
+      ],
+      "list": [
+        {
+          "x": 3359,
+          "y": 4337
+        }
+      ]
+    },
+    {
+      "label": "daim_2",
+      "width": 60,
+      "height": 70,
+      "center": {
+        "x": 31,
+        "y": 67
+      },
+      "avail": [
+        {
+          "fromT": 18,
+          "to": 23,
+          "dates": [
+            [
+              "21-03",
+              "21-12"
+            ]
+          ]
+        }
+      ],
+      "list": [
+        {
+          "x": 1969,
+          "y": 102
+        }
+      ]
+    }
+  ],
   "contribs": []
 }
