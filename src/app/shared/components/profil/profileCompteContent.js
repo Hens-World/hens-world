@@ -33,9 +33,9 @@ angular.module('app').component('profileCompteContent', {
             value: "post",
             selected: true
           }, {
-          label: "Série",
-          value: "serie",
-        },
+            label: "Série",
+            value: "serie",
+          },
         ], [
           {
             label: "Création",
@@ -119,7 +119,6 @@ angular.module('app').component('profileCompteContent', {
             object_id: favorite.object.id,
             object_type: favorite.object_type
           } : null)).then(() => {
-            console.log('saved favorites')
           }).catch($rootScope.handleError);
         }
       };
@@ -180,7 +179,7 @@ angular.module('app').component('profileCompteContent', {
             }
             for (let i = 0; i < 3; i++) {
               if (!this.user.fiche.favorites[i]) {
-                this.user.fiche.favorites[i] = {object_type: "post"};
+                this.user.fiche.favorites[i] = { object_type: "post" };
               } else {
                 this.hasFavorites = true;
                 if (this.user.fiche.favorites[i].post) {
@@ -222,12 +221,12 @@ angular.module('app').component('profileCompteContent', {
       this.toggleLikeList = (e) => {
         this.likePage = 1;
         e.currentTarget.classList.add('hiding');
-        userFactory.getLikes($routeParams.id, {page: this.likePage}).then(this.displayLikedPosts);
+        userFactory.getLikes($routeParams.id, { page: this.likePage }).then(this.displayLikedPosts);
       };
 
       this.nextLikePage = (callback) => {
         this.likePage++;
-        userFactory.getLikes($routeParams.id, {page: this.likePage}).then((res) => {
+        userFactory.getLikes($routeParams.id, { page: this.likePage }).then((res) => {
           callback(res.data.length);
           this.displayLikedPosts(res, true);
         });
@@ -342,7 +341,7 @@ angular.module('app').component('profileCompteContent', {
           }
         };
         waitUser();
-        userFactory.getLikes($routeParams.id, {pageSize: 3}).then(this.displayLikedPosts);
+        userFactory.getLikes($routeParams.id, { pageSize: 3 }).then(this.displayLikedPosts);
       }
     }
   ]

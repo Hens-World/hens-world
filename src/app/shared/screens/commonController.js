@@ -94,7 +94,6 @@ hensApp.controller('commonController', [
         };
 
         $rootScope.handleError = (e) => {
-            console.log(e);
             if (!e.data) {
                 $rootScope.setAlert('error', 'Erreur inconnue');
                 console.error(e);
@@ -161,8 +160,8 @@ hensApp.controller('commonController', [
         $scope.isEditionSet = false;
 
         //added on each page to set properties to player
-        $scope.params = {lieu: "none"};
-        $rootScope.params = {lieu: "none"};
+        $scope.params = { lieu: "none" };
+        $rootScope.params = { lieu: "none" };
 
         $scope.info = {
             isAppInit: false,

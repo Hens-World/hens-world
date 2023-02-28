@@ -16,7 +16,6 @@ hensApp.directive('snowEffect', [
         };
         const getSeed = function (m) {
           const nb = (m.hour() + m.month() + m.year()) * 9;
-          console.log(nb, nb %10 + 1);
           return ((nb) % 10) + 1;
         };
         const now = moment();

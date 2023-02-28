@@ -6,7 +6,6 @@
  */
 hensApp.controller('annonceCreation', ['$scope', '$rootScope', 'annoncesFactory', '$location', '$routeParams', function ($scope, $rootScope, annoncesFactory, $location, $routeParams) {
     $scope.$parent.info.isAppInit = false;
-    console.log('creation init!');
     $scope.locations = [
         ['village', 'falaise', 'forêt', 'marais'],
         ['village', 'montagne', 'collines', 'souterrains'],
@@ -24,7 +23,7 @@ hensApp.controller('annonceCreation', ['$scope', '$rootScope', 'annoncesFactory'
             inviteList: [],
             is_private: false
         }
-    ;
+        ;
     if (!$routeParams.id) {
         $scope.resetAnnonce();
         $scope.$parent.info.isAppInit = true;

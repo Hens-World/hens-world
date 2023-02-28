@@ -111,17 +111,15 @@ hensApp.controller('roleplayAsyncHome', ['$scope', 'roleplayFactory', 'localeFac
 
     $scope.setLieu = function (location) {
       $scope.newRoom.location = location;
-      console.log('set lieu', $scope.newRoom);
       $scope.locaSearchQuery = location.nom;
       return $scope.searchLocations = [];
     };
 
+    //TODO: Make it an online search
     $scope.$watch('locaSearchQuery', function (n, o) {
       $scope.searchLocations = [];
-      console.log('n', n);
       if (n && (n.length >= 3)) {
         const searchList = n.split(' ');
-        console.log('search list:', searchList);
         $scope.searchLocations = $scope.locations.filter(function (location) {
           const isValidList = searchList.map(function (search) {
             let isOk = false;

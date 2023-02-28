@@ -197,7 +197,6 @@ angular.module('app').controller('MapInterior', [
     });
 
     $scope.clickHandlers = (action) => {
-      console.log('click handlers', action);
       switch (action) {
         case "prier_wilwar":
         case "priere_anar":

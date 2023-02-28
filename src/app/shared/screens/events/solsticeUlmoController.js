@@ -113,8 +113,8 @@ angular.module('app').controller('SolsticeUlmo', [
         }
         $scope.poissonList = poi.data.map($scope.mapPoisson);
         $scope.satisfied = 0;
-        $scope.poissonList.forEach(poisson=>{
-          if(poisson.satisfaction === 3) $scope.satisfied++;
+        $scope.poissonList.forEach(poisson => {
+          if (poisson.satisfaction === 3) $scope.satisfied++;
         });
         $scope.setStatus(status.data);
         $scope.creationTab = "body";
@@ -152,7 +152,6 @@ angular.module('app').controller('SolsticeUlmo', [
         $location.path('/map');
       });
       aquariumSocket.on('poisson_update', (data) => {
-        console.log('update data', data);
         $scope.updatePoissonData(data);
         eventsFactory.solsticeUlmo.getLogs().then(data => {
           $scope.logs = data.data.map(log => {
@@ -166,17 +165,17 @@ angular.module('app').controller('SolsticeUlmo', [
       });
     };
 
-    $scope.updatePoissonInterval = setInterval(()=>{
-      $scope.poissonList.forEach(poisson=>{
+    $scope.updatePoissonInterval = setInterval(() => {
+      $scope.poissonList.forEach(poisson => {
         poisson.fedTime += 1000;
         poisson.favorTime += 1000;
-        poisson.formattedFavorTime =hensApp.formatTime(poisson.favorTime, hensApp.customTimeFormats.MINUTE_SECOND_TEXT);
-        poisson.formattedHungerTime =hensApp.formatTime(poisson.fedTime, hensApp.customTimeFormats.MINUTE_SECOND_TEXT);
+        poisson.formattedFavorTime = hensApp.formatTime(poisson.favorTime, hensApp.customTimeFormats.MINUTE_SECOND_TEXT);
+        poisson.formattedHungerTime = hensApp.formatTime(poisson.fedTime, hensApp.customTimeFormats.MINUTE_SECOND_TEXT);
       });
     }, 1000);
 
 
-    $scope.$on('$destroy', ()=>{
+    $scope.$on('$destroy', () => {
       clearInterval($scope.updatePoissonInterval);
     });
 
@@ -201,8 +200,8 @@ angular.module('app').controller('SolsticeUlmo', [
         }
       });
       $scope.satisfied = 0;
-      $scope.poissonList.forEach(poisson=>{
-        if(poisson.satisfaction === 3) $scope.satisfied++;
+      $scope.poissonList.forEach(poisson => {
+        if (poisson.satisfaction === 3) $scope.satisfied++;
       });
       //remove old poisson not in list anymore
       $scope.poissonList =
@@ -220,7 +219,7 @@ angular.module('app').controller('SolsticeUlmo', [
       clearInterval($scope.interval);
       $scope.interval = setInterval(() => {
         $scope.myStatus.timeUntilNext -= 1000;
-        if($scope.myStatus.wish) {
+        if ($scope.myStatus.wish) {
           $scope.myStatus.wishFor -= 1000;
         }
         $scope.myStatus.timeBeforeNextFood =
@@ -230,7 +229,6 @@ angular.module('app').controller('SolsticeUlmo', [
             hensApp.formatTime(status.wishFor, hensApp.customTimeFormats.MINUTE_SECOND_TEXT);
         }
         if (($scope.myStatus.feedStock < 3 && $scope.myStatus.timeUntilNext <= 0) || ($scope.myStatus.wish && $scope.myStatus.wishFor <= 0 && $scope.myStatus.wishFor > -1000 * 10)) {
-          console.log('status', $scope.myStatus)
           eventsFactory.solsticeUlmo.getMyStatus().then(data => {
             $scope.setStatus(data.data);
           });
@@ -332,7 +330,7 @@ angular.module('app').controller('SolsticeUlmo', [
       elt.style.width = data.width * scale * anchor.scale + 'px';
       elt.style.height = data.height * scale * anchor.scale + 'px';
       let innerSvg = elt.querySelector('svg');
-      if(innerSvg) {
+      if (innerSvg) {
         innerSvg.style.width = data.width * scale * anchor.scale + 'px';
         innerSvg.style.height = data.height * scale * anchor.scale + 'px';
         innerSvg.style.animationDelay = -Math.random() * 10 + 's';
@@ -340,7 +338,7 @@ angular.module('app').controller('SolsticeUlmo', [
           `${data.pivot.x * scale * anchor.scale}px ${data.pivot.y * scale * anchor.scale}px`;
         console.log(innerSvg, elt.getAttribute('icon-url'));
       } else {
-        if(poissonData.observer) {
+        if (poissonData.observer) {
           poissonData.observer.disconnect();
         }
         poissonData.observer = new MutationObserver(() => {
@@ -352,7 +350,7 @@ angular.module('app').controller('SolsticeUlmo', [
             elt.querySelector('svg').style.height = data.height * scale * anchor.scale + 'px';
           }
         });
-        poissonData.observer.observe(elt, {childList: true});
+        poissonData.observer.observe(elt, { childList: true });
       }
       elt.style.left = bodyPivot.x + anchor.x * scale + 'px';
       elt.style.top = bodyPivot.y + anchor.y * scale + 'px';
@@ -387,14 +385,14 @@ angular.module('app').controller('SolsticeUlmo', [
       $scope.updateNewPoisson();
     };
 
-    $scope.closeCreationPopup = ()=>{
+    $scope.closeCreationPopup = () => {
       $scope.popupCreation = false;
       $scope.creationInformation = false;
     };
 
-    $scope.openCreationValidation = ()=>{
+    $scope.openCreationValidation = () => {
       $scope.popupCreation = true;
-      eventsFactory.solsticeUlmo.getCreationInfos().then(data=>{
+      eventsFactory.solsticeUlmo.getCreationInfos().then(data => {
         $scope.creationInformation = data.data;
       });
     };
@@ -426,7 +424,7 @@ angular.module('app').controller('SolsticeUlmo', [
       eventsFactory.solsticeUlmo.favorPoisson($scope.selectedPoisson.id).then(data => {
         $rootScope.setAlert('success', 'Vous commencez à exaucer le souhait de ' + $scope.selectedPoisson.name);
         $scope.closePopup();
-      }).catch((e)=>{
+      }).catch((e) => {
         $scope.closePopup();
         $rootScope.handleError(e);
       });
