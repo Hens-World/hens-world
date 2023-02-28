@@ -22,7 +22,7 @@ hensApp.controller('Village', [
     $scope.mapScale = 1;
 
     $scope.mapVillageElement = document.querySelector('.map-village');
-    $scope.eventWrapper  = document.querySelector('.event_wrappers');
+    $scope.eventWrapper = document.querySelector('.event_wrappers');
     $scope.villageLocaElement = document.querySelector('.village__loca');
 
     /**
@@ -108,7 +108,6 @@ hensApp.controller('Village', [
 
     /** move map to X/Y position, anchor is center left, displayed with right panel opened */
     $scope.moveMapToAsSelected = function (x, y) {
-      console.log("move map to as selected BEFORE", x, y);
       x -= (window.innerWidth - 800) / 2;
       y -= ($(window).height() / 3);
       $scope.moveMapTo(x, y);
@@ -349,8 +348,8 @@ hensApp.controller('Village', [
                     propElt.css('left', propInstance.x - prop.center.x);
                     propElt.css('top', propInstance.y - prop.center.y);
                     const imgUrl = myLocalized.medias + `map/${$scope.village}/${$scope.effectiveFolder +
-                    ($scope.district ? "_" + $scope.district :
-                      "")}/props/${prop.label}/${$scope.mapTime}/${prop.label}.png`;
+                      ($scope.district ? "_" + $scope.district :
+                        "")}/props/${prop.label}/${$scope.mapTime}/${prop.label}.png`;
                     propElt.find('.sprite').css('background', `url('${imgUrl}')`);
                   } else {
                     if (prop.random_position) {
@@ -371,7 +370,7 @@ hensApp.controller('Village', [
                 .css('width', prop.width)
                 .css('height', prop.height);
               const imgUrl = myLocalized.medias + `map/${$scope.village}/${$scope.effectiveFolder +
-              ($scope.district ? "_" + $scope.district : "")}/props/${prop.label}/${$scope.mapTime}/${prop.label}.png`;
+                ($scope.district ? "_" + $scope.district : "")}/props/${prop.label}/${$scope.mapTime}/${prop.label}.png`;
               propElt.find('.sprite').css('background', `url('${imgUrl}')`);
             }
           }
@@ -389,15 +388,15 @@ hensApp.controller('Village', [
           let current, selector, element;
           for (let contrib of Array.from($scope.contribLoadList)) {
             current = contrib.avail[contrib.availIndex];
-            const {posSlug} = current;
+            const { posSlug } = current;
             selector = `.${contrib.slug}-${posSlug}`;
             element = $(selector);
             if (element) {
               element.css('width', current.width);
               element.css('height', current.height);
               const imgUrl = myLocalized.medias + `map/${$scope.village}/${$scope.effectiveFolder +
-              ($scope.district ? "_" + $scope.district :
-                "")}/persos/${contrib.slug}/${posSlug}/${$scope.mapTime}/${contrib.slug}_${posSlug}.png`;
+                ($scope.district ? "_" + $scope.district :
+                  "")}/persos/${contrib.slug}/${posSlug}/${$scope.mapTime}/${contrib.slug}_${posSlug}.png`;
               $(selector).css('background', `url('${imgUrl}')`);
             }
           }

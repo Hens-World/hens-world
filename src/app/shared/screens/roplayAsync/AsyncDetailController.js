@@ -22,10 +22,8 @@ hensApp.controller('AsyncDetail', [
     };
 
     $scope.populateMessages = () => {
-      console.log($scope.roleplay);
       $scope.roleplay.messages.forEach(function (msg) {
         msg.author = JSON.parse(JSON.stringify($scope.roleplay.userList[msg.user_id]));
-        console.log("msg author", msg.author);
         if (!msg.author) {
           msg.author = {
             characters: [],
@@ -46,7 +44,6 @@ hensApp.controller('AsyncDetail', [
     };
 
     $scope.updateRoleplay = function (roleplay) {
-      console.log("update roleplay");
       localeFactory.JSON("guideInfo").then((locations) => {
         $scope.location = locations.data.list.find(location => location.id === roleplay.location);
       });
@@ -63,9 +60,6 @@ hensApp.controller('AsyncDetail', [
           charactersQueried++;
           if (charactersQueried === Object.keys($scope.roleplay.userList).length) {
             $scope.populateMessages();
-          }
-          else {
-            console.log("not enough", charactersQueried);
           }
         }).catch($rootScope.handleError);
       }
@@ -171,13 +165,11 @@ hensApp.controller('AsyncDetail', [
     };
 
     $scope.init = () => {
-      console.log("init");
       roleplayFactory.get('differe', $routeParams.id).then(function (res) {
         if ($rootScope.socketConnected) {
           socket.emit('rp-diff:join', res.data.id);
         } else {
           $rootScope.$watch('socketConnected', (n, o) => {
-            console.log('SOCKET_CONNECTED', n);
             if (n && n !== o) {
               socket.emit('rp-diff:join', res.data.id);
             }
@@ -257,7 +249,6 @@ hensApp.controller('AsyncDetail', [
         }
       });
     }
-    console.log("before init");
     $scope.init();
   }
 ]);

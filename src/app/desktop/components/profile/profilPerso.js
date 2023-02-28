@@ -41,7 +41,7 @@ hensApp.directive('profilPersonnage', [
                     powerCard.css('background', `url('${myLocalized.medias}pouvoirs/nopouvoir.jpg')`);
                     powerCard.css('background-size', "100%");
                     powerCard.css('background-repeat', "no-repeat");
-                    $scope.pouvoirLabel = {nom: "Aucun pouvoir"};
+                    $scope.pouvoirLabel = { nom: "Aucun pouvoir" };
                 }
             };
 
@@ -94,11 +94,9 @@ hensApp.directive('profilPersonnage', [
                     // $location.path('/choix-village');
                     // $scope.toggleEditFiche();
                     if (!$rootScope.currentUser.village) {
-                        console.log('show village');
                         $scope.$broadcast('toggleNoVillage', true);
                     }
                     else {
-                        console.log(" SET VILLAGE");
                         $scope.personnage.village = $rootScope.villages.indexOf($rootScope.currentUser.village);
                         $scope.persoPost = JSON.parse(JSON.stringify($scope.personnage));
                     }

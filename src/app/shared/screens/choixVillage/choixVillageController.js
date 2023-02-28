@@ -93,7 +93,6 @@ hensApp.controller('ChoixVillage', [
             if ($scope.tempVillage !== 'undefined') {
                 let villageIndex = $scope.villageDescriptions.findIndex(desc => desc.slug === $scope.tempVillage);
                 userFactory.setVillage($rootScope.currentUser.ID, $scope.characterIndex, villageIndex).then((res) => {
-                    console.log("village has been set !", res, $scope.tempVillage);
                     if ($scope.villageTarget === "character") {
                         $location.path(`/choix-village/personnage/${$scope.characterIndex}/${$scope.tempVillage}`);
                     }

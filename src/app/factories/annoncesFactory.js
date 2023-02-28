@@ -5,7 +5,6 @@ hensApp.factory('annoncesFactory', [
       // type: instant/async
       get(opt) {
         const query = hensApp.buildQuery(opt);
-        console.log(query);
 
         return declareRoute('get', `${query}`);
       },
@@ -13,7 +12,6 @@ hensApp.factory('annoncesFactory', [
         return declareRoute('get', `/${id}`);
       },
       create(data) {
-        console.log('sending data,', data);
         return declareRoute('post', '', data);
       },
       edit(id, data) {

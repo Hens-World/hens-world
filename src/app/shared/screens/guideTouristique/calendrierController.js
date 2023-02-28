@@ -67,12 +67,11 @@ angular.module('app').controller('Calendrier', [
       $scope.monthDays = [];
       var currentMd = moment(firstMonthDay);
       while (((currentMd.month() <= md.month() && currentMd.year() === md.year()) || currentMd.year() < md.year()) ||
-      currentMd.day() !== 1) {
+        currentMd.day() !== 1) {
         $scope.monthDays.push($scope.getDayObject(moment(currentMd.toDate()).toDate()));
         currentMd = currentMd.add(1, 'days');
         console.log(currentMd.month(), md.month(), currentMd.year(), md.year());
       }
-      console.log($scope.monthDays);
     };
 
     $scope.selectDate = (monthDay) => {

@@ -29,7 +29,6 @@ hensApp.directive('persoProfil', ['$http', 'userFactory', 'postFactory', 'socket
 
             $scope.hideProfile = function () {
                 $scope.show = false;
-                return console.log('hiding');
             };
 
             $scope.display = function () {
@@ -67,12 +66,12 @@ hensApp.directive('persoProfil', ['$http', 'userFactory', 'postFactory', 'socket
                     setTimeout(function () {
                         const ph = $('.avatar-container').height();
                         const pw = $('.avatar-container').width();
-                        const {img} = $scope.profil;
+                        const { img } = $scope.profil;
                         $element.find('.avatar-img').css('height', ph);
                         $element.find('.avatar-img').css('width', img.w * (ph / img.h));
                         const nw = $element.find('.avatar-img').width();
                         $element.find('.avatar-img').css('margin-left', -(nw - pw) * (img.c / img.w));
-                        return TweenLite.to($('.avatar-img'), 0.3, {opacity: 1});
+                        return TweenLite.to($('.avatar-img'), 0.3, { opacity: 1 });
                     }, 700);
                     if (personnage) {
                         let minus = $('.display-fiche').offset().top;
@@ -120,7 +119,6 @@ hensApp.directive('persoProfil', ['$http', 'userFactory', 'postFactory', 'socket
                 }
 
                 $element.find('.avatar-img').css('opacity', 0);
-                console.log($scope.profil);
 
                 if ($scope.profil.char_index == null) {
                     $scope.profil.char_index = 1;
