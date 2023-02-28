@@ -55,7 +55,6 @@ hensApp.directive('profilPersonnage', [
             $scope.toggleNovillage = (value) => {
                 $scope.showNoVillage = value;
             };
-            $scope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
 
             $scope.toggleEditFiche = () => {
                 setTimeout(() => {

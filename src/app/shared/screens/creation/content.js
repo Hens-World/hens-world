@@ -7,7 +7,7 @@ hensApp.controller('Content', [
     $scope.$parent.info.isAppInit = false;
     $scope.userManager = userFactory;
     $scope.isInit = false;
-    $scope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+    $scope.villages = hensApp.villages;
     //Like the current post function
     $scope.$watch('info.user', function (newValue, oldValue) {
       if ((newValue.meta !== undefined) && !$scope.$parent.info.isAppInit) {

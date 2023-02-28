@@ -8,7 +8,7 @@ angular.module('app').component('newPostPersonnages', {
   controller: [
     '$scope', '$element', 'userFactory', '$rootScope', function ($scope, $element, userFactory, $rootScope) {
 
-      this.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+      this.villages = hensApp.villages;
       this.$onInit = () => {
         if (this.fastSearch) {
           this.hideDescr = true;

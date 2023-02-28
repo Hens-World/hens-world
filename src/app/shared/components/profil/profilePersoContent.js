@@ -135,7 +135,7 @@ angular.module('app').component('profilePersoContent', {
                 return $scope.newRelation.char = perso;
             };
 
-            $scope.villages = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+            $scope.villages = hensApp.villages;
             $scope.locations = [
                 ['village', 'falaise', 'forêt', 'marais'], ['village', 'mer', 'lac', 'prairie'],
                 ['village', 'champs', 'bois', 'rivière'], ['village', 'montagne', 'collines', 'souterrains'],

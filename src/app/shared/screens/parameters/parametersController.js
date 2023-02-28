@@ -73,7 +73,7 @@ angular.module('app').controller('Parameters', [
       }
     };
 
-    $scope.themes = ['sulimo', 'ulmo', 'wilwar', 'anar'];
+    $scope.themes = hensApp.villages;
     $scope.init = () => {
       accountFactory.getParameters().then(res => {
         $scope.isAdmin = $rootScope.currentUser.ID === 8;
