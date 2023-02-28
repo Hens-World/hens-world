@@ -6,10 +6,10 @@
       input.form(type="text" placeholder="Invitez des membres pour jouer" ng-model="userSearch")
     .search-list
       span(ng-repeat="user in searchList" ng-click="addUser(user)")
-        .user(class="{{user.meta.village}}" )
+        .user(class="{{user.village}}" )
           span.name {{user.display_name}}
   .invite-list
-    span.other-user(class="{{invitee.meta.village}}" ng-repeat="invitee in members" class="{{invitee.meta.village}}")
+    span.other-user(class="{{invitee.village}}" ng-repeat="invitee in members" class="{{invitee.village}}")
       .invitee.fond-village()
         .display
           .remove(ng-click="removeInvitee(invitee)") +
