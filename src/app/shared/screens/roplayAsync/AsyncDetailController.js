@@ -47,7 +47,7 @@ hensApp.controller('AsyncDetail', [
       localeFactory.JSON("guideInfo").then((locations) => {
         $scope.location = locations.data.list.find(location => location.id === roleplay.location);
       });
-      roleplay.formatDate = moment(roleplay.creationtime).format(hensApp.DATE_FORMATS.SHORT);
+      roleplay.formatDate = moment(roleplay.starttime).format(hensApp.DATE_FORMATS.SHORT);
       $scope.roleplay = roleplay;
       let charactersQueried = 0;
       for (let id in $scope.roleplay.userList) {
