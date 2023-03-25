@@ -82,7 +82,7 @@ angular.module('app').component('profilePersoContent', {
             $rootScope.$on('profil:selectPerso', (event, fid) => {
                 this.personnage = this.personnageList.find(p => p.fid === fid);
                 $scope.personnage = this.personnage;
-                if (!this.personnage.prenom) $scope.toggleEditFiche();
+                if (!this.personnage?.prenom) $scope.toggleEditFiche();
                 $scope.persoPost = JSON.parse(JSON.stringify(this.personnage));
                 if ($scope.persoPost.char_index == 1) {
                     $scope.persoPost.village = $scope.villages.indexOf($rootScope.currentUser.village);

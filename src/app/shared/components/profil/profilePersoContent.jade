@@ -91,11 +91,11 @@ div(ng-show="state.tag == 'fiche'")
     .relation.other-user(ng-if="relationList.length > 0" ng-show="newRelation.rid != relation.rid"  ng-repeat="relation in relationList")
       .relation__left
         a( href="profil/{{relation.to_id}}")
-          .avatar-circle.fond-village.dark(style="background-image:url({{relation.personnage.avatar}});")
+          .avatar-circle.fond-village.dark(style="background-image:url({{relation.targetPersonnage.avatar}});")
       .relation__main
         .relation__title-container
           .relation__title(ng-bind-html="relation.title")
-          a.hover(class="{{villages[relation.personnage.village]}}" href="profil/{{relation.to_id}}") {{relation.personnage.prenom}}
+          a.hover(class="{{villages[relation.targetPersonnage.village]}}" href="profil/{{relation.to_id}}") {{relation.targetPersonnage.prenom}}
           .edit-relation(ng-if="isMe" ng-click="editRelation(relation)")
           .delete-relation(ng-if="isMe" ng-click="deleteRelation(relation)")
             .fa.fa-trash
