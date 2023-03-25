@@ -12,7 +12,7 @@ angular.module('app').component('profilePersoContent', {
     },
     controller: [
         '$scope', '$element', '$rootScope', 'postFactory', 'userFactory', '$routeParams', 'socket', 'roleplayFactory',
-        function ($scope, $element, $rootScope, postFactory, userFactory, $routeParams, socket, roleplayFactory) {
+        function($scope, $element, $rootScope, postFactory, userFactory, $routeParams, socket, roleplayFactory) {
             this.showNoVillage = false;
 
             this.$onChanges = (changes) => {
@@ -82,7 +82,7 @@ angular.module('app').component('profilePersoContent', {
             $rootScope.$on('profil:selectPerso', (event, fid) => {
                 this.personnage = this.personnageList.find(p => p.fid === fid);
                 $scope.personnage = this.personnage;
-                if (!this.personnage?.prenom) $scope.toggleEditFiche();
+                if (!this.personnage || !this.personnage.prenom) $scope.toggleEditFiche();
                 $scope.persoPost = JSON.parse(JSON.stringify(this.personnage));
                 if ($scope.persoPost.char_index == 1) {
                     $scope.persoPost.village = $scope.villages.indexOf($rootScope.currentUser.village);
@@ -96,7 +96,7 @@ angular.module('app').component('profilePersoContent', {
                 $scope.toggleEditFiche();
             });
 
-            $scope.toggleEditFiche = function () {
+            $scope.toggleEditFiche = function() {
                 $scope.isEditingChar = true;
                 $scope.showPerso = true;
             };
@@ -105,7 +105,7 @@ angular.module('app').component('profilePersoContent', {
                 this.showNoVillage = value;
             })
 
-            $scope.cancelEditPerso = function () {
+            $scope.cancelEditPerso = function() {
                 $scope.isEditingChar = false;
                 $scope.persoPost = JSON.parse(JSON.stringify($scope.personnage));
                 $scope.persoPost.histoire = hensApp.parseContent($scope.persoPost.histoire);
@@ -114,14 +114,14 @@ angular.module('app').component('profilePersoContent', {
                 $scope.persoPost.pouvoir = hensApp.parseContent($scope.persoPost.pouvoir);
             };
 
-            $scope.editRelation = function (relation) {
+            $scope.editRelation = function(relation) {
                 $scope.isCreating = true;
                 $scope.newRelation = relation;
                 $scope.newRelation.name = "";
                 $scope.newRelation.char = relation.personnage;
             };
 
-            $scope.startCreate = function () {
+            $scope.startCreate = function() {
                 $scope.isCreating = true;
                 $scope.newRelation = {
                     name: "",
@@ -130,7 +130,7 @@ angular.module('app').component('profilePersoContent', {
                 };
             };
 
-            $scope.selectPerso = function (perso) {
+            $scope.selectPerso = function(perso) {
                 $scope.newRelation.name = "";
                 return $scope.newRelation.char = perso;
             };
@@ -140,7 +140,7 @@ angular.module('app').component('profilePersoContent', {
                 ['village', 'falaise', 'forêt', 'marais'], ['village', 'mer', 'lac', 'prairie'],
                 ['village', 'champs', 'bois', 'rivière'], ['village', 'montagne', 'collines', 'souterrains'],
             ];
-            $scope.hideFiche = function () {
+            $scope.hideFiche = function() {
                 $scope.showPerso = false;
                 $scope.isEditingChar = false;
                 if ($scope.persoPost) {
@@ -150,7 +150,7 @@ angular.module('app').component('profilePersoContent', {
 
             $scope.showFiche = () => $scope.showPerso = true;
 
-            $scope.sendRelation = function () {
+            $scope.sendRelation = function() {
                 let obj;
                 if (!$scope.newRelation.rid) {
                     obj = {
@@ -161,7 +161,7 @@ angular.module('app').component('profilePersoContent', {
                         title: $scope.newRelation.title,
                         description: $scope.newRelation.description
                     };
-                    userFactory.createRelation($rootScope.currentUser.ID, $scope.personnage.char_index, obj).then(function (res) {
+                    userFactory.createRelation($rootScope.currentUser.ID, $scope.personnage.char_index, obj).then(function(res) {
                         if (!res.error) {
                             $rootScope.setAlert('success', 'relation_create', 50, res.title);
                             return $scope.initRelation();
@@ -200,7 +200,7 @@ angular.module('app').component('profilePersoContent', {
 
             $scope.sugggestionList = [];
 
-            $scope.$watchCollection("newRelation", function (n, o) {
+            $scope.$watchCollection("newRelation", function(n, o) {
                 if (n) {
                     if (n.name !== o.name) {
                         if (n.name && (n.name.trim().length > 1)) {
@@ -225,7 +225,7 @@ angular.module('app').component('profilePersoContent', {
                     title: 'Supprimer une relation',
                     text: `Voulez vous vraiment supprimer la relation \"${relation.title}\" ?`,
                     validation: () => {
-                        userFactory.deleteRelation($rootScope.currentUser.ID, $scope.personnage.char_index, relation.rid).then(function (res) {
+                        userFactory.deleteRelation($rootScope.currentUser.ID, $scope.personnage.char_index, relation.rid).then(function(res) {
                             $scope.initRelation();
                             $rootScope.setAlert('success', 'relation_delete');
                         });
@@ -250,7 +250,7 @@ angular.module('app').component('profilePersoContent', {
                 $scope.persoPost.pouvoir = hensApp.formatContent($scope.persoPost.pouvoir);
                 if (!$scope.personnage.fid) {
                     let persoIndex = this.personnageList.length === 0 ? 1 : this.personnageIndex;
-                    userFactory.createCharacter($rootScope.currentUser.ID, persoIndex, $scope.persoPost).then(function (data) {
+                    userFactory.createCharacter($rootScope.currentUser.ID, persoIndex, $scope.persoPost).then(function(data) {
                         $scope.personnage.new = false;
                         $scope.isValidatingFiche = false;
                         $scope.persoPost.fid = data.fid;
@@ -268,7 +268,7 @@ angular.module('app').component('profilePersoContent', {
                         $scope.persoPost.pouvoir = hensApp.parseContent($scope.persoPost.pouvoir);
                     }).catch($rootScope.handleError);
                 } else {
-                    userFactory.editCharacter($rootScope.currentUser.ID, $scope.persoPost).then(function (res) {
+                    userFactory.editCharacter($rootScope.currentUser.ID, $scope.persoPost).then(function(res) {
                         $scope.personnage.new = false;
                         $scope.isValidatingFiche = false;
                         $scope.personnage = JSON.parse(JSON.stringify(res.data));
