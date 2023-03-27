@@ -20,15 +20,18 @@ Move the .exe file to where you want to store your cert files, and rename it to 
 ./mkcert.exe localhost
 ```
 
-### 3 - Launch Dev
+### Launch Dev Server
 ```bash
-    npm start
-    # if you need to specify a custom location for your certs, you can use the env param CERT_ROOT
-    CERT_ROOT="path/to/certs/folder/" npm start
+npm start
+# if you need to specify a custom location for your certs, you can use the env param CERT_ROOT
+CERT_ROOT="path/to/certs/folder/" npm start
 ```
-
-
-### 4 - Publish version
+### I don't have access to the server !
+Right now, the server is not open sourced yet, but you can develop on a version that connects to a test server, like so: 
+```
+npm run preprod
+``` 
+### Publish version
 ```bash
     # create a folder with the current version and build files inside it
     npm run release
