@@ -56,8 +56,18 @@ let prod = !!util.env.release;
 const preprod = !!util.env.preprod;
 const prodDebug = !!util.env.prodDebug;
 const base = prod ? '/' : '/';
-const nodeUrl = prod || prodDebug ? 'https://node.hens-world.com' : 'https://localhost:8080';
-// const nodeUrl = prod || prodDebug ? 'https://node.hens-world.com' : 'http://localhost:8282';
+function getNodeUrl() {
+    if (prod) {
+        return 'https://node.hens-world.com';
+    }
+    else if (preprod) {
+        return 'https://node.preprod.hens-world.com';
+    }
+    else {
+        return 'https://localhost:8080';
+    }
+}
+const nodeUrl = getNodeUrl();
 
 
 const dest = str => gulp.dest('./' + str);
