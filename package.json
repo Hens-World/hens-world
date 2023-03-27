@@ -50,6 +50,8 @@
         "release": "gulp release --release",
         "deploy": "gulp deployVersion --release",
         "preprod": "gulp --preprod",
+        "release-preprod": "gulp release --preprod",
+        "deploy-preprod": "gulp deployVersion --preprod",
         "prodDebug": "gulp --prodDebug",
         "test": "jest",
         "test-watch": "jest --watchAll"
