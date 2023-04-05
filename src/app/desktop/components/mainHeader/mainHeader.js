@@ -63,7 +63,7 @@ angular.module('app').component('mainHeader', {
                     $location.url(notif.command_value);
                     this.showNotifList = false;
                 }
-                socket.emit('notification:read', {id: notif.nid});
+                socket.emit('notification:read', { id: notif.nid });
                 this.notifList.splice(index, 1);
                 this.updateNotifTitle();
             };
@@ -72,7 +72,7 @@ angular.module('app').component('mainHeader', {
                 $rootScope.$emit('modal:set', {
                     title: 'Supprimer toutes les notifications',
                     text: `Voulez vous vraiment supprimer vos ${this.notifList.length} notifications ? ${$rootScope.currentUser.ID ===
-                    3014 ?
+                        3014 ?
                         '(Sun fait pas ça, arrêtes, tu peux pas faire ça à tes notifications, elles vont faire quoi sans toi ? :( )' :
                         ''}`,
                     validation: () => {
@@ -110,7 +110,7 @@ angular.module('app').component('mainHeader', {
                 new category("carte-archipel", "Carte du monde", "carte", "map"),
                 new category("guide-touristique", "Guide touristique", "carte", "guide-touristique"),
                 new category("population", "Jeu de rôle", "carte", "roleplay/create-type"),
-                new category("don", "Utip", "don", "https://utip.io/hensworld/")
+                new category("don", "Ko-fi", "don", "https://ko-fi.com/hensworld")
             ];
 
             this.currentUser = $rootScope.currentUser;
