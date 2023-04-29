@@ -183,7 +183,7 @@ hensApp.config(function ($routeProvider, $locationProvider) {
         templateUrl: myLocalized.partials + 'signeZodiaque.html',
         controller: 'SigneZodiaque'
     }).when(window.devBase + '/admin', {
-        templateUrl: myLocalized.partials + 'index.html',
+        templateUrl: myLocalized.partials + 'admin.html',
         controller: 'Admin'
     }).when(window.devBase + '/events/equinoxe-printemps/', {
         templateUrl: myLocalized.partials + 'wilwarField.html',

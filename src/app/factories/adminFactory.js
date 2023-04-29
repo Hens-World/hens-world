@@ -1,15 +1,15 @@
-angular.module('app').factory('adminFactory', ['$rootScope', '$http', function($rootScope, $http){
+angular.module('app').factory('adminFactory', ['$rootScope', '$http', function ($rootScope, $http) {
   const declareRoute = hensApp.declareFactoryRoute('admin', $http, $rootScope);
   return {
-    getAdmin(){
+    getAdmin() {
       return declareRoute('get', '/');
     },
 
-    getDialogues(){
+    getDialogues() {
       return declareRoute('get', '/dialogues');
     },
 
-    postDialogue(dialogue){
+    postDialogue(dialogue) {
       return declareRoute('post', '/dialogues', dialogue);
     },
 
@@ -22,11 +22,11 @@ angular.module('app').factory('adminFactory', ['$rootScope', '$http', function($
     },
 
 
-    getReponses(dialogue_id){
+    getReponses(dialogue_id) {
       return declareRoute('get', `/dialogues/${dialogue_id}/reponses`);
     },
 
-    postReponse(reponse){
+    postReponse(reponse) {
       return declareRoute('post', `/dialogues/${reponse.dialogue_id}/reponses`, reponse);
     },
 
@@ -36,6 +36,15 @@ angular.module('app').factory('adminFactory', ['$rootScope', '$http', function($
 
     deleteReponse(reponse) {
       return declareRoute('delete', `/dialogues/${reponse.dialogue_id}/reponses/${reponse.id}`);
+    },
+
+    move_character_to_account(source_account_id, source_char_index, target_account_id, target_char_index) {
+      return declareRoute('put', `/move_character`, {
+        source_account_id,
+        source_char_index,
+        target_account_id,
+        target_char_index
+      })
     }
   }
 }]);

@@ -1,11 +1,11 @@
 .page-container
   .main-column(ng-show="isAdminValid")
     h1 Hello Admin !
-    p admin valid content : {{indexData}}
     .line-separator
-    .admin-dialogue__container
-        h2  Dialogues
-      .admin-dialogue__element(ng-repeat="dialogue in dialogues")
+    // dialogs
+    .admin-category
+        h2(ng-click="toggle('dialog')" ng-class="{'is-open': isShown('dialog')}")  Dialogues
+      .admin-dialogue__element(ng-show="isShown('dialog')" ng-repeat="dialogue in dialogues")
         .admin-dialogue__display(ng-show="!dialogue.open")
           .admin-dialogue__display-infos
             .admin-dialogue__etape.info-unit
@@ -20,7 +20,7 @@
             .admin-dialogue__text
               .label Texte:
               .value {{dialogue.initialData.text}}
-          .admin-dialogue__deplier.font-village.hover(ng-click="openDialogue(dialogue)") v
+          .admin-dialogue__deplier.font-village.hover(ng-click="dialog.open(dialogue)") v
         .admin-dialogue__edit(ng-show="dialogue.open")
           .field
             .label Etape
@@ -34,8 +34,8 @@
           .field
             .label Humeur requise (-1/0/1)
             input.form(type="number" ng-model="dialogue.data.mood_required")
-          .button.button--meaty.fond-village.hover(ng-click="putDialogue(dialogue)") Mettre à jour
-          .button.button--meaty.hover.button--danger(ng-click="deleteDialogue(dialogue)") Supprimer
+          .button.button--meaty.fond-village.hover(ng-click="dialog.confirmEdit(dialogue)") Mettre à jour
+          .button.button--meaty.hover.button--danger(ng-click="dialog.delete(dialogue)") Supprimer
           .admin-dialogue__reponses
             h3 Réponses
             .admin-reponse__element(ng-repeat="reponse in dialogue.reponses")
@@ -48,10 +48,10 @@
               .field
                 .label Action (optionnelle)
                 input.form(type="text" ng-model="reponse.action")
-              .button.button--meaty.fond-village.hover(ng-click="putReponse(dialogue, reponse)") Mettre à jour
-              .button.button--meaty.button--danger.hover(ng-click="deleteReponse(dialogue, reponse)") Supprimer
+              .button.button--meaty.fond-village.hover(ng-click="dialog.reponse.confirmEdit(dialogue, reponse)") Mettre à jour
+              .button.button--meaty.button--danger.hover(ng-click="dialog.reponse.delete(dialogue, reponse)") Supprimer
             .line-separator
-            .button.button--meaty.fond-village.hover(ng-click="openNewReponse(dialogue)") + Nouvelle Réponse
+            .button.button--meaty.fond-village.hover(ng-click="dialog.reponse.openNew(dialogue)") + Nouvelle Réponse
             .admin-reponse-new(ng-show="dialogue.openReponse")
               .field
                 .label text
@@ -62,22 +62,51 @@
               .field
                 .label Action (optionnelle)
                 input.form(type="text" ng-model="newReponseData.action")
-              .button.button-meaty.hover(ng-click="closeNewReponse(dialogue)") Annuler
-              .button.button-meaty.fond-village.hover(ng-click="postNewReponse(dialogue)") Valider
-      .button.button--meaty.fond-village.hover(ng-click="openNewDialogue()") + Nouveau Dialogue
+              .button.button-meaty.hover(ng-click="dialog.reponse.closeNew(dialogue)") Annuler
+              .button.button-meaty.fond-village.hover(ng-click="dialog.reponse.postNew(dialogue)") Valider
+      .button.button--meaty.fond-village.hover(ng-click="dialog.openNew()") + Nouveau Dialogue
+      .admin-new-dialogue(ng-show="dialogueCreationOpen")
+        .field
+          .label Etape
+          input.form(type="number" ng-model="newDialogueData.step")
+        .field
+          .label Personnage
+          input.form(type="number" ng-model="newDialogueData.character_id")
+        .field
+          .label Texte
+          textarea.form-area(ng-model="newDialogueData.text")
+        .field
+          .label Humeur requise (-1/0/1)
+          input.form(type="number" ng-model="newDialogueData.mood_required")
+        .button.button--meaty.hover(ng-click="dialog.closeNew()") Annuler
+        .button.button--meaty.fond-village.hover(ng-click="dialog.postNew()") Valider
+    //migration
+    .admin-category
+      h2(ng-click="toggle('migration')" ng-class="{'is-open': isShown('migration')}") Migrations
+      .migration(ng-show="isShown('migration')")
+        .edit-field
+          .label id compte source
+          input.form(type="number" ng-model="account.source_id")
+        .perso-info.other-user(class="{{account.source.village}}")
+          p.font-village {{account.source.display_name}}
 
-    .admin-new-dialogue(ng-show="dialogueCreationOpen")
-      .field
-        .label Etape
-        input.form(type="number" ng-model="newDialogueData.step")
-      .field
-        .label Personnage
-        input.form(type="number" ng-model="newDialogueData.character_id")
-      .field
-        .label Texte
-        textarea.form-area(ng-model="newDialogueData.text")
-      .field
-        .label Humeur requise (-1/0/1)
-        input.form(type="number" ng-model="newDialogueData.mood_required")
-      .button.button--meaty.hover(ng-click="closeNewDialogue()") Annuler
-      .button.button--meaty.fond-village.hover(ng-click="postNewDialogue()") Valider
+        .edit-field
+          .label index perso source 
+          input.form(type="number" ng-model="account.character.source_index")
+        .perso-info.other-user(class="{{account.character.source.village}}") 
+          p perso source
+          p.font-village {{account.character.source.prenom}}
+
+        .edit-field
+          .label id compte cible 
+          input.form(type="number" ng-model="account.target_id")
+        .perso-info.other-user(class="{{account.target.village}}") 
+          p.font-village.other-user {{account.target.display_name}}
+
+        .edit-field
+          .label index perso cible
+          input.form(type="number" ng-model="account.character.target_index")
+        .perso-info.other-user(class="{{account.character.target.village}}") 
+          p.font-village {{account.character.target.prenom}}
+
+        .button.button--meaty.fond-village.hover(ng-click="account.character.move_to()") Transférer {{account.character.source.prenom}}

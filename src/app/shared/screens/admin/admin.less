@@ -1,23 +1,56 @@
-.admin-dialogue {
-  &__container {
-    padding: 25px;
+.admin-category {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    h1, h2, h3 {
-      font-family: 'Wire One', sans-serif;
-    }
-
-    h1 {
-      font-size: 4em;
-    }
-    h2 {
-      font-size: 3em;
-    }
-    h3 { font-size: 2.5em}
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  h1,
+  h2,
+  h3 {
+    font-family: 'Wire One', sans-serif;
   }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    cursor: pointer;
+    font-size: 3em;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      background: @contentDark;
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(calc(-50% + 150px));
+    }
+
+    &:before {
+      content: "►";
+      display: block;
+      position: absolute;
+      left: 600px;
+    }
+
+    &.is-open {
+      font-weight: 700;
+
+      &:before {
+        content: "▼";
+      }
+    }
+  }
+
+  h3 {
+    font-size: 2.5em
+  }
+}
+
+.admin-dialogue {
 
   &__element {
     padding: 15px;
@@ -41,6 +74,7 @@
 
   &__display-infos {
     flex: 1;
+
     .info-unit {
       display: flex;
       margin-bottom: 5px;
