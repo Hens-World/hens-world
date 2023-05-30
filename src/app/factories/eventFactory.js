@@ -8,21 +8,25 @@ hensApp.factory('eventsFactory', [
       getNextEvent() {
         return declareRoute('get', "/next");
       },
-      async getShowcasedEvent() {
+      getShowcasedEvent() {
         let showcased_event = {
           is_next: true,
           event: null
         };
-        const currentEvent = await this.getCurrentEvent();
-        if (currentEvent.data == null) {
-          const nextEvent = await this.getNextEvent();
-          showcased_event.event = nextEvent.data;
-        }
-        else {
-          showcased_event.event = currentEvent.data;
-          showcased_event.is_next = false;
-        }
-        return showcased_event;
+
+        return this.getCurrentEvent().then(currentEvent => {
+          if (currentEvent.data == null) {
+            return this.getNextEvent().then(nextEvent => {
+              showcased_event.event = nextEvent.data;
+              return showcased_event;
+            });
+          }
+          else {
+            showcased_event.event = currentEvent.data;
+            showcased_event.is_next = false;
+            return showcased_event;
+          }
+        });
       },
       pray(village) {
         return declareRoute('post', "/temple/" + village);
