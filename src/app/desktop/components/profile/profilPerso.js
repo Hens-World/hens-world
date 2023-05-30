@@ -98,24 +98,24 @@ hensApp.directive('profilPersonnage', [
                     }
                     else {
                         $scope.personnage.village = $rootScope.villages.indexOf($rootScope.currentUser.village);
-                        $scope.persoPost = JSON.parse(JSON.stringify($scope.personnage));
+                        $scope.persoPost = structuredClone($scope.personnage);
                     }
                 } else {
                     $scope.personnageExists = true;
                     if (($scope.personnage.options & 1) === 1) {
                         $scope.personnage.pouvoir_id = -1;
                         $scope.editCustomPower = true;
+
+                        $scope.persoPost = structedClone($scope.personnage);
+                        $scope.persoPost.histoire = hensApp.parseContent($scope.persoPost.histoire);
+                        $scope.persoPost.particularite = hensApp.parseContent($scope.persoPost.particularite);
+                        $scope.persoPost.caractere = hensApp.parseContent($scope.persoPost.caractere);
+                        $scope.persoPost.pouvoir = hensApp.parseContent($scope.persoPost.pouvoir);
+                        $scope.displayPerso();
                     }
-                    $scope.persoPost = JSON.parse(JSON.stringify($scope.personnage));
-                    $scope.persoPost.histoire = hensApp.parseContent($scope.persoPost.histoire);
-                    $scope.persoPost.particularite = hensApp.parseContent($scope.persoPost.particularite);
-                    $scope.persoPost.caractere = hensApp.parseContent($scope.persoPost.caractere);
-                    $scope.persoPost.pouvoir = hensApp.parseContent($scope.persoPost.pouvoir);
-                    $scope.displayPerso();
-                }
-            };
-            $scope.getPerso();
+                };
+                $scope.getPerso();
+            }
         }
     })
-
 ]);

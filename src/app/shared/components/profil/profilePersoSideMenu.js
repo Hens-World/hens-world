@@ -1,7 +1,7 @@
 angular.module('app').component('profilePersoSideMenu', {
   templateUrl: myLocalized.partials + 'profilePersoSideMenu.html',
   controllerAs: 'persoMenuCtrl',
-  controller: [ '$scope', '$element', '$rootScope',
+  controller: ['$scope', '$element', '$rootScope',
     ($scope, $element, $rootScope) => {
       $scope.menuList = [
         {
@@ -19,15 +19,15 @@ angular.module('app').component('profilePersoSideMenu', {
         }
       ];
 
-      $rootScope.$on('perso-side-menu:update', (event, btn)=>{
+      $rootScope.$on('perso-side-menu:update', (event, btn) => {
         $scope.state = btn;
       });
 
-      $rootScope.$on('perso-side-menu:request', (event, btn)=>{
+      $rootScope.$on('perso-side-menu:request', (event, btn) => {
         $rootScope.$broadcast('perso-side-menu:set', $scope.state);
       });
 
-      $scope.menuClick = (btn) =>{
+      $scope.menuClick = (btn) => {
         $scope.state = btn;
         $rootScope.$broadcast('perso-side-menu:set', btn);
       };

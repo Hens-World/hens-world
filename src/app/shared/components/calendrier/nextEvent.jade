@@ -1,0 +1,7 @@
+.next-event.other-user(class="{{$ctrl.eventVillage}}")
+    .next-event__content
+        img(src="/medias/guide-touristique/calendrier.png")
+        .next-event__info
+            .next-event__name.font-village {{$ctrl.event.name}}
+            .next-event__dates du {{$ctrl.event.formatStartDate}} au {{$ctrl.event.formatEndDate}}
+    a.button.button--meaty.fond-village.hover(href="/guide-touristique/calendrier") en savoir +

@@ -2,4 +2,5 @@
   ng-click="ctrl.menuClick(btn)"
   ng-mouseenter="hovering=true"
   ng-mouseleave="hovering=false"
+  ng-show="btn.available"
   ng-class="{'active': ctrl.state.tag == btn.tag || hovering, 'disabled': btn.disabled}") {{btn.label}}

@@ -13,12 +13,12 @@
           .subject__main-info
             .subject__name(ng-bind-html="subject.title | capitalize")
             .subject__participants
-              span.participant.other-user(class="{{participant.meta.village}}" ng-repeat="participant in subject.userList")
+              span.participant.other-user(class="{{participant.village}}" ng-repeat="participant in subject.userList")
                 span.font-village {{participant.display_name}}
           .subject__last-message
             .subject__date
               span Dernier message:
-            .subject__last-author.other-user(class="{{subject.messages[0].author.meta.village}}")
-              .circle-avatar.small(style="background-image:url({{subject.messages[0].author.meta.avatar}})")
+            .subject__last-author.other-user(class="{{subject.messages[0].author.village}}")
+              .circle-avatar.small(style="background-image:url({{subject.messages[0].author.avatar}})")
               .subject__author-name.font-village {{subject.messages[0].author.display_name}}
               span.info-text le {{subject.formatLastMessage}}

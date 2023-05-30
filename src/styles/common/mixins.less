@@ -23,10 +23,11 @@
 @desktopMinWidth: @desktopWidth - 1px;
 
 @HH: 80px; //header height
+
 :root {
   --headerHeight: @HH;
   --contentWidth: calc(100px - 2%);
-  --fullHeight: calc( var(--vh) * 100 - var(--headerHeight));
+  --fullHeight: calc(var(--vh) * 100 - var(--headerHeight));
 }
 
 @contentWidth: 800px; // SHOULD BE DELETED ...
@@ -34,36 +35,40 @@
 @fullHeight: ~"calc( 100vh - var(--headerHeight))";
 
 @contentMediumWidth: 600px;
-.fullHeight(@decal){
+
+.fullHeight(@decal) {
   height: ~"calc( var(--vh) * 100 - var(--headerHeight) -"@decal~")";
 }
 
-.minHeightFull(@decal){
+.minHeightFull(@decal) {
   min-height: ~"calc( var(--vh) * 100 - var(--headerHeight) -"@decal~")";
 }
 
-.maxFullHeight(@decal){
+.maxFullHeight(@decal) {
   max-height: ~"calc( var(--vh) * 100 - "@HH~" -"@decal~")";
 }
 
-.sideWidth(@decal){
+.sideWidth(@decal) {
   width: ~"calc( 50% - 400px -"@decal~")";
   max-width: ~"calc( 350px - "@decal~")";
   min-width: 200px;
 }
 
 /* used for navbar tricks.. */
-.sideWidthAbs(@decal){
+.sideWidthAbs(@decal) {
   width: ~"calc( 50vw - 400px -"@decal~")";
   max-width: ~"calc( 350px - "@decal~")";
   min-width: 200px;
 }
 
 
-.unselectable(){
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
+.unselectable() {
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
   /* Rules below not implemented in browsers yet */
   -o-user-select: none;
   user-select: none;
@@ -74,13 +79,43 @@
   &::-webkit-input-placeholder {
     @rules();
   }
+
   &:-moz-placeholder {
     @rules();
   }
+
   &::-moz-placeholder {
     @rules();
   }
+
   &:-ms-input-placeholder {
     @rules();
   }
+}
+
+/* pseudo element triangle */
+.bottom-triangle(@width, @height, @color) {
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: @height solid @color;
+    border-right: @width / 2 solid transparent;
+    border-left: @width / 2 solid transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    bottom: 0;
+  }
+}
+
+/*apply triangle on self */
+.down-triangle(@width, @height, @color) {
+  display: block;
+  height: 0;
+  width: 0;
+  border-top: @height solid @color;
+  border-right: @width / 2 solid transparent;
+  border-left: @width / 2 solid transparent;
 }

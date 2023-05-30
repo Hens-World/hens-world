@@ -2,10 +2,29 @@ hensApp.factory('eventsFactory', [
   '$http', '$rootScope', function ($http, $rootScope) {
     const declareRoute = hensApp.declareFactoryRoute('events', $http, $rootScope);
     return {
-      getCurrentEvent(){
+      getCurrentEvent() {
         return declareRoute('get', "/current");
       },
-      pray(village){
+      getNextEvent() {
+        return declareRoute('get', "/next");
+      },
+      async getShowcasedEvent() {
+        let showcased_event = {
+          is_next: true,
+          event: null
+        };
+        const currentEvent = await this.getCurrentEvent();
+        if (currentEvent.data == null) {
+          const nextEvent = await this.getNextEvent();
+          showcased_event.event = nextEvent.data;
+        }
+        else {
+          showcased_event.event = currentEvent.data;
+          showcased_event.is_next = false;
+        }
+        return showcased_event;
+      },
+      pray(village) {
         return declareRoute('post', "/temple/" + village);
       },
       halloweenPumpkins: {
@@ -14,12 +33,12 @@ hensApp.factory('eventsFactory', [
         },
         getLeft(village, zone, quartier) {
           let route = `/halloween-pumpkins/left?village=${village}&zone=${zone}`;
-          if(quartier) {
+          if (quartier) {
             route += `&quartier=${quartier}`;
           }
           return declareRoute('get', route);
         },
-        create(pumpkin_id, village, zone ,quartier) {
+        create(pumpkin_id, village, zone, quartier) {
           console.log('creating pumpking find', pumpkin_id, village, zone, quartier);
           return declareRoute('post', '/halloween-pumpkins/', {
             pumpkin_id,
@@ -55,32 +74,32 @@ hensApp.factory('eventsFactory', [
          * @param data {x:number, y: number}
          * @returns {*}
          */
-        plantSeed(data){
+        plantSeed(data) {
           return declareRoute('post', "/equinoxe-printemps", data);
         },
-        getMissingSeeds(){
+        getMissingSeeds() {
           return declareRoute('get', "/equinoxe-printemps/missing");
         },
-        getMySeeds(){
+        getMySeeds() {
           return declareRoute('get', "/equinoxe-printemps/my-seeds");
         },
-        getSolutionNote(){
+        getSolutionNote() {
           return declareRoute('get', "/equinoxe-printemps/solution");
         }
       },
       carnavalCachette: {
-        unlockSecret(){
+        unlockSecret() {
           return declareRoute('post', "/carnaval-cachette/secret", {});
         }
       },
       solsticeEte: {
-        getLanterns(quartier){
+        getLanterns(quartier) {
           return declareRoute('get', `/solstice-ete?quartier=${quartier}`);
         },
-        createLantern(lanternData){
+        createLantern(lanternData) {
           return declareRoute('post', "/solstice-ete/", lanternData);
         },
-        getLanternsLeft(){
+        getLanternsLeft() {
           return declareRoute('get', "/solstice-ete/left");
         }
       },
@@ -118,10 +137,10 @@ hensApp.factory('eventsFactory', [
           return declareRoute('post', '/solstice-hiver/', poisson);
         },
         feedPoisson(poisson_id) {
-          return declareRoute('put', '/solstice-hiver/' + poisson_id, {action: 'FEED'});
+          return declareRoute('put', '/solstice-hiver/' + poisson_id, { action: 'FEED' });
         },
         favorPoisson(poisson_id) {
-          return declareRoute('put', '/solstice-hiver/' + poisson_id, {action: 'FAVOR'});
+          return declareRoute('put', '/solstice-hiver/' + poisson_id, { action: 'FAVOR' });
         },
         getMyStatus() {
           return declareRoute('get', '/solstice-hiver/inventory');

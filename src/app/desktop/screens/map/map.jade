@@ -1,52 +1,39 @@
 .map-container
   .side-container
+    .rounded-section
+      h1 VOYAGEUR·SE·S
     .pop-container
-      .wrapper.other-user(class="{{village.id}}" ng-repeat="village in popList")
-        .pop-unit.other-user.fond-village(population-info pop-number="village.number" village="village.id")
-    .unique-container 
-      .unique(ng-click="tchatLaunch()") 
-        .title Discussion de comptoir
-        svg(width="40" height="25")
-          path(d='M0,0 40,0 20,25')
-        .connection {{$root.info.globalList}}
-
-      .unique.active
-        .connection {{$root.info.rpList}}
-        .title Jeu de rôle
-        svg(width="40" height="25")
-          path(d='M0,0 40,0 20,25')
-        .list
-          a.list-bt.font-village.hover(href="roleplay/chat") Jeu de rôle instantané
-          a.list-bt.font-village.hover(href="roleplay/differe") Jeu de rôle différé
-          a.list-bt.font-village.hover(href="roleplay/archives") Accéder aux archives
-      //.unique.disabled()
-      //  .title Domaine des cheftains
-      //  svg(width="40" height="25")
-      //    path(d='M0,0 40,0 20,25')
-      //.unique.disabled()
-      //  .title A venir
-      //  svg(width="40" height="25")
-      //  pro  path(d='M0,0 40,0 20,25')
+      .pop-unit.wrapper.other-user(class="{{village.id}}" ng-repeat="village in popList")
+        .fond-village(population-info pop-number="village.number" village="village.id")
       .crush-run-title(ng-if="currentEvent.slug == 'coupe-crushrun'")
         .main-title Coupe Crushrun
         .sub-title Rendez-vous au colisée d'Anar!
       .crush-run-scores(ng-if="currentEvent.slug == 'coupe-crushrun'")
         .crush-run-score(ng-repeat="score in crushrunScores" ng-class="{'king': score.king}" class="{{score.village}}")
           .value {{score.score}}
+    .rounded-section
+      h1 {{event.is_next == true ? "PROCHAIN ÉVÈNEMENT" : "ÉVÈNEMENT EN COURS"}}
+      next-event()
+    .rounded-section
+      saison-display
     //.version-container
       //h2 Version 0.6
       //p Le jeu de rôle différé!
       //p Un nouveau type de jeu de rôle fait son apparition! Pour ceux qui aiment prendre le temps d'écrire, cette version du jeu de rôle permet d'étaler une partie sur plusieurs semaines!
       //a.link.font-village.hover(target='_blank', href="http://forums.hens-world.fr/t20-notes-de-mise-a-jour-0-4-1") Lire la suite
-    .social-links
-      a.mini-link(target='_blank', href='https://www.facebook.com/hens.galerie')
-        .img.facebook
-      a.mini-link(target='_blank', href='https://www.youtube.com/c/hensworld')
-        .img.youtube
-      a.mini-link(target='_blank', href='https://twitter.com/Hens_world')
-        .img.twitter
-      a.mini-link(target='_blank', href='https://plus.google.com/+HensWorld')
-        .img.google-plus
+    .rounded-section
+      .social-links
+        a.mini-link(target='_blank', href='https://www.facebook.com/hens.galerie')
+          .img.facebook
+        a.mini-link(target='_blank', href='https://www.youtube.com/c/hensworld')
+          .img.youtube
+        a.mini-link(target='_blank', href='https://twitter.com/Hens_world')
+          .img.twitter
+        a.mini-link(target='_blank', href='https://discord.gg/s28HfU9')
+          .img.discord
+        a.mini-link(target='_blank', href='https://www.instagram.com/hens_world/')
+          .img.instagram
+        
 
   .map-wrapper
     video#map-global

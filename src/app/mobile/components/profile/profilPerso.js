@@ -73,7 +73,7 @@ hensApp.directive('profilPersonnage', [
                 $scope.personnageList[index] = personnage;
             });
 
-            $scope.selectPersonnage = (personnage)=>{
+            $scope.selectPersonnage = (personnage) => {
                 $scope.personnage = personnage;
                 $scope.personnageIndex = $scope.personnageList.findIndex(p => p.fid === personnage.fid);
                 $rootScope.$broadcast('profil:selectPerso', personnage.fid);
@@ -105,7 +105,7 @@ hensApp.directive('profilPersonnage', [
                         $scope.personnage.pouvoir_id = -1;
                         $scope.editCustomPower = true;
                     }
-                    $scope.persoPost = JSON.parse(JSON.stringify($scope.personnage));
+                    $scope.persoPost = structuredClone($scope.personnage);
                     $scope.persoPost.histoire = hensApp.parseContent($scope.persoPost.histoire);
                     $scope.persoPost.particularite = hensApp.parseContent($scope.persoPost.particularite);
                     $scope.persoPost.caractere = hensApp.parseContent($scope.persoPost.caractere);

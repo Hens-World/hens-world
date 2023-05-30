@@ -141,6 +141,41 @@ hensApp.c.months = [
   'Décembre'
 ];
 
+hensApp.getSeasonVillage = function (momentDate) {
+  const seasonIndex = hensApp.getSeasonIndex(momentDate);
+  const villageToSeasonMapping = [1, 2, 3, 0];
+  return hensApp.villages[villageToSeasonMapping[seasonIndex]];
+}
+
+hensApp.getSeasonIndex = function (momentDate) {
+  const adjustedDate = momentDate.year(2019);
+  let seasonIndex = 0;
+  const startOfWinter = moment("20190101");
+  const startOfSpring = moment("20190321");
+  const startOfSummer = moment("20190621");
+  const startOfAutumn = moment("20190921");
+  const startOfWinterEOY = moment("20191221");
+
+  if (adjustedDate.isBetween(startOfWinter, startOfSpring)) {
+    seasonIndex = 0;
+  }
+  else if (adjustedDate.isBetween(startOfSpring, startOfSummer)) {
+    seasonIndex = 1;
+  }
+  else if (adjustedDate.isBetween(startOfSummer, startOfAutumn)) {
+    seasonIndex = 2;
+  }
+  else if (adjustedDate.isBetween(startOfAutumn, startOfWinterEOY)) {
+    seasonIndex = 3;
+  }
+  else {
+    seasonIndex = 0;
+  }
+  return seasonIndex;
+}
+
+hensApp.c.seasons = ["Hiver", "Printemps", "Summer", "Autumn"];
+
 hensApp.removeAllChildren = function (elt) {
   while (elt.firstChild) {
     elt.removeChild(elt.firstChild);
@@ -159,7 +194,7 @@ hensApp.niceScrollOptions = {
   }
 };
 
-hensApp.clone = obj => JSON.parse(JSON.stringify(obj));
+hensApp.clone = obj => { return structuredClone(obj) };
 
 hensApp.rgba = (rgb, a) => `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${a})`;
 

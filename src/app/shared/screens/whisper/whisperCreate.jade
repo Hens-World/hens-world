@@ -12,7 +12,7 @@
         .label Destinataire
         input.form(type="text" ng-model="userSearchQuery" ng-class="{'validated': newSubject.target.display_name == userSearchQuery && userSearchQuery.length > 0}")
       .whisper__valid-list(ng-show="searchUsers.length > 0 && !(newSubject.target.display_name == userSearchQuery && userSearchQuery.length > 0)")
-        .whisper__valid-element.other-user(ng-repeat="user in searchUsers" ng-click="setTarget(user)" class="{{user.meta.village}}")
+        .whisper__valid-element.other-user(ng-repeat="user in searchUsers" ng-click="setTarget(user)" class="{{user.village}}")
           span.font-village {{user.display_name}}
       .field
         .label Sujet

@@ -186,9 +186,14 @@ hensApp.controller('commonController', [
         };
 
         $rootScope.setSubjectSeen = function (subject) {
-            const idx = $rootScope.newMessages.findIndex(message => message.id === subject.id);
-            if (idx >= 0) {
-                return $rootScope.newMessages.splice(idx, 1);
+            if ($rootScope.newMessages) {
+                const idx = $rootScope.newMessages.findIndex(message => message.id === subject.id);
+                if (idx >= 0) {
+                    return $rootScope.newMessages.splice(idx, 1);
+                }
+            }
+            else {
+                setTimeout($rootScope.setSubjectSeen.bind(this, subject), 100);
             }
         };
 

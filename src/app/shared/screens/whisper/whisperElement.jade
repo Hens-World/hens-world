@@ -10,9 +10,9 @@
       .whisper__main
         .subject__header.fond-village
           .whisper-message__title {{subject.title}}
-        .whisper-message.other-user(ng-repeat="message in subject.messages" class="{{message.author.meta.village}}")
+        .whisper-message.other-user(ng-repeat="message in subject.messages" class="{{message.author.village}}")
           .whisper-message__author
-            a.circle-avatar.small(href="profil/{{message.author.ID}}" style="background-image:url({{message.author.meta.avatar}})")
+            a.circle-avatar.small(href="profil/{{message.author.ID}}" style="background-image:url({{message.author.avatar}})")
             a.whisper-message__name.font-village(href="profil/{{message.author.ID}}") {{message.author.display_name}}
             .whisper-message__date {{message.formatDate}}
           .whisper-message__content(ng-bind-html="message.message")

@@ -23,7 +23,7 @@ hensApp.controller('AsyncDetail', [
 
     $scope.populateMessages = () => {
       $scope.roleplay.messages.forEach(function (msg) {
-        msg.author = JSON.parse(JSON.stringify($scope.roleplay.userList[msg.user_id]));
+        msg.author = structuredClone($scope.roleplay.userList[msg.user_id]);
         if (!msg.author) {
           msg.author = {
             characters: [],

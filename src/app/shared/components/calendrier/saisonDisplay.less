@@ -1,0 +1,24 @@
+saison-display {
+    background-color: @contentDark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.saison-display {
+    &__flag {
+        background-color: @buttonHoverDark;
+        .bottom-triangle(40px, 18px, @buttonHoverDark);
+        transform: translateY(-10%);
+    }
+
+    &__icon {
+        width: 40px;
+    }
+
+    &__text {
+        color: @darkGray;
+        margin-left: 15px;
+    }
+}
