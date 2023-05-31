@@ -15,7 +15,7 @@ self.addEventListener('install', function (event) {
 
 self.addEventListener('push', (event) => {
   let [title, body] = event.data.text().split('||');
-  const promiseChain = self.showNotification(title,  {
+  const promiseChain = self.registration.showNotification(title, {
     body: body,
   });
   event.waitUntil(promiseChain);
@@ -33,11 +33,11 @@ self.addEventListener('message', function (event) {
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
+    caches.keys().then(function (cacheNames) {
       return Promise.all(
-        cacheNames.filter(function(cacheName) {
+        cacheNames.filter(function (cacheName) {
           return cacheName !== CACHE_NAME;
-        }).map(function(cacheName) {
+        }).map(function (cacheName) {
           return caches.delete(cacheName);
         })
       );
@@ -76,7 +76,7 @@ self.addEventListener('fetch', function (event) {
             });
         });
       }
-    }).catch(e=>{
+    }).catch(e => {
       console.log("ERROR respond error", Object.keys(e), event.request);
-  }));
+    }));
 });
