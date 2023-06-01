@@ -72,3 +72,36 @@ each(range(5), {
 .pop-info__triangle.ulmo {
     border-top-color: @ulmoNeuter;
 }
+
+
+
+@container pop-sidebar (max-width: 300px) {
+    .pop-info {
+        width: 40px;
+
+        .number {
+            font-size: 1.5em;
+        }
+
+        &__triangle {
+
+            .down-triangle(40px, 19px, @guestNeuter);
+        }
+    }
+}
+
+@container pop-sidebar (max-width: 250px) {
+    .pop-info {
+        width: 32px;
+
+        .number {
+            font-size: 1.3em;
+            color: red;
+        }
+
+        &__triangle {
+
+            .down-triangle(32px, 15px, @guestNeuter);
+        }
+    }
+}
