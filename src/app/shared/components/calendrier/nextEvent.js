@@ -1,5 +1,5 @@
 function formatEventDate(momentDate) {
-    return (momentDate.date() + 1) + " " + hensApp.c.months[momentDate.month()];
+    return momentDate.date() + " " + hensApp.c.months[momentDate.month()];
 }
 
 angular.module('app').component('nextEvent', {
