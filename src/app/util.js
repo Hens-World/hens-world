@@ -174,7 +174,7 @@ hensApp.getSeasonIndex = function (momentDate) {
   return seasonIndex;
 }
 
-hensApp.c.seasons = ["Hiver", "Printemps", "Summer", "Autumn"];
+hensApp.c.seasons = ["Hiver", "Printemps", "Été", "Automne"];
 
 hensApp.removeAllChildren = function (elt) {
   while (elt.firstChild) {
