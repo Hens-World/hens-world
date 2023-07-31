@@ -28,41 +28,57 @@ class ProfileShared {
     });
 
     this.setRole = () => {
-      if ($scope.user) {
+      if (this.$scope.user) {
         const pronom = !isNaN($scope.user.pronom) ? $scope.user.pronom : 0;
-        if ($scope.user.role === "membre") {
-          $scope.currentRole = this.labels.membre[pronom];
+        if (this.$scope.user.role === "membre") {
+          this.$scope.currentRole = this.labels.membre[pronom];
         } else {
-          $scope.currentRole = this.labels.contrib[pronom];
+          this.$scope.currentRole = this.labels.contrib[pronom];
         }
       }
     };
 
     this.switchToCharacter = () => {
-      if ($scope.personnage || $scope.isMe) {
-        $scope.showProfil = false;
+      if (this.$scope.personnage || this.$scope.isMe) {
+        this.$scope.showProfil = false;
       }
     };
 
     this.switchToAccount = () => {
-      if (this.$scope.personnage || $scope.isMe) {
-        $scope.showProfil = !$scope.showProfil;
+      if (this.$scope.personnage || this.$scope.isMe) {
+        this.$scope.showProfil = !this.$scope.showProfil;
       }
     };
 
-    this.initProfile = (data)=> {
+    this.initProfile = (data) => {
       this.$scope.user = data.data;
       this.$scope.shared.setRole();
-      this.userFactory.getCharacters($scope.user.ID).then((data) => {
+      this.userFactory.getCharacters(this.$scope.user.ID).then((data) => {
         this.$scope.persoList = data.data;
         this.$scope.personnage = this.$scope.persoList[0];
         if (this.$scope.personnage) {
-          this.$scope.personnage.prenomFormat = $scope.personnage.prenom.replace("'", '-');
+          this.$scope.personnage.prenomFormat = this.$scope.personnage.prenom.replace("'", '-');
+          this.$scope.personnage.exists = true;
+        }
+        else {
+          this.$scope.personnage = {
+            exists: false,
+            prenom: '',
+            nom: '',
+            suffixe: '',
+            age: '',
+            village: '',
+            histoire: '',
+            caractere: '',
+            particularite: '',
+            pouvoir: ''
+          };
         }
         //init reroutes
         let char_index = parseInt(this.$location.search().character);
         if (!isNaN(char_index) && char_index <= 3 && this.$scope.persoList.length >= char_index) {
-          this.$scope.personnage = this.$scope.persoList.find(p=> p.char_index === char_index);
+          this.$scope.personnage = this.$scope.persoList.find(p => p.char_index === char_index);
+          this.$scope.personnage.exists = true;
           this.switchToCharacter();
         }
         if (this.$location.search().tab && ($location.search().tab === 'char')) {

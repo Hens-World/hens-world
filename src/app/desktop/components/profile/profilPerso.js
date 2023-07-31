@@ -78,44 +78,27 @@ hensApp.directive('profilPersonnage', [
             $rootScope.$broadcast('perso-side-menu:request');
 
             $scope.getPerso = function () {
+                console.log("get perso ! ", $scope.personnage);
                 if (!$scope.personnage) {
-                    $scope.personnageExists = false;
-                    $scope.personnage = {
-                        prenom: '',
-                        nom: '',
-                        suffixe: '',
-                        age: '',
-                        village: '',
-                        histoire: '',
-                        caractere: '',
-                        particularite: '',
-                        pouvoir: ''
-                    };
-                    // $location.path('/choix-village');
-                    // $scope.toggleEditFiche();
-                    if (!$rootScope.currentUser.village) {
-                        $scope.$broadcast('toggleNoVillage', true);
-                    }
-                    else {
-                        $scope.personnage.village = $rootScope.villages.indexOf($rootScope.currentUser.village);
-                        $scope.persoPost = structuredClone($scope.personnage);
-                    }
+                    setTimeout($scope.getPerso, 100);
                 } else {
-                    $scope.personnageExists = true;
-                    if (($scope.personnage.options & 1) === 1) {
-                        $scope.personnage.pouvoir_id = -1;
-                        $scope.editCustomPower = true;
-
-                        $scope.persoPost = structedClone($scope.personnage);
-                        $scope.persoPost.histoire = hensApp.parseContent($scope.persoPost.histoire);
-                        $scope.persoPost.particularite = hensApp.parseContent($scope.persoPost.particularite);
-                        $scope.persoPost.caractere = hensApp.parseContent($scope.persoPost.caractere);
-                        $scope.persoPost.pouvoir = hensApp.parseContent($scope.persoPost.pouvoir);
-                        $scope.displayPerso();
+                    $scope.personnageExists = $scope.personnage.exists;
+                    $scope.persoPost = hensApp.clone($scope.personnage);
+                    if ($scope.personnageExists) {
+                        if (($scope.personnage.options & 1) === 1) {
+                            $scope.personnage.pouvoir_id = -1;
+                            $scope.editCustomPower = true;
+                            $scope.persoPost = structedClone($scope.personnage);
+                            $scope.persoPost.histoire = hensApp.parseContent($scope.persoPost.histoire);
+                            $scope.persoPost.particularite = hensApp.parseContent($scope.persoPost.particularite);
+                            $scope.persoPost.caractere = hensApp.parseContent($scope.persoPost.caractere);
+                            $scope.persoPost.pouvoir = hensApp.parseContent($scope.persoPost.pouvoir);
+                            $scope.displayPerso();
+                        }
                     }
                 };
-                $scope.getPerso();
             }
+            $scope.getPerso();
         }
     })
 ]);
