@@ -88,7 +88,7 @@ hensApp.directive('profilPersonnage', [
                         if (($scope.personnage.options & 1) === 1) {
                             $scope.personnage.pouvoir_id = -1;
                             $scope.editCustomPower = true;
-                            $scope.persoPost = structedClone($scope.personnage);
+                            $scope.persoPost = structuredClone($scope.personnage);
                             $scope.persoPost.histoire = hensApp.parseContent($scope.persoPost.histoire);
                             $scope.persoPost.particularite = hensApp.parseContent($scope.persoPost.particularite);
                             $scope.persoPost.caractere = hensApp.parseContent($scope.persoPost.caractere);
