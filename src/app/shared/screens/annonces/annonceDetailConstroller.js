@@ -24,7 +24,7 @@ hensApp.controller('annonceDetail', ['$scope', 'annoncesFactory', '$rootScope', 
                         $scope.annonce.formatDate = moment($scope.annonce.start_time).format('DD/MM');
                     }
                     for (const participant of $scope.annonce.participants) {
-                        if ($rootScope.currentUser.ID === participant.ID) {
+                        if (participant && $rootScope.currentUser.ID === participant.ID) {
                             $scope.annonce.isParticipating = true;
                             break;
                         }
