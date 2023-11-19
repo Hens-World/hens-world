@@ -218,7 +218,6 @@ hensApp.readAbsCookie = function (nameEQ) {
   const ca = document.cookie.split(';');
   for (let index = 0; index < ca.length; index++) {
     let c = ca[index];
-    console.log(c, nameEQ);
     while (c.charAt(0) === ' ') {
       c = c.substring(1, c.length);
     }

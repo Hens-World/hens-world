@@ -53,7 +53,6 @@ hensApp.controller('AsyncDetail', [
       for (let id in $scope.roleplay.userList) {
         userFactory.getCharacters(id).then(res => {
           $scope.roleplay.userList[id].characters = res.data;
-          console.log(id, $rootScope.currentUser.ID);
           if (parseInt(id) === $rootScope.currentUser.ID) {
             $scope.myCharacters = res.data;
           }

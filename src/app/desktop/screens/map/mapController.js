@@ -37,7 +37,6 @@ hensApp.controller('Map', [
                 count_village: true
             }).then(result => {
                 const villages_order = [...hensApp.villages, "neuter"];
-                console.log(villages_order, result.data);
                 $scope.popList = result.data
                     .sort((a, b) => {
                         if (villages_order.indexOf(a.meta_value) < villages_order.indexOf(b.meta_value)) return -1;

@@ -70,7 +70,6 @@ angular.module('app').controller('Calendrier', [
         currentMd.day() !== 1) {
         $scope.monthDays.push($scope.getDayObject(moment(currentMd.toDate()).toDate()));
         currentMd = currentMd.add(1, 'days');
-        console.log(currentMd.month(), md.month(), currentMd.year(), md.year());
       }
     };
 

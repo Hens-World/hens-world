@@ -19,9 +19,9 @@ hensApp.factory('socket', function ($rootScope) {
         $rootScope.setAlert("success", "server01");
       });
 
-      socket.on('connect:confirm', () =>{
+      socket.on('connect:confirm', () => {
         $rootScope.socketConnected = true;
-      } );
+      });
 
       socket.on('connect_error', data => {
         $rootScope.setAlert('error', 'server01')
@@ -80,7 +80,6 @@ hensApp.factory('globalChat', function ($rootScope) {
   let socket = null;
   return {
     connect() {
-      console.log('connecting global chat');
       if ((socket == null)) {
         socket = io(hensApp.socketUrl + '/global-chat');
       } else {
@@ -139,7 +138,7 @@ hensApp.factory('chatRp', function ($rootScope) {
       return socket.disconnect();
     },
     reconnect() {
-      socket({'force new connection': true});
+      socket({ 'force new connection': true });
     },
 
     on(eventName, callback) {

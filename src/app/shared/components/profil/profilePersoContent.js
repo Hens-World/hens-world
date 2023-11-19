@@ -205,7 +205,6 @@ angular.module('app').component('profilePersoContent', {
                     if (n.name !== o.name) {
                         if (n.name && (n.name.trim().length > 1)) {
                             userFactory.searchCharacters(n.name).then(data => {
-                                console.log(data);
                                 $scope.suggestionList = data.data;
                             });
                         } else {

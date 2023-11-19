@@ -8,7 +8,6 @@ hensApp.controller('Profil', [
 
     $scope.disconnect = (e) => {
       accountFactory.disconnect().then(data => {
-        console.log("disconnect mobile")
         location.replace("/navbar");
         setTimeout(() => {
 

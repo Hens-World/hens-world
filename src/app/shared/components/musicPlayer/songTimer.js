@@ -12,15 +12,14 @@ angular.module('app').component('songTimer', {
       const startX = this.bar.offset().left;
       const relDistance = Math.min(maxWidth, Math.max(0, mouseX - startX));
       percent = relDistance / maxWidth;
-      console.log(percent);
-      $scope.$emit('timer-update', {percent: percent, musicBound: this.musicBound});
+      $scope.$emit('timer-update', { percent: percent, musicBound: this.musicBound });
     };
 
     this.$onInit = () => {
       this.bar = $element.find('.song-timer');
       this.barFill = $element.find('.song-timer__fill');
       this.timerUpdateEvent = $scope.$on('timer-updated', (event, data) => {
-        $scope.safeApply(()=>{
+        $scope.safeApply(() => {
           if (data) {
             if (!this.musicBound || data.slug === this.musicBound) {
               this.percent = data.percent * 100;
@@ -34,7 +33,7 @@ angular.module('app').component('songTimer', {
 
       this.bar.mousedown((e) => {
         this.isMovingTime = true;
-        $scope.$emit('timer-update-start', {slug: this.musicBound});
+        $scope.$emit('timer-update-start', { slug: this.musicBound });
         this.onBarEvent(e);
       });
 
@@ -46,7 +45,7 @@ angular.module('app').component('songTimer', {
       $(document).mousemove(this.mouseMove);
 
       this.mouseUp = (e) => {
-        $scope.$emit('timer-update-stop', {slug: this.musicBound});
+        $scope.$emit('timer-update-stop', { slug: this.musicBound });
         this.isMovingTime = false;
       };
       $(document).mouseup(this.mouseUp);
@@ -62,7 +61,7 @@ angular.module('app').component('songTimer', {
     $scope.safeApply = function (fn) {
       var phase = this.$root.$$phase;
       if (phase == '$apply' || phase == '$digest') {
-        if (fn && (typeof(fn) === 'function')) {
+        if (fn && (typeof (fn) === 'function')) {
           fn();
         }
       } else {

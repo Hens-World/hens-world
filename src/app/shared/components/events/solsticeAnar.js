@@ -86,7 +86,7 @@ angular.module('app').component('solsticeAnar', {
                             'Vous avez utilisé tout l\'espace sur le papier à lettre !');
                         if (this.type === 'ui') {
                             $element.find('textarea')[0].animate([
-                                {outline: '5px solid rgba(255,0,0,0.6)'}, {outline: '1px solid rgba(255,0,0,0)'}
+                                { outline: '5px solid rgba(255,0,0,0.6)' }, { outline: '1px solid rgba(255,0,0,0)' }
                             ], {
                                 duration: 350
                             });
@@ -98,7 +98,6 @@ angular.module('app').component('solsticeAnar', {
                     this.resetPendingLantern();
                     eventsFactory.solsticeEte.getLanterns(this.map.district).then(data => {
                         let lanterns = data.data;
-                        console.log(lanterns);
                         this.lanterns = lanterns.map((lantern) => {
                             lantern.themeData = this.lanternThemes.find(theme => theme.name === lantern.theme);
                             if (lantern.anonymous) {
@@ -228,7 +227,6 @@ angular.module('app').component('solsticeAnar', {
                     tmp.innerHTML = this.focusedInput.value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
                     document.body.appendChild(tmp);
                     var theWidth = tmp.getBoundingClientRect().width;
-                    console.log(theWidth);
                     document.body.removeChild(tmp);
                     this.focusedInput.style.width = theWidth + 'px';
                 };

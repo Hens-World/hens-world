@@ -42,7 +42,6 @@ angular.module('app').component('mapCachette', {
       this.selectedProp = null;
       this.placingProp = false;
       this.initLobby = () => {
-        console.log('cachette Socket not connected');
         cachetteSocket.connect();
         cachetteSocket.emit('lobby:load');
         cachetteSocket.on('lobby:update', (data) => {
@@ -146,11 +145,11 @@ angular.module('app').component('mapCachette', {
 
         cachetteSocket.on('game:kill', (data) => {
           data.created = +new Date();
-          setTimeout(()=>{
+          setTimeout(() => {
             data.visible = true;
-          },0);
+          }, 0);
           this.killFeed.push(data);
-          setTimeout(() => {data.visible = false}, 10000);
+          setTimeout(() => { data.visible = false }, 10000);
         });
         cachetteSocket.emit('game:me');
         cachetteSocket.on('game:me', (data) => {
@@ -216,7 +215,6 @@ angular.module('app').component('mapCachette', {
           //TODO: hidden for now, because it helps too much
           if (document.querySelector('.map-cachette__hunter-aiming')) {
             let minDistance = this.game.props.filter(prop => prop.alive).reduce((acc, prop) => {
-              console.log(this.map.mapOffset, prop.position, 'offset');
               var a = -this.map.mapOffset.x + window.innerWidth / 2 - prop.position.x;
               var b = -this.map.mapOffset.y + window.innerHeight / 2 - prop.position.y;
               let distance = Math.sqrt(a * a + b * b);

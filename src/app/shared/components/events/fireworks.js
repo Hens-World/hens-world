@@ -107,7 +107,6 @@ angular.module('app').component('fireworks', {
           this.fireworks.launchFirework(this.currentOptions);
           fireworkSocket.emit('launchFirework', this.currentOptions);
           this.counter--;
-          console.log(this.counter);
         } else {
           $rootScope.setAlert('error', "Vous n'avez pas de feu d'artifice prêt au lancement! Attendez quelques secondes :)");
         }

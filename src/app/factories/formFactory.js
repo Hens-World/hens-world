@@ -46,7 +46,7 @@ angular.module('app').factory('formFactory', ['$rootScope', function ($rootScope
       annonce_edit: "Edition de l'annonce réussie!",
       annonce_invite_accept: "Vous avez bien accepté cette annonce",
       annonce_invite_decline: "Vous avez refusé de participer à cette annonce",
-      annonce_create : "Annonce créée! Vous pouvez l'éditer à tout moment pour aider à l'organisation!",
+      annonce_create: "Annonce créée! Vous pouvez l'éditer à tout moment pour aider à l'organisation!",
       annonce_close: "L'annonce à été fermée avec Succès! S'il s'agit d'une erreur, contactez nous par mail: contact@hens-world.fr",
       relation_create: "Relation créée!",
       relation_edit: "Relation éditée avec succès!",
@@ -60,7 +60,7 @@ angular.module('app').factory('formFactory', ['$rootScope', function ($rootScope
     let message;
 
     let typeTranslations = this.TT[type];
-    if(typeTranslations) {
+    if (typeTranslations) {
       message = this.TT[type][tag];
     } else {
       message = tag;

@@ -15,7 +15,7 @@ hensApp.controller('Population', [
       }
     };
 
-    $scope.$on('onRepeatLast', ()=>{
+    $scope.$on('onRepeatLast', () => {
       let page = document.querySelector('.page-container');
       if (page.offsetHeight >= page.scrollHeight && !$scope.searchingTeam && $scope.filterIndiv.display_name.length < 3) {
         $scope.nextPage();
@@ -66,7 +66,6 @@ hensApp.controller('Population', [
         search: $scope.filterIndiv.display_name.length >= 3 ? $scope.filterIndiv.display_name : null
       }).then(function (res) {
         const userList = [];
-        console.log(res.data);
         for (let user of Array.from(res.data)) {
           if (!user.avatar) {
             user.avatar = myLocalized.medias + 'profil/no-avatar.png';

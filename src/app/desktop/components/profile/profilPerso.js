@@ -78,7 +78,6 @@ hensApp.directive('profilPersonnage', [
             $rootScope.$broadcast('perso-side-menu:request');
 
             $scope.getPerso = function () {
-                console.log("get perso ! ", $scope.personnage);
                 if (!$scope.personnage) {
                     setTimeout($scope.getPerso, 100);
                 } else {
@@ -93,8 +92,8 @@ hensApp.directive('profilPersonnage', [
                             $scope.persoPost.particularite = hensApp.parseContent($scope.persoPost.particularite);
                             $scope.persoPost.caractere = hensApp.parseContent($scope.persoPost.caractere);
                             $scope.persoPost.pouvoir = hensApp.parseContent($scope.persoPost.pouvoir);
-                            $scope.displayPerso();
                         }
+                        $scope.displayPerso();
                     }
                 };
             }

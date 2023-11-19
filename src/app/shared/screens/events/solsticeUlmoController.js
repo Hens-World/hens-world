@@ -336,7 +336,6 @@ angular.module('app').controller('SolsticeUlmo', [
         innerSvg.style.animationDelay = -Math.random() * 10 + 's';
         innerSvg.style.transformOrigin =
           `${data.pivot.x * scale * anchor.scale}px ${data.pivot.y * scale * anchor.scale}px`;
-        console.log(innerSvg, elt.getAttribute('icon-url'));
       } else {
         if (poissonData.observer) {
           poissonData.observer.disconnect();

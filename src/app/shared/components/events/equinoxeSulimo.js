@@ -277,7 +277,7 @@ angular.module('app').component('equinoxeSulimo', {
         this.demoPlaying = false;
         Tone.Transport.stop();
         this.currentSynth.triggerRelease();
-        if(this.currentPart) {
+        if (this.currentPart) {
           this.currentPart.removeAll();
           this.currentPart = null;
         }
@@ -314,7 +314,6 @@ angular.module('app').component('equinoxeSulimo', {
         let data = this.parseMusicSheet(nextSheet.formattedMusicSheet);
         // console.log("partition for: ", musicData.instrument, musicData.formattedMusicSheet, data);
         nextSheet.currentPart = new Tone.Part((time, value) => {
-          // console.log(time, value, "played");
           nextSheet.toneInstrument.triggerAttackRelease(value.note, value.duration, time);
         }, data);
         nextSheet.prop = this.map.propLoadList.find(prop => prop.label.indexOf(nextSheet.instrument) >= 0);
@@ -378,7 +377,6 @@ angular.module('app').component('equinoxeSulimo', {
           let data = this.parseMusicSheet(musicData.formattedMusicSheet);
           // console.log("partition for: ", musicData.instrument, musicData.formattedMusicSheet, data);
           musicData.currentPart = new Tone.Part((time, value) => {
-            // console.log(time, value, "played");
             musicData.toneInstrument.triggerAttackRelease(value.note, value.duration, time);
           }, data);
           musicData.prop = this.map.propLoadList.find(prop => prop.label.indexOf(musicData.instrument) >= 0);

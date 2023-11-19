@@ -23,7 +23,6 @@ angular.module('app').controller('Admin', [
 
         $scope.toggle = (categoryName) => {
             $scope.categories[categoryName] = !$scope.categories[categoryName];
-            console.log(categoryName, $scope.categories[categoryName]);
         }
 
         $scope.isShown = (categoryName) => {

@@ -113,7 +113,6 @@ angular.module('app').component('createSerie', {
       }
 
       this.draggingUpdate = (mouseEvent) => {
-        console.log(mouseEvent);
         let x, y;
         if (mouseEvent.touches && mouseEvent.touches.length > 0) {
           x = mouseEvent.touches[0].pageX;

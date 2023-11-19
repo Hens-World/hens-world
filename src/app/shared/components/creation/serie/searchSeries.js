@@ -11,15 +11,14 @@ angular.module('app').component('searchSeriesPost', {
         this.sortPosts();
       }
 
-      this.close = ()=>{
+      this.close = () => {
         $scope.$emit('searchSeries:close');
       }
 
       /**
        * Sends selected posts to parent
        */
-      this.addPosts = ()=>{
-        console.log(this.posts.filter(post=>post.selected));
+      this.addPosts = () => {
         $scope.$emit('searchSeries:posts', this.posts.filter(post => post.selected));
         this.close();
       };
@@ -50,9 +49,9 @@ angular.module('app').component('searchSeriesPost', {
 
       this.inited = false;
       this.$onInit = () => {
-        if (!$rootScope.currentUser){
+        if (!$rootScope.currentUser) {
 
-          $rootScope.$watch('currentUser', (n, o)=>{
+          $rootScope.$watch('currentUser', (n, o) => {
             if (n && !o) {
               this.init();
             }
@@ -63,7 +62,7 @@ angular.module('app').component('searchSeriesPost', {
         }
       };
 
-      this.init = ()=>{
+      this.init = () => {
         postFactory.getPosts({
           author: $rootScope.currentUser.ID,
           page: 1,
@@ -77,14 +76,14 @@ angular.module('app').component('searchSeriesPost', {
           this.sortPosts();
         });
 
-        $scope.$on('searchPostStart', (event, excludeList)=>{
+        $scope.$on('searchPostStart', (event, excludeList) => {
           this.loading = true;
           postFactory.getPosts({
             author: $rootScope.currentUser.ID,
             page: 1,
             pageSize: 500,
           }).then((res) => {
-            this.posts = res.data.filter(post=> !excludeList.includes(post.id));
+            this.posts = res.data.filter(post => !excludeList.includes(post.id));
             this.posts.forEach((post) => {
               post.formatDate = moment(post.date).format(hensApp.DATE_FORMATS.MIDDLE);
             });

@@ -4,9 +4,7 @@ angular.module('app').component('profileCompteSideMenu', {
     bindings: {},
     controller: ['$scope', '$element', '$rootScope', '$routeParams', 'seriesFactory',
         function ($scope, $element, $rootScope, $routeParams, seriesFactory) {
-            console.log("exists");
             this.$onInit = () => {
-                console.log("awake");
                 this.menuList = [
                     {
                         label: "Résumé du profil",
