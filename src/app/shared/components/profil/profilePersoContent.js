@@ -155,9 +155,9 @@ angular.module('app').component('profilePersoContent', {
                 if (!$scope.newRelation.rid) {
                     obj = {
                         from_id: $scope.user.ID,
+                        from_char: $scope.personnage.char_index,
                         to_id: $scope.newRelation.char.owner_id,
-                        from_char: $scope.newRelation.char.char_index,
-                        to_char: $scope.personnage.char_index,
+                        to_char: $scope.newRelation.char.char_index,
                         title: $scope.newRelation.title,
                         description: $scope.newRelation.description
                     };
@@ -176,8 +176,8 @@ angular.module('app').component('profilePersoContent', {
                         rid: $scope.newRelation.rid,
                         from_id: $scope.user.ID,
                         to_id: $scope.newRelation.char.owner_id,
-                        from_char: $scope.newRelation.char.char_index,
-                        to_char: $scope.personnage.char_index,
+                        to_char: $scope.newRelation.char.char_index,
+                        from_char: $scope.personnage.char_index,
                         title: $scope.newRelation.title,
                         description: $scope.newRelation.description
                     };

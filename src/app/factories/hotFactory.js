@@ -3,10 +3,10 @@
  * DS102: Remove unnecessary code created because of implicit returns
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
  */
-hensApp.factory('hotFactory', ['storageFactory', function(storageFactory){
+hensApp.factory('hotFactory', ['storageFactory', function (storageFactory) {
   let hot;
   return hot = {
-    isPostHot: post=> {
+    isPostHot: post => {
       if (moment(post.date).isAfter(moment().subtract(20, 'days'))) {
         const posts = storageFactory.get('seen.posts');
         return posts && !posts.find(seenPost => post.id === seenPost.id);
@@ -14,16 +14,17 @@ hensApp.factory('hotFactory', ['storageFactory', function(storageFactory){
         return false;
       }
     },
-    isPostSeen: post=> {
+    isPostSeen: post => {
       const posts = storageFactory.get('seen.posts');
       return posts && posts.find(seenPost => post.id === seenPost.id);
     },
 
-    isRPSeen: rp=> {
+    isRPSeen: rp => {
       const seenRps = storageFactory.get('seen.rps');
       if (!seenRps) return false;
       const lastSeen = seenRps.find(seenRp => rp.id === seenRp.id);
-      if (!lastSeen) { return false;
+      if (!lastSeen) {
+        return false;
       } else {
         let last_post;
         if (rp.messages.length > 0) {
@@ -35,15 +36,15 @@ hensApp.factory('hotFactory', ['storageFactory', function(storageFactory){
       }
     },
 
-    isRPHot: (rp, id)=> {
-      if (!rp) { debugger; }
+    isRPHot: (rp, id) => {
       if (moment(rp.last_post).isAfter(moment().subtract(20, 'days'))) {
         const seenRps = storageFactory.get('seen.rps');
-        if (!Object.keys(rp.userList).find(rolistId=> parseInt(rolistId) === id)) {
+        if (!Object.keys(rp.userList).find(rolistId => parseInt(rolistId) === id)) {
           return false;
         }
         const lastSeen = seenRps.find(seenRp => rp.id === seenRp.id);
-        if (!lastSeen) { return true;
+        if (!lastSeen) {
+          return true;
         } else {
           return moment(lastSeen.seen_at).isBefore(rp.last_post);
         }
@@ -51,9 +52,9 @@ hensApp.factory('hotFactory', ['storageFactory', function(storageFactory){
         return false;
       }
     },
-    setPostSeen: post=> {
+    setPostSeen: post => {
       const seenPosts = storageFactory.get('seen.posts');
-      const postIndex = seenPosts.findIndex(seenPost=> seenPost.id === post.id);
+      const postIndex = seenPosts.findIndex(seenPost => seenPost.id === post.id);
       if (postIndex === -1) {
         seenPosts.push({
           id: post.id,
@@ -64,9 +65,9 @@ hensApp.factory('hotFactory', ['storageFactory', function(storageFactory){
       }
     },
 
-    setRPSeen: rp=> {
+    setRPSeen: rp => {
       const seenRps = storageFactory.get('seen.rps');
-      const rpIndex = seenRps.findIndex(seenRp=> seenRp.id === rp.id);
+      const rpIndex = seenRps.findIndex(seenRp => seenRp.id === rp.id);
       if (rpIndex >= 0) {
         seenRps[rpIndex].seen_at = new Date();
       } else {
