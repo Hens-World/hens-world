@@ -160,7 +160,7 @@ hensApp.controller("IrlForm", ["$scope", "$rootScope", "eventsFactory",
         $scope.editForm = () => {
             $scope.showExistingForm = false;
             $scope.CurrentStep = $scope.Steps.Intro;
-            $scope.formData = { ...$scope.existingForm };
+            $scope.formData = hensApp.clone($scope.existingForm);
             $scope.goToStep($scope.Steps.Infos);
         };
 
