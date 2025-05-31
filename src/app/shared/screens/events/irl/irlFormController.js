@@ -1,7 +1,7 @@
-const excludedFields = ["id", "created_at", "user_id"];
 hensApp.controller("IrlForm", ["$scope", "$rootScope", "eventsFactory",
     function ($scope, $rootScope, eventsFactory) {
         $scope.$parent.info.isAppInit = false;
+        const excludedFields = ["id", "created_at", "user_id"];
         $scope.Steps = Object.freeze({
             Intro: "Intro",
             Infos: "Infos",
@@ -111,7 +111,7 @@ hensApp.controller("IrlForm", ["$scope", "$rootScope", "eventsFactory",
             }
         };
 
-        $scope.goToPayLater = async function () {
+        $scope.goToPayLater = function () {
             $scope.errors = $scope.validateFields($scope.StepChecks[$scope.CurrentStep]);
             if ($scope.errors.length == 0) {
                 $scope.submitForm()
@@ -123,7 +123,7 @@ hensApp.controller("IrlForm", ["$scope", "$rootScope", "eventsFactory",
             }
         };
 
-        $scope.goToPaypal = async function () {
+        $scope.goToPaypal = function () {
             $scope.errors = $scope.validateFields($scope.StepChecks[$scope.CurrentStep]);
             if ($scope.errors.length == 0) {
                 $scope.submitForm()
@@ -142,7 +142,7 @@ hensApp.controller("IrlForm", ["$scope", "$rootScope", "eventsFactory",
             }
         };
 
-        $scope.submitForm = async function () {
+        $scope.submitForm = function () {
             $scope.formData.linge = !!$scope.formData.linge;
             $scope.formData.plus_one = !!$scope.formData.plus_one;
             if ($scope.existingForm) {
