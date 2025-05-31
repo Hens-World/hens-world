@@ -137,7 +137,7 @@ hensApp.controller("IrlForm", ["$scope", "$rootScope", "eventsFactory",
                         }, 500);
                     })
                     .catch(error => {
-                        $rootScope.setAlert("error", error.data ?? error);
+                        $rootScope.setAlert("error", error.data ? error.data : error);
                     });
             }
         };
