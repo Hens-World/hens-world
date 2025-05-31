@@ -4,7 +4,7 @@
       h1 Calendrier
       .calendrier__container
         .calendrier__event(ng-class="{'fond-village' : !!selectedDate.event}")
-          img.event__image(ng-show="!!selectedDate.event" src="medias/events/calendrier/{{selectedDate.event.slug}}.jpg")
+          img.event__image(ng-show="!!selectedDate.event" ng-src="medias/events/calendrier/{{selectedDate.event.slug}}.jpg")
           .event__title(ng-show="!!selectedDate.event") {{selectedDate.event.name}}
           .event__dates(ng-show="!!selectedDate.event") du {{selectedDate.event.formatStartDate}} au {{selectedDate.event.formatEndDate}}
           .event__button(ng-show="!!selectedDate.event" ng-click="showMoreEvent = !showMoreEvent")

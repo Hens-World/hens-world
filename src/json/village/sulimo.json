@@ -23,7 +23,6 @@
       "width": 200,
       "height": 140
     },
-    
     {
       "label": "Moulin à vent",
       "slug": "moulin-sulimo",
@@ -133,9 +132,19 @@
       },
       "width": 220,
       "height": 200,
-      "eventDates": [["20-09", "22-09"]],
+      "eventDates": [
+        [
+          "20-09",
+          "22-09"
+        ]
+      ],
       "interior": true,
-      "interiorDates": [["20-09", "22-09"]]
+      "interiorDates": [
+        [
+          "20-09",
+          "22-09"
+        ]
+      ]
     },
     {
       "label": "Place des Sept",

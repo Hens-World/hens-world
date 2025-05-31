@@ -352,9 +352,19 @@
       },
       "width": 250,
       "height": 220,
-      "eventDates": [["21-03", "22-03"]],
+      "eventDates": [
+        [
+          "21-03",
+          "22-03"
+        ]
+      ],
       "interior": true,
-      "interiorDates": [["21-03", "22-03"]]
+      "interiorDates": [
+        [
+          "21-03",
+          "22-03"
+        ]
+      ]
     },
     {
       "label": "Laboratoire",

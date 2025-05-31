@@ -15,7 +15,7 @@
       .village-loca__list.masonry(ng-class="{'solo': posts.length == 1}")
         a.village-loca__element.masonry__item(ng-repeat="post in posts" ng-click="setSeen(post)" href="{{post.type}}/{{post.slug}}")
           .village-loca__notif.hot-notification(ng-class="{'active':post.isHot}") !
-          img.preview(ng-if="post.chosenImage" src="{{post.chosenImage}}")
+          img.preview(ng-if="post.chosenImage" ng-src="{{post.chosenImage}}")
           .text(ng-if="post.formatExcerpt" )
             p(ng-bind-html="post.formatExcerpt")
           img.preview.miniature(ng-if="!post.chosenImage && !post.formatExcerpt" ng-src="{{post.miniature}}")

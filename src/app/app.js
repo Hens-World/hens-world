@@ -203,6 +203,9 @@ hensApp.config(function ($routeProvider, $locationProvider) {
         }).when(window.devBase + '/events/solstice-ulmo/', {
             templateUrl: myLocalized.partials + 'solsticeUlmo.html',
             controller: 'SolsticeUlmo'
+        }).when(window.devBase + '/events/irl-form/', {
+            templateUrl: myLocalized.partials + 'irlForm.html',
+            controller: 'IrlForm'
         })
         .when(window.devBase + '/navbar', {
             templateUrl: myLocalized.specPartials + 'navbarPage.html',

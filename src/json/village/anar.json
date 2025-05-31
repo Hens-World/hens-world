@@ -1,6 +1,6 @@
 {
   "label": "anar",
-  "ouest":{
+  "ouest": {
     "sliceSize": 156,
     "width": 6236,
     "height": 5742,
@@ -10,11 +10,11 @@
       "y": 1450
     },
     "miniMap": {
-      "height":194,
+      "height": 194,
       "width": 211
     }
   },
-  "est":{
+  "est": {
     "sliceSize": 81,
     "width": 5517,
     "height": 5742,
@@ -24,11 +24,10 @@
       "y": 3056
     },
     "miniMap": {
-      "height":182,
+      "height": 182,
       "width": 189
     }
   },
-
   "locations": [
     {
       "label": "Boutique d'Art",
@@ -455,9 +454,19 @@
       "label": "Temple de l'Eté",
       "slug": "temple_ete",
       "quartier": "ouest",
-      "eventDates": [["21-06", "22-06"]],
+      "eventDates": [
+        [
+          "21-06",
+          "22-06"
+        ]
+      ],
       "interior": true,
-      "interiorDates": [["21-06", "22-06"]],
+      "interiorDates": [
+        [
+          "21-06",
+          "22-06"
+        ]
+      ],
       "pos": {
         "x": 4135,
         "y": 770
@@ -509,7 +518,6 @@
       "width": 350,
       "height": 290
     },
-
     {
       "label": "Station des Montagnes",
       "slug": "station_montagnes",
@@ -788,7 +796,12 @@
     {
       "label": "Colisée d'Anar",
       "slug": "colisee_anar",
-      "eventDates": [["30-08", "06-09"]],
+      "eventDates": [
+        [
+          "28-08",
+          "06-09"
+        ]
+      ],
       "event": "open_crushrun",
       "quartier": "est",
       "pos": {

@@ -12,7 +12,8 @@
       .crush-run-score(ng-repeat="score in crushrunScores" ng-class="{'king': score.king}" class="{{score.village}}")
         .value {{score.score}}
     .rounded-section
-      h1 {{event.is_next == true ? "PROCHAIN ÉVÈNEMENT" : "ÉVÈNEMENT EN COURS"}}
+      h1(ng-show="currentEvent.slug !== 'hens_anniversary'") {{event.is_next == true ? "PROCHAIN ÉVÈNEMENT" : "ÉVÈNEMENT EN COURS"}}
+      h1(ng-show="currentEvent.slug === 'hens_anniversary'") ÉVÈNEMENT SPÉCIAL
       next-event()
     .rounded-section
       saison-display
@@ -33,7 +34,7 @@
           .img.discord
         a.mini-link(target='_blank', href='https://www.instagram.com/hens_world/')
           .img.instagram
-        
+    .rounded-section 
 
   .map-wrapper
     video#map-global

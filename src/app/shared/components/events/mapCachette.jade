@@ -69,7 +69,7 @@
     .map-cachette__feed-line(ng-repeat="kill in cacheCtrl.killFeed" ng-class="{'visible': kill.visible, 'suicide': !kill.killer, 'opposing': cacheCtrl.player.type === 'prop' || !kill.killer}")
       .killer(ng-if="kill.killer") {{kill.killer}}
       img.action(src="medias/events/carnaval-cachette/kill.png")
-      img.prop(ng-if="kill.prop" src="medias/events/carnaval-cachette/props/{{cacheCtrl.village}}/{{cacheCtrl.map.mapTime}}/props_{{cacheCtrl.village}}_{{kill.prop.filename}}")
+      img.prop(ng-if="kill.prop" ng-src="medias/events/carnaval-cachette/props/{{cacheCtrl.village}}/{{cacheCtrl.map.mapTime}}/props_{{cacheCtrl.village}}_{{kill.prop.filename}}")
       .killed() {{kill.killed}}
   .map-cachette__prop-hue(ng-if="cacheCtrl.player.type === 'prop' && !cacheCtrl.game.winner && cacheCtrl.game.phase === 'game'" ng-show="cacheCtrl.type == 'UI'")
   .map-cachette__hunter-aiming(ng-if="cacheCtrl.player.type === 'hunter' && !cacheCtrl.game.winner && cacheCtrl.game.phase === 'game'" ng-click="cacheCtrl.clickZoneHunter($event)" ng-show="cacheCtrl.type == 'UI'")

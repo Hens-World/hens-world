@@ -94,10 +94,6 @@ hensApp.controller('Map', [
                     $scope.$parent.info.isAppInit = true;
                     $scope.vid.pause();
                     $scope.$parent.$apply();
-                    /*
-                      @TODO: FIX THIS SHIT GODDAMIT
-                      "new load request"
-                    */
                     $scope.vid.src = "";
                     return $scope.vid.load();
                 } else {

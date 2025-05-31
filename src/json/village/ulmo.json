@@ -88,7 +88,12 @@
     {
       "label": "Aquarium",
       "slug": "aquarium",
-      "eventDates": [["21-12", "22-12"]],
+      "eventDates": [
+        [
+          "21-12",
+          "22-12"
+        ]
+      ],
       "event": "go_to_aquarium",
       "pos": {
         "x": 2575,
@@ -130,9 +135,19 @@
     {
       "label": "Temple de l'Hiver",
       "slug": "temple_hiver",
-      "eventDates": [["21-12", "22-12"]],
+      "eventDates": [
+        [
+          "21-12",
+          "22-12"
+        ]
+      ],
       "interior": true,
-      "interiorDates": [["21-12", "22-12"]],
+      "interiorDates": [
+        [
+          "21-12",
+          "22-12"
+        ]
+      ],
       "pos": {
         "x": 2100,
         "y": 2830

@@ -1,0 +1,151 @@
+.page-container
+    .main-column
+        .main-column__content.irl-form
+            img.irl-form__banner(ng-src="/medias/events/banniere_decennie.png")
+            h1 6 et 7 Septembre 2025
+            .irl-form__separator.fond-village
+            .irl-form__edit(ng-show="!showExistingForm")
+                //Intro
+                .irl-form__section.irl-form__intro(ng-if="CurrentStep == Steps.Intro")
+                    p 
+                        span Pour les 
+                        b 10  années du site Hens World,
+                        span  nous organisons un week-end unique autour de l'univers ! Un moment pour toustes de se retrouver ou se rencontrer, de partager des moments simples et ludiques aux couleurs des quatre villages.
+                    .irl-form__rules
+                        p 
+                            span Quelques 
+                            span.font-village informations  
+                            span et 
+                            span.font-village conditions 
+                            span sont à préciser avant de remplir le formulaire: 
+                        ul 
+                            li 
+                                span L'hébergement et la nourriture  du week-end 
+                                b seront compris pour un montant de 95 euros par personne.
+                                u Seul le virement de cette somme en fin de formulaire confirmera votre participation.
+                            li
+                                span L'événement se déroulera en Auvergne-Rhône-Alpes, à 40 minutes de Clermont-Ferrand. L'adresse exacte vous sera donnée après que le paiement soit validé par souci de confidentialité . 
+                            li 
+                                span Cela sera un week-end de détente et de jeu en groupe autour d'un univers commun. Nous savons que vou n'êtes que des chouettes personnes mais il est toujours bon de rappeler que le respect de chacun·e sera de mise !
+                            li 
+                                span Sels les membres de Hens et leurs +1 sont invité·es.
+                            li 
+                                span Les participations aux activités et aux jeux prévus durant le week-end ne sont aucunement obligatoire !
+                            li 
+                                span Il est possible de venir avant le samedi et de rester jusqu'au Lundi. Il faudra cependant compter un budcet supplémentaire pour la nourriture, et prévenir les organisateurices.
+                            li 
+                                span L'alcool n'est pas compris dans le budget mentionné plus haut. Mais vous pouvez apporter vos boissons alcoolisées si vous le souhaitez !
+                    .button.button--meaty.hover.fond-village(ng-click="goToStep(Steps.Infos)") Valider 
+                //Infos
+                .irl-form__section.irl-form__infos(ng-if="CurrentStep == Steps.Infos")
+                    p Parfait ! Voici le formulaire à remplir pour nous aider à organise le tout !
+                    .irl-form__separator.fond-village
+                    //village
+                    .irl-form-entry(ng-class="{'irl-form-entry--error': errors.includes('village')}") 
+                        .irl-form-entry__question Village
+                        .irl-form-entry__choices
+                            .irl-form-entry__choice(ng-repeat="village in villages")
+                                .irl-form-entry__checkbox(ng-class="{'checked': $index == formData.village}" ng-click="setFormValue('village', $index)")
+                                .irl-form-entry__choice-name {{village}}
+                    // plus one
+                    .irl-form-entry(ng-class="{'irl-form-entry--error': errors.includes('plus_one')}") 
+                        .irl-form-entry__question Viendras-tu avec un +1 ?
+                        .irl-form-entry__choices
+                            .irl-form-entry__choice(ng-repeat="choix in Choix")
+                                .irl-form-entry__checkbox(ng-class="{'checked': $index == formData.plus_one}" ng-click="setFormValue('plus_one', $index)")
+                                .irl-form-entry__choice-name {{choix}}
+                    // plus one name
+                    .irl-form-entry(ng-class="{'irl-form-entry--error': errors.includes('plus_one_name')}" ng-show="formData.plus_one")
+                        .irl-form-entry__question Pseudo de ton +1
+                        input.irl-form-entry__input(ng-model="formData.plus_one_name")
+                    //plus one village
+                    .irl-form-entry(ng-class="{'irl-form-entry--error': errors.includes('plus_one_village')}" ng-show="formData.plus_one")
+                        .irl-form-entry__question Quel sera le village de ton +1 ?
+                        .irl-form-entry__choices
+                            .irl-form-entry__choice(ng-repeat="village in villages")
+                                .irl-form-entry__checkbox(ng-class="{'checked': $index == formData.plus_one_village}" ng-click="setFormValue('plus_one_village', $index)")
+                                .irl-form-entry__choice-name {{village}}
+                    //regime
+                    .irl-form-entry(ng-class="{'irl-form-entry--error': errors.includes('regime')}")
+                        .irl-form-entry__question Informations relatives aux repas. Régime particulier ?
+                        .irl-form-entry__choices
+                            .irl-form-entry__choice(ng-repeat="regime in Regimes")
+                                .irl-form-entry__checkbox(ng-class="{'checked': $index == formData.regime}" ng-click="setFormValue('regime', $index)")
+                                .irl-form-entry__choice-name {{regime}}
+                    // allergies
+                    .irl-form-entry(ng-class="{'irl-form-entry--error': errors.includes('allergies')}" )
+                        .irl-form-entry__question Allergies ? Intolérances ?
+                        input.irl-form-entry__input(ng-model="formData.allergies")
+                    //linge
+                    .irl-form-entry(ng-class="{'irl-form-entry--error': errors.includes('linge')}")
+                        .irl-form-entry__question Pourras-tu amener du linge de lit (92x200cm) ? (alaise, draps...)
+                        .irl-form-entry__choices
+                            .irl-form-entry__choice(ng-repeat="choix in Choix")
+                                .irl-form-entry__checkbox(ng-class="{'checked': $index == formData.linge}" ng-click="setFormValue('linge', $index)")
+                                .irl-form-entry__choice-name {{choix}}
+                    .button.button--meaty.hover.fond-village(ng-click="goToStep(Steps.Activities)") Valider 
+                //Activities
+                .irl-form__section.irl-form__activities(ng-if="CurrentStep == Steps.Activities")
+                    p Les activités mentionnées ci-dessous ne sont pas obligatoires, ces questions servent surtout pour nous aider à imaginer le nombre de joueurs à l'avance et équilibrer les parties.
+                    .irl-form__separator.fond-village
+                    //activity enigme
+                    .irl-form-entry(ng-class="{'irl-form-entry--error': errors.includes('event_enigme')}")
+                        .irl-form-entry__question Souhaites-tu participer aux activités en groupe type énigme ?
+                        .irl-form-entry__choices
+                            .irl-form-entry__choice(ng-repeat="choix in MaybeChoices")
+                                .irl-form-entry__checkbox(ng-class="{'checked': $index == formData.event_enigme}" ng-click="setFormValue('event_enigme', $index)")
+                                .irl-form-entry__choice-name {{choix}}
+                    //activity sport
+                    .irl-form-entry(ng-class="{'irl-form-entry--error': errors.includes('event_sport')}")
+                        .irl-form-entry__question Souhaites-tu participer aux activités en groupe type sportif ?
+                        .irl-form-entry__choices
+                            .irl-form-entry__choice(ng-repeat="choix in MaybeChoices")
+                                .irl-form-entry__checkbox(ng-class="{'checked': $index == formData.event_sport}" ng-click="setFormValue('event_sport', $index)")
+                                .irl-form-entry__choice-name {{choix}}
+                    //activity rp
+                    .irl-form-entry(ng-class="{'irl-form-entry--error': errors.includes('event_rp')}")
+                        .irl-form-entry__question Souhaites-tu participer aux activités en groupe type jeu de rôle GN ?
+                        .irl-form-entry__choices
+                            .irl-form-entry__choice(ng-repeat="choix in MaybeChoices")
+                                .irl-form-entry__checkbox(ng-class="{'checked': $index == formData.event_rp}" ng-click="setFormValue('event_rp', $index)")
+                                .irl-form-entry__choice-name {{choix}}
+                    .irl-form__separator.fond-village
+                    p 
+                        span Pour finaliser votre participation, et 
+                        i comme mentionné au début, 
+                        span nous vous demandons de la valider en versant la somme de 
+                        span.font-village 95 euros 
+                        span \( par personne \) pour nous permettre de financer le logement et les repas.
+                    .line
+                        .column
+                            .button.button--meaty.hover.fond-village(ng-click="goToPaypal()") Paypal
+                            p(style="margin-top: 6px;") 
+                                i Attention à bien sélectionner l'option 
+                                br
+                                span.font-village  " entre proches "   
+                        .column
+                            .button.button--meaty.hover.fond-village(ng-click="goToPayLater()") Valider Formulaire
+                            p(style="margin-top: 6px;") 
+                                i Il est aussi possible de régler par virement bancaire. Ecrivez-nous par mail ou sur discord pour avoir le RIB !
+                    .irl-form__separator.fond-village
+                    p.center-text
+                        span Merci énormément pour vos réponses ! 
+                        br
+                        span Nous avons hâte de pouvoir vous retrouver lors de ce week-end Hensien doctype !
+                        br
+                        span Notez bien dans vos agendas: 
+                        span.font-village le 6 et 7 septembre 2025 !
+            .irl-form__summary(ng-show="showExistingForm")
+                p Vous pouvez éditer vos informations! 
+                p Voici votre récapitulatif
+                .irl-form__separator.fond-village
+                .irl-form-entry(ng-repeat="fieldName in formFields" ng-show="!fieldName.startsWith('plus_one_') || existingForm.plus_one")
+                    .irl-form-entry__question {{fieldTitles[fieldName]}}
+                    .irl-form-entry__choice(ng-if="fieldTypes[fieldName].startsWith('radio')")
+                        .irl-form-entry__checkbox.checked.irl-form-entry__checkbox--read-only()
+                        .irl-form-entry__choice-name(ng-if="fieldTypes[fieldName] == 'radio'") {{Choix[existingForm[fieldName]]}}
+                        .irl-form-entry__choice-name(ng-if="fieldTypes[fieldName] == 'radio_maybe'") {{MaybeChoices[existingForm[fieldName]]}}
+                    .irl-form-entry__value(ng-if="fieldTypes[fieldName] == 'text'") {{existingForm[fieldName]}}
+                    .irl-form-entry__value(ng-if="fieldTypes[fieldName] == 'village'") {{villages[existingForm[fieldName]]}}
+                .button.button--meaty.fond-village.hover(ng-click="editForm()") Éditer
+    .side-column

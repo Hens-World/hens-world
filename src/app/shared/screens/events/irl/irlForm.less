@@ -1,0 +1,166 @@
+.irl-form {
+    padding: 50px 25px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 700px;
+    margin: auto;
+
+    &__banner {
+        width: calc(100% + 50px);
+        margin-left: -25px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: "Wire One";
+        font-size: 4.5em;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 1.15em;
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+    &__separator {
+        height: 1px;
+        width: auto;
+        margin: 15px 0;
+    }
+
+    &__rules {
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 15px;
+        padding: 25px;
+        margin-top: 15px;
+        background-color: @middleDark;
+        border-radius: 3px;
+
+        p {
+            font-size: 1em;
+        }
+
+        li {
+            margin-top: 15px;
+
+            &::before {
+                content: "• ";
+                font-weight: bold;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .line {
+        display: flex;
+        margin-top: 25px;
+
+    }
+
+    .column {
+        flex: 0 1 50%;
+        padding: 5px 10px;
+    }
+}
+
+.anar {
+    .irl-form__rules li::before {
+        color: @anarNeuter;
+    }
+
+    .irl-form-entry__checkbox::after {
+        background-color: @anarNeuter;
+    }
+
+}
+
+.ulmo {
+    .irl-form__rules li::before {
+        color: @ulmoNeuter;
+    }
+
+    .irl-form-entry__checkbox::after {
+        background-color: @ulmoNeuter;
+    }
+}
+
+.wilwar {
+    .irl-form__rules li::before {
+        color: @wilwarNeuter;
+    }
+
+    .irl-form-entry__checkbox::after {
+        background-color: @wilwarNeuter;
+    }
+}
+
+.sulimo {
+    .irl-form__rules li::before {
+        color: @sulimoNeuter;
+    }
+
+    .irl-form-entry__checkbox::after {
+        background-color: @sulimoNeuter;
+    }
+}
+
+.irl-form-entry {
+    margin: 12px 12px;
+
+    &--error {
+        color: red;
+    }
+
+    &__question {
+        opacity: 0.6;
+        font-size: 1.2em;
+        margin-bottom: 6px;
+    }
+
+    &__choices {
+        display: flex;
+        align-items: center;
+    }
+
+    &__choice {
+        display: flex;
+        margin-right: 12px;
+        align-items: center;
+    }
+
+    &__choice-name {
+        margin-left: 8px;
+        text-transform: capitalize;
+    }
+
+    &__checkbox {
+        width: 25px;
+        height: 25px;
+        background-color: @inputDark;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &--read-only {
+            cursor: default;
+        }
+
+        &.checked {
+            &::after {
+                content: "";
+                width: 18px;
+                display: block;
+                height: 18px;
+
+            }
+        }
+    }
+}

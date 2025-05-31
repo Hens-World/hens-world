@@ -4,4 +4,5 @@
         .next-event__info
             .next-event__name.font-village {{$ctrl.event.name}}
             .next-event__dates du {{$ctrl.event.formatStartDate}} au {{$ctrl.event.formatEndDate}}
-    a.button.button--meaty.fond-village.hover(href="/guide-touristique/calendrier") en savoir +
+    a.button.button--meaty.fond-village.hover(href="/guide-touristique/calendrier" ng-show="$ctrl.event.slug !== 'hens_anniversary'") en savoir +
+    a.button.button--meaty.fond-village.hover(href="/events/irl-form" ng-show="$ctrl.event.slug === 'hens_anniversary'") en savoir +
